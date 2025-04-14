@@ -1,0 +1,342 @@
+﻿je_chinese_warlord_era = { #军阀时代
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds" #蓝旗帜
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_chinese_warlord_era_modifier
+	}
+	scripted_button = je_chinese_warlord_era_01_button
+	scripted_button = je_chinese_warlord_era_02_button
+	scripted_button = je_chinese_warlord_era_03_button
+	immediate = {
+		c:CNBY ?= {
+		    save_scope_as = cnby_formation_country
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = je_national_revolution_tt
+			c:CHINA ?= this
+		}
+		trigger_if = {
+			limit = {
+				NOT = { c:CNBY ?= this }
+			}
+			custom_tooltip = {
+				text = je_national_revolution_02_tt
+				NOT = { exists = c:CNBY }
+			}
+		}
+		trigger_if = {
+			limit = {
+				NOT = { c:CNNR ?= this }
+			}
+			custom_tooltip = {
+				text = je_national_revolution_03_tt
+				NOT = { exists = c:CNNR }
+			}
+		}
+		trigger_if = {
+			limit = {
+				NOT = { c:CNTW ?= this }
+			}
+			custom_tooltip = {
+				text = je_national_revolution_04_tt
+				NOT = { exists = c:CNTW }
+			}
+		}
+		any_state = {
+			filter = {
+				OR = {
+					region = sr:region_north_china
+					region = sr:region_south_china
+					state_region = s:STATE_SAKHALIN
+					state_region = s:STATE_AMUR
+					state_region = s:STATE_NORTHERN_MANCHURIA
+					state_region = s:STATE_OUTER_MANCHURIA
+					state_region = s:STATE_SOUTHERN_MANCHURIA
+					state_region = s:STATE_SHENGJING
+					state_region = s:STATE_ALTAI
+					state_region = s:STATE_TUVA
+					state_region = s:STATE_DZUNGARIA
+					state_region = s:STATE_TIANSHAN
+					state_region = s:STATE_JETISY
+					state_region = s:STATE_QINGHAI
+					state_region = s:STATE_LHASA
+					state_region = s:STATE_NGARI
+					state_region = s:STATE_EASTERN_HIMALAYAS
+				}
+			}
+			owner = ROOT
+			percent >= 1
+		}
+	}
+	on_complete = {
+		trigger_event = { id = warlords_events.12 popup = yes }
+    }
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_three_principles_of_the_people_movement = { #三民主义#革命浪潮
+    icon = "gfx/interface/icons/ideology_icons/ideology_leader/sanminzhuyier.dds" #三民主义
+	#icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		has_technology_researched = egalitarianism
+		OR = {
+			c:CNBY ?= this
+		    c:CNGX ?= this
+		    c:CNYN ?= this
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			text = je_three_principles_of_the_people_movement_tt
+			has_global_variable = three_principles_movement_happening
+			NOT = { has_global_variable = three_principles_movement_happening_cd_var }
+		}
+	}
+	immediate = {
+		set_variable = {
+		    name = three_principles_of_the_people_movement_var
+			value = 0
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_political_movement = {
+						is_political_movement_type = movement_sanminzhuyier
+					}
+				}
+			}
+			create_political_movement = { type = movement_sanminzhuyier }
+		}
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_sanminzhuyier
+			}
+			save_scope_as = sanminzhuyier_movement_scope
+		}
+		set_variable = { name = je_three_principles_of_the_people_movement_var value = 0 }
+		trigger_event = { id = warlords_events.2 popup = yes }
+	}
+	complete = {
+		custom_tooltip = {
+			text = three_principles_of_the_people_movement_tt
+			var:three_principles_of_the_people_movement_var >= 60
+		}
+		AND = {
+			any_interest_group = {
+				is_in_government = yes
+				leader = { has_ideology = ideology:ideology_sanminzhuyier }
+			}
+			NOT = { has_law = law_type:law_monarchy }
+			OR = {
+				has_law = law_type:law_census_voting
+				has_law = law_type:law_universal_suffrage
+			}
+		}		
+	}
+	on_complete = {
+		set_variable = {
+			name = completed_three_principles_movement
+		}
+		set_variable = {
+			name = completed_three_principles_movement_recent
+			months = short_modifier_time
+		}
+		trigger_event = { id = warlords_events.9 }
+	}
+	fail = {
+		trigger_if = {
+			limit = {
+				exists = var:je_three_principles_of_the_people_movement_var
+			}
+			custom_tooltip = { 
+				text = je_three_principles_of_the_people_movement_timer_tt
+				var:je_three_principles_of_the_people_movement_var >= 12
+			}
+		}
+		trigger_else = {
+			custom_tooltip = { 
+				text = je_three_principles_of_the_people_movement_timer_dummy_tt
+				always = no
+			}
+		}
+		AND = {
+			scope:sanminzhuyier_movement_scope ?= {
+				political_movement_support <= 0.10
+				is_being_suppressed = yes
+			}
+			NOT = {
+				any_interest_group = {
+					leader = { has_ideology = ideology:ideology_sanminzhuyier }
+					is_marginal = no
+				}
+				any_scope_character = {
+					has_ideology = ideology:ideology_sanminzhuyier
+					has_role = agitator
+				}
+			}
+		}
+	}
+	on_fail = {
+		set_variable = {
+			name = completed_three_principles_movement
+		}
+		set_variable = {
+			name = completed_three_principles_movement_recent
+			months = short_modifier_time
+		}
+		trigger_event = { id = warlords_events.10 }
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						any_interest_group = {
+							is_in_government = yes
+							leader = { has_ideology = ideology:ideology_sanminzhuyier }
+						}
+						NOT = { has_law = law_type:law_monarchy }
+						OR = {
+							has_law = law_type:law_census_voting
+							has_law = law_type:law_universal_suffrage
+						}
+						var:three_principles_of_the_people_movement_var < 60
+					}
+				}
+				change_variable = {
+					name = three_principles_of_the_people_movement_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						scope:sanminzhuyier_movement_scope ?= {
+							political_movement_support <= 0.10
+							is_being_suppressed = yes
+						}
+						NOT = {
+							any_interest_group = {
+								leader = { has_ideology = ideology:ideology_sanminzhuyier }
+								is_marginal = no
+							}
+							any_scope_character = {
+								has_ideology = ideology:ideology_sanminzhuyier
+								has_role = agitator
+							}
+						}
+					}
+				}
+				change_variable = { name = je_three_principles_of_the_people_movement_var add = 1 }
+			}
+			else = {
+				set_variable = { name = je_three_principles_of_the_people_movement_var value = 0 }
+			}
+		}
+		events = {
+			warlords_events.3
+		}
+		random_events = {
+			100 = 0
+			10 = warlords_events.5
+			10 = warlords_events.6
+			10 = warlords_events.7
+		}
+	}
+	invalid = {
+		has_global_variable = three_principles_movement_happened
+	}
+	weight = 10000
+	transferable = no
+	can_revolution_inherit = no
+	should_be_pinned_by_default = yes
+}
+
+je_secret_police_movement = { #恢复秩序
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_internal_affairs
+	complete = {
+		OR = {
+			has_law = law_type:law_national_guard
+			has_law = law_type:law_secret_police
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 3
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = warlords_events.11
+		}
+	}
+	timeout = 3650
+	weight = 50
+	should_be_pinned_by_default = yes
+}
+
+je_national_guangXi_university_construction = { #建造广西大学
+    icon =  "gfx/interface/icons/building_icons/national_guangxi_university_02.png"
+	#icon = "gfx/interface/icons/law_icons/public_schools.dds" #公立学校
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = ai_je_national_guangXi_university_construction_var
+			value = 0
+		}
+	}
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_GUANGXI
+			any_scope_building = {
+				is_building_type = building_national_guangXi_university
+				occupancy >= 0.9
+				building_has_goods_shortage = no
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = { id = warlords_events.17 }
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_national_guangXi_university_construction_var < 24
+				}
+			    change_variable = {
+					name = ai_je_national_guangXi_university_construction_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_national_guangXi_university_construction_var >= 24
+					any_scope_state = {
+					    state_region = s:STATE_GUANGXI
+						NOT = {
+							has_building = building_national_guangXi_university
+						}
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_GUANGXI
+					}
+					create_building={
+						building="building_national_guangXi_university"
+						level=1
+					}
+				}
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

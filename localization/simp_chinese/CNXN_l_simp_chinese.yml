@@ -1,0 +1,63 @@
+﻿l_simp_chinese:
+
+ #####匈奴本地#####
+ je_loong_city_revival: "崛起乱局"
+ je_loong_city_revival_reason: "自冒顿单于崛起，匈奴铁骑驰骋草原，威震四方，昔日的大汉帝国亦曾屈服于其锋芒。但好景不长，强盛一时的匈奴因外敌与内乱而支离破碎，旧日的辉煌被漫漫风沙掩埋。\n\n刘渊，字元海，出身于匈奴贵族世家，他的远祖是汉初的冒顿单于，冒顿单于娶汉高帝刘邦的宗女为妻，并与刘邦约为兄弟，故其子孙遂以刘氏为其汉姓。刘渊自幼聪颖，不仅继承了匈奴人的尚武精神，还精通儒家经典，深受汉文化熏陶。他在洛阳生活多年，与士族往来密切，许多名士对其称赞有加。出于“非我族类，其心必异”的民族歧视的心理，刘渊并不受重用，这种防患于未然的措施引起了长期以来受到中原封建王朝排斥打击的匈奴上层贵族的不满。刘渊的堂祖父召集匈奴上层贵族，对他们说：“过去我们的祖先与汉朝约为兄弟，同甘共苦。自汉亡以来，我们的单于却徒有虚号，而没有国土可言；至于诸王侯，地位降同编户。如今中原人骨肉相残，四海鼎沸，正是我们振兴国家、恢复先祖大业的大好时机。刘渊才能和气宇超众拔群。上天如果不是想要光大尊崇单于，绝不会白白地降生此人。”于是众人密谋，共推刘渊为大单于。后来，刘渊趁战乱回到草原，招集部众。"
+ 
+ xiong_nu_events.1.t: "整装待发"
+ xiong_nu_events.1.d: "草原上，炊烟四起，帐篷连绵不绝，四散各地的匈奴部落纷纷响应号召，带着他们的战士、牛羊齐聚龙庭。\n大漠风啸，炉火重燃，铁骑再度整装，蛰伏已久的力量终将爆发！"
+ xiong_nu_events.1.f: "天命不再眷顾中原王朝，乱世已至，正是英雄崛起之时！"
+ xiong_nu_events.1.a: "横扫四方，重塑天下格局！"
+  
+ je_control_of_the_silk_road: "掌控丝绸之路"
+ je_control_of_the_silk_road_reason: "丝绸之路贯通东西，商队络绎不绝，承载着无数珍宝、丝绸、香料、技艺。掌控这条繁华的商路，不仅意味着丰厚的税收，更能带来文化交流、经济繁荣与国家实力的增长。"
+ je_control_of_the_silk_road_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，50%的[concept_pop]皈依[concept_state_religion]"
+ 
+ je_entered_the_central_plainsicon: "入主中原"
+ je_entered_the_central_plainsicon_reason: "匈奴人世代梦想征服中原，如今刘渊正有机会一试。但无论是建立新的草原王朝，还是成为汉室正统的继承者，他都需要足够的武力与智慧。"
+ je_entered_the_central_plainsicon_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，25%的[concept_pop]皈依[concept_state_religion]"
+ 
+ xiong_nu_events.2.t: "逐鹿天下"
+ xiong_nu_events.2.d: "汉朝统治中原的时间长久，恩泽深入人心。即便灭亡，依然有人怀念往昔的盛世。姑且称国号为汉，以招抚民心。"
+ xiong_nu_events.2.f: "“我是汉朝皇帝的外甥，而且祖上曾经与汉帝约为兄弟。如今兄长去世，弟弟继承，这难到不是很正常的事吗？”"
+ xiong_nu_events.2.a: "以兴复汉室为名，逐鹿天下！"
+
+ xiong_nu_events.3.t: "大汉复兴"
+ xiong_nu_events.3.d: "凭借强大的军事实力征服敌人，并以智慧与包容促进各民族的融合。如今，汉与匈奴携手共存，国家统一，百姓安居乐业，共同书写新篇章。"
+ xiong_nu_events.3.f: "元海的野望已成功实现，新的大汉会在历史的长河中刻下了浓重的一笔。未来的挑战依然存在，但今天，我们可以自豪地说：大汉已复兴！"
+ xiong_nu_events.3.a: "盛世初现。"
+
+ je_yuanhai_ambition: "元海的野望"
+ je_yuanhai_ambition_reason: "大丈夫在世，当如崇山峻岭，岂能甘为蝼蛄！哪有帝王之运长在一姓之理？大禹出自西戎，周文王生于东夷，他们之所以为王，只是有德罢了。而今我有部众十余万，皆能以一人当十人。上可以成汉高帝一统天下大业，下可以像曹氏拥有半壁河山。"
+ je_yuanhai_ambition_goal: "#bold 进度条#!到达#variable 100%#!"
+
+ je_compete_for_the_throne: "元海的野望：逐鹿天下"
+ je_compete_for_the_throne_reason: "乱世之中，唯有强者才能主宰命运。刘渊自称汉室之后，承继帝胄血统，怀抱重振大汉的雄心。这不仅是一场名义上的复兴，更是对天下霸权的角逐。中原群雄割据，草原铁骑磨刀霍霍，唯有智谋与武力兼备者，方能踏上至尊之位，书写新的篇章。"
+ je_compete_for_the_throne_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，50%的[concept_pop]皈依[concept_state_religion]"
+ 
+ je_winning_the_people_hearts: "元海的野望：收揽民心"
+ je_winning_the_people_hearts_reason: "即便拥有强大的军力，若不能赢得百姓的心，天下也难以长久统治。民心是基石，只有通过仁政，才能稳固政权，赢得百姓的支持成就帝业。"
+ je_winning_the_people_hearts_tt: "已经完成$je_compete_for_the_throne$[concept_journal_entry]"
+
+ je_restoration_of_han_institutions: "元海的野望：承袭汉制"
+ je_restoration_of_han_institutions_reason: "匈奴的传统治理方式是松散的部落联盟，依赖部族间的协作与部落首领的个人魅力。这样的体系能在草原上有效运作，但面以农业为基础的中原王朝时，便显得不够适应。想在中原建立稳固的政权，就得建立完善的官僚制度，强化中央对地方的控制。而采用汉制也能更好的赢得民众的认同与支持，稳固统治。"
+ je_restoration_of_han_institutions_tt: "以下条件必须满足5年(目前已经持续#variable [ROOT.GetCountry.MakeScope.Var('je_new_administrative_paper_01_var').GetValue]#!个月)："
+
+ je_disseminating_han_culture: "元海的野望：推广汉学"
+ je_disseminating_han_culture_reason: "若想在中原建立持久的统治，必须适应中原的生活方式，而获得中原人民的支持和认同最好方式就是接受汉文化，像汉人一样生活。"
+
+ je_ethnic_harmony_in_governance: "元海的野望：民族共治"
+ je_ethnic_harmony_in_governance_reason: "推行宽容的民族政策，促进各民族间的理解与合作，才是实现国家长治久安的根本之道。"
+ je_ethnic_harmony_in_governance_tt: "以下条件必须满足5年(目前已经持续#variable [ROOT.GetCountry.MakeScope.Var('je_new_administrative_paper_01_var').GetValue]#!个月)："
+
+ je_loong_city_revival_modifier: "复兴龙庭"
+ xiong_nu_events_1_modifier: "天命再临"
+ je_control_of_the_silk_road_modifier: "掌控丝绸之路"
+ je_yuanhai_ambition_modifier: "元海的野望"
+ je_compete_for_the_throne_modifier: "兄终弟及"
+ je_winning_the_people_hearts_01_modifier: "恢复生产"
+ je_winning_the_people_hearts_02_modifier: "天下归心"
+ je_restoration_of_han_institutions_modifier: "承袭汉制"
+ je_disseminating_han_culture_modifier: "推广汉学"
+ je_ethnic_harmony_in_governance_modifier: "民族共治"
+ xiong_nu_events_3_modifier: "盛世初现"

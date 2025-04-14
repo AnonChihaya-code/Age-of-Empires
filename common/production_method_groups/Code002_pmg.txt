@@ -1,0 +1,34 @@
+﻿####################
+##### 黄埔军校 #####
+####################
+pmg_01_building_whampoa_military_academy = { #训练管理
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_0101_building_whampoa_military_academy
+		pm_0102_building_whampoa_military_academy
+		pm_0103_building_whampoa_military_academy
+	}
+}
+
+pmg_02_building_whampoa_military_academy = { #医学补给
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_0201_building_whampoa_military_academy
+		pm_0202_building_whampoa_military_academy
+	}
+}
+
+pmg_building_national_guangXi_university = { #国立广西大学 #科研方向
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_01_building_national_guangXi_university
+		pm_02_building_national_guangXi_university
+		pm_03_building_national_guangXi_university
+	}
+}

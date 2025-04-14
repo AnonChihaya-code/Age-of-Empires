@@ -1,0 +1,227 @@
+﻿#####################
+#####人群生活水平#####
+#####################
+chinese_culture_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_chinese_culture_standard_of_living_add = 1
+}
+chinese_culture_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_chinese_culture_standard_of_living_add = 1
+}
+
+legalist_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_legalist_standard_of_living_add = 1
+}
+legalist_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_legalist_standard_of_living_add = 1
+}
+
+qin_roman_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_qin_roman_standard_of_living_add = 1
+}
+qin_roman_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_qin_roman_standard_of_living_add = 1
+}
+
+xiongnu_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_xiongnu_standard_of_living_add = 1
+}
+xiongnu_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_xiongnu_standard_of_living_add = 1
+}
+
+eldians_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_eldians_standard_of_living_add = 1
+}
+eldians_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_eldians_standard_of_living_add = 1
+}
+
+marleyans_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_marleyans_standard_of_living_add = 1
+}
+marleyans_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_marleyans_standard_of_living_add = 1
+}
+
+honor_marleyans_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_honor_marleyans_standard_of_living_add = 1
+}
+honor_marleyans_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_honor_marleyans_standard_of_living_add = 1
+}
+
+mygo_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_mygo_standard_of_living_add = 1
+}
+mygo_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_mygo_standard_of_living_add = 1
+}
+
+crychic_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_crychic_standard_of_living_add = 1
+}
+crychic_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_crychic_standard_of_living_add = 1
+}
+
+avemujica_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_avemujica_standard_of_living_add = 1
+}
+avemujica_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_avemujica_standard_of_living_add = 1
+}
+
+sumimi_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_sumimi_standard_of_living_add = 1
+}
+sumimi_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_sumimi_standard_of_living_add = 1
+}
+
+circle_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_circle_standard_of_living_add = 1
+}
+circle_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_circle_standard_of_living_add = 1
+}
+
+cheyenne_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_cheyenne_standard_of_living_add = 1
+}
+cheyenne_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_cheyenne_standard_of_living_add = 1
+}
+
+aztecs_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_aztecs_standard_of_living_add = 1
+}
+aztecs_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_aztecs_standard_of_living_add = 1
+}
+
+american_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_american_standard_of_living_add = 1
+}
+american_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_american_standard_of_living_add = 1
+}
+
+vinlanders_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_vinlanders_standard_of_living_add = 1
+}
+vinlanders_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_vinlanders_standard_of_living_add = 1
+}
+
+inca_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_inca_standard_of_living_add = 1
+}
+inca_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_inca_standard_of_living_add = 1
+}
+
+tokhara_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_tokhara_standard_of_living_add = 1
+}
+tokhara_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_tokhara_standard_of_living_add = 1
+}
+
+seljuks_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_seljuks_standard_of_living_add = 1
+}
+seljuks_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_seljuks_standard_of_living_add = 1
+}
+
+parthians_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_parthians_standard_of_living_add = 1
+}
+parthians_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_parthians_standard_of_living_add = 1
+}
+
+age_dravidian_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_age_dravidian_standard_of_living_add = 1
+}
+age_dravidian_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_age_dravidian_standard_of_living_add = 1
+}
+
+qingyang_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_qingyang_standard_of_living_add = 1
+}
+qingyang_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_qingyang_standard_of_living_add = 1
+}
+
+ryukyuan_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_ryukyuan_standard_of_living_add = 1
+}
+ryukyuan_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_ryukyuan_standard_of_living_add = 1
+}
+
+african_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_african_standard_of_living_add = 1
+}
+african_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_african_standard_of_living_add = 1
+}
+
+han_song_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_african_standard_of_living_add = 1
+}
+han_song_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_han_song_standard_of_living_add = 1
+}

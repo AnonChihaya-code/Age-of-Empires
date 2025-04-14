@@ -1,0 +1,63 @@
+﻿# 0.015% of GDP, rounded to nearest 10
+Code002_money_amount_multiplier_very_small = {
+	value = root.gdp
+	divide = 10000
+	multiply = 0.075
+	round = yes
+	multiply = 10
+	min = 100	
+}
+
+# 0.025% of GDP, rounded to nearest 100
+Code002_money_amount_multiplier_small = {
+	value = root.gdp
+	divide = 100000
+	multiply = 0.15
+	round = yes
+	multiply = 100
+	min = 100
+}
+
+# 0.05% of GDP, rounded to nearest 100
+Code002_money_amount_multiplier_medium = {
+	value = root.gdp
+	divide = 100000
+	multiply = 0.25
+	round = yes
+	multiply = 100
+	min = 100
+}
+
+# 0.1% of GDP, rounded to nearest 1000
+Code002_money_amount_multiplier_large = {
+	value = root.gdp
+	divide = 1000000
+	multiply = 0.5
+	round = yes
+	multiply = 1000
+	min = 100
+}
+
+# 0.2% of GDP, rounded to nearest 1000
+Code002_money_amount_multiplier_more_large = {
+	value = root.gdp
+	divide = 1000000
+	multiply = 1
+	round = yes
+	multiply = 1000
+	min = 100
+}
+
+# 0.5% of GDP, rounded to nearest 1000
+Code002_money_amount_multiplier_very_large = {
+	value = root.gdp
+	divide = 1000000
+	multiply = 2.5
+	round = yes
+	multiply = 1000
+	min = 100
+}
+
+Code002_money_amount_multiplier_large_state = {
+	multiply = 0.001
+}

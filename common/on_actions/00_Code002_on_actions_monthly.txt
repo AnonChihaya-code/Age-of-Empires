@@ -1,0 +1,11 @@
+﻿#每月随机事件
+
+#MyGO!!!!!
+mygo_events = {
+	random_events = {
+		chance_of_no_event = 70
+		10 = mygo_events.5       #午休时间
+		10 = mygo_events.6       #放学闲谈
+		10 = mygo_events.7       #亚麻色头发的少女
+	}
+}

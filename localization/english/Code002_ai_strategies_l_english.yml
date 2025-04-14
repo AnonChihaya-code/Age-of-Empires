@@ -1,0 +1,8 @@
+﻿l_english:
+ #####AI战略本地#####
+ ai_strategy_contend_mandate_of_heaven: "Unify China"
+ ai_strategy_contend_mandate_of_heaven_desc: "[COUNTRY.GetName] sought to consolidate its authority by laying claim to the Mandate of Heaven."
+ ai_strategy_chinese_warlord_era: "Unify China"
+ ai_strategy_chinese_warlord_era_desc: "[COUNTRY.GetName] wants to unite the Chinese warlords under their banner."
+
+ 

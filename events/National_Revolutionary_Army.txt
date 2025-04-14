@@ -1,0 +1,781 @@
+﻿namespace = national_revolutionary_army_events
+### 国民革命
+national_revolutionary_army_events.99 = { #中国统一
+	type = country_event
+	placement = root
+	duration = 3
+	title = national_revolutionary_army_events.99.t
+	desc = national_revolutionary_army_events.99.d
+	flavor = national_revolutionary_army_events.99.f
+	event_image = {
+		video = "asia_farmers_market"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = {
+		Code002_incorporated_scripted_effects = yes
+	}
+	option = {
+		default_option = yes
+		name = national_revolutionary_army_events.99.a
+		add_loyalists = {
+			value = large_radicals
+		}
+		add_modifier = {
+			name = modifier_end_of_warlord_period
+			months = normal_modifier_time
+		}
+		add_journal_entry = {
+			type = je_three_principles_of_the_people
+		}
+		add_journal_entry = {
+			type = je_principles_of_nationalism
+		}
+		add_journal_entry = {
+			type = je_principles_of_democracy
+		}
+		add_journal_entry = {
+		    type = je_principles_of_people_livelihood
+		}
+		add_journal_entry = {
+		    type = je_unified_industrial_planning
+		}
+		add_journal_entry = {
+		    type = je_chinese_unification_idea
+		}
+	}
+}
+
+national_revolutionary_army_events.1 = { #国民党全国代表大会
+	type = country_event
+	placement = root
+	title = {
+		first_valid = {
+			triggered_desc = {
+				desc = national_revolutionary_army_events.1.ta
+				trigger = {
+					var:national_congress_of_the_kmt_var <= 100
+				}
+			}
+			triggered_desc = {
+				desc = national_revolutionary_army_events.1.tb
+				trigger = {
+					var:national_congress_of_the_kmt_var > 100
+				}
+			}
+		}
+	}
+	desc = national_revolutionary_army_events.1.d
+	flavor = national_revolutionary_army_events.1.f
+	event_image = {
+		video = "ep1_power_blocs"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	immediate = { }
+	option = {
+		name = national_revolutionary_army_events.1.a
+		custom_tooltip = national_revolutionary_army_events_a1_tt
+		ai_chance = {
+			base = 20
+		}
+		if = {
+			limit = {
+	            var:national_congress_of_the_kmt_var <= 101
+			}
+			change_variable = {
+				name = national_congress_of_the_kmt_var
+				add = 1
+			}
+		}
+		change_variable = {
+			name = je_national_congress_of_the_kmt_var
+			subtract = 12
+		}
+		add_modifier = {
+			name = je_national_congress_of_the_kmt_01_modifier years = 1
+		}
+		if = {
+			limit = {
+	            is_ai = yes
+			}
+		    set_strategy = ai_strategy_progressive_agenda               #促进自由派改革
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.1.a2
+		custom_tooltip = national_revolutionary_army_events_a2_tt
+		ai_chance = {
+			base = 25
+		}
+		if = {
+			limit = {
+	            var:national_congress_of_the_kmt_var <= 101
+			}
+			change_variable = {
+				name = national_congress_of_the_kmt_var
+				add = 1
+			}
+		}
+		change_variable = {
+			name = je_national_congress_of_the_kmt_var
+			subtract = 12
+		}
+		add_modifier = {
+			name = je_national_congress_of_the_kmt_02_modifier years = 1
+		}
+		if = {
+			limit = {
+	            is_ai = yes
+			}
+		    set_strategy = ai_strategy_egalitarian_agenda               #增进平等
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.1.a3
+		custom_tooltip = national_revolutionary_army_events_a3_tt
+		ai_chance = {
+			base = 40
+		}
+		if = {
+			limit = {
+	            var:national_congress_of_the_kmt_var <= 101
+			}
+			change_variable = {
+				name = national_congress_of_the_kmt_var
+				add = 1
+			}
+		}
+		change_variable = {
+			name = je_national_congress_of_the_kmt_var
+			subtract = 12
+		}
+		add_modifier = {
+			name = je_national_congress_of_the_kmt_03_modifier years = 1
+		}
+		if = {
+			limit = {
+	            is_ai = yes
+			}
+			random_list = {
+				1 = {
+					set_strategy = ai_strategy_resource_expansion       #扩大资源产业
+				}
+				1 = {
+		            set_strategy = ai_strategy_industrial_expansion     #工业化
+				}
+			}
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.1.a4
+		custom_tooltip = national_revolutionary_army_events_a4_tt
+		default_option = yes
+		ai_chance = {
+			base = 10
+		}
+		if = {
+			limit = {
+	            var:national_congress_of_the_kmt_var <= 101
+			}
+			change_variable = {
+				name = national_congress_of_the_kmt_var
+				add = 1
+			}
+		}
+		change_variable = {
+			name = je_national_congress_of_the_kmt_var
+			subtract = 12
+		}
+		add_modifier = {
+			name = je_national_congress_of_the_kmt_04_modifier years = 1
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.1.a5
+		custom_tooltip = national_revolutionary_army_events_a5_tt
+		ai_chance = {
+			base = 5
+		}
+		if = {
+			limit = {
+	            var:national_congress_of_the_kmt_var <= 101
+			}
+			change_variable = {
+				name = national_congress_of_the_kmt_var
+				add = 1
+			}
+		}
+		change_variable = {
+			name = je_national_congress_of_the_kmt_var
+			subtract = 12
+		}
+		add_modifier = {
+			name = je_national_congress_of_the_kmt_05_modifier years = 1
+		}
+	}
+}
+
+national_revolutionary_army_events.2 = { #军官学校选址确定
+	type = country_event
+	placement = root
+	title = national_revolutionary_army_events.2.t
+	desc = national_revolutionary_army_events.2.d
+	flavor = national_revolutionary_army_events.2.f
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		set_variable = whampoa_military_academy_construction_complete
+	}
+	option = {
+		name = national_revolutionary_army_events.2.a
+        default_option = yes
+        add_journal_entry = {
+        	type = je_whampoa_military_academy_construction
+        }
+		custom_tooltip = national_revolutionary_army_events_2_tt
+	}
+}
+
+national_revolutionary_army_events.3 = { #开学典礼
+	type = country_event
+    placement = root
+	title = national_revolutionary_army_events.3.t
+	desc = national_revolutionary_army_events.3.d
+	flavor = national_revolutionary_army_events.3.f
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		ruler = {
+			save_scope_as = chi_hp_junxiao_kaixue
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.3.a
+        default_option = yes
+		activate_law = law_type:law_national_revolutionary_army #国民革命军
+		add_modifier = {
+			name = national_revolutionary_army_events_3_modifier years = 10
+		}
+		hidden_effect = {
+		    trigger_event = { id = national_revolutionary_army_events.8 popup = yes }
+		}
+	}
+}
+
+national_revolutionary_army_events.4 = { #改善关系
+	type = country_event
+	placement = root
+	title = national_revolutionary_army_events.4.t
+	desc = national_revolutionary_army_events.4.d
+	flavor = national_revolutionary_army_events.4.f
+	event_image = {
+		video = "ep1_power_blocs"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		if = {
+			limit = {
+				c:CNGX ?= this
+			}
+			c:CNNR ?= {
+				save_scope_as = cnnr_scope
+			}
+			ROOT = {
+				save_scope_as = cngx_scope
+			}
+		}
+		if = {
+			limit = {
+				c:CNYN ?= this
+			}
+			c:CNNR ?= {
+				save_scope_as = cnnr_scope
+			}
+			ROOT = {
+				save_scope_as = cnyn_scope
+			}
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.4.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+		}
+		if = {
+			limit = {
+				c:CNGX ?= this
+			}
+			add_modifier = {
+				name = je_crush_the_warlords_0102_button_modifier
+				years = 1
+			}
+			hidden_effect = {
+				c:CNNR ?= {
+					add_modifier = {
+						name = je_crush_the_warlords_0101_button_modifier
+						years = 1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				c:CNYN ?= this
+			}
+			add_modifier = {
+				name = je_crush_the_warlords_0202_button_modifier
+				years = 1
+			}
+			hidden_effect = {
+				c:CNNR ?= {
+					add_modifier = {
+						name = je_crush_the_warlords_0201_button_modifier
+						years = 1
+					}
+				}
+			}
+		}
+		change_relations = {
+			country = c:CNNR
+			value = 20
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					is_political_movement_type = movement_sanminzhuyier
+					NOT = { has_modifier = movement_sanminzhuyier_modifier }					
+				}
+			}
+			every_political_movement = {
+				limit = {
+					is_political_movement_type = movement_sanminzhuyier
+					NOT = { has_modifier = movement_sanminzhuyier_modifier }
+				}
+				add_modifier = {
+					name = movement_sanminzhuyier_modifier
+					years = 5
+				}
+			}
+		}
+		if = {
+			limit = {  
+				NOT = {
+					any_political_lobby = { 
+						target = c:CNNR
+						is_political_lobby_type = lobby_pro_country
+					}						
+				}
+			}		
+			create_political_lobby = {  
+				type = lobby_pro_country  
+				target = c:CNNR
+				add_interest_group = ig:ig_industrialists
+				add_interest_group = ig:ig_intelligentsia
+				add_interest_group = ig:ig_petty_bourgeoisie
+			}				
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.4.b
+		ai_chance = {
+			base = 25
+		}
+		if = {
+			limit = {
+				c:CNGX ?= this
+			}
+			c:CNNR ?= {
+				set_variable = { name = cngx_crush_the_warlords_01_button_var years = 1 }
+			}
+		}
+		if = {
+			limit = {
+				c:CNYN ?= this
+			}
+			c:CNNR ?= {
+				set_variable = { name = cnyn_crush_the_warlords_02_button_var years = 1 }
+			}
+		}
+		change_relations = {
+			country = c:CNNR
+			value = -10
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					is_political_movement_type = movement_sanminzhuyier
+					NOT = { has_modifier = movement_sanminzhuyier_modifier }					
+				}
+			}
+			every_political_movement = {
+				limit = {
+					is_political_movement_type = movement_sanminzhuyier
+					NOT = { has_modifier = movement_sanminzhuyier_modifier }
+				}
+				add_modifier = {
+					name = movement_sanminzhuyier_modifier
+					multiplier = 0.5
+					years = 5
+				}
+			}
+		}
+		if = {
+			limit = {  
+				NOT = {
+					any_political_lobby = { 
+						target = c:CNNR
+						is_political_lobby_type = lobby_pro_country
+					}						
+				}
+			}		
+			create_political_lobby = {  
+				type = lobby_pro_country  
+				target = c:CNNR
+				add_interest_group = ig:ig_industrialists
+				add_interest_group = ig:ig_intelligentsia
+				add_interest_group = ig:ig_petty_bourgeoisie
+			}				
+		}
+	}
+}
+
+national_revolutionary_army_events.5 = { #我们的革命事业
+	type = country_event
+	placement = root
+	title = national_revolutionary_army_events.5.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = national_revolutionary_army_events.5.da
+				trigger = {
+					has_variable = je_crush_the_warlords_03_button_var
+				}
+			}
+			triggered_desc = {
+				desc = national_revolutionary_army_events.5.db
+				trigger = {
+					has_variable = je_crush_the_warlords_04_button_var
+				}
+			}
+		}
+	}
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = national_revolutionary_army_events.5.fa
+				trigger = {
+					has_variable = je_crush_the_warlords_03_button_var
+				}
+			}
+			triggered_desc = {
+				desc = national_revolutionary_army_events.5.fb
+				trigger = {
+					has_variable = je_crush_the_warlords_04_button_var
+				}
+			}
+		}
+	}
+	event_image = {
+		video = "ep1_power_blocs"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		if = {
+			limit = {
+				c:CNNR ?= this
+				has_variable = je_crush_the_warlords_03_button_var
+			}
+			c:CNGX ?= {
+				save_scope_as = cngx_scope
+			}
+			random_character = {
+				limit = {
+					c:CNGX ?= owner
+					has_template = CNGX_Li_Zongren
+				}
+				remove_character_role = politician
+				set_ideology = ideology:ideology_sanminzhuyier
+				transfer_character = c:CNNR
+			}
+			random_character = {
+				limit = {
+					c:CNGX ?= owner
+					has_template = CNGX_Bai_Chongxi
+				}
+				remove_character_role = politician
+				set_ideology = ideology:ideology_sanminzhuyier
+				transfer_character = c:CNNR
+			}
+			random_character = {
+				limit = {
+					c:CNGX ?= owner
+					has_template = CNGX_Ma_Junwu
+				}
+				remove_character_role = politician
+				set_ideology = ideology:ideology_sanminzhuyier
+				transfer_character = c:CNNR
+			}
+		}
+		if = {
+			limit = {
+				c:CNNR ?= this
+				has_variable = je_crush_the_warlords_04_button_var
+			}
+			c:CNYN ?= {
+				save_scope_as = cnyn_scope
+			}
+			random_character = {
+				limit = {
+					c:CNYN ?= owner
+					has_template = CNYN_Long_Yun
+				}
+				remove_character_role = politician
+				set_ideology = ideology:ideology_sanminzhuyier
+				transfer_character = c:CNNR
+			}
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.5.a
+		default_option = yes
+		trigger = {
+			has_variable = je_crush_the_warlords_03_button_var
+		}
+		custom_tooltip = {
+			text = national_revolutionary_army_events_5_cngx_tt
+		    annex = c:CNGX
+			remove_variable = je_crush_the_warlords_03_button_var
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					any_scope_character = {
+						has_template = CNGX_Li_Zongren
+					}
+				}
+				create_character = {
+			        template = CNGX_Li_Zongren
+					on_created = {
+					    set_ideology = ideology:ideology_sanminzhuyier
+					}
+		        }
+			}
+			if = {
+				limit = {
+					any_scope_character = {
+						has_template = CNGX_Bai_Chongxi
+					}
+				}
+				create_character = {
+			        template = CNGX_Bai_Chongxi
+					on_created = {
+					    set_ideology = ideology:ideology_sanminzhuyier
+					}
+		        }
+			}
+			if = {
+				limit = {
+					any_scope_character = {
+						has_template = CNGX_Ma_Junwu
+					}
+				}
+			    create_character = {
+					template = CNGX_Ma_Junwu
+					on_created = {
+					    set_ideology = ideology:ideology_sanminzhuyier
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.5.b
+		default_option = yes
+		trigger = {
+			has_variable = je_crush_the_warlords_04_button_var
+		}
+		custom_tooltip = {
+			text = national_revolutionary_army_events_5_cnyn_tt
+		    annex = c:CNYN
+			remove_variable = je_crush_the_warlords_04_button_var
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					any_scope_character = {
+						has_template = CNYN_Long_Yun
+					}
+				}
+				create_character = {
+			        template = CNYN_Long_Yun
+					on_created = {
+					    set_ideology = ideology:ideology_sanminzhuyier
+					}
+		        }
+			}
+		}
+	}
+}
+
+national_revolutionary_army_events.6 = { #荡平新桂系
+	type = country_event
+	placement = root
+	title = national_revolutionary_army_events.6.t
+	desc = national_revolutionary_army_events.6.d
+	flavor = national_revolutionary_army_events.6.f
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	trigger = { }
+	immediate = { }
+	option = {
+		name = national_revolutionary_army_events.6.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:CNGX
+			type = dp_annex_war
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.6.b
+		trigger = {
+			is_player = yes
+		}
+	}
+}
+
+national_revolutionary_army_events.7 = { #荡平滇系
+	type = country_event
+	placement = root
+	title = national_revolutionary_army_events.7.t
+	desc = national_revolutionary_army_events.7.d
+	flavor = national_revolutionary_army_events.7.f
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	trigger = { }
+	immediate = { }
+	option = {
+		name = national_revolutionary_army_events.7.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:CNYN
+			type = dp_annex_war
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.7.b
+		trigger = {
+			is_player = yes
+		}
+	}
+}
+
+national_revolutionary_army_events.8 = { #重组军队为国民革命军
+	type = country_event
+	placement = root
+	duration = 3
+	title = national_revolutionary_army_events.8.t
+	desc = national_revolutionary_army_events.8.d
+	flavor = national_revolutionary_army_events.8.f
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	immediate = {
+		unification_china_claims_scriptrd_effects = yes
+		ig:ig_armed_forces = {
+			save_scope_as = national_revolutionary_army_ig
+			leader = {
+				save_scope_as = national_revolutionary_army_ig_general
+			}
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.8.a
+		default_option = yes
+		ig:ig_armed_forces = {
+			custom_tooltip = national_revolutionary_army_8_tt
+			hidden_effect = {
+				set_interest_group_name = ig_national_revolutionary_army
+			}
+		}
+	}
+}
+
+national_revolutionary_army_events.9 = { #三民主义照耀中国
+	type = country_event
+	placement = root
+	duration = 3
+	title = national_revolutionary_army_events.9.t
+	desc = national_revolutionary_army_events.9.d
+	flavor = national_revolutionary_army_events.9.f
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	immediate = { }
+	option = {
+		name = national_revolutionary_army_events.9.a
+		default_option = yes
+		add_modifier = je_three_principles_of_the_people_modifier
+	}
+}
+
+national_revolutionary_army_events.10 = { #中华民族
+	type = country_event
+	placement = root
+	duration = 3
+	title = national_revolutionary_army_events.10.t
+	desc = national_revolutionary_army_events.10.d
+	flavor = national_revolutionary_army_events.10.f
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	immediate = {
+		Code002_Chinese_culture_scripted_effects = yes
+		cu:chinese_culture = {
+			save_scope_as = new_national_culture
+		}
+	}
+	option = {
+		name = national_revolutionary_army_events.10.a
+		default_option = yes
+		show_as_tooltip = {
+			add_primary_culture = cu:chinese_culture
+		}
+		add_loyalists = { value = 0.25 }
+	}
+}

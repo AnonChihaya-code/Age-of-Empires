@@ -1,0 +1,125 @@
+﻿#####################
+#####注册议会政体#####
+#####################
+Gov_Avant_Garde_French = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_LORD_HUGUOZHU"
+	female_ruler = "RULER_TITLE_LADY_HUGUOZHU"
+	
+	possible = {
+		has_law = law_type:law_parliamentary_republic
+		exists = c:VFRA
+		c:VFRA = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+GOV_MYGO = { #MYGO
+	transfer_of_power = parliamentary_elective
+	new_leader_on_reform_government = yes
+
+	male_ruler = "RULER_TITLE_LORD_HUGUOZHU"
+	female_ruler = "RULER_TITLE_LADY_HUGUOZHU"
+	
+	possible = {
+		exists = c:MYGO
+		c:MYGO = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_parliamentary_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_parliamentary_elective = yes
+	}
+}
+
+GOV_VLAN = { #文兰
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_LORD_HUGUOZHU"
+	female_ruler = "RULER_TITLE_LADY_HUGUOZHU"
+	
+	possible = {
+		exists = c:VLAN
+		c:VLAN = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+GOV_ENG = { #英格兰
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_LORD_PROTECTOR"
+	female_ruler = "RULER_TITLE_LADY_PROTECTOR"
+	
+	possible = {
+		has_law = law_type:law_parliamentary_republic
+		exists = c:ENG
+		c:ENG = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_CIRC = { #切尔克西亚 Circassia
+	transfer_of_power = hereditary
+	male_ruler = "RULER_TITLE_THAMADE"
+	female_ruler = "RULER_TITLE_THAMADE" 
+	male_heir = "RULER_TITLE_HEIR_APPARENT"
+	female_heir = "RULER_TITLE_HEIR_APPARENT"
+	possible = {
+		is_country_type = unrecognized
+		has_law = law_type:law_parliamentary_republic
+		country_has_voting_franchise = no
+		exists = c:CIRC
+		c:CIRC = ROOT
+	}
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_NOVG = { #卫彻共和国
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_POSADNIK"
+	female_ruler = "RULER_TITLE_POSADNITSA"
+
+	possible = {
+		OR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_council_republic
+		}
+		exists = c:NOVG
+		c:NOVG = ROOT
+	}
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}

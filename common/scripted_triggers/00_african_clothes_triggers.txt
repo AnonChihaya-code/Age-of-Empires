@@ -1,0 +1,19 @@
+﻿##### 非洲 #####
+
+Code002_african_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		culture = {
+			has_discrimination_trait = african_culture_group
+		}
+	}     
+}
+
+Code002_african_clothes_pop_trigger = {
+	exists = scope:pop
+	scope:pop = {
+		culture = {
+			has_discrimination_trait = african_culture_group
+		}   
+	}
+}

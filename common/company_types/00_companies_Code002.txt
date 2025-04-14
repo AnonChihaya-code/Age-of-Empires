@@ -1,0 +1,50 @@
+﻿#################
+#####注册公司#####
+#################
+
+company_chihaya_anon_tokyo = { #ANON TOKYO
+    icon = "gfx/interface/icons/company_icons/ANON_TOKYO.png"
+	#icon = "gfx/interface/icons/company_icons/ANON_TOKYO.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	flavored_company = yes
+	building_types = {  
+		building_textile_mills     #纺织
+		building_silk_plantation   #丝绸
+		building_cotton_plantation #棉花
+		building_dye_plantation    #染料
+	}
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	attainable = {
+		hidden_trigger = {
+			any_scope_state = {
+				state_region = s:STATE_KANTO
+			}
+		}
+	}			
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_KANTO
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 3
+			}
+		}
+	}
+	prosperity_modifier = {
+		country_max_companies_add = 5                             #公司
+		interest_group_ig_devout_pol_str_mult = 0.25              #神棍政治力量
+		interest_group_ig_devout_approval_add = 5                 #神棍支持度
+		building_silk_plantation_throughput_add = 0.1             #丝绸吞吐
+        building_dye_plantation_throughput_add = 0.1              #染料吞吐
+		building_cotton_plantation_throughput_add = 0.1           #棉花吞吐
+		building_textile_mills_throughput_add = 0.1               #纺织吞吐
+		state_capitalists_investment_pool_efficiency_mult = 0.50  #资本家投资
+	    state_shopkeepers_investment_pool_efficiency_mult = 0.50  #店主投资
+	}	 
+	ai_weight = {
+		value = 3
+	}
+}

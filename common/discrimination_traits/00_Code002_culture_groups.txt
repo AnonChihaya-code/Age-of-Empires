@@ -1,0 +1,6 @@
+﻿####################
+##### 注册传承 #####
+####################
+two_dimensional_culture_group = {}
+
+african_culture_group = {}

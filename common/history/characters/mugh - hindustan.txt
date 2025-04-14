@@ -1,0 +1,75 @@
+﻿CHARACTERS = {
+	c:MUGH ?= {
+		create_character = {
+			first_name = "Akbar"
+   		    last_name = "Gurkani"
+   		    historical = yes
+    		culture = cu:hindustani
+    		religion = rel:sunni
+    		dna = dna_akbar_shah_ii
+    		ruler = yes
+    		noble = yes
+    		age = 38
+    		interest_group = ig_landowners
+    		ideology = ideology_moderate
+    		traits = {
+        		reserved
+        		honorable
+    		}
+		}
+		create_character = {
+			first_name = "Bahadur"
+    		last_name = "Gurkani"
+    		historical = yes
+    		dna = dna_bahadur_shah_zafar
+    		culture = cu:hindustani
+    		religion = rel:sunni
+    		heir = yes
+   		    noble = yes
+    		age = 18
+    		interest_group = ig_landowners
+    		ideology = ideology_moderate
+   		    traits = {
+        		pious 
+        		romantic 
+        		literary
+        		expensive_tastes
+    		}
+		}
+		create_character = {
+			first_name = "Sohan"
+		    last_name = "Lal"
+		    historical = yes
+		    ig_leader = yes
+		    noble = yes
+		    age = 56
+		    culture = cu:hindustani
+ 		    religion = rel:sunni
+		    interest_group = ig_landowners
+ 		    ideology = ideology_moderate
+ 		    traits = {
+		        arrogant
+				persistent
+		        master_bureaucrat
+		    }
+		}
+		create_character = {
+			first_name = "Hamid_Ali"
+		    last_name = "Khan"
+		    historical = yes
+		    ig_leader = yes
+		    noble = yes
+		    age = 47
+		    culture = cu:hindustani
+		    religion = rel:sunni
+		    interest_group = ig_petty_bourgeoisie
+		    ideology = ideology_moderate
+		    traits = {
+		        cautious
+		        tactful
+ 		        expensive_tastes
+ 		        basic_political_operator
+            }
+		}
+	}
+}

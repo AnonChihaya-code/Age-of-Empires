@@ -1,0 +1,700 @@
+﻿je_heaven_on_earth = { #建设人间天堂
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	complete = {
+		taking_loans = no
+		approaching_bureaucracy_shortage = no
+		literacy_rate >= 0.6
+		root.average_sol >= 20
+		radical_fraction = {
+			value <= 0.1
+		}
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value = 5
+		}
+		OR = {
+			has_law = law_type:law_charitable_health_system
+			has_law = law_type:law_public_health_insurance
+		}
+		institution_investment_level = {
+			institution = institution_health_system
+			value = 5
+		}
+		has_law = law_type:law_old_age_pension
+		institution_investment_level = {
+			institution = institution_social_security
+			value = 5
+		}
+		has_law = law_type:law_worker_protections
+		institution_investment_level = {
+			institution = institution_workplace_safety
+			value = 5
+		}
+	}
+	on_complete = {
+		trigger_event = { id = Code002_TPG_events.9 }
+	}
+	fail = {
+		NOR = {
+			has_law = law_type:law_theocracy          #神权
+			has_law = law_type:law_corporate_state    #法团
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_taiping_land_socializationicon = { #颁布天朝田亩制度
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+	complete = {
+		has_law = law_type:law_homesteading
+	}
+	on_complete = {
+		add_journal_entry = {
+			type = je_taiping_land_policy
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_taiping_divided 
+			}
+			custom_tooltip = {
+				text = je_taiping_land_socializationicon_tt
+				je:je_taiping_divided = {
+					add_progress = { value = 50 name = je_taiping_divided_progress_bar }
+				}
+			}
+		}
+	}
+	fail = {
+		NOT = { has_law = law_type:law_theocracy }
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_taiping_land_policy = { #天朝田亩制度
+	icon = "gfx/interface/icons/law_icons/collectivized_agriculture.dds" #集体化农业
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_taiping_land_policy_modifier
+	}
+	fail = {
+		NOT = { has_law = law_type:law_homesteading }
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_taiping_divided = { #分裂的天国
+	icon = "gfx/interface/icons/law_icons/theocracy.dds" #神权制法律
+	group = je_group_historical_content
+	scripted_progress_bar = je_taiping_divided_progress_bar
+	modifiers_while_active = {
+		je_taiping_divided_modifier
+	}
+    immediate = {
+		set_variable = {
+		    name = je_taiping_divided_var
+			value = 0
+		}
+    } 
+    complete = {
+		custom_tooltip = {
+			text = je_taiping_divided_tt
+			scope:journal_entry = {
+				"scripted_bar_progress(je_taiping_divided_progress_bar)" >= TPG_Divided_stability_high_upper_bound
+			}
+		}
+	}
+	on_complete = {
+        trigger_event = { id = Code002_TPG_events.1 }
+    }
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					scope:journal_entry = {
+				       "scripted_bar_progress(je_taiping_divided_progress_bar)" <= TPG_Divided_stability_medium_lower_bound
+			        }
+				}
+				change_variable = {
+					name = je_taiping_divided_var
+					add = 1
+				}
+			}
+		}
+	}
+	on_yearly_pulse = {
+		effect = {
+		}
+		random_events = {
+			25 = Code002_TPG_events.5
+			25 = Code002_TPG_events.6
+			25 = Code002_TPG_events.7
+			25 = Code002_TPG_events.8
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = je_taiping_divided_var_tt
+			var:je_taiping_divided_var >= 12
+		}		
+	}
+	on_fail = {
+        trigger_event = { id = Code002_TPG_events.2 }
+    }
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_new_administrative_paper = { #资政新篇
+	icon = "gfx/interface/icons/law_icons/interventionism.dds" #经济干预
+	group = je_group_historical_content
+	modifiers_while_active = {
+		Je_New_Administrative_Paper_1_modifier
+	}
+    immediate = {
+		set_variable = {
+			name = je_new_administrative_paper_var
+			value = 0
+		}
+	}
+	current_value = {
+        value = var:je_new_administrative_paper_var
+    }
+    goal_add_value = {
+		add = 4
+	}
+    complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+        trigger_event = { id = Code002_TPG_events.4 }
+    }
+	fail = { }
+	progressbar = yes
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_new_administrative_paper_01 = { #资政新篇#政治改革
+	icon = "gfx/interface/icons/law_icons/autocracy.dds" #独裁制
+	group = je_group_historical_content
+#   immediate = {
+#		set_variable = {
+#		    name = je_new_administrative_paper_01_var
+#			value = 0
+#		}
+#	}
+#	on_monthly_pulse = {
+#		effect = {
+#			if = {
+#				limit = {
+#					has_law = law_type:law_theocracy              #神权制
+#					OR = {
+#						has_law = law_type:law_autocracy          #独裁制
+#						has_law = law_type:law_oligarchy          #寡头制
+#					}
+#					has_law = law_type:law_state_religion         #国教
+#					has_law = law_type:law_appointed_bureaucrats  #任命官僚制
+#				}
+#				change_variable = {
+#					name = je_new_administrative_paper_01_var
+#					add = 1
+#				}
+#			}
+#		}
+#	}
+    complete = {
+		has_technology_researched = central_archives
+		bureaucracy >= 0 
+		approaching_bureaucracy_shortage = no
+#		custom_tooltip = {
+#			text = je_new_administrative_paper_01_tt
+#			var:je_taiping_divided_var >= 60
+#		}
+        has_law = law_type:law_theocracy              #神权制
+		OR = {
+			has_law = law_type:law_autocracy          #独裁制
+			has_law = law_type:law_oligarchy          #寡头制
+		}
+		has_law = law_type:law_state_religion         #国教
+        has_law = law_type:law_appointed_bureaucrats  #任命官僚制
+	}
+	on_complete = {
+		add_modifier =  { name = Je_New_Administrative_Paper_01_modifier  years = 19 }
+		change_variable = {
+			name = je_new_administrative_paper_var
+			add = 1
+		}
+    }
+	invalid = {
+		NOT = {
+			has_journal_entry = je_new_administrative_paper
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_new_administrative_paper_02 = { #资政新篇#经济改革
+	icon = "gfx/interface/icons/law_icons/laissez_faire.dds" #自由放任
+	group = je_group_historical_content
+	modifiers_while_active = {
+		Je_New_Administrative_Paper_0201_modifier
+	}
+    immediate = {}
+    complete = {
+		OR = {
+            has_law = law_type:law_laissez_faire         #自由放任
+            has_law = law_type:law_interventionism       #经济干预
+        }
+		has_law = law_type:law_free_trade                #自由贸易
+		OR = {
+			has_law = law_type:law_proportional_taxation #比例税制
+            has_law = law_type:law_graduated_taxation    #累进税制
+		}
+		has_technology_researched = central_banking
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+			percent >= 0.7
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			has_building = building_railway
+			percent >= 0.7
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+				is_coastal = yes
+			}
+			has_building = building_port
+			percent >= 0.7
+		}
+		any_scope_building = {
+			is_building_type = building_iron_mine
+			level >= 25
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+		}
+		any_scope_building = {
+			is_building_type = building_coal_mine
+			level >= 25
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+		}
+		any_scope_building = {
+			is_building_type = building_lead_mine
+			level >= 5
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+		}
+		any_scope_building = {
+			is_building_type = building_sulfur_mine
+		    level >= 5
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+		}
+		gdp >= 100000000
+	}
+	on_complete = {
+		add_modifier =  { name = Je_New_Administrative_Paper_0202_modifier years = 19 }
+		change_variable = {
+			name = je_new_administrative_paper_var
+			add = 1
+		}
+    }
+
+	invalid = {
+		NOT = {
+			has_journal_entry = je_new_administrative_paper
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_new_administrative_paper_03 = { #资政新篇#社会改革
+	icon = "gfx/interface/icons/law_icons/religious_schools.dds" #教会学校
+	group = je_group_historical_content
+    immediate = {}
+    complete = {
+		literacy_rate >= 0.3
+		root.average_sol >= 12
+		radical_fraction = {
+			value <= 0.15
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		institution_investment_level = {
+			institution = institution_health_system
+			value >= 2
+		}
+		has_law = law_type:law_compulsory_primary_school    #义务小学
+		NOT = { has_law = law_type:law_no_womens_rights }   #法定监护
+		NOT = { has_law = law_type:law_no_social_security } #无社会保障"
+		NOT = { has_law = law_type:law_no_police }          #无警察部队
+		has_law = law_type:law_slavery_banned               #禁止蓄奴
+		any_scope_building = {
+			is_building_type = building_university
+			level >= 15
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+		}
+		any_scope_building = {
+			is_building_type = building_arts_academy
+			level >= 5
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			has_building = building_university
+			percent >= 0.7
+		}
+	}
+	on_complete = {
+		add_modifier =  { name = Je_New_Administrative_Paper_03_modifier  years = 19 }
+		change_variable = {
+			name = je_new_administrative_paper_var
+			add = 1
+		}
+    }
+
+	invalid = {
+		NOT = {
+			has_journal_entry = je_new_administrative_paper
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_new_administrative_paper_04 = { #资政新篇#军事改革
+	icon = "gfx/interface/icons/law_icons/professional_army.dds" #职业军队
+	group = je_group_historical_content
+    immediate = {}
+    complete = {
+		army_size >= 150
+		navy_size >= 50
+		OR = {
+			has_law = law_type:law_professional_army
+            has_law = law_type:law_mass_conscription
+		}
+        OR = {
+            country_army_unit_type_fraction = {  
+                target = unit_type:combat_unit_type_skirmish_infantry  #散兵
+                value >= 0.5  
+            }
+            trigger_if = {
+                limit = {
+                    has_technology_researched = trench_works #战壕工事
+                }
+                country_army_unit_type_fraction = {  
+                    target = unit_type:combat_unit_type_trench_infantry  
+                    value >= 0.5  
+                }
+            }
+            trigger_if = {
+                limit = {
+                    has_technology_researched = nco_training #士官训练
+                }
+                country_army_unit_type_fraction = {  
+                    target = unit_type:combat_unit_type_squad_infantry  
+                    value >= 0.5  
+                }
+            }
+            trigger_if = {
+                limit = {
+                    has_technology_researched = mobile_armor #机动装甲
+                }
+                country_army_unit_type_fraction = {  
+                    target = unit_type:combat_unit_type_mechanized_infantry  
+                    value >= 0.5  
+                }
+            }
+        }
+        any_scope_building = {
+			filter = {
+				is_building_type = building_barracks
+			}			
+			NOR = {
+				building_has_goods_shortage = yes
+				has_active_production_method = pm_no_organization
+			}
+			percent >= 0.85
+		}
+		OR = {
+            country_navy_unit_type_fraction = {
+                target = unit_type:combat_unit_type_ironclad #铁甲舰
+                value >= 0.35
+            }
+            trigger_if = {
+                limit = {
+                    has_technology_researched = dreadnought #无畏舰
+                }
+                country_navy_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_dreadnought #无畏舰
+                    value >= 0.35 
+                }
+            }
+            trigger_if = {
+                limit = {
+                    has_technology_researched = battleship_tech #战列舰
+                }
+                country_navy_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_battleship #战列舰
+                    value >= 0.35  
+                }
+            }
+        }
+		any_scope_building = {
+			filter = {
+				is_building_type = building_naval_base
+			}			
+			NOR = {
+				building_has_goods_shortage = yes
+				has_active_production_method = pm_no_naval_theory
+			}
+			percent >= 0.85
+		}
+		any_scope_building = {
+            is_building_type = building_arms_industry       #武器厂
+            level >= 5
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+        }
+        any_scope_building = {
+            is_building_type = building_munition_plants     #弹药
+            level >= 5
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+        }
+		any_scope_building = {
+            is_building_type = building_artillery_foundries #火炮铸造厂
+            level >= 5
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+        }
+	}
+	on_complete = {
+		add_modifier =  { name = Je_New_Administrative_Paper_04_modifier years = 19 }
+		change_variable = {
+			name = je_new_administrative_paper_var
+			add = 1
+		}
+    }
+	invalid = {
+		NOT = {
+			has_journal_entry = je_new_administrative_paper
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+
+je_western_expedition = { #西征
+	icon = "gfx/interface/icons/event_icons/event_military.dds" #号角
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_HUNAN
+		owns_entire_state_region = STATE_CHONGQING
+		owns_entire_state_region = STATE_SICHUAN
+		owns_entire_state_region = STATE_GUIZHOU
+		owns_entire_state_region = STATE_WESTERN_HUBEI		
+	}
+	on_complete = {
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		set_variable = je_western_expedition_var
+		custom_tooltip = {
+			text = je_western_expedition_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_HUNAN
+						state_region = s:STATE_CHONGQING
+						state_region = s:STATE_SICHUAN
+						state_region = s:STATE_GUIZHOU
+						state_region = s:STATE_WESTERN_HUBEI
+					}
+				}
+				set_state_type = incorporated
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_taiping_divided 
+			}
+			custom_tooltip = {
+				text = je_western_expedition_02_tt
+				je:je_taiping_divided = {
+					add_progress = { value = 50 name = je_taiping_divided_progress_bar }
+				}
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_northern_expedition = { #北伐
+	icon = "gfx/interface/icons/event_icons/event_military.dds" #号角
+	group = je_group_historical_content
+	complete = {	
+		owns_entire_state_region = STATE_SHANDONG
+		owns_entire_state_region = STATE_SHANXI
+		owns_entire_state_region = STATE_ZHILI
+		owns_entire_state_region = STATE_HENAN
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_SHENGJING
+		owns_entire_state_region = STATE_NORTHERN_ANHUI	 
+	}
+	
+	on_complete = {
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		set_variable = je_northern_expedition_var
+		custom_tooltip = {
+			text = je_northern_expedition_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_SHANDONG
+						state_region = s:STATE_SHANXI
+						state_region = s:STATE_ZHILI
+						state_region = s:STATE_HENAN
+						state_region = s:STATE_BEIJING
+						state_region = s:STATE_SHENGJING
+						state_region = s:STATE_NORTHERN_ANHUI
+					}
+				}
+				set_state_type = incorporated
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_taiping_divided 
+			}
+			custom_tooltip = {
+				text = je_northern_expedition_02_tt
+				je:je_taiping_divided = {
+					add_progress = { value = 50 name = je_taiping_divided_progress_bar }
+				}
+			}
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_unify_china = { #统一中国
+	icon = "gfx/interface/icons/event_icons/event_military.dds" #号角
+	group = je_group_historical_content
+	is_shown_when_inactive = {
+		c:TPTG ?= this
+		has_variable = je_western_expedition_var
+		has_variable = je_northern_expedition_var
+	}
+	modifiers_while_active = {
+		je_unify_china_modifier
+	}
+	complete = {
+		any_state = {
+			filter = {
+				OR = {
+					region = sr:region_north_china
+					region = sr:region_south_china
+					state_region = s:STATE_SAKHALIN
+					state_region = s:STATE_AMUR
+					state_region = s:STATE_NORTHERN_MANCHURIA
+					state_region = s:STATE_OUTER_MANCHURIA
+					state_region = s:STATE_SOUTHERN_MANCHURIA
+					state_region = s:STATE_SHENGJING
+					state_region = s:STATE_ALTAI
+					state_region = s:STATE_TUVA
+					state_region = s:STATE_DZUNGARIA
+					state_region = s:STATE_TIANSHAN
+					state_region = s:STATE_JETISY
+					state_region = s:STATE_QINGHAI
+					state_region = s:STATE_LHASA
+					state_region = s:STATE_NGARI
+					state_region = s:STATE_EASTERN_HIMALAYAS
+				}
+			}
+			owner = ROOT
+			percent >= 1
+		}
+	}
+	on_complete = {
+		add_loyalists = { #效忠派
+			value = 0.25
+		}
+		custom_tooltip = {
+			text = je_unify_china_tt
+			every_state = {
+				limit = {
+					OR = {
+						region = sr:region_north_china
+						region = sr:region_south_china
+						state_region = s:STATE_SAKHALIN
+						state_region = s:STATE_AMUR
+						state_region = s:STATE_NORTHERN_MANCHURIA
+						state_region = s:STATE_OUTER_MANCHURIA
+						state_region = s:STATE_SOUTHERN_MANCHURIA
+						state_region = s:STATE_SHENGJING
+						state_region = s:STATE_ALTAI
+						state_region = s:STATE_TUVA
+						state_region = s:STATE_DZUNGARIA
+						state_region = s:STATE_TIANSHAN
+						state_region = s:STATE_JETISY
+						state_region = s:STATE_QINGHAI
+						state_region = s:STATE_LHASA
+						state_region = s:STATE_NGARI
+						state_region = s:STATE_EASTERN_HIMALAYAS
+					}
+				}
+				set_state_type = incorporated
+				convert_population = {
+					target = root.religion
+					value = 0.50
+				}
+			}
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}

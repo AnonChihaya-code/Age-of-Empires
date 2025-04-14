@@ -1,0 +1,630 @@
+﻿POPS = {
+s:STATE_IVORY_COAST = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 448000
+		}
+	}
+}
+s:STATE_WINDWARD_COAST = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 464000
+		}
+	}
+}
+s:STATE_SENEGAL = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 444000
+		}
+	}
+}
+s:STATE_GAMBIA = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 1350000
+		}
+	}
+}
+s:STATE_SIERRA_LEONE = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 899000
+		}
+	}
+}
+s:STATE_VOLTA = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 1530000
+		}
+	}
+}
+s:STATE_LIBERIA = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 880000
+		}
+	}
+}
+s:STATE_HAUSALAND = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 1500000
+		}
+	}
+}
+s:STATE_BENIN = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 1670000
+		}
+	}
+}
+s:STATE_YORUBA_STATES = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 1570000
+		}
+	}
+}
+s:STATE_NIGER_DELTA = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 2340000
+		}
+	}
+}
+s:STATE_OUTER_HAUSALAND = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 698000
+		}
+	}
+}
+s:STATE_BORNU = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 635000
+		}
+	}
+}
+s:STATE_NIGERIA = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 576000
+		}
+	}
+}
+s:STATE_EAST_HAUSALAND = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 2400000
+		}
+	}
+}
+s:STATE_GUINEA = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 976000
+		}
+	}
+}
+s:STATE_GHANA = {
+	region_state:SHAI = {
+		create_pop = {
+			culture = songhai
+			size = 686000
+		}
+	}
+}
+s:STATE_TOGO = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 1260000
+		}
+	}
+}
+s:STATE_DAHOMEY = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 609000
+		}
+	}
+}
+s:STATE_LINDI = {
+	region_state:TNZ = {
+		create_pop = {
+			culture = african
+			size = 567000
+		}
+	}
+}
+s:STATE_ZANZIBAR = {
+	region_state:TNZ = {
+		create_pop = {
+			culture = african
+			size = 1140000
+		}
+	}
+}
+s:STATE_TANGANYIKA = {
+	region_state:TNZ = {
+		create_pop = {
+			culture = african
+			size = 979000
+		}
+	}
+	region_state:KRG = {
+		create_pop = {
+			culture = african
+			size = 116600
+		}
+	}
+	region_state:RWD = {
+		create_pop = {
+			culture = african
+			size = 511996
+		}
+	}
+	region_state:BRD = {
+		create_pop = {
+			culture = african
+			size = 468004
+		}
+	}
+}
+s:STATE_KENYA = {
+	region_state:KNY = {
+		create_pop = {
+			culture = african
+			size = 676000
+		}
+	}
+}
+s:STATE_RIFT_VALLEY = {
+	region_state:KNY = {
+		create_pop = {
+			culture = african
+			size = 361000
+		}
+	}
+}
+s:STATE_OROMIA = {
+	region_state:ETH = {
+		create_pop = {
+			culture = amhara
+			size = 1099636
+		}
+		create_pop = {
+			culture = oromo
+			size = 736004
+		}
+	}
+}
+s:STATE_AMHARA = {
+	region_state:ETH = {
+		create_pop = {
+			culture = amhara
+			size = 720000
+		}
+		create_pop = {
+			culture = oromo
+			size = 1520004
+		}
+	}
+}
+s:STATE_GONDER = {
+	region_state:ETH = {
+		create_pop = {
+			culture = amhara
+			size = 1522000
+		}
+		create_pop = {
+			culture = oromo
+			size = 960000
+		}
+		create_pop = {
+			culture = tigray
+			size = 600000
+		}
+	}
+}
+s:STATE_KAZEMBE = {
+	region_state:ZMB = {
+		create_pop = {
+			culture = african
+			size = 403000
+		}
+	}
+}
+s:STATE_SOMALILAND = {
+	region_state:ISQ = {
+		create_pop = {
+			culture = somali
+			size = 109000
+		}
+		create_pop = {
+			culture = oromo
+			religion = animist
+			size = 3000
+		}
+		create_pop = {
+			culture = somali
+			pop_type = slaves
+			size = 15000
+		}
+		create_pop = {
+			culture = oromo
+			religion = animist
+			pop_type = slaves
+			size = 1000
+		}
+	}
+	region_state:WSG = {
+		create_pop = {
+			culture = somali
+			size = 83676
+		}
+		create_pop = {
+			culture = somali
+			pop_type = slaves
+			size = 7000
+		}
+	}
+	region_state:GLD = {
+		create_pop = {
+			culture = somali
+			size = 158000
+		}
+		create_pop = {
+			culture = oromo
+			religion = animist
+			size = 12000
+		}
+		create_pop = {
+			culture = swahili
+			size = 32000
+		}
+		create_pop = {
+			culture = somali
+			pop_type = slaves
+			size = 8280
+		}
+		create_pop = {
+			culture = oromo
+			religion = animist
+			pop_type = slaves
+			size = 4000
+		}
+		create_pop = {
+			culture = swahili
+			pop_type = slaves
+			size = 8000
+		}
+	}
+	region_state:MJT = {
+		create_pop = {
+			culture = somali
+			size = 282040
+		}
+		create_pop = {
+			culture = oromo
+			religion = animist
+			size = 6000
+		}
+		create_pop = {
+			culture = swahili
+			size = 44400
+		}
+		create_pop = {
+			culture = somali
+			pop_type = slaves
+			size = 25000
+		}
+		create_pop = {
+			culture = oromo
+			religion = animist
+			pop_type = slaves
+			size = 2000
+		}
+		create_pop = {
+			culture = swahili
+			pop_type = slaves
+			size = 4000
+		}
+	}
+}
+s:STATE_SOUTH_MADAGASCAR = {
+	region_state:ELDA = {
+		create_pop = {
+			culture = eldians
+			size = 10897000
+		}
+	}
+}
+s:STATE_NORTH_MADAGASCAR = {
+	region_state:ELDA = {
+		create_pop = {
+			culture = eldians
+			size = 8840000
+		}
+	}
+}
+s:STATE_UGANDA = {
+	region_state:BUG = {
+		create_pop = {
+			culture = african
+			size = 767000
+		}
+	}
+	region_state:BNY = {
+		create_pop = {
+			culture = african
+			size = 246000
+		}
+	}
+	region_state:ANK = {
+		create_pop = {
+			culture = african
+			size = 242000
+		}
+	}
+	region_state:ACH = {
+		create_pop = {
+			culture = african
+			size = 208000
+		}
+	}
+}
+s:STATE_EQUATORIA = {
+	region_state:SUD = {
+		create_pop = {
+			culture = sudanese
+			size = 777000
+		}
+	}
+}
+s:STATE_MOCAMBIQUE = {
+	region_state:MOZ = {
+		create_pop = {
+			culture = african
+			size = 1170000
+		}
+	}
+}
+s:STATE_WADDAI = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 354000
+		}
+	}
+}
+s:STATE_NORTH_CAMEROON = {
+	region_state:HASA = {
+		create_pop = {
+			culture = hausa
+			size = 916000
+		}
+	}
+}
+s:STATE_SOUTH_CAMEROON = {
+	region_state:CMN = {
+		create_pop = {
+			culture = african
+			size = 1250000
+		}
+	}
+}
+s:STATE_UBANGI_SHARI = {
+	region_state:CAR = {
+		create_pop = {
+			culture = african
+			size = 355000
+		}
+	}
+}
+s:STATE_CONGO = {
+	region_state:CKS = {
+		create_pop = {
+			culture = african
+			size = 852000
+		}
+	}
+}
+s:STATE_CONGO_ORIENTALE = {
+	region_state:DRC = {
+		create_pop = {
+			culture = african
+			size = 1560000
+		}
+	}
+}
+s:STATE_KASAI = {
+	region_state:DRC = {
+		create_pop = {
+			culture = african
+			size = 1290000
+		}
+	}
+}
+s:STATE_BAS_CONGO = {
+	region_state:DRC = {
+		create_pop = {
+			culture = african
+			size = 876000
+		}
+	}
+}
+s:STATE_EQUATEUR = {
+	region_state:DRC = {
+		create_pop = {
+			culture = african
+			size = 877000
+		}
+	}
+}
+s:STATE_NORTH_ANGOLA = {
+	region_state:ANG = {
+		create_pop = {
+			culture = african
+			size = 473000
+		}
+	}
+}
+s:STATE_SOUTH_ANGOLA = {
+	region_state:ANG = {
+		create_pop = {
+			culture = african
+			size = 476000
+		}
+	}
+}
+s:STATE_EAST_ANGOLA = {
+	region_state:ANG = {
+		create_pop = {
+			culture = african
+			size = 584000
+	}
+}
+s:STATE_KATANGA = {
+	region_state:DRC = {
+		create_pop = {
+			culture = african
+			size = 634000
+		}
+	}
+}
+s:STATE_GABON = {
+	region_state:GAB = {
+		create_pop = {
+			culture = african
+			size = 316000
+		}
+	}
+}
+s:STATE_ZAMBIA = {
+	region_state:ZMB = {
+		create_pop = {
+			culture = african
+			size = 128000
+		}
+	}
+}
+s:STATE_ZAMBEZIA = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 896000
+		}
+	}
+}
+s:STATE_ZAMBEZI = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 483000
+		}
+	}
+}
+s:STATE_NAMAQUALAND = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 640000
+		}
+	}
+}
+s:STATE_HEREROLAND = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 359000
+		}
+	}
+}
+s:STATE_ZULULAND = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 729000
+		}
+	}
+}
+s:STATE_VRYSTAAT = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 385000
+		}
+	}
+}
+s:STATE_TRANSVAAL = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 562000
+		}
+	}
+}
+s:STATE_EASTERN_CAPE = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 387000
+		}
+	}
+}
+s:STATE_CAPE_COLONY = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 451000
+		}
+	}
+}
+s:STATE_NORTHERN_CAPE = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 356000
+		}
+	}
+}
+s:STATE_BOTSWANA = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 236000
+		}
+	}
+}
+s:STATE_LOURENCO_MARQUES = {
+	region_state:MRLY = {
+		create_pop = {
+			culture = marleyans
+			size = 20973000
+		}
+	}
+}
+}

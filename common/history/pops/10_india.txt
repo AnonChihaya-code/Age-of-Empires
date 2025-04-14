@@ -1,0 +1,342 @@
+﻿POPS = {
+s:STATE_BIHAR = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 9969689
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 1442941
+		}
+	}
+}
+s:STATE_WEST_BENGAL = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 12621021
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 4812012
+		}
+	}
+}
+s:STATE_ASSAM = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 1412020
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 750000
+		}
+	}
+}
+s:STATE_DELHI = {
+	region_state:DELI = {
+		create_pop = {
+			culture = hindustani
+			religion = hindu
+			size = 2581169
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 836490
+		}
+	}
+}
+s:STATE_AWADH = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 8011251
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 512388
+		}
+	}
+}
+s:STATE_GUJARAT = {
+	region_state:MARA = {
+		create_pop = {
+			culture = marathi
+			size = 4601020
+		}
+		create_pop = {
+			culture = marathi
+			religion = sunni
+			size = 780241
+		}
+	}
+}
+s:STATE_MALWA = {
+	region_state:MARA = {
+		create_pop = {
+			culture = marathi
+			size = 2001020
+		}
+		create_pop = {
+			culture = marathi
+			religion = sunni
+			size = 250450
+		}
+	}
+}
+s:STATE_KASHMIR = {
+	region_state:DELI = {
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 1301000
+		}
+		create_pop = {
+			culture = hindustani
+			size = 370000
+		}
+	}
+}
+s:STATE_PUNJAB = {
+	region_state:DELI = {
+		create_pop = {
+			culture = pashtun
+			religion = sunni
+			size = 5321500
+		}
+		create_pop = {
+			culture = hindustani
+			religion = hindu
+			size = 410000
+		}
+	}
+}
+s:STATE_CENTRAL_PROVINCES = {
+	region_state:MARA = {
+		create_pop = {
+			culture = marathi
+			size = 6302500
+		}
+		create_pop = {
+			culture = marathi
+			religion = sunni
+			size = 610200
+		}
+	}
+}
+s:STATE_EAST_BENGAL = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 5692400
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 14617600
+		}
+	}
+}
+s:STATE_SINDH = {
+	region_state:DELI = {
+		create_pop = {
+			culture = hindustani
+			size = 1644600
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 318000
+		}
+	}
+}
+s:STATE_RAJPUTANA = {
+	region_state:DELI = {
+		create_pop = {
+			culture = hindustani
+			size = 1329701
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 304400
+		}
+	}
+}
+s:STATE_CEYLON = {
+	region_state:DRAV = {
+		create_pop = {
+			culture = age_dravidian
+			size = 1012000
+		}
+		create_pop = {
+			culture = age_dravidian
+			religion = sunni
+			size = 240600
+		}
+	}
+}
+s:STATE_INDIAN_OCEAN_TERRITORY = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 203000
+		}
+	}
+}
+s:STATE_ORISSA = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 1209092
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 140000
+		}
+	}
+}
+s:STATE_CIRCARS = {
+	region_state:MARA = {
+		create_pop = {
+			culture = marathi
+			size = 3012890
+		}
+		create_pop = {
+			culture = marathi
+			religion = sunni
+			size = 354801
+		}
+	}
+}
+s:STATE_MYSORE = {
+	region_state:DRAV = {
+		create_pop = {
+			culture = age_dravidian
+			size = 3805240
+		}
+		create_pop = {
+			culture = age_dravidian
+			religion = sunni
+			size = 544004
+		}
+	}
+}
+s:STATE_TRAVANCORE = {
+	region_state:DRAV = {
+		create_pop = {
+			culture = age_dravidian
+			size = 2045120
+		}
+		create_pop = {
+			culture = age_dravidian
+			religion = sunni
+			size = 640054
+		}
+	}
+}
+s:STATE_MADRAS = {
+	region_state:DRAV = {
+		create_pop = {
+			culture = age_dravidian
+			size = 2045120
+		}
+		create_pop = {
+			culture = age_dravidian
+			religion = sunni
+			size = 640054
+		}
+	}
+}
+s:STATE_HYDERABAD = {
+	region_state:MARA = {
+		create_pop = {
+			culture = marathi
+			size = 8100450
+		}
+		create_pop = {
+			culture = marathi
+			religion = sunni
+			size = 740145
+		}
+	}
+}
+s:STATE_BOMBAY = {
+	region_state:MARA = {
+		create_pop = {
+			culture = marathi
+			size = 10146020
+		}
+		create_pop = {
+			culture = marathi
+			religion = sunni
+			size = 3048019
+		}
+		create_pop = {
+			culture = marathi
+			religion = shiite
+			size = 585972
+		}
+	}
+}
+s:STATE_KURNOOL = {
+	region_state:MARA = {
+		create_pop = {
+			culture = marathi
+			size = 1506020
+		}
+		create_pop = {
+			culture = marathi
+			religion = sunni
+			size = 240015
+		}
+	}
+}
+s:STATE_BUNDELKHAND = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 2085328
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 405655
+		}
+	}
+}
+s:STATE_AGRA = {
+	region_state:MUGH = {
+		create_pop = {
+			culture = hindustani
+			size = 17962075
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 3373401
+		}
+	}
+}
+s:STATE_HILL_PUNJAB = {
+	region_state:DELI = {
+		create_pop = {
+			culture = hindustani
+			size = 2236751
+		}
+		create_pop = {
+			culture = hindustani
+			religion = sunni
+			size = 267300
+		}
+	}
+}
+}

@@ -1,0 +1,750 @@
+﻿POPS = {
+s:STATE_DISTRICT_OF_COLUMBIA = {
+	region_state:FALC = {
+		create_pop = {
+			culture = american
+			size = 1001012
+		}
+	}
+}
+s:STATE_LOUISIANA = {
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 1009000
+		}
+	}
+}
+s:STATE_NEW_YORK = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 2220155
+		}
+	}
+}
+s:STATE_VIRGINIA = {
+	region_state:FALC = {
+		create_pop = {
+			culture = american
+			size = 3653597
+		}
+	}
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 180000
+		}
+	}
+}
+s:STATE_ALASKA = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 18020
+		}
+	}
+}
+s:STATE_WASHINGTON = {
+	region_state:NEZP = {
+		create_pop = {
+			culture = nez_perce
+			size = 1501210
+		}
+	}
+}
+s:STATE_OREGON = {
+	region_state:NEZP = {
+		create_pop = {
+			culture = nez_perce
+			size = 1891210
+		}
+	}
+}
+s:STATE_IDAHO = {
+	region_state:NEZP = {
+		create_pop = {
+			culture = nez_perce
+			size = 591210
+		}
+	}
+}
+s:STATE_COLORADO = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 1500000
+		}
+	}
+}
+s:STATE_WYOMING = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 1420000
+		}
+	}
+	region_state:PAIU = {
+		create_pop = {
+			culture = paiute
+			size = 145000
+		}
+	}
+}
+s:STATE_MONTANA = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 1108909
+		}
+	}
+	region_state:NEZP = {
+		create_pop = {
+			culture = nez_perce
+			size = 742000
+		}
+	}
+}
+s:STATE_NORTH_DAKOTA = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 2256000
+		}
+	}
+}
+s:STATE_SOUTH_DAKOTA = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 2300000
+		}
+	}
+}
+s:STATE_NEBRASKA = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 2254000
+		}
+	}
+}
+s:STATE_KANSAS = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 1200000
+		}
+	}
+}
+s:STATE_OKLAHOMA = {
+	region_state:COMA = {
+		create_pop = {
+			culture = comanche
+			size = 2180000
+		}
+	}
+}
+s:STATE_ARKANSAS = {
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 1750000
+		}
+	}
+}
+s:STATE_MISSOURI = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 1420000
+		}
+	}
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 586000
+		}
+	}
+}
+s:STATE_IOWA = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 2200000
+		}
+	}
+}
+s:STATE_MINNESOTA = {
+	region_state:SIOU = {
+		create_pop = {
+			culture = siouan
+			size = 1880000
+		}
+	}
+}
+s:STATE_WISCONSIN = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 1754209
+		}
+	}
+}
+s:STATE_INDIANA = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 1895698
+		}
+	}
+}
+s:STATE_MICHIGAN = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 1702456
+		}
+	}
+}
+s:STATE_OHIO = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 1660894
+		}
+	}
+}
+s:STATE_KENTUCKY = {
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 1599999
+		}
+	}
+}
+s:STATE_TENNESSEE = {
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 1410567
+		}
+	}
+}
+s:STATE_MISSISSIPPI = {
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 1450000
+		}
+	}
+}
+s:STATE_ALABAMA = {
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 1435890
+		}
+	}
+}
+s:STATE_FLORIDA = {
+	region_state:SML = {
+		create_pop = {
+			culture = muskogean
+			size = 600000
+		}
+	}
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 366000
+		}
+	}
+}
+s:STATE_GEORGIA = {
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 1580000
+		}
+	}
+}
+s:STATE_WEST_VIRGINIA = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 469801
+		}
+	}
+}
+s:STATE_MARYLAND = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 200000
+		}
+	}
+}
+s:STATE_PENNSYLVANIA = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 1543996
+		}
+	}
+}
+s:STATE_NEW_JERSEY = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 350000
+		}
+	}
+}
+s:STATE_ILLINOIS = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 2610258
+		}
+	}
+}
+s:STATE_RHODE_ISLAND = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 100000
+		}
+	}
+}
+s:STATE_CONNECTICUT = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 150000
+		}
+	}
+}
+s:STATE_MASSACHUSETTS = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 180000
+		}
+	}
+}
+s:STATE_NEW_HAMPSHIRE = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 140000
+		}
+	}
+}
+s:STATE_VERMONT = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 240000
+		}
+	}
+}
+s:STATE_MAINE = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 200000
+		}
+	}
+}
+s:STATE_NORTH_CAROLINA = {
+	region_state:FALC = {
+		create_pop = {
+			culture = american
+			size = 3456000
+		}
+	}
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 31000
+		}
+	}
+}
+s:STATE_UTAH = {
+	region_state:PAIU = {
+		create_pop = {
+			culture = paiute
+			size = 1003000
+		}
+	}
+}
+s:STATE_SOUTH_CAROLINA = {
+	region_state:FALC = {
+		create_pop = {
+			culture = american
+			size = 1430000
+		}
+	}
+	region_state:CHEY = {
+		create_pop = {
+			culture = cheyenne
+			size = 330000
+		}
+	}
+}
+s:STATE_HAWAIIAN_ISLANDS = {
+	region_state:PNS = {
+		create_pop = {
+			culture = yankee
+			religion = protestant
+			pop_type = clergy
+			size = 100
+		}
+		create_pop = {
+			culture = yankee
+			religion = protestant
+			pop_type = capitalists
+			size = 450
+		}
+		create_pop = {
+			culture = british
+			pop_type = capitalists
+			size = 500
+		}
+		create_pop = {
+			culture = russian
+			pop_type = capitalists
+			size = 250
+		}
+		create_pop = {
+			culture = hawaiian
+			religion = protestant
+			size = 132304
+		}
+		create_pop = {
+			culture = hawaiian
+			religion = catholic
+			size = 8500
+		}
+		create_pop = {
+			culture = han
+			size = 50000
+		}
+	}
+}
+s:STATE_ONTARIO = {
+	region_state:CREE = {
+		create_pop = {
+			culture = siouan
+			size = 251428
+		}
+		create_pop = {
+			culture = cree
+			size = 399999
+		}
+	}
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 1180000
+		}
+	}
+}
+s:STATE_NEW_BRUNSWICK = {
+	region_state:VLAN = {
+		create_pop = {
+			culture = vinlanders
+			size = 1880456
+		}
+	}
+}
+s:STATE_QUEBEC = {
+	region_state:VLAN = {
+		create_pop = {
+			culture = vinlanders
+			size = 1880120
+		}
+	}
+}
+s:STATE_NEWFOUNDLAND = {
+	region_state:VLAN = {
+		create_pop = {
+			culture = vinlanders
+			size = 1890123
+		}
+	}
+}
+s:STATE_ALBERTA = {
+	region_state:CREE = {
+		create_pop = {
+			culture = siouan
+			size = 355894
+		}
+		create_pop = {
+			culture = cree
+			size = 418998
+		}
+	}
+}
+s:STATE_BRITISH_COLUMBIA = {
+	region_state:CREE = {
+		create_pop = {
+			culture = cree
+			size = 356000
+		}
+	}
+}
+s:STATE_SASKATCHEWAN = {
+	region_state:CREE = {
+		create_pop = {
+			culture = siouan
+			size = 182000
+		}
+		create_pop = {
+			culture = cree
+			size = 340000
+		}
+	}
+}
+s:STATE_MANITOBA = {
+	region_state:CREE = {
+		create_pop = {
+			culture = siouan
+			size = 235478
+		}
+		create_pop = {
+			culture = cree
+			size = 334589
+		}
+	}
+}
+s:STATE_YUKON_TERRITORY = {
+	region_state:CREE = {
+		create_pop = {
+			culture = cree
+			size = 180100
+		}
+	}
+}
+s:STATE_NORTHWEST_TERRITORIES = {
+	region_state:CREE = {
+		create_pop = {
+			culture = cree
+			size = 178000
+		}
+	}
+}
+s:STATE_NUNAVUT = {
+	region_state:CREE = {
+		create_pop = {
+			culture = cree
+			size = 180210
+		}
+	}
+}
+s:STATE_BERMUDA = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 26352
+		}
+	}
+}
+s:STATE_TEXAS = {
+	region_state:COMA = {
+		create_pop = {
+			culture = comanche
+			size = 3800000
+		}
+		create_pop = {
+			culture = apache
+			size = 860000
+		}
+	}
+}
+s:STATE_NEVADA = {
+	region_state:PAIU = {
+		create_pop = {
+			culture = paiute
+			size = 345000
+		}
+	}
+	region_state:SONG = {
+		create_pop = {
+			culture = han_song
+			size = 10000
+		}
+	}
+	region_state:APAC = {
+		create_pop = {
+			culture = apache
+			size = 8000
+		}
+	}
+}
+s:STATE_ARIZONA = {
+	region_state:APAC = {
+		create_pop = {
+			culture = apache
+			size = 400000
+		}
+	}
+}
+s:STATE_NEW_MEXICO = {
+	region_state:COMA = {
+		create_pop = {
+			culture = comanche
+			size = 500000
+		}
+	}
+}
+s:STATE_CALIFORNIA = {
+	region_state:SONG = {
+		create_pop = {
+			culture = han_song
+			size = 3560000
+		}
+		create_pop = {
+			culture = paiute
+			size = 1200600
+		}
+		create_pop = {
+			culture = apache
+			size = 1201230
+		}
+	}
+}
+s:STATE_SONORA = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 378601
+		}
+	}
+}
+s:STATE_CHIHUAHUA = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 100000
+		}
+		create_pop = {
+			culture = apache
+			size = 256890
+		}
+	}
+}
+s:STATE_RIO_GRANDE = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 324561
+		}
+	}
+}
+s:STATE_DURANGO = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 564512
+		}
+	}
+}
+s:STATE_YUCATAN = {
+	region_state:MAY = {
+		create_pop = {
+			culture = mayan
+			size = 758935
+		}
+	}
+}
+s:STATE_MEXICO = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 1500000
+		}
+	}
+}
+s:STATE_GUERRERO = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 1095897
+		}
+	}
+}
+s:STATE_JALISCO = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 708914
+		}
+	}
+}
+s:STATE_ZACATECAS = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 704512
+		}
+	}
+}
+s:STATE_CHIAPAS = {
+	region_state:MAY = {
+		create_pop = {
+			culture = mayan
+			size = 324564
+		}
+	}
+}
+s:STATE_BAJA_CALIFORNIA = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 185000
+		}
+	}
+}
+s:STATE_VERACRUZ = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 1554945
+		}
+	}
+}
+s:STATE_SINALOA = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 557801
+		}
+	}
+}
+s:STATE_BAJIO = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 884512
+		}
+	}
+}
+s:STATE_OAXACA = {
+	region_state:AZTE = {
+		create_pop = {
+			culture = aztecs
+			size = 1107895
+		}
+	}
+}
+s:STATE_DELAWARE = {
+	region_state:IROQ = {
+		create_pop = {
+			culture = iroquoian
+			size = 140000
+		}
+	}
+}
+}

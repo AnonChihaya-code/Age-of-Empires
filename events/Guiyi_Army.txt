@@ -1,0 +1,307 @@
+﻿namespace = guiyi_army_events
+
+guiyi_army_events.1 = { #光复河西
+	type = country_event
+	placement = root
+	duration = 3
+	title = guiyi_army_events.1.t
+	desc = guiyi_army_events.1.d
+	flavor = guiyi_army_events.1.f
+	event_image = {
+		texture = "gfx/event_pictures/guiyi_army_events_1.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = guiyi_army_events.1.a
+		add_journal_entry = {
+			type = je_construction_hexi_corridor
+		}
+		random_scope_character = {
+			limit = {
+				has_template = CNGY_Zhang_Yichao
+			}
+			add_trait = ambitious
+			add_trait = charismatic
+		}
+		add_modifier = {
+			name = guiyi_army_events_1_modifier
+			years = 10
+			#is_decaying = yes
+		}
+#		every_scope_state = {
+#			limit = {
+#				OR = {
+#					state_region = s:STATE_GANSU
+#					state_region = s:STATE_ALXA
+#				}
+#			}
+#			add_modifier = {
+#				name = guiyi_army_events_1_modifier
+#			    years = 10
+#			    #is_decaying = yes
+#			}
+#		}
+	}
+}
+
+guiyi_army_events.2 = { #长久的和平
+	type = country_event
+	placement = root
+	duration = 3
+	title = guiyi_army_events.2.t
+	desc = guiyi_army_events.2.d
+	flavor = guiyi_army_events.2.f
+	event_image = {
+		texture = "gfx/event_pictures/guiyi_army_events_2.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		name = guiyi_army_events.2.a
+		ai_chance = {
+			base = 0
+		}
+		custom_tooltip = {
+			text = guiyi_army_events_2_a_tt
+		}
+		add_modifier = {
+			name = guiyi_army_events_2_modifier
+			years = 10
+		}
+	}
+	option = {
+		name = guiyi_army_events.2.b
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		custom_tooltip = {
+			text = guiyi_army_events_2_b_tt
+		}
+		add_modifier = {
+			name = guiyi_army_events_2_modifier
+			years = 10
+		}
+		add_journal_entry = {
+			type = je_restore_great_tang
+		}
+		s:STATE_XIAN = {
+			add_claim = ROOT
+		}
+		s:STATE_NINGXIA = {
+			add_claim = ROOT
+		}
+	}
+}
+
+guiyi_army_events.3 = { #大唐的未来
+	type = country_event
+	placement = root
+	duration = 3
+	title = guiyi_army_events.3.t
+	desc = guiyi_army_events.3.d
+	flavor = guiyi_army_events.3.f
+	event_image = {
+		texture = "gfx/event_pictures/guiyi_army_events_3.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = {
+		ruler = {
+			save_scope_as = tang_ruler_scope
+		}
+		heir = {
+			save_scope_as = tang_heir_scope
+		}
+		create_character = {
+			template = DTDG_Li_Cunxu
+			save_scope_as = DTDG_Li_Cunxu_scope
+		}
+		create_character = {
+			template = DTDG_Li_Xingyun
+			save_scope_as = DTDG_Li_Xingyun_scope
+		}
+		create_character = {
+			template = DTDG_Yuan_Tiangang
+			save_scope_as = DTDG_Yuan_Tiangang_scope
+		}
+	}
+	option = {
+		name = guiyi_army_events.3.a
+		ai_chance = {
+			base = 25
+		}
+		custom_tooltip = {
+			text = guiyi_army_events_3_tt
+		    set_capital = STATE_XIAN
+			scope:DTDG_Li_Cunxu_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+			scope:DTDG_Li_Xingyun_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+			scope:DTDG_Yuan_Tiangang_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+		}
+		add_journal_entry = {
+			type = je_great_tang
+		}
+		add_journal_entry = {
+			type = je_great_tang_01
+		}
+		add_journal_entry = {
+			type = je_great_tang_02
+		}
+		add_journal_entry = {
+			type = je_great_tang_03
+		}
+		add_journal_entry = {
+			type = je_great_tang_04
+		}
+		add_journal_entry = {
+			type = je_great_tang_05
+		}
+	}
+	option = {
+		name = guiyi_army_events.3.b
+		ai_chance = {
+			base = 50
+		}
+		show_as_tooltip = {
+			create_character = {
+				template = DTDG_Li_Cunxu
+			}
+		}
+		scope:DTDG_Li_Cunxu_scope = {
+			set_character_as_ruler = yes
+		}
+		custom_tooltip = {
+			text = guiyi_army_events_3_tt
+		    set_capital = STATE_XIAN
+			scope:DTDG_Li_Xingyun_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+			scope:DTDG_Yuan_Tiangang_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+			scope:tang_heir_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+		}
+		add_journal_entry = {
+			type = je_great_tang
+		}
+		add_journal_entry = {
+			type = je_great_tang_01
+		}
+		add_journal_entry = {
+			type = je_great_tang_02
+		}
+		add_journal_entry = {
+			type = je_great_tang_03
+		}
+		add_journal_entry = {
+			type = je_great_tang_04
+		}
+		add_journal_entry = {
+			type = je_great_tang_05
+		}
+	}
+	option = {
+		default_option = yes
+		name = guiyi_army_events.3.c
+		ai_chance = {
+			base = 25
+		}
+		show_as_tooltip = {
+			create_character = {
+				template = DTDG_Li_Xingyun
+			}
+			create_character = {
+				template = DTDG_Yuan_Tiangang
+			}
+		}
+		scope:DTDG_Li_Xingyun_scope = {
+			set_character_as_ruler = yes
+		}
+		custom_tooltip = {
+			text = guiyi_army_events_3_tt
+		    set_capital = STATE_XIAN
+			scope:DTDG_Li_Cunxu_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+			scope:tang_heir_scope = {
+				kill_character = {
+					hidden = yes
+				}
+			}
+		}
+		add_journal_entry = {
+			type = je_great_tang
+		}
+		add_journal_entry = {
+			type = je_great_tang_01
+		}
+		add_journal_entry = {
+			type = je_great_tang_02
+		}
+		add_journal_entry = {
+			type = je_great_tang_03
+		}
+		add_journal_entry = {
+			type = je_great_tang_04
+		}
+		add_journal_entry = {
+			type = je_great_tang_05
+		}
+	}
+}
+
+guiyi_army_events.4 = { #盛世再临
+	type = country_event
+	placement = root
+	duration = 3
+	title = guiyi_army_events.4.t
+	desc = guiyi_army_events.4.d
+	flavor = guiyi_army_events.4.f
+	duration = 3
+	event_image = {
+		texture = "gfx/event_pictures/guiyi_army_events_4.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = guiyi_army_events.4.a
+		add_loyalists = { #效忠派
+			value = 0.15
+		}
+		add_modifier =  {
+			name = guiyi_army_events_4_modifier
+		}
+	}
+}

@@ -1,0 +1,426 @@
+﻿namespace = Code002_TPG_events
+#太平天国
+Code002_TPG_events.1 = { #天父的旨意
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.1.t
+	desc = Code002_TPG_events.1.d
+	flavor = Code002_TPG_events.1.f
+	event_image = { video = "asia_union_leader" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.1.a
+		add_modifier = {
+			name = Je_TPG_Divided_01_modifier
+			years = 10
+		}
+	}
+}
+
+Code002_TPG_events.2 = { #天京事变
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.2.t
+	desc = Code002_TPG_events.2.d
+	flavor = Code002_TPG_events.2.f
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.2.a
+		add_modifier = {
+			name = Je_TPG_Divided_02_modifier
+			years = 10
+			#is_decaying = yes
+		}
+		add_radicals = {
+			value = 0.05
+		}
+		if = {
+			limit = {
+				any_scope_character = {
+					has_template = TPTG_Yang_Xiuqing
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_template = TPTG_Yang_Xiuqing
+				}
+				kill_character = yes
+			}
+		}
+		else_if = {
+			ig:ig_armed_forces = {
+			    leader = {
+				    kill_character = yes
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				any_scope_character = {
+					has_template = TPTG_Wei_Changhui
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_template = TPTG_Wei_Changhui
+				}
+				kill_character = yes
+			}
+		}
+		else_if = {
+			ig:ig_landowners = {
+			    leader = {
+				    kill_character = yes
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				any_scope_character = {
+					has_template = TPTG_Qin_Rigang
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_template = TPTG_Qin_Rigang
+				}
+				kill_character = yes
+			}
+		}
+		if = {
+			limit = {
+				any_scope_character = {
+					has_template = TPTG_Chen_Chengrong
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_template = TPTG_Chen_Chengrong
+				}
+				kill_character = yes
+			}
+		}
+	}
+}
+
+
+Code002_TPG_events.3 = { #仁玕归来
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.3.t
+	desc = Code002_TPG_events.3.d
+	flavor = Code002_TPG_events.3.f
+	gui_window = event_window_1char_tabloid
+	left_icon = scope:Hong_Rengan_scope
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		AND = { exists = c:TPTG this = c:TPTG }
+		OR = {
+			has_law = law_type:law_monarchy
+            has_law = law_type:law_theocracy
+		}
+		OR = {
+		    has_modifier = Je_TPG_Divided_01_modifier
+			has_modifier = Je_TPG_Divided_02_modifier
+		}
+		NOT = { has_variable = Code002_Hong_Rengan_var }
+	}
+	immediate = {
+		create_character = { #洪仁玕
+			template = TPTG_Hong_Rengan
+			save_scope_as = Hong_Rengan_scope
+        }
+		ruler = {
+			save_scope_as = TPG_ruler_scope
+		}
+		set_variable = Code002_Hong_Rengan_var
+		set_variable = New_Administrative_Paper_Var
+	}
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.3.a
+		show_as_tooltip = {
+			create_character = {
+			    template = TPTG_Hong_Rengan
+		    }
+		}
+		ruler = {
+			set_ideology = ideology:ideology_New_Paper
+		}
+		heir = {
+			set_ideology = ideology:ideology_New_Paper
+		}
+		ig:ig_devout = {
+			leader = {
+				set_ideology = ideology:ideology_New_Paper
+			}
+		}
+		add_journal_entry = {
+			type = je_new_administrative_paper
+		}
+		add_journal_entry = {
+			type = je_new_administrative_paper_01
+		}
+		add_journal_entry = {
+			type = je_new_administrative_paper_02
+		}
+		add_journal_entry = {
+			type = je_new_administrative_paper_03
+		}
+		add_journal_entry = {
+			type = je_new_administrative_paper_04
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_political_movement = {
+						is_political_movement_type = movement_New_Paper
+					}
+				}
+			}
+			create_political_movement = { type = movement_New_Paper }
+		}
+		create_character = {
+			is_agitator = yes 
+			interest_group = ig_intelligentsia
+			ideology = ideology_New_Paper
+			religion = rel:protestant
+			traits = {	
+				charismatic
+				persistent
+			}
+		}
+	}
+}
+
+Code002_TPG_events.4 = { #国家现代化
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.4.t
+	desc = Code002_TPG_events.4.d
+	flavor = Code002_TPG_events.4.f
+	event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = {
+	}
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.4.a
+		add_modifier = Je_New_Administrative_Paper_2_modifier
+		add_journal_entry = {
+			type = je_heaven_on_earth
+		}
+	}
+}
+
+Code002_TPG_events.5 = { #虚惊
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.5.t
+	desc = Code002_TPG_events.5.d
+	flavor = Code002_TPG_events.5.f
+	event_image = { video = "asia_union_leader" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		NOT = {
+			has_variable = je_taiping_divided_events_5_var
+		}
+	}
+	immediate = {
+		set_variable = je_taiping_divided_events_5_var
+	}
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.5.a
+		random_list = {
+			5 = {
+				
+		    }
+			5 = {
+				custom_tooltip = {
+					text = Code002_TPG_events_502_tt
+					je:je_taiping_divided = {
+						add_progress = { value = -5 name = je_taiping_divided_progress_bar }
+					}
+				}
+		    }
+		}
+	}
+}
+
+Code002_TPG_events.6 = { #杖打三人
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.6.t
+	desc = Code002_TPG_events.6.d
+	flavor = Code002_TPG_events.6.f
+	event_image = { video = "asia_union_leader" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		NOT = {
+			has_variable = je_taiping_divided_events_6_var
+		}
+		has_variable = je_taiping_divided_events_5_var
+	}
+	immediate = {
+		set_variable = je_taiping_divided_events_6_var
+	}
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.6.a
+		random_list = {
+			5 = {
+				custom_tooltip = {
+					text = Code002_TPG_events_601_tt
+					je:je_taiping_divided = {
+						add_progress = { value = -10 name = je_taiping_divided_progress_bar }
+					}
+				}
+		    }
+			5 = {
+				custom_tooltip = {
+					text = Code002_TPG_events_602_tt
+					je:je_taiping_divided = {
+						add_progress = { value = -5 name = je_taiping_divided_progress_bar }
+					}
+				}
+		    }
+		}
+	}
+}
+
+Code002_TPG_events.7 = { #手持钢鞭将你打~
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.7.t
+	desc = Code002_TPG_events.7.d
+	flavor = Code002_TPG_events.7.f
+	event_image = { video = "asia_union_leader" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		NOT = {
+			has_variable = je_taiping_divided_events_7_var
+		}
+		has_variable = je_taiping_divided_events_6_var
+	}
+	immediate = {
+		set_variable = je_taiping_divided_events_7_var
+	}
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.7.a
+		random_list = {
+			7 = {
+				custom_tooltip = {
+					text = Code002_TPG_events_701_tt
+					je:je_taiping_divided = {
+						add_progress = { value = 15 name = je_taiping_divided_progress_bar }
+					}
+				}
+		    }
+			3 = {
+				custom_tooltip = {
+					text = Code002_TPG_events_702_tt
+					je:je_taiping_divided = {
+						add_progress = { value = -15 name = je_taiping_divided_progress_bar }
+					}
+				}
+		    }
+		}
+	}
+}
+
+Code002_TPG_events.8 = { #万岁
+	type = country_event
+	placement = root
+	duration = 3
+	title = Code002_TPG_events.8.t
+	desc = Code002_TPG_events.8.d
+	flavor = Code002_TPG_events.8.f
+	event_image = { video = "asia_union_leader" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		NOT = {
+			has_variable = je_taiping_divided_events_8_var
+		}
+		has_variable = je_taiping_divided_events_7_var
+	}
+	immediate = {
+		set_variable = je_taiping_divided_events_8_var
+	}
+	option = {
+		default_option = yes
+		name = Code002_TPG_events.8.a
+		random_list = {
+			5 = {
+				custom_tooltip = {
+					text = Code002_TPG_events_801_tt
+					je:je_taiping_divided = {
+						add_progress = { value = 20 name = je_taiping_divided_progress_bar }
+					}
+				}
+		    }
+			5 = {
+				custom_tooltip = {
+					text = Code002_TPG_events_802_tt
+					je:je_taiping_divided = {
+						add_progress = { value = -20 name = je_taiping_divided_progress_bar }
+					}
+				}
+		    }
+		}
+	}
+}
+
+Code002_TPG_events.9 = { #我们的天国
+	type = country_event
+	placement = root
+	title = Code002_TPG_events.9.t
+	desc = Code002_TPG_events.9.d
+	flavor = Code002_TPG_events.9.f
+	duration = 3
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	trigger = {
+	}
+	option = {
+		name = Code002_TPG_events.9.a
+		add_modifier = {
+			name = je_heaven_on_earth_modifier
+		}
+	}
+}

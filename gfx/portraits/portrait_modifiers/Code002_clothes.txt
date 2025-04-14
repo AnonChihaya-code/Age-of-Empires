@@ -1,0 +1,546 @@
+﻿#衣服
+Code002_clothes = {
+    usage = game
+    selection_behavior = weighted_random
+    #fallback = default_clothes
+
+    Code002_european_child_clothes = { #中国#欧洲儿童服装
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = children_outfit_royal
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 25000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                Code002_chinese_clothes_trigger = yes
+                scope:character ?= {
+                    age <= define:NCharacters|ADULT_AGE
+                }
+            }
+        }
+    }
+
+    Cdoe002_prussian_clothes = { #中国#普鲁士君主服装
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = no_outfit
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_medals
+                template = Code002_prussian_medals #普鲁士奖章
+                accessory = male_medals_generic_01_05
+            }
+            accessory = {
+                mode = add
+                gene = Code002_epaulettes
+                template = Code002_all_epaulettes #肩章
+                range = { 0 0.4 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_belts
+                template = Code002_all_belts #皮带
+                accessory = male_belt_generic_01
+            }
+            accessory = {
+                mode = add
+                gene = Code002_coats
+                template = Code002_prussian_coats #大衣
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            # no aiguillettes because they don't work with double-breasted coats, which is all the Prussians have
+
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear #裤子
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 50000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    exists = home_country
+		            home_country = {
+                        OR = {
+			                british_empire_clothes_trigger = no
+                            french_empire_clothes_trigger = no
+                            russian_empire_clothes_trigger = no
+                        }
+		            }
+                    age >= define:NCharacters|ADULT_AGE
+                    OR = {
+                        AND = {
+                            OR = {
+                                is_ruler = yes
+                                is_heir = yes
+                            }
+                            home_country = {
+                                has_law = law_type:law_monarchy
+                            }
+                        }
+                    }
+                    military_clothes_trigger = no
+                }
+                NAND = {
+                    scope:character ?= {                        
+                        culture = cu:manchu
+                        is_female = yes
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_european_ruler_republic_clothes = { #中国#欧洲共和统治者/非附属国
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = no_outfit
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+               mode = add
+               gene = waistcoats
+               template = european_waistcoats
+               range = { 0 0.67 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_civilian_coats
+                template = Code002_european_civilian_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 5000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                scope:character ?= {
+                    is_female = no
+                    exists = home_country
+		            home_country = {
+                        NOT = { has_law = law_type:law_monarchy }
+                    }
+		        }            
+                Code002_chinese_clothes_trigger = yes   
+                republic_clothes_trigger = yes
+                ruler_clothes_trigger = yes
+                #armed_forces_clothes_trigger = no
+                military_clothes_trigger = no
+
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+            }
+        }
+    }
+
+    Code002_european_ruler_republic_clothes_02 = { #中国#欧洲共和统治者/英法俄附属国
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = no_outfit
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+               mode = add
+               gene = waistcoats
+               template = european_waistcoats
+               range = { 0 0.67 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_civilian_coats
+                template = Code002_european_civilian_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 5000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                OR = {
+                    AND = {
+                        scope:character ?= {
+                            is_female = no
+                            exists = home_country
+		                    home_country = {
+                               NOT = { has_law = law_type:law_monarchy }
+                            }
+		                }            
+                        Code002_chinese_clothes_trigger = yes   
+                        republic_clothes_trigger = yes
+                        ruler_clothes_trigger = yes
+                        military_clothes_trigger = no          
+                        OR = {
+                            british_empire_clothes_trigger = yes
+                            french_empire_clothes_trigger = yes
+                        }
+                    }
+                    AND = {
+                        scope:character ?= {
+                            is_female = no
+                            exists = home_country
+		                    home_country = {
+                               NOT = { has_law = law_type:law_monarchy }
+                            }
+		                }            
+                        Code002_chinese_clothes_trigger = yes   
+                        republic_clothes_trigger = yes
+                        ruler_clothes_trigger = yes
+                        military_clothes_trigger = no 
+                        armed_forces_clothes_trigger = no         
+                        russian_empire_clothes_trigger = yes
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_european_ruler_republic_clothes_03 = { #中国#欧洲共和统治者/是毛子附属国
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = no_outfit
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+               mode = add
+               gene = waistcoats
+               template = no_waistcoat #no_european_waistcoats
+               range = { 0 0.67 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = no_civilian_coat #no_Code002_european_civilian_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 6000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                scope:character ?= {
+                    is_female = no
+                    age >= define:NCharacters|ADULT_AGE
+		            exists = home_country
+		            home_country = {
+			            is_subject = yes
+		            }
+                }
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = yes
+
+                Code002_chinese_clothes_trigger = yes 
+                republic_clothes_trigger = yes
+                ruler_clothes_trigger = yes
+                armed_forces_clothes_trigger = yes
+                military_clothes_trigger = no
+            }
+        }
+    }
+
+    Code002_prussian_soldier_clothes = {  #中国#普鲁士军装
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = no_outfit
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_epaulettes
+                template = Code002_all_epaulettes #肩章
+                range = { 0 0.4 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_belts
+                template = Code002_all_belts #皮带
+                accessory = male_belt_generic_01
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash #no_chinese_sashes  #中国鼓动者腰带
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = coats
+                template = no_coat
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_coats
+                template = Code002_prussian_coats #大衣
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            # no aiguillettes because they don't work with double-breasted coats, which is all the Prussians have
+
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear #裤子
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        } 
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 50000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }           
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                }
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+                #ruler_clothes_trigger = no
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }  
+            }
+        }
+    }
+
+    Code002_european_ruler_republic_clothes_female = { #中国#共和女统治者
+        dna_modifiers = {
+            accessory = {
+               mode = add
+               gene = outfits
+               template = european_common_outfits
+               range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }               
+                Code002_chinese_clothes_trigger = yes
+                republic_clothes_trigger = yes
+                military_clothes_trigger = no 
+                AND = {
+                    exists = scope:character
+                    scope:character ?= {                        
+                        NOT = { culture = cu:manchu }
+                        is_female = yes
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_european_heir_clothes_female = { #中国#女继承人#age<16#是附属国
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = children_outfit_royal
+                range = { 0 1 } # For the randomness to work correctly
+            }           
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 30000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }               
+                Code002_chinese_clothes_trigger = yes
+                military_clothes_trigger = no 
+                AND = {
+                    exists = scope:character
+                    scope:character ?= {
+                        age < define:NCharacters|ADULT_AGE
+                        is_heir = yes
+                        is_female = yes
+                        exists = home_country
+		                home_country = {
+			                is_subject = yes
+                            has_law = law_type:law_monarchy
+		                }
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_european_heir_clothes_female = { #中国#女继承人#age>=16#是附属国
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = no_outfits
+                range = { 0 1 } # For the randomness to work correctly
+            }           
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 30000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }               
+                Code002_chinese_clothes_trigger = yes
+                military_clothes_trigger = no 
+                AND = {
+                    exists = scope:character
+                    scope:character ?= {
+                        age >= define:NCharacters|ADULT_AGE
+                        is_heir = yes
+                        is_female = yes
+                        exists = home_country
+		                home_country = {
+			                is_subject = yes
+                            has_law = law_type:law_monarchy
+		                }
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_european_agitator_clothes = { #中国#欧洲鼓动者
+        dna_modifiers = {
+            accessory = {
+               mode = add
+               gene = outfits
+               template = european_outfits_agitator
+               range = { 0 1.0 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = no_sash #no_chinese_sashes  #中国鼓动者腰带
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                Code002_chinese_clothes_trigger = yes
+                agitator_character_trigger = yes
+                military_clothes_trigger = no
+            }
+        }
+    }
+
+    Code002_european_fancy_politician_clothes = { #中国#欧洲政治家
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = no_outfit
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = waistcoats
+                template = european_waistcoats
+                range = { 0 0.66 } # Omitting male_waistcoat_european_03
+            }
+            accessory = {
+                mode = add
+                gene = Code002_civilian_coats
+                template = Code002_european_civilian_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = props
+                template = gene_lences
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                Code002_chinese_clothes_trigger = yes
+                politician_clothes_trigger = yes
+                armed_forces_clothes_trigger = no
+                military_clothes_trigger = no
+                OR = {
+                    scope:character ?= {                        
+                        is_female = no
+                    }
+                    AND = {
+                        scope:character ?= {                        
+                            NOT = { culture = cu:manchu }
+                            is_female = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

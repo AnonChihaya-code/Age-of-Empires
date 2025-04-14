@@ -1,0 +1,278 @@
+﻿MILITARY_FORMATIONS = {
+	c:MAML ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_nile_basin
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry_maml
+				state_region = s:STATE_LOWER_EGYPT
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_MIDDLE_EGYPT
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry_maml
+				state_region = s:STATE_UPPER_EGYPT
+				count = 5
+			}
+			save_scope_as = syria_arm_egy
+		}
+
+		create_character = { # EGY, admiral
+			is_general = yes
+			first_name = Ahmad
+			last_name = Pasha_Abu_Widan
+			historical = yes
+			culture = cu:french
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			birth_date = 1798.1.22 # Complete guesswork, but was old enough to be colonial governor of Sudan in 1838
+			hq = region_nile_basin
+			commander_rank = commander_rank_2
+			traits = {
+				basic_offensive_planner
+				cruel
+				experienced_colonial_administrator
+			}
+			save_scope_as = ahmad_gen
+		}
+
+		scope:ahmad_gen = {
+			transfer_to_formation = scope:syria_arm_egy
+		}
+
+		create_character = { # Joseph Anthelme Sève
+			is_general = yes
+			first_name = Soliman
+			last_name = al-Faransawi
+			historical = yes
+			dna = dna_soliman_al_faransawi
+			culture = cu:french
+			religion = sunni
+			age = 48
+			hq = region_nile_basin
+			traits = {	
+			}
+			save_scope_as = soliman_gen
+		}
+
+		scope:soliman_gen = {
+			transfer_to_formation = scope:syria_arm_egy
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_nile_basin
+			name = Bahriat_alKhidywyat_alMisria
+
+		
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_LOWER_EGYPT
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_LOWER_EGYPT
+				count = 1
+			}
+		}
+	}
+
+	c:OHDS ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_africa
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_CONSTANTINE
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ALGIERS
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_AL_RIF
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_FEZ
+				count = 5
+			}
+		}
+	
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_north_africa
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_CONSTANTINE
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_ALGIERS
+				count = 2
+			}
+		}
+	}
+    
+	c:MRLY ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_southern_africa
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_LOURENCO_MARQUES
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_LOURENCO_MARQUES
+				count = 10
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_zanj
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_ZAMBEZIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ZAMBEZIA
+				count = 5
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_southern_africa
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_EASTERN_CAPE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_CAPE_COLONY
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_NORTHERN_CAPE
+				count = 2
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_southern_africa
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_VRYSTAAT
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_ZULULAND
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_TRANSVAAL
+				count = 2
+			}
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_southern_africa
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_LOURENCO_MARQUES
+				count = 1
+			}
+		}
+	}
+
+	c:ELDA ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_zanj
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_SOUTH_MADAGASCAR
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_SOUTH_MADAGASCAR
+				count = 5
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_zanj
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_SOUTH_MADAGASCAR
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_NORTH_MADAGASCAR
+				count = 2
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_zanj
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_NORTH_MADAGASCAR
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_NORTH_MADAGASCAR
+				count = 2
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_zanj
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTH_MADAGASCAR
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTH_MADAGASCAR
+				count = 2
+			}
+		}
+	}
+}

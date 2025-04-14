@@ -1,0 +1,19 @@
+﻿on_monthly_pulse_country = {
+	events = {
+		Code002_TPG_events.3       #太平天国#仁玕归来
+		mygo_events.4              #顺利入学
+		warlords_events.1          #三民主义浪潮#革命的花火
+		warlords_events.16         #教育兴桂
+		golden_horde_caucasuswar.5 #高加索战争
+	}
+	on_actions = {                 #每月随机事件
+		mygo_events                #MyGO!!!!!
+	}
+}
+on_yearly_pulse_country = {
+	effect = {
+	}
+	on_actions = {
+		three_principles_movement_yearly_events
+	}
+}

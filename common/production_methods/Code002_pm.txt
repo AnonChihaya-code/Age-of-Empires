@@ -1,0 +1,214 @@
+﻿####################
+##### 黄埔军校 #####
+####################
+pm_0101_building_whampoa_military_academy = {                #基础训练
+    texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	country_modifiers = {
+		workforce_scaled = {
+			military_formation_movement_speed_mult = 0.1     #编队移动速度
+			military_formation_mobilization_speed_mult = 0.1 #编队动员速度
+			military_formation_organization_gain_add = 1     #组织度每日
+			military_formation_organization_gain_mult = 0.1  #组织度每日
+			unit_experience_gain_add = 1                     #陆海军每周经验
+			unit_experience_gain_mult = 0.1                  #陆海军每周经验%
+			building_training_rate_add = 1000                #训练率
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_officers_add = 5000          #军官
+
+			goods_input_small_arms_add = 5                   #轻武器
+		    goods_input_ammunition_add = 5                   #弹药
+			goods_input_artillery_add = 5                    #火炮
+		}
+	}
+}
+
+pm_0102_building_whampoa_military_academy = {                 #额外训练
+    texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	unlocking_technologies = {
+		military_statistics
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			military_formation_movement_speed_mult = 0.15     #编队移动速度
+			military_formation_mobilization_speed_mult = 0.15 #编队动员速度
+			military_formation_organization_gain_add = 5      #组织度每日
+			military_formation_organization_gain_mult = 0.15  #组织度每日
+			unit_experience_gain_add = 5                      #陆海军每周经验
+			unit_experience_gain_mult = 0.15                  #陆海军每周经验%
+			building_training_rate_add = 2000                 #训练率
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_officers_add = 5000           #军官
+
+			goods_input_small_arms_add = 25                   #轻武器
+		    goods_input_ammunition_add = 25                   #弹药
+			goods_input_artillery_add = 25                    #火炮
+			goods_input_oil_add = 25                          #油
+		}
+	}
+}
+
+pm_0103_building_whampoa_military_academy = {                 #魔鬼训练
+    texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	unlocking_technologies = {
+		nco_training
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			military_formation_movement_speed_mult = 0.25     #编队移动速度
+			military_formation_mobilization_speed_mult = 0.25 #编队动员速度
+			military_formation_organization_gain_add = 10     #组织度每日
+			military_formation_organization_gain_mult = 0.25  #组织度每日
+			unit_experience_gain_add = 10                     #陆海军每周经验
+			unit_experience_gain_mult = 0.25                  #陆海军每周经验%
+			building_training_rate_add = 5000                 #训练率
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_officers_add = 5000           #军官
+
+			goods_input_small_arms_add = 50                   #轻武器
+		    goods_input_ammunition_add = 50                   #弹药
+			goods_input_artillery_add =  50                   #火炮  
+			goods_input_oil_add = 50                          #油
+			goods_input_radios_add = 50                       #无线电
+		}
+	}
+}
+
+pm_0201_building_whampoa_military_academy = {                 #急救
+	texture = "gfx/interface/icons/mobilization_options/basic_medical_aid.dds"
+	country_modifiers = {
+		workforce_scaled = {
+			country_war_exhaustion_casualties_mult = -0.1     #伤亡造成的厌战度
+			military_formation_attrition_risk_add = -0.5      #损耗风险
+			military_formation_attrition_risk_mult = -0.5     #损耗风险%
+			unit_recovery_rate_add = 0.05                     #康复
+			unit_morale_recovery_mult = 0.05                  #士气恢复
+			unit_morale_loss_mult = -0.05                     #士气损失
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_officers_add = 5000           #军官
+			
+			goods_input_sugar_add = 5                         #糖
+			goods_input_fabric_add = 5                        #布料
+			goods_input_tools_add = 5                         #工具
+			goods_input_liquor_add = 5                        #烈酒
+		}
+	}
+}
+
+pm_0202_building_whampoa_military_academy = {                 #战地医院
+	texture = "gfx/interface/icons/mobilization_options/field_hospitals.dds"
+	unlocking_technologies = {
+		modern_nursing
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_war_exhaustion_casualties_mult = -0.15    #伤亡造成的厌战度
+			military_formation_attrition_risk_add = -1        #损耗风险
+			military_formation_attrition_risk_mult = -1       #损耗风险%
+			unit_recovery_rate_add = 0.15                     #康复
+			unit_morale_recovery_mult = 0.15                  #士气恢复
+			unit_morale_loss_mult = -0.15                     #士气损失
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_officers_add = 5000           #军官
+
+			goods_input_sugar_add = 50                        #糖
+			goods_input_fabric_add = 50                       #布料
+			goods_input_tools_add = 50                        #工具
+			goods_input_liquor_add = 50                       #烈酒
+		}
+	}
+}
+
+##### 国立广西大学 #####
+pm_01_building_national_guangXi_university = { #生产科技
+	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds" #冷凝蒸汽机泵
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_weekly_innovation_add = 5                          #创新力
+			country_weekly_innovation_max_add = 10                     #创新力投入上限
+			interest_group_ig_intelligentsia_pol_str_mult = 0.25       #知识分子政治力量
+            
+			building_construction_sector_throughput_add = 0.10         #建造部门
+			building_group_bg_manufacturing_throughput_add = 0.10      #制造业
+	        building_group_bg_mining_throughput_add = 0.10             #矿井吞吐
+			building_group_bg_agriculture_throughput_add = 0.10        #农业吞吐
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_input_paper_add = 50                                  #纸张
+		}
+		level_scaled = {
+			building_employment_academics_add = 5000                    #学者
+		}
+	}
+}
+
+pm_02_building_national_guangXi_university = { #军事科技
+	texture = "gfx/interface/icons/production_method_icons/aeroplanes.dds" #飞机
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_weekly_innovation_add = 5                          #创新力
+			country_weekly_innovation_max_add = 10                     #创新力投入上限
+			interest_group_ig_intelligentsia_pol_str_mult = 0.25       #知识分子政治力量
+
+			unit_offense_mult = 0.05	    	    	    	       #攻击
+	        unit_defense_mult = 0.05	    	    	    	       #防守
+			building_group_bg_military_throughput_add = 0.25           #军事建筑吞吐
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_input_paper_add = 50                                 #纸张
+		}
+		level_scaled = {
+			building_employment_academics_add = 5000                   #学者
+		}
+	}
+}
+
+pm_03_building_national_guangXi_university = { #社会科技
+	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds" #分析哲学系
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_weekly_innovation_add = 5                          #创新力
+			country_weekly_innovation_max_add = 10                     #创新力投入上限
+			interest_group_ig_intelligentsia_pol_str_mult = 0.25       #知识分子政治力量
+            
+			state_market_access_price_impact = 0.05                    #价格接入度
+			country_minting_mult = 0.10                                #铸币
+			country_loan_interest_rate_mult = -0.10                    #贷款利率
+			state_tax_capacity_mult = 0.15                             #征税能力
+			country_trade_route_cost_mult = -0.15                      #交易消耗行政力
+			state_bureaucracy_population_base_cost_factor_mult = -0.15 #人口使用行政
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_input_paper_add = 50                                 #纸张
+		}
+		level_scaled = {
+			building_employment_academics_add = 5000                   #学者
+		}
+	}
+}

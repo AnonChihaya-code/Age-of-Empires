@@ -1,0 +1,218 @@
+﻿Code002_accessories = { #军衔
+	usage = game
+	selection_behavior = weighted_random
+	#fallback = no_headgear
+
+    Code002_00_american_accessories = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = medals
+                template = no_medals #奖章
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }           
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    commander_rank = 1
+                }
+
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+                #ruler_clothes_trigger = no
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }  
+            }
+        }
+    }
+
+    Code002_01_american_accessories = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = Code002_medals
+                template = Code002_prussian_medals #奖章
+                accessory = male_medals_generic_01_04
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }           
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    commander_rank = 2
+                }
+
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+                #ruler_clothes_trigger = no
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }  
+            }
+        }
+    }
+
+    Code002_02_american_accessories = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = Code002_medals
+                template = Code002_prussian_medals #奖章
+                accessory = male_medals_generic_01_02
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }           
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    commander_rank = 3
+                }
+
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+                #ruler_clothes_trigger = no
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }  
+            }
+        }
+    }
+    Code002_03_american_accessories = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = Code002_medals
+                template = Code002_prussian_medals #奖章
+                accessory = male_medals_generic_01_01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }           
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    commander_rank = 4
+                }
+
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+                #ruler_clothes_trigger = no
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }  
+            }
+        }
+    }
+    Code002_04_american_accessories = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = Code002_medals
+                template = Code002_prussian_medals #奖章
+                accessory = male_medals_generic_01_03
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }           
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    commander_rank = 5
+                }
+
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+                #ruler_clothes_trigger = no
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }  
+            }
+        }
+    }
+    Code002_05_american_accessories = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = Code002_medals
+                template = Code002_prussian_medals #奖章
+                accessory = male_medals_generic_01_05
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }           
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    is_ruler = yes
+                }
+
+                british_empire_clothes_trigger = no
+                french_empire_clothes_trigger = no
+                russian_empire_clothes_trigger = no
+                #ruler_clothes_trigger = no
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }  
+            }
+        }
+    }
+}

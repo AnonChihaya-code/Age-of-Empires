@@ -1,0 +1,259 @@
+﻿#####################
+#####注册君主政体#####
+#####################
+
+GOV_CNXN = { #匈奴#大单于
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_DACHANYU"
+	female_ruler = "RULER_TITLE_DACHANYU"
+
+	male_heir = "RULER_TITLE_CHANYUZI"
+	female_heir = "RULER_TITLE_CHANYUZI"
+
+	possible = {
+		has_law = law_type:law_monarchy
+		NOT = {
+			has_global_variable = je_entered_the_central_plainsicon_complete_var
+		}
+		exists = c:CNXN
+		c:CNXN = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_CNGY = { #归义军#节度使
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_JIEDUSHI"
+	female_ruler = "RULER_TITLE_JIEDUSHI"
+
+	possible = {
+		has_law = law_type:law_monarchy		
+		exists = c:CNGY
+		c:CNGY = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_MGGH = { #金帐#可汗
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_GREAT_KHAN"
+	female_ruler = "RULER_TITLE_GREAT_KHATUN"
+	
+	male_heir = "RULER_TITLE_KHANZADEH"
+	female_heir = "RULER_TITLE_KHANUM"
+
+	possible = {
+		has_law = law_type:law_monarchy	
+		exists = c:MGGH
+		c:MGGH = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_TATAR_HORDE = { #鞑靼可汗
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KHAN"
+	female_ruler = "RULER_TITLE_KHATUN"
+	
+	male_heir = "RULER_TITLE_KHANZADEH"
+	female_heir = "RULER_TITLE_KHANUM"
+
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_primary_culture = cu:tatar
+		NOR = {
+			country_tier = empire
+			country_tier = hegemony
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_CNQY = { #青阳#大君
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_DAJUN"
+	female_ruler = "RULER_TITLE_DAJUN"
+
+	male_heir = "RULER_TITLE_SHIZI"
+	female_heir = "RULER_TITLE_SHIZI"
+
+	possible = {
+		has_law = law_type:law_monarchy	
+		exists = c:CNQY
+		c:CNQY = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+Gov_Mughal_Empire = { #莫卧儿帝国
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_PADISHAH"
+	female_ruler = "RULER_TITLE_PADSHAH_BEGUM"
+
+	male_heir = "RULER_TITLE_CROWN_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:MUGH
+		c:MUGH = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+Gov_Delhi_Sultanate = { #德里苏丹
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_SULTAN"
+	female_ruler = "RULER_TITLE_SULTANA"
+
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:DELI
+		c:DELI = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+Gov_Seljuq_Sultanate = { #塞尔柱#苏丹
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_SULTAN"
+	female_ruler = "RULER_TITLE_SULTANA"
+
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:SERZ
+		c:SERZ = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+Gov_Mamluk_Sultanate = { #马穆鲁克苏丹
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_SULTAN"
+	female_ruler = "RULER_TITLE_SULTANA"
+
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:MAML
+		c:MAML = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+Gov_Tibetan_Kingdom = { #吐蕃/赞普
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_BOTSAN_PO"
+	female_ruler = "RULER_TITLE_GYALMO"
+	
+	male_heir = "RULER_TITLE_GYALSRAS"
+	female_heir = "RULER_TITLE_GYALSMO"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:CNTB
+		c:CNTB = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+Gov_Ayyubid_Sultanate = { #阿尤布苏丹
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_SULTAN"
+	female_ruler = "RULER_TITLE_SULTANA"
+
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:AYUB
+		c:AYUB = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}

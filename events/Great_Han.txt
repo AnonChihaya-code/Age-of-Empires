@@ -1,0 +1,69 @@
+﻿namespace = great_han_events
+
+great_han_events.1 = { #还于旧都
+	type = country_event
+	placement = root
+	duration = 3
+	title = great_han_events.1.t
+	desc = great_han_events.1.d
+	flavor = great_han_events.1.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = great_han_events.1.a
+		add_journal_entry = {
+			type = je_rebuild_changan
+		}
+		add_journal_entry = {
+			type = je_revive_great_han
+		}
+		add_journal_entry = {
+			type = je_revive_great_han_01
+		}
+		add_journal_entry = {
+			type = je_revive_great_han_02
+		}
+		add_journal_entry = {
+			type = je_revive_great_han_03
+		}
+		add_journal_entry = {
+			type = je_revive_great_han_04
+		}
+		add_journal_entry = {
+			type = je_revive_great_han_05
+		}
+	}
+}
+
+great_han_events.2 = { #三造大汉
+	type = country_event
+	placement = root
+	duration = 3
+	title = great_han_events.2.t
+	desc = great_han_events.2.d
+	flavor = great_han_events.2.f
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = great_han_events.2.a
+		add_loyalists = { #效忠派
+			value = 0.15
+		}
+		add_modifier =  {
+			name = revive_great_han_modifier
+		}
+	}
+}

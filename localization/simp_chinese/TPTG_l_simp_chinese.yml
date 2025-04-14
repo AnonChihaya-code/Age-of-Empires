@@ -1,0 +1,148 @@
+﻿l_simp_chinese:
+
+ #####太平天国本地#####
+
+ je_heaven_on_earth: "我们的天国"
+ je_heaven_on_earth_reason: "只有满足所有人的需求，人间天堂才能实现。"
+ je_taiping_land_socializationicon: "颁布天朝田亩制度"
+ je_taiping_land_socializationicon_reason: "中国历来是一个以农业为基础的大国，农业人口占绝大多数，农民的土地问题是个重要问题。这个问题解决得如何，关系政权的兴亡治乱和社会经济的繁荣衰替。"
+ je_taiping_land_policy: "天朝田亩制度"
+ je_taiping_land_policy_reason: "根据“凡天下田，天下人同耕”的原则，把每亩土地按每年产量的多少，分为上、中、下三级九等，然后好田坏田互相搭配，好坏各一半，按人口平均分配。凡16岁以上的男女每人得到一份同等数量的土地，15岁以下的减半。同时，还提出“丰荒相通”、以丰赈荒的调剂办法。"
+ je_taiping_land_policy_modifier: "天朝田亩制度"
+
+ je_taiping_divided: "分裂的天国"
+ je_taiping_divided_reason: "随着天国革命的开展，东王在军事和组织能力上表现出色，逐步掌握太平天国的大部分军政实权，其骄傲专横的作风扩大了他和天王以及诸王的矛盾，天国的分裂不可避免。\n\n如果[ROOT.GetCountry.GetName]的[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]在#variable 12#!个月内处于#bold 中等#!（[GetPlayer.MakeScope.ScriptValue('TPG_Divided_stability_low_upper_bound')]）或更低，$TPTG$将爆发内乱。目前这一情况已经持续了#variable [ROOT.GetCountry.MakeScope.Var('je_taiping_divided_var').GetValue]#!个月。"
+ je_taiping_divided_tt: "[ROOT.GetCountry.GetName]的[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]大于或等于#bold 高#!（[GetPlayer.MakeScope.ScriptValue('TPG_Divided_stability_high_upper_bound')]）"
+ je_taiping_divided_var_tt: "[ROOT.GetCountry.GetName]的[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]处于#bold 中等#!（[GetPlayer.MakeScope.ScriptValue('TPG_Divided_stability_low_upper_bound')]）或更低，持续#variable 12#!个月"
+ je_taiping_divided_progress_bar: "天国稳定度"
+ je_taiping_divided_progress_bar_desc: "$TPTG$[SCOPE.GetRootScope.GetCountry.GetCustom('get_TPG_Divided_mutiny_progress_bengal')]"
+ je_taiping_divided_modifier: "权力的毒药"
+
+ concept_je_taiping_divided_stability: "太平天国稳定度"
+ concept_je_taiping_divided_stability_desc: "#title 以下条件#g #b 提高#!#!$concept_je_taiping_divided_stability$：#!#indent_newline:3 \n•高[concept_legitimacy]\n•[concept_ruler][concept_popularity]较高\n•[concept_ruler][concept_interest_group][concept_clout]\n•拥有[Concept('concept_loyalist','$concept_loyalists$')]的[Concept('concept_state', '$concept_states$')]\n•#bold 低#![concept_taxes]\n•农业[Concept('concept_building_level', '$concept_building_levels$')]\n•事件和其他效果#!\n\n#title 以下条件#r #b 降低#!#!$concept_je_taiping_divided_stability$：#!#indent_newline:3 \n•低[concept_legitimacy]\n•[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l][concept_leader][concept_popularity]较高\n•[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l][concept_interest_group][concept_clout]\n•拥有[concept_turmoil]的[Concept('concept_state', '$concept_states$')]\n•#bold 高#![concept_taxes]\n•军事[Concept('concept_building_level', '$concept_building_levels$')]\n•事件和其他效果#!"
+ concept_je_taiping_divided_stability_short: "稳定度"
+ concept_je_taiping_divided_stability_short_desc: ""
+
+ #合法性
+ je_taiping_divided_legitimacy_01_tt: "[concept_legitimacy]大于等于50"
+ je_taiping_divided_legitimacy_02_tt: "[concept_legitimacy]大于等于75"
+ je_taiping_divided_legitimacy_03_tt: "[concept_legitimacy]大于等于90"
+ je_taiping_divided_legitimacy_04_tt: "[concept_legitimacy]小于50"
+ je_taiping_divided_legitimacy_05_tt: "[concept_legitimacy]大于等于25"
+
+ #统治者
+ je_taiping_divided_ruler_popularity_tt: "[concept_ruler][concept_popularity]大于等于25"
+ je_taiping_divided_ruler_ig_powerful_tt: "[concept_ruler][concept_interest_group][concept_clout]"
+ #军队
+ je_taiping_divided_army_leader_popularity_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l][concept_leader][concept_popularity]大于等于25"
+ je_taiping_divided_army_ig_powerful_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l][concept_interest_group][concept_clout]"
+ #地区动乱与效忠
+ je_taiping_divided_loyalists_tt: "拥有[Concept('concept_loyalist','$concept_loyalists$')]的[Concept('concept_state', '$concept_states$')]"
+ je_taiping_divided_radicals_tt: "拥有[concept_turmoil]的[Concept('concept_state', '$concept_states$')]"
+ #农业与军事建筑
+ je_taiping_divided_progress_from_farms: "农业[Concept('concept_building_level', '$concept_building_levels$')]"
+ je_taiping_divided_progress_from_military: "军事[Concept('concept_building_level', '$concept_building_levels$')]"
+
+ TPG_Divided_mutiny_very_low_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold 危急#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+ TPG_Divided_mutiny_low_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold 低#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+ TPG_Divided_mutiny_medium_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold 中等#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+ TPG_Divided_mutiny_high_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold 高#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+
+ Code002_TPG_events.1.t: "天父的旨意"
+ Code002_TPG_events.1.d: "在洪秀全与杨秀清的矛盾激化之际，天父通过梦境向所有信徒传达了他的旨意。\n梦中，天父训斥众人因私欲而背离了天国的目标，并施加惩罚。众人头痛欲裂，满地打滚。"
+ Code002_TPG_events.1.f: "惩罚过后，洪秀全与杨秀清带领众人共同跪伏在天父身前，宣誓将私怨置于信仰之下，团结一致，将天国建设成人间天堂。"
+ Code002_TPG_events.1.a: "天父的光辉普照着这片土地。"
+ Je_TPG_Divided_01_modifier: "天父的旨意"
+
+ Code002_TPG_events.2.t: "天京事变"
+ Code002_TPG_events.2.d: "杨秀清以西线紧急为由，调韦昌辉和石达开赴前线督师，只剩下天王和东王留在天京。\n陈承瑢向天王告密，谓东王有弑君篡位之企图，洪秀全密诏韦昌辉、石达开、秦日纲铲除杨秀清。\n韦昌辉率三千精兵赶回天京，当夜在城外与秦日纲会合，在凌晨突袭东王府，杨秀清及其支持者被尽数诛杀。其后韦昌辉以搜捕“东党”为名，大杀异己，血洗天京。"
+ Code002_TPG_events.2.f: "石达开十余日后到天京，进城会晤韦昌辉，责备滥杀之事，不欢而散，连夜匆忙缒城逃出城外。韦昌辉未能捉拿石达开，尽杀其家属及王府部属。石达开从安庆起兵讨伐韦昌辉，求天王杀韦昌辉以谢天下。此时在天京以外的太平军大多支持石达开，韦昌辉在势急下攻打天王府，但最终败于效忠天王的将士及杨秀清余众，其首级被函送石达开营中验收，秦日纲及陈承瑢不久亦被处死，天京事变告一段落。后来天王撤销了杨秀清的图谋篡位罪名，将杨之死忌定为“东王升天节”。\n\n剑光与血光交织，昔日的信徒们已经无法理解天父的旨意，太平天国的辉煌从此蒙上血腥的阴影。"
+ Code002_TPG_events.2.a: "这场腥风血雨重创了天国的统治根基。"
+ Je_TPG_Divided_02_modifier: "天国的溃败"
+
+ Code002_TPG_events.3.t: "仁玕归来"
+ Code002_TPG_events.3.d: "[SCOPE.sCharacter('Hong_Rengan_scope').GetFullName]漂泊多年，终于在动荡的时局中回到了天京。他学贯中西，带回了大量关于西方国家政治、经济与军事的知识。在朝堂之上，洪仁玕提出了一套详尽的改革计划，主张加强中央集权、发展工业和提升军事技术，以巩固天国的统治。"
+ Code002_TPG_events.3.f: "然而，他的归来也引发了争议，一些守旧大臣认为他的主张背离了天父的意志，可能会削弱天国的宗教影响。此时，天王面临一个重要的决定：是否采纳洪仁玕的建议，将[ROOT.GetCountry.GetName]引向一条更加现代化的道路？"
+ Code002_TPG_events.3.a: "封他为“开朝精忠军师顶天扶朝纲干王”，总理朝政。"
+
+ je_new_administrative_paper: "资政新篇"
+ je_new_administrative_paper_reason: "洪仁玕决心通过改革创造一个“太平一统江山万万年”的“新天、新地、新人、新世界”。为此，他提出了一个改革内政和建设国家的新方案《资政新篇》。\n\n“天父启示我们建立天国，但天国的长存，还需有智慧的治理。”"
+ je_new_administrative_paper_goal: "#bold 进度条#!到达#variable 100%#!"
+ je_new_administrative_paper_01: "资政新篇：政治"
+ je_new_administrative_paper_01_reason: "设立各级行政机构，推行官员考核制度，并以法律保障公平公正，避免因官员腐败而动摇天国根基。此外，他倡导宗教与政治的紧密结合，使天下臣民皆受天国律法的引导。"
+ #je_new_administrative_paper_01_tt: "以下条件必须满足5年(目前已经持续#variable [ROOT.GetCountry.MakeScope.Var('je_new_administrative_paper_01_var').GetValue]#!个月)："
+ je_new_administrative_paper_02: "资政新篇：经济"
+ je_new_administrative_paper_02_reason: "发展工商业，鼓励自由贸易，引进西方先进技术，并设立国家银行以稳固货币体系。同时，天国应合理征税，杜绝苛捐杂税，以缓解百姓负担，使国库充盈，为天国的长远发展奠定基础。"
+ je_new_administrative_paper_03: "资政新篇：社会"
+ je_new_administrative_paper_03_reason: "废除陋习，改善妇女地位，鼓励全民识字，设立学校推广新式教育，建立医疗与社会福利制度，使天国子民能够安居乐业，实现真正的“天国大同”。"
+ je_new_administrative_paper_04: "资政新篇：军事"
+ je_new_administrative_paper_04_reason: "建立正规化军队，推行西式训练，引入现代武器，并设立军工生产体系。此外，他倡导军事纪律与后勤保障并重，以确保天国军队能够长期作战，为天国的存续提供强有力的支撑。"
+
+ Je_New_Administrative_Paper_1_modifier: "干王主政"
+ Je_New_Administrative_Paper_2_modifier: "国家现代化"
+ Je_New_Administrative_Paper_01_modifier: "天王威权"
+ Je_New_Administrative_Paper_0201_modifier: "现代化运动"
+ Je_New_Administrative_Paper_0202_modifier: "自由贸易"
+ Je_New_Administrative_Paper_03_modifier: "社会安定"
+ Je_New_Administrative_Paper_04_modifier: "新式军队"
+
+ ideology_New_Paper: "新篇思想"
+ ideology_New_Paper_desc: "这位领袖主张学习西方，与各国通商，借鉴西方先进的科学技术，发展资本主义工商业，用资本主义代替封建主义。"
+ ideology_New_Paper_movement: "新篇思想"
+ ideology_New_Paper_movement_desc: "这个集团主张学习西方，与各国通商，借鉴西方先进的科学技术，发展资本主义工商业，用资本主义代替封建主义。"
+ movement_New_Paper: "新篇运动"
+ movement_New_Paper_name: "$movement_New_Paper$"
+
+ Code002_TPG_events.4.t: "国家现代化"
+ Code002_TPG_events.4.d: "蒸汽巨人吞吐着煤烟编织的云锦，黑缎般的铁轨刺破晨雾，将冒着白烟的钢铁长龙送往地平线尽头，金色麦浪与戴草帽的农人共舞，市场充盈着贸易的繁荣，教育普及让孩童的笑声回荡在校园，花岗岩炮台镇守的海岸线上，装甲舰吐出的煤烟化作守护图腾。"
+ Code002_TPG_events.4.f: "“其地无饿殍，其城无叹息。民有余粮，国有余力。”这是一个远离贫穷、愚昧与动乱的理想国度。"
+ Code002_TPG_events.4.a: "[ROOT.GetCountry.GetName]正朝着人间天堂前进。"
+
+ Code002_TPG_events.5.t: "天父下凡"
+ Code002_TPG_events.5.d: "杨秀清在会议后突然假托天父下凡，批评“尔主天王性气太烈…主宰天下，皆要从宽。譬如女官，在天朝佐理天事者，多是不明天情，每有不合事宜之处，务要悠扬教导，海量宽容，使其心悦诚服，天事方可周理。若是严性过甚，未免其方寸多乱，不知如何样作法方能称旨。”"
+ Code002_TPG_events.5.f: "这道“口谕”通过韦昌辉传给天王，杨秀清也移驾天王府，问洪秀全是否知错，洪秀全表示知错，杨秀清代天父传令：“尔知有错，即杖四十！”众官要求代受杖责，杨秀清不允，洪秀全只得遵旨，俯身受杖。杨秀清说：“尔已遵旨，我便不杖尔！”其后天父“回天”。"
+ Code002_TPG_events.5.a: "虚惊一场。"
+ Code002_TPG_events_502_tt: "众人对东王感到不满。[concept_je_taiping_divided_stability]进度#r -5#!"
+
+ Code002_TPG_events.6.t: "天父下凡"
+ Code002_TPG_events.6.d: "东王与诸王矛盾加剧，秦日纲、黄玉昆、陈承瑢辞官，天王召开大朝会解决此事。\n\n“今战事频繁，正是汝等为天国用命之时，不可因纷争而生仇隙，那只会使亲者痛仇者快，秦日纲、黄玉昆、陈承瑢不准辞官。”\n东王不满这个结果，故假托天父上身。"
+ Code002_TPG_events.6.f: "“朕乃天父，众小的听着。”\n“我早就告诫你们，天下万部皆靠秀清，对他不恭即是对朕不恭。”\n“今秦日纲纵奴违规，黄玉昆不守职责，陈承瑢助纣为虐，你三人实在令朕心寒，令朕心痛啊。”\n“为张正气，今朕发令，将秦日纲杖打一百，陈承瑢杖打二百，黄玉昆杖打三百，不得宽待。”"
+ Code002_TPG_events.6.a: "天王只得下令杖打三人。"
+ Code002_TPG_events_601_tt: "三人起反抗之心，密谋除掉东王。[concept_je_taiping_divided_stability]进度#r -10#!"
+ Code002_TPG_events_602_tt: "三人害怕东王的权势，只得忍气吞声。[concept_je_taiping_divided_stability]进度#r -5#!"
+
+ Code002_TPG_events.7.t: "天父下凡"
+ Code002_TPG_events.7.d: "杨秀清巡查城防时路过天王府被一女官挡住去路，就此事向天王问罪，争执间他假托天父上身。"
+ Code002_TPG_events.7.f: "“朕乃天父，众小的听着。不要以为进了小天堂就忘乎所以，你们每个人应严加管束自己，洪秀全也不能例外。尔身居宫中不务国事，连你的门吏也目无尊长起来了，这还了得吗？”\n“是我失察之罪。”\n“尔有过失不只一件，尔知道吗？”\n“我有过失。”\n“屡有过失又不改，当杖四十。”\n“天父息怒，我等愿代天王受过。”\n“尔等退下，任何人不得代他受过。”\n“天父息怒，秀全愿受杖责。”"
+ Code002_TPG_events.7.a: "我手持钢鞭将你打~"
+ Code002_TPG_events_701_tt: "天王痛改前非。[concept_je_taiping_divided_stability]进度#g +15#!"
+ Code002_TPG_events_702_tt: "天王死不悔改。[concept_je_taiping_divided_stability]进度#r -15#!"
+
+ Code002_TPG_events.8.t: "天父下凡"
+ Code002_TPG_events.8.d: "“众小的们，居功不可傲，你们骄傲了。秀全来了吗？”\n“禀天父，秀全来了。”\n“朕派你携尔弟秀清去治理天国，成绩如何？”\n“秀全与秀清尽心竭力，宵衣旰食，勤恳视事，一切尚好。”\n“你们是不是骄傲了”\n“不敢，仅有半壁河山，大业未成，岂敢骄傲。”\n“不要半途而废，有妖调拨离间秀全、秀清兄弟，有无此事啊？”\n“绝无此事，秀全对秀清十分信赖，非他人能够离间。”\n“尔兄弟一心一德方能胜妖，且不可相互猜疑。朕是不会饶恕你们的。”"
+ Code002_TPG_events.8.f: "“杨秀清干得怎么样？令你放心吗？”\n“秀清是天国柱石，干得很好。秀全对他再无不放心之处。”\n“既然秀清干得很好，你也满意，他有如此大功，为何你称为万岁，他只称九千岁呢？为什么不说话？东王为什么不能呼万岁呢？”"
+ Code002_TPG_events.8.a: "听闻，众人一惊。"
+ Code002_TPG_events_801_tt: "东王打江山，功劳最大，也应该称万岁。[concept_je_taiping_divided_stability]进度#g +20#!"
+ Code002_TPG_events_802_tt: "东王称万岁，天王又该如何？[concept_je_taiping_divided_stability]进度#r -20#!"
+
+ je_northern_expedition: "天国革命：北伐"
+ je_northern_expedition_reason: "北伐之战已然打响，天国的革命事业，能否照亮北方的天空？"
+ je_western_expedition: "天国革命：西征"
+ je_western_expedition_reason: "西征已至关键时刻，长江流域的未来，乃至整个天国革命的成败，都将在这一战中决定！"
+ je_unify_china: "天国革命：统一中国"
+ je_unify_china_reason: "北伐与西征的烈焰曾照亮半壁江山，而今，天国的大军已准备好迈出最后一步——彻底统一中国，建立真正的天国！"
+ je_unify_china_modifier: "天命所归"
+
+ je_northern_expedition_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，25%的[concept_pop]皈依[concept_state_religion]"
+ je_western_expedition_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，25%的[concept_pop]皈依[concept_state_religion]"
+ je_unify_china_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，50%的[concept_pop]皈依[concept_state_religion]"
+
+ je_taiping_land_socializationicon_tt: "[concept_je_taiping_divided_stability]进度#g +50#!"
+ je_northern_expedition_02_tt: "[concept_je_taiping_divided_stability]进度#g +50#!"
+ je_western_expedition_02_tt: "[concept_je_taiping_divided_stability]进度#g +50#!"
+
+ Code002_TPG_events.9.t: "我们的天国"
+ Code002_TPG_events.9.d: "政府兑现了扩大公共机构的承诺，保障所有[ROOT.GetCountry.GetAdjectiveNoFormatting]公民都有医疗保健、社会保障、教育和安全的工作场所。"
+ Code002_TPG_events.9.f: "各尽所能，按需分配。这是天国的核心原则。"
+ Code002_TPG_events.9.a: "人间天堂就是在这样的基础上建立起来的。"
+ je_heaven_on_earth_modifier: "人间天堂"

@@ -1,0 +1,634 @@
+﻿#####政治运动#####
+movement_sanminzhuyier = { #三民主义运动
+	category = movement_category_ideological
+	
+	ideology = ideology_sanminzhuyier_movement
+	character_ideologies = {
+		ideology_sanminzhuyier
+	}
+	
+	creation_trigger = {
+		AND = {
+		    has_technology_researched = egalitarianism
+		    country_has_primary_culture = cu:han
+			OR = {
+			    c:CHINA ?= this
+				c:CNNR ?= this
+				c:CNBY ?= this
+				c:CNGX ?= this
+				c:CNYN ?= this
+			}
+			NOT = {
+				has_law = law_type:law_council_republic
+			}
+		}
+	}	
+	creation_weight = { #创建权重
+		value = 5000
+	}	
+	on_created = {
+		add_movement_enthusiasm_modifier = yes
+	}
+	disband_trigger = {
+		has_law = law_type:law_council_republic
+	}
+	
+	character_support_trigger = { #角色支持触发器
+		has_ideology = ideology:ideology_sanminzhuyier			
+	}
+	character_support_weight = { #角色支持权重
+		value = 200
+		if = {
+			limit = {				
+				has_ideology = ideology:ideology_sanminzhuyier				
+			}
+			multiply = {
+				value = 5
+			}
+		}
+	}
+
+	pop_support_trigger = { #POP 支持触发器
+		NOR = {
+			is_pop_type = aristocrats #贵族
+			is_pop_type = slaves      #奴隶
+		}
+	}
+
+	pop_support_factors = { #POP 支持因素
+		movement_support_low_urbanization     #城市化糟糕的地区
+		movement_support_high_literacy        #高识字率
+		movement_support_below_expected_sol   #低于预期生活
+		movement_support_radicalization       #激进派
+		movement_support_capitalists          #资本家
+		movement_support_shopkeepers          #店主
+		movement_support_academics            #学者
+		movement_support_engineers            #工程师
+		movement_support_bureaucrats          #官僚
+		movement_support_officers             #军官
+		movement_support_farmers              #农民
+		movement_support_laborers             #劳工
+		movement_support_machinists           #技工
+		movement_support_soldiers             #军人
+		movement_support_clerks               #职员
+		movement_support_peasants             #自给农
+		movement_support_rural                #农业就业
+		movement_support_soldiers_conscripts  #征召兵
+	}
+	
+	pop_support_weight = { #POP 支持权重
+		add = {
+			desc = "URBAN_STATE"
+			value = 10
+			multiply = state.state_urbanization_rate
+		}	
+	
+	    if = {
+			limit = {
+				strata = upper #高等阶层
+			}
+			multiply = {
+				value = 0.5
+				desc = "UPPER_NO_ICON"
+			}
+			if = {
+				limit = {
+					is_pop_type = capitalists #资本家
+				}
+				add = {
+					value = 50
+					desc = "POP_CAPITALISTS"
+				}
+			}
+			else = {
+				add = {
+					value = 15
+					desc = "UPPER_NO_ICON"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle #中等阶层
+			}
+			multiply = {
+				value = 0.5
+				desc = "MIDDLE_NO_ICON"
+			}
+			if = {
+				limit = {
+					is_pop_type = shopkeepers #店主
+				}
+				add = {
+					value = 50
+					desc = "POP_SHOPKEEPERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = academics #学者
+				}
+				add = {
+					value = 50
+					desc = "POP_ACADEMICS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = engineers #工程师
+				}
+				add = {
+					value = 50
+					desc = "POP_ENGINEERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = bureaucrats #官僚
+				}
+				add = {
+					value = 50
+					desc = "POP_BUREAUCRATS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = officers #军官
+				}
+				add = {
+					value = 50
+					desc = "POP_OFFICERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = farmers #农民
+				}
+				add = {
+					value = 50
+					desc = "POP_FARMERS"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				strata = lower #低等阶层
+			}
+			multiply = {
+				value = 0.5
+				desc = "LOWER_NO_ICON"
+			}
+			if = {
+				limit = {
+					is_pop_type = laborers #劳共
+				}
+				add = {
+					value = 50
+					desc = "POP_LABORERS"
+				}
+			}		
+			else_if = {
+				limit = {
+					is_pop_type = machinists #技工
+				}
+				add = {
+					value = 50
+					desc = "POP_MACHINISTS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = clerks #职员
+				}
+				add = {
+					value = 50
+					desc = "POP_CLERKS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = soldiers #军人
+				}
+				add = {
+					value = 50
+					desc = "POP_SOLDIERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = peasants #自给农
+				}
+				add = {
+					value = 50
+					desc = "POP_PEASANTS"
+				}
+			}
+			else = {
+				add = {
+					value = 15
+					desc = "LOWER_NO_ICON"
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						is_pop_type = soldiers #军人
+						pop_employment_building = building_conscription_center #征兵中心
+					}
+				}
+				multiply = {
+					value = 2
+					desc = "CONSCRIPTS"
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				standard_of_living < state.average_expected_sol
+				strata = lower
+			}
+			add = { # Increases likelihood of support if impoverished ## 增加贫困时获得经济援助的可能性
+				desc = "IS_BELOW_EXPECTED_SOL"
+				value = state.average_expected_sol
+				subtract = standard_of_living
+				max = 10
+			}
+		}
+		else_if = {
+			limit = {
+				standard_of_living > state.average_expected_sol
+				strata = lower
+			}
+			add = { # Decreases likelihood of support if well-off ## 降低富裕地区获得支持的可能性
+				desc = "IS_ABOVE_EXPECTED_SOL"
+				value = state.average_expected_sol
+				subtract = standard_of_living
+			}
+		}
+
+		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops ## 文盲 pops 的参与率是完全识字的 pop 的 1/10
+			desc = "POP_LITERACY"
+			value = literacy_rate
+			add = 0.10
+		}
+
+		multiply = { # Multiplied by 2x max ## 乘以 2x max
+			desc = "POP_RADICALS"
+			value = pop_radical_fraction
+			add = 1
+		}
+	}
+	
+	revolution = { #革命
+		possible = {
+			political_movement_support >= 0.05
+		}
+		
+		weight = {
+			value = 100
+		}	
+	}
+	
+	secession = { #脱离
+		possible = {
+			political_movement_support >= 0.05
+			scope:clout <= 0
+		}
+		
+		weight = {
+			value = 1000
+		}		
+	}	
+	
+	additional_radicalism_factors = { #其他激进主义因素
+		owner = {
+			if = {
+				limit = { has_institution = institution_workplace_safety }
+				
+				add = {
+					value = 3
+					subtract = "institution_investment_level(institution_workplace_safety)"
+					multiply = 0.05
+					desc = "INSTITUTION_FUNDING_LEVEL_workplace_safety"
+				}
+			}
+			else = {
+				add = {
+					value = 0.1
+					desc = "NO_INSTITUTION_workplace_safety"
+				}		
+			}		
+		}
+	}
+}
+
+movement_New_Paper = { #新篇思想运动
+	category = movement_category_ideological
+	
+	ideology = ideology_New_Paper_movement
+	character_ideologies = {
+		ideology_New_Paper          #新篇
+		ideology_market_liberal     #市场
+		ideology_reformer           #改良
+		ideology_humanitarian       #人道
+		ideology_corporatist_leader #法团
+	}
+	
+	creation_trigger = {
+		c:TPTG ?= this
+		has_variable = New_Administrative_Paper_Var
+	}	
+	creation_weight = {
+		value = 5000
+	}	
+	on_created = {
+		add_movement_enthusiasm_modifier = yes
+	}
+	disband_trigger = { }
+	
+	character_support_trigger = {
+		OR = {
+			has_ideology = ideology:ideology_New_Paper          #新篇
+			has_ideology = ideology:ideology_market_liberal     #市场
+			has_ideology = ideology:ideology_reformer           #改良
+			has_ideology = ideology:ideology_humanitarian       #人道
+			has_ideology = ideology:ideology_corporatist_leader #法团
+		}
+	}
+	character_support_weight = {
+		value = 1000
+		if = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_New_Paper          #新篇
+					has_ideology = ideology:ideology_market_liberal     #市场
+					has_ideology = ideology:ideology_reformer           #改良
+					has_ideology = ideology:ideology_humanitarian       #人道
+					has_ideology = ideology:ideology_corporatist_leader #法团
+				}
+			}
+			multiply = {
+				value = 4000
+			}
+		}
+	}
+
+	pop_support_trigger = {
+		NOT = {
+			is_pop_type = slaves
+		}
+	}
+
+	pop_support_factors = { #POP 支持因素
+		movement_support_low_urbanization     #城市化糟糕的地区
+		movement_support_high_literacy        #高识字率
+		movement_support_below_expected_sol   #低于预期生活
+		movement_support_radicalization       #激进派
+		movement_support_capitalists          #资本家
+		movement_support_shopkeepers          #店主
+		movement_support_academics            #学者
+		movement_support_engineers            #工程师
+		movement_support_bureaucrats          #官僚
+		movement_support_officers             #军官
+		movement_support_farmers              #农民
+		movement_support_laborers             #劳工
+		movement_support_machinists           #技工
+		movement_support_soldiers             #军人
+		movement_support_clerks               #职员
+		movement_support_peasants             #自给农
+		movement_support_rural                #农业就业
+		movement_support_soldiers_conscripts  #征召兵
+	}
+	
+	pop_support_weight = { #POP 支持权重
+		add = {
+			desc = "URBAN_STATE"
+			value = 10
+			multiply = state.state_urbanization_rate
+		}	
+	
+	    if = {
+			limit = {
+				strata = upper #高等阶层
+			}
+			multiply = {
+				value = 0.5
+				desc = "UPPER_NO_ICON"
+			}
+			if = {
+				limit = {
+					is_pop_type = capitalists #资本家
+				}
+				add = {
+					value = 50
+					desc = "POP_CAPITALISTS"
+				}
+			}
+			else = {
+				add = {
+					value = 15
+					desc = "UPPER_NO_ICON"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle #中等阶层
+			}
+			multiply = {
+				value = 0.5
+				desc = "MIDDLE_NO_ICON"
+			}
+			if = {
+				limit = {
+					is_pop_type = shopkeepers #店主
+				}
+				add = {
+					value = 50
+					desc = "POP_SHOPKEEPERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = academics #学者
+				}
+				add = {
+					value = 50
+					desc = "POP_ACADEMICS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = engineers #工程师
+				}
+				add = {
+					value = 50
+					desc = "POP_ENGINEERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = bureaucrats #官僚
+				}
+				add = {
+					value = 50
+					desc = "POP_BUREAUCRATS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = officers #军官
+				}
+				add = {
+					value = 50
+					desc = "POP_OFFICERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = farmers #农民
+				}
+				add = {
+					value = 50
+					desc = "POP_FARMERS"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				strata = lower #低等阶层
+			}
+			multiply = {
+				value = 0.5
+				desc = "LOWER_NO_ICON"
+			}
+			if = {
+				limit = {
+					is_pop_type = laborers #劳共
+				}
+				add = {
+					value = 50
+					desc = "POP_LABORERS"
+				}
+			}		
+			else_if = {
+				limit = {
+					is_pop_type = machinists #技工
+				}
+				add = {
+					value = 50
+					desc = "POP_MACHINISTS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = clerks #职员
+				}
+				add = {
+					value = 50
+					desc = "POP_CLERKS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = soldiers #军人
+				}
+				add = {
+					value = 50
+					desc = "POP_SOLDIERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = peasants #自给农
+				}
+				add = {
+					value = 50
+					desc = "POP_PEASANTS"
+				}
+			}
+			else = {
+				add = {
+					value = 15
+					desc = "LOWER_NO_ICON"
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						is_pop_type = soldiers #军人
+						pop_employment_building = building_conscription_center #征兵中心
+					}
+				}
+				multiply = {
+					value = 2
+					desc = "CONSCRIPTS"
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				standard_of_living < state.average_expected_sol
+				strata = lower
+			}
+			add = { # Increases likelihood of support if impoverished ## 增加贫困时获得经济援助的可能性
+				desc = "IS_BELOW_EXPECTED_SOL"
+				value = state.average_expected_sol
+				subtract = standard_of_living
+				max = 10
+			}
+		}
+		else_if = {
+			limit = {
+				standard_of_living > state.average_expected_sol
+				strata = lower
+			}
+			add = { # Decreases likelihood of support if well-off ## 降低富裕地区获得支持的可能性
+				desc = "IS_ABOVE_EXPECTED_SOL"
+				value = state.average_expected_sol
+				subtract = standard_of_living
+			}
+		}
+
+		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops ## 文盲 pops 的参与率是完全识字的 pop 的 1/10
+			desc = "POP_LITERACY"
+			value = literacy_rate
+			add = 0.10
+		}
+
+		multiply = { # Multiplied by 2x max ## 乘以 2x max
+			desc = "POP_RADICALS"
+			value = pop_radical_fraction
+			add = 1
+		}
+	}
+	
+	revolution = {
+		possible = {
+			political_movement_support >= 0.05
+		}
+		
+		weight = {
+			value = 100
+		}	
+	
+		state_weight = {
+			value = 1		
+		}
+	}
+	
+	secession = {
+		possible = {
+			political_movement_support >= 0.05
+			scope:clout <= 0
+		}
+		
+		weight = {
+			value = 1000
+		}		
+	}		
+}

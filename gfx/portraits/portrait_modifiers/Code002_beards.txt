@@ -1,0 +1,29 @@
+﻿Code002_beards = {
+    usage = game
+    selection_behavior = weighted_random
+    #fallback = no_beard
+    
+    Code002_asian_beards = { #东亚胡子
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                exists = scope:character
+                scope:character = { 
+                    age > 16 
+                    is_historical = no
+                }
+                Code002_chinese_clothes_trigger = yes
+            }
+        }
+    }
+}

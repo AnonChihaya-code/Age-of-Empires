@@ -1,0 +1,139 @@
+﻿je_moon_forest_progress_bar = {
+	name = "je_moon_forest_progress_bar"
+	desc = "je_moon_forest_progress_bar_desc"
+	default = yes
+	monthly_progress = {
+
+		#合法性
+		if = {
+			limit = {
+				legitimacy >= 90
+			}
+			add = {
+				desc = "je_moon_forest_legitimacy_01_tt"
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 75
+				legitimacy < 90
+			}
+			add = {
+				desc = "je_moon_forest_legitimacy_02_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 50
+				legitimacy < 75
+			}
+			add = {
+				desc = "je_moon_forest_legitimacy_03_tt"
+				value = -0.5
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy > 25
+				legitimacy < 50
+			}
+			add = {
+				desc = "je_moon_forest_legitimacy_04_tt"
+				value = -1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy <= 25
+			}
+			add = {
+				desc = "je_moon_forest_legitimacy_05_tt"
+				value = -2
+			}
+		}
+
+		#地主利益集团势力
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					is_powerful = no
+				}
+			}
+			add = {
+				desc = "je_moon_forest_ig_landowners_powerful_01_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_landowners = {
+					is_powerful = yes
+				}
+			}
+			subtract = {
+				desc = "je_moon_forest_ig_landowners_powerful_02_tt"
+				value = 1
+			}
+		}
+
+		#地主利益集团执政
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					is_in_government = no
+				}
+			}
+			add = {
+				desc = "je_moon_forest_ig_landowners_in_government_01_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_landowners = {
+					is_in_government = yes
+				}
+			}
+			subtract = {
+				desc = "je_moon_forest_ig_landowners_in_government_02_tt"
+				value = 1
+			}
+		}
+
+		#法律
+		if = {
+		    limit = {
+				OR = {
+					has_law = law_type:law_landed_voting      #地产投票
+					has_law = law_type:law_wealth_voting      #财产投票
+					has_law = law_type:law_census_voting      #资格性选举制
+					has_law = law_type:law_universal_suffrage #普选制
+				}
+			}
+			add = {
+				desc = "je_moon_forest_law_01_tt"
+				value = 1
+			}
+		}
+		else_if = {
+		    limit = {
+				NOR = {
+					has_law = law_type:law_landed_voting      #地产投票
+					has_law = law_type:law_wealth_voting      #财产投票
+					has_law = law_type:law_census_voting      #资格性选举制
+					has_law = law_type:law_universal_suffrage #普选制
+				}
+			}
+			subtract = {
+				desc = "je_moon_forest_law_02_tt"
+				value = 1
+			}
+		}
+
+	}
+	start_value = 10
+	min_value = 0
+	max_value = 200
+}

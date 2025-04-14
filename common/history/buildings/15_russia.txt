@@ -1,0 +1,4840 @@
+﻿BUILDINGS={
+	s:STATE_TALINN={
+		region_state:LIVO={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:LIVO"
+						levels=1
+						region="STATE_TALINN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIVO"
+						levels=1
+						region="STATE_TALINN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_TARTU={
+		region_state:LIVO={
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:LIVO"
+						levels=1
+						region="STATE_TARTU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_RIGA={
+		region_state:LIVO={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIVO"
+						levels=3
+						region="STATE_RIGA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIVO"
+						levels=2
+						region="STATE_RIGA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_COURLAND={
+		region_state:LIVO={
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIVO"
+						levels=2
+						region="STATE_COURLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:LIVO"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_KAUNAS={
+		region_state:LIT={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=2
+						region="STATE_KAUNAS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+	}
+	s:STATE_VILNIUS={
+		region_state:LIT={
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=2
+						region="STATE_VILNIUS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:LIT"
+						levels=1
+						region="STATE_VILNIUS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
+			}
+		}
+	}
+	s:STATE_KUOPIO={
+		region_state:SWE={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:SWE"
+						levels=2
+						region="STATE_KUOPIO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SWE"
+						levels=1
+						region="STATE_UUSIMAA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+		}
+	}
+	s:STATE_UUSIMAA={
+		region_state:SWE={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:SWE"
+						levels=2
+						region="STATE_UUSIMAA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_luxury_furniture" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:SWE"
+						levels=2
+						region="STATE_UUSIMAA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_university"
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SWE"
+						levels=1
+						region="STATE_UUSIMAA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:SWE"
+						levels=1
+						region="STATE_UUSIMAA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SWE"
+						levels=1
+						region="STATE_UUSIMAA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+	}
+	s:STATE_WEST_KARELIA={
+		region_state:SWE={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:SWE"
+						levels=1
+						region="STATE_WEST_KARELIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SWE"
+						levels=1
+						region="STATE_WEST_KARELIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:SWE"
+						levels=1
+						region="STATE_WEST_KARELIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+	}
+	s:STATE_ALAND={
+		region_state:SWE={
+		}
+	}
+	s:STATE_OSTROBOTHNIA={
+		region_state:SWE={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:SWE"
+						levels=1
+						region="STATE_OSTROBOTHNIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SWE"
+						levels=1
+						region="STATE_OSTROBOTHNIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_OULU={
+		region_state:SWE={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:SWE"
+						levels=1
+						region="STATE_OULU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+		}
+	}
+	s:STATE_EAST_KARELIA={
+		region_state:NOVG={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_EAST_KARELIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_artillery_foundries"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_EAST_KARELIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=10
+						region="STATE_EAST_KARELIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_KOLA={
+		region_state:NOVG={
+			create_building={
+				building="building_arms_industry" #武器
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=2
+						region="STATE_KOLA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=10
+						region="STATE_KOLA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_INGRIA={
+		region_state:NOVG={
+			create_building={
+				building="building_university"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
+			}
+			create_building={
+				building="building_artillery_foundries"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_religious_bureaucrats" "pm_hereditary_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
+			}
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:NOVG"
+						levels=2
+						region="STATE_INGRIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+			}
+			create_building={
+				building="building_glassworks"
+				add_ownership={
+					building={
+						type="building_glassworks"
+						country="c:NOVG"
+						levels=3
+						region="STATE_INGRIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_forest_glass"  "pm_manual_glassblowing" "pm_ceramics" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOVG"
+						levels=15
+						region="STATE_INGRIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+		}
+	}
+	s:STATE_MOSCOW={
+		region_state:MOSC={
+			create_building={
+				building="building_saint_basils_cathedral"
+				level=1
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:MOSC"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:MOSC"
+						levels=8
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_university"
+				add_ownership={
+					country={
+						country="c:MOSC"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
+			}
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:MOSC"
+						levels=5
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_craftsman_sewing" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:MOSC"
+						levels=3
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:MOSC"
+						levels=5
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=2
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=8
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_lead_mine" #铅矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=1
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_sulfur_mine" #硫矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=1
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=10
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MOSC"
+						levels=35
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+		}
+	}
+	s:STATE_BREST={
+		region_state:LIT={
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=5
+						region="STATE_BREST"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=8
+						region="STATE_BREST"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_increased_hardwood" }
+			}
+		}
+	}
+	s:STATE_VOLHYNIA={
+		region_state:LIT={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=6
+						region="STATE_VOLHYNIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_increased_hardwood" }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=2
+						region="STATE_VOLHYNIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_KIEV={
+		region_state:LIT={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_food_industry"
+						country="c:LIT"
+						levels=2
+						region="STATE_KIEV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning"  "pm_manual_dough_processing" "pm_pot_stills" }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=5
+						region="STATE_KIEV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=30
+						region="STATE_KIEV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:LIT"
+						levels=3
+						region="STATE_KIEV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+			}
+		}
+	}
+	s:STATE_ORYOL={
+		region_state:MOSC={
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:MOSC"
+						levels=2
+						region="STATE_ORYOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+			}
+			create_building={
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_food_industry"
+						country="c:MOSC"
+						levels=2
+						region="STATE_ORYOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:MOSC"
+						levels=2
+						region="STATE_ORYOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:MOSC"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MOSC"
+						levels=4
+						region="STATE_ORYOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=3
+						region="STATE_ORYOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:MOSC"
+						levels=8
+						region="STATE_ORYOL"
+					}
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=2
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
+			}
+		}
+	}
+	s:STATE_SMOLENSK={
+		region_state:MOSC={
+			create_building={
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_food_industry"
+						country="c:MOSC"
+						levels=3
+						region="STATE_SMOLENSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning"  "pm_manual_dough_processing" "pm_disabled_distillery" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MOSC"
+						levels=3
+						region="STATE_SMOLENSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=2
+						region="STATE_SMOLENSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:MOSC"
+						levels=4
+						region="STATE_SMOLENSK"
+					}
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=4
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+		}
+	}
+	s:STATE_MOGILEV={
+		region_state:LIT={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:LIT"
+						levels=6
+						region="STATE_MOGILEV"
+					}
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=2
+						region="STATE_MOGILEV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=2
+						region="STATE_MOGILEV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_ARKHANGELSK={
+		region_state:NOVG={
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=10
+						region="STATE_ARKHANGELSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:NOVG"
+						levels=1
+						region="STATE_ARKHANGELSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:NOVG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+	}
+	s:STATE_NOVGOROD={
+		region_state:NOVG={
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=3
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_glassworks" #玻璃
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_forest_glass"  "pm_manual_glassblowing" "pm_ceramics" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=3
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry" #武器厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=2
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=2
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=5
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_lead_mine" #铅矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_sulfur_mine" #硫矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=1
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOVG"
+						levels=10
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOVG"
+						levels=10
+						region="STATE_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+		}
+	}
+	s:STATE_CRIMEA={
+		region_state:CRIM={
+			create_building={
+				building="building_construction_sector" #建造部门
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_iron_frame_buildings" }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=1
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=5
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=2
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=3
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry" #武器
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=2
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=1
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=1
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=5
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=8
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_wheat_farm" #小麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=20
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_vineyard_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CRIM"
+						levels=5
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:CRIM"
+						levels=2
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_tobacco_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CRIM"
+						levels=3
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_KHARKOV={
+		region_state:MGGH={
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MGGH"
+						levels=10
+						region="STATE_KHARKOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MGGH"
+						levels=20
+						region="STATE_KHARKOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+		region_state:LIT={
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MGGH"
+						levels=5
+						region="STATE_KHARKOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_KURSK={
+		region_state:MGGH={
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KURSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KURSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KURSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KURSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=2
+						region="STATE_KURSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KURSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MGGH"
+						levels=5
+						region="STATE_KURSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_TVER={
+		region_state:MOSC={
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MOSC"
+						levels=10
+						region="STATE_TVER"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=1
+						region="STATE_TVER"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:MOSC"
+						levels=7
+						region="STATE_TVER"
+					}
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=3
+						region="STATE_MOSCOW"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
+			}
+		}
+	}
+	s:STATE_CHERSON={
+		region_state:LIT={
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=4
+						region="STATE_CHERSON"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=8
+						region="STATE_CHERSON"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=10
+						region="STATE_CHERSON"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+	}
+	s:STATE_GALICH={
+		region_state:NOVG={
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOVG"
+						levels=10
+						region="STATE_GALICH"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:NOVG"
+						levels=2
+						region="STATE_GALICH"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+		}
+		region_state:MOSC={
+		}
+	}
+	s:STATE_MINSK={
+		region_state:LIT={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:LIT"
+						levels=2
+						region="STATE_MINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_no_luxuries" }
+			}
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:LIT"
+						levels=1
+						region="STATE_MINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_craftsman_sewing" }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:LIT"
+						levels=3
+						region="STATE_MINSK"
+					}
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=2
+						region="STATE_MINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=2
+						region="STATE_MINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_ROSTOV={
+		region_state:MGGH={
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=2
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_wheat_farm" #小麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=5
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MGGH"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+		}
+		region_state:CRIM={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=5
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=2
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=3
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=5
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=5
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=1
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_wheat_farm" #小麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=10
+						region="STATE_ROSTOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_PERM={
+		region_state:KAZA={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_iron_mine"
+						country="c:KAZA"
+						levels=2
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:KAZA"
+						levels=3
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZA"
+						levels=10
+						region="STATE_PERM"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_KAZAN={
+		region_state:KAZA={
+			create_building={
+				building="building_construction_sector" #建造部门
+				add_ownership={
+					country={
+						country="c:KAZA"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_iron_frame_buildings" }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZA"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=5
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_glassworks" #玻璃
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_forest_glass"  "pm_manual_glassblowing" "pm_ceramics" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=5
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry" #武器
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=6
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_lead_mine" #铅矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_sulfur_mine" #硫矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=10
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZA"
+						levels=25
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=10
+						region="STATE_KAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+		}
+	}
+	s:STATE_URALSK={
+		region_state:NOGA={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:NOGA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=3
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=2
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry" #武器
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=5
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=5
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=5
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOGA"
+						levels=10
+						region="STATE_URALSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:NOGA"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_KHIVA={
+		region_state:NOGA={
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_KHIVA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOGA"
+						levels=5
+						region="STATE_KHIVA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOGA"
+						levels=1
+						region="STATE_KHIVA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_opium_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOGA"
+						levels=1
+						region="STATE_KHIVA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_opium_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:NOGA"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+		region_state:SERZ={
+		}
+	}
+	s:STATE_SEMIRECHE={
+		region_state:KAZ={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZ"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=3
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=5
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=6
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZ"
+						levels=15
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=5
+						region="STATE_SEMIRECHE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:KAZ"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_JETISY={
+		region_state:CNXY={
+		}
+	}
+	s:STATE_AKMOLINSK={
+		region_state:KAZ={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZ"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=3
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=2
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry" #武器
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=2
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=5
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=6
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=5
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZ"
+						levels=15
+						region="STATE_AKMOLINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:KAZ"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_FERGANA={
+		region_state:KUSH={
+		}
+	}
+	s:STATE_MERZ={
+		region_state:KUSH={
+		}
+	}
+	s:STATE_SYRDARYA={
+		region_state:KAZ={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZ"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=3
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry" #武器
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=1
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=5
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=5
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_wheat_farm" #小麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=15
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZ"
+						levels=5
+						region="STATE_SYRDARYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:KAZ"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_AKTOBE={
+		region_state:NOGA={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:NOGA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=3
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_arms_industry" #武器
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=1
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=5
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=5
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOGA"
+						levels=10
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NOGA"
+						levels=5
+						region="STATE_AKTOBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:NOGA"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_KALMYKIA={
+		region_state:MGGH={
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=2
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_wheat_farm" #小麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=5
+						region="STATE_KALMYKIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_NORTH_CAUCASUS={
+		region_state:MGGH={
+		}
+		region_state:CHEC={
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CHEC"
+						levels=2
+						region="STATE_NORTH_CAUCASUS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:CHEC"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+		region_state:CIRC={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:CIRC"
+						levels=1
+						region="STATE_NORTH_CAUCASUS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:CIRC"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_TAURIDA={
+		region_state:CRIM={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=1
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=5
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=2
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=3
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine" #煤
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=1
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CRIM"
+						levels=5
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CRIM"
+						levels=10
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CRIM"
+						levels=3
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_vineyard_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CRIM"
+						levels=15
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:CRIM"
+						levels=2
+						region="STATE_TAURIDA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:CRIM"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_TAMBOV={
+		region_state:MGGH={
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_TAMBOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_TAMBOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_TAMBOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MGGH"
+						levels=4
+						region="STATE_TAMBOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:MGGH"
+						levels=1
+						region="STATE_TAMBOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:MGGH"
+						levels=1
+						region="STATE_TAMBOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_TAMBOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+		}
+	}
+	s:STATE_RYAZAN={
+		region_state:MOSC={
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MOSC"
+						levels=10
+						region="STATE_RYAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:MOSC"
+						levels=2
+						region="STATE_RYAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_luxury_furniture" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					country={
+						country="c:MOSC"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=2
+						region="STATE_RYAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:MOSC"
+						levels=5
+						region="STATE_RYAZAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+		}
+	}
+	s:STATE_VITEBSK={
+		region_state:LIT={
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					country={
+						country="c:LIT"
+						levels=1
+					}
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=1
+						region="STATE_VITEBSK"
+					}
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=1
+						region="STATE_VITEBSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:LIT"
+						levels=4
+						region="STATE_VITEBSK"
+					}
+					building={
+						type="building_financial_district"
+						country="c:LIT"
+						levels=2
+						region="STATE_VITEBSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=5
+						region="STATE_VITEBSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_PSKOV={
+		region_state:NOVG={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:NOVG"
+						levels=2
+						region="STATE_PSKOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOVG"
+						levels=10
+						region="STATE_PSKOV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_YAROSLAVL={
+		region_state:MOSC={
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=2
+						region="STATE_YAROSLAVL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:MOSC"
+						levels=5
+						region="STATE_YAROSLAVL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+		}
+	}
+	s:STATE_NIZHNY_NOVGOROD={
+		region_state:MOSC={
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:MOSC"
+						levels=2
+						region="STATE_NIZHNY_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_luxury_furniture" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MOSC"
+						levels=2
+						region="STATE_NIZHNY_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MOSC"
+						levels=3
+						region="STATE_NIZHNY_NOVGOROD"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+		}
+	}
+	s:STATE_VYATKA={
+		region_state:KAZA={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_VYATKA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_VYATKA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_VYATKA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_VYATKA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:KAZA"
+						levels=3
+						region="STATE_VYATKA"
+					}
+				}
+				reserves=3
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZA"
+						levels=8
+						region="STATE_VYATKA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_UFA={
+		region_state:KAZA={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_UFA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_UFA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_UFA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_UFA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_UFA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZA"
+						levels=6
+						region="STATE_UFA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_SURGUT={
+		region_state:SIB={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SIB"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:SIB"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SIB"
+						levels=1
+						region="STATE_SURGUT"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SIB"
+						levels=2
+						region="STATE_SURGUT"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SIB"
+						levels=5
+						region="STATE_SURGUT"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SIB"
+						levels=10
+						region="STATE_SURGUT"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_KRASNOYARSK={
+		region_state:SIB={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SIB"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SIB"
+						levels=1
+						region="STATE_KRASNOYARSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SIB"
+						levels=2
+						region="STATE_KRASNOYARSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SIB"
+						levels=5
+						region="STATE_KRASNOYARSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SIB"
+						levels=10
+						region="STATE_KRASNOYARSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:SIB"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_ALTAI={
+		region_state:CNXN={
+		}
+	}
+	s:STATE_BURYATIA={
+		region_state:CNXN={
+		}
+	}
+	s:STATE_KOLYMA={
+		region_state:CNQY={
+		}
+	}
+	s:STATE_AMUR={
+		region_state:CNXN={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:CNXN"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+	}
+	s:STATE_CHELYABINSK={
+		region_state:KAZA={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_CHELYABINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_CHELYABINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_CHELYABINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_CHELYABINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_CHELYABINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_CHELYABINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZA"
+						levels=6
+						region="STATE_CHELYABINSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_ELIZAVETPOL={
+		region_state:AZB={
+			create_building={
+				building="building_rice_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:AZB"
+						levels=5
+						region="STATE_ELIZAVETPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled" "pm_fig_orchards_building_rice_farm" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:AZB"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_STAVROPOL={
+		region_state:MGGH={
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_tooling_workshops" #工艺装备工坊
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=1
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_iron_mine"  #铁矿
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=2
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_logging_camp" #伐木场
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=2
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_cotton_plantation" #棉花
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=5
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_wheat_farm" #小麦
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MGGH"
+						levels=5
+						region="STATE_STAVROPOL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_CHUVASHIA={
+		region_state:KAZA={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAZA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_food_industry" #食品厂
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_CHUVASHIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
+			}
+			create_building={
+				building="building_textile_mills" #纺织
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=2
+						region="STATE_CHUVASHIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+			}
+			create_building={
+				building="building_furniture_manufacturies" #家具
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_CHUVASHIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
+				building="building_paper_mills" #造纸
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:KAZA"
+						levels=1
+						region="STATE_CHUVASHIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAZA"
+						levels=10
+						region="STATE_CHUVASHIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+	s:STATE_CHERNIHIV={
+		region_state:LIT={
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=20
+						region="STATE_CHERNIHIV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIT"
+						levels=5
+						region="STATE_CHERNIHIV"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+		}
+	}
+	s:STATE_NENETSIA={
+		region_state:NOVG={
+			create_building={
+				building="building_rye_farm" #黑麦
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOVG"
+						levels=10
+						region="STATE_NENETSIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+		}
+	}
+}

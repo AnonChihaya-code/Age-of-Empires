@@ -1,0 +1,100 @@
+﻿special_genes = {
+	accessory_genes = {
+		Code002_medals = { #勋章
+			inheritable = no
+
+		    Code002_prussian_medals = {
+			    index = 0
+			    male = {				
+				   # 1 = male_medals_prussian_01_04
+				    1 = male_medals_generic_01_01
+					1 = male_medals_generic_01_02
+					1 = male_medals_generic_01_03
+					1 = male_medals_generic_01_04
+					1 = male_medals_generic_01_05
+				}
+			    female = { }
+			    boy = male
+			    girl = female
+			}
+		}
+		Code002_epaulettes = { #肩章
+			inheritable = no	
+
+			Code002_all_epaulettes = {
+				index = 0
+				male = {
+					1 = male_epaulettes_02
+					1 = male_epaulettes_03				
+				}
+				female = { }
+				boy = male
+				girl = female
+			}
+		}
+		Code002_coats = { #军大衣
+		    inheritable = no
+
+		    Code002_prussian_coats = {
+			    index = 0
+			    male = {
+				    1 = male_coat_european_08
+			    }
+			    female = {
+				    1 = female_outfit_european_royal_01
+				    1 = female_outfit_children_royal_01
+			    }
+			    boy = male
+			    girl = female
+			}
+		}
+		Code002_civilian_coats = { #西装外套
+			inheritable = no
+
+			Code002_european_civilian_coats = {
+				index = 0
+				male = {
+				    1 = male_civilian_coat_european_01
+				}
+				female = {
+				    1 = female_outfit_european_royal_01
+				    1 = female_outfit_children_royal_01
+				}
+				boy = male
+				girl = female
+			}
+		}
+		Code002_belts = { #腰带
+			inheritable = no
+			
+			Code002_all_belts = {
+				index = 0
+				male = {
+					1 = male_belt_generic_01
+					#1 = male_belt_generic_02 #佩剑
+				}
+				female = { }
+				boy = male
+				girl = female
+			}
+		}
+		Code002_outfits = {
+		    inheritable = no
+
+			Code002_egyptian_outfits_white = {
+				index = 0
+				male = {
+					1 = male_coat_european_civil_dress_uniform_01				
+				}
+				female = {
+					1 = female_outfit_arabic_common_01
+					1 = female_outfit_arabic_low_tier_01
+
+				}
+				boy = male
+				girl = female
+
+			}
+		}
+	}
+}

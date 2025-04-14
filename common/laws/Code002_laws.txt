@@ -1,0 +1,74 @@
+﻿###################
+##### 注册法律 #####
+###################
+law_national_revolutionary_army = { #国民革命军
+	group = lawgroup_army_model
+	icon =  "gfx/interface/HOI4/focus_chi_whampoa_military_academy.dds" #黄埔
+	progressiveness = 100
+	can_enact = { 
+		AND = { exists = c:CHINA this = c:CHINA }
+    }
+	is_visible = { 
+		AND = { exists = c:CHINA this = c:CHINA }
+    }
+	unlocking_technologies = { military_drill }
+    unlocking_laws = {
+		law_presidential_republic
+        law_parliamentary_republic
+	}
+	modifier = {
+		interest_group_ig_armed_forces_pol_str_mult = 0.25      #军队政治力量
+        interest_group_ig_industrialists_pol_str_mult = 0.25    #实业家政治力量
+		country_war_exhaustion_casualties_mult = -0.15          #伤亡造成的厌战度
+		state_building_barracks_max_level_add = 100             #最大兵营等级
+		state_building_conscription_center_max_level_add = 100  #征兵上限
+		state_conscription_rate_add = 0.15                      #征兵率
+		unit_offense_mult = 0.05                                #攻
+		unit_defense_mult = 0.05                                #防
+		unit_morale_loss_mult = -0.10                           #士气损失
+		building_training_rate_mult = 1                         #训练率
+		unit_experience_gain_mult = 1                           #经验
+		country_soldiers_pol_str_mult = 1                       #军人政治力量
+		country_officers_pol_str_mult = 1.5                     #军官政治力量
+	}
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
+	on_enact = {
+		custom_tooltip = law_national_revolutionary_army_tt
+	}
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 1000
+		}		
+		if = {
+			limit = {
+				has_law = law_type:law_peasant_levies
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = {
+						law_stance = {
+							law = law_type:law_professional_army 
+							value > neutral
+						}	
+						political_movement_support >= 0.10
+					}
+					has_technology_researched = napoleonic_warfare
+				}	
+			}
+			add = 1000
+		}		
+	}
+}

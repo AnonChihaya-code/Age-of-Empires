@@ -1,0 +1,329 @@
+﻿code002_huangpao_jaishen = { #给予统治权/黄袍加身
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	clicksound = "event:/SFX/DLC/1.3_ip1/UI/agitator_promote"
+	potential = {
+		owner ?= { is_ai = no }
+		is_ruler = no
+		owner = scope:actor
+	}
+	effect = {
+		custom_tooltip = {
+			text = code002_huangpao_jaishen_tt
+			add_character_role = politician
+			set_character_as_ruler = yes
+			if = {
+				limit = {
+					has_role = agitator
+				}
+				remove_character_role = agitator
+			}
+		}
+	}
+}
+
+code002_grant_leadership_to_agitator = { #给予领导权
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	clicksound = "event:/SFX/DLC/1.3_ip1/UI/agitator_promote"
+	potential = {
+		owner ?= { is_ai = no }
+		has_role = agitator
+		owner = scope:actor
+	}
+	effect = {
+		remove_character_role = agitator
+		add_character_role = politician
+		custom_tooltip = {
+			text = make_agitator_ig_leader_tt
+			set_as_interest_group_leader = yes
+		}
+	}
+}
+
+code002_grant_leadership_to_general_admiral = { #给予领导权/将领
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	clicksound = "event:/SFX/DLC/1.3_ip1/UI/agitator_promote"
+
+	potential = {
+		owner ?= { is_ai = no }
+		OR = {
+			has_role = general
+			has_role = admiral
+		}
+		NOR = {
+			has_role = politician
+			has_role = agitator
+		}			
+		owner = scope:actor
+	}
+
+	effect = {
+		add_character_role = politician
+		custom_tooltip = {
+			text = make_agitator_ig_leader_tt
+			set_as_interest_group_leader = yes
+		}
+	}
+}
+
+code002_grant_command_to_ruler = { #给予指挥权
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	clicksound = "event:/SFX/UI/Military/command_grant"
+
+	potential = {
+		owner ?= { is_ai = no }
+		is_female = no
+		is_ruler = no
+		OR = {
+		    has_role = politician
+		    has_role = agitator
+		}
+		NOR = {
+			has_role = general
+			has_role = admiral
+		}
+		owner = scope:actor
+	}
+	possible = {
+		age >= define:NCharacters|ADULT_AGE
+		exists = owner.capital.land_hq
+	}
+	effect = {
+		add_character_role = general
+	}
+}
+
+code002_remove_command_from_ruler = { #放弃指挥权
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	clicksound = "event:/SFX/UI/Military/command_remove"
+	potential = {
+		owner ?= { is_ai = no }
+		is_female = no
+		is_ruler = no
+		OR = {
+		    has_role = politician
+		    has_role = agitator
+		}
+		has_role = general
+		owner = scope:actor
+	}
+	possible = {
+		commander_military_formation = {
+			is_mobilized = no
+		}
+	}
+	effect = {
+		remove_character_role = general
+	}
+}
+
+code002_exile_character = { #流放/迈耶航空
+	clicksound = "event:/SFX/DLC/1.3_ip1/UI/exile_character"
+	potential = {
+		owner ?= { is_ai = no }
+		is_in_exile_pool = no
+		is_in_void = no
+		is_ruler = no
+		is_heir = no
+		# Cannot exile pure commanders, we have the retire interaction for that
+		OR = {
+			has_role = politician
+			has_role = agitator
+		}
+	}
+	show_requirements = yes
+	effect = {
+		this.interest_group = {
+			save_scope_as = relevant_ig
+		}
+		this = {
+			save_scope_as = exile_scope
+		}
+		owner = {
+			save_scope_as = exiling_country_scope
+		}
+		if = {
+			limit = {
+				has_role = politician
+			}
+			owner = {
+				scope:relevant_ig = {
+					add_modifier = {
+						name = modifier_exiled_leader
+						months = normal_modifier_time
+						is_decaying = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = { has_journal_entry = je_caudillo }
+				interest_group = {
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			if = {
+				limit = {
+					interest_group = {
+						leader = {
+							this = ROOT
+						}
+					}
+				}
+				owner = {
+					custom_tooltip = {
+						text = lose_large_caudillo_points
+						change_variable = {
+							name = caudillo_var
+							add = -200
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					custom_tooltip = {
+						text = lose_caudillo_points
+						change_variable = {
+							name = caudillo_var
+							add = -100
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					is_player = yes
+					NOT = { has_variable = achievement_agitate_elsewhere_var }
+				}
+				popularity >= 100
+			}
+			owner = { set_variable = achievement_agitate_elsewhere_var }
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_role = agitator }
+				}
+				add_character_role = agitator
+			}
+			if = {
+				limit = {
+					has_role = general
+				}
+				remove_character_role = general
+			}
+			if = {
+				limit = {
+					has_role = admiral
+				}
+				remove_character_role = admiral
+			}
+			if = {
+				limit = {
+					has_role = politician
+				}
+				remove_character_role = politician
+			}
+		}
+		owner = {
+			custom_tooltip = exiling_dissident_radicals_factors
+		}
+		# Extra radical from exiling a popular character
+		if = {
+			limit = {
+				popularity >= 50
+			}
+			owner = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = scope:relevant_ig
+				}
+			}
+		}
+		# Standard radicals from having Right of Assembly
+		if = {
+			limit = {
+				owner = { has_law = law_type:law_right_of_assembly }
+			}
+			owner = {
+				add_radicals = {
+					value = medium_radicals
+					interest_group = scope:relevant_ig
+				}
+			}
+		}
+		# Fewer radicals from Censorship
+		else_if = {
+			limit = {
+				owner = { has_law = law_type:law_censorship }
+			}
+			owner = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = scope:relevant_ig
+				}
+			}
+		}
+		# Boring characters should be made interesting when being exiled
+		if = {
+			limit = {
+				has_ideology = ideology:ideology_moderate
+			}
+			adopt_random_antigovernment_ideology = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					popularity > 15
+				}
+				add_modifier = {
+					name = in_exile_modifier
+				}
+				every_country = {
+					limit = {
+						has_diplomatic_relevance = scope:exiling_country_scope
+					}
+					post_notification = exile_notification
+				}
+			}
+			else = {
+				add_modifier = {
+					name = in_exile_modifier
+					multiplier = 3
+				}
+			}
+		}
+		custom_tooltip = {
+			text = exile_dissident_tt
+			exile_character_with_martyrdom = yes
+		}
+	}
+	show_confirmation_box = yes
+}
+
+code002_arrange_accident = { #筹划意外/偿还恩情
+	clicksound = "event:/SFX/DLC/1.3_ip1/UI/exile_character"
+	potential = {
+		owner ?= { is_ai = no }
+		is_in_exile_pool = no
+		is_in_void = no
+		OR = {
+			has_role = general
+			has_role = admiral
+			has_role = politician
+			has_role = agitator
+		}
+	}
+	show_requirements = yes
+	effect = {
+		random_list = {
+			100 = {
+				kill_character = yes
+			}
+		}
+	}
+	show_confirmation_box = yes
+}

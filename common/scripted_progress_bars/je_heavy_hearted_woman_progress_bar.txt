@@ -1,0 +1,241 @@
+﻿je_heavy_hearted_woman_progress_bar = {
+	name = "je_heavy_hearted_woman_progress_bar"
+	desc = "je_heavy_hearted_woman_progress_bar_desc"
+
+	default = yes
+
+	monthly_progress = {
+		#合法性
+		if = {
+			limit = {
+				legitimacy >= 90
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_legitimacy_01_tt"
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 75
+				legitimacy < 90
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_legitimacy_02_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 50
+				legitimacy < 75
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_legitimacy_03_tt"
+				value = -0.5
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy > 25
+				legitimacy < 50
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_legitimacy_04_tt"
+				value = -1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy <= 25
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_legitimacy_05_tt"
+				value = -2
+			}
+		}
+
+		#地主
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					ig_approval >= 10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_landowners_01_tt"
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_landowners = {
+					ig_approval >= 5
+					ig_approval < 10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_landowners_02_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_landowners = {
+					ig_approval < 5
+					ig_approval > -5
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_landowners_03_tt"
+				value = -0.5
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_landowners = {
+					ig_approval <= -5
+					ig_approval > -10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_landowners_04_tt"
+				value = -1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_landowners = {
+					ig_approval <= -10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_landowners_05_tt"
+				value = -2
+			}
+		}
+
+		#军队
+		if = {
+			limit = {
+				ig:ig_armed_forces = {
+					ig_approval >= 10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_armed_forces_01_tt"
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_armed_forces = {
+					ig_approval >= 5
+					ig_approval < 10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_armed_forces_02_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_armed_forces = {
+					ig_approval < 5
+					ig_approval > -5
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_armed_forces_03_tt"
+				value = -0.5
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_armed_forces = {
+					ig_approval <= -5
+					ig_approval > -10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_armed_forces_04_tt"
+				value = -1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_armed_forces = {
+					ig_approval <= -10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_armed_forces_05_tt"
+				value = -2
+			}
+		}
+
+		#工会
+		if = {
+			limit = {
+				ig:ig_trade_unions = {
+					ig_approval >= 10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_trade_unions_01_tt"
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_trade_unions = {
+					ig_approval >= 5
+					ig_approval < 10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_trade_unions_02_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_trade_unions = {
+					ig_approval < 5
+					ig_approval > -5
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_trade_unions_03_tt"
+				value = -0.5
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_trade_unions = {
+					ig_approval <= -5
+					ig_approval > -10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_trade_unions_04_tt"
+				value = -1
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_trade_unions = {
+					ig_approval <= -10
+				}
+			}
+			add = {
+				desc = "je_heavy_hearted_woman_ig_trade_unions_05_tt"
+				value = -2
+			}
+		}
+	}
+	start_value = 10
+	min_value = 0
+	max_value = 200
+}

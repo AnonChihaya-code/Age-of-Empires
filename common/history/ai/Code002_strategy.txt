@@ -1,0 +1,420 @@
+﻿AI = {
+	##################
+	#####开局策略#####
+	##################
+	c:DHDG ?= {
+		set_strategy = ai_strategy_resource_expansion
+		set_strategy = ai_strategy_progressive_agenda  
+		random_list = {
+		    50 = { set_strategy = ai_strategy_contend_mandate_of_heaven }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+	c:CNCW ?= {
+		set_strategy = ai_strategy_resource_expansion
+		set_strategy = ai_strategy_progressive_agenda  
+		random_list = {
+		    50 = { set_strategy = ai_strategy_contend_mandate_of_heaven }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+	c:TPTG ?= {
+		set_strategy = ai_strategy_resource_expansion
+		set_strategy = ai_strategy_progressive_agenda  
+		random_list = {
+		    50 = { set_strategy = ai_strategy_contend_mandate_of_heaven }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+	c:CNXN ?= {
+		set_strategy = ai_strategy_resource_expansion
+		set_strategy = ai_strategy_progressive_agenda  
+		random_list = {
+		    50 = { set_strategy = ai_strategy_contend_mandate_of_heaven }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+	c:CNGY ?= {
+		set_strategy = ai_strategy_resource_expansion
+		set_strategy = ai_strategy_progressive_agenda  
+		random_list = {
+		    50 = { set_strategy = ai_strategy_contend_mandate_of_heaven }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+	c:CNXY ?= {
+		set_strategy = ai_strategy_resource_expansion
+		set_strategy = ai_strategy_progressive_agenda  
+		random_list = {
+		    50 = { set_strategy = ai_strategy_contend_mandate_of_heaven }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+
+	c:CNGX ?= {
+		set_strategy = ai_strategy_resource_expansion
+		set_strategy = ai_strategy_progressive_agenda  
+		random_list = {
+		    50 = { set_strategy = ai_strategy_contend_mandate_of_heaven }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+	c:CNYN ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		random_list = {
+		    50 = { set_strategy = ai_strategy_chinese_warlord_era }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+	c:CNTW ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		random_list = {
+		    50 = { set_strategy = ai_strategy_chinese_warlord_era }
+		    50 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}
+
+	c:ENG ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_economic_imperialism
+	}
+
+	c:JEAN ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_territorial_expansion
+	}
+
+	c:BURG ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_territorial_expansion
+	}
+
+	c:VFRA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_territorial_expansion
+	}
+
+	c:NAPO ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_territorial_expansion
+	}
+
+	c:CAS ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:ARAG ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:LOM ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_unify_italy
+	}
+
+	c:VEN ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_unify_italy
+	}
+
+	c:OHDS ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:PRU ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_unify_germany
+	}
+
+	c:BOH ?= {
+	    set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_unify_germany
+	}
+
+	c:AUS ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_unify_germany
+	}
+
+	c:DQDG ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MGGH ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_territorial_expansion
+	}
+
+	c:KAZA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_territorial_expansion
+	}
+	
+	c:CRIM ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_territorial_expansion
+	}
+
+	c:CNQY ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:KUSH ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:PART ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:DELI ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MUGH ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MARA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:DRAV ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:PATA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:SASS ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:ABAS ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MAML ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:ETH ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:SHAI ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:HASA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MRLY ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_economic_imperialism
+	}
+
+	c:ELDA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_economic_imperialism
+	}
+    
+	c:MING ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:VLAN ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MYGO ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_economic_imperialism
+	}
+
+	c:USA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:ICL ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:SONG ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_economic_imperialism
+	}
+
+	c:FALC ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+		set_strategy = ai_strategy_economic_imperialism
+	}
+
+	c:TCOS ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:IROQ ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:SIOU ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:CHEY ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:COMA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:APAC ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:PAIU ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:NEZP ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:CREE ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:AZTE ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MAY ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:INCA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:AMZ ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:EQT ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:SCO ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:IRE ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:MOSC ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:SERZ ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:POL ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:ROM ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:HUN ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+    c:SER ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:NAZI ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+
+	c:PATA ?= {
+		set_strategy = ai_strategy_resource_expansion	
+		set_strategy = ai_strategy_progressive_agenda
+	}
+}	
+
+
+
+

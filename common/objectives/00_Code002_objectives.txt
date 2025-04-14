@@ -1,0 +1,55 @@
+﻿##############
+#####目标#####
+##############
+objective_Two_dimensional = { #二次元
+	enabled_background = "gfx/interface/icons/objectives/Age_of_Empires_00.png"
+	icon = "gfx/interface/icons/objectives/score_age_1.png"
+
+    recommended_tags = {
+		ELDA MRLY VLAN MYGO
+	}
+}
+
+objective_Age_of_Empires_01 = { #鲜血寒冰钢铁
+	enabled_background = "gfx/interface/icons/objectives/Age_of_Empires_01.png"
+	icon = "gfx/interface/icons/objectives/score_age_2.png"
+
+    recommended_tags = {
+		DQDG MGGH OHDS TCOS
+		BURG JEAN NAPO VFRA
+	}
+}
+
+objective_Age_of_Empires_02 = { #火与影
+	enabled_background = "gfx/interface/icons/objectives/Age_of_Empires_02.png"
+	icon = "gfx/interface/icons/objectives/score_age_3.png"
+
+    recommended_tags = {
+		SIOU IROQ CHEY COMA
+		APAC NEZP AZTE INCA
+		MAY SML CREE PATA AMZ
+		PAIU
+	}
+}
+
+objective_Age_of_Empires_03 = { #亚洲王朝
+    enabled_background = "gfx/interface/icons/objectives/Age_of_Empires_03.png"
+	icon = "gfx/interface/icons/objectives/score_age_4.png"
+
+    recommended_tags = {
+		CNCW DHDG TPTG MING
+		CNXN CNGX CNYN CNTW
+		CNXY CNGY CNTB CNQY
+	}
+}
+
+objective_The_Sultans_Ascend = { #苏丹的崛起
+	enabled_background = "gfx/interface/icons/objectives/Age_of_Empires_04.png"
+	icon = "gfx/interface/icons/objectives/score_age_5.png"
+
+    recommended_tags = {
+		PART KUSH DELI MUGH
+		ABAS SASS SERZ MOSC
+		MAML ETH HASA SHAI
+	}
+}

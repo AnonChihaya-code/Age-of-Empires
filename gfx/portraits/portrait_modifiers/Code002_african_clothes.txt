@@ -1,0 +1,195 @@
+﻿Code002_african_clothes = {
+    usage = game
+    selection_behavior = weighted_random
+    #fallback = default_clothes
+
+    Code002_african_agitator_clothes = { #非洲鼓动者
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = african_outfits
+                range = { 0.67 1.0 }
+            }
+
+            accessory = {
+                mode = add
+                gene = sashes
+                template = african_sashes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                Code002_african_clothes_trigger = yes
+                agitator_character_trigger = yes 
+            }
+        }
+    }
+
+    Code002_african_clothes = { #非洲服装
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = african_outfits_politician
+                range = { 0.34 1 } # For the work to randomly correctness
+            }
+            accessory = {
+                mode = add
+                gene = necklaces
+                template = african_necklaces
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                Code002_african_clothes_trigger = yes
+                NOT = {
+                    scope:character ?= {
+                        culture = {
+                            OR = {
+                                has_discrimination_trait = ethiopian
+                                has_discrimination_trait = southern_african_culture_group
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_african_south_clothes = { #南非洲服装
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = african_outfits_politician
+                range = { 0.1 0.5 } # For the work to randomly correctness
+            }
+            accessory = {
+                mode = add
+                gene = necklaces
+                template = african_necklaces
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 200
+                Code002_african_clothes_trigger = yes
+                scope:character ?= {
+                    culture = {
+                        has_discrimination_trait = southern_african_culture_group
+                    }
+                }
+            }
+        }
+    }
+    
+    #African
+    Code002_african_poor_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = african_outfits
+                range = { 0 0.5 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                AND = {
+                    Code002_african_clothes_pop_trigger = yes
+                    #poor_clothes_pop_trigger = yes
+                }  
+            }
+        }
+    }
+    Code002_african_middle_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = african_outfits
+                range = { 0.5 0.7 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 600
+                AND = {
+                    OR = {
+                        Code002_african_clothes_pop_trigger = yes
+                        AND = {
+                            exists = scope:pop
+                            scope:pop = {
+                                culture = cu:berber
+                            }
+                        }
+                        AND = {
+                            exists = scope:pop
+                            scope:pop = {
+                                culture = cu:tuareg
+                            }
+                        }
+                    }
+                    middle_clothes_pop_trigger = yes
+                }
+            }
+        }
+    }
+    Code002_african_upper_clothes = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = african_outfits
+                range = { 0.75 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 600
+                OR = {
+                    AND = {
+                        OR = {
+                            Code002_african_clothes_pop_trigger = yes
+                            AND = {
+                                exists = scope:pop
+                                scope:pop = {
+                                    culture = cu:berber
+                                }
+                            }
+                            AND = {
+                                exists = scope:pop
+                                scope:pop = {
+                                    culture = cu:tuareg
+                                }
+                            }
+                        }
+                        upper_clothes_pop_trigger = yes
+                    }
+                    AND = {
+                        Code002_african_clothes_pop_trigger = yes
+                        clergy_clothes_pop_trigger = yes
+                        scope:pop = {
+                            religion = {
+                                has_discrimination_trait = animist
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

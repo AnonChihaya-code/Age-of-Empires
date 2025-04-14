@@ -1,0 +1,46 @@
+﻿l_simp_chinese:
+
+ #####大汉本地#####
+ great_han_events.1.t: "还于旧都"
+ great_han_events.1.d: "历经无数的艰难岁月，刘备终于在汉中之战中击败曹操，成功占领了长安。昔日的汉朝都城，曾是四方朝拜的权力中心，今日再度屹立在大地之上。\n刘备登上长安城墙，俯瞰着这座伟大的城池，心中涌动的不仅仅是胜利的喜悦，还有那份深沉的责任。"
+ great_han_events.1.f: "曹操虽败，但其遗留的魏国势力仍然存在，其他势力亦虎视眈眈。复兴大汉的道路必定艰险重重，但只有将四方势力平定、百姓安居，才能真正重现大汉的辉煌。"
+ great_han_events.1.a: "兴复汉室！"
+
+ great_han_events.2.t: "三造大汉"
+ great_han_events.2.d: "昔高祖斩白蛇而开炎汉，入咸阳时五星聚于东井；光武收传国玺而续正统，昆阳夜有陨石裂云如赤符降世。"
+ great_han_events.2.f: "今陛下涿郡提剑起，的卢跃檀溪，聚两汉未尽之气运，铸我季汉万世之根基！"
+ great_han_events.2.a: "天命所归！"
+
+ je_rebuild_changan: "重建长安"
+ je_rebuild_changan_reason: "长安，曾是大汉的心脏，四方朝贡的都城，文化与繁荣的象征。然而，随着战火的蔓延，这座都市也逐渐陷入了废墟与荒凉之中。曾经熙熙攘攘的街市如今只剩下断壁残垣和无数废弃的建筑。昔日的辉煌，如同一场梦，随着岁月的流逝，逐渐消散在硝烟中。偶尔有风吹过，扬起一阵尘土，空荡的街道回荡着孤寂的回音。"
+
+ je_revive_great_han: "兴复汉室"
+ je_revive_great_han_reason: "兴复汉室重任道远，非一日之功。百姓的信任、士族的支持和军队的忠诚，决定着大汉的未来。"
+ je_revive_great_han_goal: "#bold 进度条#!到达#variable 100%#!"
+
+ je_revive_great_han_01: "兴复汉室：四海归一"
+ je_revive_great_han_01_reason: "我们的政权合法性受到曹魏以及各地割据势力的挑战，唯有统一中国才能高枕无忧。"
+ je_revive_great_han_01_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，25%的[concept_pop]皈依[concept_state_religion]"
+
+ je_revive_great_han_02: "兴复汉室：恢复生产"
+ je_revive_great_han_02_reason: "连年征战，百姓流离失所，大片荒地无人开垦。我们需要将荒芜的无主农田收归国家所有，招募大批流民按军队的编制编成组，并提供土地、种子、耕牛和农具，由他们开垦耕种，获得的收成由国家和屯农的民按比例分成。交通闭塞的地区要修建道路，方便运输粮食。同时，在地方修建学校，为国家培养人才。"
+
+ je_revive_great_han_03: "兴复汉室：整顿军队"
+ je_revive_great_han_03_reason: "我们的军队经过多次苦战，早已疲惫不堪，难以应对下一场战争。因此，我们必须停下脚步进行休整。"
+
+ je_revive_great_han_04: "兴复汉室：官僚体制改革"
+ je_revive_great_han_04_reason: "加强对地方的控制，清理腐败，恢复公平的税收制度，减轻民众负担，以促进社会稳定。"
+
+ je_revive_great_han_05: "兴复汉室：恢复丝绸之路"
+ je_revive_great_han_05_reason: "昔日，大汉因国力衰弱，失去了对西域都护府的控制。如今，如果我们能够重新掌控丝绸之路，繁荣的贸易将为大汉带来源源不断的财富。"
+ je_revive_great_han_05_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，25%的[concept_pop]皈依[concept_state_religion]"
+
+ je_rebuild_changan_modifier: "大汉的心脏"
+ je_revive_great_han_modifier: "薪火不灭"
+ revive_great_han_modifier: "天命所归"
+ je_revive_great_han_01_modifier: "天命所归"
+ je_revive_great_han_0201_modifier: "恢复生产"
+ je_revive_great_han_0202_modifier: "国泰民安"
+ je_revive_great_han_03_modifier: "兵强马壮"
+ je_revive_great_han_04_modifier: "政清人和"
+ je_revive_great_han_05_modifier: "丝绸之路"

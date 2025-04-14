@@ -1,0 +1,8 @@
+﻿DIPLOMACY = {
+	c:SIA= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 36
+		}
+	}	
+}

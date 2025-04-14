@@ -1,0 +1,196 @@
+﻿POPS = {
+s:STATE_OUTER_MANCHURIA = {
+	region_state:CNXN = {
+		create_pop = {
+			culture = xiongnu
+			size = 3260000
+		}
+		create_pop = {
+			culture = xiongnu
+			religion = gelugpa
+			size = 929400
+		}
+		create_pop = {
+			culture = han
+			size = 1294000
+		}
+	}
+}
+s:STATE_TOMSK = {
+	region_state:SIB = {
+		create_pop = {
+			culture = tatar
+			size = 2095000
+		}
+	}
+}
+s:STATE_TOBOLSK = {
+	region_state:SIB = {
+		create_pop = {
+			culture = tatar
+			size = 2255000
+		}
+	}
+}
+s:STATE_UPPER_YENISEYSK = {
+	region_state:SIB = {
+		create_pop = {
+			culture = tatar
+			size = 2032000
+		}
+	}
+}
+s:STATE_OB = {
+	region_state:SIB = {
+		create_pop = {
+			culture = tatar
+			size = 2052300
+		}
+	}
+}
+s:STATE_CHUKOTKA = {
+	region_state:CKC = {
+		create_pop = {
+			culture = inuit
+			size = 1310
+		}
+		create_pop = {
+			culture = siberian
+			size = 11570
+		}
+		create_pop = {
+			culture = russian
+			size = 143
+		}
+	}
+}
+s:STATE_KAMCHATKA = {
+	region_state:CNQY = {
+		create_pop = {
+			culture = qingyang
+			size = 1064140
+		}
+	}
+}
+s:STATE_OKHOTSK = {
+	region_state:CNQY = {
+		create_pop = {
+			culture = qingyang
+			size = 1052288
+		}
+	}
+}
+s:STATE_YAKUTSK = {
+	region_state:CNQY = {
+		create_pop = {
+			culture = qingyang
+			size = 1033645
+		}
+	}
+}
+s:STATE_TRANS_BAIKAL = {
+	region_state:CNXN = {
+		create_pop = {
+			culture = xiongnu
+			size = 5646000
+		}
+		create_pop = {
+			culture = xiongnu
+			religion = gelugpa
+			size = 529400
+		}
+	}
+}
+s:STATE_IRKUTSK = {
+	region_state:SIB = {
+		create_pop = {
+			culture = tatar
+			size = 970000
+		}
+	}
+	region_state:CNQY = {
+		create_pop = {
+			culture = qingyang
+			size = 102920
+		}
+	}
+	region_state:CNXN = {
+		create_pop = {
+			culture = xiongnu
+			size = 502120
+		}
+	}
+}
+s:STATE_TUVA = {
+	region_state:CNXN = {
+		create_pop = {
+			culture = xiongnu
+			size = 1656000
+		}
+		create_pop = {
+			culture = xiongnu
+			religion = gelugpa
+			size = 359400
+		}
+		create_pop = {
+			culture = xiongnu
+			religion = animist
+			size = 169500
+		}
+	}
+}
+s:STATE_SURGUT = {
+	region_state:SIB = {
+		create_pop = {
+			culture = tatar
+			size = 2154000
+		}
+	}
+}
+s:STATE_KRASNOYARSK = {
+	region_state:SIB = {
+		create_pop = {
+			culture = tatar
+			size = 2045000
+		}
+	}
+}
+s:STATE_BURYATIA = {
+	region_state:CNXN = {
+		create_pop = {
+			culture = xiongnu
+			size = 4546000
+		}
+		create_pop = {
+			culture = xiongnu
+			religion = gelugpa
+			size = 1329400
+		}
+	}
+}
+s:STATE_KOLYMA = {
+	region_state:CNQY = {
+		create_pop = {
+			culture = qingyang
+			size = 1425010
+		}
+	}
+}
+s:STATE_AMUR = {
+	region_state:CNXN = {
+		create_pop = {
+			culture = xiongnu
+			size = 1946000
+		}
+		create_pop = {
+			culture = xiongnu
+			religion = gelugpa
+			size = 629400
+		}
+		create_pop = {
+			culture = han
+			size = 1006000
+		}
+	}
+}
+}

@@ -1,0 +1,501 @@
+﻿l_english:
+
+ ###################
+ ##### 更新日志 #####
+ ###################
+ je_aoe_update: "#yellow Update Notifications#!"
+ je_aoe_update_loc: "#g 2025.4.14#！"
+ je_aoe_update_reason: "This is a difficult decision, because I don't know how many English users, so the localization of English in the back will not be updated synchronously, sorry, thank you for your support of this mod. Of course, if you need it, I will still take GPT to translate, but it will take some time, thanks again, happy game!"
+ ###################
+ ##### 角色特质 #####
+ ###################
+ shot_in_the_right_ear: "Shot in the right ear"
+ shot_in_the_right_ear_desc: "The scars of honor of President Trump, America will be great again!"
+ character_immortal_modifier: "Immortal"
+ #####################
+ #####军队名本地化#####
+ #####################
+ CNGX_07_army: "Steel Seventh Army"
+
+ #####################
+ #####兵种本地化#####
+ #####################
+
+  #罗马
+ combat_unit_type_line_infantry_cataphract: "Cataphract"
+ combat_unit_type_line_infantry_cataphract_desc: "Armored in coats of iron, Greek cataphracts can break almost any defensive line with their charge."
+ combat_unit_type_skirmish_infantry_cataphract: "Elite Cataphract"
+ combat_unit_type_skirmish_infantry_cataphract_desc: "Armored in coats of iron, Greek cataphracts can break almost any defensive line with their charge."
+ combat_unit_type_trench_infantry_cataphract: "Champion Cataphract"
+ combat_unit_type_trench_infantry_cataphract_desc: "Armored in coats of iron, Greek cataphracts can break almost any defensive line with their charge."
+ combat_unit_type_squad_infantry_cataphract: "Legendary Cataphract"
+ combat_unit_type_squad_infantry_cataphract_desc: "Armored in coats of iron, Greek cataphracts can break almost any defensive line with their charge."
+ combat_unit_type_mechanized_infantry_cataphract: "Mythical Cataphract"
+ combat_unit_type_mechanized_infantry_cataphract_desc: "Armored in coats of iron, Greek cataphracts can break almost any defensive line with their charge."
+
+ #苏族
+ combat_unit_type_line_infantry_siou: "Axe Rider"
+ combat_unit_type_line_infantry_siou_desc: ""
+ combat_unit_type_skirmish_infantry_siou: "Elite Axe Rider"
+ combat_unit_type_skirmish_infantry_siou_desc: ""
+ combat_unit_type_trench_infantry_siou: "Champion Axe Rider"
+ combat_unit_type_trench_infantry_siou_desc: ""
+ combat_unit_type_squad_infantry_siou: "Tokala Soldier"
+ combat_unit_type_squad_infantry_siou_desc: ""
+ combat_unit_type_mechanized_infantry_siou: "Tashunke Prowler"
+ combat_unit_type_mechanized_infantry_siou_desc: ""
+
+ #易洛魁
+ combat_unit_type_line_infantry_iroq: "Kanya Horseman"
+ combat_unit_type_line_infantry_iroq_desc: ""
+ combat_unit_type_skirmish_infantry_iroq: "Elite Kanya Horseman"
+ combat_unit_type_skirmish_infantry_iroq_desc: ""
+ combat_unit_type_trench_infantry_iroq: "Champion Kanya Horseman"
+ combat_unit_type_trench_infantry_iroq_desc: ""
+ combat_unit_type_squad_infantry_iroq: "Legendary Kanya Horseman"
+ combat_unit_type_squad_infantry_iroq_desc: ""
+ combat_unit_type_mechanized_infantry_iroq: "Mythical Kanya Horseman"
+ combat_unit_type_mechanized_infantry_iroq_desc: ""
+
+ #夏安
+ combat_unit_type_line_infantry_chey: "Cheyenne Rider"
+ combat_unit_type_line_infantry_chey_desc: ""
+ combat_unit_type_skirmish_infantry_chey: "Elite Cheyenne Rider"
+ combat_unit_type_skirmish_infantry_chey_desc: ""
+ combat_unit_type_trench_infantry_chey: "Champion Cheyenne Rider"
+ combat_unit_type_trench_infantry_chey_desc: ""
+ combat_unit_type_squad_infantry_chey: "Legendary Cheyenne Rider"
+ combat_unit_type_squad_infantry_chey_desc: ""
+ combat_unit_type_mechanized_infantry_chey: "Mythical Cheyenne Rider"
+ combat_unit_type_mechanized_infantry_chey_desc: ""
+
+ #卡曼契
+ combat_unit_type_line_infantry_coma: "Comanche Horse Archer"
+ combat_unit_type_line_infantry_coma_desc: ""
+ combat_unit_type_skirmish_infantry_coma: "Elite Comanche Horse Archer"
+ combat_unit_type_skirmish_infantry_coma_desc: ""
+ combat_unit_type_trench_infantry_coma: "Champion Comanche Horse Archer"
+ combat_unit_type_trench_infantry_coma_desc: ""
+ combat_unit_type_squad_infantry_coma: "Legendary Comanche Horse Archer"
+ combat_unit_type_squad_infantry_coma_desc: ""
+ combat_unit_type_mechanized_infantry_coma: "Mythical Comanche Horse Archer"
+ combat_unit_type_mechanized_infantry_coma_desc: ""
+
+ #印加
+ combat_unit_type_line_infantry_inca: "Chimu Runners"
+ combat_unit_type_line_infantry_inca_desc: ""
+ combat_unit_type_skirmish_infantry_inca: "Elite Chimu Runners"
+ combat_unit_type_skirmish_infantry_inca_desc: ""
+ combat_unit_type_trench_infantry_inca: "Champion Chimu Runners"
+ combat_unit_type_trench_infantry_inca_desc: ""
+ combat_unit_type_squad_infantry_inca: "Legendary Chimu Runners"
+ combat_unit_type_squad_infantry_inca_desc: ""
+ combat_unit_type_mechanized_infantry_inca: "Mythical Chimu Runners"
+ combat_unit_type_mechanized_infantry_inca_desc: ""
+
+ #阿兹特克
+ combat_unit_type_line_infantry_azte: "Coyote Runner"
+ combat_unit_type_line_infantry_azte_desc: ""
+ combat_unit_type_skirmish_infantry_azte: "Elite Eagle Runner Knights"
+ combat_unit_type_skirmish_infantry_azte_desc: ""
+ combat_unit_type_trench_infantry_azte: "Champion Eagle Runner Knights"
+ combat_unit_type_trench_infantry_azte_desc: ""
+ combat_unit_type_squad_infantry_azte: "Legendary Eagle Runner Knights"
+ combat_unit_type_squad_infantry_azte_desc: ""
+ combat_unit_type_mechanized_infantry_azte: "Mythical Eagle Runner Knights"
+ combat_unit_type_mechanized_infantry_azte_desc: ""
+
+ #马穆鲁克
+ combat_unit_type_line_infantry_maml: "Mamelukes"
+ combat_unit_type_line_infantry_maml_desc: ""
+ combat_unit_type_skirmish_infantry_maml: "Elite Mamelukes"
+ combat_unit_type_skirmish_infantry_maml_desc: ""
+ combat_unit_type_trench_infantry_maml: "Champion Mamelukes"
+ combat_unit_type_trench_infantry_maml_desc: ""
+ combat_unit_type_squad_infantry_maml: "Legendary Mamelukes"
+ combat_unit_type_squad_infantry_maml_desc: ""
+ combat_unit_type_mechanized_infantry_maml: "Mythical Mamelukes"
+ combat_unit_type_mechanized_infantry_maml_desc: ""
+
+ #################
+ #####宗教本地#####
+ #################
+ legalist: "legalist"
+
+ ##################
+ #####集团本地#####
+ ##################
+ Holy_Roman_Empire: "Holy Roman Empire"
+
+ #################
+ #####公司本地#####
+ #################
+ company_falcon: "company_falcon"
+ company_chihaya_anon_tokyo: "ANON TOKYO"
+
+ #################
+ #####PM本地#####
+ #################
+ pm_canal_01: "Steam Turbine"
+ pm_canal_02: "Oil Turbine"
+
+ ##################
+ #####国名本地#####
+ ##################
+ CHINA: "China"
+ CHINA_ADJ: "Chinese"
+ dyn_c_monarchy_CHINA: "Chinese China"
+ dyn_c_theocracy_CHINA: "Holy Chinese China"
+ dyn_c_republic_CHINA: "Republic of China"
+ dyn_c_communist_CHINA: "People’s Republic of China"
+
+ EROM: "Roman"
+ EROM_ADJ: "Roman"
+ dyn_c_monarchy_EROM: "Roman Empire"
+ dyn_c_theocracy_EROM: "Roman Empire"
+ dyn_c_republic_EROM: "Roman Republic"
+ dyn_c_communist_EROM: "Roman People's Republic"
+ 
+ CNBY: "Beiyang Government"
+ CNBY_ADJ: "Chinese"
+
+ CNNR: "National Revolutionary Army"
+ CNNR_ADJ: "Guangdong"
+
+ CNGX: "New Guangxi Clique"
+ CNGX_ADJ: "Guangxi"
+
+ CNYN: "Yunnan Clique"
+ CNYN_ADJ: "Yunnan"
+
+ DHDG: "Great Han"
+ DHDG_ADJ: "Great Han"
+ dyn_c_monarchy_DHDG: "Han Empire"
+ dyn_c_republic_DHDG: "Han Republic"
+ dyn_c_communist_DHDG: "Han Republic"
+
+ DTDG: "Great Tang"
+ DTDG_ADJ: "Great Tang"
+ dyn_c_monarchy_DTDG: "Tang Empire"
+ dyn_c_republic_DTDG: "Tang Republic"
+ dyn_c_communist_DTDG: "Tang Republic"
+
+ DQDG: "Great Qin"
+ DQDG_ADJ: "Great Qin"
+ dyn_c_monarchy_DQDG: "Qin Empire"
+ dyn_c_republic_DQDG: "Qin Republic"
+ dyn_c_communist_DQDG: "Qin Republic"
+
+ TPTG: "Heavenly Kingdom"
+ TPTG_ADJ: "Taiping"
+
+ CNTW: "Republic of China"
+ CNTW_ADJ: "Taiwan"
+
+ MING: "Great Ming"
+ MING_ADJ: "Great Ming"
+ dyn_c_monarchy_MING: "Ming Empire"
+ dyn_c_republic_MING: "Ming Republic"
+ dyn_c_communist_MING: "Ming Republic"
+
+ CNCW: "Cao Wei"
+ CNCW_ADJ: "Cao Wei"
+ dyn_c_monarchy_CNCW: "Cao Wei Empire"
+ dyn_c_republic_CNCW: "Cao Wei Republic"
+ dyn_c_communist_CNCW: "Cao Wei Republic"
+ dyn_c_monarchy_wei_wu_ambitions: "Wei Empire"
+ dyn_c_republic_wei_wu_ambitions: "Wei Republic"
+ dyn_c_monarchy_wei_wu_ambitions_adj: "Great Wei"
+
+ CNTB: "Tibetan"
+ CNTB_ADJ: "Tibetan"
+
+ CNGY: "Guiyi Army"
+ CNGY_ADJ: "Guiyi Army"
+
+ CNXY: "Western Regions"
+ CNXY_ADJ: "Western Regions"
+
+ CNXN: "Xiongnu"
+ CNXN_ADJ: "Xiongnu"
+ dyn_c_monarchy_CNXN: "Xiongnu Khanate"
+ dyn_c_republic_CNXN: "Xiongnu Republic"
+ dyn_c_communist_CNXN: "Xiongnu Republic"
+ dyn_c_monarchy_han_CNXN: "Han Empire"
+ dyn_c_republic_han_CNXN: "Han Republic"
+ dyn_c_han_CNXN_adj: "Great Han"
+
+ DJDG: "Great Jin"
+ DJDG_ADJ: "Great Jin"
+ dyn_c_monarchy_DJDG: "Jin Empire"
+ dyn_c_republic_DJDG: "Jin Republic"
+ dyn_c_communist_DJDG: "Jin Republic"
+
+ OHDS: "Knights of Saint John"
+ OHDS_ADJ: "Knights of Saint John"
+
+ TCOS: "Circle of Ossus"
+ TCOS_ADJ: "Circle"
+
+ ELDA: "Eldia"
+ ELDA_ADJ: "Eldia"
+ dyn_c_monarchy_ELDA: "Eldia Empire"
+ dyn_c_republic_ELDA: "Eldia Republic"
+ dyn_c_communist_ELDA: "Eldia Republic"
+
+ MRLY: "Marley"
+ MRLY_ADJ: "Marley"
+ dyn_c_monarchy_MRLY: "Marley Empire"
+ dyn_c_republic_MRLY: "Marley Republic"
+ dyn_c_communist_MRLY: "Marley Republic"
+ 
+ HASA: "Hausa"
+ HASA_ADJ: "Hausa"
+ dyn_c_monarchy_HASA: "Hausa Kingdom"
+ dyn_c_republic_HASA: "Hausa Republic"
+ dyn_c_communist_HASA: "Hausa Republic"
+
+ SHAI: "Songhai"
+ SHAI_ADJ: "Songhai"
+ dyn_c_monarchy_SHAI: "Songhai Empire"
+ dyn_c_republic_SHAI: "Songhai Republic"
+ dyn_c_communist_SHAI: "Songhai Republic"
+
+ CNQY: "Qingyang"
+ CNQY_ADJ: "Qingyang"
+ dyn_c_monarchy_CNQY: "Qingyang Khanate"
+ dyn_c_republic_CNQY: "Qingyang Republic"
+ dyn_c_communist_CNQY: "Qingyang Republic"
+
+ dyn_c_monarchy_SIB: "Siberia khanate"
+ dyn_c_republic_SIB: "Siberia Republic"
+ dyn_c_communist_SIB: "Siberia Republic"
+ 
+ SONG: "Great Song"
+ SONG_ADJ: "Great Song"
+ dyn_c_monarchy_SONG: "Song Empire"
+ dyn_c_republic_SONG: "Song Republic"
+ dyn_c_communist_SONG: "Song Republic"
+ 
+ MGDG: "Mongolia"
+ MGDG_ADJ: "Mongolian"
+ dyn_c_monarchy_MGDG: "Mongol Empire"
+ dyn_c_republic_MGDG: "Mongolian People’s Republic"
+ dyn_c_communist_MGDG: "Mongolian People’s Republic"
+
+ YUAN: "Great Yuan"
+ YUAN_ADJ: "Great Yuan"
+ dyn_c_monarchy_YUAN: "Yuan Empire"
+ dyn_c_republic_YUAN: "Yuan Republic"
+ dyn_c_communist_YUAN: "Yuan Republic"
+
+ MGGH: "Golden Horde"
+ MGGH_ADJ: "Golden Horde"
+ dyn_c_monarchy_MGGH: "Golden Horde"
+ dyn_c_republic_MGGH: "Golden Republic"
+ dyn_c_communist_MGGH: "Golden Republic"
+
+ CRIM: "Crimea"
+ CRIM_ADJ: "Crimea"
+ dyn_c_monarchy_CRIM: "Crimea Horde"
+ dyn_c_republic_CRIM: "Crimea Republic"
+ dyn_c_communist_CRIM: "Crimea Republic"
+ 
+ KAZA: "Kazan"
+ KAZA_ADJ: "Kazan"
+ dyn_c_monarchy_KAZA: "Kazan Horde"
+ dyn_c_republic_KAZA: "Kazan Republic"
+ dyn_c_communist_KAZA: "Kazan Republic"
+
+ NOGA: "Nogai"
+ NOGA_ADJ: "Nogai"
+ dyn_c_monarchy_NOGA: "Nogai Horde"
+ dyn_c_republic_NOGA: "Nogai Republic"
+ dyn_c_communist_NOGA: "Nogai Republic"
+
+ MOSC: "Moscow"
+ MOSC_ADJ: "Moscow"
+ dyn_c_monarchy_MOSC: "Grand Duchy of Moscow"
+ dyn_c_republic_MOSC: "Moscow Republic"
+ dyn_c_communist_MOSC: "Moscow Republic"
+
+ NOVG: "Novgorod"
+ NOVG_ADJ: "Novgorod"
+
+ PERM: "Perm"
+ PERM_ADJ: "Perm"
+
+ ILKH: "Ilkhanate"
+ ILKH_ADJ: "Ilkhanid"
+
+ BURG: "Burgundy"
+ BURG_ADJ: "Burgundian"
+
+ JEAN: "Holy France"
+ JEAN_ADJ: "French"
+
+ NAPO: "Napoleon"
+ NAPO_ADJ: "French"
+ dyn_c_monarchy_NAPO: "Napoleon Empire"
+ dyn_c_republic_NAPO: "French Republic"
+ dyn_c_communist_NAPO: "French Commune"
+
+ VFRA: "Avant-Garde French"
+ VFRA_ADJ: "French"
+
+ ARAG: "Aragon"
+ ARAG_ADJ: "Aragon"
+
+ MAML: "Mamluk"
+ MAML_ADJ: "Mamluk"
+
+ PART: "Parthian"
+ PART_ADJ: "Parthian"
+ dyn_c_monarchy_PART: "Parthian Empire"
+ dyn_c_republic_PART: "Parthian Republic"
+
+ KUSH: "Kushan"
+ KUSH_ADJ: "Kushan"
+ dyn_c_monarchy_KUSH: "Kushan Empire"
+ dyn_c_republic_KUSH: "Kushan Republic"
+
+ ABAS: "Abbasid"
+ ABAS_ADJ: "Abbasid"
+
+ SASS: "Sassanid"
+ SASS_ADJ: "Sassanid"
+
+ SERZ: "Seljuq"
+ SERZ_ADJ: "Seljuq"
+ dyn_c_monarchy_SERZ: "Seljuq Sultanate"
+ dyn_c_republic_SERZ: "Seljuq Republic"
+
+ DELI: "Delhi"
+ DELI_ADJ: "Delhi"
+ dyn_c_monarchy_DELI: "Delhi Sultanate"
+ dyn_c_republic_DELI: "Delhi Republic"
+
+ MUGH: "Mughal"
+ MUGH_ADJ: "Mughal"
+ dyn_c_monarchy_MUGH: "Mughal Empire"
+ dyn_c_republic_MUGH: "Mughal Republic"
+
+ MARA: "Maratha"
+ MARA_ADJ: "Maratha"
+
+ DRAV: "Dravida Nadu"
+ DRAV_ADJ: "Dravidian"
+
+ VLAN: "Vinland"
+ VLAN_ADJ: "Vinland"
+
+ MYGO: "MyGO!!!!!"
+ MYGO_ADJ: "MyGO!!!!!"
+
+ FALC: "Falcon Company"
+ FALC_ADJ: "Falcon Company"
+
+ SIOU: "Great Sioux Nation"
+ SIOU_ADJ: "Sioux"
+
+ IROQ: "Haudenosaunee"
+ IROQ_ADJ: "Haudenosaunee"
+
+ CHEY: "Cheyenne"
+ CHEY_ADJ: "Cheyenne"
+
+ COMA: "Comancheria"
+ COMA_ADJ: "Comancheriano"
+
+ APAC: "Apache"
+ APAC_ADJ: "Apache"
+
+ NEZP: "Nez Perce"
+ NEZP_ADJ: "Nez Perce"
+
+ PAIU: "Paiute"
+ PAIU_ADJ: "Paiute"
+
+ AZTE: "Aztec"
+ AZTE_ADJ: "Aztec"
+
+ INCA: "Inca"
+ INCA_ADJ: "Inca"
+ dyn_c_monarchy_INCA: "Inac Empire"
+ dyn_c_republic_INCA: "Inac Republic"
+
+ CREE: "Iron Confederacy"
+ CREE_ADJ: "Cree–Assiniboine"
+
+ PATA: "Patagonia"
+ PATA_ADJ: "Patagonian"
+
+ RYUK: "Ryukyu"
+ RYUK_ADJ: "Ryukyuan"
+
+ SGPR: "Singapore"
+ SGPR_ADJ: "Singapore"
+
+ NAZI: "Sudamerica Legionaria"
+ NAZI_ADJ: "Sudamericano"
+
+ #非洲
+
+ AFRC: "African Union"
+ AFRC_ADJ: "African"
+
+ ANG: "Angola"
+ ANG_ADJ: "Angolan"
+
+ ZMB: "Zambia"
+ ZMB_ADJ: "Zambian"
+
+ MOZ: "Mozambique"
+ MOZ_ADJ: "Mozambican"
+
+ TNZ: "Tanzania"
+ TNZ_ADJ: "Tanzanian"
+
+ KNY: "Kenya"
+ KNY_ADJ: "Kenyan"
+
+ DRC: "Congo-Kinshasa"
+ DRC_ADJ: "Congolese"
+
+ CKS: "Congo-Brazzaville"
+ CKS_ADJ: "Congolese"
+
+ GAB: "Gabon"
+ GAB_ADJ: "Gabonese"
+
+ CMN: "Cameroon"
+ CMN_ADJ: "Cameroonian"
+
+ dyn_c_central_african: "Central Africa"
+ dyn_c_central_african_adj: "Central African"
+
+ ERI: "Eritrea"
+ ERI_ADJ: "Eritrean"
+
+ SAHR: "Sahara Desert"
+ SAHR_ADJ: "Sahara"
+
+ AYUB: "Ayyubid"
+ AYUB_ADJ: "Ayyubids"
+ dyn_c_monarchy_AYUB: "Ayyubid Sultanate"
+ dyn_c_theocracy_AYUB: "Ayyubid Imamate"
+ dyn_c_republic_AYUB: "Ayyubid Republic"
+
+ LIVO: "Livonian Order"
+ LIVO_ADJ: "Livonian Order" 
+
+ TEUT: "Teutonic Order"
+ TEUT_ADJ: "Teutonic Order"  
+ 
+ CIRC: "Circassia"
+ CIRC_ADJ: "Circassian"
+ CHEC: "Chechnya"
+ CHEC_ADJ: "Chechen"
+ ##### 原版 #####
+ dyn_c_lan_fang_republic: "Lan Fang Republic"
+ dyn_c_lan_fang_republic_adj: "Lan Fang"

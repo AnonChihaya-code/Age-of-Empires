@@ -1,0 +1,3007 @@
+﻿##################
+#####角色模板#####
+##################
+CNNR_Sun_Yat_Sen = { #逸仙
+    first_name = CNNR_Sun
+	last_name = CNNR_Yat_Sen
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	female = no
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_sanminzhuyier
+	culture = cu:han
+	religion = rel:protestant
+	age = 18
+	dna = dna_sun_yat_sen
+	traits = {
+		persistent
+		ambitious
+		inspirational_orator
+	}
+}
+
+CNNR_Huang_Xing = { #黄兴
+	first_name = CNNR_Huang
+	last_name = CNNR_Xing
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	ideology = ideology_sanminzhuyier
+	culture = cu:han
+	age = 18
+	dna = ecchi_dna_huang_xing
+	traits = {
+		ambitious
+		persistent
+		experienced_offensive_planner
+    }
+}
+
+CNNR_Ye_Ting = { #叶挺
+    first_name = CNNR_Ye
+	last_name = CNNR_Ting
+	historical = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	ideology = ideology_communist
+	culture = cu:han
+	age = 18
+	traits = { expert_offensive_planner stalwart_defender meticulous brave }
+}
+
+CNNR_Cai_Yuanpei = { #蔡元培
+    first_name = CNNR_Cai
+    last_name = CNNR_Yuanpei
+    historical = yes
+    ig_leader = yes
+    culture = cu:han
+    female = no
+	religion = rel:atheist
+    ideology = ideology_radical
+    interest_group = ig_intelligentsia
+	dna = ecchi_dna_cai_yuanpei
+	age = 18
+    traits = {
+		romantic
+		innovative
+	}
+}
+
+CNNR_Chen_Jiongming = { #陈炯明
+    first_name = CNNR_Chen
+    last_name = CNNR_Jiongmin
+	historical = yes
+    ig_leader = yes
+	is_general = yes
+    female = no
+    ideology = ideology_authoritarian
+    interest_group = ig_landowners
+	dna = ecchi_dna_chen_jiongming
+	culture = cu:hakka
+	age = 18
+    traits = {
+		brave
+		imperious
+		surveyor
+		expert_artillery_commander
+	}
+}
+
+CNGX_Li_Zongren = { #李宗仁
+	first_name = CNGX_Li
+	last_name = CNGX_Zongren
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	culture = cu:han
+	age = 18
+	traits = {
+		ambitious
+		charismatic
+		brave
+		expert_offensive_planner
+		expert_defensive_strategist
+		stalwart_defender
+	}
+}
+
+CNGX_Bai_Chongxi = { #白崇禧
+	first_name = CNGX_Bai
+	last_name = CNGX_Chongxi
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	ideology = ideology_republican_leader
+	commander_rank = commander_rank_5
+	culture = cu:han
+	age = 18
+	traits = {
+		ambitious
+		charismatic
+		direct
+		expert_offensive_planner
+		experienced_defensive_strategist
+		mountain_commander
+	}
+}
+
+CNGX_Ma_Junwu = { #马君武
+	first_name = CNGX_Ma
+	last_name = CNGX_Junwu
+	historical = yes
+    ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	culture = cu:han
+	age = 18
+	religion = rel:protestant
+	traits = {
+		charismatic
+		innovative
+		erudite
+		literary
+		resupply_commander
+	}
+}
+
+CNYN_Long_Yun = { #龙云
+    first_name = CNYN_Long
+    last_name = CNYN_Yun
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:yi
+    female = no
+    ideology = ideology_reformer
+    interest_group = ig_armed_forces
+    dna = ecchi_dna_long_yun
+    age = 18
+    traits = {
+		ambitious
+		charismatic
+		innovative
+	    resupply_commander
+		basic_political_operator
+	}
+}
+
+CNBY_Yuan_Shikai = { #袁世凯
+	first_name = CNBY_Yuan
+	last_name = CNBY_Shikai
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	ideology = ideology_reformer
+	interest_group = ig_armed_forces
+	age = 18
+	culture = cu:han
+	traits = {
+		ambitious
+		persistent
+		# army reformer, but insignificant field commander 
+	}
+}
+
+CNBY_Yuan_Keding = { #袁克定
+	first_name = CNBY_Yuan
+	last_name = CNBY_Keding
+	historical = yes
+	heir = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	age = 1
+	culture = cu:han
+	traits = {
+		
+    }
+}
+
+CNBY_Duan_Qirui = { #段祺瑞
+    first_name = CNBY_Duan
+    last_name = CNBY_Qirui
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+    ideology = ideology_republican_leader
+	dna = ecchi_dna_duan_qirui
+    age = 18
+	culture = cu:han
+	traits = { imposing basic_political_operator basic_offensive_planner }
+}
+
+CNBY_Li_Yuanhong = { #黎元洪
+    first_name = CNBY_Li
+    last_name = CNBY_Yuanhong
+    historical = yes
+	is_general = yes
+    female = no
+    ideology = ideology_moderate
+    interest_group = ig_armed_forces
+	dna = ecchi_dna_li_yuanhong
+    age = 18
+	culture = cu:han
+    traits = { reserved tactful }
+}
+
+CNBY_Feng_Guozhang = { #冯国璋
+    first_name = CNBY_Feng
+    last_name = CNBY_Guozhang
+    historical = yes
+	is_general = yes
+    female = no
+    ideology = ideology_republican_leader
+    interest_group = ig_armed_forces
+    dna = ecchi_dna_feng_guozhang
+    age = 18
+	culture = cu:han
+	traits = { imposing basic_political_operator basic_offensive_planner }
+}
+
+CNBY_Xu_Shicang = { #徐世昌
+    first_name = CNBY_Xu
+    last_name = CNBY_Shicang
+    historical = yes
+	ig_leader = yes
+    female = no
+    ideology = ideology_moderate
+    interest_group = ig_rural_folk
+    dna = ecchi_dna_xu_shichang
+    age = 18
+	culture = cu:han
+    traits = { cautious tactful }
+}
+
+CNBY_Gu_Weijun = { #顾维钧
+    first_name = CNBY_Wellington 
+    last_name = CNBY_Koo
+    historical = yes
+    ig_leader = yes
+    female = no
+    ideology = ideology_moderate
+    interest_group = ig_petty_bourgeoisie
+	dna = ecchi_dna_wellington_koo
+	age = 18
+	culture = cu:han
+    traits = {
+		masterful_diplomat
+		tactful
+	}    
+}
+
+DQDG_Ying_Zheng = { #嬴政
+    first_name = DQDG_Ying
+	last_name = DQDG_Zheng
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+    culture = cu:qin_roman
+	female = no
+	age = 36
+	ideology = ideology_authoritarian
+	interest_group = ig_landowners
+	traits = { }
+}
+
+DQDG_Ying_Fusu = { #嬴扶苏
+    first_name = DQDG_Ying
+	last_name = DQDG_Fusu
+	historical = yes
+	heir = yes
+	ig_leader = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_humanitarian
+	culture = cu:qin_roman
+	age = 18
+	traits = { }
+}
+
+MING_Zhu_Di = { #朱棣
+    first_name = MING_Zhu
+	last_name = MING_Di
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+    culture = cu:han
+	female = no
+	age = 36
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	traits = { }
+}
+MING_Zhu_Gaochi = { #朱高炽
+	first_name = MING_Zhu
+	last_name = MING_Gaochi
+	historical = yes
+	heir = yes
+	ig_leader = yes
+    culture = cu:han
+	female = no
+	age = 18
+	interest_group = ig_landowners
+	#ideology = ideology_authoritarian
+	traits = { }
+}
+
+DHDG_Liu_Bei = { #刘备
+	first_name = DHDG_Liu
+	last_name = DHDG_Bei
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_social_democrat
+	culture = cu:han
+	age = 18
+	traits = {
+		ambitious
+		charismatic
+		brave
+		persistent
+		masterful_diplomat
+		experienced_political_operator
+	}
+}
+
+DHDG_Liu_Shan = { #刘禅
+	first_name = DHDG_Liu
+	last_name = DHDG_Shan
+	historical = yes
+	heir = yes
+	female = no
+	interest_group = ig_landowners
+	#ideology = ideology_social_democrat
+	culture = cu:han
+	age = 1
+	traits = {
+		
+	}
+}
+
+DHDG_Zhuge_Liang = { #诸葛亮
+	first_name = DHDG_Zhuge
+	last_name = DHDG_Liang
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian_royalist
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+DHDG_Guan_Yu = { #关羽
+	first_name = DHDG_Guan
+	last_name = DHDG_Yu
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	commander_rank = commander_rank_5
+	culture = cu:han
+	age = 18
+	traits = {
+		charismatic
+		brave
+		honorable
+		surveyor
+		plains_commander
+		expert_offensive_planner
+	}
+}
+
+DHDG_Zhang_Fei = { #张飞
+	first_name = DHDG_Zhang
+	last_name = DHDG_Fei
+	historical = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	commander_rank = commander_rank_5
+	culture = cu:han
+	age = 18
+	traits = {
+		charismatic
+		brave
+		reckless
+		alcoholic
+		plains_commander
+		expert_offensive_planner
+	}
+}
+
+DHDG_Zhao_Yun = { #赵云
+	first_name = DHDG_Zhao
+	last_name = DHDG_Yun
+	historical = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	#ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+DHDG_Huang_Zhong = { #黄忠
+	first_name = DHDG_Huang
+	last_name = DHDG_Zhong
+	historical = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	#ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+DHDG_Ma_Chao = { #马超
+	first_name = DHDG_Ma
+	last_name = DHDG_Chao
+	historical = yes
+	is_general = yes
+	female = no
+	interest_group = ig_armed_forces
+	#ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Cao_Cao = { #曹操
+	first_name = CNCW_Cao
+	last_name = CNCW_Cao2
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		ambitious
+		charismatic
+		brave
+		ruthless
+		masterful_diplomat
+		experienced_political_operator
+	}
+}
+
+CNCW_Cao_Pi = { #曹丕
+	first_name = CNCW_Cao
+	last_name = CNCW_Pi
+	historical = yes
+	heir = yes
+	female = no
+	interest_group = ig_landowners
+	#ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 1
+	traits = {
+		
+	}
+}
+
+CNCW_Cao_Fang = { #曹芳
+	first_name = CNCW_Cao
+	last_name = CNCW_Fang
+	historical = yes
+	ruler = yes
+	female = no
+	interest_group = ig_landowners
+	#ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 17
+	traits = {
+		
+	}
+}
+
+CNCW_Cao_Ren = { #曹仁
+	first_name = CNCW_Cao
+	last_name = CNCW_Ren
+	historical = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Xiahou_Yuan = { #夏侯渊
+	first_name = CNCW_Xiahou
+	last_name = CNCW_Yuan
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Xiahou_Dun = { #夏侯惇
+	first_name = CNCW_Xiahou
+	last_name = CNCW_Dun
+	historical = yes
+	is_general = yes
+	female = no
+    interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Zhang_Liao = { #张辽
+	first_name = CNCW_Zhang
+	last_name = CNCW_Liao
+	historical = yes
+	is_general = yes
+	female = no
+    interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Xi_Zhicai = { #戏志才
+	first_name = CNCW_Xi
+	last_name = CNCW_Zhicai
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    interest_group = ig_petty_bourgeoisie
+	ideology = ideology_social_democrat
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Xun_Yu = { #荀彧
+	first_name = CNCW_Xun
+	last_name = CNCW_Yu
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_devout
+	ideology = ideology_corporatist_leader
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Guo_Jia = { #郭嘉
+	first_name = CNCW_Guo
+	last_name = CNCW_Jia
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    interest_group = ig_intelligentsia
+	#ideology = ideology_positivist
+	ideology = ideology_humanitarian_royalist
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Zao_Zhi = { #枣祇
+	first_name = CNCW_Zao
+	last_name = CNCW_Zhi
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    interest_group = ig_rural_folk
+	ideology = ideology_land_reformer
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Hua_Tuo = { #华佗
+	first_name = CNCW_Hua
+	last_name = CNCW_Tuo
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    interest_group = ig_trade_unions
+	ideology = ideology_humanitarian
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNCW_Kong_Rong = { #孔融
+	first_name = CNCW_Kong
+	last_name = CNCW_Rong
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    interest_group = ig_industrialists
+	ideology = ideology_market_liberal
+	culture = cu:han
+	age = 18
+	traits = {
+		
+	}
+}
+
+CNTW_Jiang_Wanan = { #蒋万安
+    first_name = CNTW_Jiang
+    last_name = CNTW_Wanan
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+    female = no
+    interest_group = ig_petty_bourgeoisie
+	ideology = ideology_social_democrat
+	culture = cu:han
+    age = 18
+    traits = {
+		ambitious
+		charismatic
+		innovative
+	    resupply_commander
+		basic_political_operator
+	}
+}
+
+TPTG_Hong_Xiuquan = { #洪秀全
+	first_name = TPTG_Hong
+	last_name = TPTG_Xiuquan
+	historical = yes
+	ruler = yes
+	is_general = yes
+	culture = cu:hakka
+	religion = rel:protestant
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	age = 18
+	traits = {
+		inspirational_orator
+		persistent
+	}
+}
+
+TPTG_Hong_Tianguifu = { #洪天贵福
+	first_name = TPTG_Hong
+	last_name = TPTG_Tianguifu
+	historical = yes
+	culture = cu:hakka
+	heir = yes
+	age = 1
+	religion = rel:protestant
+	interest_group = ig_devout
+	ideology = ideology_moderate
+	traits = {
+		reserved 
+	}
+}
+
+TPTG_Yang_Xiuqing = { #杨秀清
+	first_name = TPTG_Yang
+	last_name = TPTG_Xiuqing
+	age = 18
+	culture = cu:han
+	religion = rel:protestant
+	ig_leader = yes
+	is_general = yes
+	historical = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_theocrat
+	commander_rank = commander_rank_3
+	traits = {
+		grifter
+		expert_political_operator
+		ambitious
+		demagogue
+	}
+}
+
+TPTG_Xiao_Chaogui = { #萧朝贵
+	first_name = TPTG_Xiao
+	last_name = TPTG_Chaogui
+	age = 18
+	culture = cu:hakka
+	religion = rel:protestant
+	ig_leader = yes
+	is_general = yes
+	historical = yes
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	traits = {
+		reckless
+		charismatic
+		demagogue
+	}
+}
+
+TPTG_Hong_Rengan = { #洪仁玕
+	first_name = TPTG_Hong
+	last_name = TPTG_Rengan
+	age = 18
+	culture = cu:hakka
+	religion = rel:protestant
+    ig_leader = yes
+	historical = yes
+	female = no
+	interest_group = ig_intelligentsia
+	ideology = ideology_New_Paper
+	traits = {
+		charismatic
+		innovative
+		persistent
+		basic_diplomat
+	}
+}
+
+TPTG_Feng_Yunshan = { #冯云山
+    first_name = TPTG_Feng
+    last_name = TPTG_Yunshan
+    historical = yes
+    culture = cu:hakka
+    female = no
+	is_general = yes
+	ig_leader = yes
+    religion = rel:protestant
+    ideology = ideology_theocrat
+    interest_group = ig_rural_folk
+	age = 18
+    traits = {
+		experienced_offensive_planner
+		experienced_defensive_strategist
+		experienced_political_operator
+		erudite
+		shellshocked
+	}
+}
+
+TPTG_Wei_Changhui = { #韦昌辉
+    first_name = TPTG_Wei
+    last_name = TPTG_Changhui
+    historical = yes
+	ig_leader = yes
+    culture = cu:han
+    female = no
+	is_general = yes
+    religion = rel:protestant
+    ideology = ideology_theocrat
+    interest_group = ig_landowners
+	age = 18
+    traits = {
+		tactful
+		resupply_commander
+	}
+}
+
+TPTG_Shi_Dakai = { #石达开
+    first_name = TPTG_Shi
+    last_name = TPTG_Dakai
+    historical = yes
+    culture = cu:hakka
+    female = no
+	is_general = yes
+    religion = rel:protestant
+    ideology = ideology_reformer
+	interest_group = ig_armed_forces
+	age = 18
+    traits = {
+		charismatic
+		brave
+		persistent
+		experienced_offensive_planner
+		experienced_defensive_strategist
+	}
+}
+TPTG_Li_Xiucheng = { #李秀成
+    first_name = TPTG_Li
+    last_name = TPTG_Xiucheng
+    historical = yes
+    culture = cu:hakka
+    female = no
+	is_general = yes
+    religion = rel:protestant
+    ideology = ideology_theocrat
+	interest_group = ig_armed_forces
+	age = 18
+    traits = {
+		charismatic
+		brave
+		persistent
+		experienced_offensive_planner
+		experienced_defensive_strategist
+	}
+}
+TPTG_Chen_Yucheng = { #陈玉成
+    first_name = TPTG_Chen
+    last_name = TPTG_Yucheng
+    historical = yes
+    culture = cu:hakka
+    female = no
+	is_general = yes
+    religion = rel:protestant
+    ideology = ideology_theocrat
+	interest_group = ig_armed_forces
+	age = 18
+    traits = {
+		charismatic
+		brave
+		persistent
+		experienced_offensive_planner
+		experienced_defensive_strategist
+	}
+}
+TPTG_Li_Shixian = { #李世贤
+    first_name = TPTG_Li
+    last_name = TPTG_Shixian
+    historical = yes
+    culture = cu:hakka
+    female = no
+	is_general = yes
+    religion = rel:protestant
+    ideology = ideology_theocrat
+	interest_group = ig_armed_forces
+	age = 18
+    traits = {
+		charismatic
+		brave
+		persistent
+		experienced_offensive_planner
+		experienced_defensive_strategist
+	}
+}
+TPTG_Qin_Rigang = { #秦日纲
+    first_name = TPTG_Qin
+    last_name = TPTG_Rigang
+    historical = yes
+    culture = cu:han
+    female = no
+	is_general = yes
+    religion = rel:protestant
+    ideology = ideology_theocrat
+	interest_group = ig_armed_forces
+	age = 18
+    traits = { }
+}
+TPTG_Chen_Chengrong = { #陈承瑢
+    first_name = TPTG_Chen
+    last_name = TPTG_Chengrong
+    historical = yes
+    culture = cu:han
+    female = no
+	is_general = yes
+    religion = rel:protestant
+    ideology = ideology_theocrat
+	interest_group = ig_armed_forces
+	age = 18
+    traits = { }
+}
+
+CNXN_Liu_Yuan = { #刘渊
+    first_name = CNXN_Liu
+	last_name = CNXN_Yuan
+	historical = yes
+	ruler = yes
+	is_general = yes
+    culture = cu:xiongnu
+	female = no
+	age = 36
+	interest_group = ig_landowners
+	ideology = ideology_humanitarian_royalist
+	traits = {
+		ambitious
+		charismatic
+		innovative
+		erudite
+		experienced_offensive_planner
+		plains_commander
+	}
+}
+
+CNXN_Liu_Cong = { #刘聪
+    first_name = CNXN_Liu
+	last_name = CNXN_Cong
+	historical = yes
+	heir = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:xiongnu
+	female = no
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_market_liberal
+	traits = { }
+	on_created = {
+	   add_trait = ambitious
+	}
+}
+
+CNXY_Zhang_Qian = { #张骞
+    first_name = CNXY_Zhang
+	last_name = CNXY_Qian
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_landowners
+    ideology = ideology_market_liberal
+	age = 36
+	traits = {
+	}
+}
+
+DTDG_Li_Xingyun = { #李星云
+	first_name = DTDG_Li
+	last_name = DTDG_Xingyun
+	historical = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_landowners
+    ideology = ideology_market_liberal
+	#ideology = ideology_jingoist_leader
+	age = 18
+	traits = {
+	}
+}
+
+DTDG_Yuan_Tiangang = { #袁天罡
+	first_name = DTDG_Yuan
+	last_name = DTDG_Tiangang
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_armed_forces
+    ideology = ideology_humanitarian_royalist
+	age = 300
+	traits = {
+		ambitious
+		charismatic
+		ruthless
+		expert_offensive_planner
+		expert_defensive_strategist
+		expert_political_operator
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+DTDG_Li_Cunxu = { #李存勖
+	first_name = DTDG_Li
+	last_name = DTDG_Cunxu
+	historical = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_landowners
+    ideology = ideology_jingoist_leader
+	age = 18
+	traits = {
+	}
+}
+
+CNGY_Zhang_Yichao = { #张议潮
+	first_name = CNGY_Zhang
+	last_name = CNGY_Yichao
+	historical = yes
+	ruler = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	age = 36
+	traits = {
+	}
+}
+
+CNGY_Zhang_Huaishen = { #张淮深
+	first_name = CNGY_Zhang
+	last_name = CNGY_Huaishen
+	historical = yes
+	heir = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_landowners
+    ideology = ideology_reformer
+	age = 18
+	traits = {
+	}
+}
+
+CNGY_Zhang_Huaiding = { #张淮鼎
+	first_name = CNGY_Zhang
+	last_name = CNGY_Huaiding
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_landowners
+    ideology = ideology_market_liberal
+	age = 18
+	traits = {
+	}
+}
+
+CNGY_Suo_Xun = { #索勋
+	first_name = CNGY_Suo
+	last_name = CNGY_Xun
+	historical = yes
+	is_general = yes
+	culture = cu:han
+	interest_group = ig_landowners
+    ideology = ideology_jingoist_leader
+	age = 18
+	traits = {
+	}
+}
+
+CNTB_Songzain_Gambo = { #松赞干布
+	first_name = CNTB_Songzain
+	last_name = CNTB_Gambo
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	culture = cu:tibetan
+	interest_group = ig_landowners
+    ideology = ideology_jingoist_leader
+	age = 18
+	traits = {
+	}
+}
+
+CNQY_Lv_Guichen = { #阿苏勒 #吕归尘
+    first_name = CNQY_Lv
+	last_name = CNQY_Guichen
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:qingyang
+	female = no
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		brave
+		basic_offensive_planner
+		stalwart_defender
+		plains_commander
+	}
+}
+
+MGGH_Mohammed_Ozbeg_Khan = { #穆罕默德·月即别汗
+    first_name = MGGH_Mohammed
+	last_name = MGGH_Ozbeg_Khan
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:mongol
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+SERZ_Toghril_Beg = { #图格鲁克 伯克
+    first_name = SERZ_Toghril
+	last_name = SERZ_Beg
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:seljuks
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		
+	}
+}
+
+KUSH_Kujula_Kadphises = { #丘就却·卡德菲塞斯
+    first_name = KUSH_Kujula
+	last_name = KUSH_Kadphises
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:tokhara
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		
+	}
+}
+
+DELI_Qutb_al_Din_Aibak = { #库特布丁·艾伊拜克
+    first_name = DELI_Qutb_al_Din
+	last_name = DELI_Aibak
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:pashtun
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		
+	}
+}
+
+PART_Arsaces_Parni = { #阿尔沙克一世#阿尔沙克·帕尼
+    first_name = PART_Arsaces
+	last_name = PART_Parni
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:parthians
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		
+	}
+}
+
+SASS_Ardashir_Papak_Sasan = { #阿尔达希尔 帕帕克·萨珊
+    first_name = SASS_Ardashir
+	last_name = SASS_Papak_Sasan
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:persian
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		
+	}
+}
+
+MOSC_Vasiliy_II_Temny_Vasilyevich = { #失明者」瓦西里 II
+    first_name = MOSC_Vasiliy_II_Temny
+	last_name = MOSC_Rurikovich
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	female = no
+    culture = cu:russian
+	age = 36
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		
+	}
+}
+
+MOSC_Ivan_III_Veliky_Rurikovich = { #「大帝」伊凡
+    first_name = MOSC_Ivan_III_Veliky
+	last_name = MOSC_Rurikovich
+	historical = yes
+	heir = yes
+	is_general = yes
+	female = no
+    culture = cu:russian
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		
+	}
+}
+
+USA_Donald_Trump = { #特朗普
+	first_name = USA_Donald
+    last_name = USA_Trump
+    historical = yes
+    ruler = yes
+	ig_leader = yes
+    female = no
+    culture = cu:american
+	age = 18
+    interest_group = ig_industrialists
+	ideology = ideology_protectionist
+    traits = {
+		imposing
+		expert_political_operator
+		inspirational_orator
+		demagogue
+		shot_in_the_right_ear
+	}
+}
+
+NAPO_Napoleon_Bonaparte = { #拿破仑
+	first_name = Napoleon
+	last_name = Bonaparte
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:french
+	interest_group = ig_armed_forces
+	ideology = ideology_bonapartist
+	traits = {
+		ambitious
+		charismatic
+		innovative
+		expert_offensive_planner
+		plains_commander
+		expert_artillery_commander	
+	}
+}
+
+NAPO_Francois_Bonaparte = { #罗马王
+	first_name = Francois
+	last_name = Bonaparte
+	historical = yes
+	heir = yes
+	female = no
+	age = 1
+	culture = cu:french
+	interest_group = ig_landowners
+	ideology = ideology_bonapartist
+	traits = {
+		
+	}
+}
+
+VFRA_Antonin_Artaud = { #安托南·阿尔托
+	first_name = VFRA_Antonin
+	last_name = VFRA_Artaud
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	female = no
+	age = 18
+	culture = cu:french
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_social_democrat
+	traits = {
+		
+	}
+}
+
+JEAN_Jeanne_dArc = { #贞德Jeanne d'Arc
+	first_name = Jeanne
+	last_name = JEAN_dArc
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = yes
+	age = 18
+	culture = cu:french
+	interest_group = ig_rural_folk
+	ideology = ideology_humanitarian_royalist
+	traits = {
+		
+	}
+}
+
+ENG_Oliver_Cromwell = { #奥利弗·克伦威尔
+	first_name = Oliver
+	last_name = Cromwell
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 36
+	culture = cu:british
+	interest_group = ig_armed_forces
+	ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+ENG_Richard_Cromwell = { #查理·克伦威尔
+	first_name = Richard
+	last_name = Cromwell
+	historical = yes
+	heir = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:british
+	interest_group = ig_landowners
+	ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+CAS_Isabel_la_Catholic ={ #伊莎贝拉 Isabel I la Católica Isabel I de Castilla
+	first_name = CAS_Isabel_la_Catholic
+	last_name = CAS_Catholic
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+    culture = cu:spanish
+	female = yes
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_market_liberal
+	traits = {
+
+	}
+}
+
+CAS_Christopher_Columbus = { #克里斯托弗·哥伦布
+    first_name = CAS_Christopher
+	last_name = CAS_Columbus
+	historical = yes
+	ig_leader = yes
+	is_admiral = yes
+	female = no
+	age = 18
+	culture = cu:north_italian
+	interest_group = ig_armed_forces
+	ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+ARAG_Fernando_el_Catholic = { # 费尔南多二世 Fernando el Católico #Fernando II de Aragón
+	first_name = ARAG_Fernando
+	last_name = ARAG_el_Catholic
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:catalan
+	interest_group = ig_landowners
+	ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+ICL_Thors_Snorresson = { #托尔兹
+	first_name = ICL_Thors
+	last_name = ICL_Snorresson
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 36
+	culture = cu:icelandic
+	interest_group = ig_armed_forces
+	ideology = ideology_pacifist
+	traits = {
+		
+	}
+}
+
+VLAN_Thorfinn_Karlsefni = { #托尔芬
+	first_name = VLAN_Thorfinn
+	last_name = VLAN_Karlsefni
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:vinlanders
+	interest_group = ig_armed_forces
+	ideology = ideology_pacifist
+	traits = {
+		
+	}
+}
+
+OHDS_Jean_Parisot_de_la_Valette = { #让·帕里索·德拉·瓦莱特
+	first_name = OHDS_Jean_Parisot
+	last_name = OHDS_de_la_Valette
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:french
+	female = no
+	age = 18
+	ideology = ideology_corporatist_leader
+	interest_group = ig_devout
+	traits = {
+		ambitious
+		charismatic
+		brave
+		pious
+		stalwart_defender
+		expert_defensive_strategist
+	}
+}
+
+OHDS_Morgan_Black = { #摩根·布莱克
+	first_name = OHDS_Morgan
+	last_name = OHDS_Black
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:scottish
+	female = no
+	age = 18
+	ideology = ideology_humanitarian
+	interest_group = ig_armed_forces
+	traits = {
+		ambitious
+		charismatic
+		brave
+		pious
+		stalwart_defender
+	    expert_offensive_planner
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+OHDS_Elisabet_Lizzie = { #莉丝
+	first_name = OHDS_Elisabet
+	last_name = OHDS_Lizzie
+	historical = yes
+	ig_leader = yes
+	is_admiral = yes
+    culture = cu:british
+	female = yes
+	age = 18
+	ideology = ideology_market_liberal
+	interest_group = ig_petty_bourgeoisie
+	traits = {
+		charismatic
+		brave
+		social_bandit
+		dockyard_master
+		expert_convoy_raider
+		expert_naval_commander
+	}
+}
+
+OHDS_Alain = { #艾伦
+	first_name = OHDS_Alain
+	last_name = OHDS_Alain_02
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:french
+	female = no
+	age = 18
+	ideology = ideology_market_liberal
+	interest_group = ig_landowners
+	traits = {
+		ambitious
+		grifter
+		ruthless
+		experienced_offensive_planner
+		plains_commander
+	}
+}
+
+OHDS_Falcon_Sahin = { #猎鹰 夏伊
+	first_name = OHDS_Falcon
+	last_name = OHDS_Sahin
+	historical = yes
+	is_general = yes
+    culture = cu:turkish
+	female = no
+	age = 18
+	interest_group = ig_armed_forces
+	#ideology = ideology_market_liberal
+	traits = {
+		ambitious
+		resupply_commander
+		experienced_offensive_planner
+		expert_artillery_commander
+	}
+}
+
+FALC_Amelia_Black = { #艾米莉亚 布莱克
+	first_name = FALC_Amelia
+	last_name = FALC_Black
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = yes
+    culture = cu:american
+	age = 18
+	interest_group = ig_industrialists
+	ideology = ideology_market_liberal
+	traits = {
+		ambitious
+		charismatic
+		brave
+		explorer
+		experienced_offensive_planner
+	}
+}
+
+FALC_Ka_Nien = { #卡念
+	first_name = FALC_Ka
+	last_name = FALC_Nien
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:iroquoian
+	age = 50
+	interest_group = ig_rural_folk
+	ideology = ideology_reformer
+	traits = {
+		brave
+		explorer
+		innovative
+		experienced_offensive_planner
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+FALC_Cooper_Major = { #库柏
+	first_name = FALC_Cooper
+	last_name = FALC_Major
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+    culture = cu:american
+	age = 18
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	traits = {
+		brave
+		explorer
+		experienced_offensive_planner
+		plains_commander
+	}
+}
+
+TCOS_Pierre_Beaumont = { #波曼
+	first_name = TCOS_Pierre
+	last_name = TCOS_Beaumont
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+    culture = cu:french
+	interest_group = ig_landowners
+	#ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+IROQ_Hiawatha = { #海华沙
+	first_name = IROQ_Hiawatha
+	last_name = IROQ_Hiawatha2
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:iroquoian
+	interest_group = ig_landowners
+	#ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+SUOI_Gall = { #高尔
+	first_name = SUOI_Gall
+	last_name = SUOI_Gall2
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:siouan
+	interest_group = ig_landowners
+	#ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+AZTE_Cuauhtemoc = { #瓜特穆斯
+	first_name = AZTE_Cuauhtemoc
+	last_name = AZTE_Cuauhtemoc2
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:aztecs
+	interest_group = ig_landowners
+	#ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+INCA_Huayan_Capac = { #瓦伊纳·卡帕克
+	first_name = INCA_Huayan
+	last_name = INCA_Capac
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:inca
+	interest_group = ig_landowners
+	#ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+PATA_Orelie_Antoine_de_Tounens = { #奥雷利耶-安托万·德·图龙
+    first_name = PATA_Orelie_Antoine
+	last_name = PATA_de_Tounens
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	female = no
+	age = 18
+	culture = cu:french
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian
+	traits = { }
+}
+
+AMZ_Ed_Stafford = { #埃德·斯塔福德
+	first_name = AMZ_Ed
+	last_name = AMZ_Stafford
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:british
+	female = no
+	age = 18
+	ideology = ideology_land_reformer
+	interest_group = ig_armed_forces
+	traits = {
+		ambitious
+		charismatic
+		explorer
+		erudite
+		experienced_offensive_planner
+		experienced_defensive_strategist
+	}
+}
+
+APAC_Geronimo = { #杰罗尼莫
+	first_name = APAC_Geronimo
+	last_name = APAC_Geronimo02
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	age = 18
+	culture = cu:apache
+	interest_group = ig_landowners
+	#ideology = ideology_market_liberal
+	traits = {
+		
+	}
+}
+
+ETH_Tewodros_Solomon = { #特沃德罗斯所罗门#法外王侯
+	first_name = Tewodros
+	last_name = Solomon
+	historical = yes
+	ruler = yes
+	noble = yes
+	ig_leader = yes
+	is_general = yes
+	noble = yes
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	age = 18
+	dna = dna_emperor_tewodros_02
+	interest_group = ig_landowners
+	ideology = ideology_humanitarian_royalist
+	traits = {
+		romantic
+		expert_offensive_planner
+	}
+	on_created = {
+	    add_modifier = {
+		    name = tewodros_modifier
+		}
+	}
+}
+
+HASA_Aminah_Zazzau = { #阿米娜女王
+	first_name = HASA_Aminah
+	last_name = HASA_Zazzau
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:hausa
+	female = yes
+	age = 18
+	ideology = ideology_humanitarian_royalist
+	interest_group = ig_landowners
+	traits = {
+		ambitious
+		charismatic
+		brave
+		experienced_offensive_planner
+		plains_commander
+	}
+}
+
+SHAI_Muhammad_Dur = { #穆罕默德·杜尔
+	first_name = SHAI_Muhammad
+	last_name = SHAI_Dur
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:songhai
+	female = no
+	age = 18
+	ideology = ideology_humanitarian_royalist
+	interest_group = ig_armed_forces
+	traits = {
+		ambitious
+		charismatic
+		pious
+		experienced_offensive_planner
+		plains_commander
+		master_bureaucrat
+	}
+}
+
+MYGO_Takamatsu_Tomori = { #高松 灯 Takamatsu Tomori
+    first_name = MYGO_Takamatsu
+	last_name = MYGO_Tomori
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:mygo
+	female = no
+	age = 18
+	interest_group = ig_trade_unions
+	ideology = ideology_humanitarian
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Chihaya_Anon = { #千早 爱音
+	first_name = MYGO_Chihaya
+	last_name = MYGO_Anon
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:mygo
+	female = no
+	age = 18
+	interest_group = ig_devout
+	ideology = ideology_corporatist_leader
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Sumita_Mana = { #纯田 真奈
+	first_name = MYGO_Sumita
+	last_name = MYGO_Mana
+	historical = yes
+	is_general = yes
+    culture = cu:sumimi
+	female = no
+	age = 18
+	interest_group = ig_trade_unions
+	ideology = ideology_corporatist_leader
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Kaname_Rana = { #要乐 奈
+	first_name = MYGO_Kaname
+	last_name = MYGO_Rana
+	historical = yes
+	is_general = yes
+    culture = cu:mygo
+	female = no
+	age = 18
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_market_liberal
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Nagasaki_Soyo = { #长崎 素世
+	first_name = MYGO_Nagasaki
+	last_name = MYGO_Soyo
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:crychic
+	female = no
+	age = 18
+	interest_group = ig_landowners
+	ideology = ideology_humanitarian_royalist
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Shiina_Taki = { #椎名 立希
+	first_name = MYGO_Shiina
+	last_name = MYGO_Taki
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:mygo
+	female = no
+	age = 18
+	interest_group = ig_armed_forces
+	ideology = ideology_vanguardist
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Sakiko_Togawa = { # 丰川 祥子
+	first_name = MYGO_Togawa
+	last_name =  MYGO_Sakiko
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:avemujica
+	female = no
+	age = 18
+	interest_group = ig_industrialists
+	ideology = ideology_market_liberal
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Misumi_Uika = { #三角 初华
+	first_name = MYGO_Misumi
+	last_name = MYGO_Uika
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:avemujica
+	female = no
+	age = 18
+	interest_group = ig_intelligentsia
+	ideology = ideology_positivist
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Wakaba_Mutsumi = { #若叶 睦
+	first_name = MYGO_Wakaba
+	last_name = MYGO_Mutsumi
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:avemujica
+	female = no
+	age = 18
+	interest_group = ig_rural_folk
+	ideology = ideology_land_reformer
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Yahata_Umiri = { #八幡 海铃
+	first_name = MYGO_Yahata
+	last_name = MYGO_Umiri
+	historical = yes
+	is_general = yes
+    culture = cu:avemujica
+	female = no
+	age = 18
+	interest_group = ig_devout
+	ideology = ideology_corporatist_leader
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MYGO_Yutenji_Nyamu = { #祐天寺 喵梦
+	first_name = MYGO_Yutenji
+	last_name = MYGO_Nyamu
+	historical = yes
+	is_general = yes
+	ig_leader = yes
+    culture = cu:avemujica
+	female = no
+	age = 18
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_radical
+	traits = {
+		
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+ELDA_Eren_Jaeger = { #艾伦 #巨人
+	first_name = ELDA_Eren
+	last_name = ELDA_Jaeger 
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_authoritarian
+	interest_group = ig_armed_forces
+	traits = {
+		ambitious
+		brave
+		reckless
+		ruthless
+	}
+}
+#三笠
+ELDA_Mikasa_Ackerman = {
+    first_name = ELDA_Mikasa
+	last_name = ELDA_Ackerman
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = yes
+	age = 18
+	ideology = ideology_moderate
+	interest_group = ig_armed_forces
+	traits = {
+		charismatic
+		reserved
+		expert_offensive_planner
+	}
+}
+#兵长
+ELDA_Levi_Ackerman = {
+    first_name = ELDA_Levi
+	last_name = ELDA_Ackerman
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_moderate
+	interest_group = ig_armed_forces
+	traits = {
+		charismatic
+		persistent
+		expert_offensive_planner
+	}
+}
+#团长
+ELDA_Erwin_Smith = {
+	first_name = ELDA_Erwin
+	last_name = ELDA_Smith
+	historical = yes
+	ig_leader = yes
+	ig_leader = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_authoritarian
+	interest_group = ig_armed_forces
+	traits = {
+		ambitious
+		charismatic
+		meticulous
+		brave
+		innovative
+		experienced_offensive_planner
+		expert_defensive_strategist
+	}
+}
+#韩吉桑
+ELDA_Hange_Zoe = {
+	first_name = ELDA_Hange
+	last_name = ELDA_Zoe
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = yes
+	age = 18
+	ideology = ideology_reformer
+	interest_group = ig_armed_forces
+	traits = { }
+}
+#格里沙·耶格尔
+ELDA_Grisha_Jaeger = {
+	first_name = ELDA_Grisha
+	last_name = ELDA_Jaeger
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 36
+	ideology = ideology_humanitarian
+	interest_group = ig_intelligentsia
+	traits = { }
+}
+#阿尔敏·阿诺德
+ELDA_Armin_Arlert = {
+	first_name = ELDA_Armin
+	last_name = ELDA_Arlert
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_pacifist
+	interest_group = ig_intelligentsia
+	traits = { }
+}
+#希丝特莉亚·雷斯
+ELDA_Christa_Reiss = {
+	first_name = ELDA_Christa
+	last_name = ELDA_Reiss
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = yes
+	age = 18
+	ideology = ideology_pacifist
+	interest_group = ig_landowners
+	traits = { }
+}
+#让·基尔希斯坦
+ELDA_Jean_Kirstein = {
+	first_name = ELDA_Jean
+	last_name = ELDA_Kirstein
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_authoritarian
+	interest_group = ig_armed_forces
+	traits = { }
+}
+#康尼·斯普林格
+ELDA_Conny_Springe = {
+	first_name = ELDA_Conny
+	last_name = ELDA_Springe
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_land_reformer
+	interest_group = ig_rural_folk
+	traits = { }
+}
+#萨莎·布劳斯
+ELDA_Sasha_Braus = {
+	first_name = ELDA_Sasha
+	last_name = ELDA_Braus
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = yes
+	age = 18
+	ideology = ideology_land_reformer
+	interest_group = ig_rural_folk
+	traits = { }
+}
+#弗洛克·福斯特
+ELDA_Floch_orster = {
+	first_name = ELDA_Floch
+	last_name = ELDA_Forster
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_ethno_nationalist
+	interest_group = ig_armed_forces
+	traits = { }
+}
+#马尔洛·桑德
+ELDA_Marlowe_Freudenberg = {
+	first_name = ELDA_Marlowe
+	last_name = ELDA_Freudenberg
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = no
+	age = 18
+	ideology = ideology_moderate
+	interest_group = ig_petty_bourgeoisie
+	traits = { }
+}
+#希琪·德利斯
+ELDA_Hitch = {
+	first_name = ELDA_Hitch
+	last_name = ELDA_Hitch_02
+	historical = yes
+	is_general = yes
+    culture = cu:eldians
+	female = yes
+	age = 18
+	ideology = ideology_moderate
+	interest_group = ig_petty_bourgeoisie
+	traits = { }
+}
+#罗德·雷斯
+ELDA_Rod_Reiss = {
+	first_name = ELDA_Rod
+	last_name = ELDA_Reiss
+	historical = yes
+	ruler = yes
+    culture = cu:eldians
+	female = no
+	age = 50
+	ideology = ideology_royalist
+	interest_group = ig_landowners
+	traits = { }
+}
+#芙莉妲·雷斯
+ELDA_Frieda_Reiss = {
+	first_name = ELDA_Frieda
+	last_name = ELDA_Reiss
+	historical = yes
+	is_general = yes
+	heir = yes
+    culture = cu:eldians
+	female = yes
+	age = 18
+	ideology = ideology_pacifist
+	interest_group = ig_landowners
+	traits = { }
+}
+#达里斯·扎卡里总统
+ELDA_Darius_Zackley = {
+	first_name = ELDA_Darius
+	last_name = ELDA_Zackley
+	historical = yes
+	is_general = yes
+	ig_leader = yes
+    culture = cu:eldians
+	female = no
+	age = 50
+	ideology = ideology_republican_leader
+	interest_group = ig_landowners
+	traits = { }
+}
+#达特·皮克希斯
+ELDA_Dot_Pixis = {
+	first_name = ELDA_Dot
+	last_name = ELDA_Pixis
+	historical = yes
+	is_general = yes
+	ig_leader = yes
+    culture = cu:eldians
+	female = no
+	age = 50
+	ideology = ideology_jingoist_leader
+	interest_group = ig_petty_bourgeoisie
+	traits = { }
+}
+#尼克神父
+ELDA_Priest_Nick = {
+	first_name = ELDA_Nick
+	last_name = ELDA_Priest
+	historical = yes
+	ig_leader = yes
+    culture = cu:eldians
+	female = no
+	age = 50
+	ideology = ideology_theocrat
+	interest_group = ig_devout
+	traits = { }
+}
+
+#马莱帝国
+#威利·戴巴
+MRLY_Willy_Tybur = {
+	first_name = MRLY_Willy
+	last_name = MRLY_Tybur
+	historical = yes
+	ruler = yes
+    culture = cu:honor_marleyans
+	female = no
+	age = 18
+	ideology = ideology_corporatist_leader
+	interest_group = ig_landowners
+	traits = {
+	}
+}
+#拉拉·戴巴
+MRLY_Lara_Tybur = {
+	first_name = MRLY_Lara
+	last_name = MRLY_Tybur
+	historical = yes
+	heir = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = yes
+	age = 18
+	ideology = ideology_royalist
+	interest_group = ig_landowners
+	traits = {
+	}
+}
+#吉克·耶格尔
+MRLY_Zeke_Jaeger = {
+	first_name = MRLY_Zeke
+	last_name = MRLY_Jaeger
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = no
+	age = 18
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#伊雷娜
+MRLY_Yelena = {
+	first_name = MRLY_Yelena
+	last_name = MRLY_Yelena_02
+	historical = yes
+	is_general = yes
+    culture = cu:marleyans
+	female = yes
+	age = 18
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#阿尼·利昂纳德
+MRLY_Annie_Leonhart = {
+	first_name = MRLY_Annie
+	last_name = MRLY_Leonhart
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = yes
+	age = 18
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#皮克·芬格尔
+MRLY_Pieck_Finger = {
+	first_name = MRLY_Pieck
+	last_name = MRLY_Finger
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = yes
+	age = 18
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#贝特霍尔德·胡佛
+MRLY_Bertholdt_Hoover = {
+	first_name = MRLY_Bertholdt
+	last_name = MRLY_Hoover
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = no
+	age = 18
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#莱纳·布朗
+MRLY_Reiner_Braun = {
+	first_name = MRLY_Reiner
+	last_name = MRLY_Braun
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = no
+	age = 18
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#波尔克·加里亚德
+MRLY_Polk_Galliard = {
+	first_name = MRLY_Polk
+	last_name = MRLY_Galliard
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = no
+	age = 18
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#法尔克·格莱斯
+MRLY_Falco_Grice = {
+	first_name = MRLY_Falco
+	last_name = MRLY_Grice
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = no
+	age = 12
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#贾碧·布朗
+MRLY_Gabi_Braun = {
+	first_name = MRLY_Gabi
+	last_name = MRLY_Braun
+	historical = yes
+	is_general = yes
+    culture = cu:honor_marleyans
+	female = yes
+	age = 12
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#卡尔维
+MRLY_Calvi = {
+	first_name = MRLY_Calvi
+	last_name = MRLY_Calvi_02
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:marleyans
+	female = no
+	age = 45
+	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#迪奥·马加特
+MRLY_Theo_Magath = {
+	first_name = MRLY_Theo
+	last_name = MRLY_Magath
+	historical = yes
+	is_general = yes
+    culture = cu:marleyans
+	female = no
+	age = 40
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+#科斯洛
+MRLY_Koslow = {
+	first_name = MRLY_Koslow
+	last_name = MRLY_Koslow_02
+	historical = yes
+	is_general = yes
+    culture = cu:marleyans
+	female = no
+	age = 40
+#	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+
+RYUK_Sho_Tai = { #尚泰
+    first_name = RYUK_Sho
+	last_name = RYUK_Tai
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	female = no
+	age = 18
+	culture = cu:ryukyuan
+	interest_group = ig_landowners
+	#ideology = ideology_royalist
+	traits = {
+
+	}
+}
+
+DJDG_Sima_Yi = { #司马懿
+	first_name = DJDG_Sima
+	last_name = DJDG_Yi
+	historical = yes
+	ruler = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 70
+	traits = {
+		
+	}
+}
+
+DJDG_Sima_Shi = { #司马师
+	first_name = DJDG_Sima
+	last_name = DJDG_Shi
+	historical = yes
+	heir = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 41
+	traits = {
+		
+	}
+}
+
+DJDG_Sima_Zhao = { #司马昭
+	first_name = DJDG_Sima
+	last_name = DJDG_Zhao
+	historical = yes
+	female = no
+	ig_leader = yes
+	is_general = yes
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_jingoist_leader
+	culture = cu:han
+	age = 38
+	traits = {
+		
+	}
+}
+
+SGPR_Lee_Kuan_Yew = { #李光耀
+	first_name = SGPR_Lee
+	last_name = SGPR_Kuan_Yew
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	female = no
+	interest_group = ig_intelligentsia
+	ideology = ideology_market_liberal
+	culture = cu:hakka
+	age = 46
+	traits = {
+		
+	}
+}
+
+SGPR_Lee_Hsien_Loong = { #李显龙
+	first_name = SGPR_Lee
+	last_name = SGPR_Hsien_Loong
+	historical = yes
+	ig_leader = yes
+	is_general = yes
+	female = no
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_market_liberal
+	culture = cu:hakka
+	age = 18
+	traits = {
+		
+	}
+}
+
+NAZI_Adolf_Hitler = { #希特勒
+	first_name = NAZI_Adolf
+	last_name = NAZI_Hitler
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	female = no
+	culture = cu:south_german
+	religion = catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_corporatist_leader
+	age = 18
+	dna = ecchi_dna_adolf_hitler
+	traits = {
+		cruel
+		inspirational_orator
+		charismatic
+		firebrand
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+AYUB_Salah_Ayyub = { #萨拉丁 Salah ad-Din Yusuf ibn Ayyub
+	first_name = AYUB_Salah
+	last_name = AYUB_Ayyub
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+	interest_group = ig_landowners
+	ideology = ideology_humanitarian_royalist
+	culture = cu:kurdish 
+	age = 18
+	traits = {
+		ambitious
+		charismatic
+		innovative
+		expert_offensive_planner
+		expert_defensive_strategist
+		stalwart_defender
+	}
+}
+
+SONG_Song_Rui = { #文天祥#宋瑞
+	first_name = SONG_Song
+	last_name = SONG_Rui
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:han_song
+	female = no
+	age = 18
+	interest_group = ig_intelligentsia
+	ideology = ideology_positivist
+	traits = {
+		charismatic
+		romantic
+		brave
+		honorable
+		literary
+		expert_defensive_strategist
+	}
+	on_created = {
+		set_character_immortal = yes
+		add_modifier = character_immortal_modifier
+	}
+}
+
+MGGH_Kuchuk_Muhammad = { #库楚克·穆罕默德 成吉思
+	first_name = MGGH_Kuchuk_Muhammad
+	last_name = MGGH_Genghisid
+	historical = yes
+	ruler = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 36
+	traits = { }
+}
+
+MGGH_Ahmad_Genghisid = { #阿黑麻 成吉思
+	first_name = MGGH_Ahmad
+	last_name = MGGH_Genghisid
+	historical = yes
+	heir = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 18
+	traits = { }
+}
+
+MGGH_Ulugh_Muhammad_Genghisid = { #乌鲁·穆罕默德 成吉思
+	first_name = MGGH_Ulugh_Muhammad
+	last_name = MGGH_Genghisid
+	historical = yes
+	ruler = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 36
+	traits = { }
+}
+
+MGGH_Mahmudak_Genghisid = { #马赫穆提克 成吉思
+	first_name = MGGH_Mahmudak
+	last_name = MGGH_Genghisid
+	historical = yes
+	heir = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 18
+	traits = { }
+}
+
+MGGH_Haji_Giray = { #哈吉·格来
+	first_name = MGGH_Haji
+	last_name = MGGH_Giray
+	historical = yes
+	ruler = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 36
+	traits = { }
+}
+
+MGGH_Nur_Devlet_Giray = { #努儿·道剌特 格来
+	first_name = MGGH_Nur_Devlet
+	last_name = MGGH_Giray
+	historical = yes
+	heir = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 18
+	traits = { }
+}
+
+MGGH_Vakkas_Ediguid = { #瓦喀什 也迪该
+	first_name = MGGH_Vakkas
+	last_name = MGGH_Ediguid
+	historical = yes
+	ruler = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 36
+	traits = { }
+}
+
+MGGH_Ibak_Shaybanid = { #伊巴克 昔班尼
+	first_name = MGGH_Ibak
+	last_name = MGGH_Shaybanid
+	historical = yes
+	ruler = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 18
+	traits = { }
+}
+
+MGGH_Kerey_Genghisid = { #克烈 成吉思
+	first_name = MGGH_Kerey
+	last_name = MGGH_Genghisid
+	historical = yes
+	ruler = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 36
+	traits = { }
+}
+
+MGGH_Burunduq_Genghisid = { #布鲁杜克 成吉思
+	first_name = MGGH_Burunduq
+	last_name = MGGH_Genghisid
+	historical = yes
+	heir = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:tatar
+	age = 18
+	traits = { }
+}
+
+CIRC_Ismail_Berzeg = {
+	# Ismail Berzeg
+	first_name = "Ismail"
+	last_name = "Berzeg"
+	historical = yes
+	culture = primary_culture
+	birth_date = 1763.12.4
+	ruler = yes
+	hq = region_caucasus
+	is_general = yes
+	commander_rank = commander_rank_2
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		ambitious
+		forest_commander
+		brave
+	}
+}
+
+CIRC_Hawduqo_Mansur = {
+	is_general = yes
+	first_name = "Hawduqo"
+	last_name = "Mansur"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1775.3.4 # complete guess
+	ig_leader = yes # Both general and IG leader
+	is_general = yes # Both general and IG leader
+	commander_rank = commander_rank_2
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	traits = {
+		forest_commander
+		brave
+		experienced_offensive_planner
+	}
+}
+
+CIRC_Muhammad_Amin_Asiyalav = {
+	# Muhammad Amin Asiyalav
+	first_name = Muhammad_Amin
+	last_name = Asiyalav
+	birth_date = 1818.2.1 #Only year known
+	historical = yes
+	ruler = yes
+	is_general = yes
+	culture = cu:north_caucasian
+	commander_rank = commander_rank_2
+	hq = region_caucasus
+	interest_group = ig_devout
+	ideology = ideology_abolitionist
+	traits = {
+		direct
+		pious
+		experienced_offensive_planner
+	}
+}
+
+CHEC_Shamil_Murid = {
+	# Imam Shamil
+	first_name = "Shamil"
+	last_name = "Murid" # No family name, murid is a type of sufi diciple that Shamil was.
+	historical = yes
+	culture = primary_culture
+	birth_date = 1797.6.26
+	ruler = yes
+	hq = region_caucasus
+	is_general = yes
+	commander_rank = commander_rank_2
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	traits = {
+		pious
+		ambitious
+		brave
+	}
+}
+
+CHEC_Hadji_Murad = {
+	# Imam Shamil
+	first_name = "Hadji"
+	last_name = "Murad"
+	historical = yes
+	culture = primary_culture
+	is_general = yes
+	birth_date = 1818.2.1
+	traits = {
+		mountain_commander
+		brave
+		cruel
+	}
+}
+
+NOVG_Evfimy_II = { #叶夫菲米 II
+	first_name = NOVG_Evfimy
+	last_name = NOVG_II
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_social_democrat
+	culture = cu:russian
+	age = 18
+	traits = { }
+}
+
+LIVO_Heinrich_Vincke = { #海因里希 文克
+	first_name = LIVO_Heinrich
+	last_name = LIVO_Vincke
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:north_german
+	female = no
+	age = 18
+	ideology = ideology_corporatist_leader
+	interest_group = ig_devout
+	traits = { }
+}
+
+TEUT_Konrad_von_Erlichshausen = { #康拉德 冯 厄里希豪森
+	first_name = TEUT_Konrad
+	last_name = TEUT_von_Erlichshausen
+	historical = yes
+	ruler = yes
+	ig_leader = yes
+	is_general = yes
+    culture = cu:north_german
+	female = no
+	age = 18
+	ideology = ideology_corporatist_leader
+	interest_group = ig_devout
+	traits = { }
+}
+
+LIT_Kazimierz_Jagiellon = { #卡齐米日 雅盖隆
+	first_name = LIT_Kazimierz
+	last_name = LIT_Jagiellon
+	historical = yes
+	ruler = yes
+	is_general = yes
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	culture = cu:polish
+	age = 18
+	traits = { }
+}

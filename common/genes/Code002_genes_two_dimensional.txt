@@ -1,0 +1,190 @@
+﻿accessory_genes = {
+	totprops_1 = {
+		Two_dimensional_gene_empty = {
+			index = 0
+			male = {
+				1 = empty
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		Accessories_Takamatsu_Tomori = {
+			index = 1
+			male = { 1 = Accessories_Takamatsu_Tomori }
+			female = { 1 = Accessories_Takamatsu_Tomori }
+			boy = male
+			girl = female
+		}
+		Accessories_Chihaya_Anon = {
+			index = 2
+			male = { 1 = Accessories_Chihaya_Anon }
+			female = { 1 = Accessories_Chihaya_Anon }
+			boy = male
+			girl = female
+		}
+		Accessories_Kaname_Rana = {
+			index = 3
+			male = { 1 = Accessories_Kaname_Rana }
+			female = { 1 = Accessories_Kaname_Rana }
+			boy = male
+			girl = female
+		}
+		Accessories_Nagasaki_Soyo = {
+			index = 4
+			male = { 1 = Accessories_Nagasaki_Soyo }
+			female = { 1 = Accessories_Nagasaki_Soyo }
+			boy = male
+			girl = female
+		}
+		Accessories_Shiina_Taki = {
+			index = 5
+			male = { 1 = Accessories_Shiina_Taki }
+			female = { 1 = Accessories_Shiina_Taki }
+			boy = male
+			girl = female
+		}
+		Accessories_Sakiko_Togawa = {
+			index = 6
+			male = { 1 = Accessories_Sakiko_Togawa }
+			female = { 1 = Accessories_Sakiko_Togawa }
+			boy = male
+			girl = female
+		}
+		Accessories_Misumi_Uika = {
+			index = 7
+			male = { 1 = Accessories_Misumi_Uika }
+			female = { 1 = Accessories_Misumi_Uika }
+			boy = male
+			girl = female
+		}
+		Accessories_Wakaba_Mutsumi = {
+			index = 8
+			male = { 1 = Accessories_Wakaba_Mutsumi }
+			female = { 1 = Accessories_Wakaba_Mutsumi }
+			boy = male
+			girl = female
+		}
+		Accessories_Yahata_Umiri = {
+			index = 9
+			male = { 1 = Accessories_Yahata_Umiri }
+			female = { 1 = Accessories_Yahata_Umiri }
+			boy = male
+			girl = female
+		}
+		Accessories_Yutenji_Nyamu = {
+			index = 10
+			male = { 1 = Accessories_Yutenji_Nyamu }
+			female = { 1 = Accessories_Yutenji_Nyamu }
+			boy = male
+			girl = female
+		}
+		Accessories_Sumita_Mana = {
+			index = 11
+			male = { 1 = Accessories_Sumita_Mana }
+			female = { 1 = Accessories_Sumita_Mana }
+			boy = male
+			girl = female
+		}
+		Accessories_Tongyong = {
+			index = 12
+			male = {
+				1 = Accessories_Jeanne_dArc
+				
+                1 = Accessories_Toyama_Kasumi
+				1 = Accessories_Hanazono_Tae
+				1 = Accessories_Ushigome_Rimi
+				1 = Accessories_Yamabuki_Saya
+				1 = Accessories_Ichigaya_Arisa
+
+				1 = Accessories_Mitake_Ran
+				1 = Accessories_Aoba_Moca
+				1 = Accessories_Uehara_Himari
+				1 = Accessories_Udagawa_Tomoe
+				1 = Accessories_Hazawa_Tsugumi
+
+				1 = Accessories_Maruyama_Aya
+				1 = Accessories_Hikawa_Hina
+				1 = Accessories_Shirasagi_Chisato
+				1 = Accessories_Yamato_Maya
+				1 = Accessories_Wakamiya_Eve
+
+				1 = Accessories_Minato_Yukina
+				1 = Accessories_Hikawa_Sayo
+				1 = Accessories_Imai_Lisa
+				1 = Accessories_Udagawa_Ako
+				1 = Accessories_Shirokane_Rinko
+
+				1 = Accessories_Tsurumaki_Kokoro
+				1 = Accessories_Seta_Kaoru
+				1 = Accessories_Kitazawa_Hagumi
+				1 = Accessories_Matsubara_Kanon
+				1 = Accessories_Michelle
+
+				1 = Accessories_Kurata_Mashiro
+				1 = Accessories_Kirigaya_Toko
+				1 = Accessories_Hiromachi_Nanami
+				1 = Accessories_Futaba_Tsukushi
+				1 = Accessories_Yashio_Rui
+
+				1 = Accessories_Wakana_Rei
+				1 = Accessories_Asahi_Rokka
+				1 = Accessories_Sato_Masuki
+				1 = Accessories_Nyubara_Reona
+				1 = Accessories_Tamade_Chiyu
+
+				1 = Accessories_Nakamachi_Arale
+
+			}
+			female = {
+				1 = Accessories_Jeanne_dArc
+
+				1 = Accessories_Toyama_Kasumi
+				1 = Accessories_Hanazono_Tae
+				1 = Accessories_Ushigome_Rimi
+				1 = Accessories_Yamabuki_Saya
+				1 = Accessories_Ichigaya_Arisa
+
+				1 = Accessories_Mitake_Ran
+				1 = Accessories_Aoba_Moca
+				1 = Accessories_Uehara_Himari
+				1 = Accessories_Udagawa_Tomoe
+				1 = Accessories_Hazawa_Tsugumi
+
+				1 = Accessories_Maruyama_Aya
+				1 = Accessories_Hikawa_Hina
+				1 = Accessories_Shirasagi_Chisato
+				1 = Accessories_Yamato_Maya
+				1 = Accessories_Wakamiya_Eve
+
+				1 = Accessories_Minato_Yukina
+				1 = Accessories_Hikawa_Sayo
+				1 = Accessories_Imai_Lisa
+				1 = Accessories_Udagawa_Ako
+				1 = Accessories_Shirokane_Rinko
+
+				1 = Accessories_Tsurumaki_Kokoro
+				1 = Accessories_Seta_Kaoru
+				1 = Accessories_Kitazawa_Hagumi
+				1 = Accessories_Matsubara_Kanon
+				1 = Accessories_Michelle
+
+				1 = Accessories_Kurata_Mashiro
+				1 = Accessories_Kirigaya_Toko
+				1 = Accessories_Hiromachi_Nanami
+				1 = Accessories_Futaba_Tsukushi
+				1 = Accessories_Yashio_Rui
+
+				1 = Accessories_Wakana_Rei
+				1 = Accessories_Asahi_Rokka
+				1 = Accessories_Sato_Masuki
+				1 = Accessories_Nyubara_Reona
+				1 = Accessories_Tamade_Chiyu
+
+				1 = Accessories_Nakamachi_Arale
+			}
+			boy = male
+			girl = female
+		}
+	}
+}

@@ -1,0 +1,266 @@
+﻿Two_dimensional_portrait = {
+	Portrait_Jeanne_dArc = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Tongyong
+				accessory = Accessories_Jeanne_dArc
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = JEAN_Jeanne_dArc
+				}
+			}
+		}
+	}	
+	Portrait_Takamatsu_Tomori = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Takamatsu_Tomori
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Takamatsu_Tomori
+				}
+			}
+		}
+	}
+	Portrait_Chihaya_Anon = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Chihaya_Anon
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Chihaya_Anon
+				}
+			}
+		}
+	}
+	Portrait_Sumita_Mana = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Sumita_Mana
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Sumita_Mana
+				}
+			}
+		}
+	}
+	Portrait_Kaname_Rana = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Kaname_Rana
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Kaname_Rana
+				}
+			}
+		}
+	}
+	Portrait_Nagasaki_Soyo = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Nagasaki_Soyo
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Nagasaki_Soyo
+				}
+			}
+		}
+	}
+	Portrait_Shiina_Taki = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Shiina_Taki
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Shiina_Taki
+				}
+			}
+		}
+	}
+	Portrait_Sakiko_Togawa = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Sakiko_Togawa
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Sakiko_Togawa
+				}
+			}
+		}
+	}
+	Portrait_Misumi_Uika = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Misumi_Uika
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Misumi_Uika
+				}
+			}
+		}
+	}
+	Portrait_Wakaba_Mutsumi = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Wakaba_Mutsumi
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Wakaba_Mutsumi
+				}
+			}
+		}
+	}
+	Portrait_Yahata_Umiri = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Yahata_Umiri
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Yahata_Umiri
+				}
+			}
+		}
+	}
+	Portrait_Yutenji_Nyamu = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Yutenji_Nyamu
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 150000
+				exists = scope:character
+				scope:character = {
+					has_template = MYGO_Yutenji_Nyamu
+				}
+			}
+		}
+	}
+	Portrait_Tongyong = { #通用
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = totprops_1
+				template = Accessories_Tongyong
+				range = { 0 1 } #value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100000
+				exists = scope:character
+				scope:character = {
+					is_historical = no
+                    is_immortal = no
+					culture = {
+                        has_discrimination_trait = two_dimensional_culture_group
+                    }
+				}
+			}
+		}
+	}
+}

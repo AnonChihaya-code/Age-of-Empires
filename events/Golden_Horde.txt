@@ -1,0 +1,1907 @@
+﻿namespace = golden_horde_events
+
+golden_horde_events.1 = { #金帐统一
+	type = country_event
+	placement = root
+	duration = 3
+	title = golden_horde_events.1.t
+	desc = golden_horde_events.1.d
+	flavor = golden_horde_events.1.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		name = golden_horde_events.1.a
+		default_option = yes
+		if = {
+			limit = {
+				NOT = { exists = c:MGGH c:MGGH ?= this }
+			}
+			change_tag = MGGH
+		}
+		if = {
+			limit = {
+				NOT = { has_global_variable = unify_golden_horde_var }
+			}
+			set_global_variable = unify_golden_horde_var
+		}
+		if = {
+			limit = {
+				NOT = { country_has_primary_culture = cu:mongol }
+			}
+			add_primary_culture = cu:mongol
+		}
+		add_loyalists = { #效忠派
+			value = 0.1
+		}
+		add_journal_entry = { type = je_raid_ruthenia }
+		add_journal_entry = { type = je_return_in_carpathia }
+		add_journal_entry = { type = je_march_into_central_asia }
+		if = {
+			limit = {
+				is_subject = no
+				NOT = { 
+					owns_entire_state_region = STATE_KUBAN 
+					owns_entire_state_region = STATE_NORTH_CAUCASUS
+					owns_entire_state_region = STATE_DAGESTAN 
+				}
+				OR = {
+					exists = c:CIRC
+					exists = c:CHEC
+				}
+				OR = {
+					c:CIRC ?= {
+						has_journal_entry = je_tatar_caucasian_war_circassia
+					}
+					c:CHEC ?= {
+						has_journal_entry = je_tatar_caucasian_war_imamate
+					}
+				}
+			}
+			add_journal_entry = { type = je_cross_the_caucasus }
+		}
+		custom_tooltip = {
+			text = golden_horde_events_1_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_CHERSON 
+						state_region = s:STATE_TAURIDA
+						state_region = s:STATE_CRIMEA
+						state_region = s:STATE_KHARKOV 
+						state_region = s:STATE_KURSK
+						state_region = s:STATE_TAMBOV
+						state_region = s:STATE_TARTARIA
+						state_region = s:STATE_ROSTOV
+						state_region = s:STATE_ASTRAKHAN
+						state_region = s:STATE_KALMYKIA
+						state_region = s:STATE_STAVROPOL
+						#state_region = s:STATE_KUBAN
+						#state_region = s:STATE_NORTH_CAUCASUS
+						#state_region = s:STATE_DAGESTAN
+						state_region = s:STATE_CHUVASHIA
+						state_region = s:STATE_KAZAN
+						state_region = s:STATE_VYATKA
+						state_region = s:STATE_PERM
+						state_region = s:STATE_URAL
+						state_region = s:STATE_SAMARA
+						state_region = s:STATE_UFA
+						state_region = s:STATE_CHELYABINSK
+						state_region = s:STATE_URALSK
+						state_region = s:STATE_AKTOBE
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+	    }
+		add_modifier = unify_golden_horde_modifier
+	}
+}
+
+golden_horde_events.2 = { #罗斯主权的终结
+	type = country_event
+	placement = root
+	duration = 3
+	title = golden_horde_events.2.t
+	desc = golden_horde_events.2.d
+	flavor = golden_horde_events.2.f
+	event_image = {
+		video = "unspecific_fire"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = {
+		cu:tatar = {
+			save_scope_as = tatar_culture
+		}
+		random_scope_pop = {
+			limit = {
+				has_state_religion = yes
+			}
+			religion = {
+				save_scope_as = root_religion
+			}
+		}
+	}
+	option = {
+		name = golden_horde_events.2.a
+		default_option = yes
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+	    every_subject_or_below = {
+			limit = {
+				any_scope_state = {
+					OR = {
+						region = sr:region_russia
+						region = sr:region_arctic_russia
+						region = sr:region_finland
+					}
+				}
+				NOT = { has_modifier = tatar_yoke_modifier }
+				NOR = {
+					country_has_primary_culture = cu:mongol
+					country_has_primary_culture = cu:tatar
+				}
+			}
+			add_modifier = {
+				name = tatar_yoke_modifier
+			}
+			change_relations = {
+				country = ROOT
+				value = 50
+			}
+		}
+		custom_tooltip = {
+			text = golden_horde_events_2_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_MOSCOW
+						state_region = s:STATE_ORYOL
+						state_region = s:STATE_SMOLENSK
+						state_region = s:STATE_TVER
+						state_region = s:STATE_RYAZAN
+						state_region = s:STATE_YAROSLAVL
+						state_region = s:STATE_NIZHNY_NOVGOROD
+						state_region = s:STATE_INGRIA
+						state_region = s:STATE_EAST_KARELIA
+						state_region = s:STATE_ARKHANGELSK
+						state_region = s:STATE_NOVGOROD
+						state_region = s:STATE_GALICH
+						state_region = s:STATE_NENETSIA
+						state_region = s:STATE_KOLA
+						state_region = s:STATE_PSKOV
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+				add_modifier = {
+					name = tatar_yoke_02_modifier
+					years = 19
+				}
+			}
+	    }
+		add_modifier = {
+			name = tatar_kiev_01_modifier
+			months = 1
+		}
+		add_loyalists = {
+			value = 0.1
+			pop_type = officers
+			culture = cu:tatar
+		}
+		add_loyalists = {
+			value = 0.1
+			pop_type = soldiers
+			culture = cu:tatar
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_MOSCOW
+			}
+			add_modifier = {
+				name = tatar_kiev_02_modifier
+				months = 1
+			}
+			add_radicals_in_state = {
+				value = 0.1
+				culture = cu:russian
+			}
+			state_region = {
+				add_devastation = 10
+			}
+		}
+	}
+}
+
+golden_horde_events.3 = { #重返鲁塞尼亚
+	type = country_event
+	placement = root
+	duration = 3
+	title = golden_horde_events.3.t
+	desc = golden_horde_events.3.d
+	flavor = golden_horde_events.3.f
+	event_image = {
+		video = "unspecific_fire"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = {
+		cu:tatar = {
+			save_scope_as = tatar_culture
+		}
+		random_scope_pop = {
+			limit = {
+				has_state_religion = yes
+			}
+			religion = {
+				save_scope_as = root_religion
+			}
+		}
+	}
+	option = {
+		name = golden_horde_events.3.a
+		default_option = yes
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		every_subject_or_below = {
+			limit = {
+				any_scope_state = {
+					OR = {
+						region = sr:region_dnieper
+						region = sr:region_belarus
+					}
+				}
+				NOT = { has_modifier = tatar_yoke_modifier }
+				NOR = {
+					country_has_primary_culture = cu:mongol
+					country_has_primary_culture = cu:tatar
+				}
+			}
+			add_modifier = {
+				name = tatar_yoke_modifier
+			}
+			change_relations = {
+				country = ROOT
+				value = 50
+			}
+		}
+		add_modifier = {
+			name = tatar_kiev_01_modifier
+			months = 1
+		}
+		add_loyalists = {
+			value = 0.1
+			pop_type = officers
+			culture = cu:tatar
+		}
+		add_loyalists = {
+			value = 0.1
+			pop_type = soldiers
+			culture = cu:tatar
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_KIEV 
+			}
+			add_modifier = {
+				name = tatar_kiev_02_modifier
+				months = 1
+			}
+			add_radicals_in_state = {
+				value = 0.1
+				culture = cu:ukrainian
+			}
+			state_region = {
+				add_devastation = 10
+			}
+		}
+		custom_tooltip = {
+			text = golden_horde_events_3_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_CRIMEA 
+						state_region = s:STATE_CHERSON 
+						state_region = s:STATE_KHARKOV 
+						state_region = s:STATE_KIEV 
+						state_region = s:STATE_TAURIDA 
+						state_region = s:STATE_VOLHYNIA 
+						state_region = s:STATE_CHERNIHIV
+						state_region = s:STATE_VITEBSK 
+						state_region = s:STATE_BREST 
+						state_region = s:STATE_MINSK 
+						state_region = s:STATE_MOGILEV
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+				add_modifier = {
+					name = tatar_yoke_02_modifier
+					years = 19
+				}
+			}
+	    }
+	}
+}
+
+golden_horde_events.4 = { #回归喀尔巴阡
+	type = country_event
+	placement = root
+	duration = 3
+	title = golden_horde_events.4.t
+	desc = golden_horde_events.4.d
+	flavor = golden_horde_events.4.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_ca_mountain_pass_military.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = {
+		cu:tatar = {
+			save_scope_as = tatar_culture
+		}
+		random_scope_pop = {
+			limit = {
+				has_state_religion = yes
+			}
+			religion = {
+				save_scope_as = root_religion
+			}
+		}
+	}
+	option = {
+		name = golden_horde_events.4.a
+		default_option = yes
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		every_subject_or_below = {
+			limit = {
+				any_scope_state = {
+					OR = {
+						region = sr:region_poland
+						region = sr:region_danubia
+					}
+				}
+				NOT = { has_modifier = tatar_yoke_modifier }
+				NOR = {
+					country_has_primary_culture = cu:mongol
+					country_has_primary_culture = cu:tatar
+				}
+			}
+			add_modifier = {
+				name = tatar_yoke_modifier
+			}
+			change_relations = {
+				country = ROOT
+				value = 50
+			}
+		}
+		custom_tooltip = {
+			text = golden_horde_events_4_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_TRANSDANUBIA 
+						state_region = s:STATE_CENTRAL_HUNGARY 
+						state_region = s:STATE_WEST_SLOVAKIA 
+						state_region = s:STATE_EAST_SLOVAKIA 
+						state_region = s:STATE_DELVIDEK 
+						state_region = s:STATE_BEKES 
+						state_region = s:STATE_BANAT 
+						state_region = s:STATE_DOBRUDJA 
+						state_region = s:STATE_WALLACHIA 
+						state_region = s:STATE_SOUTHERN_TRANSYLVANIA 
+						state_region = s:STATE_MOLDAVIA 
+						state_region = s:STATE_BESSARABIA 
+						state_region = s:STATE_NORTHERN_TRANSYLVANIA
+						state_region = s:STATE_WEST_GALICIA 
+                        state_region = s:STATE_EAST_GALICIA
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+				add_modifier = {
+					name = tatar_yoke_02_modifier
+					years = 19
+				}
+			}
+	    }
+	}
+}
+
+golden_horde_events.5 = { #沉默的草原
+	type = country_event
+	placement = root
+	duration = 3
+	title = golden_horde_events.5.t
+	desc = golden_horde_events.5.d
+	flavor = golden_horde_events.5.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_central_asian_city.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = {
+		cu:tatar = {
+			save_scope_as = tatar_culture
+		}
+		random_scope_pop = {
+			limit = {
+				has_state_religion = yes
+			}
+			religion = {
+				save_scope_as = root_religion
+			}
+		}
+	}
+	option = {
+		name = golden_horde_events.5.a
+		default_option = yes
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		every_subject_or_below = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_central_asia
+				}
+				NOT = { has_modifier = tatar_yoke_modifier }
+				NOR = {
+					country_has_primary_culture = cu:mongol
+					country_has_primary_culture = cu:tatar
+				}
+			}
+			add_modifier = {
+				name = tatar_yoke_modifier
+			}
+			change_relations = {
+				country = ROOT
+				value = 50
+			}
+		}
+		custom_tooltip = {
+			text = golden_horde_events_5_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_URALSK
+						state_region = s:STATE_AKTOBE 
+						state_region = s:STATE_AKMOLINSK 
+						state_region = s:STATE_SYRDARYA 
+						state_region = s:STATE_SEMIRECHE 
+						state_region = s:STATE_KHIVA 
+						state_region = s:STATE_TURKMENIA 
+						state_region = s:STATE_UZBEKIA 
+						state_region = s:STATE_MERZ 
+						state_region = s:STATE_TAJIKISTAN 
+						state_region = s:STATE_FERGANA
+						state_region = s:STATE_KIRGHIZIA 
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+				add_modifier = {
+					name = tatar_yoke_02_modifier
+					years = 19
+				}
+			}
+	    }
+	}
+}
+
+namespace = golden_horde_caucasuswar
+
+golden_horde_caucasuswar.1 = { #侵占失败
+	type = country_event
+	placement = scope:invasion_base_state
+	title = golden_horde_caucasuswar.1.t
+	desc = golden_horde_caucasuswar.1.d
+	flavor = golden_horde_caucasuswar.1.f
+	event_image = {
+		video = "gfx/event_pictures/unspecific_sick_in_hospital.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = {
+		OR = {
+			exists = c:CIRC
+			exists = c:CHEC
+		}
+	}
+	immediate = {
+		c:MGGH ?= {
+            save_scope_as = tatar_scope
+        }
+		random_scope_state = {
+			limit = {
+				OR = {	
+					state_region = s:STATE_DAGESTAN
+					state_region = s:STATE_KUBAN
+					state_region = s:STATE_NORTH_CAUCASUS
+				}
+				is_split_state = yes
+			}
+			save_scope_as = invasion_base_state
+		}	
+		scope:invasion_base_state = {
+			this.state_region = {
+				random_scope_state = {
+					limit = {
+						NOT = {
+							c:MGGH ?= owner
+						}
+						OR = {
+							c:CHEC ?= owner
+							c:CIRC ?= owner
+						}
+					}
+					owner = {
+						save_scope_as = adversary_scope
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.1.a
+		default_option = yes
+		scope:invasion_base_state = {
+			add_modifier = {
+				name = tatar_modifier_failed_incursion 
+				months = short_modifier_time
+			}	
+			this.state_region = {
+				add_devastation = 15
+			}
+			add_radicals_in_state = {
+				value = medium_radicals
+				culture = cu:circassian
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_failed_attack_notification
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.1.b
+		scope:invasion_base_state = {
+			add_modifier = {
+				name = tatar_modifier_failed_incursion 
+				months = short_modifier_time
+			}
+			this.state_region = {
+				add_devastation = 5
+			}
+			add_radicals_in_state = {
+				value = medium_radicals
+				pop_type = officers
+				culture = cu:tatar
+			}
+			this.region = {
+				random_scope_state = {
+					limit = {
+						owner = c:MGGH
+						any_scope_building = {
+							is_building_type = building_barracks
+						}	
+					}
+					add_radicals_in_state = {
+						value = small_radicals
+						pop_type = officers
+						culture = cu:tatar
+					}
+				}
+			}	
+		}
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = tatar_modifier_failed_to_cover_incursion
+				months = 13
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_failed_attack_notification
+		}
+	}
+}
+
+golden_horde_caucasuswar.2 = { #车队遭袭
+	type = country_event
+	placement = scope:invasion_base_state
+	title = golden_horde_caucasuswar.2.t
+	desc = golden_horde_caucasuswar.2.d
+	flavor = golden_horde_caucasuswar.2.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = {
+		OR = {
+			exists = c:CIRC
+			exists = c:CHEC
+		}
+	}
+	immediate = {
+		c:MGGH ?= {
+			save_scope_as = tatar_scope
+		}
+		random_scope_state = {
+			limit = {
+				OR = {	
+					state_region = s:STATE_DAGESTAN
+					state_region = s:STATE_KUBAN
+					state_region = s:STATE_NORTH_CAUCASUS
+				}
+				is_split_state = yes
+			}
+			save_scope_as = invasion_base_state
+		}	
+		scope:invasion_base_state = {
+			this.state_region = {
+				random_scope_state = {
+					limit = {
+						NOT = {
+							c:MGGH ?= owner 
+						}
+						OR = {
+							c:CHEC ?= owner
+							c:CIRC ?= owner
+						}
+					}
+					owner = {
+						save_scope_as = adversary_scope
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.2.a
+		default_option = yes
+		scope:invasion_base_state = {
+			add_modifier = {
+				name = tatar_modifier_attacked_supply_train
+				months = 13
+			}
+			this.state_region = {
+				add_devastation = 10
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_supply_convoy_notification
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.2.b
+		scope:invasion_base_state = {
+			add_modifier = {
+				name = tatar_modifier_attacked_supply_train
+				months = 13
+				multiplier = 1.5
+			}
+		}	
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_supply_convoy_notification
+		}
+	}
+}
+
+golden_horde_caucasuswar.3 = { #入侵成功
+	type = country_event
+	placement = scope:invasion_state
+	title = golden_horde_caucasuswar.3.t
+	desc = golden_horde_caucasuswar.3.d
+	flavor = golden_horde_caucasuswar.3.f
+	event_image = {
+		video = "gfx/event_pictures/unspecific_fire.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = {
+		OR = {
+			exists = c:CIRC
+			exists = c:CHEC
+		}
+	}
+	immediate = {
+		c:MGGH ?= {
+			save_scope_as = tatar_scope
+		}
+		random_state = {
+			limit = {
+				OR = {
+					c:CHEC ?= owner 
+					c:CIRC ?= owner
+				}
+				is_split_state = yes
+			}
+			save_scope_as = invasion_state
+		}	
+		scope:invasion_state = {
+			owner = {
+				save_scope_as = adversary_scope
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.3.a
+		default_option = yes
+		scope:adversary_scope = {
+			scope:invasion_state = {
+				add_modifier = {
+					name = tatar_modifier_villages_burned
+					months = 13
+					multiplier = 1.5
+				}
+			}
+		}
+		scope:invasion_state = {
+			state_region = {
+				add_devastation = 15
+			}
+		}
+		random_scope_state = {
+			limit = {
+				any_neighbouring_state = {
+					this = scope:invasion_state
+				}
+			}
+			add_radicals_in_state = {
+				value = small_radicals
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_village_burned_notification
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.3.b
+		scope:adversary_scope = {
+			scope:invasion_state = {
+				add_modifier = {
+					name = tatar_modifier_villages_burned
+					months = 13
+				}
+			}
+		}
+		scope:invasion_state = {
+			state_region = {
+				add_devastation = 5
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_village_burned_notification
+		}
+	}
+}
+
+golden_horde_caucasuswar.4 = { #部落效忠
+	type = country_event
+	placement = scope:invasion_state
+	title = golden_horde_caucasuswar.4.t
+	desc = golden_horde_caucasuswar.4.d
+	flavor = golden_horde_caucasuswar.4.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_ca_mountain_pass_civilian.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = {
+		OR = {
+			c:CIRC ?= {
+				NOT = {
+					has_truce_with = c:MGGH
+				}
+			}
+			c:CHEC ?= {
+				NOT = {
+					has_truce_with = c:MGGH
+				}
+			}
+		}
+	}
+	immediate = {
+		c:MGGH ?= {
+			save_scope_as = tatar_scope
+		}
+		random_state = {
+			limit = {
+				OR = {
+					c:CHEC ?= owner
+					c:CIRC ?= owner
+				}
+				is_split_state = yes
+			}
+			save_scope_as = invasion_state
+		}	
+		scope:invasion_state = {
+			owner = {
+				save_scope_as = adversary_scope
+			}
+		}
+		scope:adversary_scope = {
+			random_primary_culture = {
+				save_scope_as = defector_culture
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.4.a
+		default_option = yes
+		scope:adversary_scope = {
+			add_modifier = {
+				name = tatar_modifier_betrayal_of_tribe
+				months = short_modifier_time
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = tatar_caucasus_tribe_defection_notification
+		}
+	}
+}
+
+golden_horde_caucasuswar.5 = { #备忘录
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar.5.t
+	desc = golden_horde_caucasuswar.5.d
+	flavor = golden_horde_caucasuswar.5.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = {
+		c:MGGH ?= this
+		NOT = {
+			has_global_variable = tatar_milyutin_memorandum
+		}
+		exists = c:CIRC
+		NOT = {
+			has_truce_with = c:CIRC
+		}
+		OR = {
+			cultural_acceptance_base = { target = cu:circassian value < acceptance_status_4 }
+			has_law = law_type:law_state_religion
+		}
+		any_scope_state = {
+			state_region = s:STATE_KUBAN
+		}
+	}
+	immediate = {
+		c:CIRC = {
+			save_scope_as = adversary_scope
+		}
+		create_character = {
+			template = RUS_dmitry_milyutin
+			on_created = {
+				set_variable = milyutin_variable
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = milyutin_variable
+			}
+			save_scope_as = milyutin_scope
+		}
+		cu:circassian = {
+			save_scope_as = circassian_culture
+		}
+		set_global_variable = tatar_milyutin_memorandum
+	}
+	option = {
+		name = golden_horde_caucasuswar.5.a
+		default_option = yes
+		custom_tooltip = {
+			text = golden_horde_caucasuswar_5_tt
+		}
+		custom_tooltip = will_lead_to_expulsions_tt
+		set_global_variable = tatar_milyutin_memorandum_accepted
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_KUBAN
+			}
+			add_modifier = {
+				name = tatar_modifier_milyutin_memorandum
+				months = long_modifier_time
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+				culture = cu:circassian
+			}
+		}
+		scope:milyutin_scope = {
+			add_trait = war_criminal
+		}
+		scope:adversary_scope = {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_negative
+				target = root
+			}			
+		}
+		c:TUR ?= {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_negative
+				target = root
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.5.b
+		custom_tooltip = {
+			text = golden_horde_caucasuswar_5_tt
+		}
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = tatar_modifier_refused_milyutin_memorandum
+				months = normal_modifier_time
+			}
+		}
+		add_radicals = {
+			value = very_large_radicals
+			pop_type = officers
+			culture = cu:tatar
+		}
+		scope:milyutin_scope = {
+			add_trait = experienced_colonial_administrator
+		}
+	}
+}
+
+golden_horde_caucasuswar.6 = { #叛逃
+	type = country_event
+	placement = scope:invasion_base_state
+	title = golden_horde_caucasuswar.6.t
+	desc = golden_horde_caucasuswar.6.d
+	flavor = golden_horde_caucasuswar.6.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_ca_mountain_pass_military.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = {
+		exists = c:CHEC
+	}
+	immediate = {
+		c:MGGH ?= {
+			save_scope_as = tatar_scope
+		}
+		random_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_KUBAN
+					state_region = s:STATE_NORTH_CAUCASUS
+				}
+				is_split_state = yes
+			}
+			save_scope_as = invasion_base_state
+		}	
+		c:CHEC = {
+			save_scope_as = adversary_scope
+			ruler = {
+				save_scope_as = shamil_scope
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.6.a
+		default_option = yes
+		scope:invasion_base_state = {
+			add_modifier = {
+				name = tatar_modifier_soldiers_deserted
+				months = short_modifier_time
+			}
+			add_radicals_in_state = {
+				value = medium_radicals
+				pop_type = soldiers
+			}
+		}
+		c:CHEC = {
+			add_modifier = {
+				name = tatar_modifier_receiving_russian_deserters
+				months = short_modifier_time
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_soldiers_defection_notification
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.6.b
+		scope:invasion_base_state = {
+			add_modifier = {
+				name = tatar_modifier_soldiers_deserted
+				months = short_modifier_time
+			}
+		}
+		c:CHEC = {
+			add_modifier = {
+				name = tatar_modifier_receiving_russian_deserters
+				months = short_modifier_time
+			}
+		}
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = tatar_modifier_rampant_desertions
+				months = short_modifier_time
+			}
+		}
+		scope:adversary_scope = {
+			post_notification = caucasus_tatar_soldiers_defection_notification
+		}
+	}
+}
+
+golden_horde_caucasuswar.7 = { #独立议会 Parliament of Independence
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar.7.t
+	desc = golden_horde_caucasuswar.7.d
+	flavor = golden_horde_caucasuswar.7.f
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = {
+		NOT = {
+			has_truce_with = c:MGGH
+		}
+	}
+	immediate = {
+		c:MGGH = {
+			save_scope_as = tatar_scope
+		}
+		capital = {
+			save_scope_as = capital_scope
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.7.a
+		default_option = yes
+		if = {
+			limit = {
+				NOT = {
+					has_law = law_type:law_professional_army
+				}
+			}
+			activate_law = law_type:law_professional_army
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_has_primary_culture = cu:north_caucasian
+				}
+			}
+			add_primary_culture = cu:north_caucasian
+		}
+		add_modifier = {
+			name = tatar_modifier_circassian_last_stand
+			months = normal_modifier_time
+		}
+		create_character = {
+			# Qerandiqo Berzeg
+			first_name = Qerandiqo
+			last_name = Berzeg
+			birth_date = 1804.6.1 #Only year known
+			historical = yes
+			ruler = yes
+			hq = region_caucasus
+			is_general = yes
+			commander_rank = commander_rank_3
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				persistent
+				brave
+				forest_commander
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.7.b
+		if = {
+			limit = {
+				NOT = {
+					country_has_primary_culture = cu:north_caucasian
+				}
+			}
+			add_primary_culture = cu:north_caucasian
+		}
+		create_character = {
+			# Qerandiqo Berzeg
+			first_name = Qerandiqo
+			last_name = Berzeg
+			birth_date = 1804.6.1 #Only year known
+			historical = yes
+			ruler = yes
+			hq = region_caucasus
+			is_general = yes
+			commander_rank = commander_rank_3
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				persistent
+				brave
+				forest_commander
+			}
+		}
+		add_modifier = {
+			name = tatar_modifier_circassian_diplomacy
+			months = normal_modifier_time
+		}
+		every_country = {
+			limit = {
+				country_rank >= rank_value:major_power
+				has_interest_marker_in_region = region_caucasus
+				NOT = {
+					this = c:MGGH
+				}
+			}
+			trigger_event = { id = golden_horde_caucasuswar.8 }
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.7.c
+		trigger = {
+			ruler.interest_group = {
+				is_interest_group_type = ig_devout
+			}
+			exists = c:CHEC
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_diplomatic_pact = { who = c:CHEC type = alliance }
+				}
+			}
+			create_diplomatic_pact = {
+				country = c:CHEC
+				type = alliance
+			}
+		}
+		add_modifier = {
+			name = tatar_modifier_circassian_joint_struggle
+			months = normal_modifier_time
+		}
+		c:CHEC = {
+			add_modifier = {
+				name = tatar_modifier_circassian_joint_struggle
+				months = normal_modifier_time
+			}	
+		}
+		c:TUR ?= {
+			trigger_event = { id = golden_horde_caucasuswar.8 }
+		}
+	}
+}
+
+golden_horde_caucasuswar.8 = { #切尔克西亚的呼唤 Message to GPs
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar.8.t
+	desc = golden_horde_caucasuswar.8.d
+	flavor = golden_horde_caucasuswar.8.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_ca_mountain_pass_military.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		c:CIRC = {
+			save_scope_as = circassia_scope
+		}
+		c:MGGH = {
+			save_scope_as = tatar_scope
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.8.a
+		default_option = yes
+		custom_tooltip = golden_horde_caucasuswar_8_tt
+		set_variable = tatar_circassia_recognition_seeking
+		change_relations = {
+			country = c:CIRC
+			value = 20
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.8.b
+		change_relations = {
+			country = c:CIRC
+			value = -10
+		}
+	}
+}
+
+golden_horde_caucasuswar.9 = { #伊玛目国的使者 Muhammad Amin's arrival
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar.9.t
+	desc = golden_horde_caucasuswar.9.d
+	flavor = golden_horde_caucasuswar.9.f
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		c:CHEC = {
+			save_scope_as = imamate_scope
+		}
+		ig:ig_devout = {
+			save_scope_as = devout_scope
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.9.a
+		default_option = yes
+		custom_tooltip = golden_horde_caucasuswar_9_tt
+		create_character = {
+			template = CIRC_Muhammad_Amin_Asiyalav
+		}
+		add_primary_culture = cu:north_caucasian
+		ig:ig_devout = {
+			add_modifier = {
+				name = tatar_modifier_accepted_muhammad_amin
+				months = long_modifier_time
+			}
+		}
+		change_relations = {
+			country = c:CHEC
+			value = 50
+		}
+		create_diplomatic_pact = {
+			country = c:CHEC
+			type = alliance
+		}
+		create_diplomatic_catalyst = {  
+			type = catalyst_event_positive
+			target = root
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.9.b
+		ig:ig_devout = {
+			add_modifier = {
+				name = tatar_modifier_repudiated_muhammad_amin
+				months = long_modifier_time
+			}
+		}
+		change_relations = {
+			country = c:CHEC
+			value = -25
+		}
+	}
+}
+
+golden_horde_caucasuswar.10 = { #袋鼠远征 Teofil Lapinski's volunteers
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar.10.t
+	desc = golden_horde_caucasuswar.10.d
+	flavor = golden_horde_caucasuswar.10.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_redcoats.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = {
+		NOT = {
+			has_truce_with = c:MGGH
+		}
+		game_date > 1855.1.1
+		NOT = {
+			has_variable = lapinski_variable
+		}
+	}
+	immediate = {
+		cu:polish = {
+			save_scope_as = polish_culture
+		}
+		cu:hungarian = {
+			save_scope_as = hungarian_culture
+		}
+		ordered_state = {
+			limit = {
+				state_region = s:STATE_WEST_GALICIA
+			}
+			order_by = state_population
+			save_scope_as = galicia_scope
+			owner = {
+				save_scope_as = austria_scope
+			}
+		}
+		c:MGGH = {
+			save_scope_as = tatar_scope
+		}
+		set_variable = lapinski_variable
+	}
+	option = {
+		name = golden_horde_caucasuswar.10.a
+		default_option = yes
+		create_character = {
+			first_name = Teofil
+			last_name = Lapinski
+			culture = cu:polish
+			historical = yes
+			is_general = yes
+			birth_date = 1827.12.19
+			hq = region_caucasus
+			ideology = ideology_radical
+			interest_group = ig_armed_forces
+			commander_rank = commander_rank_1
+			traits = {
+				persistent
+				explorer
+				celebrity_commander
+			}
+		}
+		capital = {
+			random_scope_building = {
+				limit = {
+					is_building_type = building_barracks
+				}
+				add_modifier = {
+					name = tatar_modifier_lapinski_expedition
+					months = short_modifier_time
+				}
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar.10.b
+		add_modifier = {
+			name = tatar_modifier_lapinski_training
+			months = normal_modifier_time
+		}
+	}
+}
+
+namespace = golden_horde_caucasuswar_end
+
+golden_horde_caucasuswar_end.1 = { #切尔克西亚的陷落
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar_end.1.t
+	desc = golden_horde_caucasuswar_end.1.d
+	flavor = golden_horde_caucasuswar_end.1.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = {
+		NOT = {
+			exists = c:CIRC
+		}
+		NOT = {
+			has_global_variable = tatar_circassia_defeated
+		}
+	}
+	immediate = {
+		set_global_variable = tatar_circassia_defeated
+		random_state = {
+			limit = {
+				state_region = s:STATE_KUBAN
+			}
+			save_scope_as = kuban_state
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.1.a
+		default_option = yes
+		trigger = {
+			scope:kuban_state = {
+				has_modifier = tatar_modifier_milyutin_memorandum
+			}
+	    }
+		add_loyalists = {
+			value = medium_radicals
+			culture = cu:tatar
+		}
+		add_loyalists = {
+			value = medium_radicals
+			culture = cu:mongol
+		}
+		scope:kuban_state = {
+			add_modifier = {
+				name = tatar_modifier_settlers_privileges
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		}
+		hidden_effect = {
+			scope:kuban_state = {
+				remove_modifier = tatar_caucasus_war_attacker
+			}
+		}
+		scope:kuban_state = {
+			add_modifier = {
+				name = tatar_modifier_caucasian_war_sol
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+			state_region = {
+				add_homeland = cu:mongol
+				add_homeland = cu:tatar
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.1.b
+		trigger = {
+			scope:kuban_state = {
+				NOT = {
+					has_modifier = tatar_modifier_milyutin_memorandum
+				}
+			}
+		}
+		hidden_effect = {
+			scope:kuban_state = {
+				remove_modifier = tatar_caucasus_war_attacker
+			}
+		}
+		scope:kuban_state = {
+			add_modifier = {
+				name = tatar_modifier_caucasian_war_sol
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+			state_region = {
+				add_homeland = cu:mongol
+				add_homeland = cu:tatar
+			}
+		}
+	}
+}
+
+golden_horde_caucasuswar_end.2 = { #荣誉与生命
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar_end.2.t
+	desc = golden_horde_caucasuswar_end.2.d
+	flavor = golden_horde_caucasuswar_end.2.f
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = { }
+	immediate = {
+		c:MGGH = {
+			save_scope_as = tatar_scope
+		}
+		if = {
+			limit = {
+				any_country = {
+					has_variable = tatar_offer_circassia_recognition_var
+				}
+			}
+			random_country = {
+				limit = {
+					has_variable = tatar_offer_circassia_recognition_var
+				}
+				save_scope_as = tatar_offer_circassia_recognition_var_scope
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.2.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+		every_scope_state = {
+			limit = {
+				has_modifier = tatar_modifier_caucasian_war_sol
+			}
+			remove_modifier = tatar_modifier_caucasian_war_sol
+		}
+		remove_modifier = tatar_caucasus_war_defender_circassia
+		add_modifier = tatar_modifier_honour_and_life_sol
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.2.b
+		ai_chance = {
+			base = 1
+		}
+		every_scope_state = {
+			limit = {
+				has_modifier = tatar_modifier_caucasian_war_sol
+			}
+			remove_modifier = tatar_modifier_caucasian_war_sol
+		}
+		remove_modifier = tatar_caucasus_war_defender_circassia
+		add_modifier = tatar_modifier_honour_and_life_military
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.2.c
+		trigger = {
+			any_country = {
+				has_variable = tatar_offer_circassia_recognition_var
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+		every_scope_state = {
+			limit = {
+				has_modifier = tatar_modifier_caucasian_war_sol
+			}
+			remove_modifier = tatar_modifier_caucasian_war_sol
+		}
+		set_country_type = recognized
+		remove_modifier = tatar_caucasus_war_defender_circassia
+		scope:tatar_offer_circassia_recognition_var_scope = {
+			change_relations = {
+				country = c:CIRC
+				value = 25
+			}
+		}
+	}
+}
+
+golden_horde_caucasuswar_end.3 = { #伊玛目国的终结
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar_end.3.t
+	desc = golden_horde_caucasuswar_end.3.d
+	flavor = golden_horde_caucasuswar_end.3.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_ca_mountain_pass_military.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = {
+		NOT = {
+			exists = c:CHEC
+		}
+		NOT = {
+			has_global_variable = tatar_imamate_defeated
+		}
+	}
+	immediate = {
+		set_global_variable = tatar_imamate_defeated
+		c:MGGH = {
+			ruler = {
+				save_scope_as = rus_ruler_scope
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					state_region = s:STATE_DAGESTAN
+				}
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_DAGESTAN
+				}
+				save_scope_as = dagestan_state
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					state_region = s:STATE_NORTH_CAUCASUS
+				}
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_NORTH_CAUCASUS
+				}
+				save_scope_as = north_caucasus_state
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.3.a
+		default_option = yes
+		scope:dagestan_state = {
+			add_modifier = {
+				name = tatar_modifier_legacy_of_shamil
+			}
+			add_loyalists_in_state = {
+				value = medium_radicals
+			}
+		}
+		scope:north_caucasus_state = {
+			add_modifier = {
+				name = tatar_modifier_legacy_of_shamil
+			}
+			add_loyalists_in_state = {
+				value = medium_radicals
+			}
+		}
+		hidden_effect = {
+			scope:dagestan_state = {
+				remove_modifier = tatar_caucasus_war_attacker
+			}
+			scope:north_caucasus_state = {
+				remove_modifier = tatar_caucasus_war_attacker
+			}
+		}
+		scope:dagestan_state = {
+			add_modifier = {
+				name = tatar_modifier_caucasian_war_sol
+				months = short_modifier_time
+				is_decaying = yes
+			}
+			state_region = {
+				add_homeland = cu:mongol
+				add_homeland = cu:tatar
+			}
+		}
+		scope:north_caucasus_state = {
+			add_modifier = {
+				name = tatar_modifier_caucasian_war_sol
+				months = short_modifier_time
+				is_decaying = yes
+			}
+			state_region = {
+				add_homeland = cu:mongol
+				add_homeland = cu:tatar
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.3.b
+		scope:dagestan_state = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+				culture = cu:north_caucasian
+			}
+		}
+		scope:north_caucasus_state = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+				culture = cu:north_caucasian
+			}
+		}
+		hidden_effect = {
+			scope:dagestan_state = {
+				remove_modifier = tatar_caucasus_war_attacker
+			}
+			scope:north_caucasus_state = {
+				remove_modifier = tatar_caucasus_war_attacker
+			}
+		}
+		scope:dagestan_state = {
+			add_modifier = {
+				name = tatar_modifier_caucasian_war_sol
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+			state_region = {
+				add_homeland = cu:mongol
+				add_homeland = cu:tatar
+			}
+		}
+		scope:north_caucasus_state = {
+			add_modifier = {
+				name = tatar_modifier_caucasian_war_sol
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+			state_region = {
+				add_homeland = cu:mongol
+				add_homeland = cu:tatar
+			}
+		}
+	}
+}
+
+golden_horde_caucasuswar_end.4 = { #高加索的灾难
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar_end.4.t
+	desc = golden_horde_caucasuswar_end.4.d
+	flavor = golden_horde_caucasuswar_end.4.f
+	event_image = {
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = { }
+	immediate = {
+		if = {
+			limit = {
+				any_state = {
+					state_region = s:STATE_KUBAN
+				}
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_KUBAN
+				}
+				save_scope_as = kuban_state
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					state_region = s:STATE_DAGESTAN
+				}
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_DAGESTAN
+				}
+				save_scope_as = dagestan_state
+			}
+		}
+	}
+	option = {
+		name = golden_horde_caucasuswar_end.4.a
+		default_option = yes
+		add_modifier = {
+			name = tatar_caucasus_war_attacker_lose
+			years = 5
+		}
+	}
+}
+
+golden_horde_caucasuswar_end.5 = { #神圣的和平
+	type = country_event
+	placement = ROOT
+	title = golden_horde_caucasuswar_end.5.t
+	desc = golden_horde_caucasuswar_end.5.d
+	flavor = golden_horde_caucasuswar_end.5.f
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+	cooldown = { months = very_long_modifier_time }
+	trigger = { }
+	immediate = {
+		c:MGGH = {
+			save_scope_as = tatar_scope
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_DAGESTAN
+			}
+			save_scope_as = dagestan_scope
+		}
+	}
+
+	option = {
+		name = golden_horde_caucasuswar_end.5.a
+		default_option = yes
+		every_scope_state = {
+			limit = {
+				has_modifier = tatar_modifier_caucasian_war_sol
+			}
+			remove_modifier = tatar_modifier_caucasian_war_sol
+		}
+		remove_modifier = tatar_caucasus_war_defender_imamate
+		add_modifier = {
+			name = tatar_modifier_jizya_tax
+			months = -1
+		}
+	}
+
+	option = {
+		name = golden_horde_caucasuswar_end.5.b
+		every_scope_state = {
+			limit = {
+				has_modifier = tatar_modifier_caucasian_war_sol
+			}
+			remove_modifier = tatar_modifier_caucasian_war_sol
+		}
+		remove_modifier = tatar_caucasus_war_defender_imamate
+		change_relations = {
+			country = c:TUR
+			value = 25
+		}
+		add_modifier = {
+			name = tatar_modifier_imamate_diplomacy
+			months = long_modifier_time
+		}
+	}
+}

@@ -1,0 +1,120 @@
+@sol_icon_fontsize = 45
+
+#自定义图标
+texticon = {
+  icon = monarchy
+  iconsize = {
+    texture = "gfx/interface/icons/law_icons/monarchy.dds" #君主制
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = sanminzhuyier
+  iconsize = {
+    texture = "gfx/interface/icons/ideology_icons/ideology_leader/sanminzhuyier.dds"
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = presidential_republic
+  iconsize = {
+    texture = "gfx/interface/icons/law_icons/presidential_republic.dds" #总统共和制
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = parliamentary_republic
+  iconsize = {
+    texture = "gfx/interface/icons/law_icons/parliamentary_republic.dds" #议会共和制
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = council_republic
+  iconsize = {
+    texture = "gfx/interface/icons/law_icons/council_republic.dds" #委员会共和制
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = single_party_state
+  iconsize = {
+    texture = "gfx/interface/icons/law_icons/single_party_state.dds" #一党制
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = racial_segregation
+  iconsize = {
+    texture = "gfx/interface/icons/law_icons/racial_segregation.dds" #种族隔离
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = autocracy
+  iconsize = {
+    texture = "gfx/interface/icons/law_icons/autocracy.dds" #独裁制
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = great_plains
+  iconsize = {
+    texture = "gfx/interface/icons/state_trait_icons/great_plains.dds" #西部草原
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = mountain
+  iconsize = {
+    texture = "gfx/interface/icons/state_trait_icons/mountain.dds" #高加索山脉
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = catholic
+  iconsize = {
+    texture = "gfx/interface/icons/religion_icons/catholic.dds" #天主教
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = orthodox
+  iconsize = {
+    texture = "gfx/interface/icons/religion_icons/orthodox.dds" #东正教
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}
+texticon = {
+  icon = sunni
+  iconsize = {
+    texture = "gfx/interface/icons/religion_icons/sunni.dds" #逊尼
+    size = { 25 25 }
+    offset = { 0 6 }
+    fontsize = 16
+  }
+}

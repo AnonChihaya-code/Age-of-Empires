@@ -1,0 +1,821 @@
+﻿je_national_revolution = { #国民革命
+    icon = "gfx/interface/icons/law_icons/national_supremacy.dds" #民族至上
+	#icon = "gfx/interface/icons/event_icons/waving_flag.dds" #蓝旗帜
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_national_revolution_modifier
+	}
+	scripted_button = je_national_revolution_01_button
+	scripted_button = je_national_revolution_02_button
+	complete = {
+		custom_tooltip = {
+			text = je_national_revolution_tt
+			c:CHINA ?= this
+		}
+		custom_tooltip = {
+			text = je_national_revolution_02_tt
+			NOT = { exists = c:CNBY }
+		}
+		custom_tooltip = {
+			text = je_national_revolution_04_tt
+			NOT = { exists = c:CNTW }
+		}
+		any_state = {
+			filter = {
+				OR = {
+					region = sr:region_north_china
+					region = sr:region_south_china
+					state_region = s:STATE_SAKHALIN
+					state_region = s:STATE_AMUR
+					state_region = s:STATE_NORTHERN_MANCHURIA
+					state_region = s:STATE_OUTER_MANCHURIA
+					state_region = s:STATE_SOUTHERN_MANCHURIA
+					state_region = s:STATE_SHENGJING
+					state_region = s:STATE_ALTAI
+					state_region = s:STATE_TUVA
+					state_region = s:STATE_DZUNGARIA
+					state_region = s:STATE_TIANSHAN
+					state_region = s:STATE_JETISY
+					state_region = s:STATE_QINGHAI
+					state_region = s:STATE_LHASA
+					state_region = s:STATE_NGARI
+					state_region = s:STATE_EASTERN_HIMALAYAS
+				}
+			}
+			owner = ROOT
+			percent >= 1
+		}
+	}
+	on_complete = {
+		trigger_event = { id = national_revolutionary_army_events.99 popup = yes }
+    }
+	fail = {
+        NOR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_council_republic
+		}
+    }
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_whampoa_military_academy_survey = { #黄埔军校勘测
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = whampoa_military_academy_taken
+				add = 1
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+	}
+	on_complete = {
+		remove_modifier = modifier_whampoa_military_academy_taken
+		trigger_event = { id = national_revolutionary_army_events.2 }
+	}
+	current_value = {
+		value = root.var:whampoa_military_academy_taken
+	}
+	goal_add_value = {
+		value = 12
+	}
+	invalid = {
+		OR = {
+			NOT = { has_variable = whampoa_military_academy_taken }
+			any_state = {
+				state_region = s:STATE_GUANGDONG
+				NOT = { owner = ROOT }
+				any_scope_building = {
+					is_building_type = building_whampoa_military_academy
+				}
+			}
+			NOT = {
+				has_journal_entry = je_national_revolution
+			}
+		}
+	}
+	on_invalid = {
+		remove_variable = whampoa_military_academy_taken
+		remove_modifier = modifier_whampoa_military_academy_taken
+	}
+	progressbar = yes
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_whampoa_military_academy_construction = { #建造黄埔军校
+    icon =  "gfx/interface/HOI4/focus_chi_whampoa_military_academy.dds" #黄埔
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = ai_je_whampoa_military_academy_construction_var
+			value = 0
+		}
+	}
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_GUANGDONG
+			any_scope_building = {
+				is_building_type = building_whampoa_military_academy
+				occupancy >= 0.9
+				building_has_goods_shortage = no
+			}
+		}
+	}
+	on_complete = {
+		set_global_variable = building_whampoa_military_academy_complete
+		trigger_event = { id = national_revolutionary_army_events.3 }
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_whampoa_military_academy_construction_var < 24
+				}
+			    change_variable = {
+					name = ai_je_whampoa_military_academy_construction_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_whampoa_military_academy_construction_var >= 24
+					any_scope_state = {
+					    state_region = s:STATE_GUANGDONG
+						NOT = {
+							has_building = building_whampoa_military_academy
+						}
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_GUANGDONG
+					}
+					create_building={
+						building="building_whampoa_military_academy"
+						level=1
+					}
+				}
+			}
+		}
+	}
+	fail = {
+		NOR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_council_republic
+		}
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_national_congress_of_the_kmt = { #国民党全国代表大会
+    icon = "gfx/interface/icons/law_icons/single_party_state.dds" #一党制
+	group = je_group_historical_content
+	scripted_button = je_national_congress_of_the_kmt_button
+	immediate = {
+		set_variable = {
+			name = je_national_congress_of_the_kmt_var
+			value = 0
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_variable = national_congress_of_the_kmt_var
+				}
+			}
+			set_variable = {
+				name = national_congress_of_the_kmt_var
+				value = 1
+			}
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					var:je_national_congress_of_the_kmt_var < 12
+				}
+				change_variable = {
+					name = je_national_congress_of_the_kmt_var
+					add = 1
+				}
+			}
+		}
+	}
+	current_value = {
+		value = root.var:je_national_congress_of_the_kmt_var
+	}
+	goal_add_value = {
+		value = 12
+	}
+	fail = {
+        NOR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_council_republic
+		}
+    }
+    on_fail = { }
+	invalid = {}
+	on_invalid = { }
+	weight = 1000
+	progressbar = yes
+	should_be_pinned_by_default = yes
+}
+
+je_assistance_to_peasants_and_workers = { #扶助农工
+	icon = "gfx/interface/icons/law_icons/collectivized_agriculture.dds" #集体化农业
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = ai_je_assistance_to_peasants_and_workers_var
+			value = 0
+		}
+	}
+	complete = {
+		trigger_if = {
+			limit = {
+				is_player = yes
+			}
+			OR = {
+				has_law = law_type:law_homesteading
+				has_law = law_type:law_collectivized_agriculture
+			}
+			OR = {
+				has_law = law_type:law_regulatory_bodies
+				has_law = law_type:law_worker_protections
+			}
+			ig:ig_rural_folk ?= {
+				is_marginal = no
+				is_in_government = yes
+			}
+			ig:ig_trade_unions ?= {
+				is_marginal = no
+				is_in_government = yes
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			OR = {
+				has_law = law_type:law_homesteading
+				has_law = law_type:law_collectivized_agriculture
+			}
+			OR = {
+				has_law = law_type:law_regulatory_bodies
+				has_law = law_type:law_worker_protections
+			}
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_assistance_to_peasants_and_workers_var < 60
+				}
+			    change_variable = {
+					name = ai_je_assistance_to_peasants_and_workers_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_assistance_to_peasants_and_workers_var >= 60
+					NOR = {
+						has_law = law_type:law_homesteading
+						has_law = law_type:law_collectivized_agriculture
+					}
+					NOR = {
+						has_law = law_type:law_regulatory_bodies
+						has_law = law_type:law_worker_protections
+					}
+				}
+				if = {
+				    limit = {
+						NOT = { has_law = law_type:law_homesteading }
+					}
+				    activate_law = law_type:law_homesteading
+				}
+				if = {
+				    limit = {
+						NOT = { has_law = law_type:law_regulatory_bodies }
+					}
+			        activate_law = law_type:law_regulatory_bodies
+				}		
+			}
+		}
+	}
+	on_complete = {
+		hidden_effect = {
+			add_journal_entry = {
+				type = je_assistance_to_peasants_and_workers_policy
+			}
+		}
+		show_as_tooltip = {
+			add_modifier = je_assistance_to_peasants_and_workers_policy_modifier
+		}
+	}
+	fail = {
+		NOR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_council_republic
+		}
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_assistance_to_peasants_and_workers_policy = { #扶助农工政策
+	icon = "gfx/interface/icons/law_icons/collectivized_agriculture.dds" #集体化农业
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_assistance_to_peasants_and_workers_policy_modifier
+	}
+	immediate = { }
+	fail = {
+		NOR = {
+		    has_law = law_type:law_homesteading
+			has_law = law_type:law_collectivized_agriculture
+		}
+        NOR = {
+			has_law = law_type:law_regulatory_bodies
+			has_law = law_type:law_worker_protections
+		}
+	}
+	on_fail = {
+		add_modifier = {
+			name = je_assistance_to_peasants_and_workers_policy_fail_modifier years = 10
+		}
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_crush_the_warlords = { #荡平军阀
+	icon = "gfx/interface/icons/invention_icons/general_staff.dds" #总参谋部
+	group = je_group_historical_content
+	scripted_button = je_crush_the_warlords_01_button
+	scripted_button = je_crush_the_warlords_02_button
+	scripted_button = je_crush_the_warlords_03_button
+	scripted_button = je_crush_the_warlords_04_button
+	scripted_button = je_crush_the_warlords_05_button
+	scripted_button = je_crush_the_warlords_06_button
+	modifiers_while_active = {
+		je_crush_the_warlords_modifier
+	}
+	immediate = {
+		ROOT = {
+			save_scope_as = root_warlords
+		}
+		c:CNGX ?= {
+			save_scope_as = cngx_warlords
+		}
+		c:CNYN ?= {
+			save_scope_as = cnyn_warlords
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = je_crush_the_warlords_01_tt
+			NOT = {
+				exists = c:CNGX
+			}
+		}
+		custom_tooltip = {
+			text = je_crush_the_warlords_02_tt
+			NOT = {
+				exists = c:CNYN
+			}
+		}
+		owns_entire_state_region = STATE_GUANGXI
+		owns_entire_state_region = STATE_YUNNAN
+	}
+	on_complete = {
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+	}
+	fail = {
+		NOR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_council_republic
+		}
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+
+je_three_principles_of_the_people = { #三民主义
+    icon = "gfx/interface/icons/event_icons/event_default.dds" #信封
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+			name = je_three_principles_of_the_people_var
+			value = 0
+		}
+	}
+	status_desc = {
+		first_valid = {
+			triggered_desc = { 
+				desc = je_three_principles_of_the_people_status
+			}
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		trigger_event = { id = national_revolutionary_army_events.9 }
+	}
+	current_value = {
+		value = var:je_three_principles_of_the_people_var
+	}
+	goal_add_value = {
+		add = 3
+	}
+	fail = {
+        NOR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_council_republic
+		}
+    }
+	progressbar = yes
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_principles_of_nationalism = { #三民主义#民族主义
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds" #头像
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+		    name = je_principles_of_nationalism_var
+			value = 0
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					country_has_primary_culture = cu:chinese_culture
+					OR = {
+						has_law = law_type:law_cultural_exclusion           #文化排斥
+						has_law = law_type:law_multicultural                #文化多元
+					}
+					has_law = law_type:law_total_separation                 #完全分离
+					ROOT ={
+						is_subject = no
+					}
+				}
+				change_variable = {
+					name = je_principles_of_nationalism_var
+					add = 1
+				}
+			}
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = je_principles_of_nationalism_tt
+			var:je_principles_of_nationalism_var >= 60
+		}
+		country_has_primary_culture = cu:chinese_culture
+		OR = {
+		    has_law = law_type:law_cultural_exclusion           #文化排斥
+			has_law = law_type:law_multicultural                #文化多元
+		}
+		has_law = law_type:law_total_separation                 #完全分离
+		ROOT ={
+			is_subject = no
+		}
+	}
+	on_complete = {
+		change_variable = {
+			name = je_three_principles_of_the_people_var
+			add = 1
+		}
+		add_modifier = {
+			name = je_principles_of_nationalism_modifier
+		}
+	}
+	invalid = {
+		NOT = { has_journal_entry = je_three_principles_of_the_people }
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_principles_of_democracy = { #三民主义#民权主义
+    icon = "gfx/interface/icons/event_icons/event_scales.dds" #木锤
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+		    name = je_principles_of_democracy_var
+			value = 0
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_census_voting              #资格性选举制
+						has_law = law_type:law_universal_suffrage         #普选制
+					}
+					OR = {
+						has_law = law_type:law_right_of_assembly          #集会权
+						has_law = law_type:law_protected_speech           #言论保护
+					}
+					OR = {
+						has_law = law_type:law_women_in_the_workplace     #女性工作
+						has_law = law_type:law_womens_suffrage            #妇女选举权
+					}
+					has_law = law_type:law_elected_bureaucrats            #选举官僚制
+				}
+				change_variable = {
+					name = je_principles_of_democracy_var
+					add = 1
+				}
+			}
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = je_principles_of_democracy_tt
+			var:je_principles_of_democracy_var >= 60
+		}
+		OR = {
+			has_law = law_type:law_census_voting              #资格性选举制
+            has_law = law_type:law_universal_suffrage         #普选制
+		}
+		OR = {
+		    has_law = law_type:law_right_of_assembly          #集会权
+            has_law = law_type:law_protected_speech           #言论保护
+		}
+		OR = {
+			has_law = law_type:law_women_in_the_workplace     #女性工作
+            has_law = law_type:law_womens_suffrage            #妇女选举权
+		}
+		has_law = law_type:law_elected_bureaucrats            #选举官僚制
+	}
+	on_complete = {
+		change_variable = {
+			name = je_three_principles_of_the_people_var
+			add = 1
+		}
+		add_modifier = {
+			name = je_principles_of_democracy_modifier
+		}
+	}
+	invalid = {
+		NOT = { has_journal_entry = je_three_principles_of_the_people }
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_principles_of_people_livelihood = { #三民主义#民生主义
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds" #报纸
+	group = je_group_historical_content
+	immediate = { }
+	complete = {
+		literacy_rate >= 0.5
+		root.average_sol >= 15
+		radical_fraction = {
+			value <= 0.1
+		}
+		market_capital.market = {
+			mg:grain = { 
+				market_goods_pricier <= -0.15
+			}
+		}
+		OR = {
+		    has_law = law_type:law_proportional_taxation          #比例税制
+			has_law = law_type:law_graduated_taxation             #累进税制
+		}
+		OR = {
+			has_law = law_type:law_homesteading                   #宅地法
+			has_law = law_type:law_collectivized_agriculture      #集体化农业
+		}
+		OR = {
+			has_law = law_type:law_regulatory_bodies              #监管机构
+			has_law = law_type:law_worker_protections             #劳动者保障
+		}
+		institution_investment_level = {
+			institution = institution_workplace_safety
+			value >= 3
+		}
+		has_law = law_type:law_compulsory_primary_school          #义务小学
+		has_law = law_type:law_public_schools                     #公立学校
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		OR = {
+		    has_law = law_type:law_poor_laws                      #济贫法
+            has_law = law_type:law_wage_subsidies                 #工资补贴
+            has_law = law_type:law_old_age_pension                #养老金
+		}
+		institution_investment_level = {
+			institution = institution_social_security
+			value >= 3
+		}
+		has_law = law_type:law_public_health_insurance            #公共医疗保险
+		institution_investment_level = {
+			institution = institution_health_system
+			value >= 3
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			has_building = building_university                    #大学
+			percent >= 0.75
+		}
+	}
+	on_complete = {
+		change_variable = {
+			name = je_three_principles_of_the_people_var
+			add = 1
+		}
+		add_modifier = {
+			name = je_principles_of_people_livelihood_modifier
+		}
+	}
+	invalid = {
+		NOT = { has_journal_entry = je_three_principles_of_the_people }
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_unified_industrial_planning = { #统一工业规划
+    icon = "gfx/interface/icons/event_icons/event_industry.dds" #工业齿轮
+	group = je_group_historical_content
+	scripted_button = je_unified_industrial_planning_button
+	immediate = { }
+	status_desc = {
+		first_valid = {
+			triggered_desc = { 
+				desc = je_unified_industrial_planning_status
+			}
+		}
+	}
+	complete = {
+		gdp >= 1000000000
+		any_scope_state = {
+			is_capital = yes
+			any_scope_building = {
+				is_building_type = building_university #大学
+				occupancy >= 0.9
+				level >= 35
+			    building_has_goods_shortage = no
+			}
+			any_scope_building = {
+				is_building_type = building_arts_academy #艺术建筑"
+				occupancy >= 0.9
+				level >= 5
+			    building_has_goods_shortage = no
+			}
+		}
+		country_has_building_group_levels = {
+			type = bg_heavy_industry
+			value  >= 1000
+		}
+		country_has_building_group_levels = {
+			type = bg_light_industry
+			value  >= 1000
+		}
+		country_has_building_group_levels = {
+			type = bg_mining
+			value  >= 1000
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+			}
+			percent >= 0.75
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			has_building = building_railway
+			percent >= 0.75
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+				is_coastal = yes
+			}
+			has_building = building_port
+			percent >= 0.75
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = je_unified_industrial_planning_02_modifier
+		}
+	}
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_chinese_unification_idea = { #中华民族认同
+	icon = "gfx/interface/icons/event_icons/event_default.dds" #信封
+	group = je_group_historical_content
+    immediate = {
+		Code002_set_national_identity_vars = yes
+		set_variable = { name = national_identity_progress_var value = 0 }
+		Code002_calculate_national_identity_progress = yes
+		cu:chinese_culture = {
+			save_scope_as = new_national_culture
+		}
+	}	
+	status_desc = {
+		first_valid = {
+			triggered_desc = { 
+				desc = je_chinese_unification_idea_status
+			}
+		}
+	}
+	on_weekly_pulse = {
+		effect = {
+			Code002_calculate_national_identity_progress = yes
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			Code002_add_national_identity_progress = yes
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		OR = {
+			has_law = law_type:law_cultural_exclusion           #文化排斥
+			has_law = law_type:law_multicultural                #文化多元
+		}
+		has_law = law_type:law_total_separation                 #完全分离
+		any_state = {
+			filter = {
+				OR = {
+					region = sr:region_north_china
+					region = sr:region_south_china
+					state_region = s:STATE_TUVA
+					state_region = s:STATE_ALTAI
+					state_region = s:STATE_SOUTHERN_MANCHURIA
+					state_region = s:STATE_NORTHERN_MANCHURIA
+					state_region = s:STATE_OUTER_MANCHURIA
+					state_region = s:STATE_AMUR
+					state_region = s:STATE_SAKHALIN
+					state_region = s:STATE_DZUNGARIA
+					state_region = s:STATE_TIANSHAN
+					state_region = s:STATE_JETISY
+					state_region = s:STATE_QINGHAI
+					state_region = s:STATE_LHASA
+					state_region = s:STATE_NGARI
+					state_region = s:STATE_EASTERN_HIMALAYAS
+				}
+			}
+			owner = ROOT
+			percent >= 1
+		}
+	}
+	on_complete = {
+		Code002_clear_national_identity_vars = yes
+		trigger_event = { id = national_revolutionary_army_events.10 }
+    }     
+	current_value = {
+		value = root.var:national_identity_progress_var
+	}
+	goal_add_value = {
+		add = 5000
+	}
+	progressbar = yes 
+    weight = 1000
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,11 @@
+﻿######################
+#####建筑修正注册#####
+######################
+building_sugar_plantation_throughput_add={ #糖吞吐
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

@@ -1,0 +1,572 @@
+﻿l_simp_chinese:
+ ###################
+ #####名字本地化#####
+ ###################
+ #逸仙
+ CNNR_Sun: "孙"
+ CNNR_Yat_Sen: "逸仙"
+ #黄兴
+ CNNR_Huang: "黄"
+ CNNR_Xing: "兴"
+ #叶挺
+ CNNR_Ye: "叶"
+ CNNR_Ting: "挺"
+ #蔡元培
+ CNNR_Cai: "蔡"
+ CNNR_Yuanpei: "元培"
+ #陈炯明
+ CNNR_Chen: "陈"
+ CNNR_Jiongmin: "炯明"
+
+ #袁世凯
+ CNBY_Yuan: "袁"
+ CNBY_Shikai: "世凯"
+ #袁克定
+ CNBY_Keding: "克定"
+ #段祺瑞
+ CNBY_Duan: "段"
+ CNBY_Qirui: "祺瑞"
+ #黎元洪
+ CNBY_Li: "黎"
+ CNBY_Yuanhong: "元洪"
+ #冯国璋
+ CNBY_Feng: "冯"
+ CNBY_Guozhang: "国璋"
+ #徐世昌
+ CNBY_Xu: "徐"
+ CNBY_Shicang: "世昌"
+ #顾维钧
+ CNBY_Wellington: "顾"
+ CNBY_Koo: "维钧"
+
+ #新桂系军阀
+ CNGX_Li: "李"
+ CNGX_Zongren: "宗仁"
+ CNGX_Bai: "白"
+ CNGX_Chongxi: "崇禧"
+ #马君武
+ CNGX_Ma: "马"
+ CNGX_Junwu: "君武"
+
+ #滇系军阀
+ CNYN_Long: "龙"
+
+ CNYN_Yun: "云"
+
+ #大秦帝国
+ DQDG_Ying: "嬴"
+
+ DQDG_Zheng: "政"
+ DQDG_Fusu: "扶苏"
+
+ #大汉帝国
+ DHDG_Liu: "刘"
+ DHDG_Guan: "关"
+ DHDG_Zhang: "张"
+ DHDG_Zhuge: "诸葛"
+ DHDG_Zhao: "赵"
+ DHDG_Huang: "黄"
+ DHDG_Ma: "马"
+
+ DHDG_Bei: "备"
+ DHDG_Shan: "禅"
+ DHDG_Yu: "羽"
+ DHDG_Fei: "飞"
+ DHDG_Liang: "亮"
+ DHDG_Yun: "云"
+ DHDG_Zhong: "忠"
+ DHDG_Chao: "超"
+
+ #曹魏
+ CNCW_Cao: "曹"
+ CNCW_Cao2: "操"
+ #曹丕
+ CNCW_Pi: "丕"
+ #曹芳
+ CNCW_Fang: "芳"
+ #曹仁
+ CNCW_Ren: "仁"
+ #夏侯渊
+ CNCW_Xiahou: "夏侯"
+ CNCW_Yuan: "渊"
+ #夏侯惇
+ CNCW_Dun: "惇"
+ #张辽
+ CNCW_Zhang: "张"
+ CNCW_Liao: "辽"
+ #戏志才
+ CNCW_Xi: "戏"
+ CNCW_Zhicai: "志才"
+ #荀彧
+ CNCW_Xun: "荀"
+ CNCW_Yu: "彧"
+ #郭嘉
+ CNCW_Guo: "郭"
+ CNCW_Jia: "嘉"
+ #枣祇
+ CNCW_Zao: "枣"
+ CNCW_Zhi: "祇"
+ #华佗
+ CNCW_Hua: "华"
+ CNCW_Tuo: "佗"
+ #孔融
+ CNCW_Kong: "孔"
+ CNCW_Rong: "融"
+ #中华民国
+ CNTW_Jiang: "蒋"
+ CNTW_Wanan: "万安"
+ #太平天国
+ TPTG_Hong: "洪"
+ TPTG_Yang: "杨"
+ TPTG_Xiao: "萧"
+ TPTG_Li: "李"
+ TPTG_Qin: "秦"
+ TPTG_Chen: "陈"
+ TPTG_Feng: "冯"
+ TPTG_Wei: "韦"
+ TPTG_Shi: "石"
+
+ TPTG_Xiuquan: "秀全"
+ TPTG_Tianguifu: "天贵福"
+ TPTG_Xiuqing: "秀清"
+ TPTG_Chaogui: "朝贵"
+ TPTG_Rengan: "仁玕"
+ TPTG_Yunshan: "云山"
+ TPTG_Changhui: "昌辉"
+ TPTG_Dakai: "达开"
+ TPTG_Xiucheng: "秀成"
+ TPTG_Yucheng: "玉成"
+ TPTG_Shixian: "世贤"
+ TPTG_Rigang: "日纲"
+ TPTG_Chengrong: "承瑢"
+
+ #艾尔迪亚
+ ELDA_Eren: "艾伦"
+ ELDA_Jaeger: "耶格尔"
+ ELDA_Mikasa: "三笠"
+ ELDA_Ackerman: "阿克曼"
+ ELDA_Levi: "利威尔"
+ ELDA_Erwin: "艾尔文"
+ ELDA_Smith: "史密斯"
+ ELDA_Hange: "韩吉"
+ ELDA_Zoe: "佐耶"
+ ELDA_Grisha: "格里沙"
+ ELDA_Armin: "阿尔敏"
+ ELDA_Arlert: "阿诺德"
+ ELDA_Christa: "希丝特莉亚"
+ ELDA_Reiss: "雷斯"
+ ELDA_Jean: "让"
+ ELDA_Kirstein: "基尔希斯坦"
+ ELDA_Conny: "康尼"
+ ELDA_Springe: "斯普林格"
+ ELDA_Sasha: "萨莎"
+ ELDA_Braus: "布劳斯"
+ ELDA_Floch: "弗洛克"
+ ELDA_Forster: "福斯特"
+ ELDA_Marlowe: "马尔洛"
+ ELDA_Freudenberg: "桑德"
+ ELDA_Hitch: "希琪"
+ ELDA_Hitch_02: "德利斯"
+ ELDA_Rod: "罗德"
+ ELDA_Frieda: "芙莉妲"
+ ELDA_Darius: "达里斯"
+ ELDA_Zackley: "扎卡里"
+ ELDA_Dot: "达特"
+ ELDA_Pixis: "皮克希斯"
+ ELDA_Nick: "尼克"
+ ELDA_Priest: "神父"
+ #医院骑士团
+ OHDS_Jean_Parisot: "让·帕里索"
+ OHDS_de_la_Valette: "德·拉·瓦莱特"
+ OHDS_Morgan: "摩根"
+ OHDS_Black: "布莱克"
+ OHDS_Elisabet: "伊丽莎白"
+ OHDS_Lizzie: "莉丝"
+ OHDS_Alain: "艾伦"
+ OHDS_Alain_02: ""
+ #豪萨王国
+ HASA_Aminah: "阿米娜"
+ HASA_Zazzau: ""
+ #桑海帝国
+ SHAI_Muhammad: "穆罕默德"
+ SHAI_Dur: "杜尔"
+ #马莱帝国
+ MRLY_Willy: "威利"
+ MRLY_Tybur: "戴巴"
+ MRLY_Lara: "拉拉"
+ MRLY_Zeke: "吉克"
+ MRLY_Jaeger: "耶格尔"
+ MRLY_Yelena: "伊雷娜"
+ MRLY_Yelena_02: ""
+ MRLY_Annie: "阿尼"
+ MRLY_Leonhart: "利昂纳德"
+ MRLY_Pieck: "皮克"
+ MRLY_Finger: "芬格尔"
+ MRLY_Bertholdt: "贝特霍尔德"
+ MRLY_Hoover: "胡佛"
+ MRLY_Reiner: "莱纳"
+ MRLY_Braun: "布朗"
+ MRLY_Polk: "波尔克"
+ MRLY_Galliard: "加里亚德"
+ MRLY_Falco: "法尔克"
+ MRLY_Grice: "格莱斯"
+ MRLY_Gabi: "贾碧"
+ MRLY_Calvi: "卡尔维"
+ MRLY_Calvi_02: ""
+ MRLY_Theo: "迪奥"
+ MRLY_Magath: "马加特"
+ MRLY_Koslow: "科斯洛"
+ MRLY_Koslow_02: ""
+
+ #匈奴
+# CNXN_Luandi: "挛鞮"
+# CNXN_Touman: "头曼"
+# CNXN_Modu: "冒顿"
+ #刘渊
+ CNXN_Liu: "刘"
+ CNXN_Yuan: "渊"
+ #刘聪
+ CNXN_Cong: "聪"
+
+ #西域都护府
+ CNXY_Zhang: "张"
+ CNXY_Qian: "骞"
+ 
+ #大唐
+ DTDG_Li: "李"
+
+ DTDG_Xingyun: "星云"
+ DTDG_Cunxu: "存勖"
+
+ #袁天罡
+ DTDG_Yuan: "袁"
+ DTDG_Tiangang: "天罡"
+
+ #归义军
+ CNGY_Zhang: "张"
+ CNGY_Suo: "索"
+
+ CNGY_Yichao: "议潮"
+ CNGY_Huaishen: "淮深"
+ CNGY_Huaiding: "淮鼎"
+ CNGY_Xun: "勋"
+
+ #吐蕃
+ CNTB_Songzain: "松赞"
+ CNTB_Gambo: "干布"
+
+ #青阳
+ CNQY_Lv: "吕"
+
+ CNQY_Guichen: "归尘"
+
+ #金帐
+ MGGH_Mohammed: "穆罕默德"
+
+ MGGH_Ozbeg_Khan: "月即别汗"
+
+ #塞尔柱
+ SERZ_Toghril: "图格鲁克"
+
+ SERZ_Beg: "伯克"
+
+ #贵霜
+ KUSH_Kujula: "丘就却"
+
+ KUSH_Kadphises: "卡德菲塞斯"
+
+ #德里
+ DELI_Qutb_al_Din: "库特布丁"
+
+ DELI_Aibak: "艾伊拜克"
+
+ #安息
+ PART_Arsaces: "阿尔沙克"
+ PART_Parni: "帕尼"
+
+ #萨珊
+ SASS_Ardashir: "阿尔达希尔"
+ SASS_Papak_Sasan: "帕帕克·萨珊"
+
+ #美利坚
+ USA_Donald: "唐纳德"
+ USA_Trump: "特朗普"
+
+ #安托南·阿尔托
+ VFRA_Antonin: "安托南"
+ VFRA_Artaud: "阿尔托"
+
+ #贞德Jeanne d'Arc
+ JEAN_dArc: "达克"
+
+ #托尔兹
+ ICL_Thors: "托尔兹"
+ ICL_Snorresson: ""
+
+ #托尔芬
+ VLAN_Thorfinn: "托尔芬"
+ VLAN_Karlsefni: ""
+
+ #猎鹰 夏伊
+ OHDS_Falcon: "猎鹰"
+ OHDS_Sahin: "夏伊"
+
+ #艾米莉亚 布莱克
+ FALC_Amelia: "艾米莉亚"
+ FALC_Black: "布莱克"
+
+ #卡念
+ FALC_Ka: "卡念"
+ FALC_Nien: ""
+
+
+ #库柏
+ FALC_Cooper: "库柏"
+ FALC_Major: ""
+
+ #皮耶波曼
+ TCOS_Pierre: "皮耶"
+ TCOS_Beaumont: "波曼"
+
+ #海华沙
+ IROQ_Hiawatha: "海华沙"
+ IROQ_Hiawatha2: ""
+
+ #高尔
+ SUOI_Gall: "高尔"
+ SUOI_Gall2: ""
+
+ #瓜特穆斯
+ AZTE_Cuauhtemoc: "瓜特穆斯"
+ AZTE_Cuauhtemoc2: ""
+
+ #印加
+ #瓦伊纳·卡帕克
+ INCA_Huayan: "瓦伊纳"
+ INCA_Capac: "卡帕克"
+
+ #奥雷利耶-安托万·德·图龙
+ PATA_Orelie_Antoine: "奥雷利耶-安托万"
+ PATA_de_Tounens: "德·图龙"
+
+ #朱棣
+ MING_Zhu: "朱"
+ MING_Di: "棣"
+ #朱高炽
+ MING_Gaochi: "高炽"
+
+ #埃德·斯塔福德
+ AMZ_Ed: "埃德"
+ AMZ_Stafford: "斯塔福德"
+
+ #杰罗尼莫
+ APAC_Geronimo: "杰罗尼莫"
+ APAC_Geronimo02: ""
+
+ #高松 灯 Takamatsu Tomori
+ MYGO_Takamatsu: "高松"
+ MYGO_Tomori: "灯"
+ #千早 爱音
+ MYGO_Chihaya: "千早"
+ MYGO_Anon: "爱音"
+ #纯田 真奈
+ MYGO_Sumita: "纯田"
+ MYGO_Mana: "真奈"
+ #要乐 奈
+ MYGO_Kaname: "要乐"
+ MYGO_Rana: "奈"
+ #长崎 素世
+ MYGO_Nagasaki: "长崎"
+ MYGO_Soyo: "素世"
+ #椎名 立希
+ MYGO_Shiina: "椎名"
+ MYGO_Taki: "立希"
+ # 丰川 祥子
+ MYGO_Togawa: "丰川"
+ MYGO_Sakiko: "祥子
+ #三角 初华
+ MYGO_Misumi: "三角"
+ MYGO_Uika: "初华"
+ #若叶 睦
+ MYGO_Wakaba: "若叶"
+ MYGO_Mutsumi: "睦"
+ #八幡 海铃
+ MYGO_Yahata: "八幡"
+ MYGO_Umiri: "海铃"
+ #祐天寺 喵梦
+ MYGO_Yutenji: "祐天寺"
+ MYGO_Nyamu: "喵梦"
+
+ MYGO_Toyama: "户山"
+ MYGO_Kasumi: "香澄"
+ MYGO_Hanazono: "花园" 
+ MYGO_Tae: "多惠"
+ MYGO_Ushigome: "牛込" 
+ MYGO_Rimi: "里美"
+ MYGO_Yamabuki: "山吹" 
+ MYGO_Saya: "沙绫"
+ MYGO_Ichigaya: "市谷" 
+ MYGO_Arisa: "有咲"
+
+ MYGO_Mitake: "美竹"
+ MYGO_Ran: "兰"
+ MYGO_Aoba: "青叶" 
+ MYGO_Moka: "摩卡"
+ MYGO_Uehara: "上原" 
+ MYGO_Himari: "绯玛丽"
+ MYGO_Udagawa: "宇田" 
+ MYGO_Tomoe: "川巴"
+ MYGO_Hazawa: "羽泽" 
+ MYGO_Tsugumi: "鸫"
+
+ MYGO_Maruyama: "丸山"
+ MYGO_Aya: "彩"
+ MYGO_Hikawa: "冰川" 
+ MYGO_Hina: "日菜"
+ MYGO_Shirasagi: "白鹭"
+ MYGO_Chisato: "千圣"
+ MYGO_Yamato: "大和" 
+ MYGO_Maya: "麻弥"
+ MYGO_Wakamiya: "若宫" 
+ MYGO_Eve: "伊芙"
+
+ MYGO_Minato: "凑"
+ MYGO_Yukina: "友希那"
+ MYGO_Sayo: "纱夜"
+ MYGO_Imai: "今井" 
+ MYGO_Lisa: "莉莎"
+ MYGO_Ako: "川亚子"
+ MYGO_Shirokane: "白金" 
+ MYGO_Rinko: "燐子"
+
+ MYGO_Tsurumaki: "弦卷"
+ MYGO_Kokoro: "心"
+ MYGO_Seta: "濑田" 
+ MYGO_Kaoru: "薰"
+ MYGO_Kitazawa: "北泽" 
+ MYGO_Hagumi: "育美"
+ MYGO_Matsubara: "松原" 
+ MYGO_Kanon: "花音"
+ MYGO_Okusawa: "奥泽" 
+ MYGO_Misaki: "美咲"
+
+ MYGO_Kurata: "仓田"
+ MYGO_Mashiro: "真白"
+ MYGO_Kirigaya: "桐谷" 
+ MYGO_Toko: "透子"
+ MYGO_Hiromachi: "广町" 
+ MYGO_Nanami: "七深"
+ MYGO_Futaba: "二叶" 
+ MYGO_Tsukushi: "筑紫"
+ MYGO_Yashio: "八潮" 
+ MYGO_Rui: "瑠唯"
+
+ MYGO_Wakana: "和奏"
+ MYGO_Rei: "瑞依"
+ MYGO_Asahi: "朝日" 
+ MYGO_Rokka: "六花"
+ MYGO_Sato: "佐藤" 
+ MYGO_Masuki: "益木" 
+ MYGO_Nyubara: "鳰原" 
+ MYGO_Reona: "令王那" 
+ MYGO_Tamade: "珠手" 
+ MYGO_Chiyu: "知由"
+
+ MYGO_Nakamachi: "仲町" 
+ MYGO_Arale: "阿拉蕾" 
+ MYGO_Miyanaga: "宫永" 
+ MYGO_Nonoka: "野乃花"
+ MYGO_Minetsuki: "峰月" 
+ MYGO_Ritsu: "律"
+ MYGO_Fuji: "藤" 
+ MYGO_Miyako: "都子" 
+ MYGO_Sengoku: "千石" 
+ MYGO_Yuno: "由乃"
+
+ #伊莎贝拉 Isabel I la Católica Isabel I de Castilla
+ CAS_Isabel_la_Catholic: "伊莎贝拉一世"
+ CAS_Catholic: "天主教徒"
+
+ #克里斯托弗·哥伦布
+ CAS_Christopher: "克里斯托弗"
+ CAS_Columbus: "哥伦布"
+
+ # 费尔南多二世 Fernando el Católico #Fernando II de Aragón
+ ARAG_Fernando: "费尔南多二世"
+ ARAG_el_Catholic: "天主教徒"
+
+ #尚泰
+ RYUK_Sho: "尚"
+ RYUK_Tai: "泰"
+
+ #司马懿
+ DJDG_Sima: "司马"
+ DJDG_Yi: "懿"
+ #司马师
+ DJDG_Shi: "师"
+ #司马昭
+ DJDG_Zhao: "昭"
+
+ #李光耀
+ SGPR_Lee: "李"
+ SGPR_Kuan_Yew: "光耀"
+ #李显龙
+ SGPR_Hsien_Loong: "显龙"
+
+ #希特勒
+ NAZI_Adolf: "阿道夫"
+ NAZI_Hitler: "希特勒"
+
+ #萨拉丁
+ AYUB_Salah: "萨拉丁"
+ AYUB_Ayyub: "本·阿尤布"
+
+ #文天祥#宋瑞
+ SONG_Song: "宋"
+ SONG_Rui: "瑞"
+ 
+ #库楚克·穆罕默德 成吉思
+ MGGH_Kuchuk_Muhammad: "库楚克·穆罕默德"
+ MGGH_Genghisid: "成吉思"
+ #阿黑麻 成吉思
+ MGGH_Ahmad: "阿黑麻"
+ #乌鲁·穆罕默德 成吉思
+ MGGH_Ulugh_Muhammad: "乌鲁·穆罕默德"
+ #马赫穆提克 成吉思
+ MGGH_Mahmudak: "马赫穆提克"
+ #哈吉·格来
+ MGGH_Haji: "哈吉"
+ MGGH_Giray: "格来"
+ #努儿·道剌特 格来
+ MGGH_Nur_Devlet: "努儿·道剌特"
+ #瓦喀什 也迪该
+ MGGH_Vakkas: "瓦喀什"
+ MGGH_Ediguid: "也迪该"
+ #伊巴克 昔班尼
+ MGGH_Ibak: "伊巴克"
+ MGGH_Shaybanid: "昔班尼"
+ #克烈 成吉思
+ MGGH_Kerey: "克烈"
+ #布鲁杜克 成吉思
+ MGGH_Burunduq: "布鲁杜克"
+ 
+ #莫斯科
+ MOSC_Vasiliy_II_Temny: "「失明者」瓦西里 II"
+ MOSC_Ivan_III_Veliky: "「大帝」伊凡"
+ MOSC_Rurikovich: "留里克"
+
+ #叶夫菲米 II
+ NOVG_Evfimy: "叶夫菲米"
+ NOVG_II: "II"
+
+ #海因里希 文克
+ LIVO_Heinrich: "海因里希"
+ LIVO_Vincke: "文克"
+
+ #康拉德 冯 厄里希豪森
+ TEUT_Konrad: "康拉德"
+ TEUT_von_Erlichshausen: "冯·厄里希豪森"
+
+ #卡齐米日 雅盖隆
+ LIT_Kazimierz: "卡齐米日"
+ LIT_Jagiellon: "雅盖隆"

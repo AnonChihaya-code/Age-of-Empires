@@ -1,0 +1,87 @@
+﻿l_english:
+
+ #####曹魏本地#####
+ 
+ cao_wei_events.1.t: "The Abdication of the Han Emperor"
+ cao_wei_events.1.d: "The four-hundred-year-old Han Dynasty is now on the verge of collapse, its emperor nothing more than a puppet within the palace. The one who truly holds the reins of power is none other than Chancellor Cao Cao. Both the court and the common people are well aware that the Mandate of Heaven has slipped from the Han's grasp. Under the combined pressure of persuasion and coercion from his ministers, the Han Emperor has no choice but to issue an edict, surrendering the empire to Cao Cao."
+ cao_wei_events.1.f: "Whether the new dynasty can establish a stable rule remains to be tested by time."
+ cao_wei_events.1.a: "The abdication is accepted!"
+ 
+ je_wei_wu_ambitions: "Cao Cao's Ambition"
+ je_wei_wu_ambitions_reason: "When I was recommended as Xiaolian (a candidate for officialdom based on filial piety and integrity), I was still young. I did not see myself as one of those reclusive scholars with great renown, but I feared that the world would regard me as an ordinary and mediocre man. Therefore, I aspired to become a governor of a commandery, to govern with righteousness and enlightenment, and to establish my own reputation so that the world would recognize me. Thus, when I served as the Chancellor of Jinan, I began to eliminate corrupt practices and selected officials with fairness and integrity. However, this offended the powerful aristocrats in the court. As a result, I became a target of resentment among the influential and wealthy elite. Fearing that I might bring disaster upon my family, I feigned illness and resigned, returning home. Even after resigning, I was still young. Looking at those who had been recommended alongside me, some had already reached the age of fifty and were still not considered old. I thought to myself: if I waited another twenty years, by the time the world had regained peace, I would merely be at the same stage as those who were newly recommended as Xiaolian at that time. So I withdrew to my hometown, staying in seclusion for years. I built a small academy fifty li east of Qiao County, intending to spend the summers and autumns reading and the winters and springs hunting. I only wished for a small piece of barren land, to grow old in obscurity, cutting off ties with guests and visitors. But this wish was not fulfilled. Later, I was summoned back to serve as a Commandant of Cavalry, and then transferred to the position of Colonel Director of Retainers. At that point, my ambition reignited—I wished to quell the rebels and render meritorious service to the state. I hoped to be granted a marquisate and become a General Who Conquers the West. When I died, I wished for my tombstone to bear the inscription:\n"Here lies Cao, Marquis of Han, Former General Who Conquers the West."\nThat was the aspiration I held at the time.\n\n#r "If there had been no one like me in this country, who knows how many would have proclaimed themselves emperor, and how many would have called themselves kings!"#!"
+ je_wei_wu_ambitions_goal: "The #bold Progress Bar#! has reached #variable 100%#!"
+ je_wei_wu_ambitions_fail_tt: "$je_controversial_dynasty$ [concept_journal_entry] failed."
+
+ je_controversial_dynasty: "Consolidate Rule"
+ je_controversial_dynasty_reason: "The fading glow of the Han Dynasty has not yet completely extinguished. The loyal scholars and former officials of the Han will not easily submit, and those with ulterior motives are stirring. New conflicts may have only just begun."
+ je_controversial_dynasty_01_tt: "Has completed the $je_wei_wu_ambitions_01$ [concept_journal_entry]"
+ je_controversial_dynasty_02_tt: "The #bold Progress Bar#! has reached #variable 100%#!"
+ je_controversial_dynasty_03_tt: "The #bold Progress Bar#! has reached #variable 0%#!"
+
+ je_controversial_dynasty_progress_bar: "Consolidate Rule"
+ je_controversial_dynasty_progress_bar_desc: "Progress：#v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/500）"
+
+ #合法性
+ je_controversial_dynasty_legitimacy_01_tt: "[concept_legitimacy] is greater than or equal to 90"
+ je_controversial_dynasty_legitimacy_02_tt: "[concept_legitimacy] is greater than or equal to 75"
+ je_controversial_dynasty_legitimacy_03_tt: "[concept_legitimacy] is greater than or equal to 50"
+ je_controversial_dynasty_legitimacy_04_tt: "[concept_legitimacy] is less than 50"
+ je_controversial_dynasty_legitimacy_05_tt: "[concept_legitimacy] is less than 25"
+ #地区动乱与效忠
+ je_controversial_dynasty_loyalists_tt: "Possess an [Concept('concept_state', '$concept_states$')] of [Concept('concept_loyalist','$concept_loyalists$')]"
+ je_controversial_dynasty_radicals_tt: "Possess an [Concept('concept_state', '$concept_states$')] of [concept_turmoil]"
+
+ je_wei_wu_ambitions_01: "Unifying the Four Seas"
+ je_wei_wu_ambitions_01_reason: "There are still those who yearn for the Han Dynasty. Only by achieving complete unification can the rule of the Great Wei be solidified."
+ je_wei_wu_ambitions_01_tt:  "All [concept_target][concept_state] become [concept_incorporated_state]，25% of [concept_pop] convert [concept_state_religion]"
+ je_wei_wu_ambitions_01_complete_tt: "$je_controversial_dynasty$[concept_journal_entry] progress #g +100#!"
+
+ je_wei_wu_ambitions_02: "Restore Production"
+ je_wei_wu_ambitions_02_reason: "The bones of the dead lie exposed in the wilderness, unburied and forgotten. For 500 kilometers, there is no trace of human life, not even the crowing of a rooster. Out of a hundred common folk, only one remains alive. The mere thought of this fills the heart with unbearable sorrow."
+ je_wei_wu_ambitions_02_tt: "Has completed the $je_wei_wu_ambitions_03$[concept_journal_entry]"
+
+ je_wei_wu_ambitions_03: "Establish Tuntian"
+ je_wei_wu_ambitions_03_reason: "Reclaim the abandoned and ownerless farmland as state property. The large number of recruited displaced people will be organized into units following military structure. The state will provide them with land, seeds, draft oxen, and farming tools. They will cultivate the land, and the harvest will be distributed between the state and the settlers according to a set ratio.\n\nTuntian is divided into military and civilian settlements, originally established to supply grain for the army. When necessary, civilian settlers may also be required to take up arms in defense. The key difference lies in their roles: civilian settlers primarily focus on agricultural production, while military personnel prioritize offense and defense."
+
+ je_wei_wu_ambitions_04: "Drill the Troops"
+ je_wei_wu_ambitions_04_reason: "Through rigorous military training and tactical innovations, the loosely organized local militias will be forged into an elite army."
+
+ je_wei_wu_ambitions_05: "Recruit Talented Individuals"
+ je_wei_wu_ambitions_05_reason: "Only when talents are gathered can great achievements be made. For this reason, he recruits wise and capable individuals without distinction, from all corners of the world, welcoming anyone with the ambition to serve. Whether civil officials, strategists, or valiant generals, as long as they are loyal to the nation, he will strive to recruit and use them to the fullest."
+
+ cao_wei_events.2.t: "Success and fame achieved"
+ cao_wei_events.2.d: "Looking back at the past, countless heroes and great men have fallen in the pursuit of power—some due to limited ambition or lack of talent, others because of fate’s unyielding hand. Yet, Cao Cao never stopped, never faltered after a hundred battles, and never bent to adversity. The great achievement of today is forged through iron will and strategic brilliance."
+ cao_wei_events.2.f: "The nation is stable, the country prosperous, and its army strong. The empire has been established."
+ cao_wei_events.2.a: "When the great achievements are accomplished, can the ambition be quelled?"
+
+ cao_wei_events.3.t: "Pledge allegiance"
+ cao_wei_events.3.d: "The iron cavalry of Great Wei swept across all directions, and the regional powers were eradicated. The fragmented state of the world came to an end, and Great Wei finally achieved complete unification. The mandate of heaven is now unquestionable."
+ cao_wei_events.3.f: "The aristocratic families and former officials who were loyal to the Han Dynasty had no choice but to accept reality and align themselves with the new regime. The foundation of Great Wei grew ever more solid."
+ cao_wei_events.3.a: "Follow the mandate of heaven."
+
+ cao_wei_events.4.t: "The Sima family took control of Wei"
+ cao_wei_events.4.d: "Since the establishment of #v $CNCW$#!, the struggle for power has never ceased. Sima Yi, the Grand Tutor of Great Wei, faced a fluctuating career but, through his own wisdom and deep military talent, steadily rose to the core of #v $CNCW$#!. However, he was still suppressed by the imperial family of #v $CNCW$#!, who held the real power. These imperial family members, arrogant and foolish, exploited the young emperor's inexperience, colluded with each other, and entrenched themselves, becoming increasingly reckless with each passing day."
+ cao_wei_events.4.f: "Taking advantage of the imperial family's departure from the capital to pay respects to their ancestors, Sima Yi launched a coup and seized control of the capital. He swore by the Luo River that he would only remove the imperial family's official positions. The foolish imperial family, ignoring the advice of others, continued to dream of their wealth and laid down their weapons to surrender. Sima Yi broke his word, accusing them of treason and having them all executed. With complete control over the court, the young emperor was left isolated and helpless, soon being forced to abdicate."
+ cao_wei_events.4.a: "Why has the Grand Tutor broken his word to me?"
+ cao_wei_events_4_tt: "#yellow $CNCW$#! became the #v $DJDG$#!"
+
+ je_cement_the_dynasty: "Notorious dynasty"
+ je_cement_the_dynasty_reason: "A dynasty founded on conspiracy, despised by all. We must save this situation."
+
+ je_wei_wu_ambitions_modifier: "Cao Cao's Ambition"
+ Quenching_Thirst_by_Watching_Plums: "Quenching Thirst by Watching Plums"
+ je_controversial_dynasty_modifier: "The fading glow of the Han Dynasty"
+ je_wei_wu_ambitions_01_modifier: "The Mandate of Heaven"
+ je_wei_wu_ambitions_0201_modifier: "Restore Production"
+ je_wei_wu_ambitions_0202_modifier: "Revitalize"
+ je_wei_wu_ambitions_0301_modifier: "Resettle the displaced people"
+ je_wei_wu_ambitions_0302_modifier: "Establish Tuntian"
+ je_wei_wu_ambitions_0401_modifier: "Military Orders"
+ je_wei_wu_ambitions_0402_modifier: "Well-trained"
+ je_wei_wu_ambitions_0501_modifier: "Eager to recruit talented individuals"
+ je_wei_wu_ambitions_0502_modifier: "Appoint people based on talent"
+ cao_wei_events_2_modifier: "Success and fame achieved"
+ cao_wei_events_3_modifier: "Pledge allegiance"
+ je_cement_the_dynasty_01_modifier: "Notorious dynasty"
+ je_cement_the_dynasty_02_modifier: "Saving Reputation"
+ je_cement_the_dynasty_03_modifier: "Rule the world with filial piety"

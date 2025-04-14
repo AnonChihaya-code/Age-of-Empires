@@ -1,0 +1,87 @@
+﻿# 三民主义浪潮
+three_principles_movement_yearly_events = {
+	random_events = {
+		chance_of_no_event = 99
+		1 = warlords_events.8
+	}
+}
+# IG Leader death
+# #- 修改#防止历史人物死亡
+on_memento_mori = {
+	trigger = {
+		any_interest_group = {
+			NOT = { has_variable = memento_mori }
+			leader = {
+				is_ruler = no
+				is_heir = no
+				is_busy = no
+				is_historical = no #-
+				NOT = { has_variable = memento_mori_immunity }
+			}
+		}
+	}
+	effect = {
+		random_list = {
+			50 = {}
+			50 = {
+				# Kill IG leaders occasionally, but not too often per IG
+				random_interest_group = {
+					limit = {
+						NOT = { has_variable = memento_mori }
+						leader = {
+							is_ruler = no
+							is_heir = no
+							is_busy = no
+							is_immortal = no
+							is_historical = no #-
+							NOT = { has_variable = memento_mori_immunity }
+						}
+					}
+					save_scope_as = memento_mori_ig
+					leader = {
+						save_scope_as = memento_mori_leader
+					}
+					set_variable = {
+						name = memento_mori
+						years = 10
+					}
+				}
+				scope:memento_mori_leader = {
+					kill_character = {
+						hidden = yes
+					}
+				}
+				post_notification = ig_leader_memento_mori
+				# Kill an Agitator occasionally, but not too often
+				if = {
+					limit = {
+						any_scope_character = {
+							has_role = agitator
+							is_historical = no #-
+							NOT = { has_variable = memento_mori_immunity }
+						}
+						NOT = { has_variable = agitator_kill_var }
+					}
+					random_list = {
+						1 = {
+							random_scope_character = {
+								limit = {
+									has_role = agitator
+									is_immortal = no
+									is_historical = no #-
+									NOT = { has_variable = memento_mori_immunity }
+								}
+								kill_character = yes
+							}
+							set_variable = {
+								name = agitator_kill_var
+								years = 5
+							}
+						}
+						4 = { }
+					}
+				}
+			}
+		}
+	}
+}

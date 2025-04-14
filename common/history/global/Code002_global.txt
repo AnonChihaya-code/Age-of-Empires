@@ -1,0 +1,87 @@
+﻿# This is executed last among all history
+GLOBAL = {
+
+	every_country = {
+		if = {
+			limit = {
+				is_player = yes
+			}
+		}
+		add_journal_entry = {
+		    type = je_aoe_update
+	    }
+	}
+
+	c:DHDG ?= {
+		trigger_event = { id = great_han_events.1 }
+	}
+	c:CNGY ?= {
+		trigger_event = { id = guiyi_army_events.1 }
+	}
+	c:CNCW ?= {
+		trigger_event = { id = cao_wei_events.1 }
+	}
+	every_country = {
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:mongol
+					country_has_primary_culture = cu:tatar
+				}
+				NOT = { c:CNBY ?= this}
+			}
+			add_journal_entry = { type = je_unify_golden_horde }
+			add_journal_entry = { type = je_tighten_the_tatar_yoke }
+		}
+	}
+	c:MGGH ?= {
+		add_journal_entry = { type = je_cross_the_caucasus }
+		every_scope_state = {
+            limit = {
+                OR = {
+                    state_region = s:STATE_KUBAN
+                    state_region = s:STATE_DAGESTAN 
+                }
+            }
+            add_radicals_in_state = {
+                value = 0.30
+                culture = cu:circassian
+            }
+            add_radicals_in_state = {
+                value = 0.20
+                culture = cu:north_caucasian
+            }
+			add_radicals_in_state = {
+                value = 0.20
+            }
+        }
+        create_bidirectional_truce = {
+			country = c:CIRC
+			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:CHEC
+			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:MOSC
+			months = 12
+		}
+		create_bidirectional_truce = {
+			country = c:KAZA
+			months = 12
+		}
+		create_bidirectional_truce = {
+			country = c:NOGA
+			months = 12
+		}
+		create_bidirectional_truce = {
+			country = c:CRIM
+			months = 12
+		}
+		create_bidirectional_truce = {
+			country = c:LIT
+			months = 12
+		}
+	}
+}

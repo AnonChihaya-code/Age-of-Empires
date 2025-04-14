@@ -1,0 +1,1224 @@
+﻿namespace = warlords_events
+
+warlords_events.1 = { #三民主义浪潮#革命的花火
+	type = country_event
+	placement = root
+	title = warlords_events.1.t
+	desc = warlords_events.1.d
+	flavor = warlords_events.1.f
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+	trigger = {
+		NOT = { has_global_variable = three_principles_movement_happening }
+		NOT = { has_global_variable = three_principles_movement_happened }
+		has_technology_researched = egalitarianism
+		OR = {
+		    c:CNGX ?= this
+		    c:CNYN ?= this
+		}
+		any_political_movement = {
+			is_political_movement_type = movement_sanminzhuyier
+			political_movement_support >= 0.25
+		}
+	}
+	immediate = {
+		set_global_variable = {
+			name = three_principles_movement_happening
+		}
+		set_global_variable = {
+			name = three_principles_movement_recent
+			months = normal_modifier_time
+		}
+		set_global_variable = {
+			name = three_principles_movement_happening_cd_var
+			months = 3
+		}
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_sanminzhuyier
+			}
+			save_scope_as = sanminzhuyier_movement
+		}
+		if ={
+			scope:sanminzhuyier_movement ?= {
+				random_supporting_character = {
+					limit = {
+						has_role = agitator
+					}
+					save_scope_as = sanminzhuyier_ig_leader
+				}
+			}
+		}
+		c:CNNR ?= {
+			save_scope_as = cnnr_scope
+		}
+	}
+	option = {
+		name = warlords_events.1.a
+		add_modifier = {
+			name = warlords_events_1_enhancement_modifier
+			months = normal_modifier_time
+			is_decaying = yes
+		}
+		if = {
+			limit = {
+				exists = scope:sanminzhuyier_ig_leader
+			}
+			scope:sanminzhuyier_ig_leader = {
+				add_modifier = {
+					name = warlords_events_1_revolutionary_hero
+					months = normal_modifier_time
+				}
+			}
+		}
+	}
+    option = {
+		name = warlords_events.1.b
+        default_option = yes
+		add_modifier = {
+			name = warlords_events_1_enhancement_modifier
+			months = normal_modifier_time
+			is_decaying = yes
+			multiplier = 0.5
+		}
+        if = {
+			limit = {
+				exists = scope:sanminzhuyier_ig_leader
+			}
+	        scope:sanminzhuyier_ig_leader = {
+	        	add_modifier = {
+	        		name = warlords_events_1_treasonous_traitor
+	        		months = normal_modifier_time
+	        	}
+	        }
+		}
+	}
+}
+
+warlords_events.2 = { #三民主义的崛起
+	type = country_event
+	placement = root
+	title = warlords_events.2.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = warlords_events.2.d
+				trigger = {
+					any_interest_group = {
+						OR = {
+							is_powerful = yes
+							is_insurrectionary = yes
+						}
+						leader = {
+							has_ideology = ideology:ideology_sanminzhuyier
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = warlords_events.2.d_no_leader
+				trigger = {
+					NOT = {
+						any_interest_group = {
+							OR = {
+								is_powerful = yes
+								is_insurrectionary = yes
+							}
+							leader = {
+								has_ideology = ideology:ideology_sanminzhuyier
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	flavor = warlords_events.2.f
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		random_interest_group = {
+			limit = {
+				OR = {
+					is_powerful = yes
+					is_insurrectionary = yes
+				}
+				leader = {
+					has_ideology = ideology:ideology_sanminzhuyier
+				}
+			}
+			leader = {
+				save_scope_as = sanminzhuyier_leader_scope
+			}
+		}
+	}
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_three_principles_of_the_people_movement
+		}
+	}
+	option = {
+		name = warlords_events.2.a
+		default_option = yes
+		scope:radical_leader_scope ?= {
+			add_modifier = {
+				name = popular_sanminzhuyier
+			}
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = {
+						any_political_movement = {
+							is_political_movement_type = movement_sanminzhuyier
+						}
+					}
+				}
+				create_political_movement = { type = movement_sanminzhuyier }
+			}
+		}
+		je:je_three_principles_of_the_people_movement = {
+			add_modifier = {
+				name = je_three_principles_of_the_people_movement_modifier
+				multiplier = 0.5
+			}
+		}
+		add_modifier = {
+			name = suppressing_sanminzhuyier
+			months = short_modifier_time
+		}
+		add_loyalists = {
+			strata = upper
+			value = very_large_radicals
+		}
+		add_radicals = {
+			value = medium_radicals
+			strata = middle
+		}
+		add_radicals = {
+			value = medium_radicals
+			strata = lower
+		}
+		ai_chance = {
+			base = 66
+		}
+	}
+	option = {
+		name = warlords_events.2.b
+		scope:sanminzhuyier_leader_scope ?= {
+			add_modifier = {
+				name = popular_sanminzhuyier
+			}
+		}
+		if = {
+			limit = {
+				any_interest_group = {
+					is_marginal = no
+					can_have_radical_leader = yes
+					is_in_government = no
+				}
+			}
+			random_interest_group = {
+				limit = {
+					is_marginal = no
+					can_have_radical_leader = yes
+					is_in_government = no
+				}
+				leader = {
+					set_ideology = ideology:ideology_sanminzhuyier
+					add_modifier = {
+						name = popular_sanminzhuyier
+					}
+				}
+			}
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = {
+						any_political_movement = {
+							is_political_movement_type = movement_sanminzhuyier
+						}
+					}
+				}
+				create_political_movement = { type = movement_sanminzhuyier }
+			}
+		}
+		je:je_three_principles_of_the_people_movement = {
+			add_modifier = {
+				name = je_three_principles_of_the_people_movement_modifier
+			}
+		}
+		add_radicals = {
+			value = medium_radicals
+		}
+		ai_chance = {
+			base = 33
+		}
+	}
+}
+
+warlords_events.3 = { #三民主义者在门外
+	type = country_event
+	placement = root
+	title = warlords_events.3.t
+	desc = warlords_events.3.d
+	flavor = warlords_events.3.f
+	cooldown = { months = normal_modifier_time }
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+	trigger = {
+		NOT = {
+			any_interest_group = {
+				is_in_government = yes
+				leader = {
+					has_ideology = ideology:ideology_sanminzhuyier
+				}
+			}
+		}
+		any_interest_group = {
+			OR = {
+				is_powerful = yes
+				is_insurrectionary = yes
+			}
+			leader = {
+				has_ideology = ideology:ideology_sanminzhuyier
+			}
+		}
+		trigger_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_secret_police
+					has_law = law_type:law_national_guard
+				}
+			}
+			institution_investment_level = {
+				institution = institution_home_affairs
+				value >= 3
+			}
+		}
+	}
+	option = {
+		name = warlords_events.3.a
+		if = {
+			limit = {
+				NOT = {
+					has_technology_researched = central_archives
+				}
+				has_technology_researched = centralization
+			}
+			add_technology_progress = { 
+				progress = 3500 
+				technology = central_archives 
+			}
+		}
+		if = {
+			limit = {
+				is_enacting_law = law_type:law_secret_police
+			}
+			add_enactment_modifier = {
+				name = warlords_events_3_reactionary_enactment
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_secret_police
+			}
+			add_modifier = {
+				name = warlords_events_3_institution_speed
+				months = short_modifier_time
+			}
+		}
+		add_journal_entry = {
+			type = je_secret_police_movement
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = warlords_events.3.b
+		if = {
+			limit = {
+				is_enacting_law = law_type:law_national_guard
+			}
+			add_enactment_modifier = {
+				name = warlords_events_3_reactionary_enactment
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_national_guard
+			}
+			add_modifier = {
+				name =  warlords_events_3_institution_speed
+				months = short_modifier_time
+			}
+		}
+		add_journal_entry = {
+			type = je_secret_police_movement
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = warlords_events.3.c
+		default_option = yes
+		capital = {
+			add_radicals_in_state = {
+				value = medium_radicals
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+warlords_events.4 = { #革命的回响
+	type = country_event
+	placement = root
+	title = warlords_events.4.t
+	desc = warlords_events.4.d
+	flavor = warlords_events.4.f
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = { }
+	immediate = {
+		random_interest_group = {
+			limit = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+				}
+				leader = {
+					NOR = { 
+						has_ideology = ideology:ideology_radical
+						has_ideology = ideology:ideology_communist
+						has_ideology = ideology:ideology_anarchist
+						has_ideology = ideology:ideology_vanguardist
+						has_ideology = ideology:ideology_sanminzhuyier
+					}
+				}
+			}
+			save_scope_as = sanminzhuyier_ig
+		}
+	}
+
+	option = {
+		name = warlords_events.4.a
+		scope:sanminzhuyier_ig = {
+			leader = { 
+				set_ideology = ideology:ideology_sanminzhuyier
+				add_modifier = {
+					name = warlords_events_1_revolutionary_hero
+					months = normal_modifier_time
+				}
+			}
+		}
+	}
+
+    option = {
+		name = warlords_events.4.b
+        default_option = yes
+        scope:sanminzhuyier_ig = {
+        	leader = { 
+				set_ideology = ideology:ideology_sanminzhuyier
+				add_modifier = {
+					name = warlords_events_1_treasonous_traitor
+					months = normal_modifier_time
+				}
+		 	}
+        }
+	}
+}
+
+warlords_events.5 = { #我们时代的革命
+	type = country_event
+	placement = root
+	title = warlords_events.5.t
+	desc = warlords_events.5.d
+	flavor = warlords_events.5.f
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = {
+		has_journal_entry = je_three_principles_of_the_people_movement
+		has_technology_researched = egalitarianism
+		any_interest_group = {
+			OR = {
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_industrialists
+			}
+			leader = {
+				NOT = { has_ideology = ideology:ideology_sanminzhuyier }
+			}
+		}
+		empty_agitator_slots >= 1
+	}
+	immediate = {
+		random_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+				}
+				leader = {
+					NOT = { has_ideology = ideology:ideology_sanminzhuyier }
+				}
+			}
+			save_scope_as = sanminzhuyier_ig
+		}
+	}
+	option = {
+		name = warlords_events.5.a
+		ai_chance = {
+			base = 25
+		}
+		custom_tooltip = {
+			text = warlords_events.5.a.tt
+			scope:sanminzhuyier_ig ?= {
+				leader = {
+				    set_ideology = ideology:ideology_sanminzhuyier
+				}
+			}
+			#create_character = {
+			#	ig_leader = yes
+			#	ideology = ideology_sanminzhuyier
+			#	interest_group = scope:sanminzhuyier_ig
+			#}
+		}
+	}
+	option = {
+		name = warlords_events.5.b
+		default_option = yes
+		ai_chance = {
+			base = 75
+			modifier = {
+				trigger = {
+					scope:sanminzhuyier_ig = {
+						ig_approval < -5
+					}
+				}
+				add = -50
+			}
+		}
+		scope:sanminzhuyier_ig = {
+			add_modifier = {
+				name = warlords_events_5_dissident_radical_faction
+				months = short_modifier_time
+			}
+		}
+		create_character = {
+			is_agitator = yes
+			ideology = ideology_sanminzhuyier
+			interest_group = scope:sanminzhuyier_ig
+		}
+	}
+}
+
+warlords_events.6 = { #革命的福音
+	type = country_event
+	placement = root
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	title = warlords_events.6.t
+	desc = warlords_events.6.d
+	flavor = warlords_events.6.f
+	duration = 3
+	cooldown = { months = normal_modifier_time }
+	trigger = {
+		has_journal_entry = je_three_principles_of_the_people_movement
+		any_neighbouring_state = {
+			owner = {
+				has_technology_researched = egalitarianism
+				any_interest_group = {
+					is_powerful = yes
+					OR = {
+						is_interest_group_type = ig_rural_folk
+						is_interest_group_type = ig_intelligentsia
+						is_interest_group_type = ig_trade_unions
+						is_interest_group_type = ig_petty_bourgeoisie
+						is_interest_group_type = ig_industrialists
+					}
+					leader = {
+						NOR = { 
+							has_ideology = ideology:ideology_radical
+							has_ideology = ideology:ideology_communist
+							has_ideology = ideology:ideology_anarchist
+							has_ideology = ideology:ideology_vanguardist
+							has_ideology = ideology:ideology_sanminzhuyier
+						}
+					}
+				}
+			}
+		}
+		any_interest_group = {
+			leader = { has_ideology = ideology:ideology_sanminzhuyier }
+		}
+	}
+	option = {
+		name = warlords_events.6.a
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					has_technology_researched = egalitarianism
+					any_interest_group = {
+						is_powerful = yes
+						OR = {
+							is_interest_group_type = ig_rural_folk
+							is_interest_group_type = ig_intelligentsia
+							is_interest_group_type = ig_trade_unions
+							is_interest_group_type = ig_petty_bourgeoisie
+							is_interest_group_type = ig_industrialists
+						}
+						leader = {
+							NOR = { 
+								has_ideology = ideology:ideology_radical
+								has_ideology = ideology:ideology_communist
+								has_ideology = ideology:ideology_anarchist
+								has_ideology = ideology:ideology_vanguardist
+								has_ideology = ideology:ideology_sanminzhuyier
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				trigger_event = {
+					id = warlords_events.4
+					days = 0
+				}
+			}
+		}
+		every_interest_group = {
+			limit = {
+				leader = { has_ideology = ideology:ideology_sanminzhuyier }
+			}
+			add_modifier = {
+				name = warlords_events_6_spread_the_revolution
+				months = short_modifier_time
+			}
+		}
+	}
+	option = {
+		name = warlords_events.6.b
+		default_option = yes
+		every_interest_group = {
+			limit = {
+				leader = { has_ideology = ideology:ideology_sanminzhuyier }
+			}
+			add_modifier = {
+				name = warlords_events_6_constrained_the_revolution
+				months = short_modifier_time
+			}
+		}
+	}
+}
+
+warlords_events.7 = { #萌动的三民主义
+	type = country_event
+	placement = root
+	event_image = {
+		video = "votp_agitators_sneaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	title = warlords_events.7.t
+	desc = warlords_events.7.d
+	flavor = warlords_events.7.f
+	duration = 3
+	cooldown = { months = short_modifier_time }
+	trigger = {
+		has_journal_entry = je_three_principles_of_the_people_movement
+		any_interest_group = {
+			leader = { has_ideology = ideology:ideology_sanminzhuyier }
+			ig_approval <= unhappy
+		}
+	}
+	option = {
+		name = warlords_events.7.a
+		default_option = yes
+		ai_chance = { base = 90 }
+		trigger = {
+			any_scope_state = {
+				is_incorporated = yes
+				is_capital = no
+			}
+		}
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				is_capital = no
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+	}
+	option = {
+		name = warlords_events.7.b
+		ai_chance = { base = 10 }
+		capital = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+	}
+}
+
+warlords_events.8 = { #浪潮结束
+	type = country_event
+	placement = root
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	title = warlords_events.8.t
+	desc = warlords_events.8.d
+	flavor = warlords_events.8.f
+    duration = 3
+	trigger = {
+		OR = {
+			has_variable = completed_three_principles_movement
+			has_journal_entry = je_three_principles_of_the_people_movement
+		}
+		has_global_variable = three_principles_movement_happening
+		NOT = { has_global_variable = three_principles_movement_recent } #启用5年
+		NOT = {
+			any_country = {
+				has_variable = completed_three_principles_movement_recent #完成2.5年
+			}
+		}
+	}
+	option = {
+		name = warlords_events.8.a
+		default_option = yes
+		custom_tooltip = warlords_events.8.a.tt
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_global_variable = three_principles_movement_happened }
+				}
+				every_country = {
+					limit = {
+						OR = {
+							has_journal_entry = je_three_principles_of_the_people_movement
+							has_variable = completed_three_principles_movement
+						}
+						NOT = { this = root }
+					}
+					trigger_event = {
+						id = warlords_events.8
+						days = 1
+					}
+				}
+			}
+			set_global_variable = {
+				name = three_principles_movement_happened
+				value = yes
+			}
+		}
+	}
+}
+
+warlords_events.9 = { #三民主义#革命胜利
+	type = country_event
+    placement = root
+	event_image = {
+		video = "votp_barricade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	title = warlords_events.9.t
+	desc = warlords_events.9.d
+	flavor = warlords_events.9.f
+	duration = 3
+	immediate = {
+		random_interest_group = {
+			limit = {
+				is_in_government = yes
+				leader = { has_ideology = ideology:ideology_sanminzhuyier }
+			}
+			save_scope_as = sanminzhuyier_ig
+		}
+	}
+	option = {
+		name = warlords_events.9.a
+		ai_chance = { base = 20 }
+		add_modifier = {
+			name = warlords_events_9_post_revolutionary_fervor
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = warlords_events.9.b
+		default_option = yes
+		ai_chance = { base = 50 }
+		add_loyalists = {
+			value = 0.1
+		}
+	}
+	option = {
+		name = warlords_events.9.c
+		ai_chance = { base = 30 }
+		add_modifier = {
+			name = warlords_events_9_post_revolutionary_fervor
+			months = normal_modifier_time
+		}
+		add_loyalists = {
+			value = 0.1
+		}
+		every_interest_group = {
+			limit = {
+				leader = { NOT = { has_ideology = ideology:ideology_sanminzhuyier } }
+			}
+			leader = { set_ideology = ideology:ideology_sanminzhuyier }
+		}
+	}
+}
+
+warlords_events.10 = { #三民主义#革命溃败
+	type = country_event
+    placement = root
+	event_image = {
+		video = "middleeast_police_breaking_door"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	title = warlords_events.10.t
+	desc = warlords_events.10.d
+	flavor = warlords_events.10.f
+	duration = 3
+	option = {
+		name = warlords_events.10.a
+		ai_chance = { base = 50 }
+		add_modifier = {
+			name = warlords_events_10_counter_revolutionary_fervor
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = warlords_events.10.b
+		default_option = yes
+		ai_chance = { base = 50 }
+		add_loyalists = {
+			value = 0.1
+		}
+	}
+}
+
+warlords_events.11 = { #极端措施
+	type = country_event
+	placement = root
+	event_image = {
+		video = "votp_cops_march"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	title = warlords_events.11.t
+	desc = warlords_events.11.d
+	flavor = warlords_events.11.f
+	duration = 3
+	trigger = { }
+	immediate = {
+		if = {
+			limit = {
+				has_law = law_type:law_secret_police
+			}
+			law_type:law_secret_police = {
+				save_scope_as = home_affairs_law
+			}
+		}
+		else = {
+			law_type:law_national_guard = {
+				save_scope_as = home_affairs_law
+			}
+		}
+	}
+	option = {
+		name = warlords_events.11.a
+		trigger = {
+			has_law = law_type:law_secret_police
+			any_interest_group = {
+				is_in_government = no
+				is_marginal = no
+				leader = {
+					has_ideology = ideology:ideology_sanminzhuyier
+					is_immortal = no
+				}
+			}
+		}
+		random_interest_group = {
+			limit = {
+				is_in_government = no
+				is_marginal = no
+				leader = {
+					has_ideology = ideology:ideology_sanminzhuyier
+				}
+			}
+			leader = {
+				kill_character = yes
+			}
+		}
+	}
+	option = {
+		name = warlords_events.11.b
+		trigger = {
+			has_law = law_type:law_national_guard
+		}
+		add_modifier = {
+			name = rooting_out_radicals
+			months = short_modifier_time
+		}
+	}
+	option = {
+		name = warlords_events.11.c
+		default_option = yes
+		add_modifier = {
+			name = home_affairs_cost_mod
+			months = short_modifier_time
+		}
+	}
+}
+
+warlords_events.12 = { #中国统一
+	type = country_event
+	placement = root
+	duration = 3
+	title = national_revolutionary_army_events.99.t
+	desc = national_revolutionary_army_events.99.d
+	flavor = national_revolutionary_army_events.99.f
+	event_image = {
+		video = "asia_farmers_market"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = {
+		Code002_incorporated_scripted_effects = yes
+	}
+	option = {
+		name = national_revolutionary_army_events.99.a
+		default_option = yes
+		add_loyalists = {
+			value = large_radicals
+		}
+		add_modifier = {
+			name = modifier_end_of_warlord_period
+			months = normal_modifier_time
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_council_republic
+				}
+			}
+			add_journal_entry = {
+				type = je_three_principles_of_the_people
+			}
+			add_journal_entry = {
+				type = je_principles_of_nationalism
+			}
+			add_journal_entry = {
+				type = je_principles_of_democracy
+			}
+			add_journal_entry = {
+				type = je_principles_of_people_livelihood
+			}
+		}
+		add_journal_entry = {
+		    type = je_unified_industrial_planning
+		}
+		add_journal_entry = {
+		    type = je_chinese_unification_idea
+		}
+	}
+}
+
+warlords_events.13 = { #横征暴敛
+	type = country_event
+	placement = root
+	title = warlords_events.13.t
+	desc = warlords_events.13.d
+	flavor = warlords_events.13.f
+	event_image = {
+		video = "middleeast_police_breaking_door"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		ruler = {
+			save_scope_as = root_leader_scope
+		}
+	}
+	option = {
+		name = warlords_events.13.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+		}
+		change_infamy = 10
+		add_modifier = {
+			name = warlords_events_13_modifier
+			years = 2
+		}
+		add_treasury = { #加金
+			value = root.gdp
+			divide = 1000000
+			multiply = 300
+			round = yes
+			multiply = 1000
+			min = 100
+		}
+	}
+	option = {
+		name = warlords_events.13.b
+		ai_chance = {
+			base = 25
+		}
+		change_infamy = 5
+		add_modifier = {
+			name = warlords_events_13_modifier
+			multiplier = 0.5
+			years = 2
+		}
+		add_treasury = { #加金
+			value = root.gdp
+			divide = 1000000
+			multiply = 150
+			round = yes
+			multiply = 1000
+			min = 100
+		}
+	}
+}
+
+warlords_events.14 = { #镇压革命
+	type = country_event
+	placement = root
+	title = warlords_events.14.t
+	desc = warlords_events.14.d
+	flavor = warlords_events.14.f
+	event_image = {
+		video = "votp_cops_march"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		ruler = {
+			save_scope_as = root_leader_scope
+		}
+	}
+	option = {
+		name = warlords_events.14.a
+		default_option = yes
+		ai_chance = {
+			base = 60
+		}
+		change_infamy = 10
+		add_modifier = {
+			name = warlords_events_1401_modifier
+			years = 2
+		}
+	}
+	option = {
+		name = warlords_events.14.b
+		ai_chance = {
+			base = 25
+		}
+		change_infamy = 5
+		custom_tooltip = warlords_events_14_tt
+		add_modifier = {
+			name = warlords_events_1401_modifier
+			multiplier = 0.35
+			years = 2
+		}
+		ruler = {
+			add_modifier = {
+				name = warlords_events_1403_modifier
+				years = 2
+			}
+		}
+	}
+	option = {
+		name = warlords_events.14.c
+		ai_chance = {
+			base = 15
+		}
+		add_modifier = {
+			name = warlords_events_1402_modifier
+			years = 2
+		}
+	}
+}
+
+warlords_events.15 = { #宣告统一
+	type = country_event
+	placement = root
+	title = warlords_events.15.t
+	desc = formation.17.d
+	flavor = formation.17.f
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		save_scope_as = formation_country
+		capital = {
+			region = {
+				save_scope_as = capital_region_scope
+			}
+		}
+		every_country = {
+			limit = {
+				has_diplomatic_relevance = ROOT
+			}
+			post_notification = unification_notification_generic
+		}
+		change_tag = CHINA
+	}
+	option = {
+		name = formation.5.a
+		default_option = yes
+		add_modifier = {
+			name = unification_prestige
+			months = very_long_modifier_time
+		}
+		unification_china_claims_scriptrd_effects = yes
+		Code002_incorporated_scripted_effects = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+warlords_events.16 = { #教育兴桂
+	type = country_event
+    placement = root
+	title = warlords_events.16.t
+	desc = warlords_events.16.d
+	flavor = warlords_events.16.f
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	trigger = {
+		c:CNGX ?= this
+		has_technology_researched = academia
+		owns_entire_state_region = STATE_GUANGXI
+		NOT = { has_global_variable = warlords_events_16_var }
+	}
+	immediate = {
+		set_global_variable = warlords_events_16_var
+		create_character = {
+			template = CNGX_Ma_Junwu
+			save_scope_as = CNGX_Ma_Junwu
+        }
+	}
+	option = {
+		name = warlords_events.16.a
+        default_option = yes
+		show_as_tooltip = {
+			random_list = {
+				5 = {
+					create_character = {
+						template = CNGX_Ma_Junwu
+					}
+				}
+				5 = { }
+			}
+		}
+		add_journal_entry = {
+		    type = je_national_guangXi_university_construction
+		}
+		custom_tooltip = {
+			text = warlords_events_16_tt
+		    set_variable = building_national_guangXi_university_construction
+		}
+	}
+}
+
+warlords_events.17 = { #广西大学#开学典礼
+	type = country_event
+    placement = root
+	title = warlords_events.17.t
+	desc = warlords_events.17.d
+	flavor = warlords_events.17.f
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	trigger = { }
+	immediate = {
+		ig:ig_intelligentsia = {
+			leader = {
+				save_scope_as = warlords_events_17_ig_leader
+			}
+		}
+	}
+	option = {
+		name = warlords_events.17.a
+        default_option = yes
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_public_schools }
+			}
+			activate_law = law_type:law_public_schools
+			set_institution_investment_level = {
+			    institution = institution_schools
+			    level = 3
+		    }
+		}
+	}
+}

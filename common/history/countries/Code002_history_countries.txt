@@ -1,0 +1,2338 @@
+﻿COUNTRIES = {
+    ########################
+    ######初始 法律 科技#####
+	########################
+	c:CNBY ?= {
+		effect_starting_technology_tier_1_tech = yes
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_professional_army
+
+		add_journal_entry = {
+			type = je_chinese_warlord_era
+		}
+	}
+	
+    c:CNNR ?= {
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = nationalism         #民族主义
+		add_technology_researched = pharmaceuticals     #药物
+		add_technology_researched = realism             #现实主义
+		add_technology_researched = labor_movement      #劳工运动
+		add_technology_researched = socialism           #社会主义
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_professional_army
+
+		add_journal_entry = {
+			type = je_national_revolution
+		}
+		add_journal_entry = {
+			type = je_national_congress_of_the_kmt
+		}
+		add_journal_entry = {
+			type = je_assistance_to_peasants_and_workers
+		}
+		add_journal_entry = {
+			type = je_crush_the_warlords
+		}
+	}
+
+	c:CNGX ?= {
+		effect_starting_technology_tier_1_tech = yes
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience
+		#activate_law = law_type:law_public_schools
+		activate_law = law_type:law_professional_army
+
+		add_journal_entry = {
+			type = je_chinese_warlord_era
+		}
+	}
+
+	c:CNYN ?= {
+		effect_starting_technology_tier_1_tech = yes
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_professional_army
+
+		add_journal_entry = {
+			type = je_mushroom_poisoning
+		}
+		add_journal_entry = {
+			type = je_chinese_warlord_era
+		}
+	}
+
+	c:CNTW ?= {
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = pharmaceuticals
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_proportional_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_public_health_insurance
+		activate_law = law_type:law_professional_army
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_health_system
+			level = 3
+		}
+	}
+
+	c:CNCW ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience	
+	}
+
+	c:DHDG ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience	
+	}
+
+	c:DQDG ?= {
+		effect_starting_technology_tier_3_tech = yes
+
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience		
+	}
+
+	c:TPTG ?= {
+		effect_starting_technology_tier_2_tech = yes
+
+		add_technology_researched = atmospheric_engine
+		
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy 
+		#activate_law = law_type:law_homesteading
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_state_religion
+
+		add_journal_entry = {
+			type = je_taiping_land_socializationicon
+		}
+		add_journal_entry = {
+			type = je_taiping_divided
+		}
+		add_journal_entry = {
+			type = je_western_expedition
+		}
+		add_journal_entry = {
+			type = je_northern_expedition
+		}
+		add_modifier = {
+			name = taiping_army_modifier
+			months = normal_modifier_time
+			is_decaying = yes
+		}
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:SONG ?= {
+		effect_starting_technology_tier_1_tech = yes
+
+        activate_law = law_type:law_presidential_republic
+		#activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_technocracy
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_appointed_bureaucrats
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+	}
+
+	c:MING ?= {
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_tenant_farmers
+			
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_industrialists = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:CNTB ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_slave_trade
+	}
+
+	c:CNGY ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience		
+	}
+
+	c:CNXY ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		activate_law = law_type:law_monarchy
+		#activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience		
+	}
+
+	c:CNXN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_freedom_of_conscience
+
+		add_journal_entry = {
+			type = je_loong_city_revival
+		}
+	}
+
+	c:OHDS ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+        set_ruling_interest_groups = {
+        	ig_devout
+        }
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+
+	}
+
+	c:TCOS ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}
+	}
+
+	c:ELDA ?= {
+		effect_starting_technology_tier_1_tech = yes
+		effect_starting_politics_conservative = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+		
+		ig:ig_landowners = { 
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:MRLY ?= {
+		effect_starting_technology_tier_1_tech = yes
+		effect_starting_politics_conservative = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+		
+		ig:ig_landowners = { 
+			add_ruling_interest_group = yes
+		}
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:HASA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:SHAI ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:ETH ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:SIB ?= {
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:CNQY ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:CKC ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:KAZ ?= {
+        add_primary_culture = cu:tatar
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:MGGH ?= {
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:CRIM ?= {
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:KAZA ?= {
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:NOGA ?= {
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:CIRC ?= {
+		effect_starting_technology_tier_3_tech = yes
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_slave_trade
+
+		add_journal_entry = { type = je_tatar_caucasian_war_circassia }
+	}
+
+	c:CHEC ?= {
+		add_primary_culture = cu:north_caucasian
+
+		effect_starting_technology_tier_3_tech = yes
+
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_cultural_exclusion
+
+		add_journal_entry = { type = je_tatar_caucasian_war_imamate }
+	}
+	
+	c:GEO ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+	
+	c:ARM ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:AZB ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:MOSC ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:NOVG ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+		
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_elected_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:LIVO ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+        set_ruling_interest_groups = {
+        	ig_devout
+        }
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+	}
+
+	c:TEUT ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+        set_ruling_interest_groups = {
+        	ig_devout
+        }
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+	}
+
+	c:LIT ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:POL ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:HUN ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:WAL ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_legacy_slavery
+	}
+
+	c:MOL ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_legacy_slavery
+	}
+
+	c:SER ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+    c:MON ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+		add_taxed_goods = g:grain
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_professional_army
+	}
+
+	c:BOS ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:CRO ?= {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_professional_army
+	}
+
+	c:BOH ?= {
+		effect_starting_technology_tier_1_tech = yes
+		effect_starting_politics_conservative = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 2
+		}
+	}
+
+	c:VEN ?= {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_elected_bureaucrats
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+	}
+
+	c:LOM ?= {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+
+		add_technology_researched = atmospheric_engine
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+	}
+
+	c:WES ?= {
+		effect_starting_technology_tier_1_tech = yes
+		
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_freedom_of_conscience
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}	
+	}
+
+	c:RHE ?= {
+		effect_starting_technology_tier_1_tech = yes
+		
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_freedom_of_conscience
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}	
+	}
+
+	c:ENG ?= {	
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = labor_movement
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_migration_controls
+		
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 2
+		}		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+
+		add_company = company_type:company_gwr
+		company:company_gwr = {
+			set_company_establishment_date = 1833.1.21
+			set_company_state_region = s:STATE_HOME_COUNTIES
+		}
+	}
+
+	c:SCO ?= {	
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = labor_movement
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_migration_controls
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:WLS ?= {	
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = labor_movement
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_migration_controls
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:IRE ?= {	
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = labor_movement
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_migration_controls
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:BURG ?= {	
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_tenant_farmers
+	
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}	
+	}
+
+	c:JEAN ?= {	
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_tenant_farmers
+	
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}	
+	}
+
+	c:NAPO ?= {	
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_tenant_farmers
+	
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}	
+	}
+
+	c:VFRA ?= {	
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_tenant_farmers
+	
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}	
+	}
+
+	c:BRI ?= {	
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_tenant_farmers
+	
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}	
+	}
+
+	c:CAS ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+
+		set_institution_investment_level = {
+			institution = institution_health_system
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:ARAG ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+
+		set_institution_investment_level = {
+			institution = institution_health_system
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:ANL ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+
+		set_institution_investment_level = {
+			institution = institution_health_system
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:NAV ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_oligarchy
+
+		set_institution_investment_level = {
+			institution = institution_health_system
+			level = 1
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:MAML ?= {
+	    effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:PART ?= {
+	    effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:SASS ?= {
+	    effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:KUSH ?= {
+        effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:ABAS ?= {
+	    effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:AYUB ?= {
+        effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_agrarianism
+	}
+
+	c:SERZ ?= {
+        effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:SUD ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:DELI ?= {
+        effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:MUGH ?= {
+        effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:MARA ?= {
+        effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:DRAV ?= {
+        effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:VLAN ?= {		
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = labor_movement
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_elected_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+
+		#add_modifier = country_disallow_aggressive_plays_bool
+	}
+
+	c:MYGO ?= {
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = labor_movement
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		add_journal_entry = {
+			type = je_crychic_dissolved
+		}
+
+		#add_modifier = country_disallow_aggressive_plays_bool
+	}
+
+	c:FALC ?= {
+		effect_starting_technology_tier_1_tech = yes
+		effect_starting_politics_liberal = yes
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_no_workers_rights
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_no_womens_rights
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+		add_company = company_type:company_falcon
+		company:company_falcon = {
+			set_company_establishment_date = 1836.1.1
+			set_company_state_region = s:STATE_DISTRICT_OF_COLUMBIA
+		}
+	}
+	
+	c:SIOU ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:IROQ ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:CHEY ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:COMA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:APAC ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:NEZP ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:PAIU ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:SML ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:MAY ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:CREE ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:AZTE ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:INCA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:PATA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:AMZ ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+
+		effect_starting_politics_traditional = yes
+		
+		activate_law = law_type:law_chiefdom
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:EQT ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+
+		add_technology_researched = empiricism
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_slave_trade 
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_agrarianism
+	}
+	c:ICL ?= {
+		effect_starting_technology_tier_2_tech = yes
+		add_technology_researched = dialectics
+		effect_starting_politics_conservative = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_colonial_exploitation
+    	activate_law = law_type:law_right_of_assembly
+	}
+
+	c:RYUK ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_freedom_of_conscience
+	}
+
+	c:IDN?= {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_traditional = yes
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_debt_slavery
+	}
+
+	c:PNS ?= {
+		effect_starting_technology_tier_3_tech = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_public_schools
+
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:SGPR ?= {	
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_commercialized_agriculture
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 2
+		}
+	}
+
+    c:ERI ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:ANG ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:ZMB ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:MOZ ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:TNZ ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:KNY ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:DRC ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:CKS ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:GAB ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:CMN ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+    c:CAR ?= {	
+	  	effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_migration_controls
+	}
+
+	c:NAZI ?= {
+		effect_starting_technology_tier_1_tech = yes
+
+		activate_law = law_type:law_corporate_state           #law_presidential_republic
+		activate_law = law_type:law_oligarchy                 #law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_commercialized_agriculture
+		activate_law = law_type:law_secret_police
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 5
+		}
+		set_institution_investment_level = {
+			institution = institution_home_affairs
+			level = 4
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:SAHR ?= {
+		effect_starting_technology_tier_6_tech = yes
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+}
+

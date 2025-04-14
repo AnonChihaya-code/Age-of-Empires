@@ -1,0 +1,54 @@
+﻿Code002_hairstyles = {
+	usage = game
+	selection_behavior = weighted_random
+	#fallback = no_hair
+
+    Code002_chinese_manchu_queue_hairstyle = { #不存在中国时不应该有满人辫子头
+        dna_modifiers = {
+            accessory = {
+                mode = replace
+                gene = hairstyles
+                template = east_asian_hairstyles # note that chinese_hairstyles only inlcude Manchu hairstyles atm. 
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                scope:character ?= {
+                    exists = home_country
+                    is_female = no
+		            home_country = {
+			            has_law = law_type:law_monarchy
+                        country_has_primary_culture = cu:manchu
+                        NOT = { c:CHI ?= this }
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_chinese_female_hairstyle = { #中国#欧洲女性发型#满人维持原样
+        dna_modifiers = {
+            accessory = {
+                mode = replace
+                gene = hairstyles
+                template = european_hairstyles # note that chinese_hairstyles only inlcude Manchu hairstyles atm. 
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                scope:character ?= {
+                    is_female = yes
+	                NOT = { culture = cu:manchu }
+                }
+            }
+        }
+    }
+}

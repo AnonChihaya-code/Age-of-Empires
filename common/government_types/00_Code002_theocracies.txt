@@ -1,0 +1,136 @@
+﻿#####################
+#####注册神权政体#####
+#####################
+
+GOV_TPTG = { #太平天国#天王
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_HEAVENLY_KING"
+	female_ruler = "RULER_TITLE_HEAVENLY_KING"
+
+	male_heir = "RULER_TITLE_JUNIOR_HEAVENLY_KING"
+	female_heir = "RULER_TITLE_JUNIOR_HEAVENLY_KING"
+
+	possible = {
+		OR = {
+		    has_law = law_type:law_monarchy
+            has_law = law_type:law_theocracy
+		}
+		country_has_state_religion = rel:protestant
+		exists = c:TPTG
+		c:TPTG = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_JEAN = { #神圣法兰西#
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_HOLY_SON"
+	female_ruler = "RULER_TITLE_VIRDIN_SAINT"
+
+	possible = {
+        has_law = law_type:law_theocracy
+		exists = c:JEAN
+		c:JEAN = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+GOV_OHDS = { #医院骑士团
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_DATUANZHANG"
+	female_ruler = "RULER_TITLE_DATUANZHANG"
+
+	possible = {
+        has_law = law_type:law_theocracy
+		exists = c:OHDS
+		c:OHDS = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+GOV_LIVO = { #利沃尼亚骑士团
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_DATUANZHANG"
+	female_ruler = "RULER_TITLE_DATUANZHANG"
+
+	possible = {
+        has_law = law_type:law_theocracy
+		exists = c:LIVO
+		c:LIVO = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+GOV_TEUT = { #条顿骑士团
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_DATUANZHANG"
+	female_ruler = "RULER_TITLE_DATUANZHANG"
+
+	possible = {
+        has_law = law_type:law_theocracy
+		exists = c:TEUT
+		c:TEUT = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_abbasid_caliphate = { #黑衣大食#哈里发
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_CALIPH"
+	female_ruler = "RULER_TITLE_CALIPH"
+
+	male_heir = "RULER_TITLE_IMPERIAL_PRINCE"
+	female_heir = "RULER_TITLE_IMPERIAL_PRINCE"
+	
+	possible = {
+		OR = {
+		    has_law = law_type:law_monarchy
+            has_law = law_type:law_theocracy
+		}
+		exists = c:ABAS
+		c:ABAS = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}

@@ -1,0 +1,106 @@
+﻿POPS = {
+s:STATE_SAN_SALVADOR = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 428204
+		}
+	}
+}
+s:STATE_GUATEMALA = {
+	region_state:MAY = {
+		create_pop = {
+			culture = mayan
+			size = 326525
+		}
+	}
+}
+s:STATE_HONDURAS = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 385204
+		}
+	}
+}
+s:STATE_NICARAGUA = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 348000
+		}
+	}
+}
+s:STATE_COSTA_RICA = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 83992
+		}
+	}
+}
+s:STATE_PANAMA = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 250000
+		}
+	}
+}
+s:STATE_HAITI = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 858204
+		}
+	}
+}
+s:STATE_SANTO_DOMINGO = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 128204
+		}
+	}
+}
+s:STATE_PUERTO_RICO = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 395204
+		}
+	}
+}
+s:STATE_BAHAMAS = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 119400
+		}
+	}
+}
+s:STATE_WEST_INDIES = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 558200
+		}
+	}
+}
+s:STATE_JAMAICA = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 370596
+		}
+	}
+}
+s:STATE_CUBA = {
+	region_state:TCOS = {
+		create_pop = {
+			culture = circle
+			size = 1011304
+		}
+	}
+}
+}

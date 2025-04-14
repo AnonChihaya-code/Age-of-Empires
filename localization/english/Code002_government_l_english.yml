@@ -1,0 +1,102 @@
+﻿l_english:
+ #####################
+ ##### 政体本地化 #####
+ #####################
+
+ RULER_TITLE_DACHANYU: "Great Chanyu"
+ RULER_TITLE_CHANYUZI: "Prince"
+ RULER_TITLE_DADUHU: "Protectorate General"
+ RULER_TITLE_JIEDUSHI: "Military Governor"
+ RULER_TITLE_DATUANZHANG: "Grand Master"
+ RULER_TITLE_SHOULING: "Governor" #Grand Cardinal
+ RULER_TITLE_DAJUN: "Great Khan"
+ RULER_TITLE_SHIZI: "Prince"
+ RULER_TITLE_BOTSAN_PO: "Botsan Po"
+ RULER_TITLE_GREAT_KHAN: "Great Khan"
+ RULER_TITLE_GREAT_KHATUN: "Great Khatun"
+ RULER_TITLE_KHANZADEH: "Khanzadeh"
+ RULER_TITLE_KHANUM: "Khanum"
+ RULER_TITLE_LORD_HUGUOZHU: "Lord Protector"
+ RULER_TITLE_LADY_HUGUOZHU: "Lady Protector"
+ RULER_TITLE_HOLY_SON: "Holy Son"
+ RULER_TITLE_VIRDIN_SAINT: "Virgin Saint"
+ RULER_TITLE_POSADNIK: "Posadnik"
+ RULER_TITLE_POSADNITSA: "Posadnitsa"
+
+ GOV_TPTG: "Heavenly Kingdom"
+ GOV_TPTG_desc: "A [concept_government_type] ruled by the [Concept('concept_ruler','$RULER_TITLE_HEAVENLY_KING$')], who is claimed to be a child of God and brother to Jesus Christ.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_CNXN: "Xiongnu Khanate"
+ GOV_CNXN_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_DACHANYU$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CNXY: "Western Regions Protectorate"
+ GOV_CNXY_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_DADUHU$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CNGY: "Fanzhen"
+ GOV_CNGY_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_JIEDUSHI$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_OHDS: "Knights of Saint John"
+ GOV_OHDS_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_DATUANZHANG$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_TCOS: "Circle of Ossus"
+ GOV_TCOS_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SHOULING$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_MGGH: "Golden Horde"
+ GOV_MGGH_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_GREAT_KHAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CNQY: "Qingyang Khanate"
+ GOV_CNQY_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_DAJUN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ Gov_Mughal_Empire: "Mughal Empire"
+ Gov_Mughal_Empire_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_PADISHAH$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Delhi_Sultanate: "Delhi Sultanate"
+ Gov_Delhi_Sultanate_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Seljuq_Sultanate: "Seljuq Sultanate"
+ Gov_Seljuq_Sultanate_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ gov_falcon_company: "Falcon Company"
+ gov_falcon_company_desc: "This is a [concept_government_type] ruled by a monopolistic corporation, chartered by their colonial overlord.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ gov_abbasid_caliphate: "Caliphate"
+ gov_abbasid_caliphate_desc: "This is a [concept_government_type] where the [concept_country] is ruled by the head of the clergy.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Avant_Garde_French: "Avant-Garde French"
+ Gov_Avant_Garde_French_desc: "This is a [concept_government_type] where the [concept_country] is ruled by a parliament which is led by a [Concept('concept_ruler','Dictator')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Mamluk_Sultanate: "Mamluk Sultanate"
+ Gov_Mamluk_Sultanate_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Tibetan_Kingdom: "Tibetan Kingdom"
+ Gov_Tibetan_Kingdom_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_BOTSAN_PO$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_MYGO: "Two-Dimensional State"
+ GOV_MYGO_desc: "This is a [concept_government_type] where the [concept_country] is ruled by a democratically [Concept('concept_election','$concept_elected$')] parliament.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_VLAN: "Vinland Utopia"
+ GOV_VLAN_desc: "This is a [concept_government_type] where the [concept_country] is ruled by a democratically [Concept('concept_election','$concept_elected$')] parliament.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_JEAN: "Heavenly Kingdom of France"
+ GOV_JEAN_desc: "This is a [concept_government_type] where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_HOLY_SON$')] or [Concept('concept_ruler','$RULER_TITLE_VIRDIN_SAINT$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_ENG: "Elective Dictatorship"
+ GOV_ENG_desc: "This is a [concept_government_type] where the [concept_country] is ruled by a parliament which is led by a [Concept('concept_ruler','Dictator')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Ayyubid_Sultanate: "Ayyubid Sultanate"
+ Gov_Ayyubid_Sultanate_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_LIVO: "Livonian Order"
+ GOV_LIVO_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_DATUANZHANG$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_TEUT: "Teutonic Order"
+ GOV_TEUT_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_DATUANZHANG$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CIRC: "Circassian Confederation"
+ GOV_CIRC_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_THAMADE$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_TATAR_HORDE: "Khanate"
+ GOV_TATAR_HORDE_desc: "This is a [concept_government_type] ruled by the [Concept('concept_ruler','$RULER_TITLE_KHAN$')], the absolute ruler of the traditional nomadic peoples of the country.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_NOVG: "Veche Republic"
+ GOV_NOVG_desc: "This state is governed by a Veche, a council with the highest legislative and judicial authority consisting of Boyars, Merchants and even commoners."

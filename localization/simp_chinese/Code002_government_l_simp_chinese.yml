@@ -1,0 +1,102 @@
+﻿l_simp_chinese:
+ #####################
+ ##### 政体本地化 #####
+ #####################
+
+ RULER_TITLE_DACHANYU: "大单于"
+ RULER_TITLE_CHANYUZI: "王子"
+ RULER_TITLE_DADUHU: "大都护"
+ RULER_TITLE_JIEDUSHI: "节度使"
+ RULER_TITLE_DATUANZHANG: "大团长"
+ RULER_TITLE_SHOULING: "首领"
+ RULER_TITLE_DAJUN: "大君"
+ RULER_TITLE_SHIZI: "世子"
+ RULER_TITLE_BOTSAN_PO: "赞普"
+ RULER_TITLE_GREAT_KHAN: "大汗"
+ RULER_TITLE_GREAT_KHATUN: "可敦"
+ RULER_TITLE_KHANZADEH: "汗札岱"
+ RULER_TITLE_KHANUM: "哈努姆"
+ RULER_TITLE_LORD_HUGUOZHU: "护国主"
+ RULER_TITLE_LADY_HUGUOZHU: "护国主"
+ RULER_TITLE_HOLY_SON: "圣子"
+ RULER_TITLE_VIRDIN_SAINT: "圣女"
+ RULER_TITLE_POSADNIK: "市长"
+ RULER_TITLE_POSADNITSA: "市长"
+
+ GOV_TPTG: "太平天国"
+ GOV_TPTG_desc: "这种[concept_government_type]下，国家由天父儿子，耶稣基督弟弟的[Concept('concept_ruler','$RULER_TITLE_HEAVENLY_KING$')]统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_CNXN: "匈奴汗国"
+ GOV_CNXN_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_DACHANYU$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CNXY: "西域都护府"
+ GOV_CNXY_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_DADUHU$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CNGY: "藩镇"
+ GOV_CNGY_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_JIEDUSHI$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_OHDS: "医院骑士团"
+ GOV_OHDS_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_DATUANZHANG$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_TCOS: "藏骨集团"
+ GOV_TCOS_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_SHOULING$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_MGGH: "金帐汗国"
+ GOV_MGGH_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_GREAT_KHAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CNQY: "青阳汗国"
+ GOV_CNQY_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_DAJUN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ Gov_Mughal_Empire: "莫卧儿帝国"
+ Gov_Mughal_Empire_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_PADISHAH$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ Gov_Delhi_Sultanate: "德里苏丹国"
+ Gov_Delhi_Sultanate_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Seljuq_Sultanate: "塞尔柱苏丹国"
+ Gov_Seljuq_Sultanate_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ gov_falcon_company: "猎鹰公司"
+ gov_falcon_company_desc: "这种[concept_government_type]下，国家由获得殖民地宗主特许的垄断公司统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ gov_abbasid_caliphate: "哈里发国"
+ gov_abbasid_caliphate_desc: "这种[concept_government_type]下，[concept_country]由神职人员的领袖统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Avant_Garde_French: "法兰西先锋国"
+ Gov_Avant_Garde_French_desc: "这种[concept_government_type]下，[concept_country]由[Concept('concept_ruler','独裁者')]领导的议会所统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Mamluk_Sultanate: "马穆鲁克苏丹国"
+ Gov_Mamluk_Sultanate_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Tibetan_Kingdom: "西藏王国"
+ Gov_Tibetan_Kingdom_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_BOTSAN_PO$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_MYGO: "二次元国家"
+ GOV_MYGO_desc: "这种[concept_government_type]下，[concept_country]由一个经民主程序[Concept('concept_election','$concept_elected$')]的议会统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_VLAN: "文兰乌托邦"
+ GOV_VLAN_desc: "这种[concept_government_type]下，[concept_country]由一个经民主程序[Concept('concept_election','$concept_elected$')]的议会统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_JEAN: "法兰西天国"
+ GOV_JEAN_desc: "这种[concept_government_type]下，权力主要属于[Concept('concept_ruler','$RULER_TITLE_HOLY_SON$')]或[Concept('concept_ruler','$RULER_TITLE_VIRDIN_SAINT$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_ENG: "选举独裁政府"
+ GOV_ENG_desc: "这种[concept_government_type]下，[concept_country]由[Concept('concept_ruler','独裁者')]领导的议会所统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ Gov_Ayyubid_Sultanate: "阿尤布苏丹国"
+ Gov_Ayyubid_Sultanate_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_SULTAN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_LIVO: "利沃尼亚骑士团"
+ GOV_LIVO_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_DATUANZHANG$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_TEUT: "条顿骑士团"
+ GOV_TEUT_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_DATUANZHANG$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_CIRC: "切尔克西亚邦联"
+ GOV_CIRC_desc: "这种[concept_government_type]下，权力属于[Concept('concept_ruler','$RULER_TITLE_THAMADE$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+ GOV_TATAR_HORDE: "汗国"
+ GOV_TATAR_HORDE_desc: "这种[concept_government_type]下，国家由该国传统游牧民的绝对统治者[Concept('concept_ruler','$RULER_TITLE_KHAN$')]统治。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ GOV_NOVG: "卫彻共和国"
+ GOV_NOVG_desc: "卫彻共和国由“卫彻”领导，它是拥有最高立法权和司法权的机关，由@landowners!波雅尔（贵族）和@industrialists!商人组成，甚至包括一些@petty_bourgeoisie!平民。"

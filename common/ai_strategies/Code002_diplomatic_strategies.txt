@@ -1,0 +1,358 @@
+﻿ai_strategy_contend_mandate_of_heaven = { #争夺天命
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	
+	type = diplomatic
+	
+	will_form_power_bloc = {
+		always = yes
+	}	
+		
+	undesirable_infamy_level = {
+		value = 50
+	}
+	
+	unacceptable_infamy_level = {
+		value = 100
+	}
+	
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}		
+	
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	
+	diplomatic_play_boldness = {
+		value = 75
+	}
+	
+	obligation_value = {
+		value = 0
+	
+		if = {
+			limit = { 
+				scope:target_country = {
+					OR = {
+					    country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:xiongnu
+					}
+				}
+			}
+			add = 25
+		}
+	}		
+	
+	recklessness = {
+		value = 0.5
+	}	
+	
+	aggression = {
+		value = 0.5
+		
+		if = {
+			limit = { 
+				scope:target_country = {
+					OR = {
+					    country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:xiongnu
+					}
+				}
+			}
+			add = 10
+		}
+
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}					
+			}
+			multiply = 0.25
+		}	
+	}
+
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					state_region = {
+						OR = {
+						    is_homeland = cu:han
+							is_homeland = cu:uighur
+						    is_homeland = cu:xiongnu
+						}
+					}						
+				}	
+				can_reach_target_state = yes
+			}
+			add = 100
+		}
+	}
+	
+	wargoal_scores = {
+		conquer_state = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 100
+			}
+		}
+	}
+	
+	secret_goal_scores = {
+		protect = {		
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}		
+		}		
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}		
+	}
+		
+	possible = {
+		is_subject = no
+		OR = {
+			exists = c:DHDG
+			exists = c:CNCW
+			exists = c:TPTG
+			exists = c:CNXN
+			exists = c:CNGY
+			exists = c:CNXY
+			exists = c:MING
+		}
+		OR = {
+			c:DHDG ?= this
+			c:CNCW ?= this
+			c:TPTG ?= this
+			c:CNXN ?= this
+			c:CNGY ?= this
+			c:CNXY ?= this
+			c:MING ?= this
+		}
+	}
+
+	weight = {
+		value = 25
+
+		add = {
+			value = army_size
+			multiply = 10
+		}
+
+		if = {
+			limit = { NOT = { is_country_type = unrecognized } }
+			multiply = 10.0
+		}
+		else_if = {
+			limit = { country_rank = rank_value:unrecognized_major_power }
+			multiply = 5.0
+		}			
+		else_if = {
+			limit = { country_rank = rank_value:unrecognized_regional_power }
+			multiply = 3.0
+		}
+	}
+}
+
+ai_strategy_chinese_warlord_era = { #北定中原
+	icon = "gfx/interface/icons/ai_strategy_icons/unification.dds"
+	
+	type = diplomatic
+	
+	will_form_power_bloc = {
+		always = yes
+	}	
+		
+	undesirable_infamy_level = {
+		value = 50
+	}
+	
+	unacceptable_infamy_level = {
+		value = 100
+	}
+	
+	ideological_opinion_effect_mult = {
+		value = 0.5
+	}
+	
+	wargoal_maneuvers_fraction = {
+		value = 0.2
+	}		
+	
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	
+	diplomatic_play_boldness = {
+		value = 75
+	}
+	
+	obligation_value = {
+		value = 0
+	
+		if = {
+			limit = { 
+				scope:target_country = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:uighur
+						country_has_primary_culture = cu:tibetan
+						country_has_primary_culture = cu:xiongnu
+					}
+				}
+			}
+			add = 25
+		}
+	}		
+	
+	recklessness = {
+		value = 0.5
+	}	
+	
+	aggression = {
+		value = 0.5
+		
+		if = {
+			limit = { 
+				scope:target_country = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:uighur
+						country_has_primary_culture = cu:tibetan
+						country_has_primary_culture = cu:xiongnu
+					}
+				}
+			}
+			add = 10
+		}
+
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}					
+			}
+			multiply = 0.25
+		}	
+	}
+
+	building_group_weights = {
+		bg_army = 1.5
+	}
+	
+	state_value = {
+		if = {
+			limit = {
+				scope:target_state = {
+					state_region = {
+						OR = {
+						    is_homeland = cu:han
+							is_homeland = cu:uighur
+						    is_homeland = cu:tibetan
+						    is_homeland = cu:xiongnu
+						}
+					}						
+				}	
+				can_reach_target_state = yes
+			}
+			add = 100
+		}
+	}
+	
+	wargoal_scores = {
+		conquer_state = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+				}
+				add = 100
+			}
+		}
+	}
+	
+	secret_goal_scores = {
+		protect = {		
+			if = {
+				limit = {
+					can_reach_target_country = no
+				}
+				add = 150
+			}		
+		}		
+		conquer = {
+			if = {
+				limit = {
+					NOT = {
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+					can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}		
+	}
+		
+	possible = {
+		is_subject = no
+		NOT = {
+			exists = c:CHINA
+		}
+		OR = {
+			c:CNGX ?= this
+			c:CNYN ?= this
+			c:CNTW ?= this
+		}
+	}
+
+	weight = {
+		value = 25
+
+		add = {
+			value = army_size
+			multiply = 10
+		}
+
+		if = {
+			limit = { NOT = { is_country_type = unrecognized } }
+			multiply = 10.0
+		}
+		else_if = {
+			limit = { country_rank = rank_value:unrecognized_major_power }
+			multiply = 5.0
+		}			
+		else_if = {
+			limit = { country_rank = rank_value:unrecognized_regional_power }
+			multiply = 3.0
+		}
+	}
+}

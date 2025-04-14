@@ -1,0 +1,869 @@
+﻿pdxmesh = {
+	name = "Jeanne_dArc_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Jeanne_dArc_diffuse.dds"
+		texture_specular = "Jeanne_dArc_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Jeanne_dArc_entity"
+	pdxmesh = "Jeanne_dArc_mesh"
+}
+
+pdxmesh = {
+	name = "Takamatsu_Tomori_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Takamatsu_Tomori_diffuse.dds"
+		texture_specular = "Takamatsu_Tomori_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Takamatsu_Tomori_entity"
+	pdxmesh = "Takamatsu_Tomori_mesh"
+}
+
+pdxmesh = {
+	name = "Chihaya_Anon_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Chihaya_Anon_diffuse.dds"
+		texture_specular = "Chihaya_Anon_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Chihaya_Anon_entity"
+	pdxmesh = "Chihaya_Anon_mesh"
+}
+
+pdxmesh = {
+	name = "Sumita_Mana_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Sumita_Mana_diffuse.dds"
+		texture_specular = "Sumita_Mana_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Sumita_Mana_entity"
+	pdxmesh = "Sumita_Mana_mesh"
+}
+
+pdxmesh = {
+	name = "Kaname_Rana_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Kaname_Rana_diffuse.dds"
+		texture_specular = "Kaname_Rana_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Kaname_Rana_entity"
+	pdxmesh = "Kaname_Rana_mesh"
+}
+
+pdxmesh = {
+	name = "Nagasaki_Soyo_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Nagasaki_Soyo_diffuse.dds"
+		texture_specular = "Nagasaki_Soyo_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Nagasaki_Soyo_entity"
+	pdxmesh = "Nagasaki_Soyo_mesh"
+}
+
+pdxmesh = {
+	name = "Shiina_Taki_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Shiina_Taki_diffuse.dds"
+		texture_specular = "Shiina_Taki_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Shiina_Taki_entity"
+	pdxmesh = "Shiina_Taki_mesh"
+}
+
+pdxmesh = {
+	name = "Sakiko_Togawa_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Sakiko_Togawa_diffuse.dds"
+		texture_specular = "Sakiko_Togawa_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Sakiko_Togawa_entity"
+	pdxmesh = "Sakiko_Togawa_mesh"
+}
+
+pdxmesh = {
+	name = "Misumi_Uika_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Misumi_Uika_diffuse.dds"
+		texture_specular = "Misumi_Uika_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Misumi_Uika_entity"
+	pdxmesh = "Misumi_Uika_mesh"
+}
+
+pdxmesh = {
+	name = "Wakaba_Mutsumi_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Wakaba_Mutsumi_diffuse.dds"
+		texture_specular = "Wakaba_Mutsumi_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Wakaba_Mutsumi_entity"
+	pdxmesh = "Wakaba_Mutsumi_mesh"
+}
+
+pdxmesh = {
+	name = "Yahata_Umiri_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Yahata_Umiri_diffuse.dds"
+		texture_specular = "Yahata_Umiri_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Yahata_Umiri_entity"
+	pdxmesh = "Yahata_Umiri_mesh"
+}
+
+pdxmesh = {
+	name = "Yutenji_Nyamu_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Yutenji_Nyamu_diffuse.dds"
+		texture_specular = "Yutenji_Nyamu_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Yutenji_Nyamu_entity"
+	pdxmesh = "Yutenji_Nyamu_mesh"
+}
+
+
+pdxmesh = {
+	name = "Toyama_Kasumi_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Toyama_Kasumi_diffuse.dds"
+		texture_specular = "Toyama_Kasumi_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Toyama_Kasumi_entity"
+	pdxmesh = "Toyama_Kasumi_mesh"
+}
+
+pdxmesh = {
+	name = "Hanazono_Tae_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Hanazono_Tae_diffuse.dds"
+		texture_specular = "Hanazono_Tae_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Hanazono_Tae_entity"
+	pdxmesh = "Hanazono_Tae_mesh"
+}
+
+pdxmesh = {
+	name = "Ushigome_Rimi_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Ushigome_Rimi_diffuse.dds"
+		texture_specular = "Ushigome_Rimi_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Ushigome_Rimi_entity"
+	pdxmesh = "Ushigome_Rimi_mesh"
+}
+
+pdxmesh = {
+	name = "Yamabuki_Saya_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Yamabuki_Saya_diffuse.dds"
+		texture_specular = "Yamabuki_Saya_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Yamabuki_Saya_entity"
+	pdxmesh = "Yamabuki_Saya_mesh"
+}
+
+pdxmesh = {
+	name = "Ichigaya_Arisa_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Ichigaya_Arisa_diffuse.dds"
+		texture_specular = "Ichigaya_Arisa_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Ichigaya_Arisa_entity"
+	pdxmesh = "Ichigaya_Arisa_mesh"
+}
+
+pdxmesh = {
+	name = "Mitake_Ran_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Mitake_Ran_diffuse.dds"
+		texture_specular = "Mitake_Ran_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Mitake_Ran_entity"
+	pdxmesh = "Mitake_Ran_mesh"
+}
+
+pdxmesh = {
+	name = "Aoba_Moca_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Aoba_Moca_diffuse.dds"
+		texture_specular = "Aoba_Moca_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Aoba_Moca_entity"
+	pdxmesh = "Aoba_Moca_mesh"
+}
+
+pdxmesh = {
+	name = "Uehara_Himari_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Uehara_Himari_diffuse.dds"
+		texture_specular = "Uehara_Himari_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Uehara_Himari_entity"
+	pdxmesh = "Uehara_Himari_mesh"
+}
+
+pdxmesh = {
+	name = "Udagawa_Tomoe_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Udagawa_Tomoe_diffuse.dds"
+		texture_specular = "Udagawa_Tomoe_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Udagawa_Tomoe_entity"
+	pdxmesh = "Udagawa_Tomoe_mesh"
+}
+
+pdxmesh = {
+	name = "Hazawa_Tsugumi_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Hazawa_Tsugumi_diffuse.dds"
+		texture_specular = "Hazawa_Tsugumi_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Hazawa_Tsugumi_entity"
+	pdxmesh = "Hazawa_Tsugumi_mesh"
+}
+
+pdxmesh = {
+	name = "Maruyama_Aya_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Maruyama_Aya_diffuse.dds"
+		texture_specular = "Maruyama_Aya_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Maruyama_Aya_entity"
+	pdxmesh = "Maruyama_Aya_mesh"
+}
+
+pdxmesh = {
+	name = "Hikawa_Hina_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Hikawa_Hina_diffuse.dds"
+		texture_specular = "Hikawa_Hina_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Hikawa_Hina_entity"
+	pdxmesh = "Hikawa_Hina_mesh"
+}
+
+pdxmesh = {
+	name = "Shirasagi_Chisato_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Shirasagi_Chisato_diffuse.dds"
+		texture_specular = "Shirasagi_Chisato_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Shirasagi_Chisato_entity"
+	pdxmesh = "Shirasagi_Chisato_mesh"
+}
+
+pdxmesh = {
+	name = "Yamato_Maya_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Yamato_Maya_diffuse.dds"
+		texture_specular = "Yamato_Maya_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Yamato_Maya_entity"
+	pdxmesh = "Yamato_Maya_mesh"
+}
+
+
+pdxmesh = {
+	name = "Wakamiya_Eve_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Wakamiya_Eve_diffuse.dds"
+		texture_specular = "Wakamiya_Eve_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Wakamiya_Eve_entity"
+	pdxmesh = "Wakamiya_Eve_mesh"
+}
+
+
+pdxmesh = {
+	name = "Minato_Yukina_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Minato_Yukina_diffuse.dds"
+		texture_specular = "Minato_Yukina_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Minato_Yukina_entity"
+	pdxmesh = "Minato_Yukina_mesh"
+}
+
+
+pdxmesh = {
+	name = "Hikawa_Sayo_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Hikawa_Sayo_diffuse.dds"
+		texture_specular = "Hikawa_Sayo_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Hikawa_Sayo_entity"
+	pdxmesh = "Hikawa_Sayo_mesh"
+}
+
+pdxmesh = {
+	name = "Imai_Lisa_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Imai_Lisa_diffuse.dds"
+		texture_specular = "Imai_Lisa_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Imai_Lisa_entity"
+	pdxmesh = "Imai_Lisa_mesh"
+}
+
+pdxmesh = {
+	name = "Udagawa_Ako_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Udagawa_Ako_diffuse.dds"
+		texture_specular = "Udagawa_Ako_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Udagawa_Ako_entity"
+	pdxmesh = "Udagawa_Ako_mesh"
+}
+
+pdxmesh = {
+	name = "Shirokane_Rinko_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Shirokane_Rinko_diffuse.dds"
+		texture_specular = "Shirokane_Rinko_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Shirokane_Rinko_entity"
+	pdxmesh = "Shirokane_Rinko_mesh"
+}
+
+pdxmesh = {
+	name = "Tsurumaki_Kokoro_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Tsurumaki_Kokoro_diffuse.dds"
+		texture_specular = "Tsurumaki_Kokoro_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Tsurumaki_Kokoro_entity"
+	pdxmesh = "Tsurumaki_Kokoro_mesh"
+}
+
+pdxmesh = {
+	name = "Seta_Kaoru_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Seta_Kaoru_diffuse.dds"
+		texture_specular = "Seta_Kaoru_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Seta_Kaoru_entity"
+	pdxmesh = "Seta_Kaoru_mesh"
+}
+
+pdxmesh = {
+	name = "Kitazawa_Hagumi_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Kitazawa_Hagumi_diffuse.dds"
+		texture_specular = "Kitazawa_Hagumi_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Kitazawa_Hagumi_entity"
+	pdxmesh = "Kitazawa_Hagumi_mesh"
+}
+
+pdxmesh = {
+	name = "Matsubara_Kanon_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Matsubara_Kanon_diffuse.dds"
+		texture_specular = "Matsubara_Kanon_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Matsubara_Kanon_entity"
+	pdxmesh = "Matsubara_Kanon_mesh"
+}
+
+pdxmesh = {
+	name = "Michelle_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Michelle_diffuse.dds"
+		texture_specular = "Michelle_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Michelle_entity"
+	pdxmesh = "Michelle_mesh"
+}
+
+pdxmesh = {
+	name = "Kurata_Mashiro_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Kurata_Mashiro_diffuse.dds"
+		texture_specular = "Kurata_Mashiro_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Kurata_Mashiro_entity"
+	pdxmesh = "Kurata_Mashiro_mesh"
+}
+
+pdxmesh = {
+	name = "Kirigaya_Toko_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Kirigaya_Toko_diffuse.dds"
+		texture_specular = "Kirigaya_Toko_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Kirigaya_Toko_entity"
+	pdxmesh = "Kirigaya_Toko_mesh"
+}
+
+pdxmesh = {
+	name = "Hiromachi_Nanami_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Hiromachi_Nanami_diffuse.dds"
+		texture_specular = "Hiromachi_Nanami_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Hiromachi_Nanami_entity"
+	pdxmesh = "Hiromachi_Nanami_mesh"
+}
+
+pdxmesh = {
+	name = "Futaba_Tsukushi_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Futaba_Tsukushi_diffuse.dds"
+		texture_specular = "Futaba_Tsukushi_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Futaba_Tsukushi_entity"
+	pdxmesh = "Futaba_Tsukushi_mesh"
+}
+
+pdxmesh = {
+	name = "Yashio_Rui_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Yashio_Rui_diffuse.dds"
+		texture_specular = "Yashio_Rui_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Yashio_Rui_entity"
+	pdxmesh = "Yashio_Rui_mesh"
+}
+
+pdxmesh = {
+	name = "Wakana_Rei_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Wakana_Rei_diffuse.dds"
+		texture_specular = "Wakana_Rei_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Wakana_Rei_entity"
+	pdxmesh = "Wakana_Rei_mesh"
+}
+
+pdxmesh = {
+	name = "Asahi_Rokka_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Asahi_Rokka_diffuse.dds"
+		texture_specular = "Asahi_Rokka_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Asahi_Rokka_entity"
+	pdxmesh = "Asahi_Rokka_mesh"
+}
+
+pdxmesh = {
+	name = "Sato_Masuki_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Sato_Masuki_diffuse.dds"
+		texture_specular = "Sato_Masuki_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Sato_Masuki_entity"
+	pdxmesh = "Sato_Masuki_mesh"
+}
+
+pdxmesh = {
+	name = "Nyubara_Reona_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Nyubara_Reona_diffuse.dds"
+		texture_specular = "Nyubara_Reona_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Nyubara_Reona_entity"
+	pdxmesh = "Nyubara_Reona_mesh"
+}
+
+pdxmesh = {
+	name = "Tamade_Chiyu_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Tamade_Chiyu_diffuse.dds"
+		texture_specular = "Tamade_Chiyu_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Tamade_Chiyu_entity"
+	pdxmesh = "Tamade_Chiyu_mesh"
+}
+
+pdxmesh = {
+	name = "Nakamachi_Arale_mesh"
+	file = "Two_dimensional.mesh"
+	scale = 1.5
+	meshsettings = {
+		name = "prophet_shieldShape"
+		index = 0
+		texture_diffuse = "Nakamachi_Arale_diffuse.dds"
+		texture_specular = "Nakamachi_Arale_diffuse.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/hmportrait.shader"
+	}
+}
+entity = {
+	name = "Nakamachi_Arale_entity"
+	pdxmesh = "Nakamachi_Arale_mesh"
+}
+
+

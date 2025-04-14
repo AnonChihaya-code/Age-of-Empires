@@ -1,0 +1,75 @@
+﻿l_simp_chinese:
+
+ #####归义军本地#####
+
+ guiyi_army_events.1.t: "光复河西" 
+ guiyi_army_events.1.d: "吐蕃内乱之际，张议潮振臂一呼，散尽家财，招募义士在沙州城发动起义，号召城中百姓加入义军，拿起武器赶跑吐蕃军队。一支人员构成复杂的起义军迅速组建起来，其中有当地名门望族、民间豪杰义士，甚至连吐蕃最信任的洪辩禅师也带着僧兵加入，吐蕃军猝不及防，镇将连夜逃出沙州城。经过几年的浴血奋战，河西光复。"
+ guiyi_army_events.1.f: "河西沦落百余年，路阻萧关雁信稀。\n赖得将军开旧路，一振雄名天下知。"
+ guiyi_army_events.1.a: "巩固胜利成果!"
+
+ je_construction_hexi_corridor: "河西走廊的建设"
+ je_construction_hexi_corridor_reason: "河西走廊当前的经济主要是农牧业，但这些地区雨量不足，因此我们必须兴修水利，通过人工灌溉来促进农业的发展，带动地区的经济发展。河西走廊的繁荣，决不仅是依靠农牧业的微薄收获所支持的，还得靠贸易。同时，军队的建设也不能落下，吐蕃军只是暂时撤退，他们时刻威胁着河西走廊的安全，我们仍面临严峻的考验。"
+ je_construction_hexi_corridor_var_tt: "已经完成了$je_construction_hexi_corridor$[concept_journal_entry]"
+ je_construction_hexi_corridor_goal: "已修建#bold 水利设施#!"
+ je_construction_hexi_corridor_01_button: "修建水利设施"
+ je_construction_hexi_corridor_01_button_desc: "修建水利设施会损耗部分行政力和建造力。"
+ je_construction_hexi_corridor_02_button: "停止修建水利设施"
+ je_construction_hexi_corridor_02_button_desc: "如果修建水利设施的成本成为不可接受的负担，可以停止修建，进度不会因此消失。"
+
+ guiyi_army_events.2.t: "长久的和平"
+ guiyi_army_events.2.d: "大规模的水利开发让河西走廊的农业得到了更好的发展，农田丰收，百姓安居乐业。强大的军队保证了商路的安全，商旅络绎不绝，贸易十分繁盛。"
+ guiyi_army_events.2.f: "河西走廊的繁荣证明了我们的治理能力，军队的强大也让四方敬畏。然而，面对这乱世，我们是否应该满足于现状，继续守护这片和平的土地？还是高举光复大唐的旗帜，重现昔日的辉煌？"
+ guiyi_army_events.2.a: "维持和平，守护河西走廊的繁荣。"
+ guiyi_army_events.2.b: "高举光复大唐的旗帜，重现昔日的辉煌！"
+ guiyi_army_events_2_a_tt: "我们已经在这片土地上建立了稳固的统治，河西走廊的繁荣是我们努力的成果。继续维持和平，发展经济，巩固军队，才是我们未来的方向。光复大唐的梦想固然美好，但那是一条充满未知与危险的道路。我们应该珍惜眼前的和平，守护这片土地的未来。"
+ guiyi_army_events_2_b_tt: "归义军作为大唐的继承者，有责任也有能力重现昔日的辉煌。河西走廊的繁荣为我们提供了坚实的基础，现在是时候迈出更大的步伐了。让我们高举光复的旗帜，集结军队，向中原进发，重建一个统一而强大的帝国！"
+
+ je_restore_great_tang: "新的征程"
+ je_restore_great_tang_reason: "高举光复的旗帜，归义军的军队开始向中原进发。未来的道路充满挑战，但无论如何，我们已经踏上了这条光荣而艰险的道路。"
+ je_restore_great_tang_tt: "成立了国家#v $DTDG$#!"
+
+ guiyi_army_events.3.t: "大唐的未来"
+ guiyi_army_events.3.d: "关中百姓牵牛担酒沿路迎接[SCOPE.sCharacter('tang_ruler_scope').GetFullName]，路上有耄耋老人见到归义军，惊喜万状，流着眼泪感叹：“不图今日复见官军。”"
+ guiyi_army_events.3.f: "空荡的含元殿内，蛛网缠绕着鎏金藻井，一只青铜香炉上刻着...\n\n长安克复，该拥立谁为天子呢..."
+ guiyi_army_events.3.a: "[SCOPE.sCharacter('tang_ruler_scope').GetFullName]众望所归！"
+ guiyi_army_events.3.b: "李克用之子，[SCOPE.sCharacter('DTDG_Li_Cunxu_scope').GetFullName]可堪大任。"
+ guiyi_army_events.3.c: "流亡在外的先帝嫡子[SCOPE.sCharacter('DTDG_Li_Xingyun_scope').GetFullName]可堪大任。"
+ guiyi_army_events_3_tt: "#v $DTDG$#!的[concept_capital_state]迁移至#v 西安#!"
+ 
+ je_great_tang: "重铸大唐"
+ je_great_tang_reason: "荡荡中原，莫御八牛。\n泅水不涤，有血无头。\n一后二主尽升遐，四海茫茫总一家。\n不但我生还杀我，回头还有李儿花。"
+ je_great_tang_goal: "#bold 进度条#!到达#variable 100%#!"
+
+ je_great_tang_01: "重铸大唐：统一四海"
+ je_great_tang_01_reason: "统一的意义远远不止恢复疆域，更在于确保社会的稳定与民众的安居乐业。过去的分裂与动荡，给百姓带来了深重的苦难。统一四海，不仅是为了大唐的复兴，更是为了重建一个和平的家园，为每一个百姓带来安定与繁荣。"
+
+ je_great_tang_02: "重铸大唐：再创盛世"
+ je_great_tang_02_reason: "大唐的复兴不仅仅依赖于战争的胜利与领土的扩张，更重要的是确保国家在文化、经济、科技上的全面繁荣。只有在这些领域建立起强大的基础，我们才能真正实现大唐的复兴，将过去的荣耀与未来的希望结合，创造出一个全新的盛世。"
+
+ je_great_tang_03: "重铸大唐：恢复均田制"
+ je_great_tang_03_reason: "土地的公平分配能提高农业生产效率，加强国家的社会稳定。均田制有效地解决贫富差距和土地集中带来的社会不平等问题，农业生产的复兴让我们的粮食供应更加充足，稳固社会秩序，减少动乱的根源。"
+
+ je_great_tang_04: "重铸大唐：恢复府兵制"
+ je_great_tang_04_reason: "士兵不仅是战争的力量，也是国家治理的基石。恢复府兵制更多的是要通过这种制度稳定社会，确保地方力量与中央的紧密联系。这一制度必将使得我们的军队更加坚韧，能够应对未来的任何挑战。"
+
+ je_great_tang_05: "重铸大唐：官僚体制改革"
+ je_great_tang_05_reason: "国家的强盛不仅依赖于军事和经济的力量，更在于治理的高效。腐败的官僚体系是导致许多强大帝国衰落的主要原因之一，我们要通过改革，杜绝腐败，提升行政效率，确保国家能在每个领域都得到良好的治理。"
+
+ guiyi_army_events.4.t: "盛世再临"
+ guiyi_army_events.4.d: "历经战火与动荡，大唐终于再次屹立于世界之巅。曾经分裂的土地重归统一，百姓迎来了安定与繁荣。恢弘的都城再现往日辉煌，官道上商旅不绝，田野间五谷丰登。大唐的荣光不仅属于今日，更照耀未来。"
+ guiyi_army_events.4.f: "千年之后，人们将如何评价今日的我们？是奋起崛起、再铸辉煌，还是止步不前、任由历史重蹈覆辙？如今，我们已经迈出了最关键的一步，而未来的盛世，将由我们亲手书写。"
+ guiyi_army_events.4.a: "大唐荣光，万世不朽！"
+
+ guiyi_army_events_1_modifier: "同仇敌忾"
+ je_construction_hexi_corridor_modifier: "建设河西走廊"
+ je_construction_hexi_corridor_button_modifier: "修建水利设施"
+ guiyi_army_events_2_modifier: "河西的繁荣"
+ je_restore_great_tang_modifier: "光复之志"
+ je_great_tang_modifier: "光复之志"
+ je_great_tang_01_modifier: "天命所归"
+ je_great_tang_0201_modifier: "再创盛世"
+ je_great_tang_0202_modifier: "引领时代"
+ je_great_tang_03_modifier: "实行均田制"
+ je_great_tang_04_modifier: "实行府兵制"
+ je_great_tang_05_modifier: "实行科举制"
+ guiyi_army_events_4_modifier: "盛世再临"

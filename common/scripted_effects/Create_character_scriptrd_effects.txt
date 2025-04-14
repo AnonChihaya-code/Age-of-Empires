@@ -1,0 +1,629 @@
+﻿#####新世界角色#####
+CNBY_create_character_scriptrd_effects = { #北洋角色
+	create_character = {
+		template = CNBY_Yuan_Shikai
+	}
+	create_character = {
+		template = CNBY_Yuan_Keding
+	}
+	create_character = {
+		template = CNBY_Duan_Qirui
+	}
+	create_character = {
+		template = CNBY_Li_Yuanhong
+	}
+	create_character = {
+		template = CNBY_Feng_Guozhang
+	}
+	create_character = {
+		template = CNBY_Xu_Shicang
+	}
+	create_character = {
+		template = CNBY_Gu_Weijun
+	}
+}
+CNNR_create_character_scriptrd_effects = { #革命军角色
+	create_character = {
+		template = CNNR_Sun_Yat_Sen
+	}
+	create_character = {
+		template = CNNR_Huang_Xing
+	}
+	create_character = {
+		template = CNNR_Ye_Ting
+	}
+	create_character = {
+		template = CNNR_Cai_Yuanpei
+	}
+	create_character = {
+		template = CNNR_Chen_Jiongming
+	}
+}
+CNYN_create_character_scriptrd_effects = { #滇系角色
+	create_character = {
+		template = CNYN_Long_Yun
+	}
+}
+CNGX_create_character_scriptrd_effects = { #新桂系角色
+	create_character = {
+		template = CNGX_Li_Zongren
+	}
+}
+CNYN_create_character_scriptrd_effects = { #滇系角色
+	create_character = {
+		template = CNYN_Long_Yun
+	}
+}
+DQDG_create_character_scriptrd_effects = { #大秦角色
+    create_character = {
+		template = DQDG_Ying_Zheng
+	}
+    create_character = {
+		template = DQDG_Ying_Fusu
+	}
+}
+DHDG_create_character_scriptrd_effects = { #大汉角色
+	create_character = {
+		template = DHDG_Liu_Bei
+	}
+	create_character = {
+		template = DHDG_Liu_Shan
+	}
+	create_character = {
+		template = DHDG_Zhuge_Liang
+	}
+	create_character = {
+		template = DHDG_Guan_Yu
+	}
+	create_character = {
+		template = DHDG_Zhang_Fei
+	}
+	create_character = {
+		template = DHDG_Zhao_Yun
+	}
+	create_character = {
+		template = DHDG_Huang_Zhong
+	}
+	create_character = {
+		template = DHDG_Ma_Chao
+	}
+}
+CNCW_create_character_scriptrd_effects = { #曹魏角色
+	create_character = {
+		template = CNCW_Cao_Cao
+    }
+	create_character = {
+		template = CNCW_Cao_Pi
+    }
+	create_character = {
+		template = CNCW_Cao_Ren 
+    }
+	create_character = {
+		template = CNCW_Xiahou_Yuan
+    }
+	create_character = {
+		template = CNCW_Xiahou_Dun
+    }
+	create_character = {
+		template = CNCW_Zhang_Liao
+    }
+	create_character = {
+		template = CNCW_Xi_Zhicai
+    }
+	create_character = {
+		template = CNCW_Xun_Yu
+    }
+	create_character = {
+		template = CNCW_Guo_Jia
+    }
+	create_character = {
+	    template = CNCW_Zao_Zhi
+	}
+	create_character = {
+		template = CNCW_Hua_Tuo
+    }
+	create_character = {
+		template = CNCW_Kong_Rong
+    }
+}
+MING_create_character_scriptrd_effects = { #大明角色
+	create_character = {
+		template = MING_Zhu_Di
+    }
+	create_character = {
+		template = MING_Zhu_Gaochi
+    }
+}
+CNTW_create_character_scriptrd_effects = { #台湾角色
+	create_character = {
+		template = CNTW_Jiang_Wanan
+	}
+}
+TPTG_create_character_scriptrd_effects = { #太平天国角色
+	create_character = {
+		template = TPTG_Hong_Xiuquan
+    }
+    create_character = {
+		template = TPTG_Hong_Tianguifu
+    }
+    create_character = {
+        template = TPTG_Yang_Xiuqing
+	}
+	create_character = {
+	    template = TPTG_Xiao_Chaogui
+	}
+	create_character = {
+	    template = TPTG_Feng_Yunshan
+	}
+	#create_character = {
+	#    template = TPTG_Hong_Rengan
+    #}
+    create_character = {
+	    template = TPTG_Wei_Changhui
+    }
+    create_character = {
+        template = TPTG_Shi_Dakai
+	}
+    create_character = {
+	    template = TPTG_Li_Xiucheng
+    }
+    create_character = {
+        template = TPTG_Chen_Yucheng
+	}
+	create_character = {
+	    template = TPTG_Li_Shixian 
+    }
+    create_character = {
+        template = TPTG_Qin_Rigang
+	}
+    create_character = {
+	    template = TPTG_Chen_Chengrong
+    }
+}
+
+ELDA_create_character_scriptrd_effects = { #艾尔迪亚角色
+	create_character = {
+		template = ELDA_Eren_Jaeger
+	}
+	create_character = {
+		template = ELDA_Mikasa_Ackerman
+	}
+	create_character = {
+		template = ELDA_Levi_Ackerman
+	}
+	create_character = {
+		template = ELDA_Erwin_Smith
+	}
+	create_character = {
+		template = ELDA_Hange_Zoe
+	}
+	create_character = {
+		template = ELDA_Grisha_Jaeger
+	}
+	create_character = {
+		template = ELDA_Armin_Arlert
+	}
+	create_character = {
+		template = ELDA_Christa_Lenz
+	}
+	create_character = {
+		template = ELDA_Jean_Kirstein
+	}
+	create_character = {
+		template = ELDA_Conny_Springe
+	}
+	create_character = {
+		template = ELDA_Sasha_Braus
+	}
+	create_character = {
+		template = ELDA_Floch_orster
+	}
+	create_character = {
+		template = ELDA_Marlowe_Freudenberg
+	}
+	create_character = {
+		template = ELDA_Hitch
+	}
+	create_character = {
+		template = ELDA_Rod_Reiss
+	}
+	create_character = {
+		template = ELDA_Frieda_Reiss
+	}
+	create_character = {
+		template = ELDA_Darius_Zackley
+	}
+	create_character = {
+		template = ELDA_Dot_Pixis
+	}
+	create_character = {
+		template = ELDA_Priest_Nick
+	}
+}
+MRLY_create_character_scriptrd_effects = { #马莱帝国角色
+	create_character = {
+		template = MRLY_Willy_Tybur
+	}
+	create_character = {
+		template = MRLY_Lara_Tybur
+	}
+	create_character = {
+		template = MRLY_Zeke_Jaeger
+	}
+	create_character = {
+		template = MRLY_Yelena
+	}
+	create_character = {
+		template = MRLY_Annie_Leonhart
+	}
+	create_character = {
+		template = MRLY_Pieck_Finger
+	}
+	create_character = {
+		template = MRLY_Bertholdt_Hoover
+	}
+	create_character = {
+		template = MRLY_Reiner_Braun
+	}
+	create_character = {
+		template = MRLY_Polk_Galliard
+	}
+	create_character = {
+		template = MRLY_Falco_Grice
+	}
+	create_character = {
+		template = MRLY_Gabi_Braun
+	}
+	create_character = {
+		template = MRLY_Calvi
+	}
+	create_character = {
+		template = MRLY_Theo_Magath
+	}
+	create_character = {
+		template = MRLY_Koslow
+	}
+}
+OHDS_create_character_scriptrd_effects = { #医院骑士团角色
+	create_character = {
+		template = OHDS_Jean_Parisot_de_la_Valette
+	}
+	create_character = {
+		template = OHDS_Morgan_Black
+	}
+	create_character = {
+		template = OHDS_Elisabet_Lizzie
+	}
+	create_character = {
+		template = OHDS_Alain
+	}
+	create_character = {
+		template = 	OHDS_Falcon_Sahin
+	}
+}
+HASA_create_character_scriptrd_effects = { #豪萨王国角色
+	create_character = {
+		template = HASA_Aminah_Zazzau
+	}
+}
+SHAI_create_character_scriptrd_effects = { #桑海帝国角色
+	create_character = {
+		template = SHAI_Muhammad_Dur
+	}
+}
+CNXN_create_character_scriptrd_effects = { #匈奴角色
+    create_character = {
+		template = CNXN_Liu_Yuan
+	}
+	create_character = {
+		template = CNXN_Liu_Cong
+	}
+}
+CNXY_create_character_scriptrd_effects = { #西域都护府角色
+	create_character = {
+		template = CNXY_Zhang_Qian
+	}
+}
+CNGY_create_character_scriptrd_effects = { #归义军角色
+	create_character = {
+		template = CNGY_Zhang_Yichao
+	}
+	create_character = {
+		template = CNGY_Zhang_Huaishen
+	}
+	create_character = {
+		template = CNGY_Zhang_Huaiding
+	}
+	create_character = {
+		template = CNGY_Suo_Xun
+	}
+}
+CNTB_create_character_scriptrd_effects = { #吐蕃角色
+	create_character = {
+		template = CNTB_Songzain_Gambo
+	}
+}
+ETH_create_character_scriptrd_effects = { #埃塞俄比亚角色
+	create_character = {
+		template = ETH_Tewodros_Solomon
+	}
+}
+CNQY_create_character_scriptrd_effects = { #青阳角色
+	create_character = {
+		template = CNQY_Lv_Guichen
+	}
+}
+SERZ_create_character_scriptrd_effects = { #塞尔柱角色
+	create_character = {
+		template = SERZ_Toghril_Beg
+	}
+}
+KUSH_create_character_scriptrd_effects = { #贵霜角色
+	create_character = {
+		template = KUSH_Kujula_Kadphises
+	}
+}
+DELI_create_character_scriptrd_effects = { #德里角色
+	create_character = {
+		template = DELI_Qutb_al_Din_Aibak
+	}
+}
+PART_create_character_scriptrd_effects = { #安息角色
+	create_character = {
+		template = PART_Arsaces_Parni
+	}
+}
+SASS_create_character_scriptrd_effects = { #萨珊角色
+	create_character = {
+		template = SASS_Ardashir_Papak_Sasan
+	}
+}
+MOSC_create_character_scriptrd_effects = { #莫斯科角色
+    create_character = {
+		template = MOSC_Vasiliy_II_Temny_Vasilyevich
+	}
+	create_character = {
+		template = MOSC_Ivan_III_Veliky_Rurikovich
+	}
+}
+JEAN_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = JEAN_Jeanne_dArc
+	}
+}
+VFRA_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = VFRA_Antonin_Artaud
+	}
+}
+NAPO_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = NAPO_Napoleon_Bonaparte
+	}
+	create_character = {
+		template = NAPO_Francois_Bonaparte
+	}
+}
+ENG_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = ENG_Oliver_Cromwell
+	}
+	create_character = {
+		template = ENG_Richard_Cromwell
+	}
+}
+ICL_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = ICL_Thors_Snorresson
+	}
+}
+VLAN_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = VLAN_Thorfinn_Karlsefni
+	}
+}
+FALC_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = FALC_Amelia_Black
+	}
+	create_character = {
+		template = FALC_Ka_Nien
+	}
+	create_character = {
+		template = FALC_Cooper_Major
+	}
+}
+TCOS_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = TCOS_Pierre_Beaumont
+	}
+}
+SIOU_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = SUOI_Gall
+	}
+}
+IROQ_create_character_scriptrd_effects = { #角色
+   create_character = {
+		template = IROQ_Hiawatha
+	}
+}
+AZTE_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = AZTE_Cuauhtemoc
+	}
+}
+INCA_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = INCA_Huayan_Capac
+	}
+}
+PATA_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = PATA_Orelie_Antoine_de_Tounens
+	}
+}
+APAC_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = APAC_Geronimo
+	}
+}
+AMZ_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = AMZ_Ed_Stafford
+	}
+}
+MYGO_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = MYGO_Takamatsu_Tomori
+	}
+	create_character = {
+		template = MYGO_Chihaya_Anon
+	}
+	create_character = {
+		template = MYGO_Sumita_Mana
+	}
+	create_character = {
+		template = MYGO_Kaname_Rana
+	}
+    create_character = {
+		template = MYGO_Nagasaki_Soyo
+	}
+    create_character = {
+		template = MYGO_Shiina_Taki
+	}
+    create_character = {
+		template = MYGO_Sakiko_Togawa
+	}
+    create_character = {
+		template = MYGO_Misumi_Uika
+	}
+    create_character = {
+		template = MYGO_Wakaba_Mutsumi
+	}
+	create_character = {
+		template = MYGO_Yahata_Umiri
+	}
+	create_character = {
+		template = MYGO_Yutenji_Nyamu
+	}
+}
+CAS_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = CAS_Isabel_la_Catholic
+	}
+	create_character = {
+		template = CAS_Christopher_Columbus
+	}
+}
+ARAG_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = ARAG_Fernando_el_Catholic
+	}
+}
+RYUK_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = RYUK_Sho_Tai
+	}
+}
+SGPR_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = SGPR_Lee_Kuan_Yew
+	}
+	create_character = {
+		template = SGPR_Lee_Hsien_Loong
+	}
+}
+NAZI_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = NAZI_Adolf_Hitler
+	}
+}
+AYUB_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = AYUB_Salah_Ayyub
+	}
+}
+SONG_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = SONG_Song_Rui
+	}
+}
+CIRC_create_character_scriptrd_effects = { #角色
+    create_character = {
+		template = CIRC_Ismail_Berzeg
+	}
+	create_character = {
+		template = CIRC_Hawduqo_Mansur
+	}
+}
+CHEC_create_character_scriptrd_effects = { #角色
+	create_character = {
+		template = CHEC_Shamil_Murid
+	}
+	create_character = {
+		template = CHEC_Hadji_Murad
+	}
+}
+MGGH_create_character_scriptrd_effects = { #金帐角色
+    create_character = {
+		template = MGGH_Kuchuk_Muhammad
+	}
+	create_character = {
+		template = MGGH_Ahmad_Genghisid
+	}
+}
+KAZA_create_character_scriptrd_effects = { #喀山角色
+	create_character = {
+		template = MGGH_Ulugh_Muhammad_Genghisid
+	}
+	create_character = {
+		template = MGGH_Mahmudak_Genghisid
+	}
+}
+CRIM_create_character_scriptrd_effects = { #克里米亚角色
+	create_character = {
+		template = MGGH_Haji_Giray
+	}
+	create_character = {
+		template = MGGH_Nur_Devlet_Giray
+	}
+}
+NOGA_create_character_scriptrd_effects = { #诺盖角色
+	create_character = {
+		template = MGGH_Vakkas_Ediguid
+	}
+}
+SIB_create_character_scriptrd_effects = { #西伯利亚角色
+	create_character = {
+		template = MGGH_Ibak_Shaybanid
+	}
+}
+KAZ_create_character_scriptrd_effects = {
+	create_character = {
+		template = MGGH_Kerey_Genghisid
+	}
+	create_character = {
+		template = MGGH_Burunduq_Genghisid
+	}
+}
+NOVG_create_character_scriptrd_effects = {
+	create_character = {
+		template = NOVG_Evfimy_II
+	}
+}
+LIVO_create_character_scriptrd_effects = {
+	create_character = {
+		template = LIVO_Heinrich_Vincke
+	}
+}
+TEUT_create_character_scriptrd_effects = {
+	create_character = {
+		template = TEUT_Konrad_von_Erlichshausen
+	}
+}
+LIT_create_character_scriptrd_effects = {
+	create_character = {
+		template = LIT_Kazimierz_Jagiellon
+	}
+}

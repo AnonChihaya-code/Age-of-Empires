@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ #####AI战略本地#####
+ ai_strategy_contend_mandate_of_heaven: "争夺天命"
+ ai_strategy_contend_mandate_of_heaven_desc: "[COUNTRY.GetName]试图通过宣称天命来巩固其权威。"
+ ai_strategy_chinese_warlord_era: "北定中原"
+ ai_strategy_chinese_warlord_era_desc: "[COUNTRY.GetName]希望将中国统一在他们的旗帜下。"

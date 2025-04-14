@@ -1,0 +1,74 @@
+﻿l_english:
+
+ #####归义军本地#####
+
+ guiyi_army_events.1.t: "Restoration of Hexi" 
+ guiyi_army_events.1.d: "During the internal turmoil of the Tibetan , Zhang Yichao rallied the people by raising the call to arms. He exhausted his family fortune to recruit volunteers and launched an uprising in Shazhou City, urging citizens to join the rebel forces and drive out the Tibetan troops with weapons. A diverse rebel force rapidly formed, comprising local aristocratic clans, folk heroes, and even the highly trusted Tibetan Buddhist master Hongbian, who joined with his monk soldiers. Caught off guard, the Tibetan garrison commander fled the city overnight. After years of bloody battles, the Hexi region was finally liberated."
+ guiyi_army_events.1.f: "The Hexi region had fallen for over a century, with the roads blocked and the wild geese signals sparse.\nThanks to the general who reopened the old roads, his heroic name spread throughout the world."
+ guiyi_army_events.1.a: "Consolidate the victory!"
+
+ je_construction_hexi_corridor: "The Construction of the Hexi Corridor"
+ je_construction_hexi_corridor_reason: "The current economy of the Hexi Corridor is primarily based on agriculture and animal husbandry. However, these areas suffer from insufficient rainfall, so we must invest in water conservancy projects and promote artificial irrigation to enhance agricultural development and drive regional economic growth. The prosperity of the Hexi Corridor will not rely solely on the meager harvests of agriculture and animal husbandry; it must also be supported by trade. At the same time, the construction of the military cannot be neglected. The Tibetan forces may have temporarily retreated, but they continue to pose a threat to the security of the Hexi Corridor. We still face severe challenges in maintaining peace and stability in the region."
+ je_construction_hexi_corridor_var_tt:  "Has completed the $je_construction_hexi_corridor$ [concept_journal_entry]"
+ je_construction_hexi_corridor_goal: "#bold Water Conservancy#! facilities have been built"
+ je_construction_hexi_corridor_01_button: "Construction of Water Conservancy Facilities"
+ je_construction_hexi_corridor_01_button_desc: "The construction of water conservancy facilities will consume part of the [concept_bureaucracy] and [concept_construction]."
+ je_construction_hexi_corridor_02_button: "Stop Water Conservancy Construction"
+ je_construction_hexi_corridor_02_button_desc: "If the cost of constructing water conservancy facilities becomes an unacceptable burden, you may halt the construction. The progress will be preserved and not lost."
+
+ guiyi_army_events.2.t: "Long-lasting Peace"
+ guiyi_army_events.2.d: "The large-scale development of water conservancy has greatly enhanced the agricultural development of the Hexi Corridor. Farmlands are flourishing, and the people live in peace and contentment. A strong military ensures the safety of the trade routes, with merchants and travelers constantly moving, leading to vibrant and prosperous trade."
+ guiyi_army_events.2.f: "The prosperity of the Hexi Corridor stands as a testament to our governance ability, and the strength of our military commands respect from all directions. However, in the face of this chaotic world, should we be content with the current state and continue guarding this peaceful land? Or should we raise the banner of the Restoration of the Tang Dynasty and recreate the glory of the past?"
+ guiyi_army_events.2.a: "Maintain peace and safeguard the prosperity of the Hexi Corridor."
+ guiyi_army_events.2.b: "Raise the banner of the Restoration of the Tang Dynasty and recreate the glory of the past!"
+ guiyi_army_events_2_a_tt: "We have already established a strong rule over this land, and the prosperity of the Hexi Corridor is the result of our efforts. Continuing to maintain peace, develop the economy, and strengthen the military is the direction for our future. The dream of restoring the Tang Dynasty is certainly a beautiful one, but it is a path filled with uncertainties and dangers. We should cherish the peace we have now and protect the future of this land."
+ guiyi_army_events_2_b_tt: "As the rightful heirs of the Great Tang, the Guiyi Army bears both the responsibility and the ability to restore the former glory. The prosperity of the Hexi Corridor provides us with a solid foundation, and now it is time to take bolder steps. Let us raise the banner of restoration, gather our forces, march toward the Central Plains, and rebuild a unified and powerful empire!"
+ 
+ je_restore_great_tang: "A New Journey"
+ je_restore_great_tang_reason: "With the banner of restoration held high, the Guiyi Army begins its march toward the Central Plains. The road ahead is filled with challenges, but no matter what, we have already set foot on this glorious and perilous path. The journey will test our strength, our resolve, and our unity, but with each step forward, we move closer to our goal of rebuilding a powerful and unified empire. The weight of history rests upon our shoulders, and we shall face whatever comes with unwavering determination and courage."
+ je_restore_great_tang_tt: "Has formed the nation of #v $DTDG$#!"
+
+ guiyi_army_events.3.t: "The Future of the Great Tang"
+ guiyi_army_events.3.d: "The people of Guanzhong, leading oxen and carrying wine, lined the road to welcome [SCOPE.sCharacter('tang_ruler_scope').GetFullName]. Along the way, elderly men, some in their nineties, saw the Guiyi Army and were filled with surprise and joy. With tears in their eyes, they exclaimed, "Never did we expect to see the imperial army again today.""
+ guiyi_army_events.3.f: "In the empty Hall of Hanyuan, spider webs clung to the gilded coffered ceiling, and a bronze incense burner was etched with...\n\nChang'an has been restored. Who should be crowned as the emperor?"
+ guiyi_army_events.3.a: "[SCOPE.sCharacter('tang_ruler_scope').GetFullName] is the choice of the people!"
+ guiyi_army_events.3.b: "Li Keyong's son, [SCOPE.sCharacter('DTDG_Li_Cunxu_scope').GetFullName], is capable of shouldering the great responsibility."
+ guiyi_army_events.3.c: "The exiled rightful heir of the late emperor, [SCOPE.sCharacter('DTDG_Li_Xingyun_scope').GetFullName], is capable of shouldering the great responsibility."
+ guiyi_army_events_3_tt: "The [concept_capital_state] of the #v $DTDG$#! has been moved to #v Xi'an#!."
+ 
+ je_great_tang: "Rebuilding the Great Tang"
+ je_great_tang_reason: "Across the vast Central Plains, no one can control the eight oxen.\nThe water cannot be washed away, there is blood but no head.\nThe former emperors have all passed away, and the four seas are lost, but they will eventually become one.\nNot only have I survived, but those who sought to kill me will face a new threat, and behind me stands the flower of Li."
+ je_great_tang_goal: "The #bold Progress Bar#! has reached #variable 100%#!"
+
+ je_great_tang_01: "Unifying the Four Seas"
+ je_great_tang_01_reason: "The significance of unity goes far beyond the recovery of territory. It lies in ensuring social stability and the well-being of the people. The past divisions and turmoil have brought immense suffering to the people. Unifying the four seas is not just for the revival of the Great Tang, but to rebuild a peaceful homeland, bringing stability and prosperity to every citizen."
+
+ je_great_tang_02: "Creating a New Golden Age"
+ je_great_tang_02_reason: "The revival of the Great Tang does not solely depend on victories in war and territorial expansion. It is more important to ensure the comprehensive prosperity of the nation in culture, economy, and technology. Only by building a strong foundation in these areas can we truly realize the revival of the Great Tang, combining past glory with future hopes to create a brand new golden age."
+
+ je_great_tang_03: "Restoring the Equal Land System"
+ je_great_tang_03_reason: "The fair distribution of land can improve agricultural production efficiency and strengthen social stability. The Equal Land System effectively solves the problems of wealth disparity and the social inequality caused by land concentration. The revival of agricultural production ensures a more abundant food supply, stabilizes social order, and reduces the roots of unrest."
+
+ je_great_tang_04: "Restoring the Fubing System"
+ je_great_tang_04_reason: "Soldiers are not only the strength in war but also the cornerstone of national governance. Restoring the Fubing System aims to stabilize society through this system and ensure close ties between local forces and the central government. This system will make our army stronger, capable of facing any future challenges."
+
+ je_great_tang_05: "Bureaucratic Reform"
+ je_great_tang_05_reason: "The strength of the nation relies not only on military and economic power but also on efficient governance. Corrupt bureaucratic systems are one of the main reasons many powerful empires have fallen. We must reform to eliminate corruption, improve administrative efficiency, and ensure that the nation is well-governed in every field."
+
+ guiyi_army_events.4.t: "The Great Tang Returns to Glory"
+ guiyi_army_events.4.d: "After enduring the ravages of war and turmoil, the Great Tang has once again stood at the pinnacle of the world. The once divided lands have been unified, and the people are enjoying stability and prosperity. The grand capital has regained its former glory, with the roads bustling with merchants, and the fields yielding abundant harvests. The glory of the Great Tang belongs not only to the present but also shines on the future."
+ guiyi_army_events.4.f: "A thousand years from now, how will people evaluate us today? Will they see us as rising again to create brilliance, or as those who stagnated and allowed history to repeat itself? Now, we have taken the most crucial step, and the future golden age will be written by our own hands."
+ guiyi_army_events.4.a: "The Glory of the Great Tang, Eternal and Unfading!"
+
+ guiyi_army_events_1_modifier: "Unity Against a Common Enemy"
+ je_construction_hexi_corridor_modifier: "Construction Hexi Corridor"
+ guiyi_army_events_2_modifier: "Prosperity of Hexi"
+ je_restore_great_tang_modifier: "The Will to Restore"
+ je_great_tang_modifier: "The Will to Restore"
+ je_great_tang_01_modifier: "The Mandate of Heaven"
+ je_great_tang_0201_modifier: "Creating a New Golden Age"
+ je_great_tang_0202_modifier: "Leading the Era"
+ je_great_tang_03_modifier: "Implement the Equal Land System"
+ je_great_tang_04_modifier: "Implement the Fubing System"
+ je_great_tang_05_modifier: "Implement the Imperial Examination System"
+ guiyi_army_events_4_modifier: "The Great Tang Returns to Glory"

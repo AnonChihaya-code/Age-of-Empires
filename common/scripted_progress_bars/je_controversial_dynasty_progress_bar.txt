@@ -1,0 +1,177 @@
+﻿je_controversial_dynasty_progress_bar = {
+	name = "je_controversial_dynasty_progress_bar"
+	desc = "je_controversial_dynasty_progress_bar_desc"
+	default_green = yes
+	monthly_progress = {
+
+		#合法性
+		if = {
+			limit = {
+				legitimacy >= 90
+				NOT = {
+					any_civil_war = {
+						civil_war_progress > 0.10
+					}
+		        }
+			}
+			add = {
+				desc = "je_controversial_dynasty_legitimacy_01_tt"
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 75
+				legitimacy < 90
+				NOT = {
+					any_civil_war = {
+						civil_war_progress > 0.10
+					}
+		        }
+			}
+			add = {
+				desc = "je_controversial_dynasty_legitimacy_02_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 50
+				legitimacy < 75
+				NOT = {
+					any_civil_war = {
+						civil_war_progress > 0.10
+					}
+		        }
+			}
+			add = {
+				desc = "je_controversial_dynasty_legitimacy_03_tt"
+				value = -0.5
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy > 25
+				legitimacy < 50
+			}
+			add = {
+				desc = "je_controversial_dynasty_legitimacy_04_tt"
+				value = -1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy <= 25
+			}
+			add = {
+				desc = "je_controversial_dynasty_legitimacy_05_tt"
+				value = -2
+			}
+		}
+
+		#地区效忠
+		if = {
+			limit = {
+				ROOT = {
+					any_scope_state = {
+						OR = {
+							region = sr:region_north_china
+                            region = sr:region_south_china
+                            region = sr:region_manchuria
+                            region = sr:region_central_asia
+                            region = sr:region_himalayas
+						}
+						loyalty >= 0.10
+					}
+				}
+			}
+			subtract = {
+				desc = "je_controversial_dynasty_loyalists_tt"
+				ROOT = {
+					every_scope_state = {
+						limit = {
+							OR = {
+							    region = sr:region_north_china
+                                region = sr:region_south_china
+                                region = sr:region_manchuria
+                                region = sr:region_central_asia
+                                region = sr:region_himalayas
+						    }
+							loyalty >= 0.10
+						}
+						subtract = this.loyalty
+					}
+				}
+			}
+		}
+		#地区动乱
+		if = {
+			limit = {
+				ROOT = {
+					any_scope_state = {
+						OR = {
+							region = sr:region_north_china
+                            region = sr:region_south_china
+                            region = sr:region_manchuria
+                            region = sr:region_central_asia
+                            region = sr:region_himalayas
+						}
+						turmoil >= 0.10
+					}
+				}
+			}
+			add = {
+				desc = "je_controversial_dynasty_radicals_tt"
+				ROOT = {
+					every_scope_state = {
+						limit = {
+							OR = {
+							    region = sr:region_north_china
+                                region = sr:region_south_china
+                                region = sr:region_manchuria
+                                region = sr:region_central_asia
+                                region = sr:region_himalayas
+						    }
+							turmoil >= 0.10
+						}
+						subtract = this.turmoil
+					}
+				}
+			}
+		}
+
+		#税收
+		if = {
+			limit = { ROOT = { tax_level = very_low } }
+			add = {
+				desc = "presidencies_very_low_taxation_tt"
+				add = 1
+			}
+		}
+		else_if = {
+			limit = { ROOT = { tax_level = low } }
+			add = {
+				desc = "presidencies_low_taxation_tt"
+				add = 0.5
+			}
+		}
+		else_if = {
+			limit = { ROOT = { tax_level = high } }
+			add = {
+				desc = "presidencies_high_taxation_tt"
+				add = -1
+			}
+		}
+		else_if = {
+			limit = { ROOT = { tax_level = very_high } }
+			add = {
+				desc = "presidencies_very_high_taxation_tt"
+				add = -2
+			}
+		}
+	}
+	
+	start_value = 50
+	min_value = 0
+	max_value = 500
+}

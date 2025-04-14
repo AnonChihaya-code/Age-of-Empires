@@ -1,0 +1,125 @@
+﻿Code002_headgear = { #帽子
+	usage = game
+	selection_behavior = weighted_random
+	#fallback = no_headgear
+
+    Code002_european_admiral_headgear = { #海军军帽
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = european_admiral_headgear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                Code002_chinese_clothes_trigger = yes 
+                agitator_character_trigger = no
+                scope:character = {
+                    has_role = admiral
+                    age >= define:NCharacters|ADULT_AGE
+                }
+            }
+        }
+    }
+
+    Code002_chinese_imperial_headgear = { #不应该戴满清皇帝帽
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                chinese_imperial_clothes_trigger = yes
+            }
+        }
+    }
+
+    Code002_european_royal_headgear = { #中国#欧洲女性服装#满人维持原样
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = european_royal_headgear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                #NOT = { has_global_variable = Code002_QING_XIHUA_var }
+                Code002_chinese_clothes_trigger = yes
+                monarchy_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    NOT = { culture = cu:manchu }
+                    is_female = yes
+                }
+            }
+        }
+    }
+
+    Code002_arabic_turban = { #中国#不应该有阿拉伯头巾
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1000
+                Code002_chinese_clothes_trigger = yes
+                exists = scope:character
+                scope:character ?= {
+                    is_female = yes
+                }
+            }
+        }
+    }
+
+    Code002_AYUB_Salah_Ayyub = { #萨拉丁#帽子
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                exists = scope:character
+                scope:character ?= {
+                    OR = {
+                        has_template = AYUB_Salah_Ayyub
+                        home_country = {
+                            exists = c:AYUB
+                            c:AYUB ?= this
+                        }
+                        home_country = {
+                            exists = c:PART
+                            c:PART ?= this
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

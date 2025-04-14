@@ -1,0 +1,91 @@
+﻿tatar_offer_circassia_recognition = {
+	is_shown = {
+		exists = c:CIRC
+		has_variable = tatar_circassia_recognition_seeking
+		country_rank >= rank_value:major_power
+		is_subject = no
+		c:CIRC ?= {
+			has_journal_entry = je_tatar_caucasian_war_circassia
+		}
+		NOT = {
+			any_country = {
+				has_variable = tatar_offer_circassia_recognition_var
+			}
+		}
+	}
+	possible = {
+		exists = c:CIRC
+		country_rank >= rank_value:major_power
+		is_subject = no
+		c:CIRC ?= {
+			has_journal_entry = je_tatar_caucasian_war_circassia
+		}
+		custom_tooltip = {
+			text = tatar_offer_circassia_recognition_02_tt
+			NOT = {
+				any_country = {
+					has_variable = tatar_offer_circassia_recognition_var
+				}
+			}
+		}
+		has_interest_marker_in_region = region_caucasus
+		can_create_diplomatic_pact = { target = c:CIRC type = military_assistance }
+	}
+	when_taken = {
+		custom_tooltip = {
+			text = tatar_offer_circassia_recognition_01_tt
+		}
+		c:MGGH ?= {
+			change_relations = {
+				country = root
+				value = -30
+			}
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_negative
+				target = root
+			}
+		}
+		set_variable = tatar_offer_circassia_recognition_var
+		create_diplomatic_pact = {
+			country = c:CIRC
+			type = military_assistance
+		}
+		c:CIRC ?= {
+			create_diplomatic_catalyst = {  
+				type = catalyst_event_positive
+				target = root
+			}
+			root.power_bloc = {
+				add_leverage = { target = c:CIRC value = 25 }
+			}
+		}
+		every_country = {
+			limit = {
+				has_variable = tatar_circassia_recognition_seeking
+			}
+			remove_variable = tatar_circassia_recognition_seeking
+		}
+	}  
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				OR = {
+					has_attitude = { who = c:MGGH attitude = antagonistic }
+					has_attitude = { who = c:MGGH attitude = belligerent }
+					has_attitude = { who = c:MGGH attitude = domineering }
+				}
+			}
+			add = 30
+		}
+		modifier = {
+			trigger = {
+				OR = {
+					has_attitude = { who = c:MGGH attitude = wary }
+					has_attitude = { who = c:MGGH attitude = cautious }
+				}
+			}
+			add = 15
+		}
+	}
+}

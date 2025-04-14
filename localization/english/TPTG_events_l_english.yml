@@ -1,0 +1,148 @@
+﻿l_english:
+
+ #####太平天国本地#####
+
+ je_heaven_on_earth: "Our Heavenly Kingdom"
+ je_heaven_on_earth_reason: "Paradise on earth can only be achieved if the needs of all are met."
+ je_taiping_land_socializationicon: "Taiping Land Socializationicon"
+ je_taiping_land_socializationicon_reason: "China has always been a large country based on agriculture, with the vast majority of the population living in agriculture, and the land issue of peasants is an important issue. How well this problem is resolved has a bearing on the rise and fall of political power, the control of chaos, and the prosperity and decline of the social economy."
+ je_taiping_land_policy: "The Land System of the Heavenly Kingdom"
+ je_taiping_land_policy_reason: "According to the principle of "where the world is in the field, the people in the world plough together", each mu of land is divided into upper, middle, and lower levels according to the annual output, and then the good and bad fields are matched with each other, and the good and bad fields are evenly distributed according to the population. All men and women over the age of 16 are given an equal amount of land each, and those under the age of 15 are given half of the land. At the same time, it also put forward the method of "connecting abundance and famine" and relieving famine with abundance."
+ je_taiping_land_policy_modifier: "The Land System of the Heavenly Kingdom"
+
+ je_taiping_divided: "Divided Taiping"
+ je_taiping_divided_reason: "With the development of the Celestial Revolution, the Eastern King excelled in military and organizational ability, gradually mastering most of the military and political power of the Taiping Heavenly Kingdom, and his arrogant and domineering style expanded his contradictions with the Heavenly King and the kings, and the division of the Heavenly Kingdom was inevitable.\n\nIf the [Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')] of [ROOT.GetCountry.GetName] remains at #bold medium#!（[GetPlayer.MakeScope.ScriptValue('TPG_Divided_stability_low_upper_bound')]）or less for #variable 12#! months, $TPTG$ will break out in civil unrest. Currently this has been true for #variable [ROOT.GetCountry.MakeScope.Var('je_taiping_divided_var').GetValue]#! months."
+ je_taiping_divided_tt: "The [Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')] of [ROOT.GetCountry.GetName] is greater than or equal to #bold high#!（[GetPlayer.MakeScope.ScriptValue('TPG_Divided_stability_high_upper_bound')]）"
+ je_taiping_divided_var_tt: "The [Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')] of [ROOT.GetCountry.GetName] is at #bold medium#!（[GetPlayer.MakeScope.ScriptValue('TPG_Divided_stability_low_upper_bound')]）or lower and has persisted for #variable 12#! months."
+ je_taiping_divided_progress_bar: "Heavenly Kingdom Stability"
+ je_taiping_divided_progress_bar_desc: "$TPTG$[SCOPE.GetRootScope.GetCountry.GetCustom('get_TPG_Divided_mutiny_progress_bengal')]"
+ je_taiping_divided_modifier: "The poison of power"
+
+ concept_je_taiping_divided_stability: "Heavenly Kingdom Stability"
+ concept_je_taiping_divided_stability_desc: "#title The following conditions #g #b increase#!#! $concept_je_taiping_divided_stability$：#!#indent_newline:3 \n• High [concept_legitimacy]\n• High [concept_ruler][concept_popularity] \n• The [concept_clout] of the [concept_ruler][concept_interest_group]\n• Possess an [Concept('concept_state', '$concept_states$')] of [Concept('concept_loyalist','$concept_loyalists$')]\n• #bold Low#! [concept_taxes]\n•[Concept('concept_building_level', '$concept_building_levels$')] agricoles\n•Events and other conditions #!\n\n#title The following conditions #r #b decrease#!#! $concept_je_taiping_divided_stability$：#!#indent_newline:3 \n• Low [concept_legitimacy]\n• The [concept_leader] of the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l] is High [concept_popularity]\n• The [concept_clout] of the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l] [concept_interest_group]\n• Possess an [Concept('concept_state', '$concept_states$')] of [concept_turmoil]\n• #bold High#! [concept_taxes]\n• [Concept('concept_building_level', '$concept_building_levels$')] militaires\n• Events and other conditions #!"
+ concept_je_taiping_divided_stability_short: "Stability"
+ concept_je_taiping_divided_stability_short_desc: ""
+
+ #合法性
+ je_taiping_divided_legitimacy_01_tt: "[concept_legitimacy] is greater than or equal to 50"
+ je_taiping_divided_legitimacy_02_tt: "[concept_legitimacy] is greater than or equal to 75"
+ je_taiping_divided_legitimacy_03_tt: "[concept_legitimacy] is greater than or equal to 90"
+ je_taiping_divided_legitimacy_04_tt: "[concept_legitimacy] is less than 50"
+ je_taiping_divided_legitimacy_05_tt: "[concept_legitimacy] is greater than or equal to 25"
+
+ #统治者
+ je_taiping_divided_ruler_popularity_tt: "[concept_ruler] [concept_popularity] is 25 or greater"
+ je_taiping_divided_ruler_ig_powerful_tt: "[concept_clout] of the [concept_ruler][concept_interest_group]"
+ #军队
+ je_taiping_divided_army_leader_popularity_tt: "[concept_leader] of the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l] has a [concept_popularity] of 25 or more"
+ je_taiping_divided_army_ig_powerful_tt: "[concept_clout] of the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant|l] [concept_interest_group]"
+ #地区动乱与效忠
+ je_taiping_divided_loyalists_tt: "Possess an [Concept('concept_state', '$concept_states$')] of [Concept('concept_loyalist','$concept_loyalists$')]"
+ je_taiping_divided_radicals_tt: "Possess an [Concept('concept_state', '$concept_states$')] of [concept_turmoil]"
+ #农业与军事建筑
+ je_taiping_divided_progress_from_farms: "[Concept('concept_building_level', '$concept_building_levels$')] agricoles"
+ je_taiping_divided_progress_from_military: "[Concept('concept_building_level', '$concept_building_levels$')] militaires"
+
+ TPG_Divided_mutiny_very_low_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold Critical#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+ TPG_Divided_mutiny_low_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold Low#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+ TPG_Divided_mutiny_medium_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold Medium#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+ TPG_Divided_mutiny_high_key: "[Concept('concept_je_taiping_divided_stability','$concept_je_taiping_divided_stability_short$')]：#bold High#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300）"
+
+ Code002_TPG_events.1.t: "The Will of the Heavenly Father"
+ Code002_TPG_events.1.d: "Amid escalating tensions between Hong Xiuquan and Yang Xiuqing, the Heavenly Father delivered His divine will to all believers through a collective dream. In the vision, He rebuked the followers for abandoning the Heavenly Kingdom's sacred mission due to selfish desires and inflicted punishment—agonizing headaches and convulsions that left them writhing on the ground."
+ Code002_TPG_events.1.f: "After the punishment, Hong Xiuquan and Yang Xiuqing led everyone to kneel in front of the Heavenly Father, swearing to put their personal grievances under their faith, unite as one, and build Heaven into a paradise on earth."
+ Code002_TPG_events.1.a: "The light of the Father shines on this land."
+ Je_TPG_Divided_01_modifier: "The Will of the Heavenly Father"
+
+ Code002_TPG_events.2.t: "The Tianjing Incident"
+ Code002_TPG_events.2.d: "Yang Xiuqing used the urgency of the western front as an excuse to transfer Wei Changhui and Shi Da to the front line to supervise the division, leaving only the Heavenly King and the Eastern King to stay in Tianjing. Chen Chengying told the king of heaven, saying that the king of the east had an attempt to kill the king and usurp the throne, and Hong Xiuquan secretly ordered Wei Changhui, Shi Dakai, and Qin Rigang to eradicate Yang Xiuqing. Wei Changhui led 3,000 elite troops back to Tianjing, joined Qin Rigang outside the city that night, and raided the Dongwang Mansion in the early morning, killing Yang Xiuqing and his supporters. Later, Wei Changhui killed dissidents in the name of searching for the "Eastern Party" and washed Tianjing in blood."
+ Code002_TPG_events.2.f: "Shi Dakai went to Tianjing more than ten days later, entered the city to meet Wei Changhui, reproached the indiscriminate killing, broke up unhappily, and fled out of the city in a hurry overnight. Wei Changhui failed to arrest Shi Dakai and killed his family and royal subordinates. Shi Dakai raised troops from Anqing to attack Wei Changhui, begging the king to kill Wei Changhui to thank the world. At this time, most of the Taiping troops outside Tianjing supported Shi Dakai, and Wei Changhui attacked the Tianwang Mansion in a hurry, but was finally defeated by the soldiers loyal to the Tianwang and the remnants of Yang Xiuqing, and his head was sent to Shi Dakai's camp for acceptance, and Qin Rigang and Chen Chengying were also executed soon after, and the Tianjing Incident came to an end. Later, the Heavenly King revoked Yang Xiuqing's charge of plotting to usurp the throne, and set Yang's death as the "Eastern King's Ascension Festival".\n\nThe sword light and blood light were intertwined, and the believers of the past could no longer understand the will of the Heavenly Father, and the glory of the Taiping Heavenly Kingdom was cast a bloody shadow from then on."
+ Code002_TPG_events.2.a: "This bloody storm has dealt a heavy blow to the foundations of the Heavenly Kingdom."
+ Je_TPG_Divided_02_modifier: "The rout of the Heavenly Kingdom"
+
+ Code002_TPG_events.3.t: "The Return of Hong Rengan"
+ Code002_TPG_events.3.d: "After years of drift, [SCOPE.sCharacter('Hong_Rengan_scope').GetFullName] finally returned to Tianjing amidst the turbulence of the Taiping Rebellion. A polymath versed in both Chinese and Western learning, he brought back extensive knowledge of Western political systems, economic models, and military technologies. At the royal court, he presented a comprehensive reform agenda advocating centralized authority, industrial development, and military modernization to consolidate the Heavenly Kingdom's rule."
+ Code002_TPG_events.3.f: "Hong Rengan's return, however, sparked intense controversy. Conservative ministers argued that his proposals deviated from the will of the Heavenly Father and risked undermining the religious authority of the Heavenly Kingdom. At this critical juncture, the Heavenly King faced a pivotal decision: whether to adopt Hong Rengan's reforms and steer the Heavenly Kingdom onto a path of modernization."
+ Code002_TPG_events.3.a: "He was enfeoffed as Gan King and entrusted with overseeing all governmental affairs of the realm."
+
+ je_new_administrative_paper: "New Administrative Paper"
+ je_new_administrative_paper_reason: "Hong Rengan resolved to forge through reform a "new heaven, new earth, new people, and new world" that would secure "an enduring Celestial Kingdom unified for ten thousand generations." To this end, he formulated A New Administrative Paper, a groundbreaking blueprint for institutional transformation and national reconstruction.\n\nThe Heavenly Father’s divine revelation guides us to establish the Heavenly Kingdom, he declared, yet its endurance demands governance tempered by wisdom."
+ je_new_administrative_paper_goal: "The #bold Progress Bar#! has reached #variable 100%#!"
+ je_new_administrative_paper_01: "New Administrative Paper: Politics"
+ je_new_administrative_paper_01_reason: "Establish various levels of administrative institutions, implement an official evaluation system, and ensure fairness and justice through law to prevent corruption from undermining the foundation of the Heavenly Kingdom. Additionally, he advocates for a close integration of religion and politics, so that all subjects of the realm are guided by the laws of the Heavenly Kingdom."
+ #je_new_administrative_paper_01_tt: "The following must be true for 5 years total ( Currently this has been true for #variable [ROOT.GetCountry.MakeScope.Var('je_taiping_divided_var').GetValue]#! months ) :"
+ je_new_administrative_paper_02: "New Administrative Paper: Economy"
+ je_new_administrative_paper_02_reason: "Develop industry and commerce, encourage free trade, introduce advanced Western technology, and establish a national bank to stabilize the monetary system. At the same time, the Heavenly Kingdom should implement a fair taxation system, eliminate excessive levies and arbitrary taxes to alleviate the burden on the people, ensure a prosperous treasury, and lay the foundation for the nation's long-term development."
+ je_new_administrative_paper_03: "New Administrative Paper: Society"
+ je_new_administrative_paper_03_reason: "Abolish outdated customs, improve the status of women, promote literacy for all, establish schools to spread modern education, and develop healthcare and social welfare systems. These measures will enable the citizens of the Heavenly Kingdom to live in peace and prosperity, ultimately achieving the true "Heavenly Kingdom of Great Harmony.""
+ je_new_administrative_paper_04: "New Administrative Paper: Military"
+ je_new_administrative_paper_04_reason: "Establish a regularized army, implement Western-style training, introduce modern weaponry, and develop a military-industrial production system. Additionally, he emphasizes the equal importance of military discipline and logistical support to ensure that the Heavenly Kingdom’s forces can sustain prolonged warfare, providing strong support for the nation's survival and stability."
+
+ Je_New_Administrative_Paper_1_modifier: "Gan King"
+ Je_New_Administrative_Paper_2_modifier: "National Modernization"
+ Je_New_Administrative_Paper_01_modifier: "Authority of the Heavenly King"
+ Je_New_Administrative_Paper_0201_modifier: "Modernization movement"
+ Je_New_Administrative_Paper_0202_modifier: "Free trade"
+ Je_New_Administrative_Paper_03_modifier: "Social stability"
+ Je_New_Administrative_Paper_04_modifier: "New type of army"
+
+ ideology_New_Paper: "New Administrative Paper"
+ ideology_New_Paper_desc: "This leader advocated learning from the West, establishing trade relations with foreign nations, adopting advanced Western science and technology, and developing capitalist industry and commerce to replace feudalism with capitalism."
+ ideology_New_Paper_movement: "New Administrative Paper"
+ ideology_New_Paper_movement_desc: "This group advocated learning from the West, establishing trade relations with foreign nations, adopting advanced Western science and technology, and developing capitalist industry and commerce to replace feudalism with capitalism."
+ movement_New_Paper: "New Administrative Paper Movement"
+ movement_New_Paper_name: "$movement_New_Paper$"
+
+ Code002_TPG_events.4.t: "National Modernization"
+ Code002_TPG_events.4.d: "Steam colossi belched clouds embroidered with coal-smoke, their satin-black rails lancing through morning mists to propel white-plumed leviathans of steel toward the horizon. Golden wheat fields swayed in unison with straw-hatted farmers, while markets pulsed with commercial vitality. The laughter of children echoed through schoolyards liberated by universal education. Along coastlines guarded by granite fortresses, coal-smoke plumes from ironclads twisted into protective sigils against the crimson dawn."
+ Code002_TPG_events.4.f: "Where no starving bodies blight the land, no city echoes with despair's refrain. Granaries overflow for the people, the state commands strength to spare." This is an ideal realm—a utopia estranged from poverty's shackles, ignorance's veil, and turmoil's tempest."
+ Code002_TPG_events.4.a: "[ROOT.GetCountry.GetName] advances toward an earthly paradise."
+
+ Code002_TPG_events.5.t: "Heavenly Father descended to earth"
+ Code002_TPG_events.5.d: "After the council, Yang Xiuqing abruptly feigned possession by the Heavenly Father, rebuking Hong Xiuquan: 'Your Lord, the Heavenly King, possesses an overly harsh temperament... To rule the world, one must govern with leniency. Consider the female officials who assist in divine affairs at the Celestial Court—many lack understanding of heavenly principles and often act improperly. You must patiently instruct them and show magnanimity, winning their willing obedience so that divine affairs may be properly managed. Excessive severity only breeds confusion; they will not know how to act to fulfill your will.'"
+ Code002_TPG_events.5.f: "This 'divine edict' was relayed by Wei Changhui to the Heavenly King. Yang Xiuqing then proceeded to the Heavenly King’s Palace, demanding of Hong Xiuquan: 'Do you acknowledge your wrongdoing?' Hong admitted fault. Acting as the Heavenly Father’s vessel, Yang decreed: ‘Since you admit guilt, you shall receive forty lashes!’ Officials pleaded to bear the punishment in his stead, but Yang refused. With no alternative, Hong Xiuquan obeyed, prostrating himself to receive the lashes. Yang then declared: ‘Since you have submitted to the decree, I shall spare you the rod!’ With that, the Heavenly Father ‘ascended back to heaven.’"
+ Code002_TPG_events.5.a: "A false alarm"
+ Code002_TPG_events_502_tt: "Resentment toward the Eastern King simmered among the masses. [concept_je_taiping_divided_stability] progress #r -5#!"
+
+ Code002_TPG_events.6.t: "Heavenly Father descended to earth"
+ Code002_TPG_events.6.d: ""Tensions between the Eastern King (Yang Xiuqing) and other princes escalated, prompting Qin Rigang, Huang Yukun, and Chen Chengrong to resign. The Heavenly King convened a Grand Court Assembly to resolve the conflict.\n‘At this time of relentless warfare, you must devote yourselves to the Celestial Kingdom. Do not let disputes breed enmity, for that would only bring grief to allies and joy to foes. Qin Rigang, Huang Yukun, and Chen Chengrong—your resignations are denied.’\nDissatisfied with this outcome, the Eastern King resorted to feigning possession by the Heavenly Father to assert dominance.""
+ Code002_TPG_events.6.f: ""I am the Heavenly Father! Hear me, my humble followers."\n"Long have I warned you: all under heaven depends on Xiuqing. To disrespect him is to disrespect me!"\n"Now, Qin Rigang has allowed his servants to defy law, Huang Yukun has neglected his duties, and Chen Chengrong has abetted their wickedness. You three have chilled my heart and pierced it with grief."\n"To uphold righteousness, I decree: Qin Rigang shall receive one hundred lashes, Chen Chengrong two hundred lashes, and Huang Yukun three hundred lashes—no leniency shall be shown.""
+ Code002_TPG_events.6.a: "The Heavenly King had no choice but to issue the order for the three to be flogged."
+ Code002_TPG_events_601_tt: "The three men rebelled, conspiring to eliminate the Eastern King (Yang Xiuqing). [concept_je_taiping_divided_stability] progress #r -10#!"
+ Code002_TPG_events_602_tt: "Fearing the Eastern King's dominance, the three men swallowed their grievances and endured in silence. [concept_je_taiping_divided_stability] progress #r -5#!"
+
+ Code002_TPG_events.7.t: "Heavenly Father descended to earth"
+ Code002_TPG_events.7.d: ""While inspecting the city's defenses, Yang Xiuqing was blocked by a female official while passing by the Heavenly King's Palace. He then confronted the Heavenly King (Hong Xiuquan) over the incident, and during the heated dispute, Yang Xiuqing feigned possession by the Heavenly Father to assert his authority.""
+ Code002_TPG_events.7.f: ""I am the Heavenly Father! Hear me, my humble followers. Do not grow complacent upon entering the Minor Heaven. Each of you must discipline yourselves strictly—Hong Xiuquan is no exception. Yet you dwell in your palace, neglecting state affairs, and even your gatekeepers dare disrespect their superiors. How dare this be?"\n"This is my failure to oversee."\n"Your transgressions are not limited to this. Do you know this?"\n"I have transgressed."\n"You persist in wrongdoing and refuse repentance. For this, you shall receive forty lashes."\n"Heavenly Father, spare your wrath! We beg to bear the punishment in the Heavenly King's stead."\n"Stand down. None shall take his place."\n"Heavenly Father, calm your wrath. Xiuquan submits to the lashing.""
+ Code002_TPG_events.7.a: "With steel whip in hand, I shall strike you down—!"
+ Code002_TPG_events_701_tt: "The Heavenly King has thoroughly reformed his ways. [concept_je_taiping_divided_stability] progress #g +15#!"
+ Code002_TPG_events_702_tt: "The Heavenly King died unrepentant. [concept_je_taiping_divided_stability] progress #r -15#!"
+
+ Code002_TPG_events.8.t: "Heavenly Father descended to earth"
+ Code002_TPG_events.8.d: ""My humble followers, do not grow arrogant in your achievements. Has Xiuquan arrived?"\n"Heavenly Father, Xiuquan is here."\n"How have you and your brother Xiuqing fared in governing the Heavenly Kingdom, as I commanded?"\n"Xiuquan and Xiuqing have spared no effort, toiling day and night with diligence. All remains well."\n"Have you become prideful?"\n"We dare not. With only half the realm secured and our grand mission incomplete, how could we grow arrogant?"\n"Do not falter. Demons seek to sow discord between Xiuquan and Xiuqing. Has this occurred?"\n"It is utterly false. Xiuquan trusts Xiuqing completely; no scheming can divide us."\n"Only unity and virtue will defeat the demons. Cease all suspicion between you. I will not forgive failure.""
+ Code002_TPG_events.8.f: ""How has Yang Xiuqing performed? Does he reassure you?"\n"Xiuqing is the pillar of the Heavenly Kingdom and has excelled. Xiuquan no longer harbors any concerns about him."\n"If Xiuqing has performed so admirably and earned your satisfaction, why do you hold the title of 'Ten Thousand Years' while he is only 'Nine Thousand Years'? Why remain silent? Why should the Eastern King not be hailed as 'Ten Thousand Years'?""
+ Code002_TPG_events.8.a: "When they heard this, everyone was shocked."
+ Code002_TPG_events_801_tt: "The Eastern King fights the country, and the credit is the greatest, and it should also be called long live. [concept_je_taiping_divided_stability] progress #g +20#!"
+ Code002_TPG_events_802_tt: "The Eastern King said long live, what should the Heavenly King do?[concept_je_taiping_divided_stability] progress #r -20#!"
+
+ je_northern_expedition: "Northern Expedition"
+ je_northern_expedition_reason: "The Northern Expedition has begun, and the flames of the Heavenly Kingdom's revolution burn ever brighter. But can they illuminate the skies of the North?"
+ je_western_expedition: "Western Expedition"
+ je_western_expedition_reason: "The Western Expedition has reached a critical moment. The future of the Yangtze River Basin—and the fate of the entire Heavenly Kingdom revolution—will be decided in this battle!"
+ je_unify_china: "Unify China"
+ je_unify_china_reason: "The flames of the Northern Expedition and Western Campaign have once illuminated half of the land, and now, the Heavenly Kingdom’s army is ready to take the final step—completely unify China and establish the true Heavenly Kingdom!"
+ je_unify_china_modifier: "The Mandate of Heaven"
+
+ je_northern_expedition_tt: "All [concept_target][concept_state] become [concept_incorporated_state]，25% of [concept_pop] convert [concept_state_religion]"
+ je_western_expedition_tt: "All [concept_target][concept_state] become [concept_incorporated_state]，25% of [concept_pop] convert [concept_state_religion]"
+ je_unify_china_tt: "All [concept_target][concept_state] become [concept_incorporated_state]，50% of [concept_pop] convert [concept_state_religion]"
+
+ je_taiping_land_socializationicon_tt: "[concept_je_taiping_divided_stability] progress #g +50#!"
+ je_northern_expedition_02_tt: "[concept_je_taiping_divided_stability] progress #g +50#!"
+ je_western_expedition_02_tt: "[concept_je_taiping_divided_stability] progress #g +50#!"
+
+ Code002_TPG_events.9.t: "Our Heavenly Kingdom"
+ Code002_TPG_events.9.d: "The government has fulfilled its commitment to expand public institutions and guarantee that all [ROOT.GetCountry.GetAdjectiveNoFormatting] citizens have health care, social security, education, and a safe workplace."
+ Code002_TPG_events.9.f: "“To each according to his ability, according to his needs. This is the core principle of the Heavenly Kingdom."
+ Code002_TPG_events.9.a: "Heaven on earth was built on this foundation."
+ je_heaven_on_earth_modifier: "Heaven on earth"

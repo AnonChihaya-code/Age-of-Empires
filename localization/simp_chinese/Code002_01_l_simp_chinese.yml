@@ -1,0 +1,520 @@
+﻿l_simp_chinese:
+
+ ###################
+ ##### 更新日志 #####
+ ###################
+ je_aoe_update: "#yellow 更新详情#!"
+ je_aoe_update_loc: "#g 2025.4.14#！"
+ je_aoe_update_reason: "#g 如果有#r 对mod内容的建议#!或者#r bug反馈#!\n\n可以加Q群#r 1025837023#!\n\n2025.4.14更新详情：#r \n\n· MyGO!!!!!新增更多邦多利人物贴图、姓名\n\n· 鞑靼诸国更新日志\n\n· 适配原版的高加索战争日志\n\n· 东欧、中亚、西伯利亚人口资源修正\n\n· 下次更新莫斯科、诺夫哥罗德的内容#!\n\n感谢您对本mod的支持，游戏愉快！#!"
+ ###################
+ ##### 角色特质 #####
+ ###################
+ code002_huangpao_jaishen: "#r $给予统治权$#!"
+ code002_huangpao_jaishen_tt: "成为[Character.GetCountry.GetName]的[concept_ruler]"
+ code002_grant_command_to_ruler: "#r $给予指挥权$#!"
+ code002_remove_command_from_ruler: "#r $放弃指挥权$#!"
+ code002_grant_leadership_to_agitator: "#r $给予领导权$#!"
+ code002_grant_leadership_to_general_admiral: "#r $给予领导权$#!"
+ code002_exile_character: "#r $迈耶航空$#!"
+ code002_arrange_accident: "#r $偿还恩情$#!"
+
+ shot_in_the_right_ear: "右耳中弹"
+ shot_in_the_right_ear_desc: "大总统特朗普的荣誉伤痕，美利坚将再次伟大！"
+ character_immortal_modifier: "永生"
+
+ ###################
+ ##### 地块特质 #####
+ ###################
+ #state_trait_silk_road: "丝绸之路"
+ #silk_road_modifier: "丝绸之路"
+
+ #####################
+ #####军队名本地化#####
+ #####################
+ CNGX_07_army: "钢七军"
+
+ #####################
+ #####兵种本地化#####
+ #####################
+
+ #罗马
+ combat_unit_type_line_infantry_cataphract: "铁甲圣骑兵"
+ combat_unit_type_line_infantry_cataphract_desc: "希腊的铁甲圣骑兵身披铁甲，可以用冲锋摧毁几乎任何防线。"
+ combat_unit_type_skirmish_infantry_cataphract: "精锐铁甲圣骑兵"
+ combat_unit_type_skirmish_infantry_cataphract_desc: "希腊的铁甲圣骑兵身披铁甲，可以用冲锋摧毁几乎任何防线。"
+ combat_unit_type_trench_infantry_cataphract: "风云铁甲圣骑兵"
+ combat_unit_type_trench_infantry_cataphract_desc: "希腊的铁甲圣骑兵身披铁甲，可以用冲锋摧毁几乎任何防线。"
+ combat_unit_type_squad_infantry_cataphract: "护卫铁甲圣骑兵"
+ combat_unit_type_squad_infantry_cataphract_desc: "希腊的铁甲圣骑兵身披铁甲，可以用冲锋摧毁几乎任何防线。"
+ combat_unit_type_mechanized_infantry_cataphract: "帝国铁甲圣骑兵"
+ combat_unit_type_mechanized_infantry_cataphract_desc: "希腊的铁甲圣骑兵身披铁甲，可以用冲锋摧毁几乎任何防线。"
+
+ #苏族
+ combat_unit_type_line_infantry_siou: "斧骑兵"
+ combat_unit_type_line_infantry_siou_desc: ""
+ combat_unit_type_skirmish_infantry_siou: "精锐斧骑兵"
+ combat_unit_type_skirmish_infantry_siou_desc: ""
+ combat_unit_type_trench_infantry_siou: "风云斧骑兵"
+ combat_unit_type_trench_infantry_siou_desc: ""
+ combat_unit_type_squad_infantry_siou: "托卡拉骑兵"
+ combat_unit_type_squad_infantry_siou_desc: ""
+ combat_unit_type_mechanized_infantry_siou: "塔斯云坎游荡者"
+ combat_unit_type_mechanized_infantry_siou_desc: ""
+
+ #易洛魁
+ combat_unit_type_line_infantry_iroq: "坎亚骑兵"
+ combat_unit_type_line_infantry_iroq_desc: ""
+ combat_unit_type_skirmish_infantry_iroq: "精锐坎亚骑兵"
+ combat_unit_type_skirmish_infantry_iroq_desc: ""
+ combat_unit_type_trench_infantry_iroq: "风云坎亚骑兵"
+ combat_unit_type_trench_infantry_iroq_desc: ""
+ combat_unit_type_squad_infantry_iroq: "传奇坎亚骑兵"
+ combat_unit_type_squad_infantry_iroq_desc: ""
+ combat_unit_type_mechanized_infantry_iroq: "神话坎亚骑兵"
+ combat_unit_type_mechanized_infantry_iroq_desc: ""
+
+ #夏安
+ combat_unit_type_line_infantry_chey: "夏安骑兵"
+ combat_unit_type_line_infantry_chey_desc: ""
+ combat_unit_type_skirmish_infantry_chey: "精锐夏安骑兵"
+ combat_unit_type_skirmish_infantry_chey_desc: ""
+ combat_unit_type_trench_infantry_chey: "风云夏安骑兵"
+ combat_unit_type_trench_infantry_chey_desc: ""
+ combat_unit_type_squad_infantry_chey: "传奇夏安骑兵"
+ combat_unit_type_squad_infantry_chey_desc: ""
+ combat_unit_type_mechanized_infantry_chey: "神话夏安骑兵"
+ combat_unit_type_mechanized_infantry_chey_desc: ""
+
+ #卡曼契
+ combat_unit_type_line_infantry_coma: "卡曼契弓骑兵"
+ combat_unit_type_line_infantry_coma_desc: ""
+ combat_unit_type_skirmish_infantry_coma: "精锐卡曼契弓骑兵"
+ combat_unit_type_skirmish_infantry_coma_desc: ""
+ combat_unit_type_trench_infantry_coma: "风云卡曼契弓骑兵"
+ combat_unit_type_trench_infantry_coma_desc: ""
+ combat_unit_type_squad_infantry_coma: "传奇卡曼契弓骑兵"
+ combat_unit_type_squad_infantry_coma_desc: ""
+ combat_unit_type_mechanized_infantry_coma: "神话卡曼契弓骑兵"
+ combat_unit_type_mechanized_infantry_coma_desc: ""
+
+ #印加
+ combat_unit_type_line_infantry_inca: "奇穆游击兵"
+ combat_unit_type_line_infantry_inca_desc: ""
+ combat_unit_type_skirmish_infantry_inca: "精锐奇穆游击兵"
+ combat_unit_type_skirmish_infantry_inca_desc: ""
+ combat_unit_type_trench_infantry_inca: "风云奇穆游击兵"
+ combat_unit_type_trench_infantry_inca_desc: ""
+ combat_unit_type_squad_infantry_inca: "传奇奇穆游击兵"
+ combat_unit_type_squad_infantry_inca_desc: ""
+ combat_unit_type_mechanized_infantry_inca: "神话奇穆游击兵"
+ combat_unit_type_mechanized_infantry_inca_desc: ""
+
+ #阿兹特克
+ combat_unit_type_line_infantry_azte: "郊狼游击兵"
+ combat_unit_type_line_infantry_azte_desc: ""
+ combat_unit_type_skirmish_infantry_azte: "精锐鹰游击武士"
+ combat_unit_type_skirmish_infantry_azte_desc: ""
+ combat_unit_type_trench_infantry_azte: "风云豹游荡武士"
+ combat_unit_type_trench_infantry_azte_desc: ""
+ combat_unit_type_squad_infantry_azte: "传奇豹游荡武士"
+ combat_unit_type_squad_infantry_azte_desc: ""
+ combat_unit_type_mechanized_infantry_azte: "神话豹游荡武士"
+ combat_unit_type_mechanized_infantry_azte_desc: ""
+
+  #马穆鲁克
+ combat_unit_type_line_infantry_maml: "马穆鲁克骑兵"
+ combat_unit_type_line_infantry_maml_desc: ""
+ combat_unit_type_skirmish_infantry_maml: "精锐马穆鲁克骑兵"
+ combat_unit_type_skirmish_infantry_maml_desc: ""
+ combat_unit_type_trench_infantry_maml: "风云马穆鲁克骑兵"
+ combat_unit_type_trench_infantry_maml_desc: ""
+ combat_unit_type_squad_infantry_maml: "传奇马穆鲁克骑兵"
+ combat_unit_type_squad_infantry_maml_desc: ""
+ combat_unit_type_mechanized_infantry_maml: "神话马穆鲁克骑兵"
+ combat_unit_type_mechanized_infantry_maml_desc: ""
+
+ #################
+ #####宗教本地#####
+ #################
+ legalist: "法家"
+
+ ##################
+ #####集团本地#####
+ ##################
+ Holy_Roman_Empire: "神圣罗马帝国"
+ Great_Qin: "大秦帝国"
+ Great_Han: "大汉帝国"
+ Great_Wei: "大魏帝国"
+ Heavenly_Kingdom: "天父天兄天王太平天国"
+ #################
+ #####公司本地#####
+ #################
+ company_falcon: "猎鹰公司"
+ company_chihaya_anon_tokyo: "ANON TOKYO"
+
+ #################
+ #####PM本地#####
+ #################
+ pm_canal_01: "蒸汽轮机"
+ pm_canal_02: "油轮机"
+
+ ##################
+ #####国名本地#####
+ ##################
+
+ CHINA: "中国"
+ CHINA_ADJ: "中国"
+ dyn_c_monarchy_CHINA: "中华帝国"
+ dyn_c_theocracy_CHINA: "神圣中华帝国"
+ dyn_c_republic_CHINA: "中华民国"
+ dyn_c_communist_CHINA: "中华人民共和国"
+
+ EROM: "罗马"
+ EROM_ADJ: "罗马"
+ dyn_c_monarchy_EROM: "罗马帝国"
+ dyn_c_theocracy_EROM: "罗马帝国"
+ dyn_c_republic_EROM: "罗马共和国"
+ dyn_c_communist_EROM: "罗马人民共和国"
+ 
+ CNBY: "北洋政府"
+ CNBY_ADJ: "中国"
+
+ CNNR: "国民革命军"
+ CNNR_ADJ: "广东"
+
+ CNGX: "新桂系军阀"
+ CNGX_ADJ: "广西"
+
+ CNYN: "滇系军阀"
+ CNYN_ADJ: "云南"
+
+ DHDG: "大汉"
+ DHDG_ADJ: "大汉"
+ dyn_c_monarchy_DHDG: "大汉帝国"
+ dyn_c_republic_DHDG: "大汉共和国"
+ dyn_c_communist_DHDG: "大汉共和国"
+
+ DTDG: "大唐"
+ DTDG_ADJ: "大唐"
+ dyn_c_monarchy_DTDG: "大唐帝国"
+ dyn_c_republic_DTDG: "大唐共和国"
+ dyn_c_communist_DTDG: "大唐共和国"
+
+ DQDG: "大秦"
+ DQDG_ADJ: "大秦"
+ dyn_c_monarchy_DQDG: "大秦帝国"
+ dyn_c_republic_DQDG: "大秦共和国"
+ dyn_c_communist_DQDG: "大秦共和国"
+
+ TPTG: "太平天国"
+ TPTG_ADJ: "太平天国"
+
+ CNTW: "中华民国"
+ CNTW_ADJ: "台湾"
+
+ MING: "大明"
+ MING_ADJ: "大明"
+ dyn_c_monarchy_MING: "大明帝国"
+ dyn_c_republic_MING: "大明共和国"
+ dyn_c_communist_MING: "大明共和国"
+
+ CNCW: "曹魏"
+ CNCW_ADJ: "曹魏"
+ dyn_c_monarchy_CNCW: "曹魏帝国"
+ dyn_c_republic_CNCW: "曹魏共和国"
+ dyn_c_communist_CNCW: "曹魏共和国"
+ dyn_c_monarchy_wei_wu_ambitions: "大魏帝国"
+ dyn_c_republic_wei_wu_ambitions: "大魏共和国"
+ dyn_c_monarchy_wei_wu_ambitions_adj: "大魏"
+
+ CNTB: "吐蕃"
+ CNTB_ADJ: "吐蕃"
+
+ CNGY: "归义军"
+ CNGY_ADJ: "归义军"
+
+ CNXY: "西域都护府"
+ CNXY_ADJ: "西域都护府"
+
+ CNXN: "匈奴"
+ CNXN_ADJ: "匈奴"
+ dyn_c_monarchy_CNXN: "匈奴汗国"
+ dyn_c_republic_CNXN: "匈奴共和国"
+ dyn_c_communist_CNXN: "匈奴共和国"
+ dyn_c_monarchy_han_CNXN: "大汉帝国"
+ dyn_c_republic_han_CNXN: "大汉共和国"
+ dyn_c_han_CNXN_adj: "大汉"
+
+ DJDG: "大晋"
+ DJDG_ADJ: "大晋"
+ dyn_c_monarchy_DJDG: "大晋帝国"
+ dyn_c_republic_DJDG: "大晋共和国"
+ dyn_c_communist_DJDG: "大晋共和国"
+
+ OHDS: "医院骑士团"
+ OHDS_ADJ: "医院骑士团"
+
+ TCOS: "藏骨集团"
+ TCOS_ADJ: "藏骨集团"
+
+ ELDA: "艾尔迪亚"
+ ELDA_ADJ: "艾尔迪亚"
+ dyn_c_monarchy_ELDA: "艾尔迪亚帝国"
+ dyn_c_republic_ELDA: "艾尔迪亚共和国"
+ dyn_c_communist_ELDA: "艾尔迪亚共和国"
+
+ MRLY: "马莱"
+ MRLY_ADJ: "马莱"
+ dyn_c_monarchy_MRLY: "马莱帝国"
+ dyn_c_republic_MRLY: "马莱共和国"
+ dyn_c_communist_MRLY: "马莱共和国"
+
+ HASA: "豪萨"
+ HASA_ADJ: "豪萨"
+ dyn_c_monarchy_HASA: "豪萨王国"
+ dyn_c_republic_HASA: "豪萨共和国"
+ dyn_c_communist_HASA: "豪萨共和国"
+
+ SHAI: "桑海"
+ SHAI_ADJ: "桑海"
+ dyn_c_monarchy_SHAI: "桑海帝国"
+ dyn_c_republic_SHAI: "桑海共和国"
+ dyn_c_communist_SHAI: "桑海共和国"
+
+ CNQY: "青阳"
+ CNQY_ADJ: "青阳"
+ dyn_c_monarchy_CNQY: "青阳汗国"
+ dyn_c_republic_CNQY: "青阳共和国"
+ dyn_c_communist_CNQY: "青阳共和国"
+
+ dyn_c_monarchy_SIB: "西伯利亚汗国"
+ dyn_c_republic_SIB: "西伯利亚共和国"
+ dyn_c_communist_SIB: "西伯利亚共和国"
+
+ SONG: "大宋"
+ SONG_ADJ: "大宋"
+ dyn_c_monarchy_SONG: "大宋帝国"
+ dyn_c_republic_SONG: "大宋共和国"
+ dyn_c_communist_SONG: "大宋共和国"
+ 
+ MGDG: "蒙古"
+ MGDG_ADJ: "蒙古"
+ dyn_c_monarchy_MGDG: "蒙古帝国"
+ dyn_c_republic_MGDG: "蒙古共和国"
+ dyn_c_communist_MGDG: "蒙古人民共和国"
+
+ YUAN: "大元"
+ YUAN_ADJ: "大元"
+ dyn_c_monarchy_YUAN: "大元帝国"
+ dyn_c_republic_YUAN: "大元共和国"
+ dyn_c_communist_YUAN: "大元共和国"
+
+ MGGH: "金帐"
+ MGGH_ADJ: "金帐"
+ dyn_c_monarchy_MGGH: "金帐汗国"
+ dyn_c_republic_MGGH: "金帐共和国"
+ dyn_c_communist_MGGH: "金帐共和国"
+
+ CRIM: "克里米亚"
+ CRIM_ADJ: "克里米亚"
+ dyn_c_monarchy_CRIM: "克里米亚汗国"
+ dyn_c_republic_CRIM: "克里米亚共和国"
+ dyn_c_communist_CRIM: "克里米亚共和国"
+ 
+ KAZA: "喀山"
+ KAZA_ADJ: "喀山"
+ dyn_c_monarchy_KAZA: "喀山汗国"
+ dyn_c_republic_KAZA: "喀山共和国"
+ dyn_c_communist_KAZA: "喀山共和国"
+
+ NOGA: "诺盖"
+ NOGA_ADJ: "诺盖"
+ dyn_c_monarchy_NOGA: "诺盖汗国"
+ dyn_c_republic_NOGA: "诺盖共和国"
+ dyn_c_communist_NOGA: "诺盖共和国"
+
+ MOSC: "莫斯科"
+ MOSC_ADJ: "莫斯科"
+ dyn_c_monarchy_MOSC: "莫斯科大公国"
+ dyn_c_republic_MOSC: "莫斯科共和国"
+ dyn_c_communist_MOSC: "莫斯科共和国"
+
+ NOVG: "诺夫哥罗德"
+ NOVG_ADJ: "诺夫哥罗德"
+
+ PERM: "彼尔姆"
+ PERM_ADJ: "彼尔姆"
+
+ ILKH: "伊利汗国"
+ ILKH_ADJ: "伊利汗国"
+
+ BURG: "勃艮第"
+ BURG_ADJ: "勃艮第"
+
+ JEAN: "神圣法兰西"
+ JEAN_ADJ: "法兰西"
+
+ NAPO: "拿破仑"
+ NAPO_ADJ: "法兰西"
+ dyn_c_monarchy_NAPO: "拿破仑帝国"
+ dyn_c_republic_NAPO: "法兰西共和国"
+ dyn_c_communist_NAPO: "法兰西公社"
+
+ VFRA: "法兰西先锋国"
+ VFRA_ADJ: "法兰西"
+
+ ARAG: "阿拉贡"
+ ARAG_ADJ: "阿拉贡"
+
+ MAML: "马穆鲁克"
+ MAML_ADJ: "马穆鲁克"
+
+ PART: "安息"
+ PART_ADJ: "安息"
+ dyn_c_monarchy_PART: "安息帝国"
+ dyn_c_republic_PART: "安息共和国"
+
+ KUSH: "贵霜"
+ KUSH_ADJ: "贵霜"
+ dyn_c_monarchy_KUSH: "贵霜帝国"
+ dyn_c_republic_KUSH: "贵霜共和国"
+
+ ABAS: "黑衣大食"
+ ABAS_ADJ: "阿拔斯"
+
+ SASS: "萨珊波斯"
+ SASS_ADJ: "萨珊波斯"
+
+ SERZ: "塞尔柱"
+ SERZ_ADJ: "塞尔柱"
+ dyn_c_monarchy_SERZ: "塞尔柱苏丹国"
+ dyn_c_republic_SERZ: "塞尔柱共和国"
+
+ DELI: "德里"
+ DELI_ADJ: "德里"
+ dyn_c_monarchy_DELI: "德里苏丹国"
+ dyn_c_republic_DELI: "德里共和国"
+
+ MUGH: "莫卧儿"
+ MUGH_ADJ: "莫卧儿"
+ dyn_c_monarchy_MUGH: "莫卧儿帝国"
+ dyn_c_republic_MUGH: "莫卧儿共和国"
+
+ MARA: "马拉塔联盟"
+ MARA_ADJ: "马拉塔联盟"
+
+ DRAV: "达罗毗荼"
+ DRAV_ADJ: "达罗毗荼"
+
+ VLAN: "文兰"
+ VLAN_ADJ: "文兰"
+
+ MYGO: "MyGO!!!!!"
+ MYGO_ADJ: "MyGO!!!!!"
+
+ FALC: "猎鹰公司"
+ FALC_ADJ: "猎鹰公司"
+
+ SIOU: "苏族大联盟"
+ SIOU_ADJ: "苏族大联盟"
+
+ IROQ: "豪德诺索尼"
+ IROQ_ADJ: "豪德诺索尼"
+
+ CHEY: "夏安"
+ CHEY_ADJ: "夏安"
+
+ COMA: "卡曼契利亚"
+ COMA_ADJ: "卡曼契"
+
+ APAC: "阿帕切"
+ APAC_ADJ: "阿帕切"
+
+ NEZP: "尼米普"
+ NEZP_ADJ: "尼米普"
+
+ PAIU: "派尤特"
+ PAIU_ADJ: "派尤特"
+
+ AZTE: "阿兹特克"
+ AZTE_ADJ: "阿兹特克"
+
+ INCA: "印加"
+ INCA_ADJ: "印加"
+ dyn_c_monarchy_INCA: "印加帝国"
+ dyn_c_republic_INCA: "印加共和国"
+
+ CREE: "铁之联盟"
+ CREE_ADJ: "铁之联盟"
+
+ PATA: "巴塔哥尼亚"
+ PATA_ADJ: "巴塔哥尼亚"
+
+ RYUK: "琉球"
+ RYUK_ADJ: "琉球"
+
+ SGPR: "新加坡"
+ SGPR_ADJ: "新加坡"
+
+ NAZI: "南美军团"
+ NAZI_ADJ: "南美军团"
+
+ #非洲
+ AFRC: "非洲联盟"
+ AFRC_ADJ: "非洲联盟"
+
+ ANG: "安哥拉"
+ ANG_ADJ: "安哥拉"
+
+ ZMB: "赞比亚"
+ ZMB_ADJ: "赞比亚"
+
+ MOZ: "莫桑比克"
+ MOZ_ADJ: "莫桑比克"
+
+ TNZ: "坦桑尼亚"
+ TNZ_ADJ: "坦桑尼亚"
+
+ KNY: "肯尼亚"
+ KNY_ADJ: "肯尼亚"
+
+ DRC: "刚果（金）"
+ DRC_ADJ: "刚果（金）"
+
+ CKS: "刚果（布）"
+ CKS_ADJ: "刚果（布）"
+
+ GAB: "加蓬"
+ GAB_ADJ: "加蓬"
+
+ CMN: "喀麦隆"
+ CMN_ADJ: "喀麦隆"
+
+ dyn_c_central_african: "中非"
+ dyn_c_central_african_adj: "中非"
+
+ ERI: "厄立特里亚"
+ ERI_ADJ: "厄立特里亚"
+
+ SAHR: "撒哈拉沙漠"
+ SAHR_ADJ: "撒哈拉"
+
+ AYUB: "阿尤布"
+ AYUB_ADJ: "阿尤布"
+ dyn_c_monarchy_AYUB: "阿尤布苏丹国"
+ dyn_c_theocracy_AYUB: "阿尤布伊玛目国"
+ dyn_c_republic_AYUB: "阿尤布共和国"
+
+ LIVO: "利沃尼亚骑士团"      #Livonian Order
+ LIVO_ADJ: "利沃尼亚骑士团" 
+
+ TEUT: "条顿骑士团"          #Teutonic Order
+ TEUT_ADJ: "条顿骑士团"     
+ 
+ CIRC: "切尔克西亚"
+ CIRC_ADJ: "切尔克西亚"
+ CHEC: "车臣"
+ CHEC_ADJ: "车臣"
+ ##### 原版 #####
+ dyn_c_lan_fang_republic: "兰芳大统制共和国"
+ dyn_c_lan_fang_republic_adj: "兰芳"

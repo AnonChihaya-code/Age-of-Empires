@@ -1,0 +1,926 @@
+﻿####################
+##### 国旗应用 #####
+####################
+CHINA = {
+	flag_definition = { #中华帝国
+		coa = CHINA_empire
+		subject_canton = CHINA_empire
+		priority = 1600
+		trigger = { 
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				NOR = {
+					has_law = law_type:law_ethnostate
+                    has_law = law_type:law_national_supremacy
+				}
+			}
+		}
+	}
+	flag_definition = { #中华帝国#铁血18星
+		coa = CHINA_dictatorship_empire
+		subject_canton = CHINA_dictatorship_empire
+		priority = 1600
+		trigger = { 
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				OR = {
+					has_law = law_type:law_ethnostate
+                    has_law = law_type:law_national_supremacy
+				}
+			}
+		}
+	}
+	flag_definition = { #神权
+		coa = CHINA_theocracy
+		subject_canton = CHINA_theocracy
+		priority = 1600
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = { #五族共和
+		coa = CHINA_republic
+		subject_canton = CHINA_republic
+		priority = 1600
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_landed_voting
+					has_law = law_type:law_wealth_voting
+					has_law = law_type:law_anarchy
+				}
+			}
+		}
+	}
+	flag_definition = { #青天白日满地红
+		coa = CHINA_roc_republic
+		subject_canton = CHINA_roc_republic
+		priority = 1800
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			scope:actor ?= {
+				NOR = {
+					has_law = law_type:law_landed_voting
+					has_law = law_type:law_wealth_voting
+					has_law = law_type:law_anarchy
+				}
+			}
+		}
+	}
+	flag_definition = { #五星红旗
+		coa = CHINA_communist
+		subject_canton = CHINA_communist
+		priority = 2000
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = { #黑天红日
+		coa = CHINA_dictatorship_fascist
+		subject_canton = CHINA_dictatorship_fascist
+		priority = 2000
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+}
+
+CNBY = { #北洋政府
+	flag_definition = { #中华帝国
+		coa = CNBY
+		subject_canton = CNBY
+		priority = 1600
+		trigger = { 
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				NOR = {
+					has_law = law_type:law_ethnostate
+                    has_law = law_type:law_national_supremacy
+				}
+			}
+		}
+	}
+	flag_definition = { #中华帝国#铁血18星
+		coa = CHINA_dictatorship_empire
+		subject_canton = CHINA_dictatorship_empire
+		priority = 1600
+		trigger = { 
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				OR = {
+					has_law = law_type:law_ethnostate
+                    has_law = law_type:law_national_supremacy
+				}
+			}
+		}
+	}
+	flag_definition = { #神权
+		coa = CHINA_theocracy
+		subject_canton = CHINA_theocracy
+		priority = 1600
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = { #五族共和
+		coa = CHINA_republic
+		subject_canton = CHINA_republic
+		priority = 1600
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+}
+
+CNNR = { #国民革命军
+	flag_definition = { #独裁红边青天白日
+		coa = CNNR
+		subject_canton = CNNR
+		priority = 1600
+	}
+}
+
+CNGX = { #新桂系军阀
+	flag_definition = { #独裁红边青天白日
+		coa = CNGX
+		subject_canton = CNGX
+		priority = 1600
+	}
+}
+
+CNYN = { #滇系军阀
+	flag_definition = { #独裁红边青天白日
+		coa = CNYN
+		subject_canton = CNYN
+		priority = 1600
+	}
+}
+
+CNTW = { #中华民国
+	flag_definition = { #青天白日满地红
+		coa = CNTW
+		subject_canton = CNTW
+		priority = 1600
+	}
+}
+
+DHDG = { #大汉
+    flag_definition = {
+	    coa = DHDG
+	    subject_canton = DHDG
+	    priority = 1600
+    }  
+}
+
+DQDG = { #大秦
+    flag_definition = {
+	    coa = DQDG
+	    subject_canton = DQDG
+	    priority = 1600
+    }  
+}
+
+CNCW = { #曹魏
+    flag_definition = {
+	    coa = CNCW
+	    subject_canton = CNCW
+	    priority = 1600
+    }  
+}
+
+MING = { #大明
+    flag_definition = {
+	    coa = MING
+	    subject_canton = MING
+	    priority = 1600
+    }  
+}
+
+TPTG = { #太平天国
+	flag_definition = {
+	    coa = TPTG
+	    subject_canton = TPTG
+	    priority = 1600
+    }
+}
+CNXN = { #匈奴
+    flag_definition = {
+	    coa = CNXN
+	    subject_canton = CNXN
+	    priority = 1600
+    }  
+	flag_definition = {
+	    coa = DHDG
+	    subject_canton = DHDG
+	    priority = 2000
+		trigger = {
+			has_global_variable = je_entered_the_central_plainsicon_complete_var
+		}
+    } 
+}
+
+CNXY = { #西域都护府
+    flag_definition = {
+	    coa = CNXY
+	    subject_canton = CNDG
+	    priority = 1600
+    }  
+}
+
+CNQY = { #青阳
+	flag_definition = {
+		coa = CNQY
+		subject_canton = CNQY
+		priority = 1600
+	}
+}
+
+DTDG = { #大唐
+	flag_definition = {
+		coa = DTDG
+		subject_canton = DTDG
+		priority = 1600
+	}
+}
+
+CNGY = { #归义军
+	flag_definition = {
+		coa = CNGY
+		subject_canton = CNGY
+		priority = 1600
+	}
+}
+
+CNTB = { #吐蕃
+    flag_definition = {
+	    coa = CNTB
+	    subject_canton = CNTB
+	    priority = 1600
+    }  
+}
+
+OHDS = { #医院骑士团
+    flag_definition = {
+	    coa = OHDS
+	    subject_canton = OHDS
+	    priority = 1600
+    }  
+}
+
+TCOS = { #藏骨集团
+    flag_definition = {
+	    coa = TCOS
+	    subject_canton = TCOS
+	    priority = 1600
+    }  
+}
+
+ELDA = { #艾尔迪亚
+    flag_definition = {
+	    coa = ELDA
+	    subject_canton = ELDA
+	    priority = 1600
+    }  
+}
+
+MRLY = { #马莱帝国
+    flag_definition = {
+	    coa = MRLY
+	    subject_canton = MRLY
+	    priority = 1600
+    }  
+}
+
+HASA = { #豪萨王国
+    flag_definition = {
+	    coa = HASA
+	    subject_canton = HASA
+	    priority = 1600
+    }  
+}
+
+SHAI = { #桑海帝国
+    flag_definition = {
+	    coa = SHAI
+	    subject_canton = SHAI
+	    priority = 1600
+    }  
+}
+
+CNQY = { #青阳
+    flag_definition = {
+	    coa = YAK
+	    subject_canton = YAK
+	    priority = 1600
+    }  
+}
+
+MGDG = { #蒙古帝国
+    flag_definition = {
+	    coa = MGGH
+	    subject_canton = MGGH
+	    priority = 1600
+    }  
+}
+
+YUAN = { #大元帝国
+    flag_definition = {
+	    coa = MGGH
+	    subject_canton = MGGH
+	    priority = 1600
+    }  
+}
+
+MGGH = { #金帐汗国
+    flag_definition = {
+	    coa = MGGH
+	    subject_canton = MGGH
+	    priority = 1600
+    } 
+	flag_definition = {
+	    coa = GoldenHorde
+	    subject_canton = GoldenHorde
+	    priority = 1800
+		trigger = { 
+			scope:actor = {
+				has_global_variable = unify_golden_horde_var
+			}
+		}
+    } 
+}
+
+EROM = { #东罗马
+    flag_definition = {
+	    coa = EROM
+	    subject_canton = EROM
+	    priority = 1600
+    }
+	flag_definition = {
+		coa = EROM_MGGH
+		subject_canton = EROM_MGGH
+		priority = 2000
+		trigger = { 
+			scope:actor = {
+				country_has_primary_culture = cu:mongol 
+				country_has_primary_culture = cu:tatar
+			}
+		}
+	} 
+}
+
+MOSC = { #莫斯科
+    flag_definition = {
+	    coa = MOSC
+	    subject_canton = MOSC
+	    priority = 1600
+    }  
+}
+
+NOVG = { #诺夫哥罗德
+    flag_definition = {
+	    coa = NOVG
+	    subject_canton = NOVG
+	    priority = 1600
+    }  
+}
+
+BURG = { #勃艮第
+    flag_definition = {
+	    coa = BURG
+	    subject_canton = BURG
+	    priority = 1600
+    }  
+}
+
+JEAN = { #贞德
+    flag_definition = {
+	    coa = JEAN
+	    subject_canton = JEAN
+	    priority = 1600
+    }  
+}
+
+NAPO = { #拿破仑帝国
+    flag_definition = {
+	    coa = NAPO
+	    subject_canton = NAPO
+	    priority = 1600
+    }  
+}
+
+VFRA = { #法兰西先锋国
+    flag_definition = {
+	    coa = VFRA
+	    subject_canton = VFRA
+	    priority = 1600
+    }  
+}
+
+ARAG = { #阿拉贡
+	flag_definition = {
+		coa = ARAG
+		coa_with_overlord_canton = ARAG
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[1/9*4] }
+	}
+	flag_definition = {
+		coa = CAT_coa
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CAT_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CAT_republic
+		coa_with_overlord_canton = CAT
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[1/9*4] }
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+}
+
+MYGO = { #MyGO!!!!!
+    flag_definition = {
+	    coa = MYGO
+	    subject_canton = MYGO
+	    priority = 1600
+    }  
+}
+
+VLAN = { #文兰
+    flag_definition = {
+	    coa = VLAN
+	    subject_canton = VLAN
+	    priority = 1600
+    }  
+}
+
+SIOU = { #苏族大联盟
+	flag_definition = {
+	    coa = SIOU
+	    subject_canton = SIOU
+	    priority = 1600
+    }
+}
+
+IROQ = { #豪德诺索尼#易洛魁联盟
+	flag_definition = {
+	    coa = IROQ
+	    subject_canton = IROQ
+	    priority = 1600
+    }
+}
+
+AZTE = { #阿兹特克
+	flag_definition = {
+	    coa = AZTE
+	    subject_canton = AZTE
+	    priority = 1600
+    }
+}
+
+INCA = { #印加帝国
+	flag_definition = {
+	    coa = INCA
+	    subject_canton = INCA
+	    priority = 1600
+    }
+}
+
+MUGH = { #卧莫尔
+	flag_definition = {
+	    coa = MUGH
+	    subject_canton = MUGH
+	    priority = 1600
+    }
+}
+
+MARA = { #马拉塔联盟
+	flag_definition = {
+	    coa = MARA
+	    subject_canton = MARA
+	    priority = 1600
+    }
+}
+
+DELI = { #德里苏丹国
+	flag_definition = {
+	    coa = DELI
+	    subject_canton = DELI
+	    priority = 1600
+    }
+}
+
+DRAV = { #达罗毗荼
+	flag_definition = {
+	    coa = DRAV
+	    subject_canton = DRAV
+	    priority = 1600
+    }
+}
+
+ABAS = { #黑衣大食
+	flag_definition = {
+	    coa = ABAS
+	    subject_canton = ABAS
+	    priority = 1600
+    }
+}
+
+PART = { #安息
+	flag_definition = {
+	    coa = PART
+	    subject_canton = PART
+	    priority = 1600
+    }
+}
+
+KUSH = { #贵霜
+	flag_definition = {
+	    coa = KUSH
+	    subject_canton = KUSH
+	    priority = 1600
+    }
+}
+
+SASS = { #萨珊波斯
+	flag_definition = {
+	    coa = SASS
+	    subject_canton = SASS
+	    priority = 1600
+    }
+}
+
+SERZ = { #塞尔柱
+	flag_definition = {
+	    coa = SERZ
+	    subject_canton = SERZ
+	    priority = 1600
+    }
+}
+
+MAML = { #马穆鲁克
+	flag_definition = {
+	    coa = MAML
+	    subject_canton = MAML
+	    priority = 1600
+    }
+}
+
+COMA = { #卡曼契
+	flag_definition = {
+	    coa = COMA
+	    subject_canton = COMA
+	    priority = 1600
+    }	
+}
+
+NEZP = { #尼米普
+	flag_definition = {
+	    coa = NEZP
+	    subject_canton = NEZP
+	    priority = 1600
+    }	
+}
+
+PAIU = { #尤特派
+	flag_definition = {
+	    coa = PAIU
+	    subject_canton = PAIU
+	    priority = 1600
+    }	
+}
+
+APAC = { #阿帕契
+	flag_definition = {
+	    coa = APAC
+	    subject_canton = APAC
+	    priority = 1600
+    }	
+}
+
+CHEY = { #夏安
+	flag_definition = {
+	    coa = CHEY
+	    subject_canton = CHEY
+	    priority = 1600
+    }	
+}
+
+FALC = { #猎鹰公司
+	flag_definition = {
+	    coa = FALC
+	    subject_canton = FALC
+	    priority = 1600
+    }
+}
+
+CREE = { #铁之联盟	
+	flag_definition = {
+	    coa = CREE
+	    subject_canton = CREE
+	    priority = 1600
+    }	
+}
+
+PATA = { #巴塔哥尼亚
+	flag_definition = {
+	    coa = PATA
+	    subject_canton = PATA
+	    priority = 1600
+    }
+}
+
+MAY = { # 玛雅
+	flag_definition = {
+	    coa = MAY
+	    subject_canton = MAY
+	    priority = 1600
+    }
+}
+
+RYUK = { # 琉球
+	flag_definition = {
+	    coa = RYUK
+	    subject_canton = RYUK
+	    priority = 1600
+    }
+}
+
+SGPR = { # 新加坡
+	flag_definition = {
+	    coa = SGPR
+	    subject_canton = SGPR
+	    priority = 1600
+    }
+}
+
+SIB = { #西伯利亚
+	flag_definition = {
+	    coa = SIB_03
+	    subject_canton = SIB_03
+	    priority = 1600
+    }
+}
+
+#非洲
+ANG = { #安哥拉
+	flag_definition = {
+	    coa = ANG
+	    subject_canton = ANG
+	    priority = 1600
+    }
+}
+
+ZMB = { #赞比亚
+	flag_definition = {
+	    coa = ZMB
+	    subject_canton = ZMB
+	    priority = 1600
+    }
+}
+
+MOZ = { #莫桑比克
+    flag_definition = {
+	    coa = MOZ
+	    subject_canton = MOZ
+	    priority = 1600
+    }
+}
+
+TNZ = { #坦桑尼亚
+	flag_definition = {
+	    coa = TNZ
+	    subject_canton = TNZ
+	    priority = 1600
+    }
+}
+
+KNY = { #肯尼亚
+	flag_definition = {
+	    coa = KNY
+	    subject_canton = KNY
+	    priority = 1600
+    }
+}
+
+DRC = { #刚果金
+	flag_definition = {
+	    coa = DRC
+	    subject_canton = DRC
+	    priority = 1600
+    }
+}
+
+CKS = { #刚果布
+	flag_definition = {
+	    coa = CKS
+	    subject_canton = CKS
+	    priority = 1600
+    }
+}
+
+GAB = { #加蓬
+    flag_definition = {
+	    coa = GAB
+	    subject_canton = GAB
+	    priority = 1600
+    }
+}
+
+CMN = { #喀麦隆
+    flag_definition = {
+	    coa = CMN
+	    subject_canton = CMN
+	    priority = 1600
+    }
+}
+
+CAR = { #中非
+	flag_definition = {
+	    coa = CAR_02
+	    subject_canton = CAR_02
+	    priority = 1600
+    }
+}
+
+ERI = { #厄立特里亚
+	flag_definition = {
+	    coa = ERI
+	    subject_canton = ERI
+	    priority = 1600
+    }
+}
+
+NAZI = { #南美军团
+	flag_definition = {
+	    coa = NAZI
+	    subject_canton = NAZI
+	    priority = 1600
+    }
+}
+
+AYUB = { #阿尤布
+	flag_definition = {
+	    coa = AYUB
+	    subject_canton = AYUB
+	    priority = 1600
+    }
+}
+
+AFRC = { #非洲联盟
+	flag_definition = {
+	    coa = AFRC
+	    subject_canton = AFRC
+	    priority = 1600
+    }
+}
+
+SONG = { #大宋
+	flag_definition = {
+	    coa = SONG
+	    subject_canton = SONG
+	    priority = 1600
+    }
+}
+
+LIVO = { #利沃尼亚骑士团 Livonian Order
+	flag_definition = {
+	    coa = LIVO
+	    subject_canton = LIVO
+	    priority = 1600
+    }
+}
+
+TEUT = { #条顿骑士团 Teutonic Order
+	flag_definition = {
+	    coa = TEUT
+	    subject_canton = TEUT
+	    priority = 1600
+    }
+}
+
+CIRC = { #切尔克西亚 Circassia
+	flag_definition = {
+		coa = CIRC
+		subject_canton = CIRC
+		priority = 1600
+	}
+	flag_definition = {
+		coa = CIR_war
+		subject_canton = CIR_war
+		priority = 1800		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_at_war = yes
+			}
+		}
+	}
+}
+
+CHEC = { #车臣 Chechnya
+	flag_definition = {
+		coa = CHEC
+		subject_canton = CHEC
+		priority = 1600
+	}
+	flag_definition = {
+		coa = CHC_imamate
+		subject_canton = CHC_imamate
+		priority = 1800
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+
+KAZA = { #喀山 Kazan
+	flag_definition = {
+		coa = KAZA
+		subject_canton = KAZA
+		priority = 1600
+	}
+	flag_definition = {
+		coa = KAZA_monarchy
+		subject_canton = TKAZA_monarchy
+		priority = 1650
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = KAZA_communist
+		subject_canton = KAZA_communist
+		priority = 1800
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
+
+CRIM = { #克里米亚 Crimea
+	flag_definition = {
+		coa = CRIM
+		subject_canton = CRIM
+		priority = 1600
+	}
+}
+
+NOGA = { #诺盖 Nogai
+	flag_definition = {
+		coa = NOGA
+		subject_canton = NOGA
+		priority = 1600
+	}
+}
+
+PERM = { #彼尔姆 Perm
+	flag_definition = {
+		coa = PERM
+		subject_canton = PERM
+		priority = 1600
+	}
+}
+
+GEO = { #格鲁吉亚 Georgia
+	flag_definition = {
+		coa = GEOR
+		subject_canton = GEOR
+		priority = 1600
+	}
+	flag_definition = {
+		coa = GEO_theocracy
+		subject_canton = GEO_theocracy
+		priority = 1600
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GEO_communist
+		priority = 1800
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+}
+
+LAN = { #兰芳  Lanfang
+	flag_definition = {
+		coa = LANF
+		subject_canton = LANF
+		priority = 1600
+	}
+}

@@ -1,0 +1,703 @@
+﻿national_congress_of_the_kmt_var = { 
+	type = country
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 1
+		}
+		localization_key = 1_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 2
+		}
+		localization_key = 2_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 3
+		}
+		localization_key = 3_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 4
+		}
+		localization_key = 4_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 5
+		}
+		localization_key = 5_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 6
+		}
+		localization_key = 6_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 7
+		}
+		localization_key = 7_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 8
+		}
+		localization_key = 8_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 9
+		}
+		localization_key = 9_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 10
+		}
+		localization_key = 10_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 11
+		}
+		localization_key = 11_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 12
+		}
+		localization_key = 12_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 13
+		}
+		localization_key = 13_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 14
+		}
+		localization_key = 14_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 15
+		}
+		localization_key = 15_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 16
+		}
+		localization_key = 16_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 17
+		}
+		localization_key = 17_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 18
+		}
+		localization_key = 18_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 19
+		}
+		localization_key = 19_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 20
+		}
+		localization_key = 20_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 21
+		}
+		localization_key = 21_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 22
+		}
+		localization_key = 22_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 23
+		}
+		localization_key = 23_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 24
+		}
+		localization_key = 24_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 25
+		}
+		localization_key = 25_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 26
+		}
+		localization_key = 26_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 27
+		}
+		localization_key = 27_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 28
+		}
+		localization_key = 28_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 29
+		}
+		localization_key = 29_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 30
+		}
+		localization_key = 30_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 31
+		}
+		localization_key = 31_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 32
+		}
+		localization_key = 32_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 33
+		}
+		localization_key = 33_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 34
+		}
+		localization_key = 34_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 35
+		}
+		localization_key = 35_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 36
+		}
+		localization_key = 36_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 37
+		}
+		localization_key = 37_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 38
+		}
+		localization_key = 38_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 39
+		}
+		localization_key = 39_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 40
+		}
+		localization_key = 40_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 41
+		}
+		localization_key = 41_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 42
+		}
+		localization_key = 42_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 43
+		}
+		localization_key = 43_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 44
+		}
+		localization_key = 44_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 45
+		}
+		localization_key = 45_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 46
+		}
+		localization_key = 46_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 47
+		}
+		localization_key = 47_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 48
+		}
+		localization_key = 48_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 49
+		}
+		localization_key = 49_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 50
+		}
+		localization_key = 50_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 51
+		}
+		localization_key = 51_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 52
+		}
+		localization_key = 52_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 53
+		}
+		localization_key = 53_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 54
+		}
+		localization_key = 54_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 55
+		}
+		localization_key = 55_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 56
+		}
+		localization_key = 56_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 57
+		}
+		localization_key = 57_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 58
+		}
+		localization_key = 58_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 59
+		}
+		localization_key = 59_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 60
+		}
+		localization_key = 60_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 61
+		}
+		localization_key = 61_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 62
+		}
+		localization_key = 62_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 63
+		}
+		localization_key = 63_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 64
+		}
+		localization_key = 64_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 65
+		}
+		localization_key = 65_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 66
+		}
+		localization_key = 66_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 67
+		}
+		localization_key = 67_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 68
+		}
+		localization_key = 68_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 69
+		}
+		localization_key = 69_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 70
+		}
+		localization_key = 70_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 71
+		}
+		localization_key = 71_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 72
+		}
+		localization_key = 72_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 73
+		}
+		localization_key = 73_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 74
+		}
+		localization_key = 74_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 75
+		}
+		localization_key = 75_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 76
+		}
+		localization_key = 76_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 77
+		}
+		localization_key = 77_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 78
+		}
+		localization_key = 78_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 79
+		}
+		localization_key = 79_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 80
+		}
+		localization_key = 80_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 81
+		}
+		localization_key = 81_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 82
+		}
+		localization_key = 82_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 83
+		}
+		localization_key = 83_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 84
+		}
+		localization_key = 84_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 85
+		}
+		localization_key = 85_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 86
+		}
+		localization_key = 86_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 87
+		}
+		localization_key = 87_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 88
+		}
+		localization_key = 88_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 89
+		}
+		localization_key = 89_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 90
+		}
+		localization_key = 90_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 91
+		}
+		localization_key = 91_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 92
+		}
+		localization_key = 92_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 93
+		}
+		localization_key = 93_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 94
+		}
+		localization_key = 94_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 95
+		}
+		localization_key = 95_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 96
+		}
+		localization_key = 96_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 97
+		}
+		localization_key = 97_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 98
+		}
+		localization_key = 98_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 99
+		}
+		localization_key = 99_national_congress_of_the_kmt_var_key
+	}
+	text = {
+		trigger = {
+			has_variable = national_congress_of_the_kmt_var
+			var:national_congress_of_the_kmt_var = 100
+		}
+		localization_key = 100_national_congress_of_the_kmt_var_key
+	}
+}

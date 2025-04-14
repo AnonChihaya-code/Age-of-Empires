@@ -1,0 +1,45 @@
+﻿#####动态国家颜色#####
+china_monarchy = {
+	color = rgb { 0.874 0.105 0.070 } #red_china #中华帝国红
+	possible = {
+		exists = c:CHINA
+		THIS = c:CHINA
+		has_law = law_type:law_monarchy
+	}
+}
+china_theocracy = {
+	color = { 15 80 48 } #{ 100 150 20 } #太平天国绿
+	possible = {
+		exists = c:CHINA
+		THIS = c:CHINA
+		has_law = law_type:law_theocracy
+	}
+}
+china_republican = {
+	color = hsv360 { 215 80	45 } #azure #民国蓝
+	possible = {
+		exists = c:CHINA
+		THIS = c:CHINA
+		OR = {
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_presidential_republic
+		}
+	}
+}
+china_communist = {
+	color = rgb { 0.95 0.06 0.19 } #communist_china_red #委员红
+	possible = {
+		exists = c:CHINA
+		THIS = c:CHINA
+		has_law = law_type:law_council_republic
+	}
+}
+
+erom_sunni = { #绿罗马
+	color = { 0.1 0.5 0.3 }
+	possible = {
+		exists = c:EROM
+		THIS = c:EROM
+		country_has_state_religion = rel:sunni
+	}
+}

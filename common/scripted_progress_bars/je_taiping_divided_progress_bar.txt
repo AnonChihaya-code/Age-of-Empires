@@ -1,0 +1,286 @@
+﻿je_taiping_divided_progress_bar = {
+	name = "je_taiping_divided_progress_bar"
+	desc = "je_taiping_divided_progress_bar_desc"
+
+	default_green = yes
+
+	monthly_progress = {
+
+		#合法性
+		if = {
+			limit = {
+				legitimacy >= 50
+				legitimacy < 75
+			}
+			add = {
+				desc = "je_taiping_divided_legitimacy_01_tt"
+				value = 0.5
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 75
+				legitimacy < 90
+			}
+			add = {
+				desc = "je_taiping_divided_legitimacy_02_tt"
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy >= 90
+			}
+			add = {
+				desc = "je_taiping_divided_legitimacy_03_tt"
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy > 25
+				legitimacy < 50
+			}
+			add = {
+				desc = "je_taiping_divided_legitimacy_04_tt"
+				value = -1
+			}
+		}
+		else_if = {
+			limit = {
+				legitimacy <= 25
+			}
+			add = {
+				desc = "je_taiping_divided_legitimacy_05_tt"
+				value = -2
+			}
+		}
+
+		#统治者人气
+		if = {
+			limit = {
+				ruler = {
+					popularity >= 25
+				}
+			}
+			add = {
+				desc = "je_taiping_divided_ruler_popularity_tt"
+				value = ruler.popularity
+				multiply = 1
+				divide = 50
+			}
+		}
+
+		#统治者利益集团势力
+        if = {
+			limit = {
+				owner = {
+					any_interest_group = {
+						root.ruler.interest_group = this
+					}
+				}
+			}
+		    subtract = {
+				desc = "je_taiping_divided_ruler_ig_powerful_tt"
+				owner = {
+					every_interest_group = {
+		                limit = {
+			               root.ruler.interest_group = this
+		                }
+				        subtract = this.ig_clout
+					}
+			    }
+		    }
+		}
+
+        #军队领袖人气
+		if = {
+			limit = {
+				ig:ig_armed_forces = {
+				    leader = {
+					    popularity >= 25
+					}
+				}
+			}
+			subtract = {
+				desc = "je_taiping_divided_army_leader_popularity_tt"
+				value = ig:ig_armed_forces.leader.popularity
+				multiply = 1
+				divide = 50
+			}
+		}
+
+		#军队利益集团势力
+        if = {
+			limit = {
+				owner = {
+					any_interest_group = {
+						is_interest_group_type = ig_armed_forces
+					}
+				}
+			}
+		    add = {
+				desc = "je_taiping_divided_army_ig_powerful_tt"
+				owner = {
+					every_interest_group = {
+		                limit = {
+			               is_interest_group_type = ig_armed_forces
+		                }
+				        subtract = this.ig_clout
+					}
+			    }
+		    }
+		}
+
+		#农业建筑等级
+        if = {
+			limit = {
+				has_journal_entry = je_taiping_divided
+			}
+		    subtract = {
+				desc = "je_taiping_divided_progress_from_farms"
+				ROOT = {
+					every_scope_building = {
+		                limit = {
+			                is_building_group = bg_agriculture
+					    	NOT = {
+					    	    is_building_group = bg_subsistence_agriculture
+			                }
+			                weekly_profit > 0
+		                }
+				        subtract = {
+							value = this.level
+				            divide = 100
+						}
+					}
+			    }
+		    }
+		}
+		#军事建筑等级
+        if = {
+			limit = {
+				has_journal_entry = je_taiping_divided
+			}
+		    add = {
+				desc = "je_taiping_divided_progress_from_military"
+				ROOT = {
+					every_scope_building = { 
+						limit = {
+							is_building_group = bg_military
+							occupancy >= 0.5
+		                }
+				        subtract = {
+							value = this.level
+				            divide = 100
+						}
+					}
+				}
+			}
+		}
+
+		#地区效忠
+		if = {
+			limit = {
+				ROOT = {
+					any_scope_state = {
+						OR = {
+							region = sr:region_north_china
+                            region = sr:region_south_china
+                            region = sr:region_manchuria
+                            region = sr:region_central_asia
+                            region = sr:region_himalayas
+						}
+						loyalty >= 0.10
+					}
+				}
+			}
+			subtract = {
+				desc = "je_taiping_divided_loyalists_tt"
+				ROOT = {
+					every_scope_state = {
+						limit = {
+							OR = {
+							    region = sr:region_north_china
+                                region = sr:region_south_china
+                                region = sr:region_manchuria
+                                region = sr:region_central_asia
+                                region = sr:region_himalayas
+						    }
+							loyalty >= 0.10
+						}
+						subtract = this.loyalty
+					}
+				}
+			}
+		}
+		#地区动乱
+		if = {
+			limit = {
+				ROOT = {
+					any_scope_state = {
+						OR = {
+							region = sr:region_north_china
+                            region = sr:region_south_china
+                            region = sr:region_manchuria
+                            region = sr:region_central_asia
+                            region = sr:region_himalayas
+						}
+						turmoil >= 0.10
+					}
+				}
+			}
+			add = {
+				desc = "je_taiping_divided_radicals_tt"
+				ROOT = {
+					every_scope_state = {
+						limit = {
+							OR = {
+							    region = sr:region_north_china
+                                region = sr:region_south_china
+                                region = sr:region_manchuria
+                                region = sr:region_central_asia
+                                region = sr:region_himalayas
+						    }
+							turmoil >= 0.10
+						}
+						subtract = this.turmoil
+					}
+				}
+			}
+		}
+
+		#税收
+		if = {
+			limit = { ROOT = { tax_level = very_low } }
+			add = {
+				desc = "presidencies_very_low_taxation_tt"
+				add = 1
+			}
+		}
+		else_if = {
+			limit = { ROOT = { tax_level = low } }
+			add = {
+				desc = "presidencies_low_taxation_tt"
+				add = 0.5
+			}
+		}
+		else_if = {
+			limit = { ROOT = { tax_level = high } }
+			add = {
+				desc = "presidencies_high_taxation_tt"
+				add = -1
+			}
+		}
+		else_if = {
+			limit = { ROOT = { tax_level = very_high } }
+			add = {
+				desc = "presidencies_very_high_taxation_tt"
+				add = -2
+			}
+		}
+	}
+	
+	start_value = 150
+	min_value = 0
+	max_value = 300
+}

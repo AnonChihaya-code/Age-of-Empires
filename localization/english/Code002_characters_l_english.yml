@@ -1,0 +1,504 @@
+﻿l_english:
+ ###################
+ #####名字本地化#####
+ ###################
+  #逸仙
+ CNNR_Sun: "Sun"
+ CNNR_Yat_Sen: "Yat-Sen"
+ #黄兴
+ CNNR_Huang: "Huang"
+ CNNR_Xing: "Xing"
+ #叶挺
+ CNNR_Ye: "Ye"
+ CNNR_Ting: "Ting"
+ #蔡元培
+ CNNR_Cai: "Cai"
+ CNNR_Yuanpei: "Yuanpei"
+ #陈炯明
+ CNNR_Chen: "Chen"
+ CNNR_Jiongmin: "Jiongmin"
+
+ #袁世凯
+ CNBY_Yuan: "Yuan"
+ CNBY_Shikai: "Shikai"
+ #袁克定
+ CNBY_Keding: "Keding"
+ #段祺瑞
+ CNBY_Duan: "Duan"
+ CNBY_Qirui: "Qirui"
+ #黎元洪
+ CNBY_Li: "Li"
+ CNBY_Yuanhong: "Yuanhong"
+ #冯国璋
+ CNBY_Feng: "Feng"
+ CNBY_Guozhang: "Guozhang"
+ #徐世昌
+ CNBY_Xu: "Xu"
+ CNBY_Shicang: "Shicang"
+ #顾维钧
+ CNBY_Wellington: "Wellington"
+ CNBY_Koo: "Koo"
+
+ #新桂系军阀
+ CNGX_Li: "Li"
+ CNGX_Bai: "Bai"
+
+ CNGX_Zongren: "Zongren"
+ CNGX_Chongxi: "Chongxi"
+ #马君武
+ CNGX_Ma: "Ma"
+ CNGX_Junwu: "Junwu"
+
+ #滇系军阀
+ CNYN_Long: "Long"
+
+ CNYN_Yun: "Yun"
+
+ #大秦帝国
+ DQDG_Ying: "Ying"
+
+ DQDG_Zheng: "Zheng"
+ DQDG_Fusu: "Fusu"
+
+ #大汉帝国
+ DHDG_Liu: "Liu"
+ DHDG_Guan: "Guan"
+ DHDG_Zhang: "Zhang"
+ DHDG_Zhuge: "Zhuge"
+ DHDG_Zhao: "Zhao"
+ DHDG_Huang: "Huang"
+ DHDG_Ma: "Ma"
+
+ DHDG_Bei: "Bei"
+ DHDG_Shan: "Shan"
+ DHDG_Yu: "Yu"
+ DHDG_Fei: "Fei"
+ DHDG_Liang: "Liang"
+ DHDG_Yun: "Yun"
+ DHDG_Zhong: "Zhong"
+ DHDG_Chao: "Chao"
+
+ #曹魏
+ CNCW_Cao: "Cao"
+ CNCW_Cao2: "Cao"
+ #曹丕
+ CNCW_Pi: "Pi"
+ #曹芳
+ CNCW_Fang: "Fang"
+ #曹仁
+ CNCW_Ren: "Ren"
+ #夏侯渊
+ CNCW_Xiahou: "Xiahou"
+ CNCW_Yuan: "Yuan"
+ #夏侯惇
+ CNCW_Dun: "Dun"
+ #张辽
+ CNCW_Zhang: "Zhang"
+ CNCW_Liao: "Liao"
+ #戏志才
+ CNCW_Xi: "Xi"
+ CNCW_Zhicai: "Zhicai"
+ #荀彧
+ CNCW_Xun: "Xun"
+ CNCW_Yu: "Yu"
+ #郭嘉
+ CNCW_Guo: "Guo"
+ CNCW_Jia: "Jia"
+ #枣祇
+ CNCW_Zao: "Zao"
+ CNCW_Zhi: "Zhi"
+ #华佗
+ CNCW_Hua: "Hua"
+ CNCW_Tuo: "Tuo"
+ #孔融
+ CNCW_Kong: "Kong"
+ CNCW_Rong: "Rong"
+ #中华民国
+ CNTW_Jiang: "Chiang"
+ CNTW_Wanan: "Wayne"
+ #太平天国
+ TPTG_Hong: "Hong"
+ TPTG_Yang: "Yang"
+ TPTG_Xiao: "Xiao"
+ TPTG_Li: "Li"
+ TPTG_Qin: "Qin"
+ TPTG_Chen: "Chen"
+ TPTG_Feng: "Feng"
+ TPTG_Wei: "Wei"
+ TPTG_Shi: "Shi"
+
+ TPTG_Xiuquan: "Xiuquan"
+ TPTG_Tianguifu: "Tianguifu"
+ TPTG_Xiuqing: "Xiuqing"
+ TPTG_Chaogui: "Chaogui"
+ TPTG_Rengan: "Rengan"
+ TPTG_Yunshan: "Yunshan"
+ TPTG_Changhui: "Changhui"
+ TPTG_Dakai: "Dakai"
+ TPTG_Xiucheng: "Xiucheng"
+ TPTG_Yucheng: "Yucheng"
+ TPTG_Shixian: "Shixian"
+ TPTG_Rigang: "Rigang"
+ TPTG_Chengrong: "Chengrong"
+
+ #艾尔迪亚
+ ELDA_Eren: "Eren"
+ ELDA_Jaeger: "Jaeger"
+ ELDA_Mikasa: "Mikasa"
+ ELDA_Ackerman: "Ackerman"
+ ELDA_Levi: "Levi"
+ ELDA_Erwin: "Erwin"
+ ELDA_Smith: "Smith"
+ ELDA_Hange: "Hange"
+ ELDA_Zoe: "Zoe"
+ ELDA_Grisha: "Grisha"
+ ELDA_Armin: "Armin"
+ ELDA_Arlert: "Arlert"
+ ELDA_Christa: "Christa"
+ ELDA_Reiss: "Reiss"
+ ELDA_Jean: "Jean"
+ ELDA_Kirstein: "Kirstein"
+ ELDA_Conny: "Conny"
+ ELDA_Springe: "Springe"
+ ELDA_Sasha: "Sasha"
+ ELDA_Braus: "Braus"
+ ELDA_Floch: "Floch"
+ ELDA_Forster: "Forster"
+ ELDA_Marlowe: "Marlowe"
+ ELDA_Freudenberg: "Freudenberg"
+ ELDA_Hitch: "Hitch"
+ ELDA_Hitch_02: ""
+ ELDA_Rod: "Rod"
+ ELDA_Frieda: "Frieda"
+ ELDA_Darius: "Darius"
+ ELDA_Zackley: "Zackley"
+ ELDA_Dot: "Dot"
+ ELDA_Pixis: "Pixis"
+ ELDA_Nick: "Nick"
+ ELDA_Priest: "Priest"
+ #医院骑士团
+ OHDS_Jean_Parisot: "Jean Parisot"
+ OHDS_de_la_Valette: "de la Valette"
+ OHDS_Morgan: "Morgan"
+ OHDS_Black: "Black"
+ OHDS_Elisabet: "Elisabet"
+ OHDS_Lizzie: "Lizzie"
+ OHDS_Alain: "Alain"
+ OHDS_Alain_02: ""
+ #豪萨王国
+ HASA_Aminah: "Aminah"
+ HASA_Zazzau: ""
+ #桑海帝国
+ SHAI_Muhammad: "Muhammad"
+ SHAI_Dur: "Dur"
+ #马莱帝国
+ MRLY_Willy: "Willy"
+ MRLY_Tybur: "Tybur"
+ MRLY_Lara: "Lara"
+ MRLY_Zeke: "Zeke"
+ MRLY_Jaeger: "Jaeger"
+ MRLY_Yelena: "Yelena"
+ MRLY_Yelena_02: ""
+ MRLY_Annie: "Annie"
+ MRLY_Leonhart: "Leonhart"
+ MRLY_Pieck: "Pieck"
+ MRLY_Finger: "Finger"
+ MRLY_Bertholdt: "Bertholdt"
+ MRLY_Hoover: "Hoover"
+ MRLY_Reiner: "Reiner"
+ MRLY_Braun: "Braun"
+ MRLY_Polk: "Polk"
+ MRLY_Galliard: "Galliard"
+ MRLY_Falco: "Falco"
+ MRLY_Grice: "Grice"
+ MRLY_Gabi: "Gabi"
+ MRLY_Calvi: "Calvi"
+ MRLY_Calvi_02: ""
+ MRLY_Theo: "Theo"
+ MRLY_Magath: "Magath"
+ MRLY_Koslow: "Koslow"
+ MRLY_Koslow_02: ""
+
+ #匈奴
+# CNXN_Luandi: "Luandi"
+# CNXN_Touman: "Touman"
+# CNXN_Modu: "Modu"
+ #刘渊
+ CNXN_Liu: "Liu"
+ CNXN_Yuan: "Yuan"
+ #刘聪
+ CNXN_Cong: "Cong"
+ 
+ #西域都护府
+ CNXY_Zhang: "Zhang"
+ CNXY_Qian: "Qian"
+
+ #大唐
+ DTDG_Li: "Li"
+
+ DTDG_Xingyun: "Xingyun"
+ DTDG_Cunxu: "Cunxu"
+ 
+ #袁天罡
+ DTDG_Yuan: "Yuan"
+ DTDG_Tiangang: "Tiangang"
+
+ #归义军
+ CNGY_Zhang: "Zhang"
+ CNGY_Suo: "Suo"
+
+ CNGY_Yichao: "Yichao"
+ CNGY_Huaishen: "Huaishen"
+ CNGY_Huaiding: "Huaiding"
+ CNGY_Xun: "Xun"
+
+ #吐蕃
+ CNTB_Songzain: "Songzain"
+ CNTB_Gambo: "Gambo"
+
+ #青阳
+ CNQY_Lv: "Lv"
+
+ CNQY_Guichen: "Guichen"
+
+ #金帐
+ MGGH_Mohammed: "Mohammed"
+ 
+ MGGH_Ozbeg_Khan: "Ozbeg Khan"
+
+ #塞尔柱
+ SERZ_Toghril: "Toghril"
+
+ SERZ_Beg: "Beg"
+
+ #贵霜
+ KUSH_Kujula: "Kujula"
+
+ KUSH_Kadphises: "Kadphises"
+
+ #德里
+ DELI_Qutb_al_Din: "Qutb al-Din"
+
+ DELI_Aibak: "Aibak"
+
+ #安息
+ PART_Arsaces: "Arsaces"
+
+ PART_Parni: "Parni"
+
+ #萨珊
+ SASS_Ardashir: "Ardashir"
+
+ SASS_Papak_Sasan: "Papak Sasan"
+
+ #美利坚
+ USA_Donald: "Donald"
+ USA_Trump: "Trump"
+
+ #安托南·阿尔托
+ VFRA_Antonin: "Antonin"
+ VFRA_Artaud: "Artaud"
+
+ #贞德Jeanne d'Arc
+ JEAN_dArc: "d'Arc"
+
+ #托尔兹
+ ICL_Thors: "Thors"
+ ICL_Snorresson: "Snorresson"
+
+ #托尔芬
+ VLAN_Thorfinn: "Thorfinn"
+ VLAN_Karlsefni: "Karlsefni"
+
+ #猎鹰 夏伊
+ OHDS_Falcon: "Sahin"
+ OHDS_Sahin: "Falcon"
+
+ #艾米利亚 布莱克
+ FALC_Amelia: "Amelia"
+ FALC_Black: "Black"
+
+ #卡念
+ FALC_Ka: "Ka"
+ FALC_Nien: "Nien"
+
+
+ #库柏
+ FALC_Cooper: "Cooper"
+ FALC_Major: ""
+
+ #皮耶波曼
+ TCOS_Pierre: "Pierre"
+ TCOS_Beaumont: "Beaumont"
+
+ #海华沙
+ IROQ_Hiawatha: "Hiawatha"
+ IROQ_Hiawatha2: ""
+
+ #高尔
+ SUOI_Gall: "Gall"
+ SUOI_Gall2: ""
+
+ #瓜特穆斯
+ AZTE_Cuauhtemoc: "Cuauhtemoc"
+ AZTE_Cuauhtemoc2: ""
+
+ #印加
+ #瓦伊纳·卡帕克
+ INCA_Huayan: "Huayan"
+ INCA_Capac: "Capac"
+
+ #奥雷利耶-安托万·德·图龙
+ PATA_Orelie_Antoine: "Orelie-Antoine"
+ PATA_de_Tounens: "de Tounens"
+ 
+ #朱棣
+ MING_Zhu: "Zhu"
+ MING_Di: "Di"
+ #朱高炽
+ MING_Gaochi: "Gaochi"
+
+ #埃德·斯塔福德
+ AMZ_Ed: "Ed"
+ AMZ_Stafford: "Stafford"
+
+ #杰罗尼莫
+ APAC_Geronimo: "Geronimo"
+ APAC_Geronimo02: ""
+ 
+ #高松 灯 Takamatsu Tomori
+ MYGO_Takamatsu: "Takamatsu"
+ MYGO_Tomori: "Tomori"
+
+ #千早 爱音
+ MYGO_Chihaya: "Chihaya"
+ MYGO_Anon: "Anon"
+
+ #纯田 真奈
+ MYGO_Sumita: "Sumita"
+ MYGO_Mana: "Mana"
+
+ #要乐 奈
+ MYGO_Kaname: "Kaname"
+ MYGO_Rana: "Rāna"
+
+ #长崎 素世
+ MYGO_Nagasaki: "Nagasaki"
+ MYGO_Soyo: "Soyo"
+
+ #椎名 立希
+ MYGO_Shiina: "Shiina"
+ MYGO_Taki: "Taki"
+
+ # 丰川 祥子
+ MYGO_Sakiko: "Sakiko"
+ MYGO_Togawa: "Togawa"
+
+ #三角 初华
+ MYGO_Misumi: "Misumi"
+ MYGO_Uika: "Uika"
+
+
+ #若叶 睦
+ MYGO_Wakaba: "Wakaba"
+ MYGO_Mutsumi: "Mutsumi"
+
+ #八幡 海铃
+ MYGO_Yahata: "Yahata"
+ MYGO_Umiri: "Umiri"
+
+ #祐天寺 喵梦
+ MYGO_Yutenji: "Yūtenji"
+ MYGO_Nyamu: "Nyamu"
+
+ #伊莎贝拉 Isabel I la Católica Isabel I de Castilla
+ CAS_Isabel_la_Catholic: "Isabel I"
+ CAS_Catholic: "la Católica"
+
+ #克里斯托弗·哥伦布
+ CAS_Christopher: "Cristóbal"
+ CAS_Columbus: "Colón"
+
+ # 费尔南多二世 Fernando el Católico #Fernando II de Aragón
+ ARAG_Fernando: "Fernando"
+ ARAG_el_Catholic: "el Católico"
+
+ #尚泰
+ RYUK_Sho: "Sho"
+ RYUK_Tai: "Tai"
+
+ #司马懿
+ DJDG_Sima: "Sima"
+ DJDG_Yi: "Yi"
+ #司马师
+ DJDG_Shi: "Shi"
+ #司马昭
+ DJDG_Zhao: "Zhao"
+
+ #李光耀
+ SGPR_Lee: "Lee"
+ SGPR_Kuan_Yew: "Kuan Yew"
+ #李显龙
+ SGPR_Hsien_Loong: "Hsien Loong"
+
+ #希特勒
+ NAZI_Adolf: "Adolf"
+ NAZI_Hitler: "Hitler"
+
+ #萨拉丁
+ AYUB_Salah: "Salah ad-Din"
+ AYUB_Ayyub: "Yusuf ibn Ayyub"
+
+ #文天祥#宋瑞
+ SONG_Song: "Song"
+ SONG_Rui: "Rui"
+ 
+ #金帐
+ #库楚克·穆罕默德 成吉思
+ MGGH_Kuchuk_Muhammad: "Küchük Muhammad"
+ MGGH_Genghisid: "Genghisid"
+ #阿黑麻 成吉思
+ MGGH_Ahmad: "Ahmad"
+ #乌鲁·穆罕默德 成吉思
+ MGGH_Ulugh_Muhammad: "Ulugh Muhammad"
+ #马赫穆提克 成吉思
+ MGGH_Mahmudak: "Mahmudak"
+ #哈吉·格来
+ MGGH_Haji: "Haji"
+ MGGH_Giray: "Giray"
+ #努儿·道剌特 格来
+ MGGH_Nur_Devlet: "Nur Devlet"
+ #瓦喀什 也迪该
+ MGGH_Vakkas: "Vakkas"
+ MGGH_Ediguid: "Ediguid"
+ #伊巴克 昔班尼
+ MGGH_Ibak: "Ibak"
+ MGGH_Shaybanid: "Shaybanid"
+ #克烈 成吉思
+ MGGH_Kerey: "Kerey"
+ #布鲁杜克 成吉思
+ MGGH_Burunduq: "Burunduq"
+
+ #莫斯科
+ #「失明者」瓦西里 II
+ MOSC_Vasiliy_II_Temny: "Vasiliy II Temny"
+ MOSC_Ivan_III_Veliky: "Ivan III Veliky"
+ #「大帝」伊凡
+ MOSC_Rurikovich: "Rurikovich"
+
+ #叶夫菲米 II
+ NOVG_Evfimy: "Evfimy"
+ NOVG_II: "II"
+
+ #海因里希 文克
+ LIVO_Heinrich: "Heinrich"
+ LIVO_Vincke: "Vincke"
+
+ #康拉德 冯 厄里希豪森
+ TEUT_Konrad: "Konrad"
+ TEUT_von_Erlichshausen: "von Erlichshausen"
+
+ #卡齐米日 雅盖隆
+ LIT_Kazimierz: "Kazimierz"
+ LIT_Jagiellon: "Jagiellon"
+

@@ -1,0 +1,46 @@
+﻿l_english:
+
+ #####大汉本地#####
+ great_han_events.1.t: "Return to the old capital"
+ great_han_events.1.d: "After enduring countless years of hardship, Liu Bei finally defeated Cao Cao in the Battle of Hanzhong and successfully captured Chang'an. Once the capital of the Han Dynasty, a center of power where all directions came to pay homage, it now stands tall on the earth once again. \nAs Liu Bei ascended the city wall of Chang'an and gazed down at this great city, what surged in his heart was not only the joy of victory but also a profound sense of responsibility."
+ great_han_events.1.f: "Although Cao Cao was defeated, the power of the Wei state he left behind still endures, and other forces are also eyeing the situation. The road to the revival of the Han Dynasty will undoubtedly be fraught with dangers, but only by subduing the forces from all directions and ensuring the peace and security of the people can the glory of the Han be truly restored."
+ great_han_events.1.a: "Revive the Great Han!"
+
+ great_han_events.2.t: "The Third Great Han"
+ great_han_events.2.d: "Once, Emperor Gaozu slew the white serpent and founded the Han Dynasty. When he entered Xianyang, the Five Stars gathered in the Eastern Well. Emperor Guangwu took the Imperial Seal and continued the rightful lineage, and on the night of Kunyang, a meteor fell, splitting the clouds like a red talisman descending upon the world."
+ great_han_events.2.f: "Now, Your Majesty, rising from Zhuo Commandery with sword in hand, riding Dilu across the Tanxi River, gathers the remaining fortune of the two Han Dynasties, forging the foundation for our Later Han to endure for ten thousand generations!"
+ great_han_events.2.a: "The Mandate of Heaven is upon us!"
+
+ je_rebuild_changan: "Rebuilding Chang'an"
+ je_rebuild_changan_reason: "Chang'an, once the heart of the great Han Dynasty, the capital to which all corners of the world paid tribute, a symbol of culture and prosperity. Yet, with the spread of war, this city gradually fell into ruin and desolation. The bustling markets of the past are now but remnants of broken walls and countless abandoned buildings. The former splendor has become like a dream, slowly dissipating into the smoke of time. Occasionally, the wind blows, lifting a cloud of dust, and the empty streets echo with a solitary, forlorn sound."
+
+ je_revive_great_han: "Revive the Great Han"
+ je_revive_great_han_reason: "Restoring the Han dynasty is a heavy responsibility, and the road ahead is long; it is not a task that can be accomplished in a single day. The trust of the people, the support of the aristocracy, and the loyalty of the army will determine the future of the great Han."
+ je_revive_great_han_goal: "The #bold Progress Bar#! has reached #variable 100%#!"
+
+ je_revive_great_han_01: "Unifying the Four Seas"
+ je_revive_great_han_01_reason: "Our regime's legitimacy is challenged by Cao Wei and various local warlords. Only by unifying China can we rest easy without worry."
+ je_revive_great_han_01_tt: "All [concept_target][concept_state] become [concept_incorporated_state]，25% of [concept_pop] convert [concept_state_religion]"
+
+ je_revive_great_han_02: "Restore Production"
+ je_revive_great_han_02_reason: "Years of continuous warfare have caused the people to be displaced, and vast areas of land remain uncultivated. We need to reclaim the barren, ownerless farmland as state property, recruit large numbers of displaced people and organize them according to military units, providing them with land, seeds, plows, and farming tools. They will cultivate the land, and the harvest will be divided between the state and the settlers in proportion. In areas with poor transportation, roads should be constructed to facilitate the transportation of grain. At the same time, schools should be built in local areas to cultivate talent for the state."
+
+ je_revive_great_han_03: "Reorganizing the Military"
+ je_revive_great_han_03_reason: "Our army has gone through numerous hard battles and is already exhausted, struggling to face the next war. Therefore, we must halt and take a break to rest."
+
+ je_revive_great_han_04: "Bureaucratic Reform"
+ je_revive_great_han_04_reason: "Strengthen control over local regions, eliminate corruption, restore a fair tax system, and reduce the burden on the people to promote social stability."
+
+ je_revive_great_han_05: "Restore the Silk Road"
+ je_revive_great_han_05_reason: "In the past, the Han Dynasty, weakened by internal strife, lost control over the Protectorate of the Western Regions. Today, if we can regain control of the Silk Road, prosperous trade will bring continuous wealth to the Han."
+ je_revive_great_han_05_tt: "All [concept_target][concept_state] become [concept_incorporated_state]，25% of [concept_pop] convert [concept_state_religion]"
+ 
+ je_rebuild_changan_modifier: "The Heart of the Han"
+ je_revive_great_han_modifier: "The Fire Never Extinguishes"
+ revive_great_han_modifier: "The Mandate of Heaven"
+ je_revive_great_han_01_modifier: "The Mandate of Heaven"
+ je_revive_great_han_0201_modifier: "Restore Production"
+ je_revive_great_han_0202_modifier: "Prosperity and Peace"
+ je_revive_great_han_03_modifier: "Strong Army and Sturdy Horses"
+ je_revive_great_han_04_modifier: "Clear Governance"
+ je_revive_great_han_05_modifier: "Silk Road"

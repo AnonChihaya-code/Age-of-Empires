@@ -1,0 +1,45 @@
+﻿#################
+#####注册公司#####
+#################
+
+company_falcon = { #猎鹰公司
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/gb_great_western_railway.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_railway
+		building_gold_mine
+		building_iron_mine
+		building_coal_mine
+        building_lead_mine
+        building_sulfur_mine
+        building_logging_camp
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_dixie
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_DISTRICT_OF_COLUMBIA
+			}
+		}
+	}			
+	
+	possible = { }
+	
+	prosperity_modifier = {
+		state_construction_mult = 0.25                          #地区建造效率
+	    building_construction_sector_throughput_add = 0.25      #建筑部门吞吐
+		military_formation_movement_speed_mult = 0.25           #编队移动速度
+	    military_formation_mobilization_speed_mult = 0.25       #编队动员速度
+	}	
+	
+	ai_weight = {
+		value = 3
+	}
+}

@@ -1,0 +1,35 @@
+﻿#####事件通知#####
+caucasus_tatar_failed_attack_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/military.dds"
+	notification_type = feed
+	days = 28
+}
+
+caucasus_tatar_village_burned_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/military.dds"
+	notification_type = feed
+	days = 28
+}
+
+caucasus_tatar_supply_convoy_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/military.dds"
+	notification_type = feed
+	days = 28
+}
+
+tatar_caucasus_tribe_defection_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/military.dds"
+	notification_type = feed
+	days = 28
+}
+
+caucasus_tatar_soldiers_defection_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/military.dds"
+	notification_type = feed
+	days = 28
+}

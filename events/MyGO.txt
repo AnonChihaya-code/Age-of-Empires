@@ -1,0 +1,214 @@
+﻿namespace = mygo_events
+
+mygo_events.1 = { #CRYCHIC解散
+	type = country_event
+	placement = root
+	duration = 3
+	title = mygo_events.1.t
+	desc = mygo_events.1.d
+	flavor = mygo_events.1.f
+	event_image = {
+		texture = "gfx/event_pictures/mygo_events_1.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = mygo_events.1.a
+		add_journal_entry = {
+			type = je_universal_education
+		}
+		add_journal_entry = {
+			type = je_heavy_hearted_woman
+		}
+		add_journal_entry = {
+			type = je_moon_forest
+		}
+	}
+}
+
+mygo_events.2 = { #入学面试
+	type = country_event
+	placement = root
+	duration = 3
+	title = mygo_events.2.t
+	desc = mygo_events.2.d
+	flavor = mygo_events.2.f
+	event_image = {
+		texture = "gfx/event_pictures/mygo_events_2.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = mygo_events.2.a
+		add_modifier = {
+			name = je_universal_education_modifier years = 19
+		}
+		add_journal_entry = {
+			type = je_mysterious_girlicon
+		}
+		set_variable = mygo_events_0401_var
+	}
+}
+
+mygo_events.3 = { #花坛里的动静
+	type = country_event
+	placement = root
+	duration = 3
+	title = mygo_events.3.t
+	desc = mygo_events.3.d
+	flavor = mygo_events.3.f
+	event_image = {
+		texture = "gfx/event_pictures/mygo_events_3.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = mygo_events.3.a
+		add_modifier = {
+			name = je_mysterious_girlicon_modifier years = 19
+		}
+		set_variable = mygo_events_0402_var
+	}
+}
+
+mygo_events.4 = { #顺利入学
+	type = country_event
+	placement = root
+	duration = 3
+	title = mygo_events.4.t
+	desc = mygo_events.4.d
+	flavor = mygo_events.4.f
+	event_image = {
+		texture = "gfx/event_pictures/mygo_events_4.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		c:MYGO ?= this
+		has_variable = mygo_events_0401_var
+		has_variable = mygo_events_0402_var
+		NOT = { has_variable = mygo_events_0403_var }
+	}
+	immediate = {
+		set_variable = mygo_events_0403_var
+	}
+	option = {
+		name = mygo_events.4.a
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = mygo_events_4_01_modifier years = 3
+			}
+		}
+	}
+	option = {
+		default_option = yes
+		name = mygo_events.4.b
+		custom_tooltip = { 
+			text = mygo_events_4_tt
+		}
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = mygo_events_4_02_modifier years = 3
+			}
+		}
+		add_journal_entry = {
+		    type = je_sound_of_sugar
+		}
+	}
+}
+
+mygo_events.5 = { #午休时间
+	type = country_event
+	placement = root
+	duration = 3
+	title = mygo_events.5.t
+	desc = mygo_events.5.d
+	flavor = mygo_events.5.f
+	event_image = {
+		texture = "gfx/event_pictures/mygo_events_5.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		c:MYGO ?= this
+		has_variable = mygo_events_0403_var
+		NOT = { has_variable = mygo_events_05_var }
+	}
+	immediate = {
+		set_variable = mygo_events_05_var
+	}
+	option = {
+		default_option = yes
+		name = mygo_events.5.a
+		add_modifier = {
+			name = mygo_events_5_modifier years = 3
+		}
+	}
+}
+
+mygo_events.6 = { #放学闲谈
+	type = country_event
+	placement = root
+	duration = 3
+	title = mygo_events.6.t
+	desc = mygo_events.6.d
+	flavor = mygo_events.6.f
+	event_image = {
+		texture = "gfx/event_pictures/mygo_events_6.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		c:MYGO ?= this
+		has_variable = mygo_events_05_var
+		NOT = { has_variable = mygo_events_06_var }
+	}
+	immediate = {
+		set_variable = mygo_events_06_var
+	}
+	option = {
+		default_option = yes
+		name = mygo_events.6.a
+	}
+	option = {
+		name = mygo_events.6.b
+	}
+}
+
+mygo_events.7 = { #亚麻色头发的少女
+	type = country_event
+	placement = root
+	duration = 3
+	title = mygo_events.7.t
+	desc = mygo_events.7.d
+	flavor = mygo_events.7.f
+	event_image = {
+		texture = "gfx/event_pictures/mygo_events_7.png"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	trigger = {
+		c:MYGO ?= this
+		has_variable = mygo_events_06_var
+		NOT = { has_variable = mygo_events_07_var }
+	}
+	immediate = {
+		set_variable = mygo_events_07_var
+	}
+	option = {
+		default_option = yes
+		name = mygo_events.7.a
+		add_journal_entry = {
+		    type = je_source_of_misfortune
+		}
+	}
+}

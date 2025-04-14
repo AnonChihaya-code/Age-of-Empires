@@ -1,0 +1,27 @@
+﻿CHARACTERS = {
+	c:WAL ?= {
+		create_character = {
+			first_name = Vladislas
+	        last_name = Dracula
+			historical = yes
+			ruler = yes
+			is_general = yes
+			female = no
+			dna = dna_dracula
+			interest_group = ig_landowners
+			ideology = ideology_market_liberal
+			culture = cu:szekely
+			religion = orthodox
+			age = 18
+			traits = {
+				erudite
+				imposing
+				charismatic
+				forest_commander
+			}
+			on_created = {
+				set_character_immortal = yes
+			}
+		}
+	}
+}

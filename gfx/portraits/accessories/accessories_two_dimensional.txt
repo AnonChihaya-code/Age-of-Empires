@@ -1,0 +1,345 @@
+﻿Accessories_Jeanne_dArc = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Jeanne_dArc_entity"
+    }
+}
+
+Accessories_Takamatsu_Tomori = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Takamatsu_Tomori_entity"
+    }
+}
+Accessories_Chihaya_Anon = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Chihaya_Anon_entity"
+    }
+}
+Accessories_Sumita_Mana = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Sumita_Mana_entity"
+    }
+}
+Accessories_Kaname_Rana = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Kaname_Rana_entity"
+    }
+}
+Accessories_Nagasaki_Soyo = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Nagasaki_Soyo_entity"
+    }
+}
+Accessories_Shiina_Taki = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Shiina_Taki_entity"
+    }
+}
+Accessories_Sakiko_Togawa = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Sakiko_Togawa_entity"
+    }
+}
+Accessories_Misumi_Uika = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Misumi_Uika_entity"
+    }
+}
+Accessories_Wakaba_Mutsumi = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Wakaba_Mutsumi_entity"
+    }
+}
+Accessories_Yahata_Umiri = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Yahata_Umiri_entity"
+    }
+}
+Accessories_Yutenji_Nyamu = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Yutenji_Nyamu_entity"
+    }
+}
+
+Accessories_Toyama_Kasumi = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Toyama_Kasumi_entity"
+    }
+}
+Accessories_Hanazono_Tae = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Hanazono_Tae_entity"
+    }
+}
+Accessories_Ushigome_Rimi = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Ushigome_Rimi_entity"
+    }
+}
+Accessories_Yamabuki_Saya = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Yamabuki_Saya_entity"
+    }
+}
+Accessories_Ichigaya_Arisa = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Ichigaya_Arisa_entity"
+    }
+}
+
+Accessories_Mitake_Ran = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Mitake_Ran_entity"
+    }
+}
+Accessories_Aoba_Moca = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Aoba_Moca_entity"
+    }
+}
+Accessories_Uehara_Himari = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Uehara_Himari_entity"
+    }
+}
+Accessories_Udagawa_Tomoe = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Udagawa_Tomoe_entity"
+    }
+}
+Accessories_Hazawa_Tsugumi = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Hazawa_Tsugumi_entity"
+    }
+}
+
+Accessories_Maruyama_Aya = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Maruyama_Aya_entity"
+    }
+}
+Accessories_Hikawa_Hina = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Hikawa_Hina_entity"
+    }
+}
+Accessories_Shirasagi_Chisato = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Shirasagi_Chisato_entity"
+    }
+}
+Accessories_Yamato_Maya = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Yamato_Maya_entity"
+    }
+}
+Accessories_Wakamiya_Eve = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Wakamiya_Eve_entity"
+    }
+}
+
+Accessories_Minato_Yukina = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Minato_Yukina_entity"
+    }
+}
+Accessories_Hikawa_Sayo = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Hikawa_Sayo_entity"
+    }
+}
+Accessories_Imai_Lisa = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Imai_Lisa_entity"
+    }
+}
+Accessories_Udagawa_Ako = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Udagawa_Ako_entity"
+    }
+}
+Accessories_Shirokane_Rinko = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Shirokane_Rinko_entity"
+    }
+}
+
+Accessories_Tsurumaki_Kokoro = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Tsurumaki_Kokoro_entity"
+    }
+}
+Accessories_Seta_Kaoru = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Seta_Kaoru_entity"
+    }
+}
+Accessories_Kitazawa_Hagumi = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Kitazawa_Hagumi_entity"
+    }
+}
+Accessories_Matsubara_Kanon = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Matsubara_Kanon_entity"
+    }
+}
+Accessories_Michelle = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Michelle_entity"
+    }
+}
+
+Accessories_Kurata_Mashiro = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Kurata_Mashiro_entity"
+    }
+}
+Accessories_Kirigaya_Toko = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Kirigaya_Toko_entity"
+    }
+}
+Accessories_Hiromachi_Nanami = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Hiromachi_Nanami_entity"
+    }
+}
+Accessories_Futaba_Tsukushi = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Futaba_Tsukushi_entity"
+    }
+}
+Accessories_Yashio_Rui = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Yashio_Rui_entity"
+    }
+}
+
+Accessories_Wakana_Rei = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Wakana_Rei_entity"
+    }
+}
+Accessories_Asahi_Rokka = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Asahi_Rokka_entity"
+    }
+}
+Accessories_Sato_Masuki = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Sato_Masuki_entity"
+    }
+}
+Accessories_Nyubara_Reona = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Nyubara_Reona_entity"
+    }
+}
+Accessories_Tamade_Chiyu = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Tamade_Chiyu_entity"
+    }
+}
+
+Accessories_Nakamachi_Arale = {
+    entity = {
+        required_tags = ""
+        shared_pose_entity = head
+        entity = "Nakamachi_Arale_entity"
+    }
+}

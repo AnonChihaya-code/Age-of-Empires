@@ -1,0 +1,220 @@
+﻿je_crychic_dissolved = { #CRYCHIC解散
+	icon = "gfx/interface/icons/law_icons/no_health_system.dds" #无卫生系统
+	group = je_group_historical_content
+    timeout = 15
+	on_timeout = {
+		trigger_event = { id = mygo_events.1 popup = yes }
+    }
+    weight = 10000
+	should_be_pinned_by_default = yes
+}
+je_universal_education = { #不想再失败
+	icon = "gfx/interface/icons/law_icons/theocracy.dds" #神权
+	group = je_group_historical_content
+	immediate = { }
+	complete = {
+		any_scope_building = {
+			is_building_type = building_university
+			level >= 10
+			occupancy >= 0.9
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			has_building = building_university
+			percent = 1
+		}
+	}
+	on_complete = {
+		trigger_event = { id = mygo_events.2 }
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_mysterious_girlicon = { #羽丘的不可思议女生
+	icon = "gfx/interface/icons/law_icons/womens_suffrage.dds" #妇女选举权
+	group = je_group_historical_content
+	immediate = { }
+	complete = {
+		any_scope_building = {
+			is_building_type = building_iron_mine
+			level >= 15
+			occupancy >= 0.9
+		}
+		any_scope_building = {
+			is_building_type = building_coal_mine
+			level >= 10
+			occupancy >= 0.9
+		}
+		any_scope_building = {
+			is_building_type = building_lead_mine
+			level >= 1
+			occupancy >= 0.9
+		}
+		any_scope_building = {
+			is_building_type = building_sulfur_mine
+		    level >= 1
+			occupancy >= 0.9
+		}
+		any_scope_building = {
+			is_building_type = building_logging_camp
+			level >= 15
+			occupancy >= 0.9
+		}
+	}
+	on_complete = {
+		trigger_event = { id = mygo_events.3 }
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_heavy_hearted_woman = { #重女的性格
+	icon = "gfx/interface/icons/law_icons/council_republic.dds" #委员会共和制
+	group = je_group_historical_content
+	scripted_progress_bar = je_heavy_hearted_woman_progress_bar
+	immediate = { }
+	complete = {
+		government_legitimacy >= 75
+		ig:ig_landowners = {
+			ig_approval >= 5
+			is_insurrectionary = no
+		}
+		ig:ig_armed_forces = {
+			ig_approval >= 5
+			is_insurrectionary = no
+		}
+		ig:ig_trade_unions = {
+			ig_approval >= 5
+			is_insurrectionary = no
+		}
+		custom_tooltip = { 
+			text = je_heavy_hearted_woman_tt
+			scope:journal_entry ?= {
+				"scripted_bar_progress(je_heavy_hearted_woman_progress_bar)" >= 200
+			}
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = je_heavy_hearted_woman_modifier #years = 19
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_moon_forest = { #月之森的恶妇
+	icon = "gfx/interface/icons/law_icons/women_in_the_workplace.dds" #女性工作
+	group = je_group_historical_content
+	scripted_progress_bar = je_moon_forest_progress_bar
+	immediate = { }
+	complete = {
+		government_legitimacy > 75
+		ig:ig_landowners = {
+			is_powerful = no
+			is_in_government = no
+		}
+		OR = {
+			has_law = law_type:law_landed_voting      #地产投票
+			has_law = law_type:law_wealth_voting      #财产投票
+			has_law = law_type:law_census_voting      #资格性选举制
+			has_law = law_type:law_universal_suffrage #普选制
+		}
+		custom_tooltip = { 
+			text = je_moon_forest_tt
+			scope:journal_entry ?= {
+				"scripted_bar_progress(je_moon_forest_progress_bar)" >= 200
+			}
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = je_moon_forest_modifier #years = 19
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_sound_of_sugar = { #糖的声音
+	icon = "gfx/interface/icons/goods_icons/sugar.dds" #糖
+	group = je_group_historical_content
+	immediate = { }
+	complete = {
+		any_scope_building = {
+			is_building_type = building_sugar_plantation
+			level >= 5
+			occupancy >= 0.9
+			weekly_profit >= 5
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = je_sound_of_sugar_modifier #years = 10
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_source_of_misfortune = { #不幸的根源
+	icon = "gfx/interface/icons/law_icons/legacy_slavery.dds" #遗留奴隶制
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_source_of_misfortune_01_modifier
+	}
+	immediate = {
+		set_variable = {
+		    name = je_source_of_misfortune_var
+			value = 0
+		}
+	}
+	current_value = {
+		value = root.var:je_source_of_misfortune_var
+	}
+	goal_add_value = {
+		add = 60
+	}
+	is_progressing = {
+		government_legitimacy > 75
+		ig:ig_industrialists = {
+			is_powerful = yes
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		government_legitimacy > 75
+		ig:ig_industrialists = {
+			is_powerful = yes
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					government_legitimacy > 75
+					ig:ig_industrialists = {
+						is_powerful = yes
+					}
+				}
+				change_variable = {
+					name = je_source_of_misfortune_var
+					add = 1
+				}
+			}
+		}
+	}
+	on_complete = {
+		add_modifier = {
+			name = je_source_of_misfortune_02_modifier #years = 19
+		}
+	}
+    weight = 1000
+	progressbar = yes
+	should_be_pinned_by_default = yes
+}

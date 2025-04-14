@@ -1,0 +1,61 @@
+﻿#####################
+#####注册总统政体#####
+#####################
+GOV_CNXY = { #西域都护府#大都护
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_DADUHU"
+	female_ruler = "RULER_TITLE_DADUHU"
+
+	possible = {
+        #has_law = law_type:law_presidential_republic
+		exists = c:CNXY
+		c:CNXY = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_falcon_company = { #猎鹰公司
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_GOVERNOR"
+	female_ruler = "RULER_TITLE_GOVERNOR"
+	
+	possible = {
+		exists = c:FALC
+		c:FALC = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+GOV_TCOS = { #藏骨集团
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = yes
+
+	male_ruler = "RULER_TITLE_SHOULING"
+	female_ruler = "RULER_TITLE_SHOULING"
+
+	possible = {
+		exists = c:TCOS
+		c:TCOS = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}

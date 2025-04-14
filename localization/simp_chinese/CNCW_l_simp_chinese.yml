@@ -1,0 +1,87 @@
+﻿l_simp_chinese:
+
+ #####曹魏本地#####
+ 
+ cao_wei_events.1.t: "汉帝禅让"
+ cao_wei_events.1.d: "四百年的大汉王朝如今已是风雨飘摇，天子不过是宫廷中的傀儡，而真正掌控天下大势的，乃是丞相曹操。朝野上下已然心知肚明，汉室气数已尽，在群臣的劝进与威逼之下，汉帝只能颁布诏书，将大汉江山拱手让于曹操。"
+ cao_wei_events.1.f: "新的王朝能否稳固统治，仍需时间检验。"
+ cao_wei_events.1.a: "接受禅让！"
+ 
+ je_wei_wu_ambitions: "魏武挥鞭"
+ je_wei_wu_ambitions_reason: "我被举为孝廉时，年纪很轻，自以为不是那种隐居深山而有名望的人士，恐怕被天下人看作是平庸无能之辈，所以想当一个郡的太守，把政治和教化搞好，来建立自己的名誉，让世上的人都清楚地了解我。所以我在济南任国相时，开始革除弊政，公正地选拔、推荐官吏，这就触犯了那些朝廷的权贵。因而被豪强权贵所恨，我恐怕给家族招来灾祸，所以托病还乡了。辞官之后，年纪还轻，回头看看与我同年被荐举的人当中，有的年纪已五十多岁了，还没有被人称作年老。自己内心盘算，从现在起，往后再过二十年，等到天下安定太平了，我才跟同岁中那些刚被举为孝廉的人相等罢了。所以返回家乡，整年不出，在谯县东面五十里的地方建了一学社，打算在秋夏读书，冬春打猎，只希望得到一点瘠薄的土地，想老于荒野、不被人知，断绝和宾客交往的念头。但是这个愿望没有能实现。后来我被征召做了都尉，又调任典军校尉，心里就又想为国家讨贼立功了。希望得到封侯，当个征西将军，死后在墓碑上题字说：“汉故征西将军曹侯之墓”。这就是我当时的志向。\n\n#r “设使国家无有孤，不知当几人称帝，几人称王！”#!"
+ je_wei_wu_ambitions_goal: "#bold 进度条#!到达#variable 100%#!"
+ je_wei_wu_ambitions_fail_tt: "$je_controversial_dynasty$[concept_journal_entry]失败"
+
+ je_controversial_dynasty: "魏武挥鞭：巩固统治"
+ je_controversial_dynasty_reason: "汉室的余晖尚未完全熄灭，忠于大汉的士族和旧臣不会甘心臣服，别有用心者蠢蠢欲动，新的纷争或许才刚刚开始。"
+ je_controversial_dynasty_01_tt: "已经完成$je_wei_wu_ambitions_01$[concept_journal_entry]"
+ je_controversial_dynasty_02_tt: "#bold 进度条#!到达#variable 100%#!"
+ je_controversial_dynasty_03_tt: "#bold 进度条#!到达#variable 0%#!"
+
+ je_controversial_dynasty_progress_bar: "巩固统治"
+ je_controversial_dynasty_progress_bar_desc: "进度：#v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/500）"
+
+ #合法性
+ je_controversial_dynasty_legitimacy_01_tt: "[concept_legitimacy]大于等于90"
+ je_controversial_dynasty_legitimacy_02_tt: "[concept_legitimacy]大于等于75"
+ je_controversial_dynasty_legitimacy_03_tt: "[concept_legitimacy]大于等于50"
+ je_controversial_dynasty_legitimacy_04_tt: "[concept_legitimacy]小于50"
+ je_controversial_dynasty_legitimacy_05_tt: "[concept_legitimacy]小于等于25"
+ #地区动乱与效忠
+ je_controversial_dynasty_loyalists_tt: "拥有[Concept('concept_loyalist','$concept_loyalists$')]的[Concept('concept_state', '$concept_states$')]"
+ je_controversial_dynasty_radicals_tt: "拥有[concept_turmoil]的[Concept('concept_state', '$concept_states$')]"
+
+ je_wei_wu_ambitions_01: "魏武挥鞭：江山美人"
+ je_wei_wu_ambitions_01_reason: "东临碣石，以观沧海。\n水何澹澹，山岛竦峙。\n树木丛生，百草丰茂。\n秋风萧瑟，洪波涌起。\n日月之行，若出其中；\n星汉灿烂，若出其里。\n幸甚至哉，歌以咏志。"
+ je_wei_wu_ambitions_01_tt: "所有[concept_target][concept_state]成为[concept_incorporated_state]，25%的[concept_pop]皈依[concept_state_religion]"
+ je_wei_wu_ambitions_01_complete_tt: "$je_controversial_dynasty$[concept_journal_entry]进度#g +100#!"
+
+ je_wei_wu_ambitions_02: "魏武挥鞭：恢复生产"
+ je_wei_wu_ambitions_02_reason: "白骨露于野，千里无鸡鸣。生民百遗一，念之断人肠。"
+ je_wei_wu_ambitions_02_tt: "已经完成$je_wei_wu_ambitions_03$[concept_journal_entry]"
+
+ je_wei_wu_ambitions_03: "魏武挥鞭：兴办屯田"
+ je_wei_wu_ambitions_03_reason: "将荒芜的无主农田收归国家所有，将招募到的大批流民按军队的编制编成组，由国家提供土地、种子、耕牛和农具，由他们开垦耕种，获得的收成由国家和屯田的农民按比例分成。\n\n屯田分为军屯和民屯，为供应军粮而兴办，必要时参加民屯的劳力同样需执戈对敌。不同之处在于，屯田民主要从事农垦生产，而军士以攻防为主。"
+
+ je_wei_wu_ambitions_04: "魏武挥鞭：操练军队"
+ je_wei_wu_ambitions_04_reason: "通过严苛的军事训练和阵法革新，将松散的地方武装淬炼为精锐之师。"
+
+ je_wei_wu_ambitions_05: "魏武挥鞭：招揽贤才"
+ je_wei_wu_ambitions_05_reason: "对酒当歌，人生几何！譬如朝露，去日苦多。\n慨当以慷，忧思难忘。何以解忧？唯有杜康。\n青青子衿，悠悠我心。但为君故，沉吟至今。\n呦呦鹿鸣，食野之苹。我有嘉宾，鼓瑟吹笙。\n明明如月，何时可掇？忧从中来，不可断绝。\n越陌度阡，枉用相存。契阔谈䜩，心念旧恩。\n月明星稀，乌鹊南飞。绕树三匝，何枝可依？\n山不厌高，海不厌深。周公吐哺，天下归心。"
+
+ cao_wei_events.2.t: "幸甚至哉，歌以咏志"
+ cao_wei_events.2.d: "回望往昔，多少英雄豪杰，皆倒在逐鹿之途，或因志短才疏，或因天命难违。然魏武未曾止步，百战未折，困厄未屈，今日之大业，乃铁血与谋略铸就。"
+ cao_wei_events.2.f: "江山安定，国富兵强，霸业已成。"
+ cao_wei_events.2.a: "功业既成，雄心可平？"
+
+ cao_wei_events.3.t: "天下归心"
+ cao_wei_events.3.d: "大魏铁骑横扫四方，割据势力荡然无存，天下分崩离析的局面就此终结，大魏终于完成了大一统，天命所归已无可置疑。"
+ cao_wei_events.3.f: "过去忠于汉室的士族与旧臣不得不接受现实，向新政权靠拢，大魏的根基愈发稳固。"
+ cao_wei_events.3.a: "顺应天命。"
+
+ cao_wei_events.4.t: "三马食槽"
+ cao_wei_events.4.d: "自#v $CNCW$#!建立以来，权力的争斗从未停息。司马懿，大魏太傅，仕途起伏，凭借自身智谋与深厚的军事才能，一步步攀升至#v $CNCW$#!的核心位置，但仍被掌握大权的#v $CNCW$#!宗室打压。这些宗室傲慢且愚蠢，他们欺皇帝年幼，相互勾结盘踞在一起，肆意妄为日甚一日。"
+ cao_wei_events.4.f: "趁宗室外出祭祖，司马懿起兵政变并控制都城，指着洛水发誓只是免去宗室的官职，愚蠢的宗室不听人言做着富家翁的美梦放下武器投降，司马懿食言以谋反的罪名将他们全部处死完全控制朝政，年轻的皇帝孤立无援，不久就被逼迫禅让。"
+ cao_wei_events.4.a: "太傅何故失信于我？"
+ cao_wei_events_4_tt: "#yellow $CNCW$#!成为#v $DJDG$#!"
+
+ je_cement_the_dynasty: "臭名昭著的王朝"
+ je_cement_the_dynasty_reason: "以阴谋立国，为人所不齿，我们必须挽救这种局面。"
+
+ je_wei_wu_ambitions_modifier: "魏武挥鞭"
+ Quenching_Thirst_by_Watching_Plums: "望梅止渴"
+ je_controversial_dynasty_modifier: "汉室余晖"
+ je_wei_wu_ambitions_01_modifier: "天命所归"
+ je_wei_wu_ambitions_0201_modifier: "恢复生产"
+ je_wei_wu_ambitions_0202_modifier: "焕发新生"
+ je_wei_wu_ambitions_0301_modifier: "安置流民"
+ je_wei_wu_ambitions_0302_modifier: "兴办屯田"
+ je_wei_wu_ambitions_0401_modifier: "魏武军令"
+ je_wei_wu_ambitions_0402_modifier: "训练有素"
+ je_wei_wu_ambitions_0501_modifier: "求贤若渴"
+ je_wei_wu_ambitions_0502_modifier: "任人唯贤"
+ cao_wei_events_2_modifier: "幸甚至哉，歌以咏志"
+ cao_wei_events_3_modifier: "天下归心"
+ je_cement_the_dynasty_01_modifier: "臭名昭著的王朝"
+ je_cement_the_dynasty_02_modifier: "挽回声誉"
+ je_cement_the_dynasty_03_modifier: "以孝治天下"

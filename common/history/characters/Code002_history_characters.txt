@@ -1,0 +1,191 @@
+﻿CHARACTERS = {
+	##################
+	#####初始角色#####
+	##################
+	c:CNBY ?= {
+		CNBY_create_character_scriptrd_effects = yes
+	}
+	c:CNNR ?= {
+		CNNR_create_character_scriptrd_effects = yes
+	}
+	c:CNGX ?= {
+		CNGX_create_character_scriptrd_effects = yes
+	}
+	c:CNYN ?= {
+		CNYN_create_character_scriptrd_effects = yes
+	}
+	c:DQDG ?= {
+		DQDG_create_character_scriptrd_effects = yes
+	}
+	c:DHDG ?= {
+		DHDG_create_character_scriptrd_effects = yes
+	}
+	c:CNCW ?= {
+		CNCW_create_character_scriptrd_effects = yes
+	}
+	c:CNTW ?= {
+		CNTW_create_character_scriptrd_effects = yes
+	}
+	c:TPTG ?= {
+		TPTG_create_character_scriptrd_effects = yes
+	}
+	c:OHDS ?= {
+		OHDS_create_character_scriptrd_effects = yes
+	}
+	c:ELDA ?= {
+		ELDA_create_character_scriptrd_effects = yes
+	}
+	c:MRLY ?= {
+		MRLY_create_character_scriptrd_effects = yes
+	}
+	c:HASA ?= {
+		HASA_create_character_scriptrd_effects = yes
+	}
+	c:SHAI ?= {
+        SHAI_create_character_scriptrd_effects = yes
+	}
+	c:CNXN ?= {
+        CNXN_create_character_scriptrd_effects = yes
+	}
+	c:CNXY ?= {
+        CNXY_create_character_scriptrd_effects = yes
+	}
+	c:CNGY ?= {
+        CNGY_create_character_scriptrd_effects = yes
+	}
+	c:CNTB ?= {
+        CNTB_create_character_scriptrd_effects = yes
+	}
+	c:ETH ?= {
+        ETH_create_character_scriptrd_effects = yes
+	}
+	c:CNQY ?= {
+        CNQY_create_character_scriptrd_effects = yes
+	}
+	c:MGGH ?= {
+        MGGH_create_character_scriptrd_effects = yes
+	}
+	c:KAZA ?= {
+        KAZA_create_character_scriptrd_effects = yes
+	}
+	c:CRIM ?= {
+        CRIM_create_character_scriptrd_effects = yes
+	}
+	c:NOGA ?= {
+        NOGA_create_character_scriptrd_effects = yes
+	}
+	c:SIB ?= {
+        SIB_create_character_scriptrd_effects = yes
+	}
+	c:KAZ ?= {
+        KAZ_create_character_scriptrd_effects = yes
+	}
+	c:SERZ ?= {
+        SERZ_create_character_scriptrd_effects = yes
+	}
+	c:KUSH ?= {
+        KUSH_create_character_scriptrd_effects = yes
+	}
+	c:DELI ?= {
+        DELI_create_character_scriptrd_effects = yes
+	}
+	c:PART ?= {
+        PART_create_character_scriptrd_effects = yes
+	}
+	c:SASS ?= {
+        SASS_create_character_scriptrd_effects = yes
+	}
+	c:MOSC ?= {
+        MOSC_create_character_scriptrd_effects = yes
+	}
+	c:JEAN ?= {
+        JEAN_create_character_scriptrd_effects = yes
+	}
+	c:VFRA ?= {
+        VFRA_create_character_scriptrd_effects = yes
+	}
+	c:NAPO ?= {
+        NAPO_create_character_scriptrd_effects = yes
+	}
+	c:ENG ?= {
+        ENG_create_character_scriptrd_effects = yes
+	}
+	c:ICL ?= {
+        ICL_create_character_scriptrd_effects = yes
+	}
+	c:VLAN ?= {
+        VLAN_create_character_scriptrd_effects = yes
+	}
+	c:FALC ?= {
+        FALC_create_character_scriptrd_effects = yes
+	}
+	c:TCOS ?= {
+        TCOS_create_character_scriptrd_effects = yes
+	}
+	c:SIOU ?= {
+        SIOU_create_character_scriptrd_effects = yes
+	}
+	c:IROQ ?= {
+        IROQ_create_character_scriptrd_effects = yes
+	}
+	c:AZTE ?= {
+        AZTE_create_character_scriptrd_effects = yes
+	}
+	c:INCA ?= {
+        INCA_create_character_scriptrd_effects = yes
+	}
+	c:PATA ?= {
+        PATA_create_character_scriptrd_effects = yes
+	}
+	c:MING ?= {
+        MING_create_character_scriptrd_effects = yes
+	}
+	c:APAC ?= {
+        APAC_create_character_scriptrd_effects = yes
+	}
+	c:AMZ ?= {
+        AMZ_create_character_scriptrd_effects = yes
+	}
+	c:MYGO ?= {
+        MYGO_create_character_scriptrd_effects = yes
+	}
+	c:CAS ?= {
+        CAS_create_character_scriptrd_effects = yes
+	}
+	c:ARAG ?= {
+        ARAG_create_character_scriptrd_effects = yes
+	}
+	c:RYUK ?= {
+        RYUK_create_character_scriptrd_effects = yes
+	}
+	c:SGPR ?= {
+        SGPR_create_character_scriptrd_effects = yes
+	}
+	c:NAZI ?= {
+	    NAZI_create_character_scriptrd_effects = yes
+	}
+	c:AYUB ?= {
+	    AYUB_create_character_scriptrd_effects = yes
+	}
+	c:SONG ?= {
+	    SONG_create_character_scriptrd_effects = yes
+	}
+	c:CIRC ?= {
+	    CIRC_create_character_scriptrd_effects = yes
+	}
+	c:CHEC ?= {
+	    CHEC_create_character_scriptrd_effects = yes
+	}
+	c:NOVG ?= {
+	    NOVG_create_character_scriptrd_effects = yes
+	}
+	c:LIVO ?= {
+	    LIVO_create_character_scriptrd_effects = yes
+	}
+	c:TEUT ?= {
+	    TEUT_create_character_scriptrd_effects = yes
+	}
+	c:LIT ?= {
+	    LIT_create_character_scriptrd_effects = yes
+	}
+}

@@ -1,0 +1,100 @@
+﻿namespace = xiong_nu_events
+
+xiong_nu_events.1 = { #龙庭复兴
+	type = country_event
+	placement = root
+	duration = 3
+	title = xiong_nu_events.1.t
+	desc = xiong_nu_events.1.d
+	flavor = xiong_nu_events.1.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = xiong_nu_events.1.a
+		add_journal_entry = {
+			type = je_entered_the_central_plainsicon
+		}
+		add_journal_entry = {
+			type = je_control_of_the_silk_road
+		}
+		add_modifier = {
+			name = xiong_nu_events_1_modifier
+			years = 19
+		}
+	}
+}
+
+xiong_nu_events.2 = { #逐鹿天下
+	type = country_event
+	placement = root
+	duration = 3
+	title = xiong_nu_events.2.t
+	desc = xiong_nu_events.2.d
+	flavor = xiong_nu_events.2.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = xiong_nu_events.2.a
+		show_as_tooltip = {
+		    change_tag = DHDG
+		}
+		set_capital = STATE_SHANXI
+		#add_primary_culture = cu:han
+		#hidden_effect = {
+		#	remove_primary_culture = cu:xiongnu
+		#	add_primary_culture = cu:xiongnu
+		#}
+		add_journal_entry = {
+			type = je_yuanhai_ambition
+		}
+		add_journal_entry = {
+			type = je_compete_for_the_throne
+		}
+		add_journal_entry = {
+			type = je_winning_the_people_hearts
+		}
+		add_journal_entry = {
+			type = je_restoration_of_han_institutions
+		}
+		add_journal_entry = {
+			type = je_disseminating_han_culture
+		}
+		add_journal_entry = {
+			type = je_ethnic_harmony_in_governance
+		}
+		set_global_variable = je_entered_the_central_plainsicon_complete_var
+	}
+}
+
+xiong_nu_events.3 = { #
+	type = country_event
+	placement = root
+	duration = 3
+	title = xiong_nu_events.3.t
+	desc = xiong_nu_events.3.d
+	flavor = xiong_nu_events.3.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = xiong_nu_events.3.a
+		add_modifier = xiong_nu_events_3_modifier
+	}
+}

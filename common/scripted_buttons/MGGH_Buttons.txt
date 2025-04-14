@@ -1,0 +1,422 @@
+﻿successors_of_the_golden_horde_button = { #金帐汗国的继承者
+	name = successors_of_the_golden_horde_button
+	desc = successors_of_the_golden_horde_button_desc
+	visible = {
+		NOT = { has_variable = successors_of_the_golden_horde_button_var }
+	}
+	possible = {
+		army_size >= 50
+		OR = {
+			country_army_unit_type_fraction = {  
+				target = unit_type:combat_unit_type_line_infantry  #线列
+				value >= 0.5  
+			}
+			trigger_if = {
+				limit = {
+					has_technology_researched = general_staff #总参谋部
+				}
+				country_army_unit_type_fraction = {  
+					target = unit_type:combat_unit_type_skirmish_infantry  #散兵
+					value >= 0.5  
+				}
+			}
+			trigger_if = {
+				limit = {
+					has_technology_researched = trench_works #战壕工事
+				}
+				country_army_unit_type_fraction = {  
+					target = unit_type:combat_unit_type_trench_infantry  
+					value >= 0.5  
+				}
+			}
+			trigger_if = {
+				limit = {
+					has_technology_researched = nco_training #士官训练
+				}
+				country_army_unit_type_fraction = {  
+					target = unit_type:combat_unit_type_squad_infantry  
+					value >= 0.5  
+				}
+			}
+			trigger_if = {
+				limit = {
+					has_technology_researched = mobile_armor #机动装甲
+				}
+				country_army_unit_type_fraction = {  
+					target = unit_type:combat_unit_type_mechanized_infantry  
+					value >= 0.5  
+				}
+			}
+		}
+		any_scope_building = {
+			is_building_type = building_arms_industry       #武器厂
+			level >= 2
+			occupancy >= 0.9
+			building_has_goods_shortage = no
+		}
+	}
+	effect = {
+		set_variable = successors_of_the_golden_horde_button_var
+		custom_tooltip = {
+			text = successors_of_the_golden_horde_button_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_CHERSON 
+						state_region = s:STATE_TAURIDA
+						state_region = s:STATE_CRIMEA
+						state_region = s:STATE_KHARKOV 
+						state_region = s:STATE_KURSK
+						state_region = s:STATE_TAMBOV
+						state_region = s:STATE_TARTARIA
+						state_region = s:STATE_ROSTOV
+						state_region = s:STATE_ASTRAKHAN
+						state_region = s:STATE_KALMYKIA
+						state_region = s:STATE_STAVROPOL
+						state_region = s:STATE_KUBAN
+						state_region = s:STATE_NORTH_CAUCASUS
+						state_region = s:STATE_DAGESTAN
+						state_region = s:STATE_CHUVASHIA
+						state_region = s:STATE_KAZAN
+						state_region = s:STATE_VYATKA
+						state_region = s:STATE_PERM
+						state_region = s:STATE_URAL
+						state_region = s:STATE_SAMARA
+						state_region = s:STATE_UFA
+						state_region = s:STATE_CHELYABINSK
+						state_region = s:STATE_URALSK
+						state_region = s:STATE_AKTOBE
+					}
+					NOT = {
+						has_claim_by = ROOT
+					}
+				}
+				state_region = {
+					add_claim = ROOT
+				}
+			}
+		}
+		add_modifier = {
+		    name = successors_of_the_golden_horde_button_modifier
+			years = 19
+		}
+		add_loyalists = { #效忠派
+			value = 0.03
+		}
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+consolidate_the_urals_button = { #统一乌拉尔
+	name = consolidate_the_urals_button
+	desc = consolidate_the_urals_button_desc
+	visible = {
+		NOT = { has_variable = consolidate_the_urals_button_var }
+	}
+	possible = {
+		owns_entire_state_region = STATE_CHUVASHIA
+		owns_entire_state_region = STATE_KAZAN
+		owns_entire_state_region = STATE_VYATKA
+		owns_entire_state_region = STATE_PERM
+		owns_entire_state_region = STATE_URAL
+		owns_entire_state_region = STATE_SAMARA
+		owns_entire_state_region = STATE_UFA
+		owns_entire_state_region = STATE_CHELYABINSK
+	}
+	effect = {
+		set_variable = consolidate_the_urals_button_var
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		custom_tooltip = {
+			text = consolidate_the_urals_button_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_CHUVASHIA
+						state_region = s:STATE_KAZAN
+						state_region = s:STATE_VYATKA
+						state_region = s:STATE_PERM
+						state_region = s:STATE_URAL
+						state_region = s:STATE_SAMARA
+						state_region = s:STATE_UFA
+						state_region = s:STATE_CHELYABINSK
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+steppes_of_the_south_button = { #南方的草原
+	name = steppes_of_the_south_button
+	desc = steppes_of_the_south_button_desc
+	visible = {
+		NOT = { has_variable = steppes_of_the_south_button_var }
+	}
+	possible = {
+		owns_entire_state_region = STATE_CHERSON 
+		owns_entire_state_region = STATE_TAURIDA
+		owns_entire_state_region = STATE_CRIMEA
+		owns_entire_state_region = STATE_TARTARIA
+		owns_entire_state_region = STATE_ROSTOV
+		owns_entire_state_region = STATE_ASTRAKHAN
+		owns_entire_state_region = STATE_KALMYKIA
+		owns_entire_state_region = STATE_STAVROPOL
+		#owns_entire_state_region = STATE_KUBAN
+	}
+	effect = {
+		set_variable = steppes_of_the_south_button_var
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		custom_tooltip = {
+			text = steppes_of_the_south_button_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_CHERSON 
+						state_region = s:STATE_TAURIDA
+						state_region = s:STATE_CRIMEA
+						state_region = s:STATE_TARTARIA
+						state_region = s:STATE_ROSTOV
+						state_region = s:STATE_ASTRAKHAN
+						state_region = s:STATE_KALMYKIA
+						state_region = s:STATE_STAVROPOL
+						#state_region = s:STATE_KUBAN
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+	    }
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+people_of_kazakh_button = { #哈萨克人
+	name = people_of_kazakh_button
+	desc = people_of_kazakh_button_desc
+	visible = {
+		NOT = { has_variable = people_of_kazakh_button_var }
+	}
+	possible = {
+		owns_entire_state_region = STATE_URALSK
+		owns_entire_state_region = STATE_AKTOBE
+	}
+	effect = {
+		set_variable = people_of_kazakh_button_var
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		custom_tooltip = {
+			text = people_of_kazakh_button_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_URALSK
+						state_region = s:STATE_AKTOBE
+					}
+				}
+				set_state_type = incorporated
+				state_region = {
+					add_homeland = cu:tatar
+				}
+				every_scope_pop = {
+					change_pop_culture = {
+						target = cu:tatar
+						value = 0.25
+					}
+				}
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+	    }
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+tatar_escalate_caucasian_war_button = { #升级高加索战争
+	name = "tatar_escalate_caucasian_war_button"
+	desc = "tatar_escalate_caucasian_war_button_desc"
+	visible = {
+		is_subject = no
+		NOT = { 
+			owns_entire_state_region = STATE_KUBAN 
+			owns_entire_state_region = STATE_NORTH_CAUCASUS
+			owns_entire_state_region = STATE_DAGESTAN 
+		}
+		AND = {
+			any_scope_state = {
+				state_region = s:STATE_KUBAN
+			}
+			any_scope_state = {
+				state_region = s:STATE_NORTH_CAUCASUS
+			}
+			any_scope_state = {
+				state_region = s:STATE_DAGESTAN
+			}
+		}
+		OR = {
+			AND = {
+				exists = c:CHEC
+				has_truce_with = c:CHEC
+			}
+			AND = {
+				exists = c:CIRC
+				has_truce_with = c:CIRC
+			}
+		}
+        NOT = {
+        	has_variable = escalated_caucasian_war
+        }
+	}
+	possible = {
+		ROOT = {
+			country_rank >= rank_value:great_power
+		}
+		OR = {
+			s:STATE_KUBAN = {
+				any_scope_state = {
+					OR = {
+						AND = {
+							exists = c:CIRC
+							owner = c:CIRC
+			            }
+						AND = {
+							exists = c:CHEC
+							owner = c:CHEC
+						}
+					}
+				}
+			}
+			s:STATE_DAGESTAN = {
+				any_scope_state = {
+					OR = {
+						AND = {
+							exists = c:CIRC
+				            owner = c:CIRC
+						}
+						AND = {
+							exists = c:CHEC
+				            owner = c:CHEC
+					    }
+				    }
+				}
+			}
+			s:STATE_NORTH_CAUCASUS = {
+				any_scope_state = {
+					OR = {
+						AND = {
+							exists = c:CIRC
+							owner = c:CIRC
+						}
+						AND = {
+							exists = c:CHEC
+							owner = c:CHEC
+						}
+					}
+				}
+			}
+		}
+		has_technology_researched = rifling
+		has_technology_researched = logistics
+	}
+	effect = {
+		set_variable = escalated_caucasian_war
+		end_truce = c:CHEC
+		end_truce = c:CIRC
+	}  
+	ai_chance = {
+		base = 15
+	}
+}
+
+tatar_imamate_dispatch_muhammad_amin_button = { #向切尔克西亚派遣一名奈卜
+	name = "tatar_imamate_dispatch_muhammad_amin_button"
+	desc = "tatar_imamate_dispatch_muhammad_amin_button_desc"
+	visible = {
+		exists = c:CIRC
+		is_subject = no
+		c:CIRC ?= {
+			has_journal_entry = je_tatar_caucasian_war_circassia
+		}
+		NOT = {
+			has_variable = sent_muhammad_amin_var
+		}
+	}
+	possible = {
+		is_subject = no
+		c:CIRC = {
+			has_journal_entry = je_tatar_caucasian_war_circassia
+		}
+		custom_tooltip = {
+			text = tatar_imamate_dispatch_muhammad_amin_button_01_tt
+			c:CIRC = {
+				ruler = {
+					NOT = {
+						OR = {
+							has_variable = ismail_var
+							has_variable = hawduqo_var
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = tatar_imamate_dispatch_muhammad_amin_button_02_tt
+		}
+		c:CIRC = {
+			trigger_event = { id = golden_horde_caucasuswar.9 }
+		}
+		set_variable = sent_muhammad_amin_var
+	}  
+	ai_chance = {
+		base = 15
+		modifier = {
+			trigger = {
+				c:CIRC.relations:root < relations_threshold:neutral
+			}
+			add = -30
+		}
+	}
+}

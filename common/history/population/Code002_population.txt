@@ -1,0 +1,445 @@
+﻿POPULATION = {
+	##########################
+    ######初始 财富 识字率#####
+	##########################
+    c:CNBY ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:CNNR ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:CNGX ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_very_high = yes
+	}
+	c:CNYN ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:CNCW ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:DHDG ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:DQDG ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:TPTG ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:SONG ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:MING ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+    c:CNTB ?= {
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+	c:CNTW ?= {
+	    effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_very_high = yes
+	}
+	c:CNGY ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:CNXY ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:CNXN ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:OHDS ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:TCOS ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:ELDA ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:MRLY ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:HASA ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+	c:SHAI ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+	c:ETH ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+	c:SIB ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+	c:CNQY ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+	c:CKC ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+	c:KAZ ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:MGGH ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:CRIM ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:KAZA ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:NOGA ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:CIRC ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:CHEC ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:GEO ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:ARM ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:AZB ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:MOSC ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:NOVG ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:LIVO ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:TEUT ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:LIT ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:POL ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:HUN ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:SER ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:BOS ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:CRO ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:BOH ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:VEN ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:LOM ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:WES ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:RHE ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:ENG ?= {
+		effect_starting_pop_wealth_very_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:SCO ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:WLS ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:IRE ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:BURG ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:JEAN ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:VFRA ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:NAPO ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:BRI ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:CAS ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:ARAG ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:ANL ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:NAV ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:MAML ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:PART ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:SASS ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:KUSH ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:ABAS ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:AYUB ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:SERZ ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:SUD ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:DELI ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:MUGH ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:MARA ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:DRAV ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:MYGO ?= {
+		effect_starting_pop_wealth_very_high = yes
+		effect_starting_pop_literacy_very_high = yes
+	}
+	c:VLAN ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:FALC ?= {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+	c:SIOU ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:IROQ ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:CHEY ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:COMA ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:APAC ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:NEZP ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:PAIU ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:SML ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:MAY ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:CREE ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:AZTE ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:INCA ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:PATA ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:AMZ ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:EQT ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:ICL ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:RYUK ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:IDN ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:PNS ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:SGPR ?= {
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+	}
+	c:ERI ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:ANG ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:ZMB ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:MOZ ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:TNZ ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:KNY ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:DRC ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:CKS ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:GAB ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:CMN ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+    c:CAR ?= {	
+	    effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_low = yes
+	}
+	c:SAHR ?= {
+		effect_starting_pop_wealth_low = yes
+		effect_starting_pop_literacy_baseline = yes
+	}
+}

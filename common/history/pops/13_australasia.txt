@@ -1,0 +1,74 @@
+﻿POPS = {
+s:STATE_NEW_SOUTH_WALES = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 450000
+		}
+	}
+}
+s:STATE_VICTORIA = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 450000
+		}
+	}
+}
+s:STATE_QUEENSLAND = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 300000
+		}
+	}
+}
+s:STATE_SOUTH_AUSTRALIA = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 290450
+		}
+	}
+}
+s:STATE_WESTERN_AUSTRALIA = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 298801
+		}
+	}
+}
+s:STATE_NORTHERN_TERRITORY = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 108900
+		}
+	}
+}
+s:STATE_NORTH_ISLAND = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 350000
+		}
+	}
+}
+s:STATE_SOUTH_ISLAND = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 350000
+		}
+	}
+}
+s:STATE_TASMANIA = {
+	region_state:MING = {
+		create_pop = {
+			culture = han
+			size = 128940
+		}
+	}
+}
+}

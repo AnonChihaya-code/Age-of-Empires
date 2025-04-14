@@ -1,0 +1,523 @@
+﻿je_loong_city_revival = { #龙城复兴
+	icon = "gfx/interface/icons/law_icons/presidential_republic.dds" #总统共和制
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_loong_city_revival_modifier
+	}
+	immediate = {
+		set_variable = {
+			name = ai_je_loong_city_revival
+			value = 0
+		}
+	}
+	complete = {
+		trigger_if = {
+			limit = {
+				is_player = yes
+			}
+			army_size >= 100
+			any_scope_state = {
+				state_region = s:STATE_URGA
+				turmoil <= 0.05
+				has_famine = no
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 10
+				}
+				any_scope_building = {
+					is_building_type = building_university
+					level >= 5
+					occupancy >= 0.9
+					building_has_goods_shortage = no
+				}
+				any_scope_building = {
+					is_building_type = building_arms_industry
+					level >= 3
+					occupancy >= 0.9
+					building_has_goods_shortage = no
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			army_size >= 100
+			any_scope_state = {
+				state_region = s:STATE_URGA
+				any_scope_building = {
+					is_building_type = building_university
+					level >= 5
+				}
+				any_scope_building = {
+					is_building_type = building_arms_industry
+					level >= 3
+				}
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = { id = xiong_nu_events.1 }
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_loong_city_revival < 60
+				}
+			    change_variable = {
+					name = ai_je_loong_city_revival
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					var:ai_je_loong_city_revival >= 60
+					NOT = { has_variable = ai_complete_je_loong_city_revival }
+				}
+				set_variable = ai_complete_je_loong_city_revival
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_URGA
+					}
+					create_building={
+						building="building_university"
+					    level >= 5
+					}
+					create_building={
+						building="building_arms_industry"
+					    level >= 3
+					}
+				}
+			}
+		}
+	}
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_entered_the_central_plainsicon = { #入主中原
+	icon = "gfx/interface/icons/event_icons/event_military.dds" #号角
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_yuanhai_ambition_modifier
+	}
+	immediate = {
+		Xiongnu_claim_01_scriptrd_effects = yes
+	}
+	complete = {
+		owns_entire_state_region = STATE_HENAN
+		owns_entire_state_region = STATE_SHANXI
+		owns_entire_state_region = STATE_ZHILI
+		owns_entire_state_region = STATE_SHANDONG
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_SHENGJING
+		owns_entire_state_region = STATE_NORTHERN_ANHUI	 
+	}
+	on_complete = {
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		custom_tooltip = {
+			text = je_entered_the_central_plainsicon_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_HENAN
+						state_region = s:STATE_SHANXI
+						state_region = s:STATE_ZHILI
+						state_region = s:STATE_SHANDONG
+						state_region = s:STATE_BEIJING
+						state_region = s:STATE_SHENGJING
+						state_region = s:STATE_NORTHERN_ANHUI
+					}
+				}
+				set_state_type = incorporated
+				convert_population = {
+					target = root.religion
+					value = 0.25
+				}
+			}
+		}
+		trigger_event = { id = xiong_nu_events.2 }
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_control_of_the_silk_road = { #掌控丝绸之路
+	icon = "gfx/interface/icons/event_icons/event_military.dds" #号角
+	group = je_group_historical_content
+	immediate = {
+		Xiongnu_claim_02_scriptrd_effects = yes
+	}
+	complete = {
+		owns_entire_state_region = STATE_XIAN
+		owns_entire_state_region = STATE_NINGXIA
+		owns_entire_state_region = STATE_GANSU
+		owns_entire_state_region = STATE_DZUNGARIA
+		owns_entire_state_region = STATE_TIANSHAN
+		owns_entire_state_region = STATE_JETISY
+		owns_entire_state_region = STATE_ALXA
+	}
+	on_complete = {
+		add_loyalists = { #效忠派
+			value = 0.05
+		}
+		custom_tooltip = {
+			text = je_control_of_the_silk_road_tt
+			every_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_XIAN
+						state_region = s:STATE_NINGXIA
+						state_region = s:STATE_GANSU
+						state_region = s:STATE_ALXA
+						state_region = s:STATE_DZUNGARIA
+						state_region = s:STATE_TIANSHAN
+						state_region = s:STATE_JETISY
+					}
+				}
+				set_state_type = incorporated
+				convert_population = {
+					target = root.religion
+					value = 0.50
+				}
+			}
+		}
+		add_modifier = je_control_of_the_silk_road_modifier
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_yuanhai_ambition = { #元海的野望
+	icon = "gfx/interface/icons/law_icons/monarchy.dds" #君主制
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_yuanhai_ambition_modifier
+	}
+    immediate = {
+		set_variable = {
+			name = je_yuanhai_ambition_var
+			value = 0
+		}
+	}
+	current_value = {
+        value = var:je_yuanhai_ambition_var
+    }
+    goal_add_value = {
+		add = 5
+	}
+    complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+        trigger_event = { id = xiong_nu_events.3 }
+    }
+	fail = {
+		
+	}
+	progressbar = yes
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_compete_for_the_throne = { #逐鹿天下
+	icon = "gfx/interface/icons/law_icons/autocracy.dds" #独裁制
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_compete_for_the_throne_modifier
+	}
+    immediate = {
+		Xiongnu_claim_03_scriptrd_effects = yes
+	}
+    complete = {
+		sr:region_north_china = {
+			NOT = {
+				any_scope_state = {
+					owner = {
+						NOR = {
+							AND = {
+								exists = c:CNXN
+								owner = c:CNXN
+							}
+						}
+					}
+				}
+			}
+		}
+		sr:region_south_china = {
+			NOT = {
+				any_scope_state = {
+					owner = {
+						NOR = {
+							AND = {
+								exists = c:CNXN
+								owner = c:CNXN
+							}
+						}
+					}
+				}
+			}
+		}		
+		owns_entire_state_region = STATE_TUVA
+		owns_entire_state_region = STATE_ALTAI
+		owns_entire_state_region = STATE_SOUTHERN_MANCHURIA
+		owns_entire_state_region = STATE_NORTHERN_MANCHURIA
+		owns_entire_state_region = STATE_OUTER_MANCHURIA
+		owns_entire_state_region = STATE_AMUR
+		owns_entire_state_region = STATE_SAKHALIN
+		owns_entire_state_region = STATE_DZUNGARIA
+		owns_entire_state_region = STATE_TIANSHAN
+		owns_entire_state_region = STATE_JETISY
+		owns_entire_state_region = STATE_QINGHAI
+		owns_entire_state_region = STATE_LHASA
+		owns_entire_state_region = STATE_NGARI
+		owns_entire_state_region = STATE_EASTERN_HIMALAYAS
+	}
+	on_complete = {
+		#set_country_type = recognized
+		add_loyalists = { #效忠派
+			value = 0.25
+		}
+		custom_tooltip = {
+			text =  je_compete_for_the_throne_tt
+			every_state = {
+				limit = {
+					OR = {
+						region = sr:region_north_china
+						region = sr:region_south_china
+						state_region = s:STATE_SAKHALIN
+						state_region = s:STATE_AMUR
+						state_region = s:STATE_NORTHERN_MANCHURIA
+						state_region = s:STATE_OUTER_MANCHURIA
+						state_region = s:STATE_SOUTHERN_MANCHURIA
+						state_region = s:STATE_SHENGJING
+						state_region = s:STATE_ALTAI
+						state_region = s:STATE_TUVA
+						state_region = s:STATE_DZUNGARIA
+						state_region = s:STATE_TIANSHAN
+						state_region = s:STATE_JETISY
+						state_region = s:STATE_QINGHAI
+						state_region = s:STATE_LHASA
+						state_region = s:STATE_NGARI
+						state_region = s:STATE_EASTERN_HIMALAYAS
+					}
+				}
+				set_state_type = incorporated
+				convert_population = {
+					target = root.religion
+					value = 0.50
+				}
+			}
+		}
+		set_variable = je_compete_for_the_throne_complete_var
+		change_variable = {
+			name = je_yuanhai_ambition_var
+			add = 1
+		}
+    }
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_winning_the_people_hearts = { #收揽民心
+	icon = "gfx/interface/icons/law_icons/traditionalism.dds" #传统主义法律
+	group = je_group_historical_content
+	modifiers_while_active = {
+		je_winning_the_people_hearts_01_modifier
+	}
+    immediate = {}
+    complete = {
+		is_country_type = recognized
+		custom_tooltip = {
+			text = je_winning_the_people_hearts_tt
+			has_variable = je_compete_for_the_throne_complete_var
+		}
+		gdp >= 500000000
+		literacy_rate >= 0.50
+		root.average_sol >= 15
+		radical_fraction = {
+			value <= 0.1
+		}
+		OR = {
+			has_law = law_type:law_proportional_taxation      #比例税制
+            has_law = law_type:law_graduated_taxation         #累进税制
+		}
+		OR = {
+			has_law = law_type:law_tenant_farmers              #佃农
+			has_law = law_type:law_homesteading                #宅地法
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+			percent >= 0.7
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			has_building = building_railway
+			percent >= 0.7
+		}
+	}
+	on_complete = {
+		add_modifier = je_winning_the_people_hearts_02_modifier
+		change_variable = {
+			name = je_yuanhai_ambition_var
+			add = 1
+		}
+    }
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_restoration_of_han_institutions = { #承袭汉制
+    icon = "gfx/interface/icons/law_icons/appointed_bureaucrats.dds" #任命官僚制
+	group = je_group_historical_content
+    immediate = {
+		set_variable = {
+		    name = je_restoration_of_han_institutions_var
+			value = 0
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_law = law_type:law_monarchy               #君主制
+					has_law = law_type:law_autocracy              #独裁制
+					has_law = law_type:law_appointed_bureaucrats  #任命官僚制
+				}
+				change_variable = {
+					name = je_restoration_of_han_institutions_var
+					add = 1
+				}
+			}
+		}
+	}
+    complete = {
+		has_technology_researched = central_archives
+		bureaucracy >= 0 
+		approaching_bureaucracy_shortage = no
+		custom_tooltip = {
+			text = je_restoration_of_han_institutions_tt
+			var:je_restoration_of_han_institutions_var >= 60
+		}
+        has_law = law_type:law_monarchy               #君主制
+		has_law = law_type:law_autocracy              #独裁制
+        has_law = law_type:law_appointed_bureaucrats  #任命官僚制
+	}
+	on_complete = {
+		add_modifier = je_restoration_of_han_institutions_modifier
+		change_variable = {
+			name = je_yuanhai_ambition_var
+			add = 1
+		}
+    }
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_disseminating_han_culture = { #推广汉学
+	icon = "gfx/interface/icons/law_icons/religious_schools.dds" #教会学校
+	group = je_group_historical_content
+    immediate = {}
+    complete = {
+		country_has_state_religion = rel:confucian
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		any_scope_state = {
+			is_capital = yes
+			any_scope_building = {
+				is_building_type = building_university
+				level >= 15
+				occupancy >= 0.9
+				building_has_goods_shortage = no
+			}
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 5
+				occupancy >= 0.9
+				building_has_goods_shortage = no
+			}
+		}
+		any_scope_state = {
+			filter = {
+				is_incorporated = yes
+			}
+			has_building = building_university
+			percent >= 0.7
+		}
+	}
+	on_complete = {
+		add_modifier = je_disseminating_han_culture_modifier
+		change_variable = {
+			name = je_yuanhai_ambition_var
+			add = 1
+		}
+    }
+    weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_ethnic_harmony_in_governance = { #民族共治
+	icon = "gfx/interface/icons/law_icons/multicultural.dds" #文化多元
+	group = je_group_historical_content
+	immediate = {
+		set_variable = {
+		    name = je_ethnic_harmony_in_governance_var
+			value = 0
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_cultural_exclusion          #文化排斥
+						has_law = law_type:law_multicultural               #文化多元
+					}
+					cultural_acceptance_base = { target = cu:han value >= acceptance_status_5 }
+				}
+				change_variable = {
+					name = je_ethnic_harmony_in_governance_var
+					add = 1
+				}
+			}
+		}
+	}
+    complete = {
+		custom_tooltip = {
+			text = je_ethnic_harmony_in_governance_tt
+			var:je_ethnic_harmony_in_governance_var >= 60
+		}
+		OR = {
+		    has_law = law_type:law_cultural_exclusion          #文化排斥
+            has_law = law_type:law_multicultural               #文化多元
+		}
+		cultural_acceptance_base = { target = cu:han value >= acceptance_status_5 }
+	}
+	on_complete = {
+		add_primary_culture = cu:han
+		add_modifier = je_ethnic_harmony_in_governance_modifier
+		change_variable = {
+			name = je_yuanhai_ambition_var
+			add = 1
+		}
+    }
+    weight = 1000
+	should_be_pinned_by_default = yes
+}

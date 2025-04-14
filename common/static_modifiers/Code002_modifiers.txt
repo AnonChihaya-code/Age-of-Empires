@@ -1,0 +1,1443 @@
+﻿country_disallow_aggressive_plays_bool = { #禁止侵略性外交博弈
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_disallow_aggressive_plays_bool = yes
+}
+
+CHI_TPG_geming_modifier = { #天国革命
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds #红拳头
+
+	state_tax_capacity_mult = 0.25                 #征税百分比
+	country_war_exhaustion_casualties_mult = -0.25 #厌战产生的厌战度
+	unit_morale_recovery_mult = 0.25               #士气恢复
+	unit_morale_loss_mult = -0.25                  #士气损失
+	building_training_rate_add = 1000 			   #训练率
+	building_training_rate_mult = 1			       #训练率
+	state_conversion_mult = 1                      #皈依
+}
+
+je_taiping_land_policy_modifier = { #天朝田亩制度
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+
+	interest_group_ig_rural_folk_approval_add = 5                #农民支持度
+	interest_group_ig_landowners_pol_str_mult = -0.50
+	country_peasants_pol_str_mult = 0.10
+	country_aristocrats_pol_str_mult = -0.50
+	state_aristocrats_mortality_mult = 0.50
+	state_conversion_mult = 0.25
+}
+
+je_taiping_divided_modifier = { #权力的毒药
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+
+	country_radicals_from_legitimacy_mult = 1                 #低合法激进派
+	country_loyalists_from_legitimacy_mult = -0.50            #高合法效忠派
+	country_legitimacy_ideological_incoherence_mult = 0.25    #意识形态惩罚
+	political_movement_radicalism_add = 0.10                  #政治运动活跃度
+	country_legitimacy_base_add = -10                         #政权合法性
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.25
+	interest_group_ig_armed_forces_pol_str_mult = 1
+	country_officers_pol_str_mult = 2
+}
+
+Je_TPG_Divided_01_modifier = { #天父的旨意
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds #绿头像
+	country_legitimacy_base_add = 15                         #政权合法性
+	country_legitimacy_ideological_incoherence_mult = -0.15  #意识形态惩罚
+	country_war_exhaustion_casualties_mult = -0.15           #厌战产生的厌战度
+	unit_morale_recovery_mult = 0.15                         #士气恢复
+	unit_morale_loss_mult = -0.15                            #士气损失
+}
+
+Je_TPG_Divided_02_modifier = { #天国的溃败
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds #红头像
+	country_legitimacy_base_add = -10                        #政权合法性
+	country_legitimacy_ideological_incoherence_mult = 0.15   #意识形态惩罚
+	country_war_exhaustion_casualties_mult = 0.15            #厌战产生的厌战度
+	unit_morale_recovery_mult = -0.15                        #士气恢复
+	unit_morale_loss_mult = 0.15                             #士气损失
+}
+
+je_unify_china_modifier = { #天命所归
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds" #绿火
+
+    country_legitimacy_base_add = 15               #政权合法性
+	country_infamy_generation_mult = -0.50         #恶名产生
+	country_infamy_decay_mult = 0.50               #恶名衰减
+}
+
+Je_New_Administrative_Paper_1_modifier = { #干王主政
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds #绿头像
+
+	interest_group_ig_intelligentsia_pol_str_mult = 1                #知识分子政治力量
+	interest_group_ig_intelligentsia_pop_attraction_mult = 0.25      #知识分子吸引力
+	interest_group_ig_intelligentsia_approval_add = 5                #知识分子支持度
+}
+
+Je_New_Administrative_Paper_2_modifier = { #国家现代化#人间天国
+	icon = "gfx/interface/icons/law_icons/interventionism.dds" #经济干预
+
+	state_education_access_add = 0.25                               #受教育
+	state_construction_mult = 0.25                                  #地区建造效率
+	country_construction_add = 100                                  #建筑力
+	building_group_bg_manufacturing_throughput_add = 0.1            #制造业
+	building_group_bg_mining_throughput_add = 0.1                   #矿井吞吐
+	building_group_bg_agriculture_throughput_add = 0.1              #农业吞吐
+	state_capitalists_investment_pool_efficiency_mult = 1           #资本家
+}
+
+je_heaven_on_earth_modifier = { #人间天国
+	icon = "gfx/interface/icons/law_icons/traditionalism.dds" #传统主义法律
+
+    country_legitimacy_base_add = 25                                #政权合法性
+	country_legitimacy_ideological_incoherence_mult = -0.25         #意识形态惩罚
+	state_conversion_mult = 1                                       #皈依
+	state_loyalists_from_political_movements_mult = 0.25            #来自政治运动的效忠派
+	state_radicals_from_political_movements_mult = -0.25            #来自政治运动的激进派
+	state_turmoil_effects_mult = -0.5                               #地区动乱惩罚
+	state_education_access_add = 0.25                               #受教育
+}
+
+Je_New_Administrative_Paper_01_modifier = { #天道新序
+	icon = "gfx/interface/icons/law_icons/autocracy.dds" #独裁制
+
+	country_legitimacy_base_add = 10                           #政权合法性
+	country_legitimacy_ideological_incoherence_mult = -0.1     #意识形态惩罚
+	state_conversion_mult = 1                                  #皈依
+	country_authority_mult = 0.1                               #权威
+	state_tax_capacity_mult = 0.1                              #征税
+	country_law_enactment_success_add = 0.1                    #加立法成功率
+	country_law_enactment_time_mult = -0.1                     #减立法时间
+	country_law_enactment_stall_mult = -0.1                    #立法停滞
+}
+
+Je_New_Administrative_Paper_0201_modifier = { #现代化运动
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds" #齿轮
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+	country_loan_interest_rate_mult = -0.25                  #贷款利率
+}
+
+Je_New_Administrative_Paper_0202_modifier = { #天邦兴盛
+	icon = "gfx/interface/icons/law_icons/laissez_faire.dds" #自由放任
+
+	interest_group_ig_industrialists_pol_str_mult = 1         #实业家政治力量
+	country_trade_route_quantity_mult = 0.5                   #贸易路线交易量
+	country_trade_route_cost_mult = -0.5                      #贸易路线花费
+	country_trade_route_competitiveness_mult = 0.5            #贸易路线竞争力
+	market_land_trade_capacity_add = 1000                     #陆上贸易容量"
+	building_group_bg_manufacturing_throughput_add = 0.1      #制造业
+	building_group_bg_mining_throughput_add = 0.1             #矿井吞吐
+	country_loan_interest_rate_mult = -0.1                    #贷款利率
+	state_capitalists_investment_pool_efficiency_mult = 0.5   #资本家
+	state_construction_mult = 0.25                            #地区建造效率
+	country_construction_add = 100                            #建筑力
+	military_formation_movement_speed_mult = 0.1              #编队移动速度
+	military_formation_mobilization_speed_mult = 0.1          #编队动员速度
+}
+
+Je_New_Administrative_Paper_03_modifier = { #天下平权
+	icon = "gfx/interface/icons/law_icons/religious_schools.dds" #教会学校
+
+	interest_group_ig_intelligentsia_pol_str_mult = 1                #知识分子政治力量
+	state_education_access_add = 0.15                                #受教育
+	country_tech_research_speed_mult = 0.15                          #科技研究速度
+	country_tech_spread_mult = 0.15                                  #科技扩散
+	building_university_throughput_add = 0.15                        #大学吞吐
+	state_loyalists_from_political_movements_mult = 0.15             #来自政治运动的效忠派
+	state_radicals_from_political_movements_mult = -0.15             #来自政治运动的激进派
+	state_turmoil_effects_mult = -0.25                               #地区动乱惩罚
+}
+
+Je_New_Administrative_Paper_04_modifier = { #天军威耀
+	icon = "gfx/interface/icons/law_icons/professional_army.dds" #职业军队
+
+	unit_offense_mult = 0.15	    	    	    	    #攻击
+	unit_defense_mult = 0.15	    	    	    	    #防守
+	unit_morale_damage_mult = 0.15	    	    	    	#士气打击
+	country_prestige_from_army_power_projection_mult = 0.25 #来自陆军力量投射的威望"
+    country_prestige_from_navy_power_projection_mult = 0.25 #来自海军力量投射的威望"
+}
+
+je_rebuild_changan_modifier = { #大汉的心脏
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds #绿火
+
+	building_group_bg_manufacturing_throughput_add = 0.25  #制造业吞吐
+	state_construction_mult = 0.25                         #地区建造效率
+	state_tax_capacity_mult = 0.25                         #征税百分比
+	battle_defense_owned_province_mult = 0.5               #本土防御
+	unit_provinces_lost_mult = -0.5                        #地块损失
+	state_turmoil_effects_mult = -0.5                      #地区动乱惩罚
+	state_migration_pull_mult = 1                          #移民吸引力%
+	state_migration_quota_mult = 1                         #移民限额%
+}
+
+je_revive_great_han_modifier = { #薪火不灭
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds #绿火
+
+	country_war_exhaustion_casualties_mult = -0.15 #厌战产生的厌战度
+	unit_morale_recovery_mult = 0.15               #士气恢复
+	unit_morale_loss_mult = -0.15                  #士气损失
+	state_conscription_rate_add = 0.15             #征兵
+}
+
+revive_great_han_modifier = { #天命所归
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds #绿火
+
+    country_legitimacy_base_add = 50                        #政权合法性
+	country_authority_mult = 0.5                            #权威
+    country_influence_mult = 0.5                            #影响力
+	state_construction_mult = 0.25                          #地区建造效率
+	country_construction_add = 100                          #建筑力
+	country_loan_interest_rate_mult = -0.25                 #贷款利率 
+	country_law_enactment_stall_mult = -0.15                #立法停滞
+	state_turmoil_effects_mult = -0.50                      #地区动乱惩罚
+}
+
+je_revive_great_han_01_modifier = { #天命所归
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds #绿火
+
+    country_legitimacy_base_add = 15               #政权合法性
+	country_infamy_generation_mult = -0.50         #恶名产生
+	country_infamy_decay_mult = 0.50               #恶名衰减
+}
+
+je_revive_great_han_0201_modifier = { #恢复生产
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds" #齿轮
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+}
+
+je_revive_great_han_0202_modifier = { #国泰民安
+	icon = "gfx/interface/icons/law_icons/traditionalism.dds" #传统主义法律
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 100                           #建筑力
+	country_max_weekly_construction_progress_add = 300       #每周建造投入
+	state_education_access_add = 0.15                        #受教育
+	state_pop_qualifications_mult = 0.15		             #资质
+	country_tech_research_speed_mult = 0.15                  #科技研究速度
+	country_tech_spread_mult = 0.15                          #科技扩散
+	building_university_throughput_add = 0.15                #大学吞吐
+	state_turmoil_effects_mult = -0.25                       #地区动乱惩罚
+}
+
+je_revive_great_han_03_modifier = { #兵强马壮
+	icon = "gfx/interface/icons/law_icons/professional_army.dds" #职业军队
+
+	unit_offense_mult = 0.15	    	    	    	    #攻击
+	unit_defense_mult = 0.15	    	    	    	    #防守
+	unit_morale_damage_mult = 0.15	    	    	    	#士气打击
+	country_prestige_from_army_power_projection_mult = 0.25 #来自陆军力量投射的威望"
+}
+
+je_revive_great_han_04_modifier = { #政清人和
+	icon = "gfx/interface/icons/law_icons/appointed_bureaucrats.dds" #任命官僚制
+
+	country_authority_mult = 0.15                            #权威
+	state_tax_capacity_mult = 0.25                           #征税
+	country_bureaucracy_mult = 0.15                          #行政
+	country_institution_size_change_speed_mult = 1           #机构规模变更速度
+}
+
+je_revive_great_han_05_modifier = { #丝绸之路
+	icon = "gfx/interface/icons/law_icons/free_trade.dds"     #自由贸易
+
+	interest_group_ig_industrialists_pol_str_mult = 1         #实业家政治力量
+	country_trade_route_quantity_mult = 0.5                   #贸易路线交易量
+	country_trade_route_cost_mult = -0.5                      #贸易路线花费
+	country_trade_route_competitiveness_mult = 0.5            #贸易路线竞争力
+	market_land_trade_capacity_add = 1000                     #陆上贸易容量
+	state_capitalists_investment_pool_efficiency_mult = 1     #资本家
+	country_minting_mult = 0.25                               #铸币
+	country_loan_interest_rate_mult = -0.25                   #贷款利率
+}
+
+je_mushroom_poisoning_modifier = { #蘑菇中毒
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds" #红头像
+
+	unit_offense_mult = 0.05	    	    	    	      #攻击
+	unit_morale_loss_mult = 0.05                              #士气损失
+}
+je_mushroom_addiction_modifier= { #毒蘑菇成瘾
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds" #红头像
+
+	unit_offense_mult = 0.05	    	    	    	      #攻击
+}
+
+je_universal_education_modifier = { #不想再失败
+    icon = "gfx/interface/icons/law_icons/theocracy.dds"     #神权
+
+	state_education_access_add = 0.10                        #受教育
+	state_pop_qualifications_mult = 0.10		             #资质
+	country_tech_research_speed_mult = 0.10                  #科技研究速度
+	country_tech_spread_mult = 0.10                          #科技扩散
+	building_university_throughput_add = 0.10                #大学吞吐
+}
+
+je_mysterious_girlicon_modifier = { #大收藏家
+    icon = "gfx/interface/icons/law_icons/womens_suffrage.dds" #妇女选举权
+
+	building_group_bg_mining_throughput_add = 0.1              #矿井吞吐
+	building_group_bg_logging_throughput_add= 0.1              #伐木吞吐
+}
+
+je_heavy_hearted_woman_modifier = { #驯服重女
+    icon = "gfx/interface/icons/law_icons/council_republic.dds" #委员会共和制
+
+	#interest_group_ig_trade_unions_pol_str_mult = 1           #工会政治力量
+	#interest_group_ig_trade_unions_pop_attraction_mult = 0.15 #工会吸引力
+	country_legitimacy_ideological_incoherence_mult = -0.15    #意识形态惩罚
+	country_bureaucracy_mult = 0.15                            #行政
+	country_institution_size_change_speed_mult = 1             #机构规模变更速度
+	country_law_enactment_stall_mult = -0.05                   #立法停滞
+}
+
+je_moon_forest_modifier = { #圣Soyo#释怀
+    icon = "gfx/interface/icons/law_icons/women_in_the_workplace.dds" #女性工作
+
+	state_aristocrats_investment_pool_efficiency_mult = 1.5   #贵族投资效率
+	interest_group_ig_landowners_approval_add = 5             #地主支持度
+	country_law_enactment_stall_mult = -0.05                  #立法停滞
+}
+
+mygo_events_4_01_modifier = { #易碎的心
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds" #红头像
+
+	interest_group_ig_trade_unions_approval_add = -3           #工会支持度
+}
+
+mygo_events_4_02_modifier = { #尝试沟通
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+
+	interest_group_ig_trade_unions_approval_add = 3            #工会支持度
+}
+
+je_sound_of_sugar_modifier = { #糖的声音
+    icon = "gfx/interface/icons/goods_icons/sugar.dds" #糖
+
+	building_sugar_plantation_throughput_add = 0.15            #糖吞吐
+	interest_group_approval_add = 5                            #利益集团支持度
+}
+
+mygo_events_5_modifier = { #结交新朋友
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+	country_legitimacy_ideological_incoherence_mult = -0.1     #意识形态惩罚
+	country_improve_relations_speed_mult = 0.15                #改善关系速度
+	interest_group_approval_add = 2                            #利益集团支持度
+}
+
+je_source_of_misfortune_01_modifier = { #不幸的根源
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds"   #红火堆
+
+    country_radicals_from_legitimacy_mult = 1                   #低合法激进派
+	country_loyalists_from_legitimacy_mult = -0.50              #高合法效忠派
+	country_legitimacy_ideological_incoherence_mult = 0.15      #意识形态惩罚
+	political_movement_radicalism_add = 0.10                    #政治运动活跃度
+	#country_legitimacy_base_add = -5                            #政权合法性
+	country_prestige_mult = -0.05                               #国家威望
+	country_authority_mult = -0.05                              #权威
+    country_influence_mult = -0.05                              #影响力
+}
+
+je_source_of_misfortune_02_modifier = { #挣脱重力场
+    icon = "gfx/interface/icons/law_icons/slavery_banned.dds" #禁止蓄奴
+
+	state_capitalists_investment_pool_efficiency_mult = 1.5   #资本家投资效率
+	interest_group_ig_industrialists_approval_add = 5         #实业家支持度
+	country_law_enactment_stall_mult = -0.05                  #立法停滞
+}
+
+character_immortal_modifier = { #永生
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds" #绿火
+
+	character_health_add = 999.99         #角色健康                     
+}
+
+guiyi_army_events_1_modifier = { #同仇敌忾
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳头
+
+	unit_morale_loss_mult = -0.95                           #士气损失
+	country_war_exhaustion_casualties_mult = -0.95			#伤亡造成的厌战度
+	unit_provinces_lost_mult = -0.75                        #地块丢失
+	#battle_offense_owned_province_mult = 0.15               #本土攻击
+	#battle_defense_owned_province_mult = 0.25                #本土防御
+	state_turmoil_effects_mult = -0.5                       #地区动乱惩罚
+	building_mobilization_cost_mult = -0.25		            #动员商品需求
+    state_conscription_rate_add = 0.5                       #征兵
+	building_training_rate_add = 1000 			            #训练率
+	building_training_rate_mult = 1			                #训练率
+}
+
+je_construction_hexi_corridor_modifier = { #建设河西走廊
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds" #齿轮
+
+    state_construction_mult = 0.25                          #地区建造效率
+	country_construction_add = 50                           #建筑力
+	country_max_weekly_construction_progress_add = 100      #每周建造投入
+	country_minting_mult = 0.50                             #铸币
+	country_loan_interest_rate_mult = -0.50                 #贷款利率
+}
+
+je_construction_hexi_corridor_button_modifier = { #修建水利设施
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds" #红金币
+
+    country_bureaucracy_mult = -0.25              #行政力
+	country_construction_add = -25                #建筑力
+	country_tax_income_add = -3000                #税收
+}
+
+guiyi_army_events_2_modifier = { #河西的繁荣
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳头
+
+	state_construction_mult = 0.25                            #地区建造效率
+	country_construction_add = 100                            #建筑力
+	country_max_weekly_construction_progress_add = 300        #每周建造投入
+	state_aristocrats_investment_pool_efficiency_mult = 0.5   #贵族投资效率 
+	state_capitalists_investment_pool_efficiency_mult = 0.5   #资本家投资效率
+	country_trade_route_quantity_mult = 0.25                  #贸易路线交易量
+	country_trade_route_cost_mult = -0.25                     #贸易路线花费
+	country_trade_route_competitiveness_mult = 0.25           #贸易路线竞争力
+	market_land_trade_capacity_add = 1000                     #陆上贸易容量
+	unit_offense_mult = 0.15	    	    	    	      #攻击
+	unit_defense_mult = 0.15	    	    	    	      #防守
+	state_conscription_rate_add = 0.5                         #征兵
+	building_training_rate_add = 1000 			              #训练率
+	country_tax_income_add = 15000                            #税收 
+	country_minting_mult = 0.25                               #铸币
+	country_loan_interest_rate_mult = -0.25                   #贷款利率         
+}
+
+je_restore_great_tang_modifier = { #光复之志
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds" #绿火
+
+	country_war_exhaustion_casualties_mult = -0.50 #厌战产生的厌战度
+	unit_morale_recovery_mult = 0.25               #士气恢复
+	unit_morale_loss_mult = -0.25                  #士气损失
+	state_conscription_rate_add = 0.25             #征兵
+}
+
+je_great_tang_modifier = { #光复之志
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds" #绿火
+
+	country_war_exhaustion_casualties_mult = -0.15 #厌战产生的厌战度
+	unit_morale_recovery_mult = 0.15               #士气恢复
+	unit_morale_loss_mult = -0.15                  #士气损失
+	state_conscription_rate_add = 0.15             #征兵
+}
+
+je_great_tang_01_modifier = { #天命所归
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds" #绿火
+
+    country_legitimacy_base_add = 15               #政权合法性
+	country_infamy_generation_mult = -0.50         #恶名产生
+	country_infamy_decay_mult = 0.50               #恶名衰减
+}
+
+je_great_tang_0201_modifier = { #再创盛世
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds" #齿轮
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+}
+
+je_great_tang_0202_modifier = { #引领时代
+	icon = "gfx/interface/icons/law_icons/traditionalism.dds" #传统主义法律
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 100                           #建筑力
+	country_max_weekly_construction_progress_add = 300       #每周建造投入
+	state_education_access_add = 0.15                        #受教育
+	state_pop_qualifications_mult = 0.15		             #资质
+	country_tech_research_speed_mult = 0.15                  #科技研究速度
+	country_tech_spread_mult = 0.15                          #科技扩散
+	building_university_throughput_add = 0.15                #大学吞吐
+	state_turmoil_effects_mult = -0.25                       #地区动乱惩罚
+}
+
+je_great_tang_03_modifier = { #实行均田制
+	icon = "gfx/interface/icons/law_icons/tenant_farmers.dds" #佃农
+
+	state_farmers_investment_pool_efficiency_mult = 1.5       #农民投资效率
+	interest_group_ig_rural_folk_approval_add = 5             #乡村民众支持度
+	country_law_enactment_stall_mult = -0.10                  #立法停滞
+	state_turmoil_effects_mult = -0.15                        #地区动乱惩罚
+	state_food_security_add = 0.10                            #粮食安全
+}
+
+je_great_tang_04_modifier = { #实行府兵制
+	icon = "gfx/interface/icons/law_icons/professional_army.dds" #职业军队
+
+	unit_offense_mult = 0.15	    	    	    	     #攻击
+	unit_defense_mult = 0.15	    	    	    	     #防守
+	unit_morale_damage_mult = 0.15	    	    	    	 #士气打击
+	country_prestige_from_army_power_projection_mult = 0.25  #来自陆军力量投射的威望
+	building_mobilization_cost_mult = -0.15		             #动员商品需求
+}
+
+je_great_tang_05_modifier = { #实行科举制
+	icon = "gfx/interface/icons/law_icons/appointed_bureaucrats.dds" #任命官僚制
+
+	country_authority_mult = 0.15                            #权威
+	state_tax_capacity_mult = 0.25                           #征税
+	country_bureaucracy_mult = 0.15                          #行政
+	country_legitimacy_ideological_incoherence_mult = -0.15  #意识形态惩罚
+	country_institution_size_change_speed_mult = 1           #机构规模变更速度
+}
+
+guiyi_army_events_4_modifier = { #盛世再临
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"     #君主制
+
+    country_legitimacy_base_add = 50                        #政权合法性
+	country_authority_mult = 0.5                            #权威
+    country_influence_mult = 0.5                            #影响力
+	state_construction_mult = 0.25                          #地区建造效率
+	country_construction_add = 100                          #建筑力
+	country_loan_interest_rate_mult = -0.25                 #贷款利率 
+	country_law_enactment_stall_mult = -0.15                #立法停滞
+	state_turmoil_effects_mult = -0.50                      #地区动乱惩罚
+	country_trade_route_quantity_mult = 0.25                #贸易路线交易量
+	country_trade_route_cost_mult = -0.25                   #贸易路线花费
+	country_trade_route_competitiveness_mult = 0.25         #贸易路线竞争力
+	market_land_trade_capacity_add = 1000                   #陆上贸易容量
+}
+
+je_wei_wu_ambitions_modifier = { #魏武挥鞭
+	icon = "gfx/interface/character_panel/grant_command.dds" #给予指挥权
+   
+    country_diplomatic_play_maneuvers_add = 50              #博弈力
+	country_improve_relations_speed_mult = 0.25             #改善关系速度
+	country_damage_relations_speed_mult = 0.25              #破坏关系速度
+}
+
+Quenching_Thirst_by_Watching_Plums = { #望梅止渴
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+	#icon = "gfx/interface/character_panel/grant_command_not.dds" #放弃指挥权
+
+	country_war_exhaustion_casualties_mult = -0.15         #厌战产生的厌战度
+	unit_morale_recovery_mult = 0.15                       #士气恢复
+	unit_morale_loss_mult = -0.15                          #士气损失
+	military_formation_movement_speed_mult = 0.15          #编队移动速度
+	military_formation_mobilization_speed_mult = 0.15      #编队动员速度
+}
+
+je_controversial_dynasty_modifier = { #汉室余晖
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds" #红头像
+
+    country_radicals_from_legitimacy_mult = 1                 #低合法激进派
+	country_loyalists_from_legitimacy_mult = -0.50            #高合法效忠派
+	country_legitimacy_ideological_incoherence_mult = 0.25    #意识形态惩罚
+	political_movement_radicalism_add = 0.10                  #政治运动活跃度
+	country_legitimacy_base_add = -10                         #政权合法性
+}
+
+je_wei_wu_ambitions_01_modifier = { #天命所归
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+
+	country_infamy_generation_mult = -0.50                   #恶名产生
+	country_infamy_decay_mult = 0.50                         #恶名衰减
+}
+
+je_wei_wu_ambitions_0201_modifier = { #恢复生产
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds" #齿轮
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+}
+
+je_wei_wu_ambitions_0202_modifier = { #焕发新生
+	icon = "gfx/interface/icons/law_icons/traditionalism.dds" #传统主义法律
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 100                           #建造力
+	country_max_weekly_construction_progress_add = 300       #每周建造投入
+	state_education_access_add = 0.15                        #受教育
+	state_pop_qualifications_mult = 0.15		             #资质
+	country_tech_research_speed_mult = 0.15                  #科技研究速度
+	country_tech_spread_mult = 0.15                          #科技扩散
+	building_university_throughput_add = 0.15                #大学吞吐
+	state_turmoil_effects_mult = -0.25                       #地区动乱惩罚
+}
+
+je_wei_wu_ambitions_0301_modifier = { #安置流民
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+
+    country_law_enactment_stall_mult = -0.05                  #立法停滞
+	state_turmoil_effects_mult = -0.15                        #地区动乱惩罚
+	country_minting_mult = 0.05                               #铸币
+}
+
+je_wei_wu_ambitions_0302_modifier = { #兴办屯田
+	icon = "gfx/interface/icons/law_icons/collectivized_agriculture.dds" #集体化农业
+
+    interest_group_ig_rural_folk_approval_add = 5             #乡村民众支持度
+	state_farmers_investment_pool_efficiency_mult = 1.5       #农民投资效率
+	state_food_security_add = 0.10                            #粮食安全
+	country_law_enactment_stall_mult = -0.10                  #立法停滞
+	building_group_bg_agriculture_throughput_add = 0.1        #农业吞吐
+	state_turmoil_effects_mult = -0.15                        #地区动乱惩罚
+	building_mobilization_cost_mult = -0.15		              #动员商品需求
+	country_minting_mult = 0.15                               #铸币
+}
+
+je_wei_wu_ambitions_0401_modifier = { #操练军队
+    #icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds" #绿枪
+
+	#building_training_rate_add = 1000 			            #训练率
+	building_training_rate_mult = 0.15			            #训练率
+	military_formation_movement_speed_mult = 0.15           #编队移动速度
+	military_formation_mobilization_speed_mult = 0.15       #编队动员速度
+    military_formation_organization_gain_mult = 0.15        #组织度每日
+    unit_experience_gain_mult = 0.15                        #陆海军每周经验
+	military_formation_attrition_risk_add = -0.15           #损耗风险
+	military_formation_attrition_risk_mult = -0.15          #损耗风险
+}
+
+je_wei_wu_ambitions_0402_modifier = { #训练有素
+	icon = "gfx/interface/icons/law_icons/professional_army.dds" #职业军队
+
+	unit_offense_mult = 0.15	    	    	    	     #攻击
+	unit_defense_mult = 0.15	    	    	    	     #防守
+	unit_morale_damage_mult = 0.15	    	    	    	 #士气打击
+	country_prestige_from_army_power_projection_mult = 0.25  #来自陆军力量投射的威望
+}
+
+je_wei_wu_ambitions_0501_modifier = { #礼贤下士
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+
+	interest_group_ig_intelligentsia_pol_str_mult = 1                #知识分子政治力量
+	interest_group_ig_intelligentsia_pop_attraction_mult = 0.25      #知识分子吸引力
+	interest_group_ig_intelligentsia_approval_add = 5                #知识分子支持度
+}
+
+je_wei_wu_ambitions_0502_modifier = { #任人唯贤
+	icon = "gfx/interface/icons/law_icons/appointed_bureaucrats.dds" #任命官僚制
+
+	country_authority_mult = 0.15                                    #权威
+	state_tax_capacity_mult = 0.25                                   #征税
+	country_bureaucracy_mult = 0.25                                  #行政
+	country_law_enactment_success_add = 0.1                          #加立法成功率
+	country_law_enactment_time_mult = -0.1                           #减立法时间
+	country_law_enactment_stall_mult = -0.15                         #立法停滞
+	country_legitimacy_ideological_incoherence_mult = -0.25          #意识形态惩罚
+	country_institution_size_change_speed_mult = 1                   #机构规模变更速度
+	interest_group_ig_intelligentsia_pol_str_mult = 1                #知识分子政治力量
+	interest_group_ig_intelligentsia_pop_attraction_mult = 0.25      #知识分子吸引力
+	interest_group_ig_intelligentsia_approval_add = 5                #知识分子支持度
+	country_society_tech_research_speed_mult = 0.15                  #社会科技研究速度
+}
+
+cao_wei_events_2_modifier = { #幸甚至哉，歌以咏志
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"     #君主制
+
+    country_legitimacy_base_add = 50                        #政权合法性
+	country_authority_mult = 0.5                            #权威
+    country_influence_mult = 0.5                            #影响力
+	state_construction_mult = 0.25                          #地区建造效率
+	country_construction_add = 100                          #建筑力
+	country_loan_interest_rate_mult = -0.25                 #贷款利率 
+	country_law_enactment_stall_mult = -0.15                #立法停滞
+	state_turmoil_effects_mult = -0.50                      #地区动乱惩罚
+}
+
+cao_wei_events_3_modifier = { #天下归心 
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+
+	interest_group_approval_add = 10
+}
+
+je_cement_the_dynasty_01_modifier = { #臭名昭著的王朝
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds" #红头像
+
+    country_radicals_from_legitimacy_mult = 1                 #低合法激进派
+	country_loyalists_from_legitimacy_mult = -0.50            #高合法效忠派
+	country_legitimacy_ideological_incoherence_mult = 0.25    #意识形态惩罚
+	political_movement_radicalism_add = 0.10                  #政治运动活跃度
+	country_legitimacy_base_add = -15                         #政权合法性
+	country_infamy_generation_mult = 0.15                     #恶名产生
+	country_infamy_decay_mult = -0.15                         #恶名衰减
+}
+
+je_cement_the_dynasty_02_modifier = { #挽回声誉
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+}
+
+je_cement_the_dynasty_03_modifier = { #以孝治天下
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds" #红头像
+
+    country_legitimacy_base_add = 25                         #政权合法性
+	country_authority_mult = 0.25                            #权威
+    country_influence_mult = 0.25                            #影响力
+	state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 100                           #建筑力
+	country_max_weekly_construction_progress_add = 300       #每周建造投入
+	country_loan_interest_rate_mult = -0.25                  #贷款利率 
+	country_law_enactment_stall_mult = -0.15                 #立法停滞
+	state_turmoil_effects_mult = -0.50                       #地区动乱惩罚
+}
+
+je_loong_city_revival_modifier = { #龙庭复兴
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds" #齿轮
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+}
+
+xiong_nu_events_1_modifier = { #天命再临
+	icon = "gfx/interface/character_panel/grant_command.dds" #给予指挥权
+
+    country_diplomatic_play_maneuvers_add = 50               #博弈力
+	country_infamy_generation_mult = -0.50                   #恶名产生
+	country_infamy_decay_mult = 0.50                         #恶名衰减
+	country_tech_research_speed_mult = 0.10                  #科技研究速度
+	country_tech_spread_mult = 0.10                          #科技扩散
+	building_university_throughput_add = 0.10                #大学吞吐
+	unit_offense_mult = 0.10	    	    	    	     #攻击
+	unit_defense_mult = 0.10	    	    	    	     #防守
+	state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+}
+
+je_control_of_the_silk_road_modifier = { #掌控丝绸之路
+	icon = "gfx/interface/icons/law_icons/free_trade.dds"     #自由贸易
+
+	interest_group_ig_industrialists_pol_str_mult = 1         #实业家政治力量
+	country_trade_route_quantity_mult = 0.5                   #贸易路线交易量
+	country_trade_route_cost_mult = -0.5                      #贸易路线花费
+	country_trade_route_competitiveness_mult = 0.5            #贸易路线竞争力
+	market_land_trade_capacity_add = 1000                     #陆上贸易容量
+	state_capitalists_investment_pool_efficiency_mult = 1     #资本家
+	country_minting_mult = 0.25                               #铸币
+	country_loan_interest_rate_mult = -0.25                   #贷款利率
+	country_tech_spread_mult = 0.15                           #科技扩散
+}
+
+je_yuanhai_ambition_modifier = { #元海的野望
+	icon = "gfx/interface/character_panel/grant_command.dds" #给予指挥权
+
+    country_diplomatic_play_maneuvers_add = 50               #博弈力
+}
+
+je_compete_for_the_throne_modifier = { #兄终弟及
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+
+	country_infamy_generation_mult = -0.50         #恶名产生
+	country_infamy_decay_mult = 0.50               #恶名衰减
+}
+
+je_winning_the_people_hearts_01_modifier = { #收揽民心
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds" #齿轮
+
+    state_construction_mult = 0.25                           #地区建造效率
+	country_construction_add = 50                            #建造力
+	country_max_weekly_construction_progress_add = 100       #每周建造投入
+}
+
+je_winning_the_people_hearts_02_modifier = { #收揽民心
+	icon = "gfx/interface/icons/law_icons/traditionalism.dds" #传统主义法律
+
+    state_construction_mult = 0.25                            #地区建造效率
+	country_construction_add = 100                            #建造力
+	country_max_weekly_construction_progress_add = 300        #每周建造投入
+	state_turmoil_effects_mult = -0.25                        #地区动乱惩罚
+	building_group_bg_manufacturing_throughput_add = 0.1      #制造业
+	building_group_bg_mining_throughput_add = 0.1             #矿井吞吐
+	state_aristocrats_investment_pool_efficiency_mult = 0.50  #贵族
+	state_capitalists_investment_pool_efficiency_mult = 0.50  #资本家
+	state_shopkeepers_investment_pool_efficiency_mult = 0.50  #店主
+	state_farmers_investment_pool_efficiency_mult = 0.50	  #农民
+}
+
+je_restoration_of_han_institutions_modifier = { #承袭汉制
+    icon = "gfx/interface/icons/law_icons/appointed_bureaucrats.dds" #任命官僚制
+
+	country_authority_mult = 0.15                                    #权威
+	state_tax_capacity_mult = 0.25                                   #征税
+	country_bureaucracy_mult = 0.25                                  #行政
+	country_law_enactment_success_add = 0.10                         #加立法成功率
+	country_law_enactment_time_mult = -0.10                          #减立法时间
+	country_law_enactment_stall_mult = -0.10                         #立法停滞
+	country_institution_size_change_speed_mult = 1                   #机构规模变更速度
+}
+
+je_disseminating_han_culture_modifier = { #推广汉学
+	icon = "gfx/interface/icons/law_icons/religious_schools.dds" #教会学校
+
+    state_education_access_add = 0.15                            #受教育
+	state_pop_qualifications_mult = 0.15		                 #资质
+	country_tech_research_speed_mult = 0.15                      #科技研究速度
+	country_tech_spread_mult = 0.15                              #科技扩散
+	building_university_throughput_add = 0.15                    #大学吞吐
+	interest_group_ig_intelligentsia_pol_str_mult = 1            #知识分子政治力量
+	interest_group_ig_intelligentsia_pop_attraction_mult = 0.25  #知识分子吸引力
+	interest_group_ig_intelligentsia_approval_add = 5            #知识分子支持度
+}
+
+je_ethnic_harmony_in_governance_modifier = { #民族共治
+	icon = "gfx/interface/icons/law_icons/multicultural.dds" #文化多元
+
+	country_acceptance_culture_base_add = 20                 #来自文化接纳度
+	interest_group_approval_add = 5                          #利益集团支持度
+}
+
+xiong_nu_events_3_modifier = { #汉室正统
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"     #君主制
+
+    country_legitimacy_base_add = 50                        #政权合法性
+	country_authority_mult = 0.5                            #权威
+    country_influence_mult = 0.5                            #影响力
+}
+
+je_national_revolution_modifier = { #国民革命
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳头
+
+    interest_group_ig_armed_forces_pol_str_mult = 0.25                           #军队政治力量
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.25                    #军队人群吸引力
+	country_officers_pol_str_mult = 0.75                                         #军官政治力量
+	country_legitimacy_headofstate_add = 20                                      #元首利益集团合法性
+	state_tax_capacity_mult = 0.25                                               #征税能力
+	country_infamy_generation_mult = -0.50                                       #恶名产生
+	country_infamy_decay_mult = 0.50                                             #恶名衰减
+	country_loan_interest_rate_mult = -0.25                                      #贷款利率
+	country_war_exhaustion_casualties_mult = -0.25			                     #伤亡造成的厌战度
+}
+
+modifier_whampoa_military_academy_taken = { #黄埔选址
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
+ 	country_bureaucracy_add = -500
+}
+
+national_revolutionary_army_events_3_modifier = { #北伐！
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds" #绿旗
+
+	country_war_exhaustion_casualties_mult = -0.5 	                           #伤亡造成的厌战度
+}
+
+je_assistance_to_peasants_and_workers_policy_modifier = {     #扶助农工政策
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds" #绿书
+
+	country_legitimacy_ideological_incoherence_mult = -0.25   #意识形态惩罚
+	interest_group_ig_trade_unions_pol_str_mult = 0.25        #工会政治力量
+	interest_group_ig_trade_unions_pop_attraction_mult = 0.25 #工会吸引力
+	interest_group_ig_trade_unions_approval_add = 5           #工会支持度
+	interest_group_ig_rural_folk_pol_str_mult = 0.25          #农民政治力量
+	interest_group_ig_rural_folk_approval_add = 5             #农民支持度
+	state_construction_mult = 0.25                            #地区建造效率
+	country_construction_add = 50                             #建造力
+	country_max_weekly_construction_progress_add = 100        #每周建造投入
+	state_farmers_investment_pool_efficiency_mult = 1		  #农民投资效率
+	building_group_bg_manufacturing_throughput_add = 0.05     #制造业
+	building_group_bg_mining_throughput_add = 0.05            #矿井吞吐
+	building_group_bg_agriculture_throughput_add = 0.05       #农业
+	state_food_security_add = 0.10                            #粮食安全
+	state_turmoil_effects_mult = -0.25                        #地区动乱惩罚
+	state_conscription_rate_add = 0.15                        #征兵
+}
+
+je_assistance_to_peasants_and_workers_policy_fail_modifier = { #群众的愤怒
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds" #红拳头
+
+    country_legitimacy_base_add = -10                        #政权合法性
+	country_legitimacy_ideological_incoherence_mult = 0.25   #意识形态惩罚
+	state_construction_mult = -0.1                           #地区建造效率
+	building_group_bg_manufacturing_throughput_add = -0.1    #制造业
+	building_group_bg_mining_throughput_add = -0.1           #矿井吞吐
+	building_group_bg_agriculture_throughput_add = -0.1      #农业
+	interest_group_ig_rural_folk_approval_add = -5           #农民支持度
+	interest_group_ig_trade_unions_approval_add = -5         #工会支持度
+	state_turmoil_effects_mult = 0.15                        #地区动乱惩罚
+	state_conscription_rate_add = -0.15                      #征兵
+}
+
+je_crush_the_warlords_modifier = { #灵活的外交政策
+	icon = "gfx/interface/icons/topbar/influence_icon.dds"   #影响力飞鸟
+
+	country_influence_mult = 0.15                            #影响
+	country_improve_relations_speed_mult = 0.15              #改善关系速度
+	country_damage_relations_speed_mult = 0.15               #破坏关系速度
+}
+
+je_crush_the_warlords_0101_button_modifier = { #改善与新桂系的关系
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds" #红金币
+
+	country_tax_income_add = -10000                          #税收
+	building_mobilization_cost_mult = 0.1		             #动员商品需求
+}
+
+je_crush_the_warlords_0102_button_modifier = { #国民革命军的援助
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds" #绿金币
+
+	country_tax_income_add = 10000                           #税收
+	building_mobilization_cost_mult = -0.1		             #动员商品需求
+}
+
+je_crush_the_warlords_0201_button_modifier = { #改善与滇系的关系
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds" #红金币
+
+	country_tax_income_add = -10000                          #税收
+	building_mobilization_cost_mult = 0.1		             #动员商品需求
+}
+
+je_crush_the_warlords_0202_button_modifier = { #国民革命军的援助
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds" #绿金币
+
+	country_tax_income_add = 10000                           #税收
+	building_mobilization_cost_mult = -0.1		             #动员商品需求
+}
+
+movement_sanminzhuyier_modifier = { #三民主义的传播#革命热情
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳
+	political_movement_pop_attraction_mult = 0.5
+}
+
+je_national_congress_of_the_kmt_01_modifier = { #促进自由派改革
+	icon = "gfx/interface/icons/ai_strategy_icons/progressive_agenda.dds" #促进自由派改革
+
+	interest_group_ig_industrialists_pol_str_mult = 0.50       #实业家政治力量
+	interest_group_ig_intelligentsia_pol_str_mult = 0.50       #知识分子
+	country_law_enactment_success_add = 0.05                   #加立法成功率
+	country_law_enactment_time_mult = -0.05                    #减立法时间
+	country_law_enactment_stall_mult = -0.05                   #立法停滞
+    country_society_tech_research_speed_mult = 0.15            #社会科技研究速度
+}
+
+je_national_congress_of_the_kmt_02_modifier = { #完善法律，增进平等
+	icon = "gfx/interface/icons/ai_strategy_icons/egalitarian_agenda.dds" #增进平等
+
+	interest_group_ig_trade_unions_pol_str_mult = 1            #工会政治力量
+	interest_group_ig_trade_unions_pop_attraction_mult = 0.25  #工会吸引力
+	country_law_enactment_success_add = 0.05                   #加立法成功率
+	country_law_enactment_time_mult = -0.05                    #减立法时间
+	country_law_enactment_stall_mult = -0.05                   #立法停滞
+    country_society_tech_research_speed_mult = 0.15            #社会科技研究速度
+}
+
+je_national_congress_of_the_kmt_03_modifier = { #把精力放在经济建设上
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds"  #齿轮
+
+	state_construction_mult = 0.25                             #地区建造效率
+	country_construction_add = 50                              #建造力
+	country_max_weekly_construction_progress_add = 100         #每周建造投入
+	state_capitalists_investment_pool_efficiency_mult = 1      #资本家投资效率
+	state_shopkeepers_investment_pool_efficiency_mult = 1      #店主投资效率
+	country_loan_interest_rate_mult = -0.25                    #贷款利率
+	country_production_tech_research_speed_mult = 0.15         #生产科技研究速度
+}
+
+je_national_congress_of_the_kmt_04_modifier = { #把精力放在军事建设上
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds" #绿枪
+
+	unit_offense_mult = 0.1	    	    	    	           #攻击
+	unit_defense_mult = 0.1	    	    	    	           #防守
+	building_training_rate_add = 1000 			               #训练率
+	building_training_rate_mult = 1			                   #训练率
+	military_formation_organization_gain_mult = 0.25           #组织度每日
+    unit_experience_gain_mult = 0.25                           #陆海军每周经验
+	unit_morale_loss_mult = -0.25                              #士气损失
+	military_formation_attrition_risk_add = -0.25              #损耗风险
+	military_formation_attrition_risk_mult = -0.25             #损耗风险
+	building_group_bg_military_throughput_add = 0.15           #军事建筑吞吐
+    country_military_tech_research_speed_mult = 0.15           #军事科技研究速度
+}
+
+je_national_congress_of_the_kmt_05_modifier = { #把精力放在外交建设上
+	icon = "gfx/interface/icons/topbar/influence_icon.dds"     #影响力飞鸟
+
+	country_influence_mult = 0.25                              #影响
+	country_improve_relations_speed_mult = 0.25                #改善关系速度
+	country_damage_relations_speed_mult = 0.25                 #破坏关系速度
+	country_diplomatic_play_maneuvers_add = 50                 #博弈力
+	country_infamy_generation_mult = -0.25                     #恶名产生
+	country_infamy_decay_mult = 0.25                           #恶名衰减
+}
+
+je_three_principles_of_the_people_modifier = { #三民主义照耀中国
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/sanminzhuyier.dds" #三民主义
+
+	country_legitimacy_base_add = 50                           #政权合法性
+	country_authority_mult = 0.5                               #权威
+	country_influence_mult = 0.5                               #影响
+	country_infamy_generation_mult = -0.50                     #恶名产生
+	state_loyalists_from_political_movements_mult = 0.50       #来自政治运动的效忠派
+	state_radicals_from_political_movements_mult = -0.50       #来自政治运动的激进派
+}
+
+je_principles_of_nationalism_modifier = { #民族主义
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳头
+
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.5     #小市民政治力量
+	country_authority_mult = 0.25                              #权威
+}
+
+je_principles_of_democracy_modifier = { #民权主义
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳头
+
+	country_bureaucracy_mult = 0.15                            #行政
+	country_institution_size_change_speed_mult = 1             #机构规模变更速度
+	country_loyalists_from_legitimacy_mult = 1                 #高合法效忠派
+	country_legitimacy_ideological_incoherence_mult = -0.15    #意识形态惩罚
+	political_movement_radicalism_add = -0.15                  #政治运动活跃度
+	country_law_enactment_time_mult = -0.15                    #减立法时间
+	country_law_enactment_stall_mult = -0.15                   #立法停滞
+}
+
+je_principles_of_people_livelihood_modifier = { #民生主义
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳头
+
+    state_education_access_add = 0.25                          #教育机会
+	state_pop_qualifications_mult = 0.25		               #资质
+	country_tech_research_speed_mult = 0.25                    #科技研究速度
+	country_tech_spread_mult = 0.25                            #科技扩散
+	building_university_throughput_add = 0.25                  #大学吞吐
+	state_turmoil_effects_mult = -0.25                         #地区动乱惩罚
+	state_tax_capacity_mult = 0.25                             #征税百分比
+	state_conscription_rate_add = 0.25                         #征兵率
+	state_conscription_rate_mult = 0.25                        #可征召
+	country_infamy_generation_mult = -0.25                     #恶名产生
+	country_war_exhaustion_casualties_mult = -0.25             #厌战产生的厌战度
+	state_loyalists_from_political_movements_mult = 0.25       #来自政治运动的效忠派
+	state_radicals_from_political_movements_mult = -0.25       #来自政治运动的激进派
+}
+
+je_unified_industrial_planning_01_modifier = { #强制借贷
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds" #绿金币
+	country_prestige_mult = -0.15                              #国家威望
+	country_loan_interest_rate_mult = -0.25                    #贷款利率
+	state_capitalists_investment_pool_efficiency_mult = 1.5    #资本家投资效率
+
+}
+
+je_unified_industrial_planning_02_modifier = { #工业国
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #绿拳头
+    
+	country_max_weekly_construction_progress_add = 1000        #加每周建造投入
+	state_construction_mult = 0.25                             #地区建造效率
+	building_construction_sector_throughput_add = 0.15         #建筑部门吞吐
+	building_group_bg_manufacturing_throughput_add = 0.15      #制造业吞吐
+	building_group_bg_mining_throughput_add = 0.15             #矿井吞吐
+	state_capitalists_investment_pool_efficiency_mult = 1.5    #资本家投资效率
+	state_shopkeepers_investment_pool_efficiency_mult = 1.5    #店主投资效率
+}
+
+je_unified_industrial_planning_03_modifier = { #感恩戴德
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds" #绿头像
+    
+	interest_group_ig_industrialists_approval_add = 5          #实业家支持度
+	interest_group_ig_industrialists_pol_str_mult = -0.25      #实业家政治力量
+	state_capitalists_mortality_mult = 0.05                    #资本家死亡率
+}
+
+warlords_events_1_enhancement_modifier = { #三民主义浪潮
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds"
+	state_pop_support_movement_sanminzhuyier_mult = 0.5
+}
+
+warlords_events_1_revolutionary_hero = { #革命英雄
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	character_popularity_add = 50
+}
+warlords_events_1_treasonous_traitor = { #叛国贼
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	character_popularity_add = -50
+}
+
+je_three_principles_of_the_people_movement_modifier = { #革命热情
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	political_movement_radicalism_add = 0.25
+	state_pop_support_movement_sanminzhuyier_mult = 0.25
+	state_pop_support_movement_cultural_minority_mult = 0.25
+}
+
+suppressing_sanminzhuyier = { #打压三民主义者
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds"
+	country_suppression_attraction_mult = 0.25
+}
+
+popular_sanminzhuyier = { #三民主义流行
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	character_popularity_add = 50
+}
+
+warlords_events_3_reactionary_enactment = { #紧急安全需求
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
+	country_law_enactment_success_add = 0.2
+}
+
+warlords_events_3_institution_speed = { #紧急安全需求
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
+	country_institution_size_change_speed_mult = 0.5
+}
+
+warlords_events_5_dissident_radical_faction = { #政见不同的激进派
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	interest_group_approval_add = -4
+}
+
+warlords_events_6_spread_the_revolution = { #输出革命
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	interest_group_approval_add = 2
+}
+warlords_events_6_constrained_the_revolution = { #有限革命
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	interest_group_approval_add = -2
+}
+
+warlords_events_9_post_revolutionary_fervor = { #后革命热情
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	country_legitimacy_base_add = 25
+}
+
+warlords_events_10_counter_revolutionary_fervor = { #反革命热情
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	country_legitimacy_base_add = 25
+}
+
+warlords_events_11_rooting_out_radicals = { #铲除激进主义者
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds"
+	state_radicals_from_political_movements_mult = -0.5
+	state_radicalism_increases_violent_hostility_mult = 0.2
+	state_radicalism_increases_cultural_erasure_mult = 0.2
+	state_radicalism_increases_open_prejudice_mult = 0.2
+}
+
+warlords_events_11_home_affairs_cost_mod = { #高效的内务部门
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
+	country_bureaucracy_investment_cost_factor_mult = -0.10
+	state_radicals_from_political_movements_mult = -0.15
+}
+
+je_chinese_warlord_era_modifier = { #军阀时代
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds" #绿枪
+
+	interest_group_ig_armed_forces_pol_str_mult = 0.25                            #军队政治力量
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.25                     #军队人群吸引力
+	country_officers_pol_str_mult = 0.75                                          #军官政治力量
+	country_legitimacy_headofstate_add = 20                                       #元首利益集团合法性
+	state_tax_capacity_mult = 0.25                                                #征税能力
+}
+
+warlords_events_13_modifier = { #横征暴敛
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds"
+
+	state_food_security_add = -0.05                                               #粮食安全
+	state_mortality_mult = 0.05                                                   #死亡率
+	state_birth_rate_mult = 0.02                                                  #出生率
+	state_turmoil_effects_mult = 0.25                                             #地区动乱惩罚
+	state_radicals_from_political_movements_mult = 0.5                            #来自政治运动的激进派
+	country_legitimacy_base_add = -5                                              #政权合法性
+	country_infamy_generation_mult = 0.15                                         #恶名产生
+	country_infamy_decay_mult = -0.15                                             #恶名衰减
+	country_gold_reserve_limit_mult = 3                                           #金库
+}
+
+warlords_events_1401_modifier = { #镇压革命
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds" #红旗
+
+	political_movement_pop_attraction_mult = -0.25                               #运动人群吸引力
+	political_movement_radicalism_add = -0.25                                    #运动活跃度
+	state_mortality_mult = 0.05                                                  #死亡率
+}
+
+warlords_events_1402_modifier = { #妥协
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"  #红书
+
+	political_movement_radicalism_add = 0.05                                     #运动活跃度
+	state_radicals_from_political_movements_mult = -0.25                         #来自政治运动的激进派
+}
+
+warlords_events_1403_modifier = { #罪魁祸首
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds" #红头像
+
+	character_popularity_add = -50
+}
+
+unify_golden_horde_modifier = { #金帐统一
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds" #
+
+	country_legitimacy_base_add = 10                           #政权合法性
+	country_legitimacy_ideological_incoherence_mult = -0.25    #意识形态惩罚
+	country_infamy_generation_mult = -0.50                     #恶名产生
+	country_infamy_decay_mult = 0.50                           #恶名衰减
+
+	state_assimilation_mult = 1		                           #同化
+	country_allow_assimilation_violent_hostility_bool = yes    #暴力对抗同化
+	state_conversion_mult = 1			                       #皈依
+	country_authority_mult = 0.25                              #权威
+	state_tax_capacity_mult = 0.25                             #征税
+	state_turmoil_effects_mult = -0.5                          #地区动乱惩罚
+	country_law_enactment_time_mult = -0.25                    #减立法时间
+	country_law_enactment_stall_mult = -0.25                   #立法停滞
+
+    state_construction_mult = 0.25                             #地区建造效率
+	country_construction_add = 50                              #建造力
+	country_max_weekly_construction_progress_add = 100         #每周建造投入
+	country_loan_interest_rate_mult = -0.25                    #贷款利率
+    
+	unit_offense_mult = 0.1	    	    	    	           #攻击
+	unit_morale_damage_mult = 0.1	    	    	    	   #士气打击
+	country_diplomatic_play_maneuvers_add = 50                 #博弈力
+	country_war_exhaustion_casualties_mult = -0.25             #厌战产生的厌战度
+	military_formation_movement_speed_mult = 0.25              #编队移动速度
+	military_formation_mobilization_speed_mult = 0.25          #编队动员速度
+}
+
+successors_of_the_golden_horde_button_modifier = { #金帐汗国的继承者
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds" 
+
+	country_legitimacy_base_add = 5                        #政权合法性
+    country_diplomatic_play_maneuvers_add = 25             #博弈力
+	country_war_exhaustion_casualties_mult = -0.25         #厌战产生的厌战度
+}
+
+tatar_yoke_modifier = { #鞑靼枷锁
+    icon = "gfx/interface/icons/law_icons/slave_trade.dds" #奴隶贸易
+
+	country_liberty_desire_add = -10                       #每周独立倾向
+	political_movement_radicalism_add = -0.5               #运动活跃度
+	state_radicals_from_political_movements_mult = -0.5    #来自政治运动的激进派
+}
+
+tatar_yoke_02_modifier = { #鞑靼枷锁
+    icon = "gfx/interface/icons/law_icons/slave_trade.dds" #奴隶贸易
+
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
+}
+
+tatar_kiev_01_modifier = { #战利品
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds" #绿金币
+
+	country_tax_income_add = 10000                         #税收
+}
+
+tatar_kiev_02_modifier = { #火海
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds" #红火
+
+	state_mortality_mult = 0.1                             #死亡率
+	state_birth_rate_mult = 0.01                           #出生率
+}
+
+tatar_caucasus_war_attacker = { #高加索战争
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds"
+	state_radicalism_increases_violent_hostility_mult = 0.20
+	state_radicalism_increases_cultural_erasure_mult = 0.20
+	state_radicalism_increases_open_prejudice_mult = 0.20
+	state_tax_waste_add = 0.50
+	state_mortality_mult = 0.10
+	state_circassian_standard_of_living_add = -3
+	state_north_caucasian_standard_of_living_add = -2
+}
+
+tatar_caucasus_war_attacker_lose = { #高加索的灾难
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds" #红旗
+
+	country_prestige_mult = -0.10                               #国家威望
+	country_war_exhaustion_casualties_mult = 0.1                #厌战产生的厌战度
+	unit_morale_recovery_mult = -0.1                            #士气恢复
+	unit_morale_loss_mult = 0.1                                 #士气损失
+}
+
+tatar_caucasus_war_defender_circassia = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds"
+	unit_morale_loss_mult = -0.95
+	battle_defense_owned_province_mult = 0.50
+	unit_provinces_lost_mult = -0.65
+	unit_offense_elevated_mult = 0.15
+	unit_offense_forested_mult = 0.25
+}
+
+tatar_caucasus_war_defender_imamate = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds"
+	unit_morale_loss_mult = -0.95
+	battle_defense_owned_province_mult = 0.50
+	unit_provinces_lost_mult = -0.65
+	state_radicalism_increases_violent_hostility_mult = -0.10
+	state_radicalism_increases_cultural_erasure_mult = -0.10
+	state_radicalism_increases_open_prejudice_mult = -0.10
+	unit_offense_elevated_mult = 0.25
+}
+
+tatar_modifier_failed_incursion = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_soldiers_mortality_mult = 0.15
+}
+
+tatar_modifier_attacked_supply_train = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_soldiers_mortality_mult = 0.05
+	state_infrastructure_mult = -0.20
+}
+
+tatar_modifier_villages_burned = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_mortality_mult = 0.05
+	state_standard_of_living_add = -1
+	building_group_bg_agriculture_throughput_add = -0.10
+}
+
+tatar_modifier_milyutin_memorandum = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_circassian_standard_of_living_add = -15
+	unit_kill_rate_add = 0.10
+	unit_devastation_mult = 0.25
+	state_radicalism_increases_violent_hostility_mult = 0.1
+	state_radicalism_increases_cultural_erasure_mult = 0.1
+	state_radicalism_increases_open_prejudice_mult = 0.1
+	state_migration_push_mult = 0.25
+	state_mortality_mult = 0.10
+}
+
+tatar_modifier_frontier_raids = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_standard_of_living_add = -1
+	building_throughput_add = -0.15
+	state_mortality_mult = 0.15
+}
+
+tatar_modifier_betrayal_of_tribe = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = -0.10
+	state_conscription_rate_mult = -0.10
+}
+
+tatar_modifier_soldiers_deserted = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_conscription_rate_mult = -0.35
+	unit_morale_recovery_mult = -0.10
+	state_north_caucasian_standard_of_living_add = -2
+}
+
+tatar_modifier_receiving_russian_deserters = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_conscription_rate_mult = 0.35
+	state_soldiers_mortality_mult = -0.10
+	building_training_rate_mult = 0.25
+}
+
+tatar_modifier_failed_to_cover_incursion = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	interest_group_approval_add = -2
+}
+
+tatar_modifier_neglected_supply_situation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	character_popularity_add = -25
+}
+
+tatar_modifier_refused_milyutin_memorandum = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_approval_add = -5
+}
+
+tatar_modifier_rampant_desertions = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	interest_group_approval_add = -2
+	interest_group_pop_attraction_mult = -0.10
+}
+
+tatar_modifier_legacy_of_shamil = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_radicalism_increases_violent_hostility_mult = -0.05
+	state_radicalism_increases_cultural_erasure_mult = -0.05
+	state_radicalism_increases_open_prejudice_mult = -0.05
+}
+
+tatar_modifier_caucasian_war_sol = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_circassian_standard_of_living_add = -5
+	state_north_caucasian_standard_of_living_add = -5
+}
+
+tatar_modifier_settlers_privileges = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	state_mongol_standard_of_living_add = 2
+	state_tatar_standard_of_living_add = 2
+	state_migration_pull_mult = 0.50
+}
+
+tatar_modifier_lapinski_expedition = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_offense_flat_mult = 0.1
+	unit_army_offense_mult = 0.1
+}
+
+tatar_modifier_lapinski_training = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_military_tech_spread_mult = 0.25
+}
+
+tatar_modifier_jizya_tax = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	tax_heathen_add = 0.25
+}
+
+tatar_modifier_conversion_of_reclaimed_territories = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	state_conversion_mult = 0.25
+}
+
+tatar_modifier_imamate_diplomacy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_influence_mult = 0.25
+	country_infamy_decay_mult = 0.10
+}
+
+tatar_modifier_honour_and_life_sol = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_standard_of_living_add = 1
+	country_prestige_mult = 0.15
+	state_pop_pol_str_mult = 0.15
+}
+
+tatar_modifier_honour_and_life_military = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	country_military_tech_spread_mult = 0.10
+	building_throughput_add = 0.05
+	interest_group_ig_industrialists_pol_str_mult = 0.15
+}
+
+tatar_modifier_circassian_last_stand = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_recovery_rate_add = 0.3
+	interest_group_ig_armed_forces_pol_str_mult = 0.15
+	state_conscription_rate_mult = 1
+}
+
+tatar_modifier_circassian_diplomacy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_influence_mult = 0.25
+	country_improve_relations_speed_mult = 0.10
+	interest_group_ig_intelligentsia_pol_str_mult = 0.15
+	state_conscription_rate_mult = 1
+}
+
+tatar_modifier_accepted_muhammad_amin = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_approval_add = 5
+	interest_group_pop_attraction_mult = 0.25
+}
+
+tatar_modifier_repudiated_muhammad_amin = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	interest_group_approval_add = -5
+	interest_group_pop_attraction_mult = -0.25
+}
+
+tatar_modifier_circassian_joint_struggle = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	unit_recovery_rate_add = 0.15
+	interest_group_ig_devout_pol_str_mult = 0.15
+	state_conscription_rate_mult = 1
+}

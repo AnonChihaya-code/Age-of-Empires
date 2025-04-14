@@ -1,0 +1,140 @@
+﻿#####兵种#####
+#####步兵#####
+Code002_infantry_01_trigger = { #非正规
+	OR = {
+		c:DQDG ?= this
+		c:GRE ?= this
+        c:EROM ?= this
+		c:AZTE ?= this
+		c:CHEY ?= this
+		c:IROQ ?= this
+		c:SIOU ?= this
+		c:COMA ?= this
+		c:INCA ?= this
+		c:MAML ?= this
+	}
+}
+Code002_infantry_02_trigger = { #线列
+	OR = {
+		c:DQDG ?= this
+		c:GRE ?= this
+        c:EROM ?= this
+		c:AZTE ?= this
+		c:CHEY ?= this
+		c:IROQ ?= this
+		c:SIOU ?= this
+		c:COMA ?= this
+		c:INCA ?= this
+		c:MAML ?= this
+	}
+}
+Code002_infantry_03_trigger = { #散兵
+	OR = {
+		c:DQDG ?= this
+		c:GRE ?= this
+        c:EROM ?= this
+		c:AZTE ?= this
+		c:CHEY ?= this
+		c:IROQ ?= this
+		c:SIOU ?= this
+		c:COMA ?= this
+		c:INCA ?= this
+		c:MAML ?= this
+	}
+}
+Code002_infantry_04_trigger = { #堑壕
+    OR = {
+		c:DQDG ?= this
+		c:GRE ?= this
+        c:EROM ?= this
+		c:AZTE ?= this
+		c:CHEY ?= this
+		c:IROQ ?= this
+		c:SIOU ?= this
+		c:COMA ?= this
+		c:INCA ?= this
+		c:MAML ?= this
+	}
+}
+Code002_infantry_05_trigger = { #步兵班
+	OR = {
+		c:DQDG ?= this
+		c:GRE ?= this
+        c:EROM ?= this
+		c:AZTE ?= this
+		c:CHEY ?= this
+		c:IROQ ?= this
+		c:SIOU ?= this
+		c:COMA ?= this
+		c:INCA ?= this
+		c:MAML ?= this
+	}
+}
+Code002_infantry_06_trigger = { #机械化
+	OR = {
+		c:DQDG ?= this
+		c:GRE ?= this
+        c:EROM ?= this
+		c:AZTE ?= this
+		c:CHEY ?= this
+		c:IROQ ?= this
+		c:SIOU ?= this
+		c:COMA ?= this
+		c:INCA ?= this
+		c:MAML ?= this
+	}
+}
+
+####炮兵#####
+#Code002_artillery_01_trigger = { #加农
+#	OR = {
+#		c:AZTE ?= this
+#	}
+#}
+#Code002_artillery_02_trigger = { #机动
+#	OR = {
+#		c:AZTE ?= this
+#	}
+#}
+#Code002_artillery_03_trigger = { #榴弹
+#	OR = {
+#		c:AZTE ?= this
+#	}
+#}
+#Code002_artillery_04_trigger = { #攻城
+#	OR = {
+#		c:AZTE ?= this
+#	}
+#}
+#Code002_artillery_05_trigger = { #重坦
+#	OR = {
+#		c:AZTE ?= this
+#	}
+#}
+
+#####骑兵#####
+Code002_cavalry_01_trigger = { #骠骑
+	OR = {
+		c:AZTE ?= this
+	}
+}
+Code002_cavalry_02_trigger = { #龙骑
+	OR = {
+		c:AZTE ?= this
+	}
+}
+Code002_cavalry_03_trigger = { #胸甲
+	OR = {
+		c:AZTE ?= this
+	}
+}
+Code002_cavalry_04_trigger = { #枪骑
+	OR = {
+		c:AZTE ?= this
+	}
+}
+Code002_cavalry_05_trigger = { #轻坦
+	OR = {
+		c:AZTE ?= this
+	}
+}

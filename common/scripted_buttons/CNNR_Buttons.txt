@@ -1,0 +1,443 @@
+﻿je_national_congress_of_the_kmt_button = { #召开国民党全国代表大会
+	name = je_national_congress_of_the_kmt_button
+	desc = je_national_congress_of_the_kmt_button_desc
+	visible = {
+		always = yes
+	}
+	possible = {
+		custom_tooltip = {
+			text = je_national_congress_of_the_kmt_button_tt
+		    var:je_national_congress_of_the_kmt_var >= 12
+		}
+	}
+	effect = {
+		trigger_event = { id = national_revolutionary_army_events.1 popup = yes } #国民党全国代表大会
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+je_national_revolution_01_button = { #勘探军官学校
+	name = je_national_revolution_01_button
+	desc = je_national_revolution_01_button_desc
+	visible = {
+		AND = { exists = c:CNNR this = c:CNNR }
+		NOT = { 
+			has_variable = whampoa_military_academy_taken
+			has_global_variable = building_whampoa_military_academy_complete
+		}
+		OR = {
+			s:STATE_GUANGDONG = {
+				any_scope_state = {
+					owner = ROOT
+				}
+			}
+		}
+		s:STATE_GUANGDONG = {
+			any_scope_state = {
+				NOT = {
+					any_scope_building = { 
+						is_building_type = building_whampoa_military_academy
+					}
+				}
+			}
+		}
+	}
+	possible = {
+		c:CNNR ?= this
+		produced_bureaucracy > 1000
+	}
+	effect = {
+		set_variable = {
+			name = whampoa_military_academy_taken
+			value = 0
+		}
+		add_modifier = {
+			name = modifier_whampoa_military_academy_taken
+		}
+		add_journal_entry = {
+			type = je_whampoa_military_academy_survey
+		}
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+je_national_revolution_02_button = { #停止勘探军官学校
+	name = je_national_revolution_02_button
+	desc = je_national_revolution_02_button_desc
+	visible = {
+		has_modifier = modifier_whampoa_military_academy_taken
+	}
+	possible = {
+		has_modifier = modifier_whampoa_military_academy_taken
+	}
+	effect = {
+		remove_variable = whampoa_military_academy_taken
+		remove_modifier = modifier_whampoa_military_academy_taken
+	}
+	ai_chance = {
+		base = 0
+	}
+}
+
+je_crush_the_warlords_01_button = { #改善与新桂系的关系
+	name = je_crush_the_warlords_01_button
+	desc = je_crush_the_warlords_01_button_desc
+	visible = {
+		exists = c:CNGX
+	}
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = root_crush_the_warlords_01_button_tt
+				has_variable = root_crush_the_warlords_01_button_var
+			}
+		}
+		NOT = {
+			custom_tooltip = {
+				text = cngx_crush_the_warlords_01_button_tt
+				has_variable = cngx_crush_the_warlords_01_button_var
+			}
+    	}
+		NOT = { has_modifier = je_crush_the_warlords_0101_button_modifier }
+	}	
+	effect = {
+		set_variable = { name = root_crush_the_warlords_01_button_var years = 1 }
+		if = {
+			limit = { exists = c:CNGX }
+			c:CNGX ?= {
+				trigger_event = {
+					id = national_revolutionary_army_events.4
+				}
+				show_as_tooltip = {
+					if = {
+						limit = {  
+							NOT = {
+								any_political_lobby = { 
+									target = c:CNNR
+									is_political_lobby_type = lobby_pro_country
+								}						
+							}
+						}		
+						create_political_lobby = {  
+							type = lobby_pro_country  
+							target = c:CNNR
+							add_interest_group = ig:ig_industrialists
+							add_interest_group = ig:ig_intelligentsia
+							add_interest_group = ig:ig_petty_bourgeoisie
+						}				
+					}
+					if = {
+						limit = {
+							any_political_movement = {
+								is_political_movement_type = movement_sanminzhuyier
+								NOT = { has_modifier = movement_sanminzhuyier_modifier }					
+							}
+						}
+						every_political_movement = {
+							limit = {
+								is_political_movement_type = movement_sanminzhuyier
+								NOT = { has_modifier = movement_sanminzhuyier_modifier }
+							}
+							add_modifier = {
+								name = movement_sanminzhuyier_modifier
+								years = 5
+							}
+						}
+					}
+		        }
+			}
+		}
+		custom_tooltip = cngx_crush_the_warlords_01_button_effect_01_tt
+		custom_tooltip = cngx_crush_the_warlords_01_button_effect_02_tt
+	}
+	ai_chance = {
+		base = 25
+		modifier = {
+            trigger = {
+		       NOT = { taking_loans = yes }
+			}
+            add = 75
+        }
+	}
+}
+
+je_crush_the_warlords_02_button = { #改善与滇系的关系
+	name = je_crush_the_warlords_02_button
+	desc = je_crush_the_warlords_02_button_desc
+	visible = {
+		exists = c:CNYN
+	}
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = root_crush_the_warlords_02_button_tt
+				has_variable = root_crush_the_warlords_02_button_var
+			}
+		}
+		NOT = {
+			custom_tooltip = {
+				text = cnyn_crush_the_warlords_02_button_tt
+				has_variable = cnyn_crush_the_warlords_02_button_var
+			}
+    	}
+		NOT = { has_modifier = je_crush_the_warlords_0201_button_modifier }
+	}	
+	effect = {
+		set_variable = { name = root_crush_the_warlords_02_button_var years = 1 }
+		if = {
+			limit = { exists = c:CNYN }
+			c:CNYN ?= {
+				trigger_event = {
+					id = national_revolutionary_army_events.4
+				}
+				show_as_tooltip = {
+					if = {
+						limit = {  
+							NOT = {
+								any_political_lobby = { 
+									target = c:CNNR
+									is_political_lobby_type = lobby_pro_country
+								}						
+							}
+						}		
+						create_political_lobby = {  
+							type = lobby_pro_country  
+							target = c:CNNR
+							add_interest_group = ig:ig_industrialists
+							add_interest_group = ig:ig_intelligentsia
+							add_interest_group = ig:ig_petty_bourgeoisie
+						}				
+					}
+					if = {
+						limit = {
+							any_political_movement = {
+								is_political_movement_type = movement_sanminzhuyier
+								NOT = { has_modifier = movement_sanminzhuyier_modifier }					
+							}
+						}
+						every_political_movement = {
+							limit = {
+								is_political_movement_type = movement_sanminzhuyier
+								NOT = { has_modifier = movement_sanminzhuyier_modifier }
+							}
+							add_modifier = {
+								name = movement_sanminzhuyier_modifier
+								years = 5
+							}
+						}
+					}
+				}
+			}
+		}
+		custom_tooltip = cnyn_crush_the_warlords_02_button_effect_01_tt
+		custom_tooltip = cnyn_crush_the_warlords_02_button_effect_02_tt
+	}
+	ai_chance = {
+		base = 25
+		modifier = {
+            trigger = {
+		        NOT = { taking_loans = yes }
+			}
+            add = 75
+        }
+	}
+}
+
+je_crush_the_warlords_03_button = { #邀请新桂系加入革命
+	name = je_crush_the_warlords_03_button
+	desc = je_crush_the_warlords_03_button_desc
+	visible = {
+		exists = c:CNGX
+	}
+	possible = {
+		country_rank >= rank_value:great_power
+		army_power_projection > scope:cngx_warlords.army_power_projection
+		has_diplomatic_pact = {
+			who = c:CNGX
+			type = alliance
+		}
+		c:CNGX ?= {
+			relations:root >= 50
+			is_at_war = no
+			is_ai = yes
+			any_political_movement = {
+				is_political_movement_type = movement_sanminzhuyier
+				is_being_suppressed = no
+			}
+			any_interest_group = {
+				leader = { has_ideology = ideology:ideology_sanminzhuyier }
+				is_marginal = no
+			    is_in_government = yes
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = { exists = c:CNGX }
+			set_variable = je_crush_the_warlords_03_button_var
+			c:CNNR ?= {
+				trigger_event = {
+					id = national_revolutionary_army_events.5 popup = yes
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+je_crush_the_warlords_04_button = { #邀请滇系加入革命
+	name = je_crush_the_warlords_04_button
+	desc = je_crush_the_warlords_04_button_desc
+	visible = {
+		exists = c:CNYN
+	}
+	possible = {
+		country_rank >= rank_value:great_power
+		army_power_projection > scope:cnyn_warlords.army_power_projection
+		has_diplomatic_pact = {
+			who = c:CNYN
+			type = alliance
+		}
+		c:CNYN ?= {
+			relations:root >= 50
+			is_at_war = no
+			is_ai = yes
+			any_political_movement = {
+				is_political_movement_type = movement_sanminzhuyier
+				is_being_suppressed = no
+			}
+			any_interest_group = {
+				leader = { has_ideology = ideology:ideology_sanminzhuyier }
+				is_marginal = no
+			    is_in_government = yes
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = { exists = c:CNYN }
+			set_variable = je_crush_the_warlords_04_button_var
+			c:CNNR ?= {
+				trigger_event = {
+					id = national_revolutionary_army_events.5 popup = yes
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+je_crush_the_warlords_05_button = { #荡平新桂系
+	name = je_crush_the_warlords_05_button
+	desc = je_crush_the_warlords_05_button_desc
+	visible = {
+		exists = c:CNGX
+		NOT = { has_variable = je_crush_the_warlords_05_button_var }
+	}
+	possible = {
+		country_rank >= rank_value:great_power
+		c:CNGX ?= {
+			infamy >= 75
+			is_at_war = no
+			is_ai = yes
+		}
+		NOT = { has_truce_with = c:CNGX }
+	}
+	effect = {
+		if = {
+			limit = { exists = c:CNGX }
+			set_variable = je_crush_the_warlords_05_button_var
+			c:CNNR ?= {
+				trigger_event = {
+					id = national_revolutionary_army_events.6 popup = yes
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 50
+	}
+}
+
+je_crush_the_warlords_06_button = { #荡平滇系
+	name = je_crush_the_warlords_06_button
+	desc = je_crush_the_warlords_06_button_desc
+	visible = {
+		exists = c:CNYN
+		NOT = { has_variable = je_crush_the_warlords_06_button_var }
+	}
+	possible = {
+		country_rank >= rank_value:great_power
+		c:CNYN ?= {
+			infamy >= 75
+			is_at_war = no
+			is_ai = yes
+		}
+		NOT = { has_truce_with = c:CNYN }
+	}
+	effect = {
+		if = {
+			limit = { exists = c:CNYN }
+			set_variable = je_crush_the_warlords_06_button_var
+			c:CNNR ?= {
+				trigger_event = {
+					id = national_revolutionary_army_events.7 popup = yes
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 50
+	}
+}
+
+je_unified_industrial_planning_button = { #强制借贷
+	name = je_unified_industrial_planning_button
+	desc = je_unified_industrial_planning_button_desc
+	visible = {
+		NOT = {
+			has_variable = je_unified_industrial_planning_button_var
+		}
+		ig:ig_industrialists = {
+			NOT = {
+				has_modifier = je_unified_industrial_planning_03_modifier
+			}
+		}
+	}
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = je_unified_industrial_planning_button_tt
+				has_variable = je_unified_industrial_planning_button_var
+			}
+		}
+		any_interest_group = {
+			is_interest_group_type = ig_industrialists
+			NOT = { has_modifier = je_unified_industrial_planning_03_modifier }
+		}
+	}
+	effect = {
+		set_variable = { name = je_unified_industrial_planning_button_var years = 5 }
+		add_modifier = {
+			name = je_unified_industrial_planning_01_modifier
+			years = 5
+		}
+		ig:ig_industrialists = {
+			add_modifier = {
+				name = je_unified_industrial_planning_03_modifier
+				years = 5
+			}
+		}
+	}
+	ai_chance = {
+		base = 200
+	}
+}

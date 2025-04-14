@@ -1,0 +1,146 @@
+﻿namespace = cao_wei_events
+
+cao_wei_events.1 = { #汉帝禅让
+	type = country_event
+	placement = root
+	duration = 3
+	title = cao_wei_events.1.t
+	desc = cao_wei_events.1.d
+	flavor = cao_wei_events.1.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = cao_wei_events.1.a
+		add_journal_entry = {
+			type = je_wei_wu_ambitions
+		}
+		add_journal_entry = {
+			type = je_controversial_dynasty
+		}
+		add_journal_entry = {
+			type = je_wei_wu_ambitions_01
+		}
+		add_journal_entry = {
+			type = je_wei_wu_ambitions_02
+		}
+		add_journal_entry = {
+			type = je_wei_wu_ambitions_03
+		}
+		add_journal_entry = {
+			type = je_wei_wu_ambitions_04
+		}
+		add_journal_entry = {
+			type = je_wei_wu_ambitions_05
+		}
+	}
+}
+
+cao_wei_events.2 = { #幸甚至哉，歌以咏志
+	type = country_event
+	placement = root
+	duration = 3
+	title = cao_wei_events.2.t
+	desc = cao_wei_events.2.d
+	flavor = cao_wei_events.2.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = cao_wei_events.2.a
+		add_modifier = cao_wei_events_2_modifier
+		set_global_variable = je_wei_wu_ambitions_complete_var
+	}
+}
+
+cao_wei_events.3 = { #天下归心
+	type = country_event
+	placement = root
+	duration = 3
+	title = cao_wei_events.3.t
+	desc = cao_wei_events.3.d
+	flavor = cao_wei_events.3.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = { }
+	option = {
+		default_option = yes
+		name = cao_wei_events.3.a
+		add_modifier =  { name = cao_wei_events_3_modifier years = 19 }
+	}
+}
+
+cao_wei_events.4 = { #三马食槽
+	type = country_event
+	placement = root
+	duration = 3
+	title = cao_wei_events.4.t
+	desc = cao_wei_events.4.d
+	flavor = cao_wei_events.4.f
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	trigger = { }
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_heir = yes
+		    }
+		    kill_character = {
+				hidden = yes
+			}
+		}
+		ruler = {
+			kill_character = {
+				hidden = yes
+			}
+		}
+		create_character = {
+		    template = CNCW_Cao_Fang
+	    }
+	}
+	option = {
+		default_option = yes
+		name = cao_wei_events.4.a
+		custom_tooltip = {
+			text = cao_wei_events_4_tt
+			change_tag = DJDG
+			every_scope_character = {
+				limit = {
+					is_historical = yes
+				}
+				kill_character = {
+					hidden = yes
+				}
+			}
+		}
+		add_journal_entry = {
+			type = je_cement_the_dynasty
+		}
+		create_character = {
+		    template = DJDG_Sima_Yi
+	    }
+		create_character = {
+		    template = DJDG_Sima_Shi
+	    }
+		create_character = {
+		    template = DJDG_Sima_Zhao
+	    }
+	}
+}

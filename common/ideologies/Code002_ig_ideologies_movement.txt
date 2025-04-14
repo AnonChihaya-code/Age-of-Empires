@@ -1,0 +1,148 @@
+﻿#####政治运动意识形态#####
+ideology_sanminzhuyier_movement = { #三民主义运动意识形态
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/sanminzhuyier.dds"
+
+	lawgroup_governance_principles = { #治理原则
+		law_monarchy = strongly_disapprove
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_corporate_state = strongly_disapprove
+		law_theocracy = strongly_disapprove
+		law_council_republic = neutral
+	}
+
+	lawgroup_distribution_of_power = { #权力分配
+		law_autocracy = strongly_disapprove
+		law_oligarchy = strongly_disapprove
+		law_technocracy = strongly_disapprove
+		law_landed_voting = strongly_disapprove
+		law_wealth_voting = approve
+		law_census_voting = approve
+		law_universal_suffrage = strongly_approve
+		law_anarchy = strongly_disapprove
+		law_single_party_state = strongly_disapprove
+	}
+
+	lawgroup_economic_system = { #经济体制
+		law_traditionalism = strongly_disapprove
+		law_interventionism = approve
+		law_agrarianism = neutral
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_laissez_faire = approve
+		law_cooperative_ownership = neutral
+		law_command_economy = neutral
+	}
+
+	lawgroup_land_reform = { #土地改革
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_homesteading = strongly_approve
+	}
+
+	lawgroup_citizenship = { #公民权
+		law_cultural_exclusion = approve
+	}
+
+	lawgroup_bureaucracy = { #官僚制度
+		law_hereditary_bureaucrats = strongly_disapprove
+		law_appointed_bureaucrats = neutral
+		law_elected_bureaucrats = approve
+	}
+
+	lawgroup_army_model = { #军队
+		law_national_revolutionary_army = strongly_approve
+	}
+	
+	lawgroup_free_speech = { #言论保护
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = strongly_disapprove
+		law_right_of_assembly = approve
+		law_protected_speech = approve
+	}
+
+	lawgroup_labor_rights = { #劳动者权益
+		law_no_workers_rights = disapprove
+		law_regulatory_bodies = approve
+		law_worker_protections = approve
+	}
+
+	lawgroup_church_and_state = { #教会与国家
+		law_state_religion = strongly_disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = neutral
+	}
+}
+
+ideology_New_Paper_movement = { #新篇思想运动
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_reformer.dds" #改良主义
+	
+	lawgroup_economic_system = { #经济体制
+		law_traditionalism = strongly_disapprove
+		law_interventionism = strongly_approve
+		law_agrarianism = strongly_disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_laissez_faire = strongly_approve
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = { #贸易政策	
+	    law_mercantilism = neutral
+		law_protectionism = neutral
+		law_free_trade = strongly_approve
+		law_isolationism = strongly_disapprove
+	}		
+
+	lawgroup_land_reform = { #土地改革
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = strongly_disapprove
+		law_commercialized_agriculture = strongly_disapprove
+		law_homesteading = strongly_approve
+		law_collectivized_agriculture = strongly_disapprove
+	}
+
+	lawgroup_taxation = { #税制
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = strongly_approve
+	}
+
+	lawgroup_education_system = { #教育体系
+	    law_no_schools = strongly_disapprove
+		law_religious_schools = neutral
+		law_private_schools = strongly_approve
+		law_public_schools = strongly_approve
+	}
+
+    lawgroup_health_system = { #卫生系统
+	    law_no_health_system = strongly_disapprove
+		law_charitable_health_system = approve
+		law_private_health_insurance = approve
+		law_public_health_insurance = approve
+	}
+
+    lawgroup_childrens_rights = { #儿童权利
+		law_child_labor_allowed = neutral
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = strongly_approve
+	}
+
+    lawgroup_rights_of_women = { #女性权力
+		law_no_womens_rights = strongly_disapprove
+		law_women_own_property = approve
+		law_women_in_the_workplace = approve
+		law_womens_suffrage = approve
+	}
+
+	lawgroup_welfare = { #社会福利
+	    law_no_social_security = strongly_disapprove
+		law_poor_laws = approve
+		law_wage_subsidies = approve
+		law_old_age_pension = approve
+	}
+}

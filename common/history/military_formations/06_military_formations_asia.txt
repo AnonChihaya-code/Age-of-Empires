@@ -1,0 +1,669 @@
+﻿MILITARY_FORMATIONS = {
+	########################
+    ######初始 军队 亚洲#####
+	########################
+    c:CNBY ?= {
+	    create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_BEIJING
+				count = 25
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_BEIJING
+				count = 15
+			}
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_BEIJING
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_BEIJING
+				count = 1
+			}
+		}
+	}
+
+	c:CNNR ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_GUANGDONG
+				count = 20
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_GUANGDONG
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_SHAOZHOU
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_SHAOZHOU
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_GUANGDONG
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_GUANGDONG
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_SHAOZHOU
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_SHAOZHOU
+				count = 2
+			}
+		}
+	}
+
+	c:CNGX ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = CNGX_07_army
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_GUANGXI
+				count = 25
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_GUANGXI
+				count = 25
+			}
+			save_scope_as = CNGX_07_army
+		}
+		create_character = {
+			template = CNGX_Bai_Chongxi
+			save_scope_as = CNGX_07_army_gen_bai
+		}
+		scope:CNGX_07_army_gen_bai = {
+			transfer_to_formation = scope:CNGX_07_army
+		}
+	}
+
+	c:CNYN ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_YUNNAN
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_YUNNAN
+				count = 15
+			}
+		}
+	}
+
+	c:DHDG ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_XIAN
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_NINGXIA
+				count = 25
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SICHUAN
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_CHONGQING
+				count = 15
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_WESTERN_HUBEI
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_HUNAN
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_GUIZHOU
+				count = 5
+			}
+		}
+	}
+
+	c:CNCW ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_HENAN
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_SHANDONG
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANXI
+				count = 25
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ZHILI
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_BEIJING
+				count = 20
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_SHENGJING
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTHERN_ANHUI
+				count = 10
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_SHENGJING
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTHERN_ANHUI
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_BEIJING
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_SHANDONG
+				count = 5
+			}
+		}
+	}
+
+	c:TPTG ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_JIANGSU
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_NANJING
+				count = 25
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SUZHOU
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZHEJIANG
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_EASTERN_HUBEI
+				count = 10
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SOUTHERN_ANHUI
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_JIANGXI
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_ZHEJIANG
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_SUZHOU
+				count = 5
+			}
+		}
+	}
+
+	c:CNTW ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_FORMOSA
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_FORMOSA
+				count = 15
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_FORMOSA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_FORMOSA
+				count = 5
+			}
+		}
+	}
+
+	c:CNXN ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_MANCHURIA
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_URGA
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SOUTHERN_MANCHURIA
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_HINGGAN
+				count = 25
+			}
+		}
+	}
+
+	c:CNGY ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GANSU
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_ALXA
+				count = 15
+			}
+		}
+	}
+
+	c:CNXY ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_central_asia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_DZUNGARIA
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_TIANSHAN
+				count = 15
+			}
+		}
+	}
+
+	c:CNTB ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_himalayas
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_LHASA
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_QINGHAI
+				count = 15
+			}
+		}
+	}
+
+	c:CNQY ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_east_siberia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_YAKUTSK
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KOLYMA
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_OKHOTSK
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KAMCHATKA
+				count = 5
+			}
+		}
+	}
+
+	c:MYGO ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_japan
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_KANTO
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_CHUGOKU
+				count = 5
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_japan
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_TOHOKU
+				count = 5
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_japan
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_HOKKAIDO
+				count = 5
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_japan
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_CHUBU
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_japan
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_KANTO
+				count = 1
+			}
+		}
+	}
+    
+	c:MING ?= {
+	    create_military_formation = {
+			type = fleet
+			hq_region = sr:region_oceania
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_QUEENSLAND
+				count = 1
+			}
+		}
+	}
+
+	c:DEI ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_indonesia
+			name = Koninklijk_Nederlandsch_Indisch_Leger
+
+			combat_unit = { # European Troops
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_JAVA
+				count = 6
+			}
+
+			combat_unit = { # European Troops
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_WEST_JAVA
+				count = 1
+			}
+
+			combat_unit = { # European Troops
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_WEST_JAVA
+				count = 1
+			}
+
+			combat_unit = { # Native Troops
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_EAST_JAVA
+				count = 6
+			}
+
+			combat_unit = { # Native Troops
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_CENTRAL_JAVA
+				count = 4
+			}
+
+			combat_unit = { # Native Troops
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_SOUTH_SUMATRA
+				count = 2
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_indonesia
+			name = Koloniale_Marine
+			combat_unit = { # Nothing the size of a frigate
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_EAST_JAVA
+				count = 1
+			}
+		}
+	}
+	c:BUR ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_indochina
+			name = tatmadaw
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_PEGU
+				count = 9
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_MANDALAY
+				count = 13
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KACHIN
+				count = 8
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_KACHIN
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_MANDALAY
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_MANDALAY
+				count = 1
+			}
+		}
+	}
+}
+
+

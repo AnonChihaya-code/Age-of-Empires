@@ -1,0 +1,3107 @@
+﻿#################
+#####注册民族#####
+#################
+
+han= { #汉人
+	color= rgb{ 190 80 48 }
+	religion = confucian
+	traits = { sinosphere han_chinese east_asian_heritage }
+	obsessions = {
+		#sugar meat
+	}
+	male_common_first_names = {
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names = {
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+chinese_culture={ #中华民族
+	color= rgb { 0.95 0.06 0.19 }
+	religion = confucian
+	traits = { sinosphere east_asian_heritage central_asian_heritage north_asian_heritage }
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+han_song= { #宋人
+	color = { 200 100 150 }
+	religion = confucian
+	traits = { sinosphere east_asian_heritage }
+	obsessions = {
+		#sugar meat
+	}
+	male_common_first_names = {
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names = {
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+qin_roman = { #秦人
+	color= rgb{ 190 80 48 }
+	religion = legalist
+	traits = { sinosphere east_asian_heritage }
+
+	obsessions = {
+		#sugar meat
+	}
+
+	male_common_first_names = {
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names = {
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+xiongnu = { #匈奴人
+	color= rgb{ 74 125 155 }
+	religion = confucian
+	obsessions = {
+		tea
+	}
+	traits = { sinosphere east_asian_heritage north_asian_heritage }
+	male_common_first_names = {
+		Badamdorj
+		Balingiin
+		Batbayar
+		Baterdene
+		Chingis
+		Dambyan
+		Damdin
+		Dogsomyn
+		Gonchigjalzangiin
+		Gonchigtseren
+		Injinash
+		Khorloogiin
+		Kubilai
+		Otgonbayar
+		Peljidiin
+		Sodnomyn
+	}
+	female_common_first_names = {
+		Bayartsetseg
+		Dondogdulam
+		Ider
+		Khajidsuren
+		Oyuungerel
+		Sonomyn
+		Tuyaa
+	}	
+	noble_last_names = {
+		Gonchigjalzangiin
+		Togs-Ochiryn
+	}
+	common_last_names = {
+		Amar
+		Bodoo
+		Chagdarjav
+		Choibalsan
+		Damdinbazar
+		Genden
+		Jamyan
+		Murdorj 
+		Sukhbaatar
+		Tomorbaatar
+		Tserendorj
+		Vanchinbalyn
+	}
+	ethnicities = {
+		1 = central_asian
+	}
+	graphics = east_asian
+}
+
+qingyang = { #青阳人
+	color = { 131 176 131 }
+	religion = animist
+	obsessions = {
+		tea
+	}
+	traits = { sinosphere north_asian_heritage }
+	male_common_first_names = {
+		Badamdorj
+		Balingiin
+		Batbayar
+		Baterdene
+		Chingis
+		Dambyan
+		Damdin
+		Dogsomyn
+		Gonchigjalzangiin
+		Gonchigtseren
+		Injinash
+		Khorloogiin
+		Kubilai
+		Otgonbayar
+		Peljidiin
+		Sodnomyn
+	}
+	female_common_first_names = {
+		Bayartsetseg
+		Dondogdulam
+		Ider
+		Khajidsuren
+		Oyuungerel
+		Sonomyn
+		Tuyaa
+	}	
+	noble_last_names = {
+		Gonchigjalzangiin
+		Togs-Ochiryn
+	}
+	common_last_names = {
+		Amar
+		Bodoo
+		Chagdarjav
+		Choibalsan
+		Damdinbazar
+		Genden
+		Jamyan
+		Murdorj 
+		Sukhbaatar
+		Tomorbaatar
+		Tserendorj
+		Vanchinbalyn
+	}
+	ethnicities = {
+		1 = central_asian
+	}
+	graphics = east_asian
+}
+
+tokhara = { #大月氏
+	color= { 122 127 111 }
+	religion = mahayana
+	traits = { east_asian_heritage central_asian_heritage }
+	male_common_first_names = {
+		Abbas
+		Abdolazim
+		Abdolhossein
+		Abdolsamad
+		Abolghasem
+		Ahmad
+		Ali
+		Bahram
+		Ebrahim
+		Esmail
+		Faizal
+		Fath_Ali
+		Fazlollah
+		Hamzeh
+		Hasan
+		Hossein
+		Kamran
+		Karim
+		Lotf_Ali
+		Mahmoud
+		Mahsud
+		Mirza
+		Mohammad
+		Moin_ed-Din
+		Mozzafer_ed-Din
+		Muhsin
+		Murad
+		Nadir
+		Naser_ed-Din
+		Nosret
+		Reza
+	}
+	female_common_first_names = {
+		Guljahon
+		Khursheda 
+		Latofat 
+		Mavjuda 
+		Nizoramo
+		Zulfiya 
+	}	
+	noble_last_names = {
+		Khan
+		Bek
+	}
+	common_last_names = {
+		Kasym
+		Maksum
+	}
+	ethnicities = {
+		1 = central_asian
+	}
+	graphics = east_asian
+}
+
+parthians = { #帕提亚人#安息人
+	color = { 163 66 74 }
+	religion = animist
+	traits = { greek_culture middle_eastern_heritage european_heritage }
+	male_common_first_names = {
+		Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Ahmad Ali 
+		Bahram 
+		Ebrahim Esmail 
+		Fath_Ali Fazlollah
+		Hamzeh Hasan Hossein
+		Kamran Karim
+		Lotf_Ali
+		Mahmoud Massoud Mohammad Moin_ed-Din Mozzafer_ed-Din Muhsin Murad
+		Naser_ed-Din Nosret
+		Reza
+		Sadegh
+	}
+	female_common_first_names = {
+		Asieh
+		Bibi_Khatoom
+		Ghazaleh
+		Marjane Marsha Maryam
+		Sedigheh
+	}	
+	noble_last_names = {
+		al-Saltaneh Alamir Astarabadi Ashtiani
+		Bakhtiari
+		Farmanfarma
+		Hakimi Hedayat
+		Khalatbari 
+		Pirnia
+		Qajar
+	}
+	common_last_names = {
+		Airom Ansari Ayrum
+		Buzarjomehri
+		Davallu
+		Esfahani
+		Farhani
+		Jahanbani Jamshidian
+		Kashani Khan Khuzai
+		Meshhedi
+		Nakhchevani
+		Pesyan
+		Rokni
+		Sadegh Shafaei Shahbakhti Shirazi
+		Tabrizi Tahmasebi
+		Zahedi
+	}
+	male_regal_first_names = {
+		Ahmad
+		Fath_Ali Fereydoun
+		Mahmoud Mohammad Mohammad_Ali Mohammad_Hassan Mozzafer_ed-Din
+		Naser_ed-Din
+		Sultan_Hamid
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+
+persian = { #波斯人
+	color = { 60 150 230 }
+	religion = animist
+	traits = { iranian_turanian_culture_group middle_eastern_heritage }
+	male_common_first_names = {
+		Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Ahmad Ali 
+		Bahram 
+		Ebrahim Esmail 
+		Fath_Ali Fazlollah
+		Hamzeh Hasan Hossein
+		Kamran Karim
+		Lotf_Ali
+		Mahmoud Massoud Mohammad Moin_ed-Din Mozzafer_ed-Din Muhsin Murad
+		Naser_ed-Din Nosret
+		Reza
+		Sadegh
+	}
+	female_common_first_names = {
+		Asieh
+		Bibi_Khatoom
+		Ghazaleh
+		Marjane Marsha Maryam
+		Sedigheh
+	}	
+	noble_last_names = {
+		al-Saltaneh Alamir Astarabadi Ashtiani
+		Bakhtiari
+		Farmanfarma
+		Hakimi Hedayat
+		Khalatbari 
+		Pirnia
+		Qajar
+	}
+	common_last_names = {
+		Airom Ansari Ayrum
+		Buzarjomehri
+		Davallu
+		Esfahani
+		Farhani
+		Jahanbani Jamshidian
+		Kashani Khan Khuzai
+		Meshhedi
+		Nakhchevani
+		Pesyan
+		Rokni
+		Sadegh Shafaei Shahbakhti Shirazi
+		Tabrizi Tahmasebi
+		Zahedi
+	}
+	male_regal_first_names = {
+		Ahmad
+		Fath_Ali Fereydoun
+		Mahmoud Mohammad Mohammad_Ali Mohammad_Hassan Mozzafer_ed-Din
+		Naser_ed-Din
+		Sultan_Hamid
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = arabic
+}
+
+seljuks = { #塞尔柱人
+    color= hsv{ 0.84 0.21 0.75 }
+	religion = sunni
+	traits = { turkic central_asian_heritage middle_eastern_heritage }
+	male_common_first_names = {
+		Ahmed
+		Borkluce
+		Byashim
+		Haydar
+		Mehmed
+		Murad
+		Nurberdi
+		Orazgeldi
+		Qilich
+	}
+	female_common_first_names = {
+		Aksoltan
+		Bakhargul
+		Gozel
+		Gulsat
+		Medeniyet
+		Muza
+		Semsat
+	}	
+	noble_last_names = {
+		Beg
+		Khan
+	}
+	common_last_names = {
+		Aytakov
+		Bayramov
+		Hamdan
+		Hydyr
+		Nurali
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = east_asian
+}
+
+eldians = { #艾尔迪亚人
+	color = hsv{ 0.99  0.7  0.9 }
+	religion = protestant
+	traits = { german_speaking european_heritage }
+	male_common_first_names = {
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno		
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor
+		Wilhelm Wolfgang
+	}
+	female_common_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+	noble_last_names = {
+		Herwarth_von_Bittenfeld
+		Vogel_von_Falkenstein
+		von_Falkenstein
+		von_Alten von_Anhalt von_Arentschildt von_Arens
+		von_Bismarck-Bohlen von_Bittenfeld von_Blomberg von_Blumenthal von_Borries von_Boyen von_Braunschweig von_Breitenbach von_Bulow von_Boyneburg-Lengsfeld von_Breidbach-BUrresheim
+		von_Clemm von_Cramm
+		von_Doenhoff von_Dieskau
+		von_Eck
+		von_Fritsch Firnhaber_von_Eberstein
+		von_Gebser von_Gagern de_Greiff von_GO_rtz von_GU_nderrode von_der_Gabelentz
+		von_Halkett von_Hannover von_Hessen-Darmstadt von_Hessen-Kassel von_Hindenburg von_Hohenzollern von_Holstein-Gottorp von_Hennig von_der_Heydt von_Haupt von_Heyden
+		von_Isenburg-BU_dingen-Meerholz
+		von_Kleefeld von_Knorr von_dem_Knesebeck
+		zur_Lippe
+		MU_ller_von_KO_nigswinter von_Manteuffel von_Mecklenburg-Schwerin von_Mecklenburg-Strelitz von_Moltke von_Madai
+		von_Niezychowski von_Nordeck_zur_Rabenau
+		von_Oldenburg
+		von_PlO_nnies
+		Riedesel_zu_Eisenbach von_Rauch von_Ravensberg von_Reuter von_Richthofen von_Roon von_Radowitz von_Reichenbach
+		von_Sachsen-Altenburg von_Sachsen-Coburg-Gotha von_Sachsen-Meiningen von_Sachsen-Weimar-Eisenach von_Schlieffen von_Schwarzburg von_Spee zu_Stolberg-Wernigerode von_Sybel von_Solms-Laubach von_Stein von_StO_ssert von_Spesshardt
+		Treusch_von_Butlar von_Tirpitz von_ThU_nen
+		von_Vahlkampf
+		von_Waldeck_und_Pyrmont von_Wettin von_Wrangel von_Willich von_Watzdorf Waitz_von_Eschen
+		von_Zieten von_Zwierlein
+		
+		von_Jons
+	}	
+	common_last_names = {
+		Abegg Anger Arendt Ackermann Arntz
+		Behncke Boermel Borsig Brill Brommy Blum Baltzer Bever BA_hren Bischoff Brauweiler BrockmU_ller Broix BU_rgers BO_cking Biedermann BlO_de BO_hler Brockhaus Bauer Birnbaum Brunck Buff Bolten Briegleb Bardorf
+		Clebsch Cordemann Culemeyer Caspers Cetto Clossett Colonius Compes Carriere Cretzschmar Cratz Cropp
+		Dahlmann Dieffenbach Diestel Dreyer Droste Depre Dietze Detering Dietz DuprE_ Dresel
+		Ehlert Eichelbaum Eckert Eisenstuck Eissengarthen Elwert Emmerling Ettlinger Erichson
+		Feyerabend Fritsch Friedenthal Fabarius Forst Frings Freudentheil Felsing FlU_gge
+		Garbe Gerlach Gloger Goerdeler Goetz Grebe Groener Groth Gerlich Giersberg Glaubrech Gail GU_lich
+		Hagen Harkort Harych Hassenpflug Heppendorf Hirschfeld Hoffmann Hubatsch Hammer Hecker Herrmann HO_nninghaus Haustein Hensel Henkel Hildebrand Hallwachs Heldmann Hestermann Hesse Hoffmann HU_gel Hollandt
+		Jastrow Johow Junghans Jahn Jordan Jungbluth Jungblutte Jucho
+		Katz Kempner Kirchweger Koffka Krohn Krummnow Knocke Kehl Keiffenheim Kullich KU_hne Kahlert Kinscherf Kloch Kierulff Kriegk Kugler
+		Lasker Leistikow Leonhardt Ludendorff Lehmkuhl Laist Lamberts Landfermann Leue Lingmann Lintz Lederer Lehne Lotheissen Leisler Lang
+		Mittwoch Moll Mallmann Marcks Maurer MU_lhens Minckwitz Mohr Manecke Marktscheffel Mappes
+		NettstrA_tter Neuerburg Neunzig Nohl
+		Olbers Oetker
+		Pelz Pax Peiser Plange Pagenstecher Peters Pfeiffer Philippi Prinzen Proff PflU_ger Pitschaft PrA_torius Preusser Pogge Pohle
+		Rehfisch Roepke RU_ckert Ronge Reichensperger Reinartz Rittinghausen Ritz Rewitzer Rauschenplat RO_ssler RU_hl Ramspeck Rauschers Reh Runge Reinganum
+		Scherfke Schimmelfennig Schmidt Schree Schurz Schnitter SchlO_ffel Stahlschmidt Schwetschke Schnake Schneider Schuchart SchU_renberg Schigard Scheidt Scherer Schleicher SchlO_sser Schmitz SchO_ller Stapper Stedmann Strom Schaffrath SchlU_ter Schnabel Schwarzenberg Steuernagel Stoll Strecker Schleiden Schlettwein Schnelle Stever Sonnenkalb Souchay
+		Treibe TU_rke Theyssen Thilmany Trombetta
+		Umbscheiden
+		Venedy Vogt Volhard Varrentrapp Vorwerck
+		Weydemeyer Wittfeld Woehlert Wiesner Wislicenus Wachendorf Waldschmidt Weckbecker Welcker WerlE_ Wesendonck Weilhelmi Winneritz Wirtz Wolfermann Wigard Wuttke Wippermann Wentorp Wendhausen
+		Zerrahn ZO_ller Zell Zimmermann ZachariA_ Zulauf Zais
+	}
+
+	male_regal_first_names = {
+		Adalbert
+		Friedrich Friedrich_Wilhelm
+		Georg
+		Heinrich
+		Joachim
+		Oskar
+		Sigismund
+		Wilhelm Waldermar
+	}
+	female_regal_first_names = {
+		Augusta
+		Charlotte
+		Elisabeth
+		Luise
+		Margarethe
+		Sophie
+		Victoria
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+marleyans = { #马莱人
+	color = { 20  50  210 }
+	religion = protestant
+	traits = { german_speaking european_heritage }
+	male_common_first_names = {
+		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
+		Bernhard Benignus
+		Christian
+		Edmund Eduard Engelbert Ernst Erwin Emil Eugen Emanuel
+		Ferdinand Franz Friedrich Felix
+		Gebhard Gerhard Gottfried Gustav Gunther Gottleib
+		Heinrich Hermann Horst Hugo
+		Jakob Joachim Johann Joseph Julius
+		Karl Konrad Kurt Kasimir Klemens
+		Leonhard Leopold Lorenz Lothar Ludwig Luitpold
+		Maximilian Michael Martin Moritz
+		Nikolaus Nepomuk
+		Otto
+		Peter Paul
+		Reinhold Rudolf Rupprecht
+		Stefan Siegmund
+		Theodor Thomas Theophil
+		Valentin Viktor Vitus Veit
+		Walter Werner Wilhelm Wolfgang Walther
+		Xaver
+	}
+	female_common_first_names = {
+		Anna Adelgunde Alexandra Augusta
+		Charlotte
+		Dorothea Dietlinde
+		Elisabeth
+		Gundelinde
+		Helmtrude
+		Karoline
+		Ludwiga Luise Ludovika
+		Maria Maria_Anna Maria_Beatrix Mathilde
+		Notburga
+		Therese
+		Ulrike
+		Wiltrud Wilhelmine
+	}	
+	noble_last_names = {
+		d_Aspre_von_Hoobreuk von_Adelmann von_Andlaw-Birseck
+		von_Baader von_Baden von_Benedek von_Brudermann von_Bohm-Ermolli von_Bissingen-Nippenburg von_Berlichingen von_Binder von_Buss von_Bosch von_Bomhard von_Bothmer von_Brug von_Berchem von_Le_Bret-Nucourt von_Benzino von_Bibra von_Baligand
+		Cotton_von_Cottendorf von_Clam-Gallas von_Closen von_Crailsheim
+		von_Denis von_Dietrich von_Diemar von_Deroy von_DU_rckheim-Montmartin von_DU_well
+		von_Endres
+		von_Fleischmann von_Fray von_Freyen-Seyboltstorff von_Fels von_Froberg-Montjoye von_Freyberg-Eisenberg von_Fleury_auf_Hilling von_Fritsch
+		von_Gablenz von_Grunne von_Giech von_Geldern von_Greis von_Gumppenberg von_Grauvogl von_Godin von_Gonnermann von_Gebsattel von_Gravenreuth von_Gramich von_Grossschedel von_GO_riz von_Gyssling
+		von_Hartmann von_Haynau von_Helmholtz von_Hertel von_Hess von_Hohenhausen von_Hortstein von_Hotzendorf zu_Hohenlohe von_Habsburg von_Hegnenberg-Dux von_Herder von_Hafner Hofer_von_Lobenstein von_Hohenlohe-Langenburg von_Hornstein-Bussmannshausen von_Hohenlohe-O_hringen von_Hertling von_Hagens von_Helvig von_Horn von_Hartz von_Hoyos-Sprinzenstein
+		von_Itzstein
+		von_Jeetze
+		Kress_von_Kressenstein von_Kirbach von_Kobratin von_Kettner Keller_von_Schleitheim
+		Leutrum_von_Ertingen von_Lotzbeck von_Lepel von_Leonrod von_Lindheimer von_Lossow
+		von_Maffei von_Mayersbach von_Montgelas von_Mohl von_Massenbach von_Meldegg von_MalaisE_ von_Madroux von_Maillinger von_Menz
+		von_Neipperg von_Nesselrode-Hugenpoet von_Neubeck von_Nagel_zu_Aichberg von_Mieg
+		von_Oettigen-Wallerstein
+		Poschinger_von_Frauenau von_Pauli von_Pfeufer von_Pranckh von_Parseval von_Pechmann von_Pfetten-Arnbach von_Preysing-Moos zu_Pappenheim von_Pillement
+		von_Quadt-Wykradt-Isny
+		von_Rotenhan von_Zu_Rhein von_Rinecker von_RO_mer von_Rechberg von_La_Roche-Starkenfels Rinck_von_Baldenstein von_Rochau RU_dt_von_Collenberg von_Ruckteschell von_Reichlin-Meldegg von_Reysing
+		Schnorr_von_Carolsfeld von_Schonburg von_Scherer von_Struve von_sch_Onborn-Wiesentheid von_Seutter von_Sternenfels von_Soiron von_Stockhorner-Starein von_StO_sser von_Speti von_Stockum-Sternfels von_SchO_nprunn von_Seyssel_d_Aix von_Safferling von_Schuh von_Le_Suire von_Saporta
+		von_Tegetthoff von_der_Tann von_Thurnberg von_TA_uffenbach von_der_Tann-Rathsamhausen
+		von_Uchatius
+		Vogt_von_Hunoltstein von_VarnBU_ler von_Vallade
+		von_Weigert von_Wittelsbach von_Wurttemberg von_Wrede von_WA_chter von_Waechter-Spittler von_WO_llwarth von_Waldburg-Zeil von_Wirthmann von_WalderstO_tten von_Wallbrunn von_Welsch von_Winneberger
+		von_Xylander
+		von_Zahringen von_Zandt von_Zwanziger
+	}
+	common_last_names = {
+		Auerbach Aldinger
+		Bachmann Beck-Rzikowsky Blos Barchet Bantlin Bech Bassermann Baum Bissing Bleidorn Beckmund Bedall
+		Christmann CarovE_ Correck Cella
+		Dankl Dauer Dollmann Depre Doll Deusch Dennig Deuringer Denzler Deppert
+		Eisner Eppelsheimer Exter Eppelsheim Eisenmann Edel Ermarth Ehrensberger Eder
+		Foerderreuther Frauendorfer Friedel Frommknecht Federer Fetzer Frueth Fallenstein Frech Fasbender
+		Geiss Gerber Goering Gollwitzer Graff Groeschel Groth Grohe Gervinus GA_tschenberger Gloss_ Gruny
+		Hainisch Haus Held Hellpach Helmerich Hoffmann Homberger Hummel Hepp HA_gelin Hagen HA_usser Hecker Helbing Helmreich Hoff HO_genstaller Horadam Hinzler Hitzen Hopffer Hebberling
+		Ipfelkofer
+		Junghannss
+		Kessler Kohler Kolb Keil KO_lliker Kapp KlU_ber Kemmer Killermann Kiessling Krazeisen
+		Lakner Lehmkuhl LanghA_user
+		Mergenthaler Miklas MO_gling Mohl Murschel Mack Mathy Mez Mittermaier Margreither
+		Nebenius Neumann Neuffer
+		Olbers Orff Obermair
+		Platner Prang Press Platner Pfaff Pauer Prand Pfluegl Pesenecker
+		Quitzmann
+		Rahl Remmele Rosenhaupt Riedl RO_dinger Reyscher Ruoff Rau Richter Reisterer
+		Schmitt Schobber Seitz Steeb Stolzer Strauss Sailer Spatz Schott Seeger Stierlen Schweickhardt SchU_bler Sachs Schaaff Scheffold Seltzam Siegler Speyerer Solger Seekirchner Schmauss Schmidtler
+		Trient Trunk Teutsch Titus Tafel
+		Unglaub Uhland Ullrich Usselmann
+		Voelcker Veiel
+		Wagner Wittmann Willich Wolf Wiedmann Walchner Welcker Weller Welte Werner Winter Weiss-Jonak
+		Zeller Zenger Zink Zentner Zittel Zerreiss
+	}
+	male_regal_first_names = {
+		Albert
+		Ernst
+		Franz Felix
+		Karl Karl_Ludwig
+		Ludwig
+		Maximilian
+		Otto
+		Rudolf
+	}
+	female_regal_first_names = {
+		Amalie Adelheid
+		Charlotte
+		Eugenie Elisabeth
+		Gisela
+		Maria_Theresia Maria_Josepha
+		Theresia
+		Sophie
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+honor_marleyans = { #荣誉马莱人
+	color = { 20  50  210 }
+	religion = protestant
+	traits = { german_speaking european_heritage }
+	male_common_first_names = {
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno		
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor
+		Wilhelm Wolfgang
+	}
+	female_common_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+	noble_last_names = {
+		Herwarth_von_Bittenfeld
+		Vogel_von_Falkenstein
+		von_Falkenstein
+		von_Alten von_Anhalt von_Arentschildt von_Arens
+		von_Bismarck-Bohlen von_Bittenfeld von_Blomberg von_Blumenthal von_Borries von_Boyen von_Braunschweig von_Breitenbach von_Bulow von_Boyneburg-Lengsfeld von_Breidbach-BUrresheim
+		von_Clemm von_Cramm
+		von_Doenhoff von_Dieskau
+		von_Eck
+		von_Fritsch Firnhaber_von_Eberstein
+		von_Gebser von_Gagern de_Greiff von_GO_rtz von_GU_nderrode von_der_Gabelentz
+		von_Halkett von_Hannover von_Hessen-Darmstadt von_Hessen-Kassel von_Hindenburg von_Hohenzollern von_Holstein-Gottorp von_Hennig von_der_Heydt von_Haupt von_Heyden
+		von_Isenburg-BU_dingen-Meerholz
+		von_Kleefeld von_Knorr von_dem_Knesebeck
+		zur_Lippe
+		MU_ller_von_KO_nigswinter von_Manteuffel von_Mecklenburg-Schwerin von_Mecklenburg-Strelitz von_Moltke von_Madai
+		von_Niezychowski von_Nordeck_zur_Rabenau
+		von_Oldenburg
+		von_PlO_nnies
+		Riedesel_zu_Eisenbach von_Rauch von_Ravensberg von_Reuter von_Richthofen von_Roon von_Radowitz von_Reichenbach
+		von_Sachsen-Altenburg von_Sachsen-Coburg-Gotha von_Sachsen-Meiningen von_Sachsen-Weimar-Eisenach von_Schlieffen von_Schwarzburg von_Spee zu_Stolberg-Wernigerode von_Sybel von_Solms-Laubach von_Stein von_StO_ssert von_Spesshardt
+		Treusch_von_Butlar von_Tirpitz von_ThU_nen
+		von_Vahlkampf
+		von_Waldeck_und_Pyrmont von_Wettin von_Wrangel von_Willich von_Watzdorf Waitz_von_Eschen
+		von_Zieten von_Zwierlein
+		
+		von_Jons
+	}	
+	common_last_names = {
+		Abegg Anger Arendt Ackermann Arntz
+		Behncke Boermel Borsig Brill Brommy Blum Baltzer Bever BA_hren Bischoff Brauweiler BrockmU_ller Broix BU_rgers BO_cking Biedermann BlO_de BO_hler Brockhaus Bauer Birnbaum Brunck Buff Bolten Briegleb Bardorf
+		Clebsch Cordemann Culemeyer Caspers Cetto Clossett Colonius Compes Carriere Cretzschmar Cratz Cropp
+		Dahlmann Dieffenbach Diestel Dreyer Droste Depre Dietze Detering Dietz DuprE_ Dresel
+		Ehlert Eichelbaum Eckert Eisenstuck Eissengarthen Elwert Emmerling Ettlinger Erichson
+		Feyerabend Fritsch Friedenthal Fabarius Forst Frings Freudentheil Felsing FlU_gge
+		Garbe Gerlach Gloger Goerdeler Goetz Grebe Groener Groth Gerlich Giersberg Glaubrech Gail GU_lich
+		Hagen Harkort Harych Hassenpflug Heppendorf Hirschfeld Hoffmann Hubatsch Hammer Hecker Herrmann HO_nninghaus Haustein Hensel Henkel Hildebrand Hallwachs Heldmann Hestermann Hesse Hoffmann HU_gel Hollandt
+		Jastrow Johow Junghans Jahn Jordan Jungbluth Jungblutte Jucho
+		Katz Kempner Kirchweger Koffka Krohn Krummnow Knocke Kehl Keiffenheim Kullich KU_hne Kahlert Kinscherf Kloch Kierulff Kriegk Kugler
+		Lasker Leistikow Leonhardt Ludendorff Lehmkuhl Laist Lamberts Landfermann Leue Lingmann Lintz Lederer Lehne Lotheissen Leisler Lang
+		Mittwoch Moll Mallmann Marcks Maurer MU_lhens Minckwitz Mohr Manecke Marktscheffel Mappes
+		NettstrA_tter Neuerburg Neunzig Nohl
+		Olbers Oetker
+		Pelz Pax Peiser Plange Pagenstecher Peters Pfeiffer Philippi Prinzen Proff PflU_ger Pitschaft PrA_torius Preusser Pogge Pohle
+		Rehfisch Roepke RU_ckert Ronge Reichensperger Reinartz Rittinghausen Ritz Rewitzer Rauschenplat RO_ssler RU_hl Ramspeck Rauschers Reh Runge Reinganum
+		Scherfke Schimmelfennig Schmidt Schree Schurz Schnitter SchlO_ffel Stahlschmidt Schwetschke Schnake Schneider Schuchart SchU_renberg Schigard Scheidt Scherer Schleicher SchlO_sser Schmitz SchO_ller Stapper Stedmann Strom Schaffrath SchlU_ter Schnabel Schwarzenberg Steuernagel Stoll Strecker Schleiden Schlettwein Schnelle Stever Sonnenkalb Souchay
+		Treibe TU_rke Theyssen Thilmany Trombetta
+		Umbscheiden
+		Venedy Vogt Volhard Varrentrapp Vorwerck
+		Weydemeyer Wittfeld Woehlert Wiesner Wislicenus Wachendorf Waldschmidt Weckbecker Welcker WerlE_ Wesendonck Weilhelmi Winneritz Wirtz Wolfermann Wigard Wuttke Wippermann Wentorp Wendhausen
+		Zerrahn ZO_ller Zell Zimmermann ZachariA_ Zulauf Zais
+	}
+
+	male_regal_first_names = {
+		Adalbert
+		Friedrich Friedrich_Wilhelm
+		Georg
+		Heinrich
+		Joachim
+		Oskar
+		Sigismund
+		Wilhelm Waldermar
+	}
+	female_regal_first_names = {
+		Augusta
+		Charlotte
+		Elisabeth
+		Luise
+		Margarethe
+		Sophie
+		Victoria
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+mygo = { #MyGO!!!!!
+	color= rgb{ 158 68 137 }
+	religion = animist
+	traits = { two_dimensional_culture_group east_asian_heritage european_heritage }
+	obsessions = { fine_art }
+	male_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	female_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	noble_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	common_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	male_regal_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+	female_regal_first_names = {
+        MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+crychic = { #CRYCHIC
+	color= rgb{ 158 68 137 }
+	religion = animist
+	traits = { two_dimensional_culture_group east_asian_heritage european_heritage }
+	obsessions = { fine_art }
+	male_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	female_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	noble_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	common_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	male_regal_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+	female_regal_first_names = {
+        MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+avemujica = { #Ave Mujica
+	color= rgb{ 158 68 137 }
+	religion = animist
+	traits = { two_dimensional_culture_group east_asian_heritage european_heritage }
+	obsessions = { fine_art }
+	male_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	female_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	noble_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	common_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	male_regal_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+	female_regal_first_names = {
+        MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+sumimi = { #Sumimi
+	color= rgb{ 158 68 137 }
+	religion = animist
+	traits = { two_dimensional_culture_group east_asian_heritage european_heritage }
+	obsessions = { fine_art }
+	male_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	female_common_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+
+		MYGO_Toyama
+		MYGO_Hanazono
+		MYGO_Ushigome
+		MYGO_Yamabuki
+	    MYGO_Ichigaya
+
+		MYGO_Mitake
+		MYGO_Aoba
+		MYGO_Uehara
+		MYGO_Udagawa
+		MYGO_Hazawa
+
+		MYGO_Maruyama
+		MYGO_Hikawa
+		MYGO_Shirasagi
+		MYGO_Yamato
+		MYGO_Wakamiya
+
+		MYGO_Minato
+		MYGO_Imai
+		MYGO_Shirokane
+
+		MYGO_Tsurumaki 
+		MYGO_Seta 
+		MYGO_Kitazawa 
+		MYGO_Matsubara 
+		MYGO_Okusawa
+
+		MYGO_Kurata 
+		MYGO_Kirigaya 
+		MYGO_Hiromachi 
+		MYGO_Futaba 
+		MYGO_Yashio 
+
+		MYGO_Wakana
+		MYGO_Asahi
+		MYGO_Sato
+		MYGO_Nyubara
+		MYGO_Tamade
+
+		MYGO_Nakamachi
+		MYGO_Miyanaga
+		MYGO_Minetsuki
+		MYGO_Fuji
+		MYGO_Sengoku
+	}
+	noble_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	common_last_names = {
+		MYGO_Tomori
+		MYGO_Anon
+		MYGO_Mana
+		MYGO_Rana
+		MYGO_Nagasaki
+		MYGO_Soyo
+		MYGO_Taki
+		MYGO_Sakiko
+		MYGO_Uika
+		MYGO_Mutsumi
+		MYGO_Umiri
+		MYGO_Nyamu
+
+		MYGO_Kasumi
+		MYGO_Tae
+		MYGO_Rimi
+		MYGO_Saya
+		MYGO_Arisa
+
+		MYGO_Ran
+		MYGO_Moka
+		MYGO_Himari
+		MYGO_Tomoe
+		MYGO_Tsugumi
+
+		MYGO_Aya
+		MYGO_Hina
+		MYGO_Chisato
+		MYGO_Maya
+		MYGO_Eve
+        
+		MYGO_Yukina
+		MYGO_Sayo
+		MYGO_Ako
+		MYGO_Lisa
+		MYGO_Rinko
+
+		MYGO_Kokoro
+		MYGO_Kaoru
+		MYGO_Hagumi
+		MYGO_Kanon
+		MYGO_Misaki
+
+		MYGO_Mashiro
+		MYGO_Toko 
+		MYGO_Nanami 
+		MYGO_Tsukushi 
+		MYGO_Rui 
+
+		MYGO_Rei
+		MYGO_Rokka
+		MYGO_Masuki
+		MYGO_Reona
+		MYGO_Chiyu
+
+		MYGO_Arale
+		MYGO_Nonoka
+		MYGO_Ritsu
+		MYGO_Miyako
+		MYGO_Yuno
+	}
+	male_regal_first_names = {
+		MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+	female_regal_first_names = {
+        MYGO_Takamatsu
+        MYGO_Chihaya
+        MYGO_Kaname
+        MYGO_Nagasaki
+        MYGO_Shiina
+        MYGO_Togawa
+        MYGO_Misumi
+        MYGO_Wakaba
+        MYGO_Yahata
+        MYGO_Yutenji
+		MYGO_Sumita
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+circle = { #葬骨人
+	color = { 211  220  240 }
+	religion = animist
+	traits = { european_heritage }
+	male_common_first_names = {
+		Albert Alexander Aeneas Andrew Aaron Alton Atlee Asa Ambrose Abner Alvin August Abraham Abel Abijah Alonzo Ansel Amos Absalom
+		Benjamin Bartholomew Byron Benedict Barnabas Bildad
+		Charles Cyrus Chester Cassius Calvin Cornelius Conrad Caleb Cephas Clarence Colcord
+		Daniel David Dwight
+		Ezekiel Enoch Elihu Edward Eugene_2 Eustace Edwin Elam Ezra Ebenezer Elijah Emory Ephraim Erasmus Elton Erastus
+		Franklin Francis Frederick
+		Grenville George Gregory Grover Gabriel Gorham Gordon
+		Henry Hannibal Hugh Horatio Horace Hiram Harold Hazen Hector
+		Isaac Isaiah Irving Ichabod
+		Joshua Joseph John James Jacob Jesse Joel Jeremiah Jeffrey Judah Jonas Jedediah Jonathan Josiah
+		Kermit Kenner
+		Lemuel Lysander Lawrence Lewis Lorenzo Leland Levi Leonard_2 Lucius
+		Micah Marcellus Mark Michael Millard Matthew Matthias Montgomery Maxwell Milton 
+		Nicholas Noah Nathaniel Newton Nelson
+		Obadiah Othniel Oswald Orson Orville Oscar Otis Oliver Orrin Owen Ormsby
+		Peter Paul Patrick Philip Phineas Philemon Purley Palmetus Philetus
+		Quentin Quincy
+		Rutherford Richard Robert Rufus Roger
+		Stephen Silas Samuel Seth Simon Sidney Sylvester Shubael
+		Thomas Theodore_2 Thaddeus
+		Ulysses Upton
+		Victor Valentine_2
+		William Walter Winfield Wesley Wilbur Wendell
+		Zebulon Zachary Zalmon Zadok
+		
+	}
+	female_common_first_names = {
+		Amanda Anna Alice Adaline Adelaide Augusta Antoinette Alida Addie Ariel Ada Agnes Agatha Almira Arlevia Azubah
+		Catharine Charlotte Clara Cynthia Charity Cordelia Cornelia
+		Delia Deborah Delima
+		Elizabeth Evelina Emily Esther Eliza Ellen Eunice Emma Estelle Eudora Eleanor Ella Eleura Elnora Edith Ethel Ethelinda Euphemia Eva Elida
+		Frances Florence Faith Florena
+		Gertrude Geraldine Grace Graceanna Glathia
+		Hannah Henriette Helen Harriette Hephzibah Huldah
+		Isabella Ida
+		Jane Julia Judith Josephine
+		Lucy Louisa Lavilla Lydia Lilian Lucretia Luetta Leonora
+		Mabel Mary Mildred Melissa Minerva Martha Matilda Marjorie Malvina Mahala
+		Nancy Nellie
+		Olive
+		Phoebe Pamela Puella
+		Roxana Ruth Rebecca Rosa Rachel
+		Susannah Satronia Sylvia
+		Ursula
+		Winifred
+		Yda
+		Zara Zeruviah
+	}
+	noble_last_names = {
+		Adams Appleton
+		Boylston Bradlee
+		Cabot Choate Chaffee Crowninshield Cushing
+		Dana Delano Dudley
+		Emerson Endicott Emmet
+		Forbes
+		Gillett Goelet Glazier
+		Hallowell Holmes
+		Lodge Lowell
+		Minot McKune McCallum
+		Norcross
+		Otis
+		Peabody Putnam
+		Quincy
+		Roosevelt
+		Saltonstall Sears Sedgwick Schuyler
+		Tarbox Thayer Thorndike
+		Wigglesworth Winthrop Winslow
+	}
+	common_last_names = {
+		Arthur Abbot Abercrombie Allen Andrews Ayres Armstrong Agassiz Akerman Aldrich Atherton Alger
+		Brown Buchanan Buford Black Baldwin Butler Blair Bogy Bryan Blaine Barker Belknap Bell Bennett Barnum Boyle Briggs Buckingham Burling Burnside Brinsmade Brodhead Ballou Brushwiller Blinn Beeman Boyce Berger Burleigh Blodgett Bitgood
+		Cooper Carpenter Clay Cass Chamberlain Clark Colfax Cleveland Clarkson Chandler Cortelyou Claflin Cameron Campbell Coffey Carr Catlin Casey Cobb Coburn Cook Cox Craig Crittenden Crocker Custer Chetwood Cambreleng Coffinberry Childs Croman Coyle Culver Conk Corbin Crouch Claggett Clevenger
+		Daniels Dayton Dumont Douglas Depre Davies Dana Doolittle Doubleday Dyer Dunn Draper Dodge Doty Dornblaser Dewel Dussean
+		Everett English Eaton Egan Elliott Ewing
+		Fillmore Floyd Frelinghuysen Fairbanks Fess Fletcher Fairchild Farnsworth Fraser Foster Fry Fuller French Fowler Fiske Fitts Foss Fesler Faxon Fifield
+		Grant Green Garrison Granger Greeley Garfield Garcelon Gilbert Gibbs Griffin Gurney Goldsborough Glascock Grannis Grinstead Gould Goldrick Goodwin Grimes Gooding
+		Halleck Hall Hancock Harrison Hendricks Hobart Hanna Hitchcock Hooker Hackleman Harris Hawkins Hawley Heckman Humphreys Hunt Hunter Hayes Hollingsworth Hammatt Hoag Hammerslough Hodgeman Hutling Hammer Hagaman Holden Heffernan Huldy Hamblen Herrick Hurlbutt Hazeltine
+		Ingalls Irion Isbell
+		Johnson Jewell Jackson Jones Judkins
+		King Kern Kearny Kelley Kane Kilpatrick Kiddoo Keyes Kimball Kinnard Kirk Kennon Knowlton Kneeland Kittredge
+		Lightner Logan Lacey Lane Leggett Lightburn Littlejohn Lockwood Lytle Long Lasaliere Livermore Leavitt Loverin
+		McClellan Merritt Miller Marsh Mansfield Manson Martindale McArthur McCall McClernand McIntosh McPherson Meade Meigs Meredith Miles Morris Morton Murray McKinley McKeon McLaren McMahon Macomber Mattingly Meloon Meacham
+		Norris Nagle Naglee Negley Neill Nickerson Noyes Nugen Newkirk Napire Nowlin Niquette Nudd
+		Oglesby Orme Osborn Owen Olds Oglevee Ochiltree
+		Pierce Peterson Prince Pendleton Pershing Parker Pomerene Payne Pingree Palmer Parsons Pearson Peck Pennypacker Pile Porter Potter Prentiss Price Phillips Prindle Philbrick Penhallow Pettengill
+		Quay Quinby Quiner
+		Reid Rosewater Ransom Rawlins Ramsay Reynolds Rice Richardson Ricketts Ripley Ross Russell Raiser Rafferty Rix
+		Sherman Sheridan Stanton Stanford Stevens Stevenson Sewall Sabin Sinclair Sanborn Scammon Saxton Sedgwick Seward Shackelford Shepard Shields Sickles Slocum Stannard Sturgis Sykes Stanley Shepley Schenck Shinn Semple Sadler Suddaby Seaver Seitz Snodgrass Sissons Stolworthy
+		Troucey Thompson Tilden Turner Taylor Todd Thruston Torbert Totten Tuttle Turchin Tyndale Tallmadge Thatcher Tubbs Thorndike Truesdale Tandy
+		Ullman
+		Vanderveer Van_Buren Viele Vandever Vincent Vogdes Vogel
+		Whitman Webster Woodward Wheeler Weaver Wood Ward Willcox Wad Wadsworth Walker Wallace Washburn Webb Weber Weed Wells West Wheaton Whipple Winkler Woodbury Woodbridge Whittlesey Wingate Walley Wenk Whitcomb Wibird
+		Young
+		Zook
+	}
+	male_regal_first_names = {
+		Alexander
+		Benjamin
+		Charles
+		Franklin
+		George
+		Henry Hamilton
+		James Jefferson
+		Thomas
+		William Washington
+	}
+	female_regal_first_names = {
+		Caroline
+		Flora
+		Georgia
+		Martha Mary
+		Virginia
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+vinlanders = { #文兰人
+	color= hsv{ 0.74 0.46 0.58 }
+	religion = protestant
+	traits = { scandinavian_culture_group european_heritage }
+	male_common_first_names = {
+		Agnar
+		Bjorn_2
+		Eidur
+		Einar
+		Emil
+		Geir
+		Gudmund
+		Gunnar
+		Hannes
+		Hermann
+		J_On
+		Kristjan
+		Magnus_2
+		Petur
+		Sigurdur
+		Stefan_2
+		Sveinn
+		Tryggvi
+		Asgeir
+		Olafur
+		Steingrimur
+		Hallgrimur
+	}
+	female_common_first_names = {
+		Agnes
+		Briet
+		Hansina
+		Regina
+		Rosa
+		Steinunn
+		Thorfhildur
+		Vilhelmina
+	}	
+	noble_last_names = {
+		Hielmstierne
+		Petursson
+		Sveinsson
+		Thorberg
+		Thordersen
+		Vidalin
+	}
+	common_last_names = {
+		Arnorsson
+		Benediktsson
+		Bjarnasen
+		Bjornsson
+		Eggers
+		Eldjarn
+		Hafstein
+		Hansen
+		Hermannsson
+		Johanesson
+		Jonsson
+		Magnusson
+		Stefansson
+		Steinthosson
+		Thorlaksson
+		Thurs
+		Thordarson
+		Thorhallson
+		Asgeirsson
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+american = { #美利坚人
+	color= rgb{ 135 206 235 } # Sky Blue
+	religion = protestant
+	traits = { anglophone european_heritage }
+	male_common_first_names = {
+		Albert Alexander Aeneas Andrew Aaron Alton Atlee Asa Ambrose Abner Alvin August Abraham Abel Abijah Alonzo Ansel Amos Absalom
+		Benjamin Bartholomew Byron Benedict Barnabas Bildad
+		Charles Cyrus Chester Cassius Calvin Cornelius Conrad Caleb Cephas Clarence Colcord
+		Daniel David Dwight
+		Ezekiel Enoch Elihu Edward Eugene_2 Eustace Edwin Elam Ezra Ebenezer Elijah Emory Ephraim Erasmus Elton Erastus
+		Franklin Francis Frederick
+		Grenville George Gregory Grover Gabriel Gorham Gordon
+		Henry Hannibal Hugh Horatio Horace Hiram Harold Hazen Hector
+		Isaac Isaiah Irving Ichabod
+		Joshua Joseph John James Jacob Jesse Joel Jeremiah Jeffrey Judah Jonas Jedediah Jonathan Josiah
+		Kermit Kenner
+		Lemuel Lysander Lawrence Lewis Lorenzo Leland Levi Leonard_2 Lucius
+		Micah Marcellus Mark Michael Millard Matthew Matthias Montgomery Maxwell Milton 
+		Nicholas Noah Nathaniel Newton Nelson
+		Obadiah Othniel Oswald Orson Orville Oscar Otis Oliver Orrin Owen Ormsby
+		Peter Paul Patrick Philip Phineas Philemon Purley Palmetus Philetus
+		Quentin Quincy
+		Rutherford Richard Robert Rufus Roger
+		Stephen Silas Samuel Seth Simon Sidney Sylvester Shubael
+		Thomas Theodore_2 Thaddeus
+		Ulysses Upton
+		Victor Valentine_2
+		William Walter Winfield Wesley Wilbur Wendell
+		Zebulon Zachary Zalmon Zadok
+		
+	}
+	female_common_first_names = {
+		Amanda Anna Alice Adaline Adelaide Augusta Antoinette Alida Addie Ariel Ada Agnes Agatha Almira Arlevia Azubah
+		Catharine Charlotte Clara Cynthia Charity Cordelia Cornelia
+		Delia Deborah Delima
+		Elizabeth Evelina Emily Esther Eliza Ellen Eunice Emma Estelle Eudora Eleanor Ella Eleura Elnora Edith Ethel Ethelinda Euphemia Eva Elida
+		Frances Florence Faith Florena
+		Gertrude Geraldine Grace Graceanna Glathia
+		Hannah Henriette Helen Harriette Hephzibah Huldah
+		Isabella Ida
+		Jane Julia Judith Josephine
+		Lucy Louisa Lavilla Lydia Lilian Lucretia Luetta Leonora
+		Mabel Mary Mildred Melissa Minerva Martha Matilda Marjorie Malvina Mahala
+		Nancy Nellie
+		Olive
+		Phoebe Pamela Puella
+		Roxana Ruth Rebecca Rosa Rachel
+		Susannah Satronia Sylvia
+		Ursula
+		Winifred
+		Yda
+		Zara Zeruviah
+	}
+	noble_last_names = {
+		Adams Appleton
+		Boylston Bradlee
+		Cabot Choate Chaffee Crowninshield Cushing
+		Dana Delano Dudley
+		Emerson Endicott Emmet
+		Forbes
+		Gillett Goelet Glazier
+		Hallowell Holmes
+		Lodge Lowell
+		Minot McKune McCallum
+		Norcross
+		Otis
+		Peabody Putnam
+		Quincy
+		Roosevelt
+		Saltonstall Sears Sedgwick Schuyler
+		Tarbox Thayer Thorndike
+		Wigglesworth Winthrop Winslow
+	}
+	common_last_names = {
+		Arthur Abbot Abercrombie Allen Andrews Ayres Armstrong Agassiz Akerman Aldrich Atherton Alger
+		Brown Buchanan Buford Black Baldwin Butler Blair Bogy Bryan Blaine Barker Belknap Bell Bennett Barnum Boyle Briggs Buckingham Burling Burnside Brinsmade Brodhead Ballou Brushwiller Blinn Beeman Boyce Berger Burleigh Blodgett Bitgood
+		Cooper Carpenter Clay Cass Chamberlain Clark Colfax Cleveland Clarkson Chandler Cortelyou Claflin Cameron Campbell Coffey Carr Catlin Casey Cobb Coburn Cook Cox Craig Crittenden Crocker Custer Chetwood Cambreleng Coffinberry Childs Croman Coyle Culver Conk Corbin Crouch Claggett Clevenger
+		Daniels Dayton Dumont Douglas Depre Davies Dana Doolittle Doubleday Dyer Dunn Draper Dodge Doty Dornblaser Dewel Dussean
+		Everett English Eaton Egan Elliott Ewing
+		Fillmore Floyd Frelinghuysen Fairbanks Fess Fletcher Fairchild Farnsworth Fraser Foster Fry Fuller French Fowler Fiske Fitts Foss Fesler Faxon Fifield
+		Grant Green Garrison Granger Greeley Garfield Garcelon Gilbert Gibbs Griffin Gurney Goldsborough Glascock Grannis Grinstead Gould Goldrick Goodwin Grimes Gooding
+		Halleck Hall Hancock Harrison Hendricks Hobart Hanna Hitchcock Hooker Hackleman Harris Hawkins Hawley Heckman Humphreys Hunt Hunter Hayes Hollingsworth Hammatt Hoag Hammerslough Hodgeman Hutling Hammer Hagaman Holden Heffernan Huldy Hamblen Herrick Hurlbutt Hazeltine
+		Ingalls Irion Isbell
+		Johnson Jewell Jackson Jones Judkins
+		King Kern Kearny Kelley Kane Kilpatrick Kiddoo Keyes Kimball Kinnard Kirk Kennon Knowlton Kneeland Kittredge
+		Lightner Logan Lacey Lane Leggett Lightburn Littlejohn Lockwood Lytle Long Lasaliere Livermore Leavitt Loverin
+		McClellan Merritt Miller Marsh Mansfield Manson Martindale McArthur McCall McClernand McIntosh McPherson Meade Meigs Meredith Miles Morris Morton Murray McKinley McKeon McLaren McMahon Macomber Mattingly Meloon Meacham
+		Norris Nagle Naglee Negley Neill Nickerson Noyes Nugen Newkirk Napire Nowlin Niquette Nudd
+		Oglesby Orme Osborn Owen Olds Oglevee Ochiltree
+		Pierce Peterson Prince Pendleton Pershing Parker Pomerene Payne Pingree Palmer Parsons Pearson Peck Pennypacker Pile Porter Potter Prentiss Price Phillips Prindle Philbrick Penhallow Pettengill
+		Quay Quinby Quiner
+		Reid Rosewater Ransom Rawlins Ramsay Reynolds Rice Richardson Ricketts Ripley Ross Russell Raiser Rafferty Rix
+		Sherman Sheridan Stanton Stanford Stevens Stevenson Sewall Sabin Sinclair Sanborn Scammon Saxton Sedgwick Seward Shackelford Shepard Shields Sickles Slocum Stannard Sturgis Sykes Stanley Shepley Schenck Shinn Semple Sadler Suddaby Seaver Seitz Snodgrass Sissons Stolworthy
+		Troucey Thompson Tilden Turner Taylor Todd Thruston Torbert Totten Tuttle Turchin Tyndale Tallmadge Thatcher Tubbs Thorndike Truesdale Tandy
+		Ullman
+		Vanderveer Van_Buren Viele Vandever Vincent Vogdes Vogel
+		Whitman Webster Woodward Wheeler Weaver Wood Ward Willcox Wad Wadsworth Walker Wallace Washburn Webb Weber Weed Wells West Wheaton Whipple Winkler Woodbury Woodbridge Whittlesey Wingate Walley Wenk Whitcomb Wibird
+		Young
+		Zook
+	}
+	male_regal_first_names = {
+		Alexander
+		Benjamin
+		Charles
+		Franklin
+		George
+		Henry Hamilton
+		James Jefferson
+		Thomas
+		William Washington
+	}
+	female_regal_first_names = {
+		Caroline
+		Flora
+		Georgia
+		Martha Mary
+		Virginia
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+cheyenne = { #夏延人#夏安人
+	color= hsv{ 0.22 0.15 0.86 }
+	religion = animist
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names = {
+		Catecahassa Cottawamago Cheeseekau
+		Gakiiwegwanebi 
+		Hokoleskwa
+		Kekewepelethy
+		Lalawethika Lawoughqua
+		MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+		Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+		Quatawapea 
+		Spemica_Lawba Shemanetoo
+		Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+	}
+	female_common_first_names = {
+		Haayiitaapama
+		Methoataske MayataakwipiiwehS_i
+		Nonhelema
+		Peahchepeahso
+		WelepiiwehS_i
+	}
+	common_last_names = {
+		Chalahgawtha
+		Eskippakithiki
+		Hokolesqua
+		Kispokotha KaskE_
+		Mecoce
+		Opessa
+		Pekowi Peckuwe 
+		ShipakA_kamithagI_
+		Thawikila
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+aztecs = { #阿兹特克人
+	color= hsv{ 0.69 0.08 0.55 }
+	religion = animist
+	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	male_common_first_names = {
+		Agustin
+		Akbal
+		Alejandro
+		Andres
+		Antonio
+		Anibal
+		Armando
+		Bernardo
+		Carlos
+		Crescencio
+		Cristobal_2
+		Cuautehmoc
+		Diego
+		Felipe
+		Gaspar
+		Hernando
+		Hilario
+		Humberto
+		Ignacio
+		Jacinto
+		Jesus
+		Luis
+		Marcial
+		Martin_2
+		Miguel
+		Ramiro
+		Rodolfo
+		Rolando
+		Santiago
+		Yumil
+	}
+	female_common_first_names = {
+		Ana
+		Catarina
+		Concepcion
+		Cristina
+		Elvia
+		Felipa
+		Maria
+		Paula
+		Ramona
+		Rigoberta
+		Rosalina
+		Thelma
+	}	
+	noble_last_names = {
+		Ay
+		Ceel
+		Chan
+		Chi
+		Pat
+		Pec
+		Poot
+	}
+	common_last_names = {
+		Ak_ab_al
+		Cal
+		Canek
+		Canul
+		Carrillo
+		Ceh
+		Chee
+		Choc
+		Coc
+		Curruchic
+		Ixquiac
+		Kan
+		Lopez
+		Manzanero
+		Mas
+		Menchu
+		Mes
+		Merida
+		Osorio
+		Pek
+		Pop
+		Puk
+		Shal
+		Sho
+		Tecu
+		Teul
+		Tuyuc
+		Xicara
+		Xiloj
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+inca = { #印加人
+	color= hsv{ 0.02 0.57 0.74 }
+	religion = animist
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names = {
+		Agustin
+		Alejandro
+		Antonio
+		Bartolome
+		Carlos
+		David
+		Eduardo
+		Enrique
+		Evo
+		Facundo
+		Felipe
+		Francisco
+		Gregorio
+		Hugo
+		JosE_
+		Juan
+		Juan_Jose
+		Manuel
+		Marcos
+		Mario
+		Maximo
+		Nicolas_2
+		Osvaldo
+		Ramon
+		Roberto
+		Santiago
+		Tupac
+		Vicente
+		VI_ctor
+		Victor_Hugo
+	}
+	female_common_first_names = {
+		Adela
+		Bartolina
+		Blanca
+		Carola
+		Celsa
+		Claudia
+		Eliza
+		Ermelina
+		Gregoria
+		Hercilia
+		Lindaura
+		Maria
+		Maxima
+		Modesta
+		Sara
+		Silvia
+		Ubalda
+		Veronica
+	}
+	noble_last_names = {
+		Apaza
+		Cusicanqui
+		Katari
+		Sisa
+		Vargas
+	}
+	common_last_names = {
+		Ayme
+		Calisaya
+		Cardenas
+		Castilla
+		Chino
+		Choquehuanca
+		Condori
+		Corahua
+		Hoffmann
+		Huachua
+		Huallpa
+		Larico
+		Machaca
+		Mamani
+		Morales
+		Paredes
+		Penaranda
+		Puma
+		Quilca
+		Quispe
+		Rivera
+		Sisa
+		Tamayo
+		Taquiri
+		Torres
+		Yllanes
+		Yucra
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+age_dravidian = { #达罗毗荼
+	color= hsv{ 0.94 0.57 0.70 }
+	religion = hindu
+	traits = { south_asian_heritage dravidian }
+	male_common_first_names={
+		Champakaraman
+		Chidambaram
+		Dheeran
+		Rajagopalachari
+		Ramaswami
+		Ramayyan
+		Ramiengar
+		Sathyamurthy
+		Seshadri
+		Seshayya
+		Shanmukham
+		Shungrasoobyer
+		Subramania
+		Tanay
+		Vanchinathan
+	}
+	female_common_first_names = {
+		Nageswari
+		Rajini
+		Rani
+		Rasamanohari
+		Thangamma
+	}	
+	noble_last_names = {
+		Bahadur
+		Rao
+		Sethupathi
+		Tondaiman
+		Iyer
+	}
+	male_regal_first_names = {
+		Ramachandra Rajagopala Raghunatha
+	}
+	common_last_names={
+		Dalawa
+		Krishnamachari
+		Mudaliar
+		Rajapopalachari
+		Sastri
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+
+mayan = { #玛雅人
+	color= hsv{ 0.69 0.08 0.55 }
+	religion = animist
+	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	male_common_first_names = {
+		Agustin
+		Akbal
+		Alejandro
+		Andres
+		Antonio
+		Anibal
+		Armando
+		Bernardo
+		Carlos
+		Crescencio
+		Cristobal_2
+		Cuautehmoc
+		Diego
+		Felipe
+		Gaspar
+		Hernando
+		Hilario
+		Humberto
+		Ignacio
+		Jacinto
+		Jesus
+		Luis
+		Marcial
+		Martin_2
+		Miguel
+		Ramiro
+		Rodolfo
+		Rolando
+		Santiago
+		Yumil
+	}
+	female_common_first_names = {
+		Ana
+		Catarina
+		Concepcion
+		Cristina
+		Elvia
+		Felipa
+		Maria
+		Paula
+		Ramona
+		Rigoberta
+		Rosalina
+		Thelma
+	}	
+	noble_last_names = {
+		Ay
+		Ceel
+		Chan
+		Chi
+		Pat
+		Pec
+		Poot
+	}
+	common_last_names = {
+		Ak_ab_al
+		Cal
+		Canek
+		Canul
+		Carrillo
+		Ceh
+		Chee
+		Choc
+		Coc
+		Curruchic
+		Ixquiac
+		Kan
+		Lopez
+		Manzanero
+		Mas
+		Menchu
+		Mes
+		Merida
+		Osorio
+		Pek
+		Pop
+		Puk
+		Shal
+		Sho
+		Tecu
+		Teul
+		Tuyuc
+		Xicara
+		Xiloj
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+comanche = { #卡曼契
+	color = { 220 190 50 }
+	religion = animist
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names = {
+		Esihabit
+		Huupi-pahati Hitetetsi
+		Isaviah Isananaka
+		Ketsumse
+		Mopechucope
+		Nocona
+		Puhihwitsikwasu Parosawano Pocheha-quehip Pahayoko
+		Quanah Quenah-evah
+		Tabby-nocca Tawaquenah
+		Waakakwasi Wulea-boo
+	}
+	female_common_first_names = {
+		Ahuhwuthtakum
+		Chony
+		Mahchettawookey
+		Naduah
+		Topsannah Toepay Tonarcy
+		Weakeah
+	}	
+	noble_last_names = {
+		Hois
+		Kwahadi Kotsoteka
+		Nokoni
+		Penateka
+		Yamparika
+	}
+	common_last_names = {
+		Esarosavit
+		Itehtah_o
+		Ketahtoh
+		Jupe
+		Motso Motsai
+		Pohee Pigianigwai Pahnaixte
+		Tenawa Tanima Tekapwai
+		Wahkoh Wohoi WahaToya Wia_ne
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+
+mongol = { #蒙古
+	color= rgb{ 74 125 155 }
+	religion = sunni
+	obsessions = {
+		tea
+	}
+	traits = { north_asian_heritage mongol_language }
+	male_common_first_names = {
+		Badamdorj
+		Balingiin
+		Batbayar
+		Baterdene
+		Chingis
+		Dambyan
+		Damdin
+		Dogsomyn
+		Gonchigjalzangiin
+		Gonchigtseren
+		Injinash
+		Khorloogiin
+		Kubilai
+		Otgonbayar
+		Peljidiin
+		Sodnomyn
+	}
+	female_common_first_names = {
+		Bayartsetseg
+		Dondogdulam
+		Ider
+		Khajidsuren
+		Oyuungerel
+		Sonomyn
+		Tuyaa
+	}	
+	noble_last_names = {
+		Gonchigjalzangiin
+		Togs-Ochiryn
+	}
+	common_last_names = {
+		Amar
+		Bodoo
+		Chagdarjav
+		Choibalsan
+		Damdinbazar
+		Genden
+		Jamyan
+		Murdorj 
+		Sukhbaatar
+		Tomorbaatar
+		Tserendorj
+		Vanchinbalyn
+	}
+	ethnicities = {
+		1 = central_asian
+	}
+	graphics = east_asian
+}
+
+ryukyuan = { #琉球人
+	color= hsv{ 0 0 90 }
+	religion = confucian
+	traits = { sinosphere east_asian_heritage }
+	obsessions = {
+		#sugar meat
+	}
+	male_common_first_names = {
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names = {
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+african = { #非洲原住民
+    color= hsv{ 0.58 0.51 0.96 }
+	religion = animist
+	traits = { african_culture_group african_heritage }
+	male_common_first_names = {
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Jokate
+		Kajala
+		Khalila
+		Wema
+		Yobnesh
+	}	
+	noble_last_names = {
+		Kasanda
+		Watuta
+		Zwagendaba
+	}
+	common_last_names = {
+		Bulungute
+		Mirambo
+		Mkasiwa
+		Mnywasele
+		Msemwa
+		Mudimbe
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}

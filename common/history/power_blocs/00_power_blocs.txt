@@ -1,0 +1,107 @@
+﻿POWER_BLOCS = {
+    
+	c:DQDG = {
+		create_power_bloc = {
+			name = Great_Qin
+
+			map_color = hsv { 0 0.91 0.55  }
+
+			founding_date = 1453.5.29
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_external_trade_1
+			}
+		}
+	}
+
+    c:DHDG = {
+		create_power_bloc = {
+			name = Great_Han
+
+			map_color = rgb { 0.95 0.06 0.19 }
+
+			founding_date = 1453.5.29
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_external_trade_1
+			}
+		}
+	}
+
+	c:CNCW = {
+		create_power_bloc = {
+			name = Great_Wei
+
+			map_color = { 21 21 227 }
+
+			founding_date = 1453.5.29
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_external_trade_1
+			}
+		}
+	}
+
+	c:TPTG = {
+		create_power_bloc = {
+			name = Heavenly_Kingdom
+
+			map_color = { 100 150 20 }
+
+			founding_date = 1453.5.29
+			identity = identity_religious
+			principle = principle_divine_economics_1
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_external_trade_1
+			}
+		}
+	}	
+
+	c:TUR = {
+		create_power_bloc = {
+			name = DEVLET_I__ALIYE
+
+			map_color = { 170 206 162 }
+
+			founding_date = 1453.5.29
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_external_trade_1
+			}
+		}
+	}	
+}

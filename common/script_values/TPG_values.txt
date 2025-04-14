@@ -1,0 +1,8 @@
+﻿TPG_Divided_stability_critical_lower_bound = 0
+TPG_Divided_stability_critical_upper_bound = 75
+TPG_Divided_stability_low_lower_bound = 75
+TPG_Divided_stability_low_upper_bound = 150
+TPG_Divided_stability_medium_lower_bound = 150
+TPG_Divided_stability_medium_upper_bound = 225
+TPG_Divided_stability_high_lower_bound = 225
+TPG_Divided_stability_high_upper_bound = 300

@@ -1,0 +1,204 @@
+﻿Code002_ayub_clothes = {
+    usage = game
+    selection_behavior = weighted_random
+    #fallback = default_clothes
+    
+    Code002_persian_landowners_clothes = { #阿拉伯贵族
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = outfits
+                template = male_outfit_arabic_royal_01
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = slavic_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template = no_belt
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 30000                  
+                scope:character ?= {
+                    OR = {
+                        is_ruler = yes
+                        has_role = politician
+                    }
+                    age >= define:NCharacters|ADULT_AGE
+                    owner ?= {
+                        OR = {
+                            c:AYUB ?= this
+                            c:MAML ?= this
+                            c:ABAS ?= this
+                            c:SERZ ?= this
+                            c:KUSH ?= this
+                            c:SASS ?= this
+                            c:CIRC ?= this
+                        }
+                    }
+                    culture = {
+                        OR = {
+                            this = cu:misri 
+                            this = cu:kurdish
+                            this = cu:mashriqi 
+                            this = cu:bedouin 
+                            this = cu:yemenite
+                            this = cu:seljuks
+                            this = cu:tokhara
+                            this = cu:persian
+                            this = cu:circassian
+                        }
+                    }
+                    NOR = {
+                        military_clothes_trigger = yes
+                        AND = {
+                            armed_forces_clothes_trigger = yes
+                            politician_clothes_trigger = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_egyptian_military_general_clothes = { #埃及军装
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = coats
+                template = no_coat
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene =  Code002_outfits
+                template = Code002_egyptian_outfits_white
+                accessory = male_coat_european_civil_dress_uniform_01
+            }
+            accessory = {
+                mode = add
+                gene = Code002_epaulettes
+                template = Code002_all_epaulettes #肩章
+                range = { 0 0.4 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = Code002_belts
+                template = Code002_all_belts #皮带
+                accessory = male_belt_generic_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear_colors
+                accessory = male_legwear_european_01_white
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 20000
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    is_female = no
+                    owner ?= {
+                        OR = {
+                            c:AYUB ?= this
+                            c:MAML ?= this
+                            c:ABAS ?= this
+                            c:SERZ ?= this
+                            c:KUSH ?= this
+                            c:SASS ?= this
+                        }
+                    }
+                    culture = {
+                        OR = {
+                            this = cu:misri 
+                            this = cu:kurdish
+                            this = cu:mashriqi 
+                            this = cu:bedouin 
+                            this = cu:yemenite
+                            this = cu:seljuks
+                            this = cu:tokhara
+                            this = cu:persian
+                        }
+                    }
+                    OR = {
+                        military_clothes_trigger = yes
+                        AND = {
+                            armed_forces_clothes_trigger = yes
+                            politician_clothes_trigger = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    Code002_parthians_military_general_clothes = { #安息军装
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = coats
+                template = no_coat
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene =  Code002_outfits
+                template = Code002_egyptian_outfits_white
+                accessory = male_coat_european_civil_dress_uniform_01
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear_colors
+                accessory = male_legwear_european_01_white
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50000
+                scope:character ?= {
+                    age >= define:NCharacters|ADULT_AGE
+                    is_female = no
+                    owner ?= {
+                        c:PART ?= this
+                    }
+                    culture = {
+                        OR = {
+                            this = cu:parthians
+                            this = cu:persian
+                        }
+                    }
+                    OR = {
+                        military_clothes_trigger = yes
+                        AND = {
+                            armed_forces_clothes_trigger = yes
+                            politician_clothes_trigger = yes
+                        }
+                        AND = {
+                            OR = {
+                                is_ruler = yes
+                                is_heir = yes
+                            }
+                            home_country = {
+                                has_law = law_type:law_monarchy
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

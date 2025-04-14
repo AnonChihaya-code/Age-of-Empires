@@ -1,0 +1,63 @@
+﻿l_english:
+
+ #####匈奴本地#####
+ je_loong_city_revival: "Eagle of the Steppe"
+ je_loong_city_revival_reason: "Since the rise of Modu Chanyu, the Xiongnu cavalry has galloped across the vast grasslands, striking fear into all directions. Even the once-mighty Han Empire had to bow before their overwhelming might. Yet, prosperity was fleeting—the once-glorious Xiongnu crumbled under the weight of both external threats and internal strife, their past splendor buried beneath the endless sands.\n\nLiu Yuan, courtesy name Yuanhai, was born into an aristocratic Xiongnu lineage. His distant ancestor was none other than Modu Chanyu, the great ruler who had once taken a princess of Emperor Gaozu of Han as his wife and sworn brotherhood with him. As a result, his descendants adopted "Liu" as their Han surname. Gifted with both intellect and martial prowess from a young age, Liu Yuan not only inherited the Xiongnu's warrior spirit but also mastered Confucian classics, becoming deeply influenced by Han culture. Having spent many years in Luoyang, he maintained close ties with the aristocracy, earning admiration from many prominent scholars. However, due to the prevailing ethnic prejudice—"Those not of our kind must harbor different hearts"—Liu Yuan was never truly entrusted with power. This preemptive exclusion sowed deep resentment among the Xiongnu noble class, who had long suffered marginalization under the Central Plains feudal dynasties.\n\nLiu Yuan’s great-uncle gathered the Xiongnu nobility and proclaimed, "Our ancestors once stood as equals with the Han, sharing both hardship and prosperity. Since the fall of the Han Dynasty, our Chanyus bear only empty titles, ruling over no lands, while our princes and nobles have been reduced to mere commoners. Now, as the Central Plains are engulfed in fratricidal chaos and turmoil shakes the four corners of the realm, this is our chance to restore our nation and revive the great cause of our forebears. Liu Yuan possesses extraordinary talent and vision—he would not have been born if Heaven had not destined him to restore the honor of the Chanyu."\n\nThus, a secret plan was set in motion, and the Xiongnu nobles unanimously proclaimed Liu Yuan as their Great Chanyu. Seizing the opportunity amidst the ongoing wars, Liu Yuan returned to the steppe and began rallying his people."
+ 
+ xiong_nu_events.1.t: "Rise in Turmoil"
+ xiong_nu_events.1.d: "The steppe is alive with rising smoke, as countless yurts stretch endlessly across the horizon. Scattered Xiongnu tribes answer the call, gathering at Longting with their warriors, cattle, and horses.\nThe desert winds howl, the forges burn once more, and the iron cavalry readies for war—long-dormant strength is about to erupt!"
+ xiong_nu_events.1.f: "Destiny no longer favors the Central Plains dynasty. The age of chaos has arrived—now is the time for heroes to rise!"
+ xiong_nu_events.1.a: "Sweep across the land and reshape the world order!"
+  
+ je_control_of_the_silk_road: "Control the Silk Road"
+ je_control_of_the_silk_road_reason: "The Silk Road bridges East and West, bustling with endless caravans carrying treasures, silk, spices, and craftsmanship. Controlling this prosperous trade route not only ensures immense tax revenue but also fosters cultural exchange, economic prosperity, and the growth of national power."
+ je_control_of_the_silk_road_tt: "All [concept_target] [concept_state] become [concept_incorporated_state]，50% of [concept_pop] convert [concept_state_religion]"
+ 
+ je_entered_the_central_plainsicon: "Entered the Central Plainsicon"
+ je_entered_the_central_plainsicon_reason: "For generations, the Xiongnu have dreamed of conquering the Central Plains. Now, Liu Yuan has the chance to make that dream a reality. Yet, whether he seeks to establish a new steppe dynasty or claim the mantle of the Han dynasty's rightful heir, he will need both formidable strength and great wisdom."
+ je_entered_the_central_plainsicon_tt: "All [concept_target] [concept_state] become [concept_incorporated_state]，25% of [concept_pop] convert [concept_state_religion]"
+ 
+ xiong_nu_events.2.t: "Compete for Supremacy"
+ xiong_nu_events.2.d: "The Han Dynasty ruled the Central Plains for a long time, its benevolence deeply ingrained in the hearts of the people. Even after its fall, many still long for the glory of the past. Let the nation bear the name of Han, in an attempt to win the people's hearts."
+ xiong_nu_events.2.f: ""I am the nephew of the Han emperor, and our ancestors once swore brotherhood with the Han imperial family. Now that my elder brother has passed, is it not only natural for the younger brother to succeed him?""
+ xiong_nu_events.2.a: "In the name of restoring the Han Dynasty, contend for supremacy!"
+
+ xiong_nu_events.3.t: "The Revival of the Han Dynasty"
+ xiong_nu_events.3.d: "With formidable military power, the enemy was conquered, and through wisdom and tolerance, the integration of various ethnic groups was promoted. Now, the Han and Xiongnu coexist harmoniously, the nation is unified, the people live in peace and prosperity, and together they write a new chapter."
+ xiong_nu_events.3.f: "Yuanhai's ambition has been realized. The new Han Dynasty will leave a significant mark in the annals of history. Future challenges still exist, but today, we can proudly say: The Han has been restored!"
+ xiong_nu_events.3.a: "A new era of prosperity begins."
+
+ je_yuanhai_ambition: "Yuanhai's Ambition"
+ je_yuanhai_ambition_reason: "A true man should be like towering mountains, not content to be a mere insect! Is it possible for the fate of emperors to be bound by a single family line? Great Yu came from the Western Rong, and King Wen of Zhou was born among the Eastern Yi. They became kings not because of their lineage, but because of their virtue. Now, I have a force of over 100,000 men, each of whom can match ten. I am capable of unifying the empire like Emperor Gaozu of Han, or possessing half the world like the Cao family."
+ je_yuanhai_ambition_goal: "The #bold Progress Bar#! has reached #variable 100%#!"
+
+ je_compete_for_the_throne: "Compete for Supremacy"
+ je_compete_for_the_throne_reason: "In times of chaos, only the strong can control their fate. Liu Yuan claims to be a descendant of the Han Dynasty, inheriting the imperial bloodline, and harbors the ambition to restore the greatness of the Han. This is not just a symbolic revival, but a contest for dominion over the world. The Central Plains are fragmented by warlords, and the steppe cavalry sharpens its blades. Only those with both wisdom and strength can ascend to the supreme throne and write a new chapter in history."
+ je_compete_for_the_throne_tt: "All [concept_target] [concept_state] become [concept_incorporated_state]，50% of [concept_pop] convert [concept_state_religion]"
+ 
+ je_winning_the_people_hearts: "Winning the People's Hearts"
+ je_winning_the_people_hearts_reason: "Even with a powerful military, without winning the hearts of the people, it is difficult to maintain long-lasting rule over the world. The people's support is the foundation; only through benevolent governance can one solidify power and earn the people's trust to build an empire."
+ je_winning_the_people_hearts_tt: "Has completed the $je_compete_for_the_throne$ [concept_journal_entry]"
+
+ je_restoration_of_han_institutions: "Restoration of Han Institutions"
+ je_restoration_of_han_institutions_reason: "The traditional governance of the Xiongnu was a loose tribal confederation, relying on cooperation between tribes and the personal charisma of tribal leaders. This system worked effectively on the steppes, but when faced with an agricultural-based Central Plains dynasty, it proved inadequate. To establish a stable regime in the Central Plains, it is necessary to build a comprehensive bureaucratic system and strengthen central control over the regions. Adopting the Han system will also help gain the recognition and support of the people, thus solidifying the rule."
+ je_restoration_of_han_institutions_tt:  "The following must be true for 5 years total ( Currently this has been true for #variable [ROOT.GetCountry.MakeScope.Var('je_restoration_of_han_institutions_var').GetValue]#! months ) :"
+
+ je_disseminating_han_culture: "Disseminating Han Culture"
+ je_disseminating_han_culture_reason: "If one wishes to establish a lasting rule in the Central Plains, it is essential to adapt to the ways of life in the region. The best way to gain the support and recognition of the Central Plains people is to embrace Han culture and live as the Han people do."
+
+ je_ethnic_harmony_in_governance: "Ethnic Harmony in Governance"
+ je_ethnic_harmony_in_governance_reason: "Implementing a tolerant ethnic policy and promoting understanding and cooperation between different ethnic groups is the fundamental way to achieve long-term stability and peace for the nation."
+ je_ethnic_harmony_in_governance_tt: "The following must be true for 5 years total ( Currently this has been true for #variable [ROOT.GetCountry.MakeScope.Var('je_ethnic_harmony_in_governance_var').GetValue]#! months ) :"
+
+ je_loong_city_revival_modifier: "Revive the Loong City"
+ xiong_nu_events_1_modifier: "The Mandate of Heaven Returns"
+ je_control_of_the_silk_road_modifier: "Control the Silk Road"
+ je_yuanhai_ambition_modifier: "Yuanhai's Ambition"
+ je_compete_for_the_throne_modifier: "Brother's Death, Younger Brother Succeeds"
+ je_winning_the_people_hearts_01_modifier: "Restoration of Production"
+ je_winning_the_people_hearts_02_modifier: "Winning the People's Hearts"
+ je_restoration_of_han_institutions_modifier: "Restoration of Han Institutions"
+ je_disseminating_han_culture_modifier: "Disseminating Han Culture"
+ je_ethnic_harmony_in_governance_modifier: "Ethnic Harmony In Governance"
+ xiong_nu_events_3_modifier: "A New Era of Prosperity"

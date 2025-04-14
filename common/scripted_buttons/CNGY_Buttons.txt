@@ -1,0 +1,38 @@
+﻿je_construction_hexi_corridor_01_button = { #修建水利设施
+	name = je_construction_hexi_corridor_01_button
+	desc = je_construction_hexi_corridor_01_button_desc
+	visible = {
+		c:CNGY ?= this
+        NOT = { has_modifier = je_construction_hexi_corridor_button_modifier }
+		var:je_construction_hexi_corridor_var < 12
+	}
+	possible = {
+		produced_bureaucracy >= 200
+		NOT = { has_modifier = je_construction_hexi_corridor_button_modifier }
+	}
+	effect = {
+		add_modifier = je_construction_hexi_corridor_button_modifier
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+
+je_construction_hexi_corridor_02_button = { #停止修建水利设施
+	name = je_construction_hexi_corridor_02_button
+	desc = je_construction_hexi_corridor_02_button_desc
+	visible = {
+		c:CNGY ?= this
+        has_modifier = je_construction_hexi_corridor_button_modifier
+		var:je_construction_hexi_corridor_var < 12
+	}
+	possible = {
+        has_modifier = je_construction_hexi_corridor_button_modifier
+	}
+	effect = {
+		remove_modifier = je_construction_hexi_corridor_button_modifier
+	}
+	ai_chance = {
+		base = 0
+	}
+}

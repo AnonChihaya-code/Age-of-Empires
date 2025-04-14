@@ -1,0 +1,52 @@
+﻿building_whampoa_military_academy = { #黄埔军校
+	building_group = bg_monuments #奇观
+	icon =  "gfx/interface/HOI4/focus_chi_whampoa_military_academy.dds"
+	expandable = no #扩展
+	downsizeable = no #拆除/缩减规模
+	unique = yes #唯一
+	production_method_groups = {
+		pmg_01_building_whampoa_military_academy
+		pmg_02_building_whampoa_military_academy
+	}	
+	required_construction = 1000 #需要的建造力
+	potential = {
+		state_region = s:STATE_GUANGDONG
+	}
+	possible = {
+		owner = {
+			owns_entire_state_region = STATE_GUANGDONG
+			custom_tooltip = {
+				text = whampoa_military_academy_construction_complete_tooltip
+				has_variable = whampoa_military_academy_construction_complete
+			}
+		}
+	}
+	ai_value = 500000
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+building_national_guangXi_university = { #国立广西大学
+	building_group = bg_monuments
+	icon =  "gfx/interface/icons/building_icons/national_guangxi_university.png"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	production_method_groups = {
+		pmg_building_national_guangXi_university
+	}	
+	required_construction = 1000 
+	potential = {
+		state_region = s:STATE_GUANGXI
+	}
+	possible = {
+		owner = {
+			owns_entire_state_region = STATE_GUANGXI
+			custom_tooltip = {
+				text = building_national_guangXi_university_tooltip
+				has_variable = building_national_guangXi_university_construction
+			}
+		}
+	}
+	ai_value = 500000
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
