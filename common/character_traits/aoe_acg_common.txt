@@ -1,6 +1,6 @@
 ﻿## personality
 # 沉重的爱 / 重女 / 重力系 # TODO 写个自动debug的脚本把所有的mod trait的给某个人加上
-char_traits_aoe_acg_heavelove = {
+char_traits_aoe_acg_heaveLove = {
 	type = personality
 	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_heavelove.dds"
 	character_modifier = {
@@ -10,6 +10,166 @@ char_traits_aoe_acg_heavelove = {
 	country_modifier = {
 	}
 	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 三无
+char_traits_aoe_acg_sanmu = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_sanmu.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 傲娇
+char_traits_aoe_acg_tsundere = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_tsundere.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 口不对心 / 口嫌体正直
+char_traits_aoe_acg_denyButAct = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_denyButAct.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 早睡派
+char_traits_aoe_acg_earlySleeper = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_earlySleeper.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 电波系
+char_traits_aoe_acg_denpa = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_denpa.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 阴角
+char_traits_aoe_acg_inkya = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_inkya.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 小太阳 / 阳角
+char_traits_aoe_acg_youkya = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_youkya.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 爱出风头
+char_traits_aoe_acg_showOff = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_showOff.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 猫系
+char_traits_aoe_acg_neko = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_neko.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	country_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
+	}
+}
+
+# 犬系
+char_traits_aoe_acg_dogge = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/char_traits_aoe_acg_dogge.dds"
+	character_modifier = {
+	}
+	command_modifier = {
+	}
+	interest_group_modifier = {
+	}
+	possible = {
 	}
 }
 
